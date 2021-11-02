@@ -1,0 +1,109 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusContentSDK
+import Foundation
+import NautilusAnalyticsSDK
+import NautilusConfigSDK
+import NautilusContainerSDK
+import NautilusCoreSDK
+import NautilusIdentifySDK
+import NautilusImagingSDK
+import NautilusLoggingSDK
+import NautilusUISDK
+import SafariServices
+import Swift
+import UIKit
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusContentInfo : ObjectiveC.NSObject {
+  final public let contentID: Swift.Int
+  final public let contentTitle: Swift.String?
+  final public let contentText: Swift.String
+  final public let publishStartDate: Foundation.Date
+  final public let publishEndDate: Foundation.Date?
+  final public let eventStartDate: Foundation.Date?
+  final public let eventEndDate: Foundation.Date?
+  final public let barcode: Swift.String?
+  final public let barcodeImageURL: Foundation.URL?
+  final public let categoryIDs: [Swift.Int]?
+  final public let sortNo: Swift.Int?
+  final public let contentImages: [NautilusContentSDK.NautilusContentImage]?
+  final public var contentType: NautilusContentSDK.NautilusContentType? {
+    get
+  }
+  final public let favorite: Swift.Bool?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusContentImage : ObjectiveC.NSObject, Swift.Codable {
+  final public let imageURL: Foundation.URL?
+  final public let aspectRatio: Swift.Double?
+  final public let sortNo: Swift.Int?
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objc final public class NautilusContent : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  @objc public static var configFilename: Swift.String {
+    @objc get
+  }
+  @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
+    @objc get
+  }
+  @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
+    @objc get
+  }
+  @objc final public let app: NautilusCoreSDK.NautilusApp
+  @objc final public let name: Swift.String?
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func content() -> NautilusContentSDK.NautilusContent
+  @objc(shopAppNamed:) public static func content(appName: Swift.String) -> NautilusContentSDK.NautilusContent
+  @objc final public func instantiateContentListViewController() -> UIKit.UIViewController
+  @objc final public func instantiateFavoriteContentListViewController() -> UIKit.UIViewController
+  @objc final public func instantiateContentDetailViewController(contentID: Swift.Int, contentType: NautilusContentSDK.NautilusContentType) -> UIKit.UIViewController
+  final public func loadFavoriteContents(completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentNetworkError>) -> Swift.Void)
+  @objc final public func loadFavoriteContents(completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum NautilusContentType : Swift.Int {
+  case common
+  case `private`
+  case favoriteShop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers final public class NautilusContentTabViewController : NautilusUISDK.NautilusAppTopBarController, NautilusUISDK.NautilusAppTopBarControllerDelegate {
+  @objc override final public func viewDidLoad()
+  @objc override final public func appTopBar(_ appTopBar: NautilusUISDK.NautilusAppTopBar, viewForItemAt index: Swift.Int) -> NautilusUISDK.NautilusAppTopBarItemView
+  @objc override final public func numberOfItems(in appTopBar: NautilusUISDK.NautilusAppTopBar) -> Swift.Int
+  @objc final public func numberOfViewControllers(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController) -> Swift.Int
+  @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, viewControllerAt index: Swift.Int) -> UIKit.UIViewController
+  @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, indexOfViewController viewController: UIKit.UIViewController) -> Swift.Int
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public let NautilusContentErrorDomain: Swift.String
+@objc public enum NautilusContentNetworkError : Swift.Int, Swift.Error {
+  case unknown
+  case connection
+  case apiProcessError
+  case httpConnection
+  case parseFailure
+  case userCancelled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension NautilusContentSDK.NautilusContentType : Swift.Equatable {}
+extension NautilusContentSDK.NautilusContentType : Swift.Hashable {}
+extension NautilusContentSDK.NautilusContentType : Swift.RawRepresentable {}
+extension NautilusContentSDK.NautilusContentNetworkError : Swift.Equatable {}
+extension NautilusContentSDK.NautilusContentNetworkError : Swift.Hashable {}
+extension NautilusContentSDK.NautilusContentNetworkError : Swift.RawRepresentable {}

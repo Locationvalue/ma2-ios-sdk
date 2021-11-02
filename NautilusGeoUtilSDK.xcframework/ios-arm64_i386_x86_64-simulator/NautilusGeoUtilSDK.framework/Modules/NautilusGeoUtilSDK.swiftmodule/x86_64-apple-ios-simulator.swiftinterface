@@ -1,0 +1,73 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusGeoUtilSDK
+import Foundation
+import Swift
+@objc public enum NautilusPrefectureCode : Swift.Int {
+  case hokkaido
+  case aomori
+  case iwate
+  case miyagi
+  case akita
+  case yamagata
+  case fukushima
+  case ibaraki
+  case tochigi
+  case gunma
+  case saitama
+  case chiba
+  case tokyo
+  case kanagawa
+  case niigata
+  case toyama
+  case ishikawa
+  case fukui
+  case yamanashi
+  case nagano
+  case gifu
+  case shizuoka
+  case aichi
+  case mie
+  case shiga
+  case kyoto
+  case osaka
+  case hyogo
+  case nara
+  case wakayama
+  case tottori
+  case shimane
+  case okayama
+  case hiroshima
+  case yamaguchi
+  case tokushima
+  case kagawa
+  case ehime
+  case kochi
+  case fukuoka
+  case saga
+  case nagasaki
+  case kumamoto
+  case oita
+  case miyazaki
+  case kagoshima
+  case okinawa
+  public var code: Swift.Int {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension NautilusPrefectureCode {
+  public static var allPrefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode] {
+    get
+  }
+}
+extension NautilusGeoUtilSDK.NautilusPrefectureCode : Swift.Equatable {}
+extension NautilusGeoUtilSDK.NautilusPrefectureCode : Swift.Hashable {}
+extension NautilusGeoUtilSDK.NautilusPrefectureCode : Swift.RawRepresentable {}

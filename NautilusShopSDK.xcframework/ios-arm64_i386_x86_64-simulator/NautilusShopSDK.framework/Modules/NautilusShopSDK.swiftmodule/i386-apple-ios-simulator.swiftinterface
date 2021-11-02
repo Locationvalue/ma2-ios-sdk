@@ -1,0 +1,112 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusShopSDK
+import CoreData
+import CoreLocation
+import Foundation
+import MapKit
+import NautilusAnalyticsSDK
+import NautilusConfigSDK
+import NautilusContainerSDK
+import NautilusCoreSDK
+import NautilusGeoUtilSDK
+import NautilusIdentifySDK
+import NautilusImagingSDK
+import NautilusLoggingSDK
+import NautilusUISDK
+import Swift
+import UIKit
+@_hasMissingDesignatedInitializers @objc final public class NautilusShop : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  @objc public static var configFilename: Swift.String {
+    @objc get
+  }
+  @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
+    @objc get
+  }
+  @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
+    @objc get
+  }
+  @objc final public let app: NautilusCoreSDK.NautilusApp
+  @objc final public let name: Swift.String?
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func shop() -> NautilusShopSDK.NautilusShop
+  @objc(shopAppNamed:) public static func shop(appName: Swift.String) -> NautilusShopSDK.NautilusShop
+  @objc final public func createShop() -> UIKit.UINavigationController
+  @objc final public func instantiateFavoriteShop() -> UIKit.UIViewController
+  @objc final public func instantiateShopDetail(shopID: Swift.Int) -> UIKit.UIViewController
+  final public func loadFavoriteShops(completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopNetworkError>) -> Swift.Void)
+  @objc final public func loadFavoriteShops(completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum NautilusShopDetailOpenEvent : Swift.Int {
+  case receivedNotification
+  case openWithURL
+  case tapOnShopList
+  case tapOnSearchMap
+  case tapOnFavoriteShopList
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusShopInfo : ObjectiveC.NSObject {
+  final public let shopID: Swift.Int
+  final public let shopType: Swift.Int
+  final public let shopName: Swift.String?
+  final public let openTime: Swift.String?
+  final public let holiday: Swift.String?
+  final public let publishStartDate: Foundation.Date
+  final public let publishEndDate: Foundation.Date?
+  final public let averageBudget1: Swift.String?
+  final public let averageBudget2: Swift.String?
+  final public let averageBudgetDisplay: Swift.String?
+  final public let shopAppeal: Swift.String?
+  final public let catchphrase: Swift.String?
+  final public let address: Swift.String?
+  final public let telephone: Swift.String?
+  final public let businessID: Swift.Int?
+  final public let businessName: Swift.String?
+  final public let shopLocation: CoreLocation.CLLocationCoordinate2D
+  final public let shopImages: [NautilusShopSDK.NautilusShopImage]?
+  final public let shopExternalLinks: [NautilusShopSDK.NautilusShopExternalLink]?
+  final public let mobileAccess: Swift.String?
+  final public let emergencyNotification: Swift.String?
+  final public let distance: Swift.Double?
+  final public let shopSearchTags: [Swift.Int]?
+  final public let isFavorite: Swift.Bool?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopExternalLink : ObjectiveC.NSObject {
+  final public let linkText: Swift.String
+  final public let url: Foundation.URL
+  final public let sortNo: Swift.Int
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopImage : ObjectiveC.NSObject {
+  @objc deinit
+}
+public let NautilusShopErrorDomain: Swift.String
+@objc public enum NautilusShopNetworkError : Swift.Int, Swift.Error {
+  case unknown
+  case connection
+  case apiProcessError
+  case httpConnection
+  case parseFailure
+  case userCancelled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.Equatable {}
+extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.Hashable {}
+extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.RawRepresentable {}
+extension NautilusShopSDK.NautilusShopNetworkError : Swift.Equatable {}
+extension NautilusShopSDK.NautilusShopNetworkError : Swift.Hashable {}
+extension NautilusShopSDK.NautilusShopNetworkError : Swift.RawRepresentable {}

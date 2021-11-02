@@ -1,0 +1,96 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusNotificationSDK
+import Foundation
+import NautilusConfigSDK
+import NautilusContainerSDK
+import NautilusCoreSDK
+import NautilusIdentifySDK
+import NautilusLoggingSDK
+import Swift
+import UserNotifications
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusRemoteMessage : ObjectiveC.NSObject {
+  final public let pushID: Swift.Int
+  final public let message: Swift.String
+  final public let sendDate: Foundation.Date
+  final public let pushIDType: Swift.Int
+  final public let transitionParameter: Swift.String?
+  final public let title: Swift.String?
+  final public let imageURL: Foundation.URL?
+  final public let imageAspectRatio: Swift.Double?
+  @objc deinit
+}
+public let NautilusNotificationErrorDomain: Swift.String
+@objc public enum NautilusNotificationNetworkError : Swift.Int, Swift.Error {
+  case unknown
+  case connection
+  case apiProcessError
+  case httpConnection
+  case parseFailure
+  case userCancelled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias NautilusNotificationHandlerAction = (NautilusNotificationSDK.NautilusPushNotificationInfo) -> Swift.Void
+@_hasMissingDesignatedInitializers @objc final public class NautilusPushNotificationInfo : ObjectiveC.NSObject {
+  final public let pushIdentifier: Swift.Int
+  final public let pushType: Swift.Int
+  final public let transitionCommand: Swift.String?
+  final public let title: Swift.String
+  final public let message: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class NautilusNotificationHandler : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @discardableResult
+  @objc final public func handleRemoteNotification(request: UserNotifications.UNNotificationRequest, action: NautilusNotificationSDK.NautilusNotificationHandlerAction?) -> Swift.Bool
+  @discardableResult
+  @objc final public func handleRemoteNotification(userInfo: [Swift.AnyHashable : Any], action: NautilusNotificationSDK.NautilusNotificationHandlerAction?) -> Swift.Bool
+  @objc final public func canHandleRemoteNotification(request: UserNotifications.UNNotificationRequest) -> Swift.Bool
+  @objc final public func canHandleRemoteNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
+  @objc final public func didReceive(request: UserNotifications.UNNotificationRequest, bestAttemptContent: UserNotifications.UNMutableNotificationContent, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc final public func serviceExtensionTimeWillExpire(request: UserNotifications.UNNotificationRequest, bestAttemptContent: UserNotifications.UNMutableNotificationContent, contentHandler: (UserNotifications.UNNotificationContent) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class NautilusNotification : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
+    @objc get
+  }
+  @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
+    @objc get
+  }
+  @objc public static var configFilename: Swift.String {
+    @objc get
+  }
+  @objc final public let app: NautilusCoreSDK.NautilusApp
+  @objc final public let name: Swift.String?
+  final public var deviceID: Swift.String {
+    get
+  }
+  @objc final public let notificationHandler: NautilusNotificationSDK.NautilusNotificationHandler
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func notification() -> NautilusNotificationSDK.NautilusNotification
+  @objc(notificationAppNamed:) public static func notification(appName: Swift.String) -> NautilusNotificationSDK.NautilusNotification
+  @objc final public func removePushDeviceID()
+  @objc(registerDeviceToken:) final public func register(deviceToken: Foundation.Data)
+  @objc(registerDeviceTokenString:) final public func register(deviceToken: Swift.String)
+  @objc(registerDeviceForPushServiceWithCID:completion:) final public func registerDeviceForPushService(cid: Swift.String, completion: @escaping (NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason) -> Swift.Void)
+  @objc(registerDeviceForPushServiceWithDeviceToken:CID:completion:) final public func registerDeviceForPushService(deviceToken: Foundation.Data, cid: Swift.String, completion: @escaping (NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason) -> Swift.Void)
+  @objc(registerDeviceForPushServiceWithDeviceTokenString:CID:completion:) final public func registerDeviceForPushService(deviceToken: Swift.String, cid: Swift.String, completion: @escaping (NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason) -> Swift.Void)
+  @objc final public func getRemoteNotifications(completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
+  @objc final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
+  @objc final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, checkDate: Foundation.Date, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
+  final public func getRemoteNotifications(start: Swift.Int? = nil, count: Swift.Int? = nil, checkDate: Foundation.Date? = nil, completion: @escaping (Swift.Result<[NautilusNotificationSDK.NautilusRemoteMessage], NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension NautilusNotificationSDK.NautilusNotificationNetworkError : Swift.Equatable {}
+extension NautilusNotificationSDK.NautilusNotificationNetworkError : Swift.Hashable {}
+extension NautilusNotificationSDK.NautilusNotificationNetworkError : Swift.RawRepresentable {}

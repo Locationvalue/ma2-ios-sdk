@@ -1,0 +1,122 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusBannerSDK
+import Foundation
+import NautilusAnalyticsSDK
+import NautilusConfigSDK
+import NautilusContainerSDK
+import NautilusCoreSDK
+import NautilusIdentifySDK
+import NautilusImagingSDK
+import NautilusLoggingSDK
+import NautilusUISDK
+import SafariServices
+import Swift
+import UIKit
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusBannerView : UIKit.UIView {
+  weak public var delegate: NautilusBannerSDK.NautilusBannerViewDelegate?
+  public var currentBannerCategory: NautilusBannerSDK.NautilusBannerCategory? {
+    get
+    set
+  }
+  public func prepare(for bannerInstance: NautilusBannerSDK.NautilusBanner)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class NautilusBannerInfo : ObjectiveC.NSObject {
+  final public let bannerIdentifier: Swift.Int
+  final public let publishStartDatetimeString: Swift.String
+  final public let publishEndDatetimeString: Swift.String?
+  final public let imageURL: Foundation.URL?
+  final public let categoryIdentifier: Swift.Int?
+  final public let sortNumber: Swift.Int?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol NautilusBannerViewDelegate {
+  @objc func willLoadBannerSet()
+  @objc func didLoadBannerImages()
+  @objc func failLoadBannerSet(error: NautilusBannerSDK.BannerViewError)
+  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, tapInternalLink link: NautilusBannerSDK.NautilusBannerWebLink) -> Swift.Bool
+  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, tapExternalLink link: NautilusBannerSDK.NautilusBannerWebLink) -> Swift.Bool
+  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, tapAppLink link: NautilusBannerSDK.NautilusBannerAppLink) -> Swift.Bool
+}
+public let NautilusBannerErrorDomain: Swift.String
+@objc public enum BannerViewError : Swift.Int, Swift.Error {
+  case unknown
+  case connectionFailure
+  case unavailable
+  case userCancelled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class NautilusBannerWebLink : ObjectiveC.NSObject {
+  final public let linkURL: Foundation.URL
+  final public let browserTitle: Swift.String?
+  final public let useCID: Swift.Bool?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class NautilusBannerAppLink : ObjectiveC.NSObject {
+  final public let transitionParam: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class NautilusBanner : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  @objc public static var configFilename: Swift.String {
+    @objc get
+  }
+  @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
+    @objc get
+  }
+  @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
+    @objc get
+  }
+  @objc final public let app: NautilusCoreSDK.NautilusApp
+  @objc final public let name: Swift.String?
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func banner() -> NautilusBannerSDK.NautilusBanner
+  @objc(bannerAppNamed:) public static func banner(appName: Swift.String) -> NautilusBannerSDK.NautilusBanner
+  @objc final public func getBannerCategoryList(completion: @escaping ([NautilusBannerSDK.NautilusBannerCategory]?, Foundation.NSError?) -> Swift.Void)
+  final public func getBannerCategoryList(completion: @escaping (Swift.Result<[NautilusBannerSDK.NautilusBannerCategory], NautilusBannerSDK.BannerViewError>) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class NautilusBannerCategory : ObjectiveC.NSObject {
+  final public let categoryIdentifier: Swift.Int
+  final public let categoryName: Swift.String
+  final public let alias: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusBannerCarouselView : NautilusBannerSDK.NautilusBannerView {
+  public static func initializedNautilusBannerCarouselView(frame: CoreGraphics.CGRect) -> NautilusBannerSDK.NautilusBannerCarouselView
+  @objc override dynamic public func layoutSubviews()
+  @objc override dynamic public func updateConstraints()
+  @objc deinit
+}
+extension NautilusBannerCarouselView : UIKit.UIScrollViewDelegate {
+  @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusBannerListView : NautilusBannerSDK.NautilusBannerView {
+  public var bannerImageSpacing: Swift.Int {
+    get
+    set
+  }
+  public static func initializedNautilusBannerListView(frame: CoreGraphics.CGRect) -> NautilusBannerSDK.NautilusBannerListView
+  @objc override dynamic public func layoutSubviews()
+  @objc override dynamic public func updateConstraints()
+  override public func prepare(for bannerInstance: NautilusBannerSDK.NautilusBanner)
+  @objc deinit
+}
+extension NautilusBannerSDK.BannerViewError : Swift.Equatable {}
+extension NautilusBannerSDK.BannerViewError : Swift.Hashable {}
+extension NautilusBannerSDK.BannerViewError : Swift.RawRepresentable {}
