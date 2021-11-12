@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "config_version": 1,
+  "config_version": 2,
   "app_name": "moduleapps-coupon",
   "shop_account_app_id": 0,
   "config_values": [
@@ -31,6 +31,14 @@
     {
       "config_value_name": "ma_coupon_list_screen_title",
       "string_value": "クーポン"
+    },
+    {
+      "config_value_name": "ma_coupon_list_coupon_sort_key_name",
+      "string_value": "publish_start_datetime"
+    },
+    {
+      "config_value_name": "ma_coupon_list_coupon_sort_order",
+      "string_value": "descending"
     },
     {
       "config_value_name": "ma_coupon_list_number_of_coupons_per_load",

@@ -212,6 +212,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+/// お気に入り店舗の並び順指定
+typedef SWIFT_ENUM(NSInteger, NautilusFavoriteShopSortOrder, open) {
+/// 昇順, 対応する数値: 2
+  NautilusFavoriteShopSortOrderAscending = 0,
+/// 降順, 対応する数値: 1
+  NautilusFavoriteShopSortOrderDescending = 1,
+};
+
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
@@ -246,7 +254,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UIViewController * _Nonnull)instantiateShopDetailWithShopID:(NSInteger)shopID SWIFT_WARN_UNUSED_RESULT;
 /// お気に入り店舗の一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)loadFavoriteShopsWithCompletion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getFavoriteShopListWithOrder:(enum NautilusFavoriteShopSortOrder)order completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -260,6 +268,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopDetailOpenEvent, open) {
   NautilusShopDetailOpenEventTapOnSearchMap = 3,
   NautilusShopDetailOpenEventTapOnFavoriteShopList = 4,
 };
+
+typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
+/// 不明
+  NautilusShopErrorUnknown = 0,
+/// 接続エラー
+  NautilusShopErrorConnection = 1,
+/// API処理エラー
+  NautilusShopErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusShopErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusShopErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusShopErrorUserCancelled = 5,
+/// 不正なパラメータが渡された
+  NautilusShopErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusShopErrorDomain = @"NautilusShopSDK.NautilusShopError";
 
 
 /// 店舗外部リンク一覧
@@ -285,21 +311,25 @@ SWIFT_CLASS("_TtC15NautilusShopSDK16NautilusShopInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, NautilusShopNetworkError, open) {
-/// 不明
-  NautilusShopNetworkErrorUnknown = 0,
-/// 接続エラー
-  NautilusShopNetworkErrorConnection = 1,
-/// API処理エラー
-  NautilusShopNetworkErrorApiProcessError = 2,
-/// HTTP/HTTPS通信エラー
-  NautilusShopNetworkErrorHttpConnection = 3,
-/// レスポンスのパースエラー
-  NautilusShopNetworkErrorParseFailure = 4,
-/// 明示的にユーザーによりキャンセルされた
-  NautilusShopNetworkErrorUserCancelled = 5,
-};
-static NSString * _Nonnull const NautilusShopNetworkErrorDomain = @"NautilusShopSDK.NautilusShopNetworkError";
+@class UIImage;
+
+/// ピン画像を提供する
+SWIFT_PROTOCOL("_TtP15NautilusShopSDK28NautilusShopPinImageProvider_")
+@protocol NautilusShopPinImageProvider
+/// 引数で渡された店舗情報に対応する画像を返す
+/// \param shopInfo 店舗情報
+///
+- (UIImage * _Nonnull)provideShopPinImageWith:(NautilusShopInfo * _Nonnull)shopInfo SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// 店舗検索タグデータ
+SWIFT_CLASS("_TtC15NautilusShopSDK25NautilusShopSearchTagInfo")
+@interface NautilusShopSearchTagInfo : NSObject
+/// タグデータは必ずサーバから取得する
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -520,6 +550,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+/// お気に入り店舗の並び順指定
+typedef SWIFT_ENUM(NSInteger, NautilusFavoriteShopSortOrder, open) {
+/// 昇順, 対応する数値: 2
+  NautilusFavoriteShopSortOrderAscending = 0,
+/// 降順, 対応する数値: 1
+  NautilusFavoriteShopSortOrderDescending = 1,
+};
+
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
@@ -554,7 +592,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UIViewController * _Nonnull)instantiateShopDetailWithShopID:(NSInteger)shopID SWIFT_WARN_UNUSED_RESULT;
 /// お気に入り店舗の一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)loadFavoriteShopsWithCompletion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getFavoriteShopListWithOrder:(enum NautilusFavoriteShopSortOrder)order completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -568,6 +606,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopDetailOpenEvent, open) {
   NautilusShopDetailOpenEventTapOnSearchMap = 3,
   NautilusShopDetailOpenEventTapOnFavoriteShopList = 4,
 };
+
+typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
+/// 不明
+  NautilusShopErrorUnknown = 0,
+/// 接続エラー
+  NautilusShopErrorConnection = 1,
+/// API処理エラー
+  NautilusShopErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusShopErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusShopErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusShopErrorUserCancelled = 5,
+/// 不正なパラメータが渡された
+  NautilusShopErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusShopErrorDomain = @"NautilusShopSDK.NautilusShopError";
 
 
 /// 店舗外部リンク一覧
@@ -593,21 +649,25 @@ SWIFT_CLASS("_TtC15NautilusShopSDK16NautilusShopInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, NautilusShopNetworkError, open) {
-/// 不明
-  NautilusShopNetworkErrorUnknown = 0,
-/// 接続エラー
-  NautilusShopNetworkErrorConnection = 1,
-/// API処理エラー
-  NautilusShopNetworkErrorApiProcessError = 2,
-/// HTTP/HTTPS通信エラー
-  NautilusShopNetworkErrorHttpConnection = 3,
-/// レスポンスのパースエラー
-  NautilusShopNetworkErrorParseFailure = 4,
-/// 明示的にユーザーによりキャンセルされた
-  NautilusShopNetworkErrorUserCancelled = 5,
-};
-static NSString * _Nonnull const NautilusShopNetworkErrorDomain = @"NautilusShopSDK.NautilusShopNetworkError";
+@class UIImage;
+
+/// ピン画像を提供する
+SWIFT_PROTOCOL("_TtP15NautilusShopSDK28NautilusShopPinImageProvider_")
+@protocol NautilusShopPinImageProvider
+/// 引数で渡された店舗情報に対応する画像を返す
+/// \param shopInfo 店舗情報
+///
+- (UIImage * _Nonnull)provideShopPinImageWith:(NautilusShopInfo * _Nonnull)shopInfo SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// 店舗検索タグデータ
+SWIFT_CLASS("_TtC15NautilusShopSDK25NautilusShopSearchTagInfo")
+@interface NautilusShopSearchTagInfo : NSObject
+/// タグデータは必ずサーバから取得する
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

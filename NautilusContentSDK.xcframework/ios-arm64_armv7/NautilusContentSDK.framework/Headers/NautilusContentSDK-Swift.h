@@ -282,6 +282,33 @@ typedef SWIFT_ENUM(NSInteger, NautilusContentNetworkError, open) {
 };
 static NSString * _Nonnull const NautilusContentNetworkErrorDomain = @"NautilusContentSDK.NautilusContentNetworkError";
 
+
+/// APIから取得するコンテンツデータの並び順
+SWIFT_CLASS("_TtC18NautilusContentSDK22NautilusContentSortKey")
+@interface NautilusContentSortKey : NSObject
+/// 引数なし初期化は禁止
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// APIから取得するデータの並び順のキー名
+typedef SWIFT_ENUM(NSInteger, NautilusContentSortKeyName, open) {
+/// 掲載開始日時
+  NautilusContentSortKeyNamePublishStartDateTime = 0,
+/// 掲載終了日時
+  NautilusContentSortKeyNamePublishEndDateTime = 1,
+/// 表示優先順位
+  NautilusContentSortKeyNameSortNumber = 2,
+};
+
+/// APIから取得するデータの並び順の順序指定
+typedef SWIFT_ENUM(NSInteger, NautilusContentSortKeyOrder, open) {
+/// 昇順
+  NautilusContentSortKeyOrderAscending = 0,
+/// 降順
+  NautilusContentSortKeyOrderDescending = 1,
+};
+
 /// コンテンツタイプ
 /// コンテンツ種別 1:全体 2:個人別 3:店舗別
 typedef SWIFT_ENUM(NSInteger, NautilusContentType, open) {
@@ -578,6 +605,33 @@ typedef SWIFT_ENUM(NSInteger, NautilusContentNetworkError, open) {
   NautilusContentNetworkErrorUserCancelled = 5,
 };
 static NSString * _Nonnull const NautilusContentNetworkErrorDomain = @"NautilusContentSDK.NautilusContentNetworkError";
+
+
+/// APIから取得するコンテンツデータの並び順
+SWIFT_CLASS("_TtC18NautilusContentSDK22NautilusContentSortKey")
+@interface NautilusContentSortKey : NSObject
+/// 引数なし初期化は禁止
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// APIから取得するデータの並び順のキー名
+typedef SWIFT_ENUM(NSInteger, NautilusContentSortKeyName, open) {
+/// 掲載開始日時
+  NautilusContentSortKeyNamePublishStartDateTime = 0,
+/// 掲載終了日時
+  NautilusContentSortKeyNamePublishEndDateTime = 1,
+/// 表示優先順位
+  NautilusContentSortKeyNameSortNumber = 2,
+};
+
+/// APIから取得するデータの並び順の順序指定
+typedef SWIFT_ENUM(NSInteger, NautilusContentSortKeyOrder, open) {
+/// 昇順
+  NautilusContentSortKeyOrderAscending = 0,
+/// 降順
+  NautilusContentSortKeyOrderDescending = 1,
+};
 
 /// コンテンツタイプ
 /// コンテンツ種別 1:全体 2:個人別 3:店舗別

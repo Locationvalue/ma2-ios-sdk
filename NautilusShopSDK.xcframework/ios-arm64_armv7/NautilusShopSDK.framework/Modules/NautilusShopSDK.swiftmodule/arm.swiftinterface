@@ -16,6 +16,18 @@ import NautilusLoggingSDK
 import NautilusUISDK
 import Swift
 import UIKit
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSearchTagInfo : ObjectiveC.NSObject {
+  final public let tagID: Swift.Int
+  final public let parentTagID: Swift.Int
+  final public let tagName: Swift.String
+  final public let sortNumber: Swift.Int
+  final public let alias: Swift.String
+  final public let imageURL: Foundation.URL?
+  @objc deinit
+}
+@objc public protocol NautilusShopPinImageProvider {
+  @objc func provideShopPinImage(with shopInfo: NautilusShopSDK.NautilusShopInfo) -> UIKit.UIImage
+}
 @_hasMissingDesignatedInitializers @objc final public class NautilusShop : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var configFilename: Swift.String {
     @objc get
@@ -28,14 +40,15 @@ import UIKit
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
+  final public var shopPinImageProvider: NautilusShopSDK.NautilusShopPinImageProvider?
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func shop() -> NautilusShopSDK.NautilusShop
   @objc(shopAppNamed:) public static func shop(appName: Swift.String) -> NautilusShopSDK.NautilusShop
   @objc final public func createShop() -> UIKit.UINavigationController
   @objc final public func instantiateFavoriteShop() -> UIKit.UIViewController
   @objc final public func instantiateShopDetail(shopID: Swift.Int) -> UIKit.UIViewController
-  final public func loadFavoriteShops(completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopNetworkError>) -> Swift.Void)
-  @objc final public func loadFavoriteShops(completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func getFavoriteShopList(order: NautilusShopSDK.NautilusFavoriteShopSortOrder, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
+  @objc final public func getFavoriteShopList(order: NautilusShopSDK.NautilusFavoriteShopSortOrder, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -45,6 +58,15 @@ import UIKit
   case tapOnShopList
   case tapOnSearchMap
   case tapOnFavoriteShopList
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NautilusFavoriteShopSortOrder : Swift.Int {
+  case ascending
+  case descending
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -66,8 +88,6 @@ import UIKit
   final public let catchphrase: Swift.String?
   final public let address: Swift.String?
   final public let telephone: Swift.String?
-  final public let businessID: Swift.Int?
-  final public let businessName: Swift.String?
   final public let shopLocation: CoreLocation.CLLocationCoordinate2D
   final public let shopImages: [NautilusShopSDK.NautilusShopImage]?
   final public let shopExternalLinks: [NautilusShopSDK.NautilusShopExternalLink]?
@@ -88,13 +108,17 @@ import UIKit
   @objc deinit
 }
 public let NautilusShopErrorDomain: Swift.String
-@objc public enum NautilusShopNetworkError : Swift.Int, Swift.Error {
+@objc public enum NautilusShopError : Swift.Int, Swift.Error {
   case unknown
   case connection
   case apiProcessError
   case httpConnection
   case parseFailure
   case userCancelled
+  case invalidParamater
+  public var nautilusShopErrorCode: Swift.Int {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -107,6 +131,9 @@ public let NautilusShopErrorDomain: Swift.String
 extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.Equatable {}
 extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.Hashable {}
 extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.RawRepresentable {}
-extension NautilusShopSDK.NautilusShopNetworkError : Swift.Equatable {}
-extension NautilusShopSDK.NautilusShopNetworkError : Swift.Hashable {}
-extension NautilusShopSDK.NautilusShopNetworkError : Swift.RawRepresentable {}
+extension NautilusShopSDK.NautilusFavoriteShopSortOrder : Swift.Equatable {}
+extension NautilusShopSDK.NautilusFavoriteShopSortOrder : Swift.Hashable {}
+extension NautilusShopSDK.NautilusFavoriteShopSortOrder : Swift.RawRepresentable {}
+extension NautilusShopSDK.NautilusShopError : Swift.Equatable {}
+extension NautilusShopSDK.NautilusShopError : Swift.Hashable {}
+extension NautilusShopSDK.NautilusShopError : Swift.RawRepresentable {}

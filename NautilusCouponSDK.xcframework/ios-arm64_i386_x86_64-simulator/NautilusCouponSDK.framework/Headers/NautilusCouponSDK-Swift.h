@@ -243,8 +243,6 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class UIViewController;
 @class NSNumber;
 enum NautilusCouponPublishType : NSInteger;
-@class NautilusCouponInfo;
-@class NSError;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusCouponSDK14NautilusCoupon")
@@ -266,11 +264,65 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UIViewController * _Nonnull)instantiateFavoriteCouponListViewController SWIFT_WARN_UNUSED_RESULT;
 /// クーポンID・タイプからクーポン詳細VCを返す
 - (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
-/// お気に入りクーポンの一覧を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)loadFavoriteCouponsWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NautilusCouponSortKey;
+@class NSDate;
+@class NautilusCouponInfo;
+@class NSError;
+@class NautilusCouponUseInfo;
+@class NautilusCouponCategoryInfo;
+@class NautilusCouponPublishTrigger;
+@class NautilusCouponLog;
+
+@interface NautilusCoupon (SWIFT_EXTENSION(NautilusCouponSDK))
+/// 共通クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCommonCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 共通クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCommonCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// 個人別クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrivateCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 個人別クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrivateCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// お気に入り店舗クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteShopCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// お気に入り店舗クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteShopCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// 景品クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrizeCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime exchangeID:(NSInteger)exchangeID completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 景品クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrizeCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// クーポン利用を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)useCouponWithTargetCouponInfo:(NautilusCouponUseInfo * _Nonnull)targetCouponInfo optionalParameters:(NSDictionary<NSString *, NSString *> * _Nullable)optionalParameters completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// クーポン複数枚利用
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)useCouponsWithCouponUseInfoList:(NSArray<NautilusCouponUseInfo *> * _Nonnull)couponUseInfoList optionalParameters:(NSDictionary<NSString *, NSString *> * _Nullable)optionalParameters completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// お気に入りクーポン登録、削除を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)updateFavoriteWithAddFavoriteCouponIDs:(NSArray<NSNumber *> * _Nullable)addFavoriteCouponIDs removeFavoriteCouponIDs:(NSArray<NSNumber *> * _Nullable)removeFavoriteCouponIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// お気に入りクーポンの一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteCouponListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// クーポンカテゴリー一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCouponCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponCategoryInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 景品クーポンを発行する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)publishPrizeCouponWithTrigger:(NautilusCouponPublishTrigger * _Nonnull)trigger completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// クーポン閲覧記録を送信する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)sendCouponLogWithCouponLogs:(NSArray<NautilusCouponLog *> * _Nonnull)couponLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
 @class UIImageView;
@@ -293,6 +345,14 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK22NautilusCouponBaseCell")
 @end
 
 
+/// クーポンカテゴリーのデータ
+SWIFT_CLASS("_TtC17NautilusCouponSDK26NautilusCouponCategoryInfo")
+@interface NautilusCouponCategoryInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// セル内のボタンタップ時の処理
 SWIFT_PROTOCOL("_TtP17NautilusCouponSDK31NautilusCouponCellActionHandler_")
 @protocol NautilusCouponCellActionHandler
@@ -309,6 +369,24 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponData")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
+/// 不明
+  NautilusCouponErrorUnknown = 0,
+/// 接続エラー
+  NautilusCouponErrorConnection = 1,
+/// API処理エラー
+  NautilusCouponErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusCouponErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusCouponErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusCouponErrorUserCancelled = 5,
+/// パラメータが不正
+  NautilusCouponErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusCouponErrorDomain = @"NautilusCouponSDK.NautilusCouponError";
 
 typedef SWIFT_ENUM(NSInteger, NautilusCouponExchangeType, open) {
   NautilusCouponExchangeTypeExchange = 1,
@@ -332,6 +410,42 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponInfo")
 @end
 
 
+
+/// クーポン閲覧APIに引き渡すパラメーター
+SWIFT_CLASS("_TtC17NautilusCouponSDK17NautilusCouponLog")
+@interface NautilusCouponLog : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// クーポン閲覧APIで記録するログ種別
+typedef SWIFT_ENUM(NSInteger, NautilusCouponLogType, open) {
+/// 詳細閲覧
+  NautilusCouponLogTypeViewCoupon = 0,
+/// クーポンのURLをタップ
+  NautilusCouponLogTypeTapCouponURL = 1,
+};
+
+
+/// クーポン発行APIに引き渡すパラメーター
+SWIFT_CLASS("_TtC17NautilusCouponSDK28NautilusCouponPublishTrigger")
+@interface NautilusCouponPublishTrigger : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// クーポンの発行タイミングの定義
+typedef SWIFT_ENUM(NSInteger, NautilusCouponPublishTriggerType, open) {
+/// 会員情報の初回登録
+  NautilusCouponPublishTriggerTypeInitialMemberRegistration = 0,
+/// アプリの初回ダウンロード
+  NautilusCouponPublishTriggerTypeAppDownload = 1,
+/// 会員カード連携
+  NautilusCouponPublishTriggerTypeMemberCardRegistration = 2,
+/// 指定コード発行
+  NautilusCouponPublishTriggerTypeCouponCode = 3,
+};
+
 /// クーポンタイプ
 /// 1:全体 2:個人別 3:店舗別 4:景品
 typedef SWIFT_ENUM(NSInteger, NautilusCouponPublishType, open) {
@@ -340,6 +454,42 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponPublishType, open) {
   NautilusCouponPublishTypeShop = 3,
   NautilusCouponPublishTypePrize = 4,
 };
+
+
+/// APIから取得するデータの並び順
+SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponSortKey")
+@interface NautilusCouponSortKey : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// APIから取得するデータの並び順のキー名
+typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyName, open) {
+/// 掲載開始日時
+  NautilusCouponSortKeyNamePublishStartDateTime = 0,
+/// 掲載終了日時
+  NautilusCouponSortKeyNamePublishEndDateTime = 1,
+/// 利用開始日時
+  NautilusCouponSortKeyNameUseStartDateTime = 2,
+/// 利用終了日時
+  NautilusCouponSortKeyNameUseEndDateTime = 3,
+/// 表示優先順位
+  NautilusCouponSortKeyNameSortNumber = 4,
+};
+
+/// APIから取得するデータの並び順の順序指定
+typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyOrder, open) {
+  NautilusCouponSortKeyOrderAscending = 0,
+  NautilusCouponSortKeyOrderDescending = 1,
+};
+
+
+/// 利用するクーポンのクラス
+SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponUseInfo")
+@interface NautilusCouponUseInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 typedef SWIFT_ENUM(NSInteger, PublishTiming, open) {
   PublishTimingFirstRegister = 1,
@@ -616,8 +766,6 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class UIViewController;
 @class NSNumber;
 enum NautilusCouponPublishType : NSInteger;
-@class NautilusCouponInfo;
-@class NSError;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusCouponSDK14NautilusCoupon")
@@ -639,11 +787,65 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UIViewController * _Nonnull)instantiateFavoriteCouponListViewController SWIFT_WARN_UNUSED_RESULT;
 /// クーポンID・タイプからクーポン詳細VCを返す
 - (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
-/// お気に入りクーポンの一覧を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)loadFavoriteCouponsWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NautilusCouponSortKey;
+@class NSDate;
+@class NautilusCouponInfo;
+@class NSError;
+@class NautilusCouponUseInfo;
+@class NautilusCouponCategoryInfo;
+@class NautilusCouponPublishTrigger;
+@class NautilusCouponLog;
+
+@interface NautilusCoupon (SWIFT_EXTENSION(NautilusCouponSDK))
+/// 共通クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCommonCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 共通クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCommonCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// 個人別クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrivateCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 個人別クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrivateCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// お気に入り店舗クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteShopCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// お気に入り店舗クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteShopCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// 景品クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrizeCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime exchangeID:(NSInteger)exchangeID completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 景品クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrizeCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// クーポン利用を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)useCouponWithTargetCouponInfo:(NautilusCouponUseInfo * _Nonnull)targetCouponInfo optionalParameters:(NSDictionary<NSString *, NSString *> * _Nullable)optionalParameters completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// クーポン複数枚利用
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)useCouponsWithCouponUseInfoList:(NSArray<NautilusCouponUseInfo *> * _Nonnull)couponUseInfoList optionalParameters:(NSDictionary<NSString *, NSString *> * _Nullable)optionalParameters completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// お気に入りクーポン登録、削除を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)updateFavoriteWithAddFavoriteCouponIDs:(NSArray<NSNumber *> * _Nullable)addFavoriteCouponIDs removeFavoriteCouponIDs:(NSArray<NSNumber *> * _Nullable)removeFavoriteCouponIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// お気に入りクーポンの一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteCouponListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// クーポンカテゴリー一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCouponCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponCategoryInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 景品クーポンを発行する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)publishPrizeCouponWithTrigger:(NautilusCouponPublishTrigger * _Nonnull)trigger completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// クーポン閲覧記録を送信する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)sendCouponLogWithCouponLogs:(NSArray<NautilusCouponLog *> * _Nonnull)couponLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
 @class UIImageView;
@@ -666,6 +868,14 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK22NautilusCouponBaseCell")
 @end
 
 
+/// クーポンカテゴリーのデータ
+SWIFT_CLASS("_TtC17NautilusCouponSDK26NautilusCouponCategoryInfo")
+@interface NautilusCouponCategoryInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// セル内のボタンタップ時の処理
 SWIFT_PROTOCOL("_TtP17NautilusCouponSDK31NautilusCouponCellActionHandler_")
 @protocol NautilusCouponCellActionHandler
@@ -682,6 +892,24 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponData")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
+/// 不明
+  NautilusCouponErrorUnknown = 0,
+/// 接続エラー
+  NautilusCouponErrorConnection = 1,
+/// API処理エラー
+  NautilusCouponErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusCouponErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusCouponErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusCouponErrorUserCancelled = 5,
+/// パラメータが不正
+  NautilusCouponErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusCouponErrorDomain = @"NautilusCouponSDK.NautilusCouponError";
 
 typedef SWIFT_ENUM(NSInteger, NautilusCouponExchangeType, open) {
   NautilusCouponExchangeTypeExchange = 1,
@@ -705,6 +933,42 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponInfo")
 @end
 
 
+
+/// クーポン閲覧APIに引き渡すパラメーター
+SWIFT_CLASS("_TtC17NautilusCouponSDK17NautilusCouponLog")
+@interface NautilusCouponLog : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// クーポン閲覧APIで記録するログ種別
+typedef SWIFT_ENUM(NSInteger, NautilusCouponLogType, open) {
+/// 詳細閲覧
+  NautilusCouponLogTypeViewCoupon = 0,
+/// クーポンのURLをタップ
+  NautilusCouponLogTypeTapCouponURL = 1,
+};
+
+
+/// クーポン発行APIに引き渡すパラメーター
+SWIFT_CLASS("_TtC17NautilusCouponSDK28NautilusCouponPublishTrigger")
+@interface NautilusCouponPublishTrigger : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// クーポンの発行タイミングの定義
+typedef SWIFT_ENUM(NSInteger, NautilusCouponPublishTriggerType, open) {
+/// 会員情報の初回登録
+  NautilusCouponPublishTriggerTypeInitialMemberRegistration = 0,
+/// アプリの初回ダウンロード
+  NautilusCouponPublishTriggerTypeAppDownload = 1,
+/// 会員カード連携
+  NautilusCouponPublishTriggerTypeMemberCardRegistration = 2,
+/// 指定コード発行
+  NautilusCouponPublishTriggerTypeCouponCode = 3,
+};
+
 /// クーポンタイプ
 /// 1:全体 2:個人別 3:店舗別 4:景品
 typedef SWIFT_ENUM(NSInteger, NautilusCouponPublishType, open) {
@@ -713,6 +977,42 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponPublishType, open) {
   NautilusCouponPublishTypeShop = 3,
   NautilusCouponPublishTypePrize = 4,
 };
+
+
+/// APIから取得するデータの並び順
+SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponSortKey")
+@interface NautilusCouponSortKey : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// APIから取得するデータの並び順のキー名
+typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyName, open) {
+/// 掲載開始日時
+  NautilusCouponSortKeyNamePublishStartDateTime = 0,
+/// 掲載終了日時
+  NautilusCouponSortKeyNamePublishEndDateTime = 1,
+/// 利用開始日時
+  NautilusCouponSortKeyNameUseStartDateTime = 2,
+/// 利用終了日時
+  NautilusCouponSortKeyNameUseEndDateTime = 3,
+/// 表示優先順位
+  NautilusCouponSortKeyNameSortNumber = 4,
+};
+
+/// APIから取得するデータの並び順の順序指定
+typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyOrder, open) {
+  NautilusCouponSortKeyOrderAscending = 0,
+  NautilusCouponSortKeyOrderDescending = 1,
+};
+
+
+/// 利用するクーポンのクラス
+SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponUseInfo")
+@interface NautilusCouponUseInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 typedef SWIFT_ENUM(NSInteger, PublishTiming, open) {
   PublishTimingFirstRegister = 1,
@@ -989,8 +1289,6 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class UIViewController;
 @class NSNumber;
 enum NautilusCouponPublishType : NSInteger;
-@class NautilusCouponInfo;
-@class NSError;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusCouponSDK14NautilusCoupon")
@@ -1012,11 +1310,65 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UIViewController * _Nonnull)instantiateFavoriteCouponListViewController SWIFT_WARN_UNUSED_RESULT;
 /// クーポンID・タイプからクーポン詳細VCを返す
 - (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
-/// お気に入りクーポンの一覧を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)loadFavoriteCouponsWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NautilusCouponSortKey;
+@class NSDate;
+@class NautilusCouponInfo;
+@class NSError;
+@class NautilusCouponUseInfo;
+@class NautilusCouponCategoryInfo;
+@class NautilusCouponPublishTrigger;
+@class NautilusCouponLog;
+
+@interface NautilusCoupon (SWIFT_EXTENSION(NautilusCouponSDK))
+/// 共通クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCommonCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 共通クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCommonCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// 個人別クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrivateCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 個人別クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrivateCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// お気に入り店舗クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteShopCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// お気に入り店舗クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteShopCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// 景品クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrizeCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime exchangeID:(NSInteger)exchangeID completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 景品クーポン件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrizeCouponCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// クーポン利用を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)useCouponWithTargetCouponInfo:(NautilusCouponUseInfo * _Nonnull)targetCouponInfo optionalParameters:(NSDictionary<NSString *, NSString *> * _Nullable)optionalParameters completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// クーポン複数枚利用
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)useCouponsWithCouponUseInfoList:(NSArray<NautilusCouponUseInfo *> * _Nonnull)couponUseInfoList optionalParameters:(NSDictionary<NSString *, NSString *> * _Nullable)optionalParameters completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// お気に入りクーポン登録、削除を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)updateFavoriteWithAddFavoriteCouponIDs:(NSArray<NSNumber *> * _Nullable)addFavoriteCouponIDs removeFavoriteCouponIDs:(NSArray<NSNumber *> * _Nullable)removeFavoriteCouponIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// お気に入りクーポンの一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteCouponListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// クーポンカテゴリー一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCouponCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponCategoryInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 景品クーポンを発行する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)publishPrizeCouponWithTrigger:(NautilusCouponPublishTrigger * _Nonnull)trigger completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// クーポン閲覧記録を送信する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)sendCouponLogWithCouponLogs:(NSArray<NautilusCouponLog *> * _Nonnull)couponLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
 @class UIImageView;
@@ -1039,6 +1391,14 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK22NautilusCouponBaseCell")
 @end
 
 
+/// クーポンカテゴリーのデータ
+SWIFT_CLASS("_TtC17NautilusCouponSDK26NautilusCouponCategoryInfo")
+@interface NautilusCouponCategoryInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// セル内のボタンタップ時の処理
 SWIFT_PROTOCOL("_TtP17NautilusCouponSDK31NautilusCouponCellActionHandler_")
 @protocol NautilusCouponCellActionHandler
@@ -1055,6 +1415,24 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponData")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
+/// 不明
+  NautilusCouponErrorUnknown = 0,
+/// 接続エラー
+  NautilusCouponErrorConnection = 1,
+/// API処理エラー
+  NautilusCouponErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusCouponErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusCouponErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusCouponErrorUserCancelled = 5,
+/// パラメータが不正
+  NautilusCouponErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusCouponErrorDomain = @"NautilusCouponSDK.NautilusCouponError";
 
 typedef SWIFT_ENUM(NSInteger, NautilusCouponExchangeType, open) {
   NautilusCouponExchangeTypeExchange = 1,
@@ -1078,6 +1456,42 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponInfo")
 @end
 
 
+
+/// クーポン閲覧APIに引き渡すパラメーター
+SWIFT_CLASS("_TtC17NautilusCouponSDK17NautilusCouponLog")
+@interface NautilusCouponLog : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// クーポン閲覧APIで記録するログ種別
+typedef SWIFT_ENUM(NSInteger, NautilusCouponLogType, open) {
+/// 詳細閲覧
+  NautilusCouponLogTypeViewCoupon = 0,
+/// クーポンのURLをタップ
+  NautilusCouponLogTypeTapCouponURL = 1,
+};
+
+
+/// クーポン発行APIに引き渡すパラメーター
+SWIFT_CLASS("_TtC17NautilusCouponSDK28NautilusCouponPublishTrigger")
+@interface NautilusCouponPublishTrigger : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// クーポンの発行タイミングの定義
+typedef SWIFT_ENUM(NSInteger, NautilusCouponPublishTriggerType, open) {
+/// 会員情報の初回登録
+  NautilusCouponPublishTriggerTypeInitialMemberRegistration = 0,
+/// アプリの初回ダウンロード
+  NautilusCouponPublishTriggerTypeAppDownload = 1,
+/// 会員カード連携
+  NautilusCouponPublishTriggerTypeMemberCardRegistration = 2,
+/// 指定コード発行
+  NautilusCouponPublishTriggerTypeCouponCode = 3,
+};
+
 /// クーポンタイプ
 /// 1:全体 2:個人別 3:店舗別 4:景品
 typedef SWIFT_ENUM(NSInteger, NautilusCouponPublishType, open) {
@@ -1086,6 +1500,42 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponPublishType, open) {
   NautilusCouponPublishTypeShop = 3,
   NautilusCouponPublishTypePrize = 4,
 };
+
+
+/// APIから取得するデータの並び順
+SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponSortKey")
+@interface NautilusCouponSortKey : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// APIから取得するデータの並び順のキー名
+typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyName, open) {
+/// 掲載開始日時
+  NautilusCouponSortKeyNamePublishStartDateTime = 0,
+/// 掲載終了日時
+  NautilusCouponSortKeyNamePublishEndDateTime = 1,
+/// 利用開始日時
+  NautilusCouponSortKeyNameUseStartDateTime = 2,
+/// 利用終了日時
+  NautilusCouponSortKeyNameUseEndDateTime = 3,
+/// 表示優先順位
+  NautilusCouponSortKeyNameSortNumber = 4,
+};
+
+/// APIから取得するデータの並び順の順序指定
+typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyOrder, open) {
+  NautilusCouponSortKeyOrderAscending = 0,
+  NautilusCouponSortKeyOrderDescending = 1,
+};
+
+
+/// 利用するクーポンのクラス
+SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponUseInfo")
+@interface NautilusCouponUseInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 typedef SWIFT_ENUM(NSInteger, PublishTiming, open) {
   PublishTimingFirstRegister = 1,

@@ -101,9 +101,40 @@ public let NautilusContentErrorDomain: Swift.String
     get
   }
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusContentSortKey : ObjectiveC.NSObject {
+  final public let keyName: NautilusContentSDK.NautilusContentSortKeyName
+  final public let order: NautilusContentSDK.NautilusContentSortKeyOrder
+  public init(keyName: NautilusContentSDK.NautilusContentSortKeyName, order: NautilusContentSDK.NautilusContentSortKeyOrder)
+  @objc deinit
+}
+@objc public enum NautilusContentSortKeyName : Swift.Int {
+  case publishStartDateTime
+  case publishEndDateTime
+  case sortNumber
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NautilusContentSortKeyOrder : Swift.Int {
+  case ascending
+  case descending
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 extension NautilusContentSDK.NautilusContentType : Swift.Equatable {}
 extension NautilusContentSDK.NautilusContentType : Swift.Hashable {}
 extension NautilusContentSDK.NautilusContentType : Swift.RawRepresentable {}
 extension NautilusContentSDK.NautilusContentNetworkError : Swift.Equatable {}
 extension NautilusContentSDK.NautilusContentNetworkError : Swift.Hashable {}
 extension NautilusContentSDK.NautilusContentNetworkError : Swift.RawRepresentable {}
+extension NautilusContentSDK.NautilusContentSortKeyName : Swift.Equatable {}
+extension NautilusContentSDK.NautilusContentSortKeyName : Swift.Hashable {}
+extension NautilusContentSDK.NautilusContentSortKeyName : Swift.RawRepresentable {}
+extension NautilusContentSDK.NautilusContentSortKeyOrder : Swift.Equatable {}
+extension NautilusContentSDK.NautilusContentSortKeyOrder : Swift.Hashable {}
+extension NautilusContentSDK.NautilusContentSortKeyOrder : Swift.RawRepresentable {}
