@@ -26,7 +26,7 @@ import UIKit
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusNotificationUI : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var configFilename: Swift.String {
+  @objc public static var configFilename: Swift.String? {
     @objc get
   }
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {

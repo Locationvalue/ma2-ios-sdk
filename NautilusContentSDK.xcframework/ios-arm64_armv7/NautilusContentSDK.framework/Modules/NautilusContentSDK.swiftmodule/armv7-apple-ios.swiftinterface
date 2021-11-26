@@ -41,7 +41,7 @@ import UIKit
   required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusContent : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var configFilename: Swift.String {
+  @objc public static var configFilename: Swift.String? {
     @objc get
   }
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
@@ -58,8 +58,26 @@ import UIKit
   @objc final public func instantiateContentListViewController() -> UIKit.UIViewController
   @objc final public func instantiateFavoriteContentListViewController() -> UIKit.UIViewController
   @objc final public func instantiateContentDetailViewController(contentID: Swift.Int, contentType: NautilusContentSDK.NautilusContentType) -> UIKit.UIViewController
-  final public func loadFavoriteContents(completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentNetworkError>) -> Swift.Void)
-  @objc final public func loadFavoriteContents(completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func getCommonContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  @objc final public func getCommonContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func getCommonContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  @objc final public func getCommonContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  final public func getPrivateContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  @objc final public func getPrivateContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func getPrivateContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  @objc final public func getPrivateContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  final public func getFavoriteShopContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  @objc final public func getFavoriteShopContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func getFavoriteShopContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  @objc final public func getFavoriteShopContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  final public func updateFavorite(addFavoriteContentIDs: [Swift.Int]?, removeFavoriteContentIDs: [Swift.Int]?, completion: @escaping (Swift.Result<Swift.Void, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  @objc final public func updateFavorite(addFavoriteContentIDs: [Swift.Int]?, removeFavoriteContentIDs: [Swift.Int]?, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  final public func getFavoriteContentList(completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  @objc final public func getFavoriteContentList(completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func getContentCategoryList(completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentCategoryInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  @objc final public func getContentCategoryList(completion: @escaping ([NautilusContentSDK.NautilusContentCategoryInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func sendContentLog(contentLogs: [NautilusContentSDK.NautilusContentLog], completion: @escaping (Swift.Result<Swift.Void, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  final public func sendContentLog(contentLogs: [NautilusContentSDK.NautilusContentLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -67,6 +85,31 @@ import UIKit
   case common
   case `private`
   case favoriteShop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusContentCategoryInfo : ObjectiveC.NSObject {
+  final public let categoryID: Swift.Int
+  final public let parentCategoryID: Swift.Int
+  final public let categoryName: Swift.String
+  final public let sortNumber: Swift.Int
+  final public let alias: Swift.String
+  @objc deinit
+}
+@objc public class NautilusContentLog : ObjectiveC.NSObject {
+  final public let content: NautilusContentSDK.NautilusContentInfo
+  final public let logDate: Foundation.Date
+  final public let logType: NautilusContentSDK.NautilusContentLogType
+  public init(content: NautilusContentSDK.NautilusContentInfo, logType: NautilusContentSDK.NautilusContentLogType)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum NautilusContentLogType : Swift.Int {
+  case detail
+  case url
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -85,13 +128,17 @@ import UIKit
   @objc deinit
 }
 public let NautilusContentErrorDomain: Swift.String
-@objc public enum NautilusContentNetworkError : Swift.Int, Swift.Error {
+@objc public enum NautilusContentError : Swift.Int, Swift.Error {
   case unknown
   case connection
   case apiProcessError
   case httpConnection
   case parseFailure
   case userCancelled
+  case invalidParamater
+  public var nautilusContentErrorCode: Swift.Int {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -129,9 +176,12 @@ public let NautilusContentErrorDomain: Swift.String
 extension NautilusContentSDK.NautilusContentType : Swift.Equatable {}
 extension NautilusContentSDK.NautilusContentType : Swift.Hashable {}
 extension NautilusContentSDK.NautilusContentType : Swift.RawRepresentable {}
-extension NautilusContentSDK.NautilusContentNetworkError : Swift.Equatable {}
-extension NautilusContentSDK.NautilusContentNetworkError : Swift.Hashable {}
-extension NautilusContentSDK.NautilusContentNetworkError : Swift.RawRepresentable {}
+extension NautilusContentSDK.NautilusContentLogType : Swift.Equatable {}
+extension NautilusContentSDK.NautilusContentLogType : Swift.Hashable {}
+extension NautilusContentSDK.NautilusContentLogType : Swift.RawRepresentable {}
+extension NautilusContentSDK.NautilusContentError : Swift.Equatable {}
+extension NautilusContentSDK.NautilusContentError : Swift.Hashable {}
+extension NautilusContentSDK.NautilusContentError : Swift.RawRepresentable {}
 extension NautilusContentSDK.NautilusContentSortKeyName : Swift.Equatable {}
 extension NautilusContentSDK.NautilusContentSortKeyName : Swift.Hashable {}
 extension NautilusContentSDK.NautilusContentSortKeyName : Swift.RawRepresentable {}

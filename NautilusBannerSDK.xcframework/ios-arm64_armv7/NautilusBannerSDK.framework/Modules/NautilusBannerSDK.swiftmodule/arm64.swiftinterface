@@ -68,7 +68,7 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusBanner : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var configFilename: Swift.String {
+  @objc public static var configFilename: Swift.String? {
     @objc get
   }
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {

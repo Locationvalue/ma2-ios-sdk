@@ -247,8 +247,8 @@ enum NautilusCouponPublishType : NSInteger;
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusCouponSDK14NautilusCoupon")
 @interface NautilusCoupon : NSObject <NautilusFeature>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
@@ -276,6 +276,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @class NautilusCouponCategoryInfo;
 @class NautilusCouponPublishTrigger;
 @class NautilusCouponLog;
+@protocol NautilusCouponUseValidObserver;
 
 @interface NautilusCoupon (SWIFT_EXTENSION(NautilusCouponSDK))
 /// 共通クーポン一覧を取得する
@@ -323,6 +324,37 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// クーポン閲覧記録を送信する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)sendCouponLogWithCouponLogs:(NSArray<NautilusCouponLog *> * _Nonnull)couponLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// 指定のクーポンの「有効期限の終了日時」を計算する
+- (NSDate * _Nullable)calculateUsedCouponValidEndDateOf:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// 指定したクーポンが利用済みであれば、現在、利用可能期間内にあるのかを判定する
+/// \param coupon 利用可能期間内かを確認するクーポン
+///
+///
+/// returns:
+///
+/// クーポンが利用済み、かつ、指定された利用可能期間内にある場合は、<code>true</code> を返す
+/// クーポンがまだ利用されていない場合と、利用可能期間外にある場合は、<code>false</code>を返す
+- (BOOL)isValidUsedCoupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// 現在日時からクーポンの有効期間終了までの秒数を取得
+/// \param coupon 有効期間を確認するクーポン
+///
+///
+/// returns:
+/// 有効期間終了までの秒数
+- (NSInteger)calculateUsedCouponValidDurationFromNowOf:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// クーポンの有効期間が終了したら通知するオブザーバを登録
+/// \param observer <code>NautilusCouponUseValidObserver</code> を継承したクラス
+///
+/// \param coupon 有効期間内のクーポン
+///
+///
+/// returns:
+/// 有効期間の終了通知登録が成功したかどうか
+- (BOOL)registerCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// クーポンの有効期間が終了したら通知するオブザーバの登録解除
+/// \param coupon 有効期間の終了通知を登録済みのクーポン
+///
+- (void)unregisterCouponUseValidObserverFor:(NautilusCouponInfo * _Nonnull)coupon;
 @end
 
 @class UIImageView;
@@ -489,6 +521,14 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponUseInfo")
 @interface NautilusCouponUseInfo : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// クーポン利用を監視する
+SWIFT_PROTOCOL("_TtP17NautilusCouponSDK30NautilusCouponUseValidObserver_")
+@protocol NautilusCouponUseValidObserver
+/// クーポンが無効になった時呼ばれる
+- (void)onCouponInvalidWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PublishTiming, open) {
@@ -770,8 +810,8 @@ enum NautilusCouponPublishType : NSInteger;
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusCouponSDK14NautilusCoupon")
 @interface NautilusCoupon : NSObject <NautilusFeature>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
@@ -799,6 +839,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @class NautilusCouponCategoryInfo;
 @class NautilusCouponPublishTrigger;
 @class NautilusCouponLog;
+@protocol NautilusCouponUseValidObserver;
 
 @interface NautilusCoupon (SWIFT_EXTENSION(NautilusCouponSDK))
 /// 共通クーポン一覧を取得する
@@ -846,6 +887,37 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// クーポン閲覧記録を送信する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)sendCouponLogWithCouponLogs:(NSArray<NautilusCouponLog *> * _Nonnull)couponLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// 指定のクーポンの「有効期限の終了日時」を計算する
+- (NSDate * _Nullable)calculateUsedCouponValidEndDateOf:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// 指定したクーポンが利用済みであれば、現在、利用可能期間内にあるのかを判定する
+/// \param coupon 利用可能期間内かを確認するクーポン
+///
+///
+/// returns:
+///
+/// クーポンが利用済み、かつ、指定された利用可能期間内にある場合は、<code>true</code> を返す
+/// クーポンがまだ利用されていない場合と、利用可能期間外にある場合は、<code>false</code>を返す
+- (BOOL)isValidUsedCoupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// 現在日時からクーポンの有効期間終了までの秒数を取得
+/// \param coupon 有効期間を確認するクーポン
+///
+///
+/// returns:
+/// 有効期間終了までの秒数
+- (NSInteger)calculateUsedCouponValidDurationFromNowOf:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// クーポンの有効期間が終了したら通知するオブザーバを登録
+/// \param observer <code>NautilusCouponUseValidObserver</code> を継承したクラス
+///
+/// \param coupon 有効期間内のクーポン
+///
+///
+/// returns:
+/// 有効期間の終了通知登録が成功したかどうか
+- (BOOL)registerCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// クーポンの有効期間が終了したら通知するオブザーバの登録解除
+/// \param coupon 有効期間の終了通知を登録済みのクーポン
+///
+- (void)unregisterCouponUseValidObserverFor:(NautilusCouponInfo * _Nonnull)coupon;
 @end
 
 @class UIImageView;
@@ -1012,6 +1084,14 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponUseInfo")
 @interface NautilusCouponUseInfo : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// クーポン利用を監視する
+SWIFT_PROTOCOL("_TtP17NautilusCouponSDK30NautilusCouponUseValidObserver_")
+@protocol NautilusCouponUseValidObserver
+/// クーポンが無効になった時呼ばれる
+- (void)onCouponInvalidWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PublishTiming, open) {
@@ -1293,8 +1373,8 @@ enum NautilusCouponPublishType : NSInteger;
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusCouponSDK14NautilusCoupon")
 @interface NautilusCoupon : NSObject <NautilusFeature>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
@@ -1322,6 +1402,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @class NautilusCouponCategoryInfo;
 @class NautilusCouponPublishTrigger;
 @class NautilusCouponLog;
+@protocol NautilusCouponUseValidObserver;
 
 @interface NautilusCoupon (SWIFT_EXTENSION(NautilusCouponSDK))
 /// 共通クーポン一覧を取得する
@@ -1369,6 +1450,37 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// クーポン閲覧記録を送信する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)sendCouponLogWithCouponLogs:(NSArray<NautilusCouponLog *> * _Nonnull)couponLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// 指定のクーポンの「有効期限の終了日時」を計算する
+- (NSDate * _Nullable)calculateUsedCouponValidEndDateOf:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// 指定したクーポンが利用済みであれば、現在、利用可能期間内にあるのかを判定する
+/// \param coupon 利用可能期間内かを確認するクーポン
+///
+///
+/// returns:
+///
+/// クーポンが利用済み、かつ、指定された利用可能期間内にある場合は、<code>true</code> を返す
+/// クーポンがまだ利用されていない場合と、利用可能期間外にある場合は、<code>false</code>を返す
+- (BOOL)isValidUsedCoupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// 現在日時からクーポンの有効期間終了までの秒数を取得
+/// \param coupon 有効期間を確認するクーポン
+///
+///
+/// returns:
+/// 有効期間終了までの秒数
+- (NSInteger)calculateUsedCouponValidDurationFromNowOf:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// クーポンの有効期間が終了したら通知するオブザーバを登録
+/// \param observer <code>NautilusCouponUseValidObserver</code> を継承したクラス
+///
+/// \param coupon 有効期間内のクーポン
+///
+///
+/// returns:
+/// 有効期間の終了通知登録が成功したかどうか
+- (BOOL)registerCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// クーポンの有効期間が終了したら通知するオブザーバの登録解除
+/// \param coupon 有効期間の終了通知を登録済みのクーポン
+///
+- (void)unregisterCouponUseValidObserverFor:(NautilusCouponInfo * _Nonnull)coupon;
 @end
 
 @class UIImageView;
@@ -1535,6 +1647,14 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponUseInfo")
 @interface NautilusCouponUseInfo : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// クーポン利用を監視する
+SWIFT_PROTOCOL("_TtP17NautilusCouponSDK30NautilusCouponUseValidObserver_")
+@protocol NautilusCouponUseValidObserver
+/// クーポンが無効になった時呼ばれる
+- (void)onCouponInvalidWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PublishTiming, open) {

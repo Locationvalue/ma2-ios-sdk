@@ -226,14 +226,16 @@ typedef SWIFT_ENUM(NSInteger, NautilusFavoriteShopSortOrder, open) {
 @class UINavigationController;
 @class UIViewController;
 @class NSNumber;
+@class NautilusLocation;
 @class NautilusShopInfo;
 @class NSError;
+@class NautilusShopSearchTagInfo;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC15NautilusShopSDK12NautilusShop")
 @interface NautilusShop : NSObject <NautilusFeature>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
@@ -252,9 +254,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UIViewController * _Nonnull)instantiateFavoriteShop SWIFT_WARN_UNUSED_RESULT;
 /// 店舗詳細VCを返す
 - (UIViewController * _Nonnull)instantiateShopDetailWithShopID:(NSInteger)shopID SWIFT_WARN_UNUSED_RESULT;
+/// 店舗一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 店舗一覧を検索して取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)searchShopWithLocation:(NautilusLocation * _Nonnull)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NautilusShopSearchTagInfo *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 店舗詳細を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getShopDetailWithShopID:(NSInteger)shopID clientShopCD:(NSString * _Nullable)clientShopCD completion:(void (^ _Nonnull)(NautilusShopInfo * _Nullable, NSError * _Nullable))completion;
+/// お気に入り店舗登録、削除を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)updateFavoriteWithAddFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)addFavoriteShopIDs removeFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)removeFavoriteShopIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// お気に入り店舗の一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getFavoriteShopListWithOrder:(enum NautilusFavoriteShopSortOrder)order completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 店舗検索タグ一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getShopSearchTagListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusShopSearchTagInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -564,14 +581,16 @@ typedef SWIFT_ENUM(NSInteger, NautilusFavoriteShopSortOrder, open) {
 @class UINavigationController;
 @class UIViewController;
 @class NSNumber;
+@class NautilusLocation;
 @class NautilusShopInfo;
 @class NSError;
+@class NautilusShopSearchTagInfo;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC15NautilusShopSDK12NautilusShop")
 @interface NautilusShop : NSObject <NautilusFeature>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
@@ -590,9 +609,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UIViewController * _Nonnull)instantiateFavoriteShop SWIFT_WARN_UNUSED_RESULT;
 /// 店舗詳細VCを返す
 - (UIViewController * _Nonnull)instantiateShopDetailWithShopID:(NSInteger)shopID SWIFT_WARN_UNUSED_RESULT;
+/// 店舗一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 店舗一覧を検索して取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)searchShopWithLocation:(NautilusLocation * _Nonnull)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NautilusShopSearchTagInfo *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 店舗詳細を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getShopDetailWithShopID:(NSInteger)shopID clientShopCD:(NSString * _Nullable)clientShopCD completion:(void (^ _Nonnull)(NautilusShopInfo * _Nullable, NSError * _Nullable))completion;
+/// お気に入り店舗登録、削除を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)updateFavoriteWithAddFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)addFavoriteShopIDs removeFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)removeFavoriteShopIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// お気に入り店舗の一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getFavoriteShopListWithOrder:(enum NautilusFavoriteShopSortOrder)order completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 店舗検索タグ一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getShopSearchTagListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusShopSearchTagInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

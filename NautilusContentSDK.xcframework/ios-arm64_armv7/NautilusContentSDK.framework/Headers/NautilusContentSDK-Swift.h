@@ -219,14 +219,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class UIViewController;
 @class NSNumber;
 enum NautilusContentType : NSInteger;
+@class NautilusContentSortKey;
+@class NSDate;
 @class NautilusContentInfo;
 @class NSError;
+@class NautilusContentCategoryInfo;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC18NautilusContentSDK15NautilusContent")
 @interface NautilusContent : NSObject <NautilusFeature>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
@@ -242,12 +245,61 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UIViewController * _Nonnull)instantiateFavoriteContentListViewController SWIFT_WARN_UNUSED_RESULT;
 /// コンテンツ詳細VCを返す
 - (UIViewController * _Nonnull)instantiateContentDetailViewControllerWithContentID:(NSInteger)contentID contentType:(enum NautilusContentType)contentType SWIFT_WARN_UNUSED_RESULT;
+/// 共通コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCommonContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 共通コンテンツの件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCommonContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// 個人別コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrivateContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 個人別コンテンツの件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrivateContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// お気に入り店舗コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteShopContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+/// お気に入り店舗コンテンツの件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteShopContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// お気に入りコンテンツ登録、削除を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)updateFavoriteWithAddFavoriteContentIDs:(NSArray<NSNumber *> * _Nullable)addFavoriteContentIDs removeFavoriteContentIDs:(NSArray<NSNumber *> * _Nullable)removeFavoriteContentIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// お気に入りコンテンツの一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)loadFavoriteContentsWithCompletion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getFavoriteContentListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+/// コンテンツカテゴリー一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getContentCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusContentCategoryInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+/// コンテンツカテゴリーのデータ
+SWIFT_CLASS("_TtC18NautilusContentSDK27NautilusContentCategoryInfo")
+@interface NautilusContentCategoryInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, NautilusContentError, open) {
+/// 不明
+  NautilusContentErrorUnknown = 0,
+/// 接続エラー
+  NautilusContentErrorConnection = 1,
+/// API処理エラー
+  NautilusContentErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusContentErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusContentErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusContentErrorUserCancelled = 5,
+  NautilusContentErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusContentErrorDomain = @"NautilusContentSDK.NautilusContentError";
 
 
 /// コンテンツ画像一覧
@@ -266,21 +318,21 @@ SWIFT_CLASS("_TtC18NautilusContentSDK19NautilusContentInfo")
 @end
 
 
-typedef SWIFT_ENUM(NSInteger, NautilusContentNetworkError, open) {
-/// 不明
-  NautilusContentNetworkErrorUnknown = 0,
-/// 接続エラー
-  NautilusContentNetworkErrorConnection = 1,
-/// API処理エラー
-  NautilusContentNetworkErrorApiProcessError = 2,
-/// HTTP/HTTPS通信エラー
-  NautilusContentNetworkErrorHttpConnection = 3,
-/// レスポンスのパースエラー
-  NautilusContentNetworkErrorParseFailure = 4,
-/// 明示的にユーザーによりキャンセルされた
-  NautilusContentNetworkErrorUserCancelled = 5,
+
+/// コンテンツ閲覧APIに引き渡すパラメーター
+SWIFT_CLASS("_TtC18NautilusContentSDK18NautilusContentLog")
+@interface NautilusContentLog : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// コンテンツ閲覧APIで記録するログ種別
+typedef SWIFT_ENUM(NSInteger, NautilusContentLogType, open) {
+/// 1:詳細
+  NautilusContentLogTypeDetail = 0,
+/// 2:URLタップ
+  NautilusContentLogTypeUrl = 1,
 };
-static NSString * _Nonnull const NautilusContentNetworkErrorDomain = @"NautilusContentSDK.NautilusContentNetworkError";
 
 
 /// APIから取得するコンテンツデータの並び順
@@ -543,14 +595,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class UIViewController;
 @class NSNumber;
 enum NautilusContentType : NSInteger;
+@class NautilusContentSortKey;
+@class NSDate;
 @class NautilusContentInfo;
 @class NSError;
+@class NautilusContentCategoryInfo;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC18NautilusContentSDK15NautilusContent")
 @interface NautilusContent : NSObject <NautilusFeature>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
@@ -566,12 +621,61 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UIViewController * _Nonnull)instantiateFavoriteContentListViewController SWIFT_WARN_UNUSED_RESULT;
 /// コンテンツ詳細VCを返す
 - (UIViewController * _Nonnull)instantiateContentDetailViewControllerWithContentID:(NSInteger)contentID contentType:(enum NautilusContentType)contentType SWIFT_WARN_UNUSED_RESULT;
+/// 共通コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCommonContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 共通コンテンツの件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getCommonContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// 個人別コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrivateContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 個人別コンテンツの件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getPrivateContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// お気に入り店舗コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteShopContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+/// お気に入り店舗コンテンツの件数を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getFavoriteShopContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// お気に入りコンテンツ登録、削除を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)updateFavoriteWithAddFavoriteContentIDs:(NSArray<NSNumber *> * _Nullable)addFavoriteContentIDs removeFavoriteContentIDs:(NSArray<NSNumber *> * _Nullable)removeFavoriteContentIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// お気に入りコンテンツの一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)loadFavoriteContentsWithCompletion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getFavoriteContentListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+/// コンテンツカテゴリー一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)getContentCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusContentCategoryInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+/// コンテンツカテゴリーのデータ
+SWIFT_CLASS("_TtC18NautilusContentSDK27NautilusContentCategoryInfo")
+@interface NautilusContentCategoryInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, NautilusContentError, open) {
+/// 不明
+  NautilusContentErrorUnknown = 0,
+/// 接続エラー
+  NautilusContentErrorConnection = 1,
+/// API処理エラー
+  NautilusContentErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusContentErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusContentErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusContentErrorUserCancelled = 5,
+  NautilusContentErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusContentErrorDomain = @"NautilusContentSDK.NautilusContentError";
 
 
 /// コンテンツ画像一覧
@@ -590,21 +694,21 @@ SWIFT_CLASS("_TtC18NautilusContentSDK19NautilusContentInfo")
 @end
 
 
-typedef SWIFT_ENUM(NSInteger, NautilusContentNetworkError, open) {
-/// 不明
-  NautilusContentNetworkErrorUnknown = 0,
-/// 接続エラー
-  NautilusContentNetworkErrorConnection = 1,
-/// API処理エラー
-  NautilusContentNetworkErrorApiProcessError = 2,
-/// HTTP/HTTPS通信エラー
-  NautilusContentNetworkErrorHttpConnection = 3,
-/// レスポンスのパースエラー
-  NautilusContentNetworkErrorParseFailure = 4,
-/// 明示的にユーザーによりキャンセルされた
-  NautilusContentNetworkErrorUserCancelled = 5,
+
+/// コンテンツ閲覧APIに引き渡すパラメーター
+SWIFT_CLASS("_TtC18NautilusContentSDK18NautilusContentLog")
+@interface NautilusContentLog : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// コンテンツ閲覧APIで記録するログ種別
+typedef SWIFT_ENUM(NSInteger, NautilusContentLogType, open) {
+/// 1:詳細
+  NautilusContentLogTypeDetail = 0,
+/// 2:URLタップ
+  NautilusContentLogTypeUrl = 1,
 };
-static NSString * _Nonnull const NautilusContentNetworkErrorDomain = @"NautilusContentSDK.NautilusContentNetworkError";
 
 
 /// APIから取得するコンテンツデータの並び順

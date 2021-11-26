@@ -125,7 +125,7 @@ import Swift
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusUserInfo : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var configFilename: Swift.String {
+  @objc public static var configFilename: Swift.String? {
     @objc get
   }
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {

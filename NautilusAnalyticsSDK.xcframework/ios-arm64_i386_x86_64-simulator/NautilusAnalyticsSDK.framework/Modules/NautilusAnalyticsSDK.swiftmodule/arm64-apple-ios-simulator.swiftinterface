@@ -23,7 +23,7 @@ extension Notification.NautilusApp.UserInfoKey {
   @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
     @objc get
   }
-  @objc public static var configFilename: Swift.String {
+  @objc public static var configFilename: Swift.String? {
     @objc get
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp

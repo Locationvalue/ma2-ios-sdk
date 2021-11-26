@@ -380,8 +380,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusUserGenderType, open) {
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC19NautilusUserInfoSDK16NautilusUserInfo")
 @interface NautilusUserInfo : NSObject <NautilusFeature>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
@@ -836,8 +836,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusUserGenderType, open) {
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC19NautilusUserInfoSDK16NautilusUserInfo")
 @interface NautilusUserInfo : NSObject <NautilusFeature>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
@@ -1292,8 +1292,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusUserGenderType, open) {
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC19NautilusUserInfoSDK16NautilusUserInfo")
 @interface NautilusUserInfo : NSObject <NautilusFeature>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)

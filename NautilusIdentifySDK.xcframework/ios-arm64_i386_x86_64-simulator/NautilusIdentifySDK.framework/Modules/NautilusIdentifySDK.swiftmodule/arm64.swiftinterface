@@ -44,7 +44,7 @@ public let NautilusUserExternalIDTypeNone: Swift.Int
   @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
     @objc get
   }
-  @objc public static var configFilename: Swift.String {
+  @objc public static var configFilename: Swift.String? {
     @objc get
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
@@ -65,8 +65,31 @@ public let NautilusUserExternalIDTypeNone: Swift.Int
   @objc final public func setCodeImageProvider(_ codeImageProvider: NautilusIdentifySDK.NautilusUserInfoCodeImageProvider?)
   @objc final public func setCodeImageSize(_ codeImageSize: CoreGraphics.CGSize)
   @objc final public func removeCID()
+  @objc final public func removeReferenceNumber()
+  final public func getReferenceNumber(completion: @escaping (Swift.Result<Swift.String, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
+}
+public let NautilusIdentifyErrorDomain: Swift.String
+@objc public enum NautilusIdentifyError : Swift.Int, Swift.Error {
+  case unknown
+  case connection
+  case apiProcessError
+  case httpConnection
+  case parseFailure
+  case userCancelled
+  case invalidParamater
+  public var nautilusIdentifyErrorCode: Swift.Int {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc public protocol NautilusUserInfoCodeImageProvider {
   @objc func provideCodeImage(for codeString: Swift.String, size: CoreGraphics.CGSize) -> UIKit.UIImage?
@@ -78,3 +101,6 @@ extension Notification.NautilusApp {
 extension Notification.NautilusApp.UserInfoKey {
   public static let newCID: Swift.String
 }
+extension NautilusIdentifySDK.NautilusIdentifyError : Swift.Equatable {}
+extension NautilusIdentifySDK.NautilusIdentifyError : Swift.Hashable {}
+extension NautilusIdentifySDK.NautilusIdentifyError : Swift.RawRepresentable {}

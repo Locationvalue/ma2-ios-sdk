@@ -229,8 +229,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentTyp
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
@@ -248,11 +248,32 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UIView * _Nonnull)getUserInfoViewWithViewType:(SWIFT_METATYPE(NautilusUserInfoView) _Nonnull)viewType SWIFT_WARN_UNUSED_RESULT;
 - (void)setCodeImageProvider:(id <NautilusUserInfoCodeImageProvider> _Nullable)codeImageProvider;
 - (void)setCodeImageSize:(CGSize)codeImageSize;
+/// CIDを削除する
 - (void)removeCID;
+/// 問い合わせ番号を削除する
+- (void)removeReferenceNumber;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
+/// 不明
+  NautilusIdentifyErrorUnknown = 0,
+/// 接続エラー
+  NautilusIdentifyErrorConnection = 1,
+/// API処理エラー
+  NautilusIdentifyErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusIdentifyErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusIdentifyErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusIdentifyErrorUserCancelled = 5,
+/// パラメータが不正
+  NautilusIdentifyErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusIdentifyErrorDomain = @"NautilusIdentifySDK.NautilusIdentifyError";
 
 
 /// Nautilusのユーザー情報
@@ -536,8 +557,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentTyp
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
@@ -555,11 +576,32 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UIView * _Nonnull)getUserInfoViewWithViewType:(SWIFT_METATYPE(NautilusUserInfoView) _Nonnull)viewType SWIFT_WARN_UNUSED_RESULT;
 - (void)setCodeImageProvider:(id <NautilusUserInfoCodeImageProvider> _Nullable)codeImageProvider;
 - (void)setCodeImageSize:(CGSize)codeImageSize;
+/// CIDを削除する
 - (void)removeCID;
+/// 問い合わせ番号を削除する
+- (void)removeReferenceNumber;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
+/// 不明
+  NautilusIdentifyErrorUnknown = 0,
+/// 接続エラー
+  NautilusIdentifyErrorConnection = 1,
+/// API処理エラー
+  NautilusIdentifyErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusIdentifyErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusIdentifyErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusIdentifyErrorUserCancelled = 5,
+/// パラメータが不正
+  NautilusIdentifyErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusIdentifyErrorDomain = @"NautilusIdentifySDK.NautilusIdentifyError";
 
 
 /// Nautilusのユーザー情報
@@ -843,8 +885,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentTyp
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
@@ -862,11 +904,32 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UIView * _Nonnull)getUserInfoViewWithViewType:(SWIFT_METATYPE(NautilusUserInfoView) _Nonnull)viewType SWIFT_WARN_UNUSED_RESULT;
 - (void)setCodeImageProvider:(id <NautilusUserInfoCodeImageProvider> _Nullable)codeImageProvider;
 - (void)setCodeImageSize:(CGSize)codeImageSize;
+/// CIDを削除する
 - (void)removeCID;
+/// 問い合わせ番号を削除する
+- (void)removeReferenceNumber;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
+/// 不明
+  NautilusIdentifyErrorUnknown = 0,
+/// 接続エラー
+  NautilusIdentifyErrorConnection = 1,
+/// API処理エラー
+  NautilusIdentifyErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusIdentifyErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusIdentifyErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusIdentifyErrorUserCancelled = 5,
+/// パラメータが不正
+  NautilusIdentifyErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusIdentifyErrorDomain = @"NautilusIdentifySDK.NautilusIdentifyError";
 
 
 /// Nautilusのユーザー情報

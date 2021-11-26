@@ -16,7 +16,7 @@ import UIKit
   @objc func introductionDidSkip(_ introduction: NautilusIntroSDK.NautilusIntroduction)
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusIntroduction : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var configFilename: Swift.String {
+  @objc public static var configFilename: Swift.String? {
     @objc get
   }
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {

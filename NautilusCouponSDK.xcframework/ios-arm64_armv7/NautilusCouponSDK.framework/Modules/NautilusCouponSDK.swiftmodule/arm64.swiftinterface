@@ -9,6 +9,7 @@ import NautilusCoreSDK
 import NautilusIdentifySDK
 import NautilusImagingSDK
 import NautilusLoggingSDK
+import NautilusServerTimeSDK
 import NautilusUISDK
 import SafariServices
 import Swift
@@ -61,6 +62,9 @@ import UIKit
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@objc public protocol NautilusCouponUseValidObserver {
+  @objc func onCouponInvalid(coupon: NautilusCouponSDK.NautilusCouponInfo)
+}
 @_hasMissingDesignatedInitializers @objc public class NautilusCouponPublishTrigger : ObjectiveC.NSObject {
   final public let publishTriggerType: NautilusCouponSDK.NautilusCouponPublishTriggerType
   final public let codeText: Swift.String?
@@ -110,7 +114,7 @@ public let NautilusCouponErrorDomain: Swift.String
   }
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusCoupon : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var configFilename: Swift.String {
+  @objc public static var configFilename: Swift.String? {
     @objc get
   }
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
@@ -161,6 +165,11 @@ extension NautilusCoupon {
   @objc final public func publishPrizeCoupon(trigger: NautilusCouponSDK.NautilusCouponPublishTrigger, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   final public func sendCouponLog(couponLogs: [NautilusCouponSDK.NautilusCouponLog], completion: @escaping (Swift.Result<Swift.Void, NautilusCouponSDK.NautilusCouponError>) -> Swift.Void)
   @objc final public func sendCouponLog(couponLogs: [NautilusCouponSDK.NautilusCouponLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc final public func calculateUsedCouponValidEndDate(of coupon: NautilusCouponSDK.NautilusCouponInfo) -> Foundation.Date?
+  @objc final public func isValidUsedCoupon(_ coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
+  @objc final public func calculateUsedCouponValidDurationFromNow(of coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Int
+  @objc final public func registerCouponUseValidObserver(_ observer: NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
+  @objc final public func unregisterCouponUseValidObserver(for coupon: NautilusCouponSDK.NautilusCouponInfo)
 }
 @_hasMissingDesignatedInitializers @objc public class NautilusCouponLog : ObjectiveC.NSObject {
   final public let coupon: NautilusCouponSDK.NautilusCouponInfo

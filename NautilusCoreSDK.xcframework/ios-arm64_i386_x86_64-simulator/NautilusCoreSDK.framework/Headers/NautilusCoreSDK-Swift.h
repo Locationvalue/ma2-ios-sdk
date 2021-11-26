@@ -293,8 +293,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusDeploymentEnvironment, open) {
 SWIFT_PROTOCOL("_TtP15NautilusCoreSDK15NautilusFeature_")
 @protocol NautilusFeature <NautilusComponent>
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @end
 
@@ -682,8 +682,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusDeploymentEnvironment, open) {
 SWIFT_PROTOCOL("_TtP15NautilusCoreSDK15NautilusFeature_")
 @protocol NautilusFeature <NautilusComponent>
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @end
 
@@ -1071,8 +1071,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusDeploymentEnvironment, open) {
 SWIFT_PROTOCOL("_TtP15NautilusCoreSDK15NautilusFeature_")
 @protocol NautilusFeature <NautilusComponent>
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull configFilename;)
-+ (NSString * _Nonnull)configFilename SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @end
 

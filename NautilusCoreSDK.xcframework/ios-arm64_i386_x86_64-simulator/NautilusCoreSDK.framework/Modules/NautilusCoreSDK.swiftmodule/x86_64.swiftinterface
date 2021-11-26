@@ -39,7 +39,7 @@ extension Notification {
 }
 @objc public protocol NautilusFeature : NautilusContainerSDK.NautilusComponent {
   @objc static func initialize(application: NautilusCoreSDK.NautilusApp)
-  @objc static var configFilename: Swift.String { get }
+  @objc static var configFilename: Swift.String? { get }
   @objc var app: NautilusCoreSDK.NautilusApp { get }
 }
 public protocol APIClient {
@@ -333,6 +333,10 @@ extension Int : NautilusCoreSDK.UserDefaultConvertible {
   public init?(with object: Any)
   public func object() -> Any?
 }
+extension Int64 : NautilusCoreSDK.UserDefaultConvertible {
+  public init?(with object: Any)
+  public func object() -> Any?
+}
 extension Bool : NautilusCoreSDK.UserDefaultConvertible {
   public init?(with object: Any)
   public func object() -> Any?
@@ -460,6 +464,9 @@ open class NautilusAPICommonRequest<P, T, TD> where P : NautilusCoreSDK.RequestP
     get
   }
   open var path: Swift.String {
+    get
+  }
+  open var method: NautilusCoreSDK.RequestMethod {
     get
   }
   public init(app: NautilusCoreSDK.NautilusApp, requestParameter: NautilusCoreSDK.NautilusAPICommonRequest<P, T, TD>.Parameter?, requestPolicy: NautilusCoreSDK.RequestPolicy = NautilusRequestPolicy.Preset.default)
