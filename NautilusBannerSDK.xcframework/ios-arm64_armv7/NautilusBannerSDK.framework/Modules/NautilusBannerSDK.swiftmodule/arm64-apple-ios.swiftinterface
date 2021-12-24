@@ -22,6 +22,20 @@ import UIKit
   public func prepare(for bannerInstance: NautilusBannerSDK.NautilusBanner)
   @objc deinit
 }
+@objc public class NautilusBannerLog : ObjectiveC.NSObject {
+  public init(bannerID: Swift.Int, actionDatetime: Foundation.Date, type: NautilusBannerSDK.NautilusBannerLogType)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum NautilusBannerLogType : Swift.Int {
+  case show
+  case tap
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers @objc public class NautilusBannerInfo : ObjectiveC.NSObject {
   final public let bannerIdentifier: Swift.Int
   final public let publishStartDatetimeString: Swift.String
@@ -35,17 +49,23 @@ import UIKit
 @objc public protocol NautilusBannerViewDelegate {
   @objc func willLoadBannerSet()
   @objc func didLoadBannerImages()
-  @objc func failLoadBannerSet(error: NautilusBannerSDK.BannerViewError)
-  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, tapInternalLink link: NautilusBannerSDK.NautilusBannerWebLink) -> Swift.Bool
-  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, tapExternalLink link: NautilusBannerSDK.NautilusBannerWebLink) -> Swift.Bool
-  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, tapAppLink link: NautilusBannerSDK.NautilusBannerAppLink) -> Swift.Bool
+  @objc func failLoadBannerSet(error: NautilusBannerSDK.NautilusBannerError)
+  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, didTap banner: NautilusBannerSDK.NautilusBannerInfo, tapInternalLink link: NautilusBannerSDK.NautilusBannerWebLink) -> Swift.Bool
+  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, didTap banner: NautilusBannerSDK.NautilusBannerInfo, tapExternalLink link: NautilusBannerSDK.NautilusBannerWebLink) -> Swift.Bool
+  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, didTap banner: NautilusBannerSDK.NautilusBannerInfo, tapAppLink link: NautilusBannerSDK.NautilusBannerAppLink) -> Swift.Bool
 }
 public let NautilusBannerErrorDomain: Swift.String
-@objc public enum BannerViewError : Swift.Int, Swift.Error {
+@objc public enum NautilusBannerError : Swift.Int, Swift.Error {
   case unknown
-  case connectionFailure
-  case unavailable
+  case connection
+  case apiProcessError
+  case httpConnection
+  case parseFailure
   case userCancelled
+  case invalidParamater
+  public var nautilusBannerErrorCode: Swift.Int {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -82,8 +102,12 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func banner() -> NautilusBannerSDK.NautilusBanner
   @objc(bannerAppNamed:) public static func banner(appName: Swift.String) -> NautilusBannerSDK.NautilusBanner
+  final public func getBannerCategoryList(completion: @escaping (Swift.Result<[NautilusBannerSDK.NautilusBannerCategory], NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
   @objc final public func getBannerCategoryList(completion: @escaping ([NautilusBannerSDK.NautilusBannerCategory]?, Foundation.NSError?) -> Swift.Void)
-  final public func getBannerCategoryList(completion: @escaping (Swift.Result<[NautilusBannerSDK.NautilusBannerCategory], NautilusBannerSDK.BannerViewError>) -> Swift.Void)
+  final public func getBannerList(categoryID: Swift.Int, completion: @escaping (Swift.Result<[NautilusBannerSDK.NautilusBannerInfo], NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
+  @objc final public func getBannerList(categoryID: Swift.Int, completion: @escaping ([NautilusBannerSDK.NautilusBannerInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Result<Swift.Void, NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
+  @objc final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -117,6 +141,9 @@ extension NautilusBannerCarouselView : UIKit.UIScrollViewDelegate {
   override public func prepare(for bannerInstance: NautilusBannerSDK.NautilusBanner)
   @objc deinit
 }
-extension NautilusBannerSDK.BannerViewError : Swift.Equatable {}
-extension NautilusBannerSDK.BannerViewError : Swift.Hashable {}
-extension NautilusBannerSDK.BannerViewError : Swift.RawRepresentable {}
+extension NautilusBannerSDK.NautilusBannerLogType : Swift.Equatable {}
+extension NautilusBannerSDK.NautilusBannerLogType : Swift.Hashable {}
+extension NautilusBannerSDK.NautilusBannerLogType : Swift.RawRepresentable {}
+extension NautilusBannerSDK.NautilusBannerError : Swift.Equatable {}
+extension NautilusBannerSDK.NautilusBannerError : Swift.Hashable {}
+extension NautilusBannerSDK.NautilusBannerError : Swift.RawRepresentable {}

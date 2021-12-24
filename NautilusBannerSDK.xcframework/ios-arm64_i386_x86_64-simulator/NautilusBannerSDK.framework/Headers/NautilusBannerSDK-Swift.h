@@ -213,25 +213,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-/// バナーの操作・処理に失敗した理由
-typedef SWIFT_ENUM(NSInteger, BannerViewError, open) {
-/// エラー理由不明
-  BannerViewErrorUnknown = 0,
-/// ネットワークエラー (ネットワーク接続に問題あり)
-  BannerViewErrorConnectionFailure = 1,
-/// バナーセット利用不可
-  BannerViewErrorUnavailable = 2,
-/// ユーザに明示的にキャンセルされた
-  BannerViewErrorUserCancelled = 3,
-};
-static NSString * _Nonnull const BannerViewErrorDomain = @"NautilusBannerSDK.BannerViewError";
-
 
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
 @class NautilusBannerCategory;
 @class NSError;
+@class NSNumber;
+@class NautilusBannerInfo;
+@class NautilusBannerLog;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusBannerSDK14NautilusBanner")
@@ -248,9 +238,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NautilusBanner * _Nonnull)banner SWIFT_WARN_UNUSED_RESULT;
 + (NautilusBanner * _Nonnull)bannerAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// バナーのカテゴリー一覧を取得する
-/// \param completion カテゴリ一覧
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param completion 一覧を取得した後実行するブロック
 ///
 - (void)getBannerCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusBannerCategory *> * _Nullable, NSError * _Nullable))completion;
+/// 指定されたカテゴリのバナー情報一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param categoryID カテゴリID
+///
+/// \param completion 一覧を取得した後実行するブロック
+///
+- (void)getBannerListWithCategoryID:(NSInteger)categoryID completion:(void (^ _Nonnull)(NSArray<NautilusBannerInfo *> * _Nullable, NSError * _Nullable))completion;
+/// バナーアクションログを送信
+/// \param bannerLogs <code>NautilusBannerLog</code>の配列
+///
+/// \param completion ログ送信後実行するブロック
+///
+- (void)sendBannerLogWithBannerLogs:(NSArray<NautilusBannerLog *> * _Nonnull)bannerLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -281,7 +285,6 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK26NautilusBannerCarouselView")
 @end
 
 @class UIScrollView;
-@class NSNumber;
 
 @interface NautilusBannerCarouselView (SWIFT_EXTENSION(NautilusBannerSDK)) <UIScrollViewDelegate>
 - (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
@@ -297,6 +300,24 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK22NautilusBannerCategory")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+/// バナーの操作・処理に失敗した理由
+typedef SWIFT_ENUM(NSInteger, NautilusBannerError, open) {
+/// 不明
+  NautilusBannerErrorUnknown = 0,
+/// 接続エラー
+  NautilusBannerErrorConnection = 1,
+/// API処理エラー
+  NautilusBannerErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusBannerErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusBannerErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusBannerErrorUserCancelled = 5,
+  NautilusBannerErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusBannerErrorDomain = @"NautilusBannerSDK.NautilusBannerError";
 
 
 /// バナー情報
@@ -315,6 +336,20 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK22NautilusBannerListView")
 @end
 
 
+/// バナーログ
+SWIFT_CLASS("_TtC17NautilusBannerSDK17NautilusBannerLog")
+@interface NautilusBannerLog : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// バナーログを送信するタイミング
+typedef SWIFT_ENUM(NSInteger, NautilusBannerLogType, open) {
+  NautilusBannerLogTypeShow = 0,
+  NautilusBannerLogTypeTap = 1,
+};
+
+
 @class NautilusBannerWebLink;
 
 /// バナーの表示タイミング・タップした時の操作をアプリ側で制御するためのデリゲート
@@ -325,24 +360,24 @@ SWIFT_PROTOCOL("_TtP17NautilusBannerSDK26NautilusBannerViewDelegate_")
 /// バナーの取得、バナー画像の読み込みが完了した時に呼ばれる
 - (void)didLoadBannerImages;
 /// バナーの処理に失敗した時に呼ばれる
-/// \param error BannerViewError
+/// \param error NautilusBannerError
 ///
-- (void)failLoadBannerSetWithError:(enum BannerViewError)error;
+- (void)failLoadBannerSetWithError:(enum NautilusBannerError)error;
 /// バナーViewのURLがタップされた時に呼ばれる
 /// * - Parameters:
 /// *   - bannerView: NautilusBannerView
 /// *   - link: NautilusBannerWebLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView tapInternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapInternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 /// バナーViewのURLがタップされた時に呼ばれる（SFSafariViewController）
 /// * - Parameters:
 /// *   - bannerView: NautilusBannerView
 /// *   - link: NautilusBannerWebLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView tapExternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapExternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 /// バナーViewのアプリ内リンクがタップされた時に呼ばれる（アプリ内遷移）
 /// * - Parameters:
 /// *   - bannerView: NautilusBannerView
 /// *  - link: NautilusBannerAppLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView tapAppLink:(NautilusBannerAppLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapAppLink:(NautilusBannerAppLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -573,25 +608,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-/// バナーの操作・処理に失敗した理由
-typedef SWIFT_ENUM(NSInteger, BannerViewError, open) {
-/// エラー理由不明
-  BannerViewErrorUnknown = 0,
-/// ネットワークエラー (ネットワーク接続に問題あり)
-  BannerViewErrorConnectionFailure = 1,
-/// バナーセット利用不可
-  BannerViewErrorUnavailable = 2,
-/// ユーザに明示的にキャンセルされた
-  BannerViewErrorUserCancelled = 3,
-};
-static NSString * _Nonnull const BannerViewErrorDomain = @"NautilusBannerSDK.BannerViewError";
-
 
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
 @class NautilusBannerCategory;
 @class NSError;
+@class NSNumber;
+@class NautilusBannerInfo;
+@class NautilusBannerLog;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusBannerSDK14NautilusBanner")
@@ -608,9 +633,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NautilusBanner * _Nonnull)banner SWIFT_WARN_UNUSED_RESULT;
 + (NautilusBanner * _Nonnull)bannerAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// バナーのカテゴリー一覧を取得する
-/// \param completion カテゴリ一覧
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param completion 一覧を取得した後実行するブロック
 ///
 - (void)getBannerCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusBannerCategory *> * _Nullable, NSError * _Nullable))completion;
+/// 指定されたカテゴリのバナー情報一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param categoryID カテゴリID
+///
+/// \param completion 一覧を取得した後実行するブロック
+///
+- (void)getBannerListWithCategoryID:(NSInteger)categoryID completion:(void (^ _Nonnull)(NSArray<NautilusBannerInfo *> * _Nullable, NSError * _Nullable))completion;
+/// バナーアクションログを送信
+/// \param bannerLogs <code>NautilusBannerLog</code>の配列
+///
+/// \param completion ログ送信後実行するブロック
+///
+- (void)sendBannerLogWithBannerLogs:(NSArray<NautilusBannerLog *> * _Nonnull)bannerLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -641,7 +680,6 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK26NautilusBannerCarouselView")
 @end
 
 @class UIScrollView;
-@class NSNumber;
 
 @interface NautilusBannerCarouselView (SWIFT_EXTENSION(NautilusBannerSDK)) <UIScrollViewDelegate>
 - (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
@@ -657,6 +695,24 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK22NautilusBannerCategory")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+/// バナーの操作・処理に失敗した理由
+typedef SWIFT_ENUM(NSInteger, NautilusBannerError, open) {
+/// 不明
+  NautilusBannerErrorUnknown = 0,
+/// 接続エラー
+  NautilusBannerErrorConnection = 1,
+/// API処理エラー
+  NautilusBannerErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusBannerErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusBannerErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusBannerErrorUserCancelled = 5,
+  NautilusBannerErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusBannerErrorDomain = @"NautilusBannerSDK.NautilusBannerError";
 
 
 /// バナー情報
@@ -675,6 +731,20 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK22NautilusBannerListView")
 @end
 
 
+/// バナーログ
+SWIFT_CLASS("_TtC17NautilusBannerSDK17NautilusBannerLog")
+@interface NautilusBannerLog : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// バナーログを送信するタイミング
+typedef SWIFT_ENUM(NSInteger, NautilusBannerLogType, open) {
+  NautilusBannerLogTypeShow = 0,
+  NautilusBannerLogTypeTap = 1,
+};
+
+
 @class NautilusBannerWebLink;
 
 /// バナーの表示タイミング・タップした時の操作をアプリ側で制御するためのデリゲート
@@ -685,24 +755,24 @@ SWIFT_PROTOCOL("_TtP17NautilusBannerSDK26NautilusBannerViewDelegate_")
 /// バナーの取得、バナー画像の読み込みが完了した時に呼ばれる
 - (void)didLoadBannerImages;
 /// バナーの処理に失敗した時に呼ばれる
-/// \param error BannerViewError
+/// \param error NautilusBannerError
 ///
-- (void)failLoadBannerSetWithError:(enum BannerViewError)error;
+- (void)failLoadBannerSetWithError:(enum NautilusBannerError)error;
 /// バナーViewのURLがタップされた時に呼ばれる
 /// * - Parameters:
 /// *   - bannerView: NautilusBannerView
 /// *   - link: NautilusBannerWebLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView tapInternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapInternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 /// バナーViewのURLがタップされた時に呼ばれる（SFSafariViewController）
 /// * - Parameters:
 /// *   - bannerView: NautilusBannerView
 /// *   - link: NautilusBannerWebLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView tapExternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapExternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 /// バナーViewのアプリ内リンクがタップされた時に呼ばれる（アプリ内遷移）
 /// * - Parameters:
 /// *   - bannerView: NautilusBannerView
 /// *  - link: NautilusBannerAppLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView tapAppLink:(NautilusBannerAppLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapAppLink:(NautilusBannerAppLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -933,25 +1003,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-/// バナーの操作・処理に失敗した理由
-typedef SWIFT_ENUM(NSInteger, BannerViewError, open) {
-/// エラー理由不明
-  BannerViewErrorUnknown = 0,
-/// ネットワークエラー (ネットワーク接続に問題あり)
-  BannerViewErrorConnectionFailure = 1,
-/// バナーセット利用不可
-  BannerViewErrorUnavailable = 2,
-/// ユーザに明示的にキャンセルされた
-  BannerViewErrorUserCancelled = 3,
-};
-static NSString * _Nonnull const BannerViewErrorDomain = @"NautilusBannerSDK.BannerViewError";
-
 
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
 @class NautilusBannerCategory;
 @class NSError;
+@class NSNumber;
+@class NautilusBannerInfo;
+@class NautilusBannerLog;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusBannerSDK14NautilusBanner")
@@ -968,9 +1028,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NautilusBanner * _Nonnull)banner SWIFT_WARN_UNUSED_RESULT;
 + (NautilusBanner * _Nonnull)bannerAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// バナーのカテゴリー一覧を取得する
-/// \param completion カテゴリ一覧
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param completion 一覧を取得した後実行するブロック
 ///
 - (void)getBannerCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusBannerCategory *> * _Nullable, NSError * _Nullable))completion;
+/// 指定されたカテゴリのバナー情報一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param categoryID カテゴリID
+///
+/// \param completion 一覧を取得した後実行するブロック
+///
+- (void)getBannerListWithCategoryID:(NSInteger)categoryID completion:(void (^ _Nonnull)(NSArray<NautilusBannerInfo *> * _Nullable, NSError * _Nullable))completion;
+/// バナーアクションログを送信
+/// \param bannerLogs <code>NautilusBannerLog</code>の配列
+///
+/// \param completion ログ送信後実行するブロック
+///
+- (void)sendBannerLogWithBannerLogs:(NSArray<NautilusBannerLog *> * _Nonnull)bannerLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1001,7 +1075,6 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK26NautilusBannerCarouselView")
 @end
 
 @class UIScrollView;
-@class NSNumber;
 
 @interface NautilusBannerCarouselView (SWIFT_EXTENSION(NautilusBannerSDK)) <UIScrollViewDelegate>
 - (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
@@ -1017,6 +1090,24 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK22NautilusBannerCategory")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+/// バナーの操作・処理に失敗した理由
+typedef SWIFT_ENUM(NSInteger, NautilusBannerError, open) {
+/// 不明
+  NautilusBannerErrorUnknown = 0,
+/// 接続エラー
+  NautilusBannerErrorConnection = 1,
+/// API処理エラー
+  NautilusBannerErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  NautilusBannerErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  NautilusBannerErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  NautilusBannerErrorUserCancelled = 5,
+  NautilusBannerErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const NautilusBannerErrorDomain = @"NautilusBannerSDK.NautilusBannerError";
 
 
 /// バナー情報
@@ -1035,6 +1126,20 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK22NautilusBannerListView")
 @end
 
 
+/// バナーログ
+SWIFT_CLASS("_TtC17NautilusBannerSDK17NautilusBannerLog")
+@interface NautilusBannerLog : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// バナーログを送信するタイミング
+typedef SWIFT_ENUM(NSInteger, NautilusBannerLogType, open) {
+  NautilusBannerLogTypeShow = 0,
+  NautilusBannerLogTypeTap = 1,
+};
+
+
 @class NautilusBannerWebLink;
 
 /// バナーの表示タイミング・タップした時の操作をアプリ側で制御するためのデリゲート
@@ -1045,24 +1150,24 @@ SWIFT_PROTOCOL("_TtP17NautilusBannerSDK26NautilusBannerViewDelegate_")
 /// バナーの取得、バナー画像の読み込みが完了した時に呼ばれる
 - (void)didLoadBannerImages;
 /// バナーの処理に失敗した時に呼ばれる
-/// \param error BannerViewError
+/// \param error NautilusBannerError
 ///
-- (void)failLoadBannerSetWithError:(enum BannerViewError)error;
+- (void)failLoadBannerSetWithError:(enum NautilusBannerError)error;
 /// バナーViewのURLがタップされた時に呼ばれる
 /// * - Parameters:
 /// *   - bannerView: NautilusBannerView
 /// *   - link: NautilusBannerWebLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView tapInternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapInternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 /// バナーViewのURLがタップされた時に呼ばれる（SFSafariViewController）
 /// * - Parameters:
 /// *   - bannerView: NautilusBannerView
 /// *   - link: NautilusBannerWebLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView tapExternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapExternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 /// バナーViewのアプリ内リンクがタップされた時に呼ばれる（アプリ内遷移）
 /// * - Parameters:
 /// *   - bannerView: NautilusBannerView
 /// *  - link: NautilusBannerAppLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView tapAppLink:(NautilusBannerAppLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapAppLink:(NautilusBannerAppLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

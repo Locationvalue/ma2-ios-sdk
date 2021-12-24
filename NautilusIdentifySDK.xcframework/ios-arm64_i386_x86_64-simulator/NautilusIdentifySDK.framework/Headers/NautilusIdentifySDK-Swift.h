@@ -241,9 +241,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)changeUserWithUserID:(NSString * _Nullable)userID;
 /// 現在、SDKを利用しているユーザーの情報を取得する
 - (id <NautilusUser> _Nonnull)getCurrentUser SWIFT_WARN_UNUSED_RESULT;
-- (void)setManageCodeWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode asNewUser:(BOOL)asNewUser;
+/// 顧客管理コードを設定する
+/// \param userID ユーザID
+///
+/// \param manageCode 顧客管理コード
+///
+/// \param asNewUser 新規ユーザとして扱う
+///
+- (void)setManageCodeWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode asNewUser:(BOOL)asNewUser;
 - (void)setExternalIDWithUserID:(NSString * _Nonnull)userID externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType asNewUser:(BOOL)asNewUser;
-- (void)setManageCodeAndExternalIDWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType asNewUser:(BOOL)asNewUser;
+- (void)setManageCodeAndExternalIDWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType asNewUser:(BOOL)asNewUser;
 - (UIView * _Nonnull)getUserInfoView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nonnull)getUserInfoViewWithViewType:(SWIFT_METATYPE(NautilusUserInfoView) _Nonnull)viewType SWIFT_WARN_UNUSED_RESULT;
 - (void)setCodeImageProvider:(id <NautilusUserInfoCodeImageProvider> _Nullable)codeImageProvider;
@@ -569,9 +576,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)changeUserWithUserID:(NSString * _Nullable)userID;
 /// 現在、SDKを利用しているユーザーの情報を取得する
 - (id <NautilusUser> _Nonnull)getCurrentUser SWIFT_WARN_UNUSED_RESULT;
-- (void)setManageCodeWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode asNewUser:(BOOL)asNewUser;
+/// 顧客管理コードを設定する
+/// \param userID ユーザID
+///
+/// \param manageCode 顧客管理コード
+///
+/// \param asNewUser 新規ユーザとして扱う
+///
+- (void)setManageCodeWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode asNewUser:(BOOL)asNewUser;
 - (void)setExternalIDWithUserID:(NSString * _Nonnull)userID externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType asNewUser:(BOOL)asNewUser;
-- (void)setManageCodeAndExternalIDWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType asNewUser:(BOOL)asNewUser;
+- (void)setManageCodeAndExternalIDWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType asNewUser:(BOOL)asNewUser;
 - (UIView * _Nonnull)getUserInfoView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nonnull)getUserInfoViewWithViewType:(SWIFT_METATYPE(NautilusUserInfoView) _Nonnull)viewType SWIFT_WARN_UNUSED_RESULT;
 - (void)setCodeImageProvider:(id <NautilusUserInfoCodeImageProvider> _Nullable)codeImageProvider;
@@ -897,9 +911,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)changeUserWithUserID:(NSString * _Nullable)userID;
 /// 現在、SDKを利用しているユーザーの情報を取得する
 - (id <NautilusUser> _Nonnull)getCurrentUser SWIFT_WARN_UNUSED_RESULT;
-- (void)setManageCodeWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode asNewUser:(BOOL)asNewUser;
+/// 顧客管理コードを設定する
+/// \param userID ユーザID
+///
+/// \param manageCode 顧客管理コード
+///
+/// \param asNewUser 新規ユーザとして扱う
+///
+- (void)setManageCodeWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode asNewUser:(BOOL)asNewUser;
 - (void)setExternalIDWithUserID:(NSString * _Nonnull)userID externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType asNewUser:(BOOL)asNewUser;
-- (void)setManageCodeAndExternalIDWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType asNewUser:(BOOL)asNewUser;
+- (void)setManageCodeAndExternalIDWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType asNewUser:(BOOL)asNewUser;
 - (UIView * _Nonnull)getUserInfoView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nonnull)getUserInfoViewWithViewType:(SWIFT_METATYPE(NautilusUserInfoView) _Nonnull)viewType SWIFT_WARN_UNUSED_RESULT;
 - (void)setCodeImageProvider:(id <NautilusUserInfoCodeImageProvider> _Nullable)codeImageProvider;

@@ -239,6 +239,9 @@ public enum NautilusAppInfo {
   public static var shopAccountID: Swift.Int {
     get
   }
+  public static var userAgent: Swift.String {
+    get
+  }
 }
 public enum NautilusKeychain {
   public static func loadString(for key: Swift.String) -> Swift.String?

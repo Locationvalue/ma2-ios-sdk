@@ -57,9 +57,9 @@ public let NautilusUserExternalIDTypeNone: Swift.Int
   @objc(identifyAppNamed:) public static func identify(appName: Swift.String) -> NautilusIdentifySDK.NautilusIdentify
   @objc final public func changeUser(userID: Swift.String?)
   @objc final public func getCurrentUser() -> NautilusIdentifySDK.NautilusUser
-  @objc final public func setManageCode(userID: Swift.String, manageCode: Swift.String, asNewUser: Swift.Bool)
+  @objc final public func setManageCode(userID: Swift.String, manageCode: Swift.String?, asNewUser: Swift.Bool)
   @objc final public func setExternalID(userID: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, asNewUser: Swift.Bool)
-  @objc final public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, asNewUser: Swift.Bool)
+  @objc final public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, asNewUser: Swift.Bool)
   @objc final public func getUserInfoView() -> UIKit.UIView
   @objc final public func getUserInfoView(viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
   @objc final public func setCodeImageProvider(_ codeImageProvider: NautilusIdentifySDK.NautilusUserInfoCodeImageProvider?)
@@ -97,6 +97,7 @@ public let NautilusIdentifyErrorDomain: Swift.String
 extension Notification.NautilusApp {
   public static let identifyUpdateCID: Foundation.Notification.Name
   public static let identifyChangeCurrentUser: Foundation.Notification.Name
+  public static let identifyChangeManageCode: Foundation.Notification.Name
 }
 extension Notification.NautilusApp.UserInfoKey {
   public static let newCID: Swift.String

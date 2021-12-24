@@ -305,7 +305,7 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
 static NSString * _Nonnull const NautilusShopErrorDomain = @"NautilusShopSDK.NautilusShopError";
 
 
-/// 店舗外部リンク一覧
+/// 店舗外部リンク情報
 SWIFT_CLASS("_TtC15NautilusShopSDK24NautilusShopExternalLink")
 @interface NautilusShopExternalLink : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -313,7 +313,7 @@ SWIFT_CLASS("_TtC15NautilusShopSDK24NautilusShopExternalLink")
 @end
 
 
-/// 店舗画像一覧
+/// 店舗画像情報
 SWIFT_CLASS("_TtC15NautilusShopSDK17NautilusShopImage")
 @interface NautilusShopImage : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -660,7 +660,7 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
 static NSString * _Nonnull const NautilusShopErrorDomain = @"NautilusShopSDK.NautilusShopError";
 
 
-/// 店舗外部リンク一覧
+/// 店舗外部リンク情報
 SWIFT_CLASS("_TtC15NautilusShopSDK24NautilusShopExternalLink")
 @interface NautilusShopExternalLink : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -668,7 +668,7 @@ SWIFT_CLASS("_TtC15NautilusShopSDK24NautilusShopExternalLink")
 @end
 
 
-/// 店舗画像一覧
+/// 店舗画像情報
 SWIFT_CLASS("_TtC15NautilusShopSDK17NautilusShopImage")
 @interface NautilusShopImage : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1015,7 +1015,7 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
 static NSString * _Nonnull const NautilusShopErrorDomain = @"NautilusShopSDK.NautilusShopError";
 
 
-/// 店舗外部リンク一覧
+/// 店舗外部リンク情報
 SWIFT_CLASS("_TtC15NautilusShopSDK24NautilusShopExternalLink")
 @interface NautilusShopExternalLink : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1023,7 +1023,7 @@ SWIFT_CLASS("_TtC15NautilusShopSDK24NautilusShopExternalLink")
 @end
 
 
-/// 店舗画像一覧
+/// 店舗画像情報
 SWIFT_CLASS("_TtC15NautilusShopSDK17NautilusShopImage")
 @interface NautilusShopImage : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
