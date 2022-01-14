@@ -463,6 +463,9 @@ open class NautilusAPICommonRequest<P, T, TD> where P : NautilusCoreSDK.RequestP
   final public let app: NautilusCoreSDK.NautilusApp
   final public let requestParameter: NautilusCoreSDK.NautilusAPICommonRequest<P, T, TD>.Parameter?
   final public let requestPolicy: NautilusCoreSDK.RequestPolicy
+  open var scheme: NautilusCoreSDK.RequestScheme {
+    get
+  }
   open var hostname: Swift.String {
     get
   }

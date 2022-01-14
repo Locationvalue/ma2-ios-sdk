@@ -65,11 +65,12 @@ import UIKit
 @objc public protocol NautilusCouponUseValidObserver {
   @objc func onCouponInvalid(coupon: NautilusCouponSDK.NautilusCouponInfo)
 }
-@_hasMissingDesignatedInitializers @objc public class NautilusCouponPublishTrigger : ObjectiveC.NSObject {
+@objc public class NautilusCouponPublishTrigger : ObjectiveC.NSObject {
   final public let publishTriggerType: NautilusCouponSDK.NautilusCouponPublishTriggerType
   final public let codeText: Swift.String?
   final public let cardNumber: Swift.String?
   final public let cardType: Swift.Int?
+  public init(publishTriggerType: NautilusCouponSDK.NautilusCouponPublishTriggerType, codeText: Swift.String?, cardNumber: Swift.String?, cardType: Swift.Int?)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -171,10 +172,11 @@ extension NautilusCoupon {
   @objc final public func registerCouponUseValidObserver(_ observer: NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
   @objc final public func unregisterCouponUseValidObserver(for coupon: NautilusCouponSDK.NautilusCouponInfo)
 }
-@_hasMissingDesignatedInitializers @objc public class NautilusCouponLog : ObjectiveC.NSObject {
+@objc public class NautilusCouponLog : ObjectiveC.NSObject {
   final public let coupon: NautilusCouponSDK.NautilusCouponInfo
   final public let logDate: Foundation.Date
   final public let logType: NautilusCouponSDK.NautilusCouponLogType
+  public init(coupon: NautilusCouponSDK.NautilusCouponInfo, logType: NautilusCouponSDK.NautilusCouponLogType)
   @objc override dynamic public init()
   @objc deinit
 }
