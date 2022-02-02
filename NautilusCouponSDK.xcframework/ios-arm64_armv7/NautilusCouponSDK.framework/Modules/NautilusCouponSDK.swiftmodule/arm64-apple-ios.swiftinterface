@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusCouponSDK
 import Foundation
 import NautilusAnalyticsSDK
@@ -14,9 +14,9 @@ import NautilusUISDK
 import SafariServices
 import Swift
 import UIKit
+import _Concurrency
 @objc public class NautilusCouponUseInfo : ObjectiveC.NSObject {
   public init(coupon: NautilusCouponSDK.NautilusCouponInfo)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusCouponInfo : ObjectiveC.NSObject {
@@ -51,15 +51,15 @@ import UIKit
   final public let sortNo: Swift.Int
   @objc deinit
 }
-@_inheritsConvenienceInitializers final public class NautilusCouponTabViewController : NautilusUISDK.NautilusAppTopBarController, NautilusUISDK.NautilusAppTopBarControllerDelegate {
-  @objc override final public func viewDidLoad()
-  @objc override final public func appTopBar(_ appTopBar: NautilusUISDK.NautilusAppTopBar, viewForItemAt index: Swift.Int) -> NautilusUISDK.NautilusAppTopBarItemView
-  @objc override final public func numberOfItems(in appTopBar: NautilusUISDK.NautilusAppTopBar) -> Swift.Int
-  @objc final public func numberOfViewControllers(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController) -> Swift.Int
-  @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, viewControllerAt index: Swift.Int) -> UIKit.UIViewController
-  @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, indexOfViewController viewController: UIKit.UIViewController) -> Swift.Int
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusCouponTabViewController : NautilusUISDK.NautilusAppTopBarController, NautilusUISDK.NautilusAppTopBarControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func appTopBar(_ appTopBar: NautilusUISDK.NautilusAppTopBar, viewForItemAt index: Swift.Int) -> NautilusUISDK.NautilusAppTopBarItemView
+  @_Concurrency.MainActor(unsafe) @objc override final public func numberOfItems(in appTopBar: NautilusUISDK.NautilusAppTopBar) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func numberOfViewControllers(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, viewControllerAt index: Swift.Int) -> UIKit.UIViewController
+  @_Concurrency.MainActor(unsafe) @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, indexOfViewController viewController: UIKit.UIViewController) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc public protocol NautilusCouponUseValidObserver {
@@ -71,7 +71,6 @@ import UIKit
   final public let cardNumber: Swift.String?
   final public let cardType: Swift.Int?
   public init(publishTriggerType: NautilusCouponSDK.NautilusCouponPublishTriggerType, codeText: Swift.String?, cardNumber: Swift.String?, cardType: Swift.Int?)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusCouponPublishTriggerType : Swift.Int {
@@ -132,10 +131,9 @@ public let NautilusCouponErrorDomain: Swift.String
   @objc final public func instantiateCouponListViewController() -> UIKit.UIViewController
   @objc final public func instantiateFavoriteCouponListViewController() -> UIKit.UIViewController
   @objc final public func instantiateCouponDetailViewController(couponID: Swift.Int, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
-  @objc override dynamic public init()
   @objc deinit
 }
-extension NautilusCoupon {
+extension NautilusCouponSDK.NautilusCoupon {
   final public func getCommonCouponList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, couponIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusCouponSDK.NautilusCouponSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>) -> Swift.Void)
   @objc final public func getCommonCouponList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, couponIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusCouponSDK.NautilusCouponSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func getCommonCouponCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusCouponSDK.NautilusCouponError>) -> Swift.Void)
@@ -177,7 +175,6 @@ extension NautilusCoupon {
   final public let logDate: Foundation.Date
   final public let logType: NautilusCouponSDK.NautilusCouponLogType
   public init(coupon: NautilusCouponSDK.NautilusCouponInfo, logType: NautilusCouponSDK.NautilusCouponLogType)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusCouponLogType : Swift.Int {
@@ -193,7 +190,6 @@ extension NautilusCoupon {
   final public let keyName: NautilusCouponSDK.NautilusCouponSortKeyName
   final public let order: NautilusCouponSDK.NautilusCouponSortKeyOrder
   public init(keyName: NautilusCouponSDK.NautilusCouponSortKeyName, order: NautilusCouponSDK.NautilusCouponSortKeyOrder)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusCouponSortKeyName : Swift.Int {
@@ -217,24 +213,24 @@ extension NautilusCoupon {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc open class NautilusCouponBaseCell : UIKit.UICollectionViewCell {
-  open class var defaultCellIdentifier: Swift.String {
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class NautilusCouponBaseCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) open class var defaultCellIdentifier: Swift.String {
     get
   }
-  open class var nib: UIKit.UINib {
+  @_Concurrency.MainActor(unsafe) open class var nib: UIKit.UINib {
     get
   }
-  open class func register(to collectionView: UIKit.UICollectionView)
-  @objc @IBOutlet weak public var couponCoverImageView: UIKit.UIImageView!
-  @objc @IBOutlet weak public var couponTitleLabel: UIKit.UILabel!
-  @objc @IBOutlet weak public var couponExpirePeriodLabel: UIKit.UILabel!
-  @objc @IBOutlet weak public var couponFavoriteButton: UIKit.UIButton!
-  @objc @IBOutlet weak public var couponCoverImageOverlayView: UIKit.UIView!
-  @objc @IBOutlet weak public var couponCoverImageOverlayImageView: UIKit.UIImageView!
-  weak public var actionHandler: NautilusCouponSDK.NautilusCouponCellActionHandler?
-  final public let imageDownloader: NautilusImagingSDK.NautilusImageDownloader
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open class func register(to collectionView: UIKit.UICollectionView)
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponCoverImageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponTitleLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponExpirePeriodLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponFavoriteButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponCoverImageOverlayView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponCoverImageOverlayImageView: UIKit.UIImageView!
+  @_Concurrency.MainActor(unsafe) weak public var actionHandler: NautilusCouponSDK.NautilusCouponCellActionHandler?
+  @_Concurrency.MainActor(unsafe) final public let imageDownloader: NautilusImagingSDK.NautilusImageDownloader
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc public protocol NautilusCouponCellActionHandler {
@@ -270,14 +266,12 @@ extension NautilusCoupon {
   final public let useCount: Swift.Int?
   final public let exchangeID: Swift.Int?
   public init(couponID: Swift.Int, couponManageTitle: Swift.String, couponTitle: Swift.String?, couponText: Swift.String, noticeText: Swift.String?, publishStartDatetime: Swift.String, publishEndDatetime: Swift.String?, useStartDatetime: Swift.String?, useEndDatetime: Swift.String?, barcode: Swift.String?, barcodeImagePath: Swift.String?, couponCode: Swift.String?, maxSheet: Swift.Int?, useType: NautilusCouponSDK.NautilusAppExchangeType?, useLimit: Swift.Int?, categoryIDs: [Swift.Int]?, sortNo: Swift.Int?, searchword: Swift.String?, couponImageList: [NautilusCouponSDK.CustomCellCouponImageList]?, useDatetime: Swift.String?, couponType: Swift.Int?, favorite: Swift.Bool?, useCount: Swift.Int?, exchangeID: Swift.Int?)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class CustomCellCouponImageList : ObjectiveC.NSObject {
   final public let imagePath: Swift.String
   final public let aspectRatio: Swift.Double
   final public let sortNo: Swift.Int
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusCouponPublishType : Swift.Int {
@@ -303,7 +297,6 @@ extension NautilusCoupon {
   }
 }
 @_hasMissingDesignatedInitializers @objc public class CardType : ObjectiveC.NSObject {
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum SectionType : Swift.Int {
@@ -318,7 +311,6 @@ extension NautilusCoupon {
 @_hasMissingDesignatedInitializers @objc public class NautilusAppExchangeType : ObjectiveC.NSObject {
   final public let notExchange: Swift.Int?
   final public let exchange: Swift.Int?
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusCouponExchangeType : Swift.Int {

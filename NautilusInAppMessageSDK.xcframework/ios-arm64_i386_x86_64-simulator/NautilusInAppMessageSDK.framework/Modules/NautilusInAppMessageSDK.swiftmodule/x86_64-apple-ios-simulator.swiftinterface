@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusInAppMessageSDK
 import CoreData
 import Foundation
@@ -13,6 +13,7 @@ import NautilusLoggingSDK
 import SafariServices
 import Swift
 import UIKit
+import _Concurrency
 public struct NautilusInAppMessageViewConditionGroupItem : Swift.Equatable {
   public let eventID: NautilusInAppMessageSDK.NautilusEventIdentifierType
   public let eventCount: Swift.Int
@@ -37,7 +38,7 @@ public struct NautilusInAppMessageViewConditionGroup : Swift.Equatable {
   @objc func inAppMessageHandleTransitionURL(url: Foundation.URL)
   @objc func inAppMessageHandleTransition(transition: Swift.String)
 }
-extension NautilusInAppMessageControllerDelegate {
+extension NautilusInAppMessageSDK.NautilusInAppMessageControllerDelegate {
   public func inAppMessageCanHandleTransitionURL(inAppMessageID: NautilusInAppMessageSDK.NautilusInAppMessageIdentifierType, url: Foundation.URL) -> Swift.Bool
   public func inAppMessageHandleTransitionURL(url: Foundation.URL)
 }
@@ -68,7 +69,6 @@ extension NautilusInAppMessageControllerDelegate {
   @objc public static func inAppMessage() -> NautilusInAppMessageSDK.NautilusInAppMessageFeature
   @objc(inAppMessageAppNamed:) public static func inAppMessage(appName: Swift.String) -> NautilusInAppMessageSDK.NautilusInAppMessageFeature
   @objc final public func trigger(eventID: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusInAppMessageViewType : Swift.Int {
@@ -99,7 +99,7 @@ public enum NautilusInAppMessageIntervalUnit {
 }
 public typealias NautilusInAppMessageIdentifierType = Swift.Int
 public typealias NautilusEventIdentifierType = Swift.String
-extension Int {
+extension Swift.Int {
   public static var unknownIdentifier: NautilusInAppMessageSDK.NautilusInAppMessageIdentifierType {
     get
   }

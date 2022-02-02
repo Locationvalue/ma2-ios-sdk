@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusCoreSDK
 import CoreTelephony
 import Foundation
@@ -8,6 +8,7 @@ import NautilusLoggingSDK
 import Swift
 import SystemConfiguration
 import UIKit
+import _Concurrency
 public protocol NetworkServiceLogger {
   var id: Swift.String { get }
   func printRequest(_ request: Foundation.URLRequest)
@@ -28,7 +29,7 @@ public protocol NetworkServiceLogger {
   @objc final public let environment: NautilusCoreSDK.NautilusDeploymentEnvironment
   @objc deinit
 }
-extension Notification {
+extension Foundation.Notification {
   public enum NautilusApp {
     public static let featureInitializationSuccess: Foundation.Notification.Name
     public static let featureInitializationFailure: Foundation.Notification.Name
@@ -101,17 +102,17 @@ public protocol ResponseDecoder {
   static var `default`: NautilusCoreSDK.ResponseDecoder { get }
   func decode<T>(_ type: T.Type, from data: Foundation.Data) throws -> T where T : Swift.Decodable
 }
-extension JSONDecoder : NautilusCoreSDK.ResponseDecoder {
+extension Foundation.JSONDecoder : NautilusCoreSDK.ResponseDecoder {
   public static var `default`: NautilusCoreSDK.ResponseDecoder {
     get
   }
 }
-extension PropertyListDecoder : NautilusCoreSDK.ResponseDecoder {
+extension Foundation.PropertyListDecoder : NautilusCoreSDK.ResponseDecoder {
   public static var `default`: NautilusCoreSDK.ResponseDecoder {
     get
   }
 }
-extension URLSession {
+extension Foundation.URLSession {
   public enum NautilusApp {
     public static var `default`: Foundation.URLSession {
       get
@@ -163,10 +164,10 @@ public protocol KeyChainConvertible {
   init?(with value: Any)
   func convertDataArray() -> [Foundation.Data]?
 }
-extension String : NautilusCoreSDK.KeyChainConvertible {
+extension Swift.String : NautilusCoreSDK.KeyChainConvertible {
   public func convertDataArray() -> [Foundation.Data]?
 }
-extension Array : NautilusCoreSDK.KeyChainConvertible {
+extension Swift.Array : NautilusCoreSDK.KeyChainConvertible {
   public init?(with value: Any)
   public func convertDataArray() -> [Foundation.Data]?
 }
@@ -175,7 +176,7 @@ extension Array : NautilusCoreSDK.KeyChainConvertible {
   @objc override dynamic public init()
   @objc deinit
 }
-extension NSNotification.Name {
+extension Foundation.NSNotification.Name {
   public static let flagsNotification: Foundation.Notification.Name
 }
 public struct NetworkListenerUtil {
@@ -188,7 +189,7 @@ public struct NetworkListenerUtil {
   @objc final public func setEnvironment(_ environment: NautilusCoreSDK.NautilusDeploymentEnvironment)
   @objc deinit
 }
-extension Date {
+extension Foundation.Date {
   public static func iso8601Date(from string: Swift.String) -> Foundation.Date?
   public static func iso8601String(from date: Foundation.Date) -> Swift.String
   public static func slashDateTime(from date: Foundation.Date) -> Swift.String
@@ -207,7 +208,6 @@ extension Date {
     get
   }
   public init(latitude: Swift.Double, longitude: Swift.Double)
-  @objc override dynamic public init()
   @objc deinit
 }
 public typealias NautilusUserLocationUpdateCompletionHandler = ((NautilusCoreSDK.NautilusLocation?) -> Swift.Void)
@@ -306,7 +306,7 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
   final public func getAllFeatures() -> [NautilusCoreSDK.NautilusFeature.Type]
   @objc deinit
 }
-extension NautilusApp {
+extension NautilusCoreSDK.NautilusApp {
   @objc public static var sdkVersionString: Swift.String {
     @objc get
   }
@@ -325,22 +325,22 @@ public protocol UserDefaultConvertible {
   init?(with object: Any)
   func object() -> Any?
 }
-extension String : NautilusCoreSDK.UserDefaultConvertible {
+extension Swift.String : NautilusCoreSDK.UserDefaultConvertible {
   public init?(with object: Any)
   public func object() -> Any?
 }
-extension Array : NautilusCoreSDK.UserDefaultConvertible {
+extension Swift.Array : NautilusCoreSDK.UserDefaultConvertible {
   public func object() -> Any?
 }
-extension Int : NautilusCoreSDK.UserDefaultConvertible {
+extension Swift.Int : NautilusCoreSDK.UserDefaultConvertible {
   public init?(with object: Any)
   public func object() -> Any?
 }
-extension Int64 : NautilusCoreSDK.UserDefaultConvertible {
+extension Swift.Int64 : NautilusCoreSDK.UserDefaultConvertible {
   public init?(with object: Any)
   public func object() -> Any?
 }
-extension Bool : NautilusCoreSDK.UserDefaultConvertible {
+extension Swift.Bool : NautilusCoreSDK.UserDefaultConvertible {
   public init?(with object: Any)
   public func object() -> Any?
 }
@@ -431,7 +431,7 @@ public protocol Request {
   var url: Foundation.URL { get }
   func makeRequest() -> Foundation.URLRequest
 }
-extension Request {
+extension NautilusCoreSDK.Request {
   public var scheme: NautilusCoreSDK.RequestScheme {
     get
   }

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusShopSDK
 import CoreData
 import CoreLocation
@@ -17,6 +17,7 @@ import NautilusUISDK
 import SafariServices
 import Swift
 import UIKit
+import _Concurrency
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSearchTagInfo : ObjectiveC.NSObject {
   final public let tagID: Swift.Int
   final public let parentTagID: Swift.Int
@@ -60,7 +61,6 @@ import UIKit
   @objc final public func getFavoriteShopList(order: NautilusShopSDK.NautilusFavoriteShopSortOrder, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func getShopSearchTagList(completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopSearchTagInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
   @objc final public func getShopSearchTagList(completion: @escaping ([NautilusShopSDK.NautilusShopSearchTagInfo]?, Foundation.NSError?) -> Swift.Void)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusShopDetailOpenEvent : Swift.Int {

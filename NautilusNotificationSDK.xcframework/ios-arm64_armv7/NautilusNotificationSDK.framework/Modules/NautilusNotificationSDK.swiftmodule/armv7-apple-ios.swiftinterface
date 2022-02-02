@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusNotificationSDK
 import Foundation
 import NautilusConfigSDK
@@ -9,6 +9,7 @@ import NautilusIdentifySDK
 import NautilusLoggingSDK
 import Swift
 import UserNotifications
+import _Concurrency
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusRemoteMessage : ObjectiveC.NSObject {
   final public let pushID: Swift.Int
   final public let message: Swift.String
@@ -44,7 +45,6 @@ public typealias NautilusNotificationHandlerAction = (NautilusNotificationSDK.Na
   final public let transitionCommand: Swift.String?
   final public let title: Swift.String
   final public let message: Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class NautilusNotificationHandler : ObjectiveC.NSObject {
@@ -88,7 +88,6 @@ public typealias NautilusNotificationHandlerAction = (NautilusNotificationSDK.Na
   @objc final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
   @objc final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, checkDate: Foundation.Date, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
   final public func getRemoteNotifications(start: Swift.Int? = nil, count: Swift.Int? = nil, checkDate: Foundation.Date? = nil, completion: @escaping (Swift.Result<[NautilusNotificationSDK.NautilusRemoteMessage], NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
-  @objc override dynamic public init()
   @objc deinit
 }
 extension NautilusNotificationSDK.NautilusNotificationNetworkError : Swift.Equatable {}
