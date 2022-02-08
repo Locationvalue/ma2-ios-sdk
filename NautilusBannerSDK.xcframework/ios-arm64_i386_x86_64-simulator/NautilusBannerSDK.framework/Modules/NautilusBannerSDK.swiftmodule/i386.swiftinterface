@@ -54,7 +54,7 @@ import _Concurrency
   @objc func failLoadBannerSet(error: NautilusBannerSDK.NautilusBannerError)
   @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, didTap banner: NautilusBannerSDK.NautilusBannerInfo, tapInternalLink link: NautilusBannerSDK.NautilusBannerWebLink) -> Swift.Bool
   @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, didTap banner: NautilusBannerSDK.NautilusBannerInfo, tapExternalLink link: NautilusBannerSDK.NautilusBannerWebLink) -> Swift.Bool
-  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, didTap banner: NautilusBannerSDK.NautilusBannerInfo, tapAppLink link: NautilusBannerSDK.NautilusBannerAppLink) -> Swift.Bool
+  @objc func bannerView(_ bannerView: NautilusBannerSDK.NautilusBannerView, didTap banner: NautilusBannerSDK.NautilusBannerInfo, tapAppLink link: NautilusBannerSDK.NautilusBannerAppLink)
 }
 public let NautilusBannerErrorDomain: Swift.String
 @objc public enum NautilusBannerError : Swift.Int, Swift.Error {

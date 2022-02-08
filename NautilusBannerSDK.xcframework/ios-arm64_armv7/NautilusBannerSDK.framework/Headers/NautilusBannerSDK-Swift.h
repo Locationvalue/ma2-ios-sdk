@@ -364,20 +364,37 @@ SWIFT_PROTOCOL("_TtP17NautilusBannerSDK26NautilusBannerViewDelegate_")
 ///
 - (void)failLoadBannerSetWithError:(enum NautilusBannerError)error;
 /// バナーViewのURLがタップされた時に呼ばれる
-/// * - Parameters:
-/// *   - bannerView: NautilusBannerView
-/// *   - link: NautilusBannerWebLink
+/// \param bannerView タップされたバナーのView
+///
+/// \param banner タップされたバナーの情報
+///
+/// \param link タップされたバナーのリンク情報
+///
+///
+/// returns:
+/// デリゲートでURLから遷移をしたときは、<code>true</code>を返す。それ以外の場合は、<code>false</code>を返す。
 - (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapInternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 /// バナーViewのURLがタップされた時に呼ばれる（SFSafariViewController）
-/// * - Parameters:
-/// *   - bannerView: NautilusBannerView
-/// *   - link: NautilusBannerWebLink
+/// \param bannerView タップされたバナーのView
+///
+/// \param banner タップされたバナーの情報
+///
+/// \param link タップされたバナーのリンク情報
+///
+///
+/// returns:
+/// デリゲートでURLから遷移をしたときは、<code>true</code>を返す。それ以外の場合は、<code>false</code>を返す。
 - (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapExternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 /// バナーViewのアプリ内リンクがタップされた時に呼ばれる（アプリ内遷移）
-/// * - Parameters:
-/// *   - bannerView: NautilusBannerView
-/// *  - link: NautilusBannerAppLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapAppLink:(NautilusBannerAppLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+/// important:
+/// アプリ内遷移は、SDKからは処理が行えないため、アプリ側で必ず実装を行う
+/// \param bannerView タップされたバナーのView
+///
+/// \param banner タップされたバナーの情報
+///
+/// \param link タップされたバナーのリンク情報
+///
+- (void)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapAppLink:(NautilusBannerAppLink * _Nonnull)link;
 @end
 
 
@@ -759,20 +776,37 @@ SWIFT_PROTOCOL("_TtP17NautilusBannerSDK26NautilusBannerViewDelegate_")
 ///
 - (void)failLoadBannerSetWithError:(enum NautilusBannerError)error;
 /// バナーViewのURLがタップされた時に呼ばれる
-/// * - Parameters:
-/// *   - bannerView: NautilusBannerView
-/// *   - link: NautilusBannerWebLink
+/// \param bannerView タップされたバナーのView
+///
+/// \param banner タップされたバナーの情報
+///
+/// \param link タップされたバナーのリンク情報
+///
+///
+/// returns:
+/// デリゲートでURLから遷移をしたときは、<code>true</code>を返す。それ以外の場合は、<code>false</code>を返す。
 - (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapInternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 /// バナーViewのURLがタップされた時に呼ばれる（SFSafariViewController）
-/// * - Parameters:
-/// *   - bannerView: NautilusBannerView
-/// *   - link: NautilusBannerWebLink
+/// \param bannerView タップされたバナーのView
+///
+/// \param banner タップされたバナーの情報
+///
+/// \param link タップされたバナーのリンク情報
+///
+///
+/// returns:
+/// デリゲートでURLから遷移をしたときは、<code>true</code>を返す。それ以外の場合は、<code>false</code>を返す。
 - (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapExternalLink:(NautilusBannerWebLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
 /// バナーViewのアプリ内リンクがタップされた時に呼ばれる（アプリ内遷移）
-/// * - Parameters:
-/// *   - bannerView: NautilusBannerView
-/// *  - link: NautilusBannerAppLink
-- (BOOL)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapAppLink:(NautilusBannerAppLink * _Nonnull)link SWIFT_WARN_UNUSED_RESULT;
+/// important:
+/// アプリ内遷移は、SDKからは処理が行えないため、アプリ側で必ず実装を行う
+/// \param bannerView タップされたバナーのView
+///
+/// \param banner タップされたバナーの情報
+///
+/// \param link タップされたバナーのリンク情報
+///
+- (void)bannerView:(NautilusBannerView * _Nonnull)bannerView didTap:(NautilusBannerInfo * _Nonnull)banner tapAppLink:(NautilusBannerAppLink * _Nonnull)link;
 @end
 
 

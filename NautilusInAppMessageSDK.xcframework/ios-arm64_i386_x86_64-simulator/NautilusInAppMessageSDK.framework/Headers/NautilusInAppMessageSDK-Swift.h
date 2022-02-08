@@ -224,6 +224,7 @@ SWIFT_CLASS("_TtC23NautilusInAppMessageSDK20NautilusInAppMessage")
 
 
 
+
 enum NautilusInAppMessageViewType : NSInteger;
 @class NSString;
 @class NSURL;
@@ -378,6 +379,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusInAppMessageViewType, open) {
 /// モーダルダイアログ
   NautilusInAppMessageViewTypeModal = 2,
 };
+
+
 
 
 
@@ -612,6 +615,7 @@ SWIFT_CLASS("_TtC23NautilusInAppMessageSDK20NautilusInAppMessage")
 
 
 
+
 enum NautilusInAppMessageViewType : NSInteger;
 @class NSString;
 @class NSURL;
@@ -766,6 +770,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusInAppMessageViewType, open) {
 /// モーダルダイアログ
   NautilusInAppMessageViewTypeModal = 2,
 };
+
+
 
 
 
@@ -1000,6 +1006,7 @@ SWIFT_CLASS("_TtC23NautilusInAppMessageSDK20NautilusInAppMessage")
 
 
 
+
 enum NautilusInAppMessageViewType : NSInteger;
 @class NSString;
 @class NSURL;
@@ -1154,6 +1161,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusInAppMessageViewType, open) {
 /// モーダルダイアログ
   NautilusInAppMessageViewTypeModal = 2,
 };
+
+
 
 
 
