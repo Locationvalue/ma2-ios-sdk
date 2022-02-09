@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusAnalyticsSDK
 import Amplitude
 import Foundation
@@ -9,11 +9,10 @@ import NautilusCoreSDK
 import NautilusIdentifySDK
 import NautilusLoggingSDK
 import Swift
-import _Concurrency
-extension Foundation.Notification.NautilusApp {
+extension Notification.NautilusApp {
   public static let analyticsSendEvent: Foundation.Notification.Name
 }
-extension Foundation.Notification.NautilusApp.UserInfoKey {
+extension Notification.NautilusApp.UserInfoKey {
   public static let analyticsEventType: Swift.String
   public static let analyticsEventProperties: Swift.String
 }
@@ -53,6 +52,7 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   @objc final public func setUserID(_ userID: Swift.String)
   @objc final public func removeUserID()
   @objc final public func sendUserProperty()
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusAnalyticsEvent : Swift.Int {

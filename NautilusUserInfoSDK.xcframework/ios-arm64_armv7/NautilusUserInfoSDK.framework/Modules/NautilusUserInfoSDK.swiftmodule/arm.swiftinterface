@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusUserInfoSDK
 import Foundation
 import NautilusAnalyticsSDK
@@ -10,7 +10,6 @@ import NautilusGeoUtilSDK
 import NautilusIdentifySDK
 import NautilusLoggingSDK
 import Swift
-import _Concurrency
 @_hasMissingDesignatedInitializers @objc final public class NautilusUserAttribute : ObjectiveC.NSObject {
   final public let gender: NautilusUserInfoSDK.NautilusUserGenderType?
   final public let birthday: Foundation.DateComponents?
@@ -20,6 +19,7 @@ import _Concurrency
   final public let brandID: Swift.Int?
   final public let manageCode: Swift.String?
   final public let options: NautilusUserInfoSDK.NautilusUserOptionalAttribute?
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusUserGenderType : Swift.Int {
@@ -47,6 +47,7 @@ import _Concurrency
   final public var inputText: Swift.String? {
     get
   }
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusUserEnqueteAnswerType : Swift.Int {
@@ -63,6 +64,7 @@ import _Concurrency
 @_hasMissingDesignatedInitializers @objc final public class NautilusUserEnqueteSelectionItem : ObjectiveC.NSObject {
   final public let id: Swift.Int
   final public let name: Swift.String
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class NautilusUserAttributeUpdater : ObjectiveC.NSObject {
@@ -84,6 +86,7 @@ import _Concurrency
   @objc public func removeManageCode()
   @objc public func removeOptions(key: NautilusUserInfoSDK.NautilusUserOptionalAttributeKey)
   @objc public func build() -> NautilusUserInfoSDK.NautilusUserAttribute?
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusUserOptionalAttribute : ObjectiveC.NSObject {
@@ -118,6 +121,7 @@ import _Concurrency
     get
   }
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusUserInfo : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
@@ -140,6 +144,7 @@ import _Concurrency
   @objc final public func uploadUserAttribute(userAttribute: NautilusUserInfoSDK.NautilusUserAttribute, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc final public func loadUserEnquetes(completion: @escaping ([NautilusUserInfoSDK.NautilusUserEnquete]?, Foundation.NSError?) -> Swift.Void)
   @objc final public func uploadUserEnquete(enqueteAnswer: NautilusUserInfoSDK.NautilusUserEnqueteAnswer, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum UserInfoNetworkServiceError : Swift.Int, Swift.Error {
@@ -183,6 +188,7 @@ import _Concurrency
   final public let expireDateComponents: Foundation.DateComponents?
   final public let displayIndex: Swift.Int
   final public let items: [NautilusUserInfoSDK.NautilusUserEnqueteItem]
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class NautilusUserEnqueteUpdater : ObjectiveC.NSObject {
@@ -194,6 +200,7 @@ import _Concurrency
   @objc public func deselectItems(enqueteItem: NautilusUserInfoSDK.NautilusUserEnqueteItem)
   @objc public func removeInputText(enqueteItem: NautilusUserInfoSDK.NautilusUserEnqueteItem)
   @objc public func build() -> NautilusUserInfoSDK.NautilusUserEnqueteAnswer?
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusUserEnqueteAnswer : ObjectiveC.NSObject {
@@ -201,6 +208,7 @@ import _Concurrency
   final public let enqueteTitle: Swift.String
   final public let alias: Swift.String
   final public let items: [NautilusUserInfoSDK.NautilusUserEnqueteAnswerItem]
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusUserEnqueteAnswerItem : ObjectiveC.NSObject {
@@ -208,6 +216,7 @@ import _Concurrency
   final public let selectedOptionID: Swift.Int?
   final public let selectedOptionIDs: [Swift.Int]?
   final public let inputText: Swift.String?
+  @objc override dynamic public init()
   @objc deinit
 }
 extension NautilusUserInfoSDK.NautilusUserGenderType : Swift.Equatable {}

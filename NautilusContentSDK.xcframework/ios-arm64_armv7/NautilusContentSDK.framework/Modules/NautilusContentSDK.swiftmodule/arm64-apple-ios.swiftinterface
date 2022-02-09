@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusContentSDK
 import Foundation
 import NautilusAnalyticsSDK
@@ -13,7 +13,6 @@ import NautilusUISDK
 import SafariServices
 import Swift
 import UIKit
-import _Concurrency
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusContentInfo : ObjectiveC.NSObject {
   final public let contentID: Swift.Int
   final public let contentTitle: Swift.String?
@@ -79,6 +78,7 @@ import _Concurrency
   @objc final public func getContentCategoryList(completion: @escaping ([NautilusContentSDK.NautilusContentCategoryInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func sendContentLog(contentLogs: [NautilusContentSDK.NautilusContentLog], completion: @escaping (Swift.Result<Swift.Void, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
   final public func sendContentLog(contentLogs: [NautilusContentSDK.NautilusContentLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusContentType : Swift.Int {
@@ -104,6 +104,7 @@ import _Concurrency
   final public let logDate: Foundation.Date
   final public let logType: NautilusContentSDK.NautilusContentLogType
   public init(content: NautilusContentSDK.NautilusContentInfo, logType: NautilusContentSDK.NautilusContentLogType)
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusContentLogType : Swift.Int {
@@ -115,15 +116,15 @@ import _Concurrency
     get
   }
 }
-@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusContentTabViewController : NautilusUISDK.NautilusAppTopBarController, NautilusUISDK.NautilusAppTopBarControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override final public func appTopBar(_ appTopBar: NautilusUISDK.NautilusAppTopBar, viewForItemAt index: Swift.Int) -> NautilusUISDK.NautilusAppTopBarItemView
-  @_Concurrency.MainActor(unsafe) @objc override final public func numberOfItems(in appTopBar: NautilusUISDK.NautilusAppTopBar) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc final public func numberOfViewControllers(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, viewControllerAt index: Swift.Int) -> UIKit.UIViewController
-  @_Concurrency.MainActor(unsafe) @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, indexOfViewController viewController: UIKit.UIViewController) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@_inheritsConvenienceInitializers final public class NautilusContentTabViewController : NautilusUISDK.NautilusAppTopBarController, NautilusUISDK.NautilusAppTopBarControllerDelegate {
+  @objc override final public func viewDidLoad()
+  @objc override final public func appTopBar(_ appTopBar: NautilusUISDK.NautilusAppTopBar, viewForItemAt index: Swift.Int) -> NautilusUISDK.NautilusAppTopBarItemView
+  @objc override final public func numberOfItems(in appTopBar: NautilusUISDK.NautilusAppTopBar) -> Swift.Int
+  @objc final public func numberOfViewControllers(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController) -> Swift.Int
+  @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, viewControllerAt index: Swift.Int) -> UIKit.UIViewController
+  @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, indexOfViewController viewController: UIKit.UIViewController) -> Swift.Int
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 public let NautilusContentErrorDomain: Swift.String
