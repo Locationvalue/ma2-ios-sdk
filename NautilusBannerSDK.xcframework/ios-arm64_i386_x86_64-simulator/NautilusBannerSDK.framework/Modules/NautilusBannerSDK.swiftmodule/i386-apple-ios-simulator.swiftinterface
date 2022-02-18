@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusBannerSDK
 import Foundation
 import NautilusAnalyticsSDK
@@ -13,13 +13,14 @@ import NautilusUISDK
 import SafariServices
 import Swift
 import UIKit
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusBannerView : UIKit.UIView {
-  weak public var delegate: NautilusBannerSDK.NautilusBannerViewDelegate?
-  public var currentBannerCategory: NautilusBannerSDK.NautilusBannerCategory? {
+import _Concurrency
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class NautilusBannerView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: NautilusBannerSDK.NautilusBannerViewDelegate?
+  @_Concurrency.MainActor(unsafe) public var currentBannerCategory: NautilusBannerSDK.NautilusBannerCategory? {
     get
     set
   }
-  public func prepare(for bannerInstance: NautilusBannerSDK.NautilusBanner)
+  @_Concurrency.MainActor(unsafe) public func prepare(for bannerInstance: NautilusBannerSDK.NautilusBanner)
   @objc deinit
 }
 @objc public class NautilusBannerLog : ObjectiveC.NSObject {
@@ -27,7 +28,6 @@ import UIKit
   final public let actionDatetime: Foundation.Date
   final public let type: NautilusBannerSDK.NautilusBannerLogType
   public init(bannerID: Swift.Int, actionDatetime: Foundation.Date, type: NautilusBannerSDK.NautilusBannerLogType)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum NautilusBannerLogType : Swift.Int {
@@ -46,7 +46,6 @@ import UIKit
   final public let imageURL: Foundation.URL?
   final public let categoryIdentifier: Swift.Int?
   final public let sortNumber: Swift.Int?
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol NautilusBannerViewDelegate {
@@ -82,12 +81,10 @@ public let NautilusBannerErrorDomain: Swift.String
   final public let linkURL: Foundation.URL
   final public let browserTitle: Swift.String?
   final public let useCID: Swift.Bool?
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class NautilusBannerAppLink : ObjectiveC.NSObject {
   final public let transitionParam: Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusBanner : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
@@ -111,37 +108,35 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc final public func getBannerList(categoryID: Swift.Int, completion: @escaping ([NautilusBannerSDK.NautilusBannerInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Result<Swift.Void, NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
   @objc final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class NautilusBannerCategory : ObjectiveC.NSObject {
   final public let categoryIdentifier: Swift.Int
   final public let categoryName: Swift.String
   final public let alias: Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusBannerCarouselView : NautilusBannerSDK.NautilusBannerView {
-  public static func initializedNautilusBannerCarouselView(frame: CoreGraphics.CGRect) -> NautilusBannerSDK.NautilusBannerCarouselView
-  @objc override dynamic public func layoutSubviews()
-  @objc override dynamic public func updateConstraints()
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class NautilusBannerCarouselView : NautilusBannerSDK.NautilusBannerView {
+  @_Concurrency.MainActor(unsafe) public static func initializedNautilusBannerCarouselView(frame: CoreGraphics.CGRect) -> NautilusBannerSDK.NautilusBannerCarouselView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func updateConstraints()
   @objc deinit
 }
-extension NautilusBannerCarouselView : UIKit.UIScrollViewDelegate {
-  @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
-  @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
-  @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
-  @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+extension NautilusBannerSDK.NautilusBannerCarouselView : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusBannerListView : NautilusBannerSDK.NautilusBannerView {
-  public var bannerImageSpacing: Swift.Int {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class NautilusBannerListView : NautilusBannerSDK.NautilusBannerView {
+  @_Concurrency.MainActor(unsafe) public var bannerImageSpacing: Swift.Int {
     get
     set
   }
-  public static func initializedNautilusBannerListView(frame: CoreGraphics.CGRect) -> NautilusBannerSDK.NautilusBannerListView
-  @objc override dynamic public func layoutSubviews()
-  @objc override dynamic public func updateConstraints()
-  override public func prepare(for bannerInstance: NautilusBannerSDK.NautilusBanner)
+  @_Concurrency.MainActor(unsafe) public static func initializedNautilusBannerListView(frame: CoreGraphics.CGRect) -> NautilusBannerSDK.NautilusBannerListView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func updateConstraints()
+  @_Concurrency.MainActor(unsafe) override public func prepare(for bannerInstance: NautilusBannerSDK.NautilusBanner)
   @objc deinit
 }
 extension NautilusBannerSDK.NautilusBannerLogType : Swift.Equatable {}

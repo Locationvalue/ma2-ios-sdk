@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusIntroSDK
 import Foundation
 import NautilusAnalyticsSDK
@@ -11,6 +11,7 @@ import NautilusLoggingSDK
 import NautilusUISDK
 import Swift
 import UIKit
+import _Concurrency
 @objc public protocol NautilusIntroductionDelegate {
   @objc func introductionDidFinish(_ introduction: NautilusIntroSDK.NautilusIntroduction)
   @objc func introductionDidSkip(_ introduction: NautilusIntroSDK.NautilusIntroduction)
@@ -32,13 +33,11 @@ import UIKit
   @objc(introductionAppNamed:) public static func introduction(appName: Swift.String) -> NautilusIntroSDK.NautilusIntroduction
   @objc final public func presentIntroduction(in viewController: UIKit.UIViewController, introList: NautilusIntroSDK.NautilusIntroductionList, animated: Swift.Bool, delegate: NautilusIntroSDK.NautilusIntroductionDelegate?)
   @objc final public func instantiateIntroductionViewController(introList: NautilusIntroSDK.NautilusIntroductionList, delegate: NautilusIntroSDK.NautilusIntroductionDelegate?) -> UIKit.UIViewController
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc final public class NautilusIntroductionListItem : ObjectiveC.NSObject {
   final public let backgroundImageName: Swift.String
   public init(backgroundImageName: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusIntroductionList : ObjectiveC.NSObject {
@@ -46,7 +45,6 @@ import UIKit
   final public var count: Swift.Int {
     get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class NautilusIntroductionListBuilder : ObjectiveC.NSObject {
@@ -56,12 +54,12 @@ import UIKit
   final public func build() -> NautilusIntroSDK.NautilusIntroductionList
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers final public class NautilusIntroductionViewController : UIKit.UIViewController, UIKit.UIPageViewControllerDelegate, UIKit.UIPageViewControllerDataSource {
-  @objc override final public func viewDidLoad()
-  @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, didFinishAnimating finished: Swift.Bool, previousViewControllers: [UIKit.UIViewController], transitionCompleted completed: Swift.Bool)
-  @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerBefore viewController: UIKit.UIViewController) -> UIKit.UIViewController?
-  @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerAfter viewController: UIKit.UIViewController) -> UIKit.UIViewController?
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusIntroductionViewController : UIKit.UIViewController, UIKit.UIPageViewControllerDelegate, UIKit.UIPageViewControllerDataSource {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, didFinishAnimating finished: Swift.Bool, previousViewControllers: [UIKit.UIViewController], transitionCompleted completed: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerBefore viewController: UIKit.UIViewController) -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerAfter viewController: UIKit.UIViewController) -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusConfigSDK
 import CoreData
 import Foundation
@@ -7,6 +7,7 @@ import NautilusContainerSDK
 import NautilusCoreSDK
 import NautilusLoggingSDK
 import Swift
+import _Concurrency
 @objc public protocol NautilusConfigValue {
   @objc var keyName: Swift.String { get }
   @objc var boolValue: Swift.Bool { get }
@@ -73,7 +74,6 @@ import Swift
   @objc(configValueForKey:defaultIntegerArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.Int]) -> NautilusConfigSDK.NautilusConfigValue
   @objc(configValueForKey:defaultDoubleArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.Double]) -> NautilusConfigSDK.NautilusConfigValue
   @objc(configValueForKey:defaultStringArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.String]) -> NautilusConfigSDK.NautilusConfigValue
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol NautilusConfigStatus {

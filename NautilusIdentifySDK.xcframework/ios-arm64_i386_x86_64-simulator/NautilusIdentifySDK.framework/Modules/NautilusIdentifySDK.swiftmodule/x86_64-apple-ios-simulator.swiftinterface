@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusIdentifySDK
 import Foundation
 import NautilusConfigSDK
@@ -8,6 +8,7 @@ import NautilusCoreSDK
 import NautilusLoggingSDK
 import Swift
 import UIKit
+import _Concurrency
 @objc public protocol NautilusUser {
   @objc var userID: Swift.String { get }
   @objc var pid: Swift.String { get }
@@ -17,15 +18,15 @@ import UIKit
   @objc var isAnonymous: Swift.Bool { get }
 }
 public let NautilusUserExternalIDTypeNone: Swift.Int
-@objc @_inheritsConvenienceInitializers open class NautilusUserInfoView : UIKit.UIView {
-  open class var nibFilename: Swift.String {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NautilusUserInfoView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) open class var nibFilename: Swift.String {
     get
   }
-  open class func instantiate() -> NautilusIdentifySDK.NautilusUserInfoView
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
-  open func setCodeImage(_ codeImage: UIKit.UIImage?)
-  open func setCodeString(_ codeString: Swift.String?)
+  @_Concurrency.MainActor(unsafe) open class func instantiate() -> NautilusIdentifySDK.NautilusUserInfoView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func setCodeImage(_ codeImage: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) open func setCodeString(_ codeString: Swift.String?)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusUserInfoViewProvider : ObjectiveC.NSObject {
@@ -37,6 +38,7 @@ public let NautilusUserExternalIDTypeNone: Swift.Int
   @objc final public func provideUserInfoView(user: NautilusIdentifySDK.NautilusUser, viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
   @objc deinit
 }
+public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void
 @_hasMissingDesignatedInitializers @objc final public class NautilusIdentify : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
@@ -57,9 +59,12 @@ public let NautilusUserExternalIDTypeNone: Swift.Int
   @objc(identifyAppNamed:) public static func identify(appName: Swift.String) -> NautilusIdentifySDK.NautilusIdentify
   @objc final public func changeUser(userID: Swift.String?)
   @objc final public func getCurrentUser() -> NautilusIdentifySDK.NautilusUser
-  @objc final public func setManageCode(userID: Swift.String, manageCode: Swift.String?, asNewUser: Swift.Bool)
-  @objc final public func setExternalID(userID: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, asNewUser: Swift.Bool)
-  @objc final public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, asNewUser: Swift.Bool)
+  final public func setManageCode(userID: Swift.String, manageCode: Swift.String, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
+  final public func setExternalID(userID: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
+  final public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
+  @objc final public func setManageCode(userID: Swift.String, manageCode: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc final public func setExternalID(userID: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc final public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc final public func getUserInfoView() -> UIKit.UIView
   @objc final public func getUserInfoView(viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
   @objc final public func setCodeImageProvider(_ codeImageProvider: NautilusIdentifySDK.NautilusUserInfoCodeImageProvider?)
@@ -67,7 +72,6 @@ public let NautilusUserExternalIDTypeNone: Swift.Int
   @objc final public func removeCID()
   @objc final public func removeReferenceNumber()
   final public func getReferenceNumber(completion: @escaping (Swift.Result<Swift.String, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
-  @objc override dynamic public init()
   @objc deinit
 }
 public let NautilusIdentifyErrorDomain: Swift.String
@@ -94,12 +98,11 @@ public let NautilusIdentifyErrorDomain: Swift.String
 @objc public protocol NautilusUserInfoCodeImageProvider {
   @objc func provideCodeImage(for codeString: Swift.String, size: CoreGraphics.CGSize) -> UIKit.UIImage?
 }
-extension Notification.NautilusApp {
+extension Foundation.Notification.NautilusApp {
   public static let identifyUpdateCID: Foundation.Notification.Name
   public static let identifyChangeCurrentUser: Foundation.Notification.Name
-  public static let identifyChangeManageCode: Foundation.Notification.Name
 }
-extension Notification.NautilusApp.UserInfoKey {
+extension Foundation.Notification.NautilusApp.UserInfoKey {
   public static let newCID: Swift.String
 }
 extension NautilusIdentifySDK.NautilusIdentifyError : Swift.Equatable {}
