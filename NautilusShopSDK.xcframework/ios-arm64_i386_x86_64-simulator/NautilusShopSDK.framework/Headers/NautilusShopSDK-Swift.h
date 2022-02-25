@@ -259,7 +259,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗一覧を検索して取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)searchShopWithLocation:(NautilusLocation * _Nonnull)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NautilusShopSearchTagInfo *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)searchShopWithLocation:(NautilusLocation * _Nonnull)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗詳細を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getShopDetailWithShopID:(NSInteger)shopID clientShopCD:(NSString * _Nullable)clientShopCD completion:(void (^ _Nonnull)(NautilusShopInfo * _Nullable, NSError * _Nullable))completion;
@@ -337,6 +337,39 @@ SWIFT_PROTOCOL("_TtP15NautilusShopSDK28NautilusShopPinImageProvider_")
 /// \param shopInfo 店舗情報
 ///
 - (UIImage * _Nonnull)provideShopPinImageWith:(NautilusShopInfo * _Nonnull)shopInfo SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// 店舗検索タグを指定して検索する際に、APIに渡す店舗検索タグの並びを任意に指定するためのプロトコル
+SWIFT_PROTOCOL("_TtP15NautilusShopSDK39NautilusShopSearchTagFilteringOperation_")
+@protocol NautilusShopSearchTagFilteringOperation
+/// 店舗検索絞り込み画面で選択された店舗検索タグの一覧を受け取り、APIに渡すための変換処理を行う
+/// APIに渡す店舗検索タグは、以下のようになる
+/// <ul>
+///   <li>
+///     店舗検索タグの配列（内側の配列）
+///     <ul>
+///       <li>
+///         同一配列内の店舗検索タグは、or検索
+///       </li>
+///     </ul>
+///   </li>
+///   <li>
+///     戻り値の配列（外側の配列）
+///     <ul>
+///       <li>
+///         店舗検索タグの配列同士は、and検索
+///       </li>
+///     </ul>
+///   </li>
+/// </ul>
+/// \param tags 店舗検索絞り込み画面で選択された店舗検索タグ
+///
+///
+/// returns:
+///
+/// 店舗検索を実行するための店舗検索タグの検索条件
+- (NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nonnull)transformSearchConditionWithTags:(NSArray<NautilusShopSearchTagInfo *> * _Nonnull)tags SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -614,7 +647,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗一覧を検索して取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)searchShopWithLocation:(NautilusLocation * _Nonnull)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NautilusShopSearchTagInfo *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)searchShopWithLocation:(NautilusLocation * _Nonnull)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗詳細を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getShopDetailWithShopID:(NSInteger)shopID clientShopCD:(NSString * _Nullable)clientShopCD completion:(void (^ _Nonnull)(NautilusShopInfo * _Nullable, NSError * _Nullable))completion;
@@ -692,6 +725,39 @@ SWIFT_PROTOCOL("_TtP15NautilusShopSDK28NautilusShopPinImageProvider_")
 /// \param shopInfo 店舗情報
 ///
 - (UIImage * _Nonnull)provideShopPinImageWith:(NautilusShopInfo * _Nonnull)shopInfo SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// 店舗検索タグを指定して検索する際に、APIに渡す店舗検索タグの並びを任意に指定するためのプロトコル
+SWIFT_PROTOCOL("_TtP15NautilusShopSDK39NautilusShopSearchTagFilteringOperation_")
+@protocol NautilusShopSearchTagFilteringOperation
+/// 店舗検索絞り込み画面で選択された店舗検索タグの一覧を受け取り、APIに渡すための変換処理を行う
+/// APIに渡す店舗検索タグは、以下のようになる
+/// <ul>
+///   <li>
+///     店舗検索タグの配列（内側の配列）
+///     <ul>
+///       <li>
+///         同一配列内の店舗検索タグは、or検索
+///       </li>
+///     </ul>
+///   </li>
+///   <li>
+///     戻り値の配列（外側の配列）
+///     <ul>
+///       <li>
+///         店舗検索タグの配列同士は、and検索
+///       </li>
+///     </ul>
+///   </li>
+/// </ul>
+/// \param tags 店舗検索絞り込み画面で選択された店舗検索タグ
+///
+///
+/// returns:
+///
+/// 店舗検索を実行するための店舗検索タグの検索条件
+- (NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nonnull)transformSearchConditionWithTags:(NSArray<NautilusShopSearchTagInfo *> * _Nonnull)tags SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -969,7 +1035,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗一覧を検索して取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)searchShopWithLocation:(NautilusLocation * _Nonnull)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NautilusShopSearchTagInfo *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)searchShopWithLocation:(NautilusLocation * _Nonnull)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗詳細を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getShopDetailWithShopID:(NSInteger)shopID clientShopCD:(NSString * _Nullable)clientShopCD completion:(void (^ _Nonnull)(NautilusShopInfo * _Nullable, NSError * _Nullable))completion;
@@ -1047,6 +1113,39 @@ SWIFT_PROTOCOL("_TtP15NautilusShopSDK28NautilusShopPinImageProvider_")
 /// \param shopInfo 店舗情報
 ///
 - (UIImage * _Nonnull)provideShopPinImageWith:(NautilusShopInfo * _Nonnull)shopInfo SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// 店舗検索タグを指定して検索する際に、APIに渡す店舗検索タグの並びを任意に指定するためのプロトコル
+SWIFT_PROTOCOL("_TtP15NautilusShopSDK39NautilusShopSearchTagFilteringOperation_")
+@protocol NautilusShopSearchTagFilteringOperation
+/// 店舗検索絞り込み画面で選択された店舗検索タグの一覧を受け取り、APIに渡すための変換処理を行う
+/// APIに渡す店舗検索タグは、以下のようになる
+/// <ul>
+///   <li>
+///     店舗検索タグの配列（内側の配列）
+///     <ul>
+///       <li>
+///         同一配列内の店舗検索タグは、or検索
+///       </li>
+///     </ul>
+///   </li>
+///   <li>
+///     戻り値の配列（外側の配列）
+///     <ul>
+///       <li>
+///         店舗検索タグの配列同士は、and検索
+///       </li>
+///     </ul>
+///   </li>
+/// </ul>
+/// \param tags 店舗検索絞り込み画面で選択された店舗検索タグ
+///
+///
+/// returns:
+///
+/// 店舗検索を実行するための店舗検索タグの検索条件
+- (NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nonnull)transformSearchConditionWithTags:(NSArray<NautilusShopSearchTagInfo *> * _Nonnull)tags SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

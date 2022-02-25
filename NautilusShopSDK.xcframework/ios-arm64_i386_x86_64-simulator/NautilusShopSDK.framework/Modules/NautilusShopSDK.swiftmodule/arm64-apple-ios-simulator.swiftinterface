@@ -18,6 +18,9 @@ import SafariServices
 import Swift
 import UIKit
 import _Concurrency
+@objc public protocol NautilusShopSearchTagFilteringOperation {
+  @objc func transformSearchCondition(tags: [NautilusShopSDK.NautilusShopSearchTagInfo]) -> [[NautilusShopSDK.NautilusShopSearchTagInfo]]
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSearchTagInfo : ObjectiveC.NSObject {
   final public let tagID: Swift.Int
   final public let parentTagID: Swift.Int
@@ -43,6 +46,7 @@ import _Concurrency
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
   final public var shopPinImageProvider: NautilusShopSDK.NautilusShopPinImageProvider?
+  final public var shopSearchTagFilteringOperation: NautilusShopSDK.NautilusShopSearchTagFilteringOperation?
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func shop() -> NautilusShopSDK.NautilusShop
   @objc(shopAppNamed:) public static func shop(appName: Swift.String) -> NautilusShopSDK.NautilusShop
@@ -51,8 +55,8 @@ import _Concurrency
   @objc final public func instantiateShopDetail(shopID: Swift.Int) -> UIKit.UIViewController
   final public func getShopList(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
   @objc final public func getShopList(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
-  final public func searchShop(location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [NautilusShopSDK.NautilusShopSearchTagInfo]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  @objc final public func searchShop(location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, shopName: Swift.String?, prefectures: [Swift.Int]?, shopSearchTags: [NautilusShopSDK.NautilusShopSearchTagInfo]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func searchShop(location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
+  @objc final public func searchShop(location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, shopName: Swift.String?, prefectures: [Swift.Int]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func getShopDetail(shopID: Swift.Int?, clientShopCD: Swift.String?, completion: @escaping (Swift.Result<NautilusShopSDK.NautilusShopInfo, NautilusShopSDK.NautilusShopError>) -> Swift.Void)
   @objc final public func getShopDetail(shopID: Swift.Int, clientShopCD: Swift.String?, completion: @escaping (NautilusShopSDK.NautilusShopInfo?, Foundation.NSError?) -> Swift.Void)
   final public func updateFavorite(addFavoriteShopIDs: [Swift.Int]?, removeFavoriteShopIDs: [Swift.Int]?, completion: @escaping (Swift.Result<Swift.Void, NautilusShopSDK.NautilusShopError>) -> Swift.Void)

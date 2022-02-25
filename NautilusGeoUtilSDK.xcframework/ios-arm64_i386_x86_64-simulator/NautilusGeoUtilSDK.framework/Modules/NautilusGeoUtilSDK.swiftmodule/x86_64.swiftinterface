@@ -59,6 +59,7 @@ import _Concurrency
   public var name: Swift.String {
     get
   }
+  public init?(from codeValue: Swift.Int)
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
