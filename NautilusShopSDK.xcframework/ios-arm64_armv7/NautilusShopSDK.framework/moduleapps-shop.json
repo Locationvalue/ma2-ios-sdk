@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "config_version": 3,
+  "config_version": 2,
   "app_name": "moduleapps-shop",
   "shop_account_app_id": 0,
   "config_values": [
@@ -97,14 +97,6 @@
       "string_value": "検索する"
     },
     {
-      "config_value_name": "ma_shop_tag_filtering_same_category_search_operation",
-      "string_value": "or"
-    },
-    {
-      "config_value_name": "ma_shop_tag_filtering_different_category_search_operation",
-      "string_value": "and"
-    },
-    {
       "config_value_name": "ma_shop_prefecture_selection_no_selection_item_text",
       "string_value": "設定なし"
     },
@@ -191,14 +183,14 @@
     {
       "config_value_name": "ma_shop_detail_visible_items",
       "string_array_value": [
-        "map",
-        "name",
-        "images",
-        "links",
-        "telephone",
-        "business_hour",
-        "holiday",
-        "shop_tags"
+          "map",
+          "name",
+          "images",
+          "links",
+          "telephone",
+          "business_hour",
+          "holiday",
+          "shop_tags"
       ]
     },
     {
