@@ -34,6 +34,9 @@ import _Concurrency
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@objc public protocol NautilusLotteryUIDelegate {
+  @objc func lottery(_ lotteryUI: NautilusLotteryUISDK.NautilusLotteryUI, didTap lottery: NautilusLotterySDK.NautilusLotteryInfo, prize: NautilusLotterySDK.NautilusLotteryPrizeInfo, from viewController: UIKit.UIViewController)
+}
 @_hasMissingDesignatedInitializers @objc final public class NautilusLotteryUI : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var configFilename: Swift.String? {
     @objc get
@@ -46,6 +49,7 @@ import _Concurrency
   }
   @objc final public var app: NautilusCoreSDK.NautilusApp
   @objc final public var name: Swift.String?
+  weak final public var delegate: NautilusLotteryUISDK.NautilusLotteryUIDelegate?
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func lotteryUI() -> NautilusLotteryUISDK.NautilusLotteryUI
   @objc(lotteryAppNamed:) public static func lotteryUI(appName: Swift.String) -> NautilusLotteryUISDK.NautilusLotteryUI

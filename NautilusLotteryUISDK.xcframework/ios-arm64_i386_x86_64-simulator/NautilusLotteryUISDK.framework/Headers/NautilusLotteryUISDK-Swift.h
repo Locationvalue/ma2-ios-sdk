@@ -295,6 +295,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @end
 
 
+/// NautilusLotteryUIで発生した処理をアプリに委譲するプロトコル
+SWIFT_PROTOCOL("_TtP20NautilusLotteryUISDK25NautilusLotteryUIDelegate_")
+@protocol NautilusLotteryUIDelegate
+/// 抽選UIから、景品確認ボタンをタップされた時に呼ばれる
+/// \param lotteryUI イベントが発生した抽選UIのインスタンス
+///
+/// \param lottery 景品確認の対象となる抽選のデータ
+///
+/// \param prize 景品確認の対象となる景品のデータ
+///
+/// \param viewController 景品確認ボタンが配置されている画面 / ViewController
+/// 通常は、<code>NautilusLotteryDetailViewController</code>のインスタンス
+///
+- (void)lottery:(NautilusLotteryUI * _Nonnull)lotteryUI didTap:(NautilusLotteryInfo * _Nonnull)lottery prize:(NautilusLotteryPrizeInfo * _Nonnull)prize from:(UIViewController * _Nonnull)viewController;
+@end
+
+
 @interface UINavigationController (SWIFT_EXTENSION(NautilusLotteryUISDK))
 /// NautilusLotteryUISDK内で初期化した<code>UINavigationController</code>に対して向きを設定
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
@@ -602,6 +619,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @end
 
 
+/// NautilusLotteryUIで発生した処理をアプリに委譲するプロトコル
+SWIFT_PROTOCOL("_TtP20NautilusLotteryUISDK25NautilusLotteryUIDelegate_")
+@protocol NautilusLotteryUIDelegate
+/// 抽選UIから、景品確認ボタンをタップされた時に呼ばれる
+/// \param lotteryUI イベントが発生した抽選UIのインスタンス
+///
+/// \param lottery 景品確認の対象となる抽選のデータ
+///
+/// \param prize 景品確認の対象となる景品のデータ
+///
+/// \param viewController 景品確認ボタンが配置されている画面 / ViewController
+/// 通常は、<code>NautilusLotteryDetailViewController</code>のインスタンス
+///
+- (void)lottery:(NautilusLotteryUI * _Nonnull)lotteryUI didTap:(NautilusLotteryInfo * _Nonnull)lottery prize:(NautilusLotteryPrizeInfo * _Nonnull)prize from:(UIViewController * _Nonnull)viewController;
+@end
+
+
 @interface UINavigationController (SWIFT_EXTENSION(NautilusLotteryUISDK))
 /// NautilusLotteryUISDK内で初期化した<code>UINavigationController</code>に対して向きを設定
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
@@ -906,6 +940,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (NautilusLotteryDetailViewController * _Nonnull)instantiateLotteryDetailViewControllerWithLottery:(NautilusLotteryInfo * _Nonnull)lottery SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// NautilusLotteryUIで発生した処理をアプリに委譲するプロトコル
+SWIFT_PROTOCOL("_TtP20NautilusLotteryUISDK25NautilusLotteryUIDelegate_")
+@protocol NautilusLotteryUIDelegate
+/// 抽選UIから、景品確認ボタンをタップされた時に呼ばれる
+/// \param lotteryUI イベントが発生した抽選UIのインスタンス
+///
+/// \param lottery 景品確認の対象となる抽選のデータ
+///
+/// \param prize 景品確認の対象となる景品のデータ
+///
+/// \param viewController 景品確認ボタンが配置されている画面 / ViewController
+/// 通常は、<code>NautilusLotteryDetailViewController</code>のインスタンス
+///
+- (void)lottery:(NautilusLotteryUI * _Nonnull)lotteryUI didTap:(NautilusLotteryInfo * _Nonnull)lottery prize:(NautilusLotteryPrizeInfo * _Nonnull)prize from:(UIViewController * _Nonnull)viewController;
 @end
 
 
