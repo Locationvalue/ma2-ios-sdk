@@ -10,7 +10,6 @@ import NautilusIdentifySDK
 import NautilusImagingSDK
 import NautilusLoggingSDK
 import NautilusUISDK
-import SafariServices
 import Swift
 import UIKit
 import _Concurrency
@@ -46,7 +45,22 @@ import _Concurrency
   final public let imageURL: Foundation.URL?
   final public let categoryIdentifier: Swift.Int?
   final public let sortNumber: Swift.Int?
+  final public let alias: Swift.String?
+  final public let linkType: NautilusBannerSDK.NautilusBannerLinkType?
+  final public let webLink: NautilusBannerSDK.NautilusBannerWebLink?
+  final public let appLink: NautilusBannerSDK.NautilusBannerAppLink?
+  final public let bannerManageTitle: Swift.String
   @objc deinit
+}
+@objc public enum NautilusBannerLinkType : Swift.Int {
+  case function
+  case `internal`
+  case external
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc public protocol NautilusBannerViewDelegate {
   @objc func willLoadBannerSet()
@@ -142,6 +156,9 @@ extension NautilusBannerSDK.NautilusBannerCarouselView : UIKit.UIScrollViewDeleg
 extension NautilusBannerSDK.NautilusBannerLogType : Swift.Equatable {}
 extension NautilusBannerSDK.NautilusBannerLogType : Swift.Hashable {}
 extension NautilusBannerSDK.NautilusBannerLogType : Swift.RawRepresentable {}
+extension NautilusBannerSDK.NautilusBannerLinkType : Swift.Equatable {}
+extension NautilusBannerSDK.NautilusBannerLinkType : Swift.Hashable {}
+extension NautilusBannerSDK.NautilusBannerLinkType : Swift.RawRepresentable {}
 extension NautilusBannerSDK.NautilusBannerError : Swift.Equatable {}
 extension NautilusBannerSDK.NautilusBannerError : Swift.Hashable {}
 extension NautilusBannerSDK.NautilusBannerError : Swift.RawRepresentable {}

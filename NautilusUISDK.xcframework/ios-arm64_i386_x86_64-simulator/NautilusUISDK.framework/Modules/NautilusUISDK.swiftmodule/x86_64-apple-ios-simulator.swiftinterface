@@ -4,6 +4,7 @@
 import Foundation
 import NautilusCoreSDK
 import NautilusLoggingSDK
+import SafariServices
 import Swift
 import UIKit
 import WebKit
@@ -286,6 +287,19 @@ extension NautilusUISDK.NautilusContentsCreatable where Self : UIKit.UIViewContr
   public func createZeroContentsView(insetTop: CoreGraphics.CGFloat, image: UIKit.UIImage?, text: Swift.String?) -> UIKit.UIView
   public func createErrorContentsView(insetTop: CoreGraphics.CGFloat, image: UIKit.UIImage?, text: Swift.String?, buttonTitle: Swift.String?, action: ObjectiveC.Selector) -> UIKit.UIView
 }
+@objc public protocol NautilusURLHandler {
+  @objc func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, in viewController: UIKit.UIViewController)
+}
+@objc public enum NautilusURLBrowseType : Swift.Int {
+  case webView
+  case safariViewController
+  case externalApp
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public protocol NautilusBottomSheetContainerViewControllerDelegate : AnyObject {
   func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController, didChangeTo screenOverlayType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType)
   func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController)
@@ -471,6 +485,9 @@ extension NautilusUISDK.NautilusListViewCreatable where Self : UIKit.UIViewContr
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+@objc public protocol NautilusURLPreprocessor {
+  @objc func buildURL(from baseURL: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType) -> Foundation.URL
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusAppTopBarItemTitledLabelView : NautilusUISDK.NautilusAppTopBarItemView {
   @_Concurrency.MainActor(unsafe) final public var title: Swift.String? {
@@ -721,6 +738,21 @@ public protocol NautilusStackListViewDataSource : AnyObject {
 @objc public protocol NautilusDatePickerGroupDelegate {
   @objc func datePickerGroup(_: NautilusUISDK.NautilusDatePickerGroup, dateChanged date: Foundation.Date)
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusWebHelper : ObjectiveC.NSObject {
+  @_inheritsConvenienceInitializers @objc final public class Configuration : ObjectiveC.NSObject {
+    final public var modalPresentationStyle: UIKit.UIModalPresentationStyle?
+    final public var webViewUIDelegate: WebKit.WKUIDelegate?
+    final public var webViewNavigationDelegate: WebKit.WKNavigationDelegate?
+    final public var safariDelegate: SafariServices.SFSafariViewControllerDelegate?
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  public static var handler: NautilusUISDK.NautilusURLHandler?
+  public static var preprocessor: NautilusUISDK.NautilusURLPreprocessor?
+  @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, in viewController: UIKit.UIViewController)
+  @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, configuration: NautilusUISDK.NautilusWebHelper.Configuration, in viewController: UIKit.UIViewController)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class NautilusCheckBoxGroup : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) weak public var dataSource: NautilusUISDK.NautilusCheckBoxGroupDataSource?
   @objc @_Concurrency.MainActor(unsafe) weak public var delegate: NautilusUISDK.NautilusCheckBoxGroupDelegate?
@@ -750,6 +782,9 @@ extension NautilusUISDK.NautilusAppTopBar.SelectionStyle : Swift.Hashable {}
 extension NautilusUISDK.ContainedButton.NautilusBorderRadiusStyle : Swift.Equatable {}
 extension NautilusUISDK.ContainedButton.NautilusBorderRadiusStyle : Swift.Hashable {}
 extension NautilusUISDK.ContainedButton.NautilusBorderRadiusStyle : Swift.RawRepresentable {}
+extension NautilusUISDK.NautilusURLBrowseType : Swift.Equatable {}
+extension NautilusUISDK.NautilusURLBrowseType : Swift.Hashable {}
+extension NautilusUISDK.NautilusURLBrowseType : Swift.RawRepresentable {}
 extension NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType : Swift.Equatable {}
 extension NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType : Swift.Hashable {}
 extension NautilusUISDK.NautilusBottomSheetFrameChangeReason : Swift.Equatable {}

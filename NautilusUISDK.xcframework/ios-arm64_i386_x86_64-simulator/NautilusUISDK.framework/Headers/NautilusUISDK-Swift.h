@@ -718,11 +718,11 @@ SWIFT_CLASS("_TtC13NautilusUISDK37NautilusInAppWebBrowserViewController")
 @end
 
 
-@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKUIDelegate>
+@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKNavigationDelegate>
 @end
 
 
-@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKNavigationDelegate>
+@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKUIDelegate>
 @end
 
 
@@ -794,6 +794,89 @@ SWIFT_CLASS("_TtC13NautilusUISDK21NautilusStackListView")
 @interface NautilusStackListView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+/// URLを表示する手段として指定された方法
+/// 管理画面での指定（内部・外部）に対応する値を示す
+/// ただし、アプリで表示を行う場合には、この指定に従う保証はない
+typedef SWIFT_ENUM(NSInteger, NautilusURLBrowseType, open) {
+/// <code>WKWebView</code>で表示する
+  NautilusURLBrowseTypeWebView = 0,
+/// <code>SFSafariViewController</code>で表示する
+  NautilusURLBrowseTypeSafariViewController = 1,
+/// 外部アプリで表示する
+  NautilusURLBrowseTypeExternalApp = 2,
+};
+
+@class NSURL;
+
+/// URLを表示するためのハンドラのプロトコル
+/// アプリで独自にURL遷移を制御したい場合には、このプロトコルを実装したクラスを用意する
+SWIFT_PROTOCOL("_TtP13NautilusUISDK18NautilusURLHandler_")
+@protocol NautilusURLHandler
+/// 指定されたURLを表示する
+/// \param url 表示対象のURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+/// \param viewController URLを表示しようとしているViewController
+///
+- (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType in:(UIViewController * _Nonnull)viewController;
+@end
+
+
+/// MA 2.0 SDKでURLを表示する時に、URLにパラメーターを付与するなどの前処理を行うプロトコル
+/// URLの表示はSDKで行うが、何らかのパラメーターをURLに追加する場合にアプリで実装を行う
+SWIFT_PROTOCOL("_TtP13NautilusUISDK23NautilusURLPreprocessor_")
+@protocol NautilusURLPreprocessor
+/// 表示するURLに対し、パラメーターなどを追加する
+/// \param baseURL 表示対象となるURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+///
+/// returns:
+/// <code>baseURL</code>にクエリーパラメーターなどを付与したURL
+- (NSURL * _Nonnull)buildURLFrom:(NSURL * _Nonnull)baseURL browseType:(enum NautilusURLBrowseType)browseType SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class Configuration;
+
+/// MA 2.0で、URLを表示するためのクラス
+/// このクラスのクラスメソッドを利用して、URLの表示を行います
+SWIFT_CLASS("_TtC13NautilusUISDK17NautilusWebHelper")
+@interface NautilusWebHelper : NSObject
+/// URLの表示を行う
+/// important:
+/// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
+/// \param url 表示対象のURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+/// \param viewController URLを表示しようとしているViewController
+///
++ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType in:(UIViewController * _Nonnull)viewController;
+/// URLの表示を行う
+/// important:
+/// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
+/// \param url 表示対象のURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+/// \param configuration URLを表示する際の各種設定
+///
+/// \param viewController URLを表示しようとしているViewController
+///
++ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType configuration:(Configuration * _Nonnull)configuration in:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// URL表示を行う際の画面の制御の指定
+SWIFT_CLASS("_TtCC13NautilusUISDK17NautilusWebHelper13Configuration")
+@interface Configuration : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NoneCategory, open) {
@@ -1535,11 +1618,11 @@ SWIFT_CLASS("_TtC13NautilusUISDK37NautilusInAppWebBrowserViewController")
 @end
 
 
-@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKUIDelegate>
+@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKNavigationDelegate>
 @end
 
 
-@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKNavigationDelegate>
+@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKUIDelegate>
 @end
 
 
@@ -1611,6 +1694,89 @@ SWIFT_CLASS("_TtC13NautilusUISDK21NautilusStackListView")
 @interface NautilusStackListView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+/// URLを表示する手段として指定された方法
+/// 管理画面での指定（内部・外部）に対応する値を示す
+/// ただし、アプリで表示を行う場合には、この指定に従う保証はない
+typedef SWIFT_ENUM(NSInteger, NautilusURLBrowseType, open) {
+/// <code>WKWebView</code>で表示する
+  NautilusURLBrowseTypeWebView = 0,
+/// <code>SFSafariViewController</code>で表示する
+  NautilusURLBrowseTypeSafariViewController = 1,
+/// 外部アプリで表示する
+  NautilusURLBrowseTypeExternalApp = 2,
+};
+
+@class NSURL;
+
+/// URLを表示するためのハンドラのプロトコル
+/// アプリで独自にURL遷移を制御したい場合には、このプロトコルを実装したクラスを用意する
+SWIFT_PROTOCOL("_TtP13NautilusUISDK18NautilusURLHandler_")
+@protocol NautilusURLHandler
+/// 指定されたURLを表示する
+/// \param url 表示対象のURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+/// \param viewController URLを表示しようとしているViewController
+///
+- (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType in:(UIViewController * _Nonnull)viewController;
+@end
+
+
+/// MA 2.0 SDKでURLを表示する時に、URLにパラメーターを付与するなどの前処理を行うプロトコル
+/// URLの表示はSDKで行うが、何らかのパラメーターをURLに追加する場合にアプリで実装を行う
+SWIFT_PROTOCOL("_TtP13NautilusUISDK23NautilusURLPreprocessor_")
+@protocol NautilusURLPreprocessor
+/// 表示するURLに対し、パラメーターなどを追加する
+/// \param baseURL 表示対象となるURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+///
+/// returns:
+/// <code>baseURL</code>にクエリーパラメーターなどを付与したURL
+- (NSURL * _Nonnull)buildURLFrom:(NSURL * _Nonnull)baseURL browseType:(enum NautilusURLBrowseType)browseType SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class Configuration;
+
+/// MA 2.0で、URLを表示するためのクラス
+/// このクラスのクラスメソッドを利用して、URLの表示を行います
+SWIFT_CLASS("_TtC13NautilusUISDK17NautilusWebHelper")
+@interface NautilusWebHelper : NSObject
+/// URLの表示を行う
+/// important:
+/// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
+/// \param url 表示対象のURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+/// \param viewController URLを表示しようとしているViewController
+///
++ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType in:(UIViewController * _Nonnull)viewController;
+/// URLの表示を行う
+/// important:
+/// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
+/// \param url 表示対象のURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+/// \param configuration URLを表示する際の各種設定
+///
+/// \param viewController URLを表示しようとしているViewController
+///
++ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType configuration:(Configuration * _Nonnull)configuration in:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// URL表示を行う際の画面の制御の指定
+SWIFT_CLASS("_TtCC13NautilusUISDK17NautilusWebHelper13Configuration")
+@interface Configuration : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NoneCategory, open) {
@@ -2352,11 +2518,11 @@ SWIFT_CLASS("_TtC13NautilusUISDK37NautilusInAppWebBrowserViewController")
 @end
 
 
-@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKUIDelegate>
+@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKNavigationDelegate>
 @end
 
 
-@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKNavigationDelegate>
+@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKUIDelegate>
 @end
 
 
@@ -2428,6 +2594,89 @@ SWIFT_CLASS("_TtC13NautilusUISDK21NautilusStackListView")
 @interface NautilusStackListView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+/// URLを表示する手段として指定された方法
+/// 管理画面での指定（内部・外部）に対応する値を示す
+/// ただし、アプリで表示を行う場合には、この指定に従う保証はない
+typedef SWIFT_ENUM(NSInteger, NautilusURLBrowseType, open) {
+/// <code>WKWebView</code>で表示する
+  NautilusURLBrowseTypeWebView = 0,
+/// <code>SFSafariViewController</code>で表示する
+  NautilusURLBrowseTypeSafariViewController = 1,
+/// 外部アプリで表示する
+  NautilusURLBrowseTypeExternalApp = 2,
+};
+
+@class NSURL;
+
+/// URLを表示するためのハンドラのプロトコル
+/// アプリで独自にURL遷移を制御したい場合には、このプロトコルを実装したクラスを用意する
+SWIFT_PROTOCOL("_TtP13NautilusUISDK18NautilusURLHandler_")
+@protocol NautilusURLHandler
+/// 指定されたURLを表示する
+/// \param url 表示対象のURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+/// \param viewController URLを表示しようとしているViewController
+///
+- (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType in:(UIViewController * _Nonnull)viewController;
+@end
+
+
+/// MA 2.0 SDKでURLを表示する時に、URLにパラメーターを付与するなどの前処理を行うプロトコル
+/// URLの表示はSDKで行うが、何らかのパラメーターをURLに追加する場合にアプリで実装を行う
+SWIFT_PROTOCOL("_TtP13NautilusUISDK23NautilusURLPreprocessor_")
+@protocol NautilusURLPreprocessor
+/// 表示するURLに対し、パラメーターなどを追加する
+/// \param baseURL 表示対象となるURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+///
+/// returns:
+/// <code>baseURL</code>にクエリーパラメーターなどを付与したURL
+- (NSURL * _Nonnull)buildURLFrom:(NSURL * _Nonnull)baseURL browseType:(enum NautilusURLBrowseType)browseType SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class Configuration;
+
+/// MA 2.0で、URLを表示するためのクラス
+/// このクラスのクラスメソッドを利用して、URLの表示を行います
+SWIFT_CLASS("_TtC13NautilusUISDK17NautilusWebHelper")
+@interface NautilusWebHelper : NSObject
+/// URLの表示を行う
+/// important:
+/// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
+/// \param url 表示対象のURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+/// \param viewController URLを表示しようとしているViewController
+///
++ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType in:(UIViewController * _Nonnull)viewController;
+/// URLの表示を行う
+/// important:
+/// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
+/// \param url 表示対象のURL
+///
+/// \param browseType MA 2.0でのURL表示方法の指定
+///
+/// \param configuration URLを表示する際の各種設定
+///
+/// \param viewController URLを表示しようとしているViewController
+///
++ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType configuration:(Configuration * _Nonnull)configuration in:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// URL表示を行う際の画面の制御の指定
+SWIFT_CLASS("_TtCC13NautilusUISDK17NautilusWebHelper13Configuration")
+@interface Configuration : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NoneCategory, open) {

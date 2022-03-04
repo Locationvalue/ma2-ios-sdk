@@ -327,6 +327,16 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK18NautilusBannerInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// バナーの遷移先の指定
+typedef SWIFT_ENUM(NSInteger, NautilusBannerLinkType, open) {
+/// アプリ内遷移
+  NautilusBannerLinkTypeFunction = 0,
+/// Web遷移（内部指定）
+  NautilusBannerLinkTypeInternal = 1,
+/// Web遷移（外部指定）
+  NautilusBannerLinkTypeExternal = 2,
+};
+
 
 /// バナーリストView
 SWIFT_CLASS("_TtC17NautilusBannerSDK22NautilusBannerListView")
@@ -739,6 +749,16 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK18NautilusBannerInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// バナーの遷移先の指定
+typedef SWIFT_ENUM(NSInteger, NautilusBannerLinkType, open) {
+/// アプリ内遷移
+  NautilusBannerLinkTypeFunction = 0,
+/// Web遷移（内部指定）
+  NautilusBannerLinkTypeInternal = 1,
+/// Web遷移（外部指定）
+  NautilusBannerLinkTypeExternal = 2,
+};
+
 
 /// バナーリストView
 SWIFT_CLASS("_TtC17NautilusBannerSDK22NautilusBannerListView")
@@ -1150,6 +1170,16 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK18NautilusBannerInfo")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+/// バナーの遷移先の指定
+typedef SWIFT_ENUM(NSInteger, NautilusBannerLinkType, open) {
+/// アプリ内遷移
+  NautilusBannerLinkTypeFunction = 0,
+/// Web遷移（内部指定）
+  NautilusBannerLinkTypeInternal = 1,
+/// Web遷移（外部指定）
+  NautilusBannerLinkTypeExternal = 2,
+};
 
 
 /// バナーリストView
