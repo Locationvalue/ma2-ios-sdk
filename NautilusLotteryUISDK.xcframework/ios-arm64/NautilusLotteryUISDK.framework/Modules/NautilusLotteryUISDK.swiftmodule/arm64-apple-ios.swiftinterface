@@ -33,11 +33,11 @@ import _Concurrency
   @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @_Concurrency.MainActor(unsafe) @objc get
   }
+  @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 @objc public protocol NautilusLotteryUIDelegate {
   @objc func lottery(_ lotteryUI: NautilusLotteryUISDK.NautilusLotteryUI, didTap lottery: NautilusLotterySDK.NautilusLotteryInfo, prize: NautilusLotterySDK.NautilusLotteryPrizeInfo, from viewController: UIKit.UIViewController)

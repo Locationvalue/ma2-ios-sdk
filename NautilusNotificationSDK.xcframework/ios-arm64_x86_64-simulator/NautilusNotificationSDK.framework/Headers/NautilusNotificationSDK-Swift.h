@@ -217,9 +217,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NautilusApp;
 @class NautilusNotificationHandler;
 @class NSData;
-@class NautilusRemoteMessage;
-@class NSError;
+@class NautilusRegistrationTarget;
 @class NSNumber;
+@class NSError;
+@class NautilusRemoteMessage;
 @class NSDate;
 
 SWIFT_CLASS("_TtC23NautilusNotificationSDK20NautilusNotification")
@@ -242,6 +243,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)registerDeviceForPushServiceWithCID:(NSString * _Nonnull)cid completion:(void (^ _Nonnull)(enum NautilusPushDeviceRegistraionFailureReason))completion;
 - (void)registerDeviceForPushServiceWithDeviceToken:(NSData * _Nonnull)deviceToken CID:(NSString * _Nonnull)cid completion:(void (^ _Nonnull)(enum NautilusPushDeviceRegistraionFailureReason))completion;
 - (void)registerDeviceForPushServiceWithDeviceTokenString:(NSString * _Nonnull)deviceToken CID:(NSString * _Nonnull)cid completion:(void (^ _Nonnull)(enum NautilusPushDeviceRegistraionFailureReason))completion;
+/// 現在サーバーに登録している端末に対して、配信対象を登録する
+/// \param registrationTarget PUSH通知の配信対象
+///
+/// \param completion サーバーで処理が行われた結果を受け取るハンドラ
+///
+- (void)registerPushTargetWithRegistrationTarget:(NautilusRegistrationTarget * _Nonnull)registrationTarget completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
 /// \param completion 完了ハンドラ
 ///
@@ -298,12 +305,23 @@ typedef SWIFT_ENUM(NSInteger, NautilusNotificationNetworkError, open) {
   NautilusNotificationNetworkErrorParseFailure = 4,
 /// 明示的にユーザーによりキャンセルされた
   NautilusNotificationNetworkErrorUserCancelled = 5,
+/// パラメーターが不正（SDK内の事前チェック）
+  NautilusNotificationNetworkErrorInvalidParameters = 6,
 };
 static NSString * _Nonnull const NautilusNotificationNetworkErrorDomain = @"NautilusNotificationSDK.NautilusNotificationNetworkError";
 
 
 SWIFT_CLASS("_TtC23NautilusNotificationSDK28NautilusPushNotificationInfo")
 @interface NautilusPushNotificationInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// 現在の端末をPUSH通知の配信対象として登録する情報
+/// 現在のデバイストークンを紐付けるIDの指定
+SWIFT_CLASS("_TtC23NautilusNotificationSDK26NautilusRegistrationTarget")
+@interface NautilusRegistrationTarget : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -540,9 +558,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NautilusApp;
 @class NautilusNotificationHandler;
 @class NSData;
-@class NautilusRemoteMessage;
-@class NSError;
+@class NautilusRegistrationTarget;
 @class NSNumber;
+@class NSError;
+@class NautilusRemoteMessage;
 @class NSDate;
 
 SWIFT_CLASS("_TtC23NautilusNotificationSDK20NautilusNotification")
@@ -565,6 +584,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)registerDeviceForPushServiceWithCID:(NSString * _Nonnull)cid completion:(void (^ _Nonnull)(enum NautilusPushDeviceRegistraionFailureReason))completion;
 - (void)registerDeviceForPushServiceWithDeviceToken:(NSData * _Nonnull)deviceToken CID:(NSString * _Nonnull)cid completion:(void (^ _Nonnull)(enum NautilusPushDeviceRegistraionFailureReason))completion;
 - (void)registerDeviceForPushServiceWithDeviceTokenString:(NSString * _Nonnull)deviceToken CID:(NSString * _Nonnull)cid completion:(void (^ _Nonnull)(enum NautilusPushDeviceRegistraionFailureReason))completion;
+/// 現在サーバーに登録している端末に対して、配信対象を登録する
+/// \param registrationTarget PUSH通知の配信対象
+///
+/// \param completion サーバーで処理が行われた結果を受け取るハンドラ
+///
+- (void)registerPushTargetWithRegistrationTarget:(NautilusRegistrationTarget * _Nonnull)registrationTarget completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
 /// \param completion 完了ハンドラ
 ///
@@ -621,12 +646,23 @@ typedef SWIFT_ENUM(NSInteger, NautilusNotificationNetworkError, open) {
   NautilusNotificationNetworkErrorParseFailure = 4,
 /// 明示的にユーザーによりキャンセルされた
   NautilusNotificationNetworkErrorUserCancelled = 5,
+/// パラメーターが不正（SDK内の事前チェック）
+  NautilusNotificationNetworkErrorInvalidParameters = 6,
 };
 static NSString * _Nonnull const NautilusNotificationNetworkErrorDomain = @"NautilusNotificationSDK.NautilusNotificationNetworkError";
 
 
 SWIFT_CLASS("_TtC23NautilusNotificationSDK28NautilusPushNotificationInfo")
 @interface NautilusPushNotificationInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// 現在の端末をPUSH通知の配信対象として登録する情報
+/// 現在のデバイストークンを紐付けるIDの指定
+SWIFT_CLASS("_TtC23NautilusNotificationSDK26NautilusRegistrationTarget")
+@interface NautilusRegistrationTarget : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

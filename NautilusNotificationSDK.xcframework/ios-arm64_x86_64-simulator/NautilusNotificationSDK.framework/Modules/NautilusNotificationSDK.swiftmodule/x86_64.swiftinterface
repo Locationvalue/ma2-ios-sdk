@@ -10,6 +10,13 @@ import NautilusLoggingSDK
 import Swift
 import UserNotifications
 import _Concurrency
+@_hasMissingDesignatedInitializers @objc final public class NautilusRegistrationTarget : ObjectiveC.NSObject {
+  convenience public init(pid: Swift.String)
+  convenience public init(cid: Swift.String)
+  convenience public init(manageCode: Swift.String)
+  convenience public init(dPoint: Swift.String)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusRemoteMessage : ObjectiveC.NSObject {
   final public let pushID: Swift.Int
   final public let message: Swift.String
@@ -29,6 +36,7 @@ public let NautilusNotificationErrorDomain: Swift.String
   case httpConnection
   case parseFailure
   case userCancelled
+  case invalidParameters
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -84,6 +92,8 @@ public typealias NautilusNotificationHandlerAction = (NautilusNotificationSDK.Na
   @objc(registerDeviceForPushServiceWithCID:completion:) final public func registerDeviceForPushService(cid: Swift.String, completion: @escaping (NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason) -> Swift.Void)
   @objc(registerDeviceForPushServiceWithDeviceToken:CID:completion:) final public func registerDeviceForPushService(deviceToken: Foundation.Data, cid: Swift.String, completion: @escaping (NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason) -> Swift.Void)
   @objc(registerDeviceForPushServiceWithDeviceTokenString:CID:completion:) final public func registerDeviceForPushService(deviceToken: Swift.String, cid: Swift.String, completion: @escaping (NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason) -> Swift.Void)
+  final public func registerPushTarget(registrationTarget: NautilusNotificationSDK.NautilusRegistrationTarget, completion: @escaping (Swift.Result<Swift.Void, NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
+  @objc final public func registerPushTarget(registrationTarget: NautilusNotificationSDK.NautilusRegistrationTarget, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc final public func getRemoteNotifications(completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
   @objc final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
   @objc final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, checkDate: Foundation.Date, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
