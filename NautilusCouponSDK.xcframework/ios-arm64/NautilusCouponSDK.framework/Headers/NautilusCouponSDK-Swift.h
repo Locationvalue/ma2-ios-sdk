@@ -261,7 +261,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// お気に入りクーポン一覧VCを返す
 - (UIViewController * _Nonnull)instantiateFavoriteCouponListViewController SWIFT_WARN_UNUSED_RESULT;
 /// クーポンID・タイプからクーポン詳細VCを返す
+/// 共通クーポン、個人別クーポン、お気に入り店舗別クーポン
 - (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
+/// クーポンID・タイプからクーポン詳細VCを返す
+/// 景品クーポン
+- (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID couponType:(enum NautilusCouponPublishType)couponType exchangeID:(NSInteger)exchangeID SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
