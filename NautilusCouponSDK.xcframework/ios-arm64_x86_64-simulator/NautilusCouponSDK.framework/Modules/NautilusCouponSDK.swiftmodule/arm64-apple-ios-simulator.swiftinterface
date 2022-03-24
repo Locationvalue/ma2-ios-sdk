@@ -135,7 +135,6 @@ public let NautilusCouponErrorDomain: Swift.String
   @objc final public func instantiateCouponListViewController() -> UIKit.UIViewController
   @objc final public func instantiateFavoriteCouponListViewController() -> UIKit.UIViewController
   @objc final public func instantiateCouponDetailViewController(couponID: Swift.Int, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
-  @objc final public func instantiateCouponDetailViewController(couponID: Swift.Int, couponType: NautilusCouponSDK.NautilusCouponPublishType, exchangeID: Swift.Int) -> UIKit.UIViewController
   @objc deinit
 }
 extension NautilusCouponSDK.NautilusCoupon {
