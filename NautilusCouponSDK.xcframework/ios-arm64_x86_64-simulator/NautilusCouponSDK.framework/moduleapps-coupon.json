@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "config_version": 2,
+  "config_version": 3,
   "app_name": "moduleapps-coupon",
   "shop_account_app_id": 0,
   "config_values": [
@@ -219,6 +219,22 @@
     {
       "config_value_name": "ma_coupon_use_condition_dialog_title",
       "string_value": "利用条件"
+    },
+    {
+      "config_value_name": "ma_coupon_detail_error_dialog_title",
+      "string_value": "エラー"
+    },
+    {
+      "config_value_name": "ma_coupon_detail_error_dialog_no_content_message",
+      "string_value": "該当するクーポンは、現在、配信されていません"
+    },
+    {
+      "config_value_name": "ma_coupon_detail_error_dialog_load_error_message",
+      "string_value": "クーポンが取得できませんでした。お手数ですが、電波環境をご確認いただき、再表示をしてください。"
+    },
+    {
+      "config_value_name": "ma_coupon_detail_error_dialog_close_button_text",
+      "string_value": "閉じる"
     }
   ]
 }
