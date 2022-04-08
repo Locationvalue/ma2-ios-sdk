@@ -151,7 +151,16 @@ extension UIKit.UIColor {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class NautilusLoadingView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public static func showLoadingIndicator(title: Swift.String, to viewController: UIKit.UIViewController)
+  public enum Style {
+    case transparent
+    case cover
+    public static func == (a: NautilusUISDK.NautilusLoadingView.Style, b: NautilusUISDK.NautilusLoadingView.Style) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) public static func showLoadingIndicator(title: Swift.String, style: NautilusUISDK.NautilusLoadingView.Style = .cover, to viewController: UIKit.UIViewController)
   @_Concurrency.MainActor(unsafe) public static func hideLoadingIndicator(from viewController: UIKit.UIViewController)
   @objc deinit
 }
@@ -830,6 +839,8 @@ public protocol NautilusStackListViewDataSource : AnyObject {
 }
 extension NautilusUISDK.NautilusAppTopBar.SelectionStyle : Swift.Equatable {}
 extension NautilusUISDK.NautilusAppTopBar.SelectionStyle : Swift.Hashable {}
+extension NautilusUISDK.NautilusLoadingView.Style : Swift.Equatable {}
+extension NautilusUISDK.NautilusLoadingView.Style : Swift.Hashable {}
 extension NautilusUISDK.ContainedButton.NautilusBorderRadiusStyle : Swift.Equatable {}
 extension NautilusUISDK.ContainedButton.NautilusBorderRadiusStyle : Swift.Hashable {}
 extension NautilusUISDK.ContainedButton.NautilusBorderRadiusStyle : Swift.RawRepresentable {}

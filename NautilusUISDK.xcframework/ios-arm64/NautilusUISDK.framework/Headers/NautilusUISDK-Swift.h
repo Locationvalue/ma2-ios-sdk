@@ -724,6 +724,7 @@ SWIFT_CLASS("_TtC13NautilusUISDK37NautilusInAppWebBrowserViewController")
 @end
 
 
+/// ローディングインジケータの表示
 SWIFT_CLASS("_TtC13NautilusUISDK19NautilusLoadingView")
 @interface NautilusLoadingView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
