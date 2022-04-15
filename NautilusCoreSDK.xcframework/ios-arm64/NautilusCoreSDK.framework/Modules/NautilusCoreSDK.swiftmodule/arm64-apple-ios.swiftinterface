@@ -172,6 +172,10 @@ extension Swift.Array : NautilusCoreSDK.KeyChainConvertible {
   public func convertDataArray() -> [Foundation.Data]?
 }
 @objc @_inheritsConvenienceInitializers final public class NetworkListener : ObjectiveC.NSObject {
+  final public var isListening: Swift.Bool {
+    get
+  }
+  @discardableResult
   final public func listenerStart() -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
