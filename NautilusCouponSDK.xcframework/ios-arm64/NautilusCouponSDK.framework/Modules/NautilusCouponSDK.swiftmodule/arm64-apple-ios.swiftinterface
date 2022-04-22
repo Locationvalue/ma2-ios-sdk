@@ -325,28 +325,6 @@ extension NautilusCouponSDK.NautilusCoupon {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class _NautilusCouponConfig : ObjectiveC.NSObject {
-  public var noneCategorySetting: NautilusUISDK.NoneCategory?
-  public var loadingText: Swift.String?
-  public var categoryTextColor: UIKit.UIColor?
-  public var categoryCellColor: UIKit.UIColor?
-  public var categoryCellWidth: NautilusUISDK.CellWidth?
-  public var hasDetailView: NautilusUISDK.TransitionStyle?
-  public var contentsColumn: NautilusUISDK.ContentsColumn?
-  public var cellClass: NautilusCouponSDK.NautilusCouponBaseCell.Type?
-  public var sectionText: [Swift.String]?
-  public var sectionType: NautilusCouponSDK.SectionType
-  public var zeroImage: UIKit.UIImage?
-  public var zeroText: Swift.String?
-  public var errorImage: UIKit.UIImage?
-  public var errorText: Swift.String?
-  public var errorButtonTitle: Swift.String?
-  @objc public static var shared: NautilusCouponSDK._NautilusCouponConfig {
-    @objc get
-  }
-  @objc public func initialize(noneCategorySetting: NautilusUISDK.NoneCategory, loadingText: Swift.String?, categoryTextColor: UIKit.UIColor?, categoryCellColor: UIKit.UIColor?, categoryCellWidth: NautilusUISDK.CellWidth?, hasDetailView: NautilusUISDK.TransitionStyle, contentsColumn: NautilusUISDK.ContentsColumn, cellClass: NautilusCouponSDK.NautilusCouponBaseCell.Type?, sectionType: NautilusCouponSDK.SectionType, sectionText: [Swift.String]?, zeroImage: UIKit.UIImage?, zeroText: Swift.String?, errorImage: UIKit.UIImage?, errorText: Swift.String?, errorButtonTitle: Swift.String?) -> NautilusCouponSDK._NautilusCouponConfig
-  @objc deinit
-}
 extension NautilusCouponSDK.NautilusCouponPublishTriggerType : Swift.Equatable {}
 extension NautilusCouponSDK.NautilusCouponPublishTriggerType : Swift.Hashable {}
 extension NautilusCouponSDK.NautilusCouponPublishTriggerType : Swift.RawRepresentable {}

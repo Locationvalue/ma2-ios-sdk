@@ -192,7 +192,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import NautilusContainerSDK;
 @import NautilusCoreSDK;
-@import NautilusUISDK;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -542,19 +541,6 @@ typedef SWIFT_ENUM(NSInteger, SectionType, open) {
   SectionTypeUseStatus = 0,
   SectionTypeNone = 1,
 };
-
-@class UIColor;
-@class CellWidth;
-@class UIImage;
-
-SWIFT_CLASS("_TtC17NautilusCouponSDK21_NautilusCouponConfig")
-@interface _NautilusCouponConfig : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) _NautilusCouponConfig * _Nonnull shared;)
-+ (_NautilusCouponConfig * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (_NautilusCouponConfig * _Nonnull)initializeWithNoneCategorySetting:(enum NoneCategory)noneCategorySetting loadingText:(NSString * _Nullable)loadingText categoryTextColor:(UIColor * _Nullable)categoryTextColor categoryCellColor:(UIColor * _Nullable)categoryCellColor categoryCellWidth:(CellWidth * _Nullable)categoryCellWidth hasDetailView:(enum TransitionStyle)hasDetailView contentsColumn:(enum ContentsColumn)contentsColumn cellClass:(SWIFT_METATYPE(NautilusCouponBaseCell) _Nullable)cellClass sectionType:(enum SectionType)sectionType sectionText:(NSArray<NSString *> * _Nullable)sectionText zeroImage:(UIImage * _Nullable)zeroImage zeroText:(NSString * _Nullable)zeroText errorImage:(UIImage * _Nullable)errorImage errorText:(NSString * _Nullable)errorText errorButtonTitle:(NSString * _Nullable)errorButtonTitle SWIFT_WARN_UNUSED_RESULT;
-@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

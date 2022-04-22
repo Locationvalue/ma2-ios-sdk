@@ -52,6 +52,7 @@ import _Concurrency
   @objc final public func createShop() -> UIKit.UINavigationController
   @objc final public func instantiateFavoriteShop() -> UIKit.UIViewController
   @objc final public func instantiateShopDetail(shopID: Swift.Int) -> UIKit.UIViewController
+  @objc final public func instantiateShopListViewController() -> UIKit.UIViewController
   final public func getShopList(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
   @objc final public func getShopList(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func searchShop(location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)

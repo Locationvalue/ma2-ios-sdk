@@ -188,6 +188,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import NautilusContainerSDK;
+@import NautilusCoreSDK;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -204,6 +208,65 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="NautilusGeoUtilSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+/// <code>NautilusGeoUtil</code>のエラー定義
+typedef SWIFT_ENUM(NSInteger, GeoUtilApiError, open) {
+/// 不明
+  GeoUtilApiErrorUnknown = 0,
+/// 接続エラー
+  GeoUtilApiErrorConnection = 1,
+/// API処理エラー
+  GeoUtilApiErrorApiProcessError = 2,
+/// HTTP/HTTPS通信エラー
+  GeoUtilApiErrorHttpConnection = 3,
+/// レスポンスのパースエラー
+  GeoUtilApiErrorParseFailure = 4,
+/// 明示的にユーザーによりキャンセルされた
+  GeoUtilApiErrorUserCancelled = 5,
+/// 不正なパラメータ
+  GeoUtilApiErrorInvalidParamater = 6,
+};
+static NSString * _Nonnull const GeoUtilApiErrorDomain = @"NautilusGeoUtilSDK.GeoUtilApiError";
+
+@class NSString;
+@class NautilusApp;
+@class NautilusComponentDependency;
+enum NautilusPrefectureCode : NSInteger;
+@class NautilusMunicipalityCode;
+@class NSError;
+
+/// アプリとのインターフェースクラス：都道府県、市区町村情報
+SWIFT_CLASS("_TtC18NautilusGeoUtilSDK15NautilusGeoUtil")
+@interface NautilusGeoUtil : NSObject <NautilusFeature>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
++ (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) NautilusApp * _Nonnull app;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
++ (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
++ (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, copy) NSString * _Nullable name;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (NautilusGeoUtil * _Nonnull)geoUtil SWIFT_WARN_UNUSED_RESULT;
++ (NautilusGeoUtil * _Nonnull)geoUtilAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
+/// 市区町村データを取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param prefectureCode データを取得する都道府県
+///
+/// \param completion 市区町村データまたはエラー情報
+///
+- (void)getMunicipalityListWithPrefectureCode:(enum NautilusPrefectureCode)prefectureCode completion:(void (^ _Nonnull)(NSArray<NautilusMunicipalityCode *> * _Nullable, NSError * _Nullable))completion;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// 市区町村データ
+SWIFT_CLASS("_TtC18NautilusGeoUtilSDK24NautilusMunicipalityCode")
+@interface NautilusMunicipalityCode : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 /// 都道府県情報の定義
 /// 以下のものを定義した定数

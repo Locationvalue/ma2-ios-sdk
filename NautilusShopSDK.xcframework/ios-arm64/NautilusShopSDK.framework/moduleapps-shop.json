@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "config_version": 3,
+  "config_version": 4,
   "app_name": "moduleapps-shop",
   "shop_account_app_id": 0,
   "config_values": [
@@ -374,6 +374,10 @@
       "string_value": "閉じる"
     },
     {
+      "config_value_name": "ma_shop_favorite_list_loading_text",
+      "string_value": "読み込み中..."
+    },
+    {
       "config_value_name": "ma_shop_detail_error_dialog_title",
       "string_value": "エラー"
     },
@@ -388,6 +392,74 @@
     {
       "config_value_name": "ma_shop_detail_error_dialog_close_button_text",
       "string_value": "閉じる"
+    },
+    {
+      "config_value_name": "ma_shop_list_screen_title",
+      "string_value": "店舗一覧"
+    },
+    {
+      "config_value_name": "ma_shop_list_item_title_element",
+      "string_value": "shop_name"
+    },
+    {
+      "config_value_name": "ma_shop_list_item_body1_element",
+      "string_value": "open_time"
+    },
+    {
+      "config_value_name": "ma_shop_list_item_body2_element",
+      "string_value": "address"
+    },
+    {
+      "config_value_name": "ma_shop_list_distance_text_format_threshold",
+      "integer_value": 10000
+    },
+    {
+      "config_value_name": "ma_shop_list_distance_text_format_near_group_separator",
+      "string_value": ","
+    },
+    {
+      "config_value_name": "ma_shop_list_distance_text_format_near_decimal_separator",
+      "string_value": "."
+    },
+    {
+      "config_value_name": "ma_shop_list_distance_text_format_near_fractional_length",
+      "integer_value": 0
+    },
+    {
+      "config_value_name": "ma_shop_list_distance_text_format_near_unit",
+      "string_value": "m"
+    },
+    {
+      "config_value_name": "ma_shop_list_distance_text_format_far_group_separator",
+      "string_value": ","
+    },
+    {
+      "config_value_name": "ma_shop_list_distance_text_format_far_decimal_separator",
+      "string_value": "."
+    },
+    {
+      "config_value_name": "ma_shop_list_distance_text_format_far_fractional_length",
+      "integer_value": 2
+    },
+    {
+      "config_value_name": "ma_shop_list_distance_text_format_far_unit",
+      "string_value": "km"
+    },
+    {
+      "config_value_name": "ma_shop_list_loading_text",
+      "string_value": "読み込み中..."
+    },
+    {
+      "config_value_name": "ma_shop_list_empty_state_text",
+      "string_value": "該当する店舗情報はありません"
+    },
+    {
+      "config_value_name": "ma_shop_list_load_error_text",
+      "string_value": "読み込み中にエラーが発生しました"
+    },
+    {
+      "config_value_name": "ma_shop_list_reload_button_text",
+      "string_value": "再読み込み"
     }
   ]
 }
