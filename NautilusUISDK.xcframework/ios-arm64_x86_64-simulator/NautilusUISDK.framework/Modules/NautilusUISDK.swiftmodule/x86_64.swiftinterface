@@ -636,9 +636,19 @@ public enum CategoryCellWidth {
     public let image: UIKit.UIImage?
     public let title: Swift.String
     public let message: Swift.String
+    public let reason: NautilusUISDK.NautilusCommonErrorView.ErrorReason
     public let actionText: Swift.String
     public let action: () -> Swift.Void
-    public init(image: UIKit.UIImage? = nil, title: Swift.String, message: Swift.String = "", actionText: Swift.String = "", action: @escaping () -> Swift.Void)
+    public init(image: UIKit.UIImage? = nil, title: Swift.String, message: Swift.String = "", reason: NautilusUISDK.NautilusCommonErrorView.ErrorReason = .network, actionText: Swift.String = "", action: @escaping () -> Swift.Void)
+  }
+  public enum ErrorReason {
+    case empty
+    case network
+    public static func == (a: NautilusUISDK.NautilusCommonErrorView.ErrorReason, b: NautilusUISDK.NautilusCommonErrorView.ErrorReason) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
   }
   @_Concurrency.MainActor(unsafe) public static func instantiate(errorInfo: NautilusUISDK.NautilusCommonErrorView.ErrorInfo) -> NautilusUISDK.NautilusCommonErrorView
   @objc deinit
@@ -856,6 +866,8 @@ extension NautilusUISDK.CellLayoutSize : Swift.Hashable {}
 extension NautilusUISDK.NoneCategory : Swift.Equatable {}
 extension NautilusUISDK.NoneCategory : Swift.Hashable {}
 extension NautilusUISDK.NoneCategory : Swift.RawRepresentable {}
+extension NautilusUISDK.NautilusCommonErrorView.ErrorReason : Swift.Equatable {}
+extension NautilusUISDK.NautilusCommonErrorView.ErrorReason : Swift.Hashable {}
 extension NautilusUISDK.ContentsColumn : Swift.Equatable {}
 extension NautilusUISDK.ContentsColumn : Swift.Hashable {}
 extension NautilusUISDK.ContentsColumn : Swift.RawRepresentable {}
