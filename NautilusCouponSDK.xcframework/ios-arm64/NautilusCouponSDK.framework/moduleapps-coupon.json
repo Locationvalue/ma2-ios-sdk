@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "config_version": 4,
+  "config_version": 1,
   "app_name": "moduleapps-coupon",
   "shop_account_app_id": 0,
   "config_values": [
@@ -31,6 +31,22 @@
     {
       "config_value_name": "ma_coupon_default_fixed_period_use_limit",
       "integer_value": 1800
+    },
+    {
+      "config_value_name": "ma_coupon_use_coupon_confirm_dialog_title",
+      "string_value": ""
+    },
+    {
+      "config_value_name": "ma_coupon_use_coupon_confirm_dialog_message",
+      "string_value": "このクーポンを使用しますか？\nクーポンの使用を取り消すことはできませんので、利用条件をご確認の上、クーポンの使用をしてください。"
+    },
+    {
+      "config_value_name": "ma_coupon_use_coupon_confirm_dialog_use_button_text",
+      "string_value": "使用する"
+    },
+    {
+      "config_value_name": "ma_coupon_use_coupon_confirm_dialog_cancel_button_text",
+      "string_value": "キャンセル"
     },
     {
       "config_value_name": "ma_coupon_default_web_browser_type",
