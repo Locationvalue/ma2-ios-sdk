@@ -2,8 +2,6 @@
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusUISDK
 import Foundation
-import NautilusConfigSDK
-import NautilusCoreSDK
 import NautilusLoggingSDK
 import SafariServices
 import Swift
@@ -99,25 +97,6 @@ extension UIKit.UIColor {
   convenience public init(hexCode: Swift.String)
   convenience public init(hex: Swift.String, alpha: CoreGraphics.CGFloat = 1.0)
 }
-@objc final public class NautilusInAppBrowserOption : ObjectiveC.NSObject {
-  final public let title: Swift.String?
-  final public let isSendID: Swift.Bool?
-  public init(title: Swift.String? = nil, isSendID: Swift.Bool? = false)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class NautilusInAppBrowserViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var progressView: UIKit.UIProgressView!
-  @_Concurrency.MainActor(unsafe) public var webView: WebKit.WKWebView!
-  @_Concurrency.MainActor(unsafe) final public let webConfigration: WebKit.WKWebViewConfiguration
-  @objc @_Concurrency.MainActor(unsafe) public static func initialize(linkURL: Foundation.URL, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings?, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption?, configuration: NautilusUISDK.NautilusWebHelper.Configuration?) -> NautilusUISDK.NautilusInAppBrowserViewController
-  @objc @_Concurrency.MainActor(unsafe) public static func initialize(redirectorKey: Swift.String, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption?, configuration: NautilusUISDK.NautilusWebHelper.Configuration?) -> NautilusUISDK.NautilusInAppBrowserViewController
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
-  @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NautilusAppTabView : UIKit.UICollectionView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -169,10 +148,6 @@ extension UIKit.UIColor {
   @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) final public func reloadData()
   @_Concurrency.MainActor(unsafe) final public func selectItem(at index: Swift.Int)
-  @objc deinit
-}
-@objc public class NautilusInAppBrowserSettings : ObjectiveC.NSObject {
-  public init(app: NautilusCoreSDK.NautilusApp, pid: Swift.String?, cid: Swift.String?)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class NautilusLoadingView : UIKit.UIView {
@@ -478,15 +453,6 @@ public enum NautilusBottomSheetFrameChangeReason {
   @_Concurrency.MainActor(unsafe) @objc override final public func hitTest(_ point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class NautilusWebViewNavigationDelegate : ObjectiveC.NSObject, WebKit.WKNavigationDelegate {
-  @objc open func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
-  @objc open func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: Swift.Error)
-  @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
-  @objc open func webView(_ webView: WebKit.WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WebKit.WKNavigation!)
-  @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
-  @objc override dynamic public init()
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class NautilusGridViewCell : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) open var isSelected: Swift.Bool
   @_Concurrency.MainActor(unsafe) open var isHighlighted: Swift.Bool
@@ -581,14 +547,6 @@ extension NautilusUISDK.NautilusListViewCreatable where Self : UIKit.UIViewContr
 }
 @objc public protocol NautilusURLPreprocessor {
   @objc func buildURL(from baseURL: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType) -> Foundation.URL
-}
-@_inheritsConvenienceInitializers @objc open class NautilusWebViewUIDelegate : ObjectiveC.NSObject, WebKit.WKUIDelegate {
-  @objc open func webView(_ webView: WebKit.WKWebView, runJavaScriptAlertPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping () -> Swift.Void)
-  @objc open func webView(_ webView: WebKit.WKWebView, runJavaScriptConfirmPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
-  @objc open func webView(_ webView: WebKit.WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: Swift.String, defaultText: Swift.String?, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping (Swift.String?) -> Swift.Void)
-  @objc open func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
-  @objc override dynamic public init()
-  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusAppTopBarItemTitledLabelView : NautilusUISDK.NautilusAppTopBarItemView {
   @_Concurrency.MainActor(unsafe) final public var title: Swift.String? {
@@ -861,14 +819,8 @@ public protocol NautilusStackListViewDataSource : AnyObject {
   }
   public static var handler: NautilusUISDK.NautilusURLHandler?
   public static var preprocessor: NautilusUISDK.NautilusURLPreprocessor?
-  @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, in viewController: UIKit.UIViewController)
-  @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption, in viewController: UIKit.UIViewController)
-  @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, configuration: NautilusUISDK.NautilusWebHelper.Configuration, in viewController: UIKit.UIViewController)
-  @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption, configuration: NautilusUISDK.NautilusWebHelper.Configuration, in viewController: UIKit.UIViewController)
-  @objc public static func open(redirectKey: Swift.String, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings, in viewController: UIKit.UIViewController)
-  @objc public static func open(redirectKey: Swift.String, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption, in viewController: UIKit.UIViewController)
-  @objc public static func open(redirectKey: Swift.String, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings, configuration: NautilusUISDK.NautilusWebHelper.Configuration, in viewController: UIKit.UIViewController)
-  @objc public static func open(redirectKey: Swift.String, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption, configuration: NautilusUISDK.NautilusWebHelper.Configuration, in viewController: UIKit.UIViewController)
+  @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, in viewController: UIKit.UIViewController)
+  @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, configuration: NautilusUISDK.NautilusWebHelper.Configuration, in viewController: UIKit.UIViewController)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class NautilusCheckBoxGroup : UIKit.UIView {
