@@ -707,61 +707,6 @@ SWIFT_PROTOCOL("_TtP13NautilusUISDK24NautilusGridViewDelegate_")
 
 
 
-/// <code>NautilusInAppBrowserViewController</code>へのオプションを追加する
-SWIFT_CLASS("_TtC13NautilusUISDK26NautilusInAppBrowserOption")
-@interface NautilusInAppBrowserOption : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-/// <code>NautilusInAppBrowserViewController</code>へ ID やアプリの情報を提供する
-SWIFT_CLASS("_TtC13NautilusUISDK28NautilusInAppBrowserSettings")
-@interface NautilusInAppBrowserSettings : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class NSURL;
-@class Configuration;
-
-/// WebViewを表示するViewController
-SWIFT_CLASS("_TtC13NautilusUISDK34NautilusInAppBrowserViewController")
-@interface NautilusInAppBrowserViewController : UIViewController
-/// URL から初期化する
-/// \param linkURL URL
-///
-/// \param inAppBrowserSettings ID やアプリの情報
-///
-/// \param inAppBrowserOption オプションの追加
-///
-/// \param configuration delegateクラス
-///
-///
-/// returns:
-/// NautilusInAppBrowserViewController
-+ (NautilusInAppBrowserViewController * _Nonnull)initializeWithLinkURL:(NSURL * _Nonnull)linkURL inAppBrowserSettings:(NautilusInAppBrowserSettings * _Nullable)inAppBrowserSettings inAppBrowserOption:(NautilusInAppBrowserOption * _Nullable)inAppBrowserOption configuration:(Configuration * _Nullable)configuration SWIFT_WARN_UNUSED_RESULT;
-/// リダイレクタから初期化する
-/// \param redirectorKey リダイレクトキー
-///
-/// \param inAppBrowserSettings ID やアプリの情報
-///
-/// \param inAppBrowserOption オプションの追加
-///
-/// \param configuration delegateクラス
-///
-///
-/// returns:
-/// NautilusInAppBrowserViewController
-+ (NautilusInAppBrowserViewController * _Nonnull)initializeWithRedirectorKey:(NSString * _Nonnull)redirectorKey inAppBrowserSettings:(NautilusInAppBrowserSettings * _Nonnull)inAppBrowserSettings inAppBrowserOption:(NautilusInAppBrowserOption * _Nullable)inAppBrowserOption configuration:(Configuration * _Nullable)configuration SWIFT_WARN_UNUSED_RESULT;
-- (void)viewDidLoad;
-- (void)viewWillLayoutSubviews;
-- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 /// WebViewを表示するViewController
 SWIFT_CLASS("_TtC13NautilusUISDK37NautilusInAppWebBrowserViewController")
 @interface NautilusInAppWebBrowserViewController : UIViewController
@@ -771,11 +716,11 @@ SWIFT_CLASS("_TtC13NautilusUISDK37NautilusInAppWebBrowserViewController")
 @end
 
 
-@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKNavigationDelegate>
+@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKUIDelegate>
 @end
 
 
-@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKUIDelegate>
+@interface NautilusInAppWebBrowserViewController (SWIFT_EXTENSION(NautilusUISDK)) <WKNavigationDelegate>
 @end
 
 
@@ -850,14 +795,6 @@ SWIFT_CLASS("_TtC13NautilusUISDK21NautilusStackListView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
-
-/// 汎用的に使用される文言とWebViewのための文言
-SWIFT_CLASS("_TtC13NautilusUISDK19NautilusUIComponent")
-@interface NautilusUIComponent : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 /// URLを表示する手段として指定された方法
 /// 管理画面での指定（内部・外部）に対応する値を示す
 /// ただし、アプリで表示を行う場合には、この指定に従う保証はない
@@ -870,6 +807,7 @@ typedef SWIFT_ENUM(NSInteger, NautilusURLBrowseType, open) {
   NautilusURLBrowseTypeExternalApp = 2,
 };
 
+@class NSURL;
 
 /// URLを表示するためのハンドラのプロトコル
 /// アプリで独自にURL遷移を制御したい場合には、このプロトコルを実装したクラスを用意する
@@ -901,6 +839,7 @@ SWIFT_PROTOCOL("_TtP13NautilusUISDK23NautilusURLPreprocessor_")
 - (NSURL * _Nonnull)buildURLFrom:(NSURL * _Nonnull)baseURL browseType:(enum NautilusURLBrowseType)browseType SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class Configuration;
 
 /// MA 2.0で、URLを表示するためのクラス
 /// このクラスのクラスメソッドを利用して、URLの表示を行います
@@ -909,103 +848,25 @@ SWIFT_CLASS("_TtC13NautilusUISDK17NautilusWebHelper")
 /// URLの表示を行う
 /// important:
 /// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
-/// IDを送信する際はinAppBrowserSettingsパラメータを使用してください
 /// \param url 表示対象のURL
 ///
 /// \param browseType MA 2.0でのURL表示方法の指定
 ///
-/// \param inAppBrowserSettings アプリ・ID情報
+/// \param viewController URLを表示しようとしているViewController
 ///
-/// \param viewController 表示しようとしている<code>ViewController</code>
-///
-+ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType inAppBrowserSettings:(NautilusInAppBrowserSettings * _Nullable)inAppBrowserSettings in:(UIViewController * _Nonnull)viewController;
++ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType in:(UIViewController * _Nonnull)viewController;
 /// URLの表示を行う
 /// important:
 /// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
-/// IDを送信する際はinAppBrowserSettingsパラメータを使用してください
 /// \param url 表示対象のURL
 ///
 /// \param browseType MA 2.0でのURL表示方法の指定
 ///
-/// \param inAppBrowserSettings アプリ・ID情報
-///
-/// \param inAppBrowserOption 内部ブラウザのオプション
-///
-/// \param viewController 表示しようとしている<code>ViewController</code>
-///
-+ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType inAppBrowserSettings:(NautilusInAppBrowserSettings * _Nullable)inAppBrowserSettings inAppBrowserOption:(NautilusInAppBrowserOption * _Nonnull)inAppBrowserOption in:(UIViewController * _Nonnull)viewController;
-/// URLの表示を行う
-/// important:
-/// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
-/// IDを送信する際はinAppBrowserSettingsパラメータを使用してください
-/// \param url 表示対象のURL
-///
-/// \param browseType MA 2.0でのURL表示方法の指定
-///
-/// \param inAppBrowserSettings アプリ・ID情報
-///
 /// \param configuration URLを表示する際の各種設定
 ///
-/// \param viewController 表示しようとしている<code>ViewController</code>
+/// \param viewController URLを表示しようとしているViewController
 ///
-+ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType inAppBrowserSettings:(NautilusInAppBrowserSettings * _Nullable)inAppBrowserSettings configuration:(Configuration * _Nonnull)configuration in:(UIViewController * _Nonnull)viewController;
-/// URLの表示を行う
-/// important:
-/// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
-/// IDを送信する際はinAppBrowserSettingsパラメータを使用してください
-/// \param url 表示対象のURL
-///
-/// \param browseType MA 2.0でのURL表示方法の指定
-///
-/// \param inAppBrowserSettings アプリ・ID情報
-///
-/// \param inAppBrowserOption 内部ブラウザのオプション
-///
-/// \param configuration URLを表示する際の各種設定
-///
-/// \param viewController 表示しようとしている<code>ViewController</code>
-///
-+ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType inAppBrowserSettings:(NautilusInAppBrowserSettings * _Nullable)inAppBrowserSettings inAppBrowserOption:(NautilusInAppBrowserOption * _Nonnull)inAppBrowserOption configuration:(Configuration * _Nonnull)configuration in:(UIViewController * _Nonnull)viewController;
-/// URLの表示を行う
-/// \param redirectKey 管理画面で設定したリダイレクタキー
-///
-/// \param inAppBrowserSettings アプリ・ID情報
-///
-/// \param viewController 表示しようとしている<code>ViewController</code>
-///
-+ (void)openWithRedirectKey:(NSString * _Nonnull)redirectKey inAppBrowserSettings:(NautilusInAppBrowserSettings * _Nonnull)inAppBrowserSettings in:(UIViewController * _Nonnull)viewController;
-/// URLの表示を行う
-/// \param redirectKey 管理画面で設定したリダイレクタキー
-///
-/// \param inAppBrowserSettings アプリ・ID情報
-///
-/// \param inAppBrowserOption 内部ブラウザのオプション
-///
-/// \param viewController 表示しようとしている<code>ViewController</code>
-///
-+ (void)openWithRedirectKey:(NSString * _Nonnull)redirectKey inAppBrowserSettings:(NautilusInAppBrowserSettings * _Nonnull)inAppBrowserSettings inAppBrowserOption:(NautilusInAppBrowserOption * _Nonnull)inAppBrowserOption in:(UIViewController * _Nonnull)viewController;
-/// URLの表示を行う
-/// \param redirectKey 管理画面で設定したリダイレクタキー
-///
-/// \param inAppBrowserSettings アプリ・ID情報
-///
-/// \param configuration URLを表示する際の各種設定
-///
-/// \param viewController 表示しようとしている<code>ViewController</code>
-///
-+ (void)openWithRedirectKey:(NSString * _Nonnull)redirectKey inAppBrowserSettings:(NautilusInAppBrowserSettings * _Nonnull)inAppBrowserSettings configuration:(Configuration * _Nonnull)configuration in:(UIViewController * _Nonnull)viewController;
-/// URLの表示を行う
-/// \param redirectKey 管理画面で設定したリダイレクタキー
-///
-/// \param inAppBrowserSettings アプリ・ID情報
-///
-/// \param inAppBrowserOption 内部ブラウザのオプション
-///
-/// \param configuration URLを表示する際の各種設定
-///
-/// \param viewController 表示しようとしている<code>ViewController</code>
-///
-+ (void)openWithRedirectKey:(NSString * _Nonnull)redirectKey inAppBrowserSettings:(NautilusInAppBrowserSettings * _Nonnull)inAppBrowserSettings inAppBrowserOption:(NautilusInAppBrowserOption * _Nonnull)inAppBrowserOption configuration:(Configuration * _Nonnull)configuration in:(UIViewController * _Nonnull)viewController;
++ (void)openWithUrl:(NSURL * _Nonnull)url browseType:(enum NautilusURLBrowseType)browseType configuration:(Configuration * _Nonnull)configuration in:(UIViewController * _Nonnull)viewController;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1014,115 +875,6 @@ SWIFT_CLASS("_TtC13NautilusUISDK17NautilusWebHelper")
 /// URL表示を行う際の画面の制御の指定
 SWIFT_CLASS("_TtCC13NautilusUISDK17NautilusWebHelper13Configuration")
 @interface Configuration : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class WKWebView;
-@class WKNavigation;
-@class WKNavigationResponse;
-@class WKNavigationAction;
-
-/// <code>WKNavigationDelegate</code>の挙動をカスタムしたい場合はこのクラスを継承する
-SWIFT_CLASS("_TtC13NautilusUISDK33NautilusWebViewNavigationDelegate")
-@interface NautilusWebViewNavigationDelegate : NSObject <WKNavigationDelegate>
-/// 読み込み途中のエラーに対応する
-/// \param webView デリゲートメソッドを呼び出したWebView
-///
-/// \param navigation 操作のためのナビゲーションオブジェクト
-///
-/// \param error 発生したエラー
-///
-- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
-/// 読み込み開始時のエラーに対応する(圏外など)
-/// \param webView デリゲートメソッドを呼び出したWebView
-///
-/// \param navigation 操作のためのナビゲーションオブジェクト
-///
-/// \param error 発生したエラー
-///
-- (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
-/// レスポンスのエラーに対応する（403など）
-/// \param webView デリゲートメソッドを呼び出したWebView
-///
-/// \param navigationResponse ナビゲーションレスポンスに関する情報
-///
-/// \param decisionHandler 操作を許可するかキャンセルするかに関する結果を呼び出すための完了ハンドラ
-///
-- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse decisionHandler:(void (^ _Nonnull)(WKNavigationResponsePolicy))decisionHandler;
-/// リダイレクトを受信したときに呼び出される
-/// \param webView デリゲートメソッドを呼び出したWebView
-///
-/// \param navigation ナビゲーション
-///
-- (void)webView:(WKWebView * _Nonnull)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
-/// 指定されたアクション情報に基づいて新しいコンテンツに移動する許可をデリゲートに要求します
-/// \param webView 操作要求が開始されたWebView
-///
-/// \param navigationAction 操作リクエストをトリガーしたアクションの詳細
-///
-/// \param decisionHandler 操作を許可するかキャンセルするかに関する結果を呼び出すための完了ハンドラ
-///
-- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class WKFrameInfo;
-@class WKWebViewConfiguration;
-@class WKWindowFeatures;
-
-/// <code>WKUIDelegate</code>の挙動をカスタムしたい場合はこのクラスを継承する
-SWIFT_CLASS("_TtC13NautilusUISDK25NautilusWebViewUIDelegate")
-@interface NautilusWebViewUIDelegate : NSObject <WKUIDelegate>
-/// JavaScriptアラートパネルを表示します
-/// \param webView デリゲートメソッドを呼び出すWebView
-///
-/// \param message 表示されるメッセージ
-///
-/// \param frame JavaScriptプロセスがこの呼び出しを開始したフレーム
-///
-/// \param completionHandler アラートが閉じられた後に呼び出す完了ハンドラ
-///
-- (void)webView:(WKWebView * _Nonnull)webView runJavaScriptAlertPanelWithMessage:(NSString * _Nonnull)message initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(void))completionHandler;
-/// JavaScript確認パネルを表示します
-/// \param webView デリゲートメソッドを呼び出すWebView
-///
-/// \param message 表示されるメッセージ
-///
-/// \param frame JavaScriptプロセスがこの呼び出しを開始したフレーム
-///
-/// \param completionHandler アラートが閉じられた後に呼び出す完了ハンドラ
-///
-- (void)webView:(WKWebView * _Nonnull)webView runJavaScriptConfirmPanelWithMessage:(NSString * _Nonnull)message initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
-/// JavaScriptテキスト入力パネルを表示します
-/// \param webView デリゲートメソッドを呼び出すWebView
-///
-/// \param prompt 表示されるメッセージ
-///
-/// \param defaultText テキスト入力フィールドに表示される最初のテキスト
-///
-/// \param frame JavaScriptプロセスがこの呼び出しを開始したフレーム
-///
-/// \param completionHandler テキスト入力パネルが閉じられた後に呼び出す完了ハンドラ。ユーザーがOKを選択した場合は、入力したテキストを渡します。Cancelの場合は、nilを渡します
-///
-- (void)webView:(WKWebView * _Nonnull)webView runJavaScriptTextInputPanelWithPrompt:(NSString * _Nonnull)prompt defaultText:(NSString * _Nullable)defaultText initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
-/// 新しいウェブビューを作成する
-/// <ul>
-///   <li>
-///     Description: MAのデフォルトでは新しいタブは既存のビューで開きます
-///   </li>
-/// </ul>
-/// \param webView デリゲートメソッドを呼び出すWebView
-///
-/// \param configuration 新しいウェブビューを作成するときに使用する設定
-///
-/// \param navigationAction 新しいウェブビューが作成される原因となるアクション
-///
-/// \param windowFeatures ウェブページから要求されたウィンドウ機能
-///
-///
-/// returns:
-/// 新しいウェブビューまたはnil
-- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
