@@ -56,7 +56,6 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   @objc deinit
 }
 @objc public enum NautilusAnalyticsEvent : Swift.Int {
-  case startApp
   case showTopPage
   case moveAppBackground
   case moveAppForeground
@@ -140,6 +139,7 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   case segmentID
   case channelType
   case appStartType
+  case appStart
   case appMoveTrigger
   case appMoveNotificationID
   case appMoveNotificationTitle

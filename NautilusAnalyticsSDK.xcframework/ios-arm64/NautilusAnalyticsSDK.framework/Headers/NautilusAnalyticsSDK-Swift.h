@@ -317,136 +317,134 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 
 /// Amplitudeに送るイベント名
 typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEvent, open) {
-/// アプリが起動する
-  NautilusAnalyticsEventStartApp = 0,
 /// トップページを見る
-  NautilusAnalyticsEventShowTopPage = 1,
+  NautilusAnalyticsEventShowTopPage = 0,
 /// アプリがバックグラウンドに移動
-  NautilusAnalyticsEventMoveAppBackground = 2,
+  NautilusAnalyticsEventMoveAppBackground = 1,
 /// アプリがフォアグラウンドに移動
-  NautilusAnalyticsEventMoveAppForeground = 3,
+  NautilusAnalyticsEventMoveAppForeground = 2,
 /// イントロダクション1を見る
-  NautilusAnalyticsEventShowIntroduction1 = 4,
+  NautilusAnalyticsEventShowIntroduction1 = 3,
 /// イントロダクション2を見る
-  NautilusAnalyticsEventShowIntroduction2 = 5,
+  NautilusAnalyticsEventShowIntroduction2 = 4,
 /// イントロダクション3を見る
-  NautilusAnalyticsEventShowIntroduction3 = 6,
+  NautilusAnalyticsEventShowIntroduction3 = 5,
 /// イントロダクション4を見る
-  NautilusAnalyticsEventShowIntroduction4 = 7,
+  NautilusAnalyticsEventShowIntroduction4 = 6,
 /// イントロダクション5を見る
-  NautilusAnalyticsEventShowIntroduction5 = 8,
+  NautilusAnalyticsEventShowIntroduction5 = 7,
 /// イントロダクション6を見る
-  NautilusAnalyticsEventShowIntroduction6 = 9,
+  NautilusAnalyticsEventShowIntroduction6 = 8,
 /// イントロダクションを閉じる
-  NautilusAnalyticsEventTapIntroductionClose = 10,
+  NautilusAnalyticsEventTapIntroductionClose = 9,
 /// 利用規約を見る
-  NautilusAnalyticsEventShowTermsOfUse = 11,
+  NautilusAnalyticsEventShowTermsOfUse = 10,
 /// 利用規約に同意する
-  NautilusAnalyticsEventTapTermsOfUseOK = 12,
+  NautilusAnalyticsEventTapTermsOfUseOK = 11,
 /// 会員登録画面を見る
-  NautilusAnalyticsEventShowMemberAttribute = 13,
+  NautilusAnalyticsEventShowMemberAttribute = 12,
 /// 会員登録をタップする
-  NautilusAnalyticsEventTapMemberAttributeRegister = 14,
+  NautilusAnalyticsEventTapMemberAttributeRegister = 13,
 /// 会員登録をキャンセルする
-  NautilusAnalyticsEventTapMemberAttributeCancel = 15,
+  NautilusAnalyticsEventTapMemberAttributeCancel = 14,
 /// アンケート画面を見る
-  NautilusAnalyticsEventShowSurvey = 16,
+  NautilusAnalyticsEventShowSurvey = 15,
 /// アンケートに回答する
-  NautilusAnalyticsEventTapSurveyAnswer = 17,
+  NautilusAnalyticsEventTapSurveyAnswer = 16,
 /// アンケートをキャンセルする
-  NautilusAnalyticsEventTapSurveyCancel = 18,
+  NautilusAnalyticsEventTapSurveyCancel = 17,
 /// プッシュ通知履歴を見る
-  NautilusAnalyticsEventShowPushlist = 19,
+  NautilusAnalyticsEventShowPushlist = 18,
 /// プッシュ通知の履歴をタップする
-  NautilusAnalyticsEventTapPushlistHistory = 20,
+  NautilusAnalyticsEventTapPushlistHistory = 19,
 /// マネージコードの紐付けが完了する
-  NautilusAnalyticsEventDoneSetManegeCode = 21,
+  NautilusAnalyticsEventDoneSetManegeCode = 20,
 /// クーポン一覧(すべて)を見る
-  NautilusAnalyticsEventShowCouponListAll = 22,
+  NautilusAnalyticsEventShowCouponListAll = 21,
 /// クーポン一覧のカテゴリを見る
-  NautilusAnalyticsEventShowCouponListCategory = 23,
+  NautilusAnalyticsEventShowCouponListCategory = 22,
 /// クーポン詳細を見る
-  NautilusAnalyticsEventShowCouponDetail = 24,
+  NautilusAnalyticsEventShowCouponDetail = 23,
 /// クーポンをお気に入りにする
-  NautilusAnalyticsEventTapCouponFavoriteAdd = 25,
+  NautilusAnalyticsEventTapCouponFavoriteAdd = 24,
 /// クーポンのお気に入りを解除する
-  NautilusAnalyticsEventTapCouponFavoriteDelete = 26,
+  NautilusAnalyticsEventTapCouponFavoriteDelete = 25,
 /// お気に入りクーポンのリストを見る
-  NautilusAnalyticsEventShowCouponFavoriteList = 27,
+  NautilusAnalyticsEventShowCouponFavoriteList = 26,
 /// クーポンを利用する
-  NautilusAnalyticsEventTapCouponUse = 28,
+  NautilusAnalyticsEventTapCouponUse = 27,
 /// クーポンからWEBサイトに遷移する
-  NautilusAnalyticsEventTapCouponWeb = 29,
+  NautilusAnalyticsEventTapCouponWeb = 28,
 /// クーポンの利用条件を見る
-  NautilusAnalyticsEventTapCouponConditions = 30,
+  NautilusAnalyticsEventTapCouponConditions = 29,
 /// アプリ内メッセージを見る
-  NautilusAnalyticsEventShowInAppMessage = 31,
+  NautilusAnalyticsEventShowInAppMessage = 30,
 /// アプリ内メッセージをタップする
-  NautilusAnalyticsEventTapInAppMessage = 32,
+  NautilusAnalyticsEventTapInAppMessage = 31,
 /// アプリ内メッセージを閉じる
-  NautilusAnalyticsEventCloseInAppMessage = 33,
+  NautilusAnalyticsEventCloseInAppMessage = 32,
 /// 店舗検索の地図画面を見る
-  NautilusAnalyticsEventShowStoreSearchMap = 34,
+  NautilusAnalyticsEventShowStoreSearchMap = 33,
 /// 店舗リストを表示を見る
-  NautilusAnalyticsEventSwipeStoreList = 35,
+  NautilusAnalyticsEventSwipeStoreList = 34,
 /// 店舗検索地図内のピンをタップする
-  NautilusAnalyticsEventTapStorePinInMap = 36,
+  NautilusAnalyticsEventTapStorePinInMap = 35,
 /// 店舗一覧を見る
-  NautilusAnalyticsEventShowStoreList = 37,
+  NautilusAnalyticsEventShowStoreList = 36,
 /// 店舗詳細を見る
-  NautilusAnalyticsEventShowStoreDetail = 38,
+  NautilusAnalyticsEventShowStoreDetail = 37,
 /// 店舗の電話番号をタップする
-  NautilusAnalyticsEventTapStoreTelNumber = 39,
+  NautilusAnalyticsEventTapStoreTelNumber = 38,
 /// 店舗詳細からWEBに遷移する
-  NautilusAnalyticsEventTapStoreWeb = 40,
+  NautilusAnalyticsEventTapStoreWeb = 39,
 /// マップアプリを開く
-  NautilusAnalyticsEventTapMapApp = 41,
+  NautilusAnalyticsEventTapMapApp = 40,
 /// お気に入り店舗登録をする
-  NautilusAnalyticsEventTapStoreFavoriteAdd = 42,
+  NautilusAnalyticsEventTapStoreFavoriteAdd = 41,
 /// お気に入り店舗登録を解除する
-  NautilusAnalyticsEventTapStoreFavoriteDelete = 43,
+  NautilusAnalyticsEventTapStoreFavoriteDelete = 42,
 /// お気に入り店舗一覧を見る
-  NautilusAnalyticsEventShowFavoriteStoreList = 44,
+  NautilusAnalyticsEventShowFavoriteStoreList = 43,
 /// 店舗を検索する
-  NautilusAnalyticsEventDoneStoreSearch = 45,
+  NautilusAnalyticsEventDoneStoreSearch = 44,
 /// 店舗検索の条件を解除する
-  NautilusAnalyticsEventTapStoreSearchConditionDelete = 46,
+  NautilusAnalyticsEventTapStoreSearchConditionDelete = 45,
 /// 店舗検索キーワードの履歴を消す
-  NautilusAnalyticsEventTapStoreKeywordSearchHistoryDelete = 47,
+  NautilusAnalyticsEventTapStoreKeywordSearchHistoryDelete = 46,
 /// 検索条件絞り込み画面を見る
-  NautilusAnalyticsEventShowStoreSearchFilteringScreen = 48,
+  NautilusAnalyticsEventShowStoreSearchFilteringScreen = 47,
 /// 検索条件絞り込み画面を閉じる
-  NautilusAnalyticsEventTapStoreSearchFilteringScreenClose = 49,
+  NautilusAnalyticsEventTapStoreSearchFilteringScreenClose = 48,
 /// 検索条件絞り込み画面をクリアする
-  NautilusAnalyticsEventTapStoreSearchFilteringScreenClear = 50,
+  NautilusAnalyticsEventTapStoreSearchFilteringScreenClear = 49,
 /// 都道府県選択画面を見る
-  NautilusAnalyticsEventShowStoreSearchAreaSelect = 51,
+  NautilusAnalyticsEventShowStoreSearchAreaSelect = 50,
 /// バナーをタップする
-  NautilusAnalyticsEventTapBanner = 52,
+  NautilusAnalyticsEventTapBanner = 51,
 /// お知らせリスト(すべて)を見る
-  NautilusAnalyticsEventShowContentsListAll = 53,
+  NautilusAnalyticsEventShowContentsListAll = 52,
 /// お知らせリストのカテゴリを見る
-  NautilusAnalyticsEventShowContentsListCategory = 54,
+  NautilusAnalyticsEventShowContentsListCategory = 53,
 /// お知らせ詳細を見る
-  NautilusAnalyticsEventShowContentsDetail = 55,
+  NautilusAnalyticsEventShowContentsDetail = 54,
 /// お知らせをお気に入りにする
-  NautilusAnalyticsEventTapContentsFavoriteAdd = 56,
+  NautilusAnalyticsEventTapContentsFavoriteAdd = 55,
 /// お知らせのお気に入りを解除する
-  NautilusAnalyticsEventTapContentsFavoriteDelete = 57,
+  NautilusAnalyticsEventTapContentsFavoriteDelete = 56,
 /// お気に入りお知らせのリストを見る
-  NautilusAnalyticsEventShowContentsFavoriteList = 58,
+  NautilusAnalyticsEventShowContentsFavoriteList = 57,
 /// お知らせ詳細からWEBサイトへ遷移する
-  NautilusAnalyticsEventTapContentsWeb = 59,
+  NautilusAnalyticsEventTapContentsWeb = 58,
 /// 抽選一覧画面を表示
-  NautilusAnalyticsEventShowLotteryList = 60,
+  NautilusAnalyticsEventShowLotteryList = 59,
 /// 抽選詳細画面を表示
-  NautilusAnalyticsEventShowLotteryDetail = 61,
+  NautilusAnalyticsEventShowLotteryDetail = 60,
 /// 抽選実行APIのレスポンスを受け取った
-  NautilusAnalyticsEventDoneLotteryRunning = 62,
+  NautilusAnalyticsEventDoneLotteryRunning = 61,
 /// 抽選結果画面を表示
-  NautilusAnalyticsEventShowLotteryResult = 63,
+  NautilusAnalyticsEventShowLotteryResult = 62,
 /// 抽選結果を「確認するボタン」をタップ
-  NautilusAnalyticsEventTapPrizeChecking = 64,
+  NautilusAnalyticsEventTapPrizeChecking = 63,
 };
 
 /// イベントプロパティ：Amplitudeに送る時の名前の定義
@@ -467,138 +465,140 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEventProperty, open) {
   NautilusAnalyticsEventPropertyChannelType = 6,
 /// 起動状態
   NautilusAnalyticsEventPropertyAppStartType = 7,
+/// アプリ起動
+  NautilusAnalyticsEventPropertyAppStart = 8,
 /// 移動経機
-  NautilusAnalyticsEventPropertyAppMoveTrigger = 8,
+  NautilusAnalyticsEventPropertyAppMoveTrigger = 9,
 /// 移動経機となったPUSH ID
-  NautilusAnalyticsEventPropertyAppMoveNotificationID = 9,
+  NautilusAnalyticsEventPropertyAppMoveNotificationID = 10,
 /// 移動経機となったPUSHタイトル
-  NautilusAnalyticsEventPropertyAppMoveNotificationTitle = 10,
+  NautilusAnalyticsEventPropertyAppMoveNotificationTitle = 11,
 /// 移動経機となったときの遷移先画面
-  NautilusAnalyticsEventPropertyAppMoveNotificationTransition = 11,
+  NautilusAnalyticsEventPropertyAppMoveNotificationTransition = 12,
 /// 移動経機となったURL
-  NautilusAnalyticsEventPropertyAppMoveURL = 12,
+  NautilusAnalyticsEventPropertyAppMoveURL = 13,
 /// 離脱したスクリーン
-  NautilusAnalyticsEventPropertyIntroductionFinishPage = 13,
+  NautilusAnalyticsEventPropertyIntroductionFinishPage = 14,
 /// 性別
-  NautilusAnalyticsEventPropertyGender = 14,
+  NautilusAnalyticsEventPropertyGender = 15,
 /// 誕生年月日
-  NautilusAnalyticsEventPropertyBirthday = 15,
+  NautilusAnalyticsEventPropertyBirthday = 16,
 /// 都道府県名
-  NautilusAnalyticsEventPropertyPrefecture = 16,
+  NautilusAnalyticsEventPropertyPrefecture = 17,
 /// 市区町村名
-  NautilusAnalyticsEventPropertyMunicipality = 17,
+  NautilusAnalyticsEventPropertyMunicipality = 18,
 /// ブランドID
-  NautilusAnalyticsEventPropertyBrandID = 18,
+  NautilusAnalyticsEventPropertyBrandID = 19,
 /// 顧客管理コード
-  NautilusAnalyticsEventPropertyManageCode = 19,
+  NautilusAnalyticsEventPropertyManageCode = 20,
 /// 拡張項目1
-  NautilusAnalyticsEventPropertyOptionalAttribute1 = 20,
+  NautilusAnalyticsEventPropertyOptionalAttribute1 = 21,
 /// 拡張項目2
-  NautilusAnalyticsEventPropertyOptionalAttribute2 = 21,
+  NautilusAnalyticsEventPropertyOptionalAttribute2 = 22,
 /// 拡張項目3
-  NautilusAnalyticsEventPropertyOptionalAttribute3 = 22,
+  NautilusAnalyticsEventPropertyOptionalAttribute3 = 23,
 /// 拡張項目4
-  NautilusAnalyticsEventPropertyOptionalAttribute4 = 23,
+  NautilusAnalyticsEventPropertyOptionalAttribute4 = 24,
 /// 拡張項目5
-  NautilusAnalyticsEventPropertyOptionalAttribute5 = 24,
+  NautilusAnalyticsEventPropertyOptionalAttribute5 = 25,
 /// 拡張項目6
-  NautilusAnalyticsEventPropertyOptionalAttribute6 = 25,
+  NautilusAnalyticsEventPropertyOptionalAttribute6 = 26,
 /// 拡張項目7
-  NautilusAnalyticsEventPropertyOptionalAttribute7 = 26,
+  NautilusAnalyticsEventPropertyOptionalAttribute7 = 27,
 /// 拡張項目8
-  NautilusAnalyticsEventPropertyOptionalAttribute8 = 27,
+  NautilusAnalyticsEventPropertyOptionalAttribute8 = 28,
 /// 拡張項目9
-  NautilusAnalyticsEventPropertyOptionalAttribute9 = 28,
+  NautilusAnalyticsEventPropertyOptionalAttribute9 = 29,
 /// 拡張項目10
-  NautilusAnalyticsEventPropertyOptionalAttribute10 = 29,
+  NautilusAnalyticsEventPropertyOptionalAttribute10 = 30,
 /// PUSH通知ID
-  NautilusAnalyticsEventPropertyNotificationID = 30,
+  NautilusAnalyticsEventPropertyNotificationID = 31,
 /// PUSH通知タイトル
-  NautilusAnalyticsEventPropertyNotificationTitle = 31,
+  NautilusAnalyticsEventPropertyNotificationTitle = 32,
 /// 遷移先
-  NautilusAnalyticsEventPropertyNotificationTransition = 32,
+  NautilusAnalyticsEventPropertyNotificationTransition = 33,
 /// クーポンID
-  NautilusAnalyticsEventPropertyCouponID = 33,
+  NautilusAnalyticsEventPropertyCouponID = 34,
 /// クーポンタイトル
-  NautilusAnalyticsEventPropertyCouponTitle = 34,
+  NautilusAnalyticsEventPropertyCouponTitle = 35,
 /// クーポンカテゴリ名”
-  NautilusAnalyticsEventPropertyCouponCategory = 35,
+  NautilusAnalyticsEventPropertyCouponCategory = 36,
 /// クーポン種別
-  NautilusAnalyticsEventPropertyCouponType = 36,
+  NautilusAnalyticsEventPropertyCouponType = 37,
 /// 遷移先
-  NautilusAnalyticsEventPropertyCouponURL = 37,
+  NautilusAnalyticsEventPropertyCouponURL = 38,
 /// メッセージID
-  NautilusAnalyticsEventPropertyInAppMessageID = 38,
+  NautilusAnalyticsEventPropertyInAppMessageID = 39,
 /// メッセージ内容
-  NautilusAnalyticsEventPropertyInAppMessageBody = 39,
+  NautilusAnalyticsEventPropertyInAppMessageBody = 40,
 /// 遷移先
-  NautilusAnalyticsEventPropertyInAppMessageTransition = 40,
+  NautilusAnalyticsEventPropertyInAppMessageTransition = 41,
 /// メッセージの表示方法
-  NautilusAnalyticsEventPropertyInAppMessageType = 41,
+  NautilusAnalyticsEventPropertyInAppMessageType = 42,
 /// リスト表示したときの動き
-  NautilusAnalyticsEventPropertyStoreListMoveActionType = 42,
+  NautilusAnalyticsEventPropertyStoreListMoveActionType = 43,
 /// 表示領域
-  NautilusAnalyticsEventPropertyStoreListDisplayRatio = 43,
+  NautilusAnalyticsEventPropertyStoreListDisplayRatio = 44,
 /// 店舗ID
-  NautilusAnalyticsEventPropertyStoreID = 44,
+  NautilusAnalyticsEventPropertyStoreID = 45,
 /// 店舗名
-  NautilusAnalyticsEventPropertyStoreName = 45,
+  NautilusAnalyticsEventPropertyStoreName = 46,
 /// リンク文言
-  NautilusAnalyticsEventPropertyStoreLinkTitle = 46,
+  NautilusAnalyticsEventPropertyStoreLinkTitle = 47,
 /// 遷移先
-  NautilusAnalyticsEventPropertyStoreURL = 47,
+  NautilusAnalyticsEventPropertyStoreURL = 48,
 /// キーワード
-  NautilusAnalyticsEventPropertyStoreSearchKeyword = 48,
+  NautilusAnalyticsEventPropertyStoreSearchKeyword = 49,
 /// エリア
-  NautilusAnalyticsEventPropertyStoreSearchFilteringArea = 49,
+  NautilusAnalyticsEventPropertyStoreSearchFilteringArea = 50,
 /// 検索時の中心座標
-  NautilusAnalyticsEventPropertyStoreSearchCenterCoordinate = 50,
+  NautilusAnalyticsEventPropertyStoreSearchCenterCoordinate = 51,
 /// 検索時に動かした距離
-  NautilusAnalyticsEventPropertyStoreSearchMoveDistance = 51,
+  NautilusAnalyticsEventPropertyStoreSearchMoveDistance = 52,
 /// 表示されてるピンの数
-  NautilusAnalyticsEventPropertyStoreSearchNuberOfFoundShops = 52,
+  NautilusAnalyticsEventPropertyStoreSearchNuberOfFoundShops = 53,
 /// バナーID
-  NautilusAnalyticsEventPropertyBannerID = 53,
+  NautilusAnalyticsEventPropertyBannerID = 54,
 /// バナータイトル
-  NautilusAnalyticsEventPropertyBannerTitle = 54,
+  NautilusAnalyticsEventPropertyBannerTitle = 55,
 /// バナーカテゴリ
-  NautilusAnalyticsEventPropertyBannerCategory = 55,
+  NautilusAnalyticsEventPropertyBannerCategory = 56,
 /// バナー表示方法
-  NautilusAnalyticsEventPropertyBannerStyle = 56,
+  NautilusAnalyticsEventPropertyBannerStyle = 57,
 /// バナー表示位置
-  NautilusAnalyticsEventPropertyBannerIndex = 57,
+  NautilusAnalyticsEventPropertyBannerIndex = 58,
 /// 遷移先
-  NautilusAnalyticsEventPropertyBannerTransition = 58,
+  NautilusAnalyticsEventPropertyBannerTransition = 59,
 /// カテゴリ名
-  NautilusAnalyticsEventPropertySelectedContentCategory = 59,
+  NautilusAnalyticsEventPropertySelectedContentCategory = 60,
 /// コンテンツID
-  NautilusAnalyticsEventPropertyContentID = 60,
+  NautilusAnalyticsEventPropertyContentID = 61,
 /// コンテンツタイトル
-  NautilusAnalyticsEventPropertyContentTitle = 61,
+  NautilusAnalyticsEventPropertyContentTitle = 62,
 /// コンテンツカテゴリ名
-  NautilusAnalyticsEventPropertyContentCategory = 62,
+  NautilusAnalyticsEventPropertyContentCategory = 63,
 /// コンテンツ種別
-  NautilusAnalyticsEventPropertyContentType = 63,
+  NautilusAnalyticsEventPropertyContentType = 64,
 /// 遷移先
-  NautilusAnalyticsEventPropertyContentURL = 64,
+  NautilusAnalyticsEventPropertyContentURL = 65,
 /// 抽選ID
-  NautilusAnalyticsEventPropertyLotteryID = 65,
+  NautilusAnalyticsEventPropertyLotteryID = 66,
 /// 抽選タイトル
-  NautilusAnalyticsEventPropertyLotteryTitle = 66,
+  NautilusAnalyticsEventPropertyLotteryTitle = 67,
 /// 抽選種類
-  NautilusAnalyticsEventPropertyLotteryType = 67,
+  NautilusAnalyticsEventPropertyLotteryType = 68,
 /// 抽選実行済みか
-  NautilusAnalyticsEventPropertyLotteryCompleted = 68,
+  NautilusAnalyticsEventPropertyLotteryCompleted = 69,
 /// 景品ID
-  NautilusAnalyticsEventPropertyPrizeID = 69,
+  NautilusAnalyticsEventPropertyPrizeID = 70,
 /// 何等（抽選結果）
-  NautilusAnalyticsEventPropertyLotteryRank = 70,
+  NautilusAnalyticsEventPropertyLotteryRank = 71,
 /// 景品の種類
-  NautilusAnalyticsEventPropertyPrizeType = 71,
+  NautilusAnalyticsEventPropertyPrizeType = 72,
 /// クーポン交換ID
-  NautilusAnalyticsEventPropertyPrizeCouponExchangeID = 72,
+  NautilusAnalyticsEventPropertyPrizeCouponExchangeID = 73,
 /// 付与ポイント
-  NautilusAnalyticsEventPropertyPrizePoint = 73,
+  NautilusAnalyticsEventPropertyPrizePoint = 74,
 };
 
 /// ユーザプロパティ：Amplitudeに送る時の名前の定義

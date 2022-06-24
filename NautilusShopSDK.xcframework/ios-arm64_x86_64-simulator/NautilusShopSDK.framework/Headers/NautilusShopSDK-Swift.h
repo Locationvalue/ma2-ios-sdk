@@ -272,7 +272,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗一覧を検索して取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)searchShopWithLocation:(NautilusLocation * _Nonnull)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)searchShopWithLocation:(NautilusLocation * _Nullable)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗詳細を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getShopDetailWithShopID:(NSInteger)shopID clientShopCD:(NSString * _Nullable)clientShopCD completion:(void (^ _Nonnull)(NautilusShopInfo * _Nullable, NSError * _Nullable))completion;
@@ -673,7 +673,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗一覧を検索して取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-- (void)searchShopWithLocation:(NautilusLocation * _Nonnull)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)searchShopWithLocation:(NautilusLocation * _Nullable)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗詳細を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getShopDetailWithShopID:(NSInteger)shopID clientShopCD:(NSString * _Nullable)clientShopCD completion:(void (^ _Nonnull)(NautilusShopInfo * _Nullable, NSError * _Nullable))completion;

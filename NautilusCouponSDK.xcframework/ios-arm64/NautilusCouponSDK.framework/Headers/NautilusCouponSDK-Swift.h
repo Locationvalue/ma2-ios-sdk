@@ -322,6 +322,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)sendCouponLogWithCouponLogs:(NSArray<NautilusCouponLog *> * _Nonnull)couponLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// 指定のクーポンの「有効期限の終了日時」を計算する
+/// \param coupon クーポン（<code>NautilusCouponInfo</code>）
+///
+///
+/// returns:
+/// 有効期限日時（<code>ma_coupon_default_use_limit_type</code>が<code>fixedHour</code>なら使用日・設定時刻、<code>fixedPeriod</code>なら使用日・使用時刻に設定秒を加算した時刻）
 - (NSDate * _Nullable)calculateUsedCouponValidEndDateOf:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
 /// 指定したクーポンが利用済みであれば、現在、利用可能期間内にあるのかを判定する
 /// \param coupon 利用可能期間内かを確認するクーポン
