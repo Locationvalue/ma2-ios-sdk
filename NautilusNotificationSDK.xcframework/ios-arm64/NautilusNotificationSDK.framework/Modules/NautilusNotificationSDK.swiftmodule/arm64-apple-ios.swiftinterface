@@ -26,6 +26,7 @@ import _Concurrency
   final public let title: Swift.String?
   final public let imageURL: Foundation.URL?
   final public let imageAspectRatio: Swift.Double?
+  final public let isExternalMessage: Swift.Bool
   @objc deinit
 }
 public let NautilusNotificationErrorDomain: Swift.String

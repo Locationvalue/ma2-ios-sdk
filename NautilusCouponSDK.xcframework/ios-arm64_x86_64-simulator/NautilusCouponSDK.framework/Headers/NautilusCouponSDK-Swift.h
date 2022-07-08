@@ -240,6 +240,7 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class NautilusComponentDependency;
 @class NautilusApp;
 @class UIViewController;
+@class NautilusCouponCategoryInfo;
 @class NSNumber;
 enum NautilusCouponPublishType : NSInteger;
 
@@ -257,8 +258,39 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusCoupon * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
 + (NautilusCoupon * _Nonnull)couponAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
-/// クーポン一覧VCを返す
+/// クーポン一覧画面を返す
+///
+/// returns:
+/// クーポン一覧画面（カテゴリタブあり）
 - (UIViewController * _Nonnull)instantiateCouponListViewController SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でクーポン一覧画面を返却する
+/// \param category カテゴリ（<code>NautilusCouponCategoryInfo</code>）. nilの場合はすべて
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// クーポン一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategory:(NautilusCouponCategoryInfo * _Nullable)category useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でクーポン一覧画面を返却する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param categoryID カテゴリID. <code>NSNotFound</code>の場合はすべて
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// クーポン一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategoryID:(NSInteger)categoryID useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でクーポン一覧画面を返却する
+/// \param categoryAlias カテゴリのエイリアス. nilの場合はすべて
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// クーポン一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategoryAlias:(NSString * _Nullable)categoryAlias useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
 /// お気に入りクーポン一覧VCを返す
 - (UIViewController * _Nonnull)instantiateFavoriteCouponListViewController SWIFT_WARN_UNUSED_RESULT;
 /// クーポンID・タイプからクーポン詳細VCを返す
@@ -272,7 +304,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @class NautilusCouponInfo;
 @class NSError;
 @class NautilusCouponUseInfo;
-@class NautilusCouponCategoryInfo;
 @class NautilusCouponPublishTrigger;
 @class NautilusCouponLog;
 @protocol NautilusCouponUseValidObserver;
@@ -796,6 +827,7 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class NautilusComponentDependency;
 @class NautilusApp;
 @class UIViewController;
+@class NautilusCouponCategoryInfo;
 @class NSNumber;
 enum NautilusCouponPublishType : NSInteger;
 
@@ -813,8 +845,39 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusCoupon * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
 + (NautilusCoupon * _Nonnull)couponAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
-/// クーポン一覧VCを返す
+/// クーポン一覧画面を返す
+///
+/// returns:
+/// クーポン一覧画面（カテゴリタブあり）
 - (UIViewController * _Nonnull)instantiateCouponListViewController SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でクーポン一覧画面を返却する
+/// \param category カテゴリ（<code>NautilusCouponCategoryInfo</code>）. nilの場合はすべて
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// クーポン一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategory:(NautilusCouponCategoryInfo * _Nullable)category useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でクーポン一覧画面を返却する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param categoryID カテゴリID. <code>NSNotFound</code>の場合はすべて
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// クーポン一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategoryID:(NSInteger)categoryID useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でクーポン一覧画面を返却する
+/// \param categoryAlias カテゴリのエイリアス. nilの場合はすべて
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// クーポン一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategoryAlias:(NSString * _Nullable)categoryAlias useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
 /// お気に入りクーポン一覧VCを返す
 - (UIViewController * _Nonnull)instantiateFavoriteCouponListViewController SWIFT_WARN_UNUSED_RESULT;
 /// クーポンID・タイプからクーポン詳細VCを返す
@@ -828,7 +891,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @class NautilusCouponInfo;
 @class NSError;
 @class NautilusCouponUseInfo;
-@class NautilusCouponCategoryInfo;
 @class NautilusCouponPublishTrigger;
 @class NautilusCouponLog;
 @protocol NautilusCouponUseValidObserver;

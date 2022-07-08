@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "config_version": 4,
+  "config_version": 1,
   "app_name": "moduleapps-contents",
   "shop_account_app_id": 0,
   "config_values": [
@@ -55,6 +55,14 @@
     {
       "config_value_name": "ma_contents_list_load_error_message",
       "string_value": "読み込み中にエラーが発生しました"
+    },
+    {
+      "config_value_name": "ma_contents_list_invalid_category_error_title",
+      "string_value": ""
+    },
+    {
+      "config_value_name": "ma_contents_list_invalid_category_error_message",
+      "string_value": "該当するカテゴリーが存在しませんでした"
     },
     {
       "config_value_name": "ma_contents_list_reload_button_text",

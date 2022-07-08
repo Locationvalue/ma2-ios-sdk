@@ -53,17 +53,6 @@ import _Concurrency
   final public let sortNo: Swift.Int
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusCouponTabViewController : NautilusUISDK.NautilusAppTopBarController, NautilusUISDK.NautilusAppTopBarControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override final public func appTopBar(_ appTopBar: NautilusUISDK.NautilusAppTopBar, viewForItemAt index: Swift.Int) -> NautilusUISDK.NautilusAppTopBarItemView
-  @_Concurrency.MainActor(unsafe) @objc override final public func numberOfItems(in appTopBar: NautilusUISDK.NautilusAppTopBar) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc final public func numberOfViewControllers(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, viewControllerAt index: Swift.Int) -> UIKit.UIViewController
-  @_Concurrency.MainActor(unsafe) @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, indexOfViewController viewController: UIKit.UIViewController) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
 @objc public protocol NautilusCouponUseValidObserver {
   @objc func onCouponInvalid(coupon: NautilusCouponSDK.NautilusCouponInfo)
 }
@@ -133,6 +122,10 @@ public let NautilusCouponErrorDomain: Swift.String
   @objc public static func coupon() -> NautilusCouponSDK.NautilusCoupon
   @objc(couponAppNamed:) public static func coupon(appName: Swift.String) -> NautilusCouponSDK.NautilusCoupon
   @objc final public func instantiateCouponListViewController() -> UIKit.UIViewController
+  @objc final public func instantiateCouponListViewController(category: NautilusCouponSDK.NautilusCouponCategoryInfo?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  final public func instantiateCouponListViewController(categoryID: Swift.Int?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  @objc final public func instantiateCouponListViewController(categoryID: Swift.Int, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  @objc final public func instantiateCouponListViewController(categoryAlias: Swift.String?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
   @objc final public func instantiateFavoriteCouponListViewController() -> UIKit.UIViewController
   @objc final public func instantiateCouponDetailViewController(couponID: Swift.Int, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
   @objc deinit

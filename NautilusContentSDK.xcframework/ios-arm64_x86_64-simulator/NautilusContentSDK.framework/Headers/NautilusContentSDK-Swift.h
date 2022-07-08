@@ -216,14 +216,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
+@protocol NautilusContentDelegate;
 @class UIViewController;
+@class NautilusContentCategoryInfo;
 @class NSNumber;
 enum NautilusContentType : NSInteger;
 @class NautilusContentSortKey;
 @class NSDate;
 @class NautilusContentInfo;
 @class NSError;
-@class NautilusContentCategoryInfo;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC18NautilusContentSDK15NautilusContent")
@@ -236,11 +237,52 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// コンテンツ情報を利用したアクションを実装するための<code>delegate</code>
+/// <ul>
+///   <li>
+///     コンテンツ詳細画面にアクションボタンを設置する
+///   </li>
+///   <li>
+///     コンテンツ詳細画面でコンテンツの情報を利用して処理する
+///   </li>
+/// </ul>
+@property (nonatomic, weak) id <NautilusContentDelegate> _Nullable delegate;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusContent * _Nonnull)content SWIFT_WARN_UNUSED_RESULT;
 + (NautilusContent * _Nonnull)shopAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
-/// コンテンツ一覧VCを返す
+/// コンテンツ一覧画面を返す
+///
+/// returns:
+/// コンテンツ一覧画面（カテゴリタブあり）
 - (UIViewController * _Nonnull)instantiateContentListViewController SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でコンテンツ一覧画面を返却する
+/// \param category カテゴリ（<code>NautilusContentCategoryInfo</code>）
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// コンテンツ一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateContentListViewControllerWithCategory:(NautilusContentCategoryInfo * _Nullable)category useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でコンテンツ一覧画面を返却する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param categoryID カテゴリID. nilの場合はすべて
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// コンテンツ一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateContentListViewControllerWithCategoryID:(NSInteger)categoryID useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でコンテンツ一覧画面を返却する
+/// \param categoryAlias カテゴリのエイリアス. nilの場合はすべて
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// コンテンツ一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateContentListViewControllerWithCategoryAlias:(NSString * _Nullable)categoryAlias useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
 /// お気に入りコンテンツVCを返す
 - (UIViewController * _Nonnull)instantiateFavoriteContentListViewController SWIFT_WARN_UNUSED_RESULT;
 /// コンテンツ詳細VCを返す
@@ -282,6 +324,47 @@ SWIFT_CLASS("_TtC18NautilusContentSDK27NautilusContentCategoryInfo")
 @interface NautilusContentCategoryInfo : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// コンテンツの情報をアプリに提供します
+SWIFT_PROTOCOL("_TtP18NautilusContentSDK23NautilusContentDelegate_")
+@protocol NautilusContentDelegate
+/// 引数で渡されたコンテンツに対して、アプリ側でアクションを実行するか
+/// \param content <code>NautilusContent</code>のインスタンス
+///
+/// \param contentInfo コンテンツの情報（<code>NautilusContentInfo</code>）
+///
+/// \param viewController メソッドを呼び出した<code>ViewController</code>
+///
+///
+/// returns:
+/// true: 実行する, false: 実行しない
+- (BOOL)content:(NautilusContent * _Nonnull)content canHandle:(NautilusContentInfo * _Nonnull)contentInfo in:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
+/// 引数で渡されたコンテンツに対する、アクションボタンのタイトルを返す
+/// \param content <code>NautilusContent</code>のインスタンス
+///
+/// \param contentInfo コンテンツの情報（<code>NautilusContentInfo</code>）
+///
+/// \param viewController メソッドを呼び出した<code>ViewController</code>
+///
+///
+/// returns:
+/// アクションボタンのタイトル
+- (NSString * _Nonnull)content:(NautilusContent * _Nonnull)content actionButtonTitleForContent:(NautilusContentInfo * _Nonnull)contentInfo in:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
+/// 引数で渡されたコンテンツに対して、アプリ側でアクションを実行する
+/// important:
+/// SDKコンテンツ詳細画面側では何もしません
+/// \param content <code>NautilusContent</code>のインスタンス
+///
+/// \param contentInfo コンテンツの情報（<code>NautilusContentInfo</code>）
+///
+/// \param viewController メソッドを呼び出した<code>ViewController</code>
+///
+///
+/// returns:
+/// 実行結果
+- (BOOL)content:(NautilusContent * _Nonnull)content handle:(NautilusContentInfo * _Nonnull)contentInfo in:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NautilusContentError, open) {
@@ -592,14 +675,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
+@protocol NautilusContentDelegate;
 @class UIViewController;
+@class NautilusContentCategoryInfo;
 @class NSNumber;
 enum NautilusContentType : NSInteger;
 @class NautilusContentSortKey;
 @class NSDate;
 @class NautilusContentInfo;
 @class NSError;
-@class NautilusContentCategoryInfo;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC18NautilusContentSDK15NautilusContent")
@@ -612,11 +696,52 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// コンテンツ情報を利用したアクションを実装するための<code>delegate</code>
+/// <ul>
+///   <li>
+///     コンテンツ詳細画面にアクションボタンを設置する
+///   </li>
+///   <li>
+///     コンテンツ詳細画面でコンテンツの情報を利用して処理する
+///   </li>
+/// </ul>
+@property (nonatomic, weak) id <NautilusContentDelegate> _Nullable delegate;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusContent * _Nonnull)content SWIFT_WARN_UNUSED_RESULT;
 + (NautilusContent * _Nonnull)shopAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
-/// コンテンツ一覧VCを返す
+/// コンテンツ一覧画面を返す
+///
+/// returns:
+/// コンテンツ一覧画面（カテゴリタブあり）
 - (UIViewController * _Nonnull)instantiateContentListViewController SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でコンテンツ一覧画面を返却する
+/// \param category カテゴリ（<code>NautilusContentCategoryInfo</code>）
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// コンテンツ一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateContentListViewControllerWithCategory:(NautilusContentCategoryInfo * _Nullable)category useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でコンテンツ一覧画面を返却する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param categoryID カテゴリID. nilの場合はすべて
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// コンテンツ一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateContentListViewControllerWithCategoryID:(NSInteger)categoryID useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリ選択された状態でコンテンツ一覧画面を返却する
+/// \param categoryAlias カテゴリのエイリアス. nilの場合はすべて
+///
+/// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
+///
+///
+/// returns:
+/// コンテンツ一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
+- (UIViewController * _Nonnull)instantiateContentListViewControllerWithCategoryAlias:(NSString * _Nullable)categoryAlias useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
 /// お気に入りコンテンツVCを返す
 - (UIViewController * _Nonnull)instantiateFavoriteContentListViewController SWIFT_WARN_UNUSED_RESULT;
 /// コンテンツ詳細VCを返す
@@ -658,6 +783,47 @@ SWIFT_CLASS("_TtC18NautilusContentSDK27NautilusContentCategoryInfo")
 @interface NautilusContentCategoryInfo : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// コンテンツの情報をアプリに提供します
+SWIFT_PROTOCOL("_TtP18NautilusContentSDK23NautilusContentDelegate_")
+@protocol NautilusContentDelegate
+/// 引数で渡されたコンテンツに対して、アプリ側でアクションを実行するか
+/// \param content <code>NautilusContent</code>のインスタンス
+///
+/// \param contentInfo コンテンツの情報（<code>NautilusContentInfo</code>）
+///
+/// \param viewController メソッドを呼び出した<code>ViewController</code>
+///
+///
+/// returns:
+/// true: 実行する, false: 実行しない
+- (BOOL)content:(NautilusContent * _Nonnull)content canHandle:(NautilusContentInfo * _Nonnull)contentInfo in:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
+/// 引数で渡されたコンテンツに対する、アクションボタンのタイトルを返す
+/// \param content <code>NautilusContent</code>のインスタンス
+///
+/// \param contentInfo コンテンツの情報（<code>NautilusContentInfo</code>）
+///
+/// \param viewController メソッドを呼び出した<code>ViewController</code>
+///
+///
+/// returns:
+/// アクションボタンのタイトル
+- (NSString * _Nonnull)content:(NautilusContent * _Nonnull)content actionButtonTitleForContent:(NautilusContentInfo * _Nonnull)contentInfo in:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
+/// 引数で渡されたコンテンツに対して、アプリ側でアクションを実行する
+/// important:
+/// SDKコンテンツ詳細画面側では何もしません
+/// \param content <code>NautilusContent</code>のインスタンス
+///
+/// \param contentInfo コンテンツの情報（<code>NautilusContentInfo</code>）
+///
+/// \param viewController メソッドを呼び出した<code>ViewController</code>
+///
+///
+/// returns:
+/// 実行結果
+- (BOOL)content:(NautilusContent * _Nonnull)content handle:(NautilusContentInfo * _Nonnull)contentInfo in:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NautilusContentError, open) {

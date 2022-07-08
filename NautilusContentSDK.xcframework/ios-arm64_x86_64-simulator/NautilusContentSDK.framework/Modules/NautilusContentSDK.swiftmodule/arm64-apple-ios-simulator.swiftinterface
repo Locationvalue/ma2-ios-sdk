@@ -40,6 +40,11 @@ import _Concurrency
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
+@objc public protocol NautilusContentDelegate {
+  @objc func content(_ content: NautilusContentSDK.NautilusContent, canHandle contentInfo: NautilusContentSDK.NautilusContentInfo, in viewController: UIKit.UIViewController) -> Swift.Bool
+  @objc func content(_ content: NautilusContentSDK.NautilusContent, actionButtonTitleForContent contentInfo: NautilusContentSDK.NautilusContentInfo, in viewController: UIKit.UIViewController) -> Swift.String
+  @objc func content(_ content: NautilusContentSDK.NautilusContent, handle contentInfo: NautilusContentSDK.NautilusContentInfo, in viewController: UIKit.UIViewController) -> Swift.Bool
+}
 @_hasMissingDesignatedInitializers @objc final public class NautilusContent : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var configFilename: Swift.String? {
     @objc get
@@ -52,10 +57,15 @@ import _Concurrency
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
+  @objc weak final public var delegate: NautilusContentSDK.NautilusContentDelegate?
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func content() -> NautilusContentSDK.NautilusContent
   @objc(shopAppNamed:) public static func content(appName: Swift.String) -> NautilusContentSDK.NautilusContent
   @objc final public func instantiateContentListViewController() -> UIKit.UIViewController
+  @objc final public func instantiateContentListViewController(category: NautilusContentSDK.NautilusContentCategoryInfo?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  final public func instantiateContentListViewController(categoryID: Swift.Int?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  @objc final public func instantiateContentListViewController(categoryID: Swift.Int, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  @objc final public func instantiateContentListViewController(categoryAlias: Swift.String?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
   @objc final public func instantiateFavoriteContentListViewController() -> UIKit.UIViewController
   @objc final public func instantiateContentDetailViewController(contentID: Swift.Int, contentType: NautilusContentSDK.NautilusContentType) -> UIKit.UIViewController
   final public func getCommonContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)

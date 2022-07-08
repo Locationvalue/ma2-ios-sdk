@@ -157,7 +157,7 @@ extension UIKit.UIColor {
   @objc override final public func awakeFromNib()
   @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) final public func reloadData()
-  @_Concurrency.MainActor(unsafe) final public func selectItem(at index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) final public func selectItem(at index: Swift.Int, animated: Swift.Bool = true)
   @objc deinit
 }
 @objc public class NautilusInAppBrowserSettings : ObjectiveC.NSObject {
