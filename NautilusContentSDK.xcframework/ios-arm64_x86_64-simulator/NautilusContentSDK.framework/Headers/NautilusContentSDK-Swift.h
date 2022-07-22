@@ -426,6 +426,7 @@ SWIFT_CLASS("_TtC18NautilusContentSDK22NautilusContentSortKey")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 /// APIから取得するデータの並び順のキー名
 typedef SWIFT_ENUM(NSInteger, NautilusContentSortKeyName, open) {
 /// 掲載開始日時
@@ -884,6 +885,7 @@ SWIFT_CLASS("_TtC18NautilusContentSDK22NautilusContentSortKey")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 /// APIから取得するデータの並び順のキー名
 typedef SWIFT_ENUM(NSInteger, NautilusContentSortKeyName, open) {

@@ -530,6 +530,7 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponSortKey")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 /// APIから取得するデータの並び順のキー名
 typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyName, open) {
 /// 掲載開始日時
