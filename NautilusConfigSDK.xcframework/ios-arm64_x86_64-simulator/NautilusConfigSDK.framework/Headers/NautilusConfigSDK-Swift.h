@@ -216,8 +216,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NautilusComponentDependency;
 @class NSString;
 @class NautilusApp;
-@protocol NautilusConfigValue;
 @class NSNumber;
+@protocol NautilusConfigValue;
 
 SWIFT_CLASS("_TtC17NautilusConfigSDK14NautilusConfig")
 @interface NautilusConfig : NSObject <NautilusFeature>
@@ -233,9 +233,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NautilusConfig * _Nonnull)config SWIFT_WARN_UNUSED_RESULT;
 + (NautilusConfig * _Nonnull)configAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 - (void)activate;
-- (void)fetch;
-- (void)activateAndFetch;
 - (void)reset;
+- (BOOL)reload;
 - (id <NautilusConfigValue> _Nullable)configValueForKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (id <NautilusConfigValue> _Nonnull)configValueForKey:(NSString * _Nonnull)key defaultBoolValue:(BOOL)default_ SWIFT_WARN_UNUSED_RESULT;
 - (id <NautilusConfigValue> _Nonnull)configValueForKey:(NSString * _Nonnull)key defaultIntegerValue:(NSInteger)default_ SWIFT_WARN_UNUSED_RESULT;
@@ -524,8 +523,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NautilusComponentDependency;
 @class NSString;
 @class NautilusApp;
-@protocol NautilusConfigValue;
 @class NSNumber;
+@protocol NautilusConfigValue;
 
 SWIFT_CLASS("_TtC17NautilusConfigSDK14NautilusConfig")
 @interface NautilusConfig : NSObject <NautilusFeature>
@@ -541,9 +540,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NautilusConfig * _Nonnull)config SWIFT_WARN_UNUSED_RESULT;
 + (NautilusConfig * _Nonnull)configAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 - (void)activate;
-- (void)fetch;
-- (void)activateAndFetch;
 - (void)reset;
+- (BOOL)reload;
 - (id <NautilusConfigValue> _Nullable)configValueForKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (id <NautilusConfigValue> _Nonnull)configValueForKey:(NSString * _Nonnull)key defaultBoolValue:(BOOL)default_ SWIFT_WARN_UNUSED_RESULT;
 - (id <NautilusConfigValue> _Nonnull)configValueForKey:(NSString * _Nonnull)key defaultIntegerValue:(NSInteger)default_ SWIFT_WARN_UNUSED_RESULT;

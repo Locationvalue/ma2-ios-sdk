@@ -15,7 +15,7 @@ public protocol NetworkServiceLogger {
   func printResponse(_ data: Foundation.Data?, _ response: Foundation.URLResponse)
   func printError(_ error: Swift.Error)
 }
-@_hasMissingDesignatedInitializers final public class NautilusRequestPolicy : NautilusCoreSDK.RequestPolicy {
+final public class NautilusRequestPolicy : NautilusCoreSDK.RequestPolicy {
   public enum Preset {
     public static let `default`: NautilusCoreSDK.NautilusRequestPolicy
     public static let short: NautilusCoreSDK.NautilusRequestPolicy
@@ -23,6 +23,7 @@ public protocol NetworkServiceLogger {
   }
   final public let cachePolicy: Foundation.URLRequest.CachePolicy
   final public let timeoutInterval: Foundation.TimeInterval
+  public init(cachePolicy: Foundation.URLRequest.CachePolicy = .reloadIgnoringLocalCacheData, timeoutInterval: Foundation.TimeInterval = 30.0)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusAppConfig : ObjectiveC.NSObject {

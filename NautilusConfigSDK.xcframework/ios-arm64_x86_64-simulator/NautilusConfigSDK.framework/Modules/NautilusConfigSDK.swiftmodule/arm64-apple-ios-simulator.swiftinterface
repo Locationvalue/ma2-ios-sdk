@@ -62,9 +62,9 @@ import _Concurrency
   @objc public static func config() -> NautilusConfigSDK.NautilusConfig
   @objc(configAppNamed:) public static func config(appName: Swift.String) -> NautilusConfigSDK.NautilusConfig
   @objc final public func activate()
-  @objc final public func fetch()
-  @objc final public func activateAndFetch()
   @objc final public func reset()
+  @discardableResult
+  @objc final public func reload() -> Swift.Bool
   @objc(configValueForKey:) final public func configValue(for key: Swift.String) -> NautilusConfigSDK.NautilusConfigValue?
   @objc(configValueForKey:defaultBoolValue:) final public func configValue(for key: Swift.String, default: Swift.Bool) -> NautilusConfigSDK.NautilusConfigValue
   @objc(configValueForKey:defaultIntegerValue:) final public func configValue(for key: Swift.String, default: Swift.Int) -> NautilusConfigSDK.NautilusConfigValue
