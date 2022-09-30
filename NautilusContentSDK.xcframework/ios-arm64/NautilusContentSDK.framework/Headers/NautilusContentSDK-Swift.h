@@ -423,6 +423,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusContentError, open) {
 /// 明示的にユーザーによりキャンセルされた
   NautilusContentErrorUserCancelled = 5,
   NautilusContentErrorInvalidParamater = 6,
+/// 設定値の構成が不正エラー
+  NautilusContentErrorIllegalConfiguration = 7,
 };
 static NSString * _Nonnull const NautilusContentErrorDomain = @"NautilusContentSDK.NautilusContentError";
 

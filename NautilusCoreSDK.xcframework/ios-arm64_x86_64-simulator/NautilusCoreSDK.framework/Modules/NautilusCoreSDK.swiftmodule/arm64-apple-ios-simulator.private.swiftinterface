@@ -265,6 +265,7 @@ public enum NetworkServiceError : Swift.Error {
   case httpConnection(statusCode: Swift.Int, url: Foundation.URL?)
   case parseFailure
   case userCancelled
+  case illegalConfiguration
 }
 public protocol NetworkService {
   var loggers: [NautilusCoreSDK.NetworkServiceLogger] { get }

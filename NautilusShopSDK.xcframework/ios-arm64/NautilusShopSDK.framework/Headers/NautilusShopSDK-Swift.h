@@ -356,6 +356,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
   NautilusShopErrorUserCancelled = 5,
 /// 不正なパラメータが渡された
   NautilusShopErrorInvalidParamater = 6,
+/// 設定値の構成が不正エラー
+  NautilusShopErrorIllegalConfiguration = 7,
 };
 static NSString * _Nonnull const NautilusShopErrorDomain = @"NautilusShopSDK.NautilusShopError";
 

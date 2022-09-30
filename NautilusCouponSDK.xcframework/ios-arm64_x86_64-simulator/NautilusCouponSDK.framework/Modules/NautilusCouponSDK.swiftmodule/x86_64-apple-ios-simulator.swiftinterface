@@ -96,6 +96,7 @@ public let NautilusCouponErrorDomain: Swift.String
   case parseFailure
   case userCancelled
   case invalidParamater
+  case illegalConfiguration
   public var nautilusCouponErrorCode: Swift.Int {
     get
   }

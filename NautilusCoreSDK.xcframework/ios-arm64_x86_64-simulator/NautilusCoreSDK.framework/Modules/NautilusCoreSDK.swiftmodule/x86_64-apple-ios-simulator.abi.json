@@ -5218,6 +5218,46 @@
             "declAttributes": [
               "RawDocComment"
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "illegalConfiguration",
+            "printedName": "illegalConfiguration",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NetworkServiceError.Type) -> NautilusCoreSDK.NetworkServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkServiceError",
+                    "printedName": "NautilusCoreSDK.NetworkServiceError",
+                    "usr": "s:15NautilusCoreSDK19NetworkServiceErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NetworkServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkServiceError",
+                        "printedName": "NautilusCoreSDK.NetworkServiceError",
+                        "usr": "s:15NautilusCoreSDK19NetworkServiceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15NautilusCoreSDK19NetworkServiceErrorO20illegalConfigurationyA2CmF",
+            "mangledName": "$s15NautilusCoreSDK19NetworkServiceErrorO20illegalConfigurationyA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           }
         ],
         "declKind": "Enum",

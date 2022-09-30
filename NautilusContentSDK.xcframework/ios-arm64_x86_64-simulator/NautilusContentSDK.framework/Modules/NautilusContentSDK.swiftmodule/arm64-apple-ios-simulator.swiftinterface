@@ -146,6 +146,7 @@ public let NautilusContentErrorDomain: Swift.String
   case parseFailure
   case userCancelled
   case invalidParamater
+  case illegalConfiguration
   public var nautilusContentErrorCode: Swift.Int {
     get
   }

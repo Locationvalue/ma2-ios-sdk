@@ -4122,6 +4122,48 @@
           },
           {
             "kind": "Var",
+            "name": "illegalConfiguration",
+            "printedName": "illegalConfiguration",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCouponSDK.NautilusCouponError.Type) -> NautilusCouponSDK.NautilusCouponError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCouponError",
+                    "printedName": "NautilusCouponSDK.NautilusCouponError",
+                    "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCouponSDK.NautilusCouponError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponError",
+                        "printedName": "NautilusCouponSDK.NautilusCouponError",
+                        "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponError@NautilusCouponErrorIllegalConfiguration",
+            "mangledName": "$s17NautilusCouponSDK0aB5ErrorO20illegalConfigurationyA2CmF",
+            "moduleName": "NautilusCouponSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
             "name": "nautilusCouponErrorCode",
             "printedName": "nautilusCouponErrorCode",
             "children": [
@@ -15731,520 +15773,541 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1138,
+      "offset": 1130,
+      "length": 24,
+      "value": "\"ma_coupon_use_favorite\""
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1190,
       "length": 34,
       "value": "\"ma_coupon_list_number_of_columns\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1216,
+      "offset": 1268,
       "length": 43,
       "value": "\"ma_coupon_favorite_list_number_of_columns\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1297,
+      "offset": 1349,
       "length": 36,
       "value": "\"ma_coupon_list_detail_screen_style\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1379,
+      "offset": 1431,
       "length": 45,
       "value": "\"ma_coupon_favorite_list_detail_screen_style\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 1512,
       "length": 34,
       "value": "\"ma_coupon_default_use_limit_type\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1526,
+      "offset": 1578,
       "length": 29,
       "value": "\"ma_coupon_default_use_limit\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1598,
+      "offset": 1650,
       "length": 42,
       "value": "\"ma_coupon_default_fixed_period_use_limit\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1684,
+      "offset": 1736,
       "length": 43,
       "value": "\"ma_coupon_use_coupon_confirm_dialog_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1773,
+      "offset": 1825,
       "length": 45,
       "value": "\"ma_coupon_use_coupon_confirm_dialog_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1870,
+      "offset": 1922,
       "length": 53,
       "value": "\"ma_coupon_use_coupon_confirm_dialog_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1978,
+      "offset": 2030,
       "length": 56,
       "value": "\"ma_coupon_use_coupon_confirm_dialog_cancel_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2072,
+      "offset": 2124,
       "length": 36,
       "value": "\"ma_coupon_default_web_browser_type\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2140,
+      "offset": 2192,
       "length": 29,
       "value": "\"ma_coupon_list_screen_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2207,
+      "offset": 2259,
       "length": 37,
       "value": "\"ma_coupon_list_coupon_sort_key_name\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2280,
+      "offset": 2332,
       "length": 34,
       "value": "\"ma_coupon_list_coupon_sort_order\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2357,
+      "offset": 2409,
       "length": 43,
       "value": "\"ma_coupon_list_number_of_coupons_per_load\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2451,
+      "offset": 2503,
       "length": 53,
       "value": "\"ma_coupon_list_show_open_favorite_button_on_top_bar\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2550,
+      "offset": 2602,
       "length": 45,
       "value": "\"ma_coupon_list_overall_coupon_category_name\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2644,
+      "offset": 2696,
       "length": 49,
       "value": "\"ma_coupon_list_show_overall_coupon_category_tab\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2740,
+      "offset": 2792,
       "length": 46,
       "value": "\"ma_coupon_list_available_coupons_header_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2839,
+      "offset": 2891,
       "length": 53,
       "value": "\"ma_coupon_list_before_available_coupons_header_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2937,
+      "offset": 2989,
       "length": 44,
       "value": "\"ma_coupon_list_expired_coupons_header_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3031,
+      "offset": 3083,
       "length": 50,
       "value": "\"ma_coupon_list_cell_available_period_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3132,
+      "offset": 3184,
       "length": 52,
       "value": "\"ma_coupon_list_cell_show_use_condition_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3229,
+      "offset": 3281,
       "length": 45,
       "value": "\"ma_coupon_list_cell_unlimit_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3312,
+      "offset": 3364,
       "length": 37,
       "value": "\"ma_coupon_list_cell_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3389,
+      "offset": 3441,
       "length": 39,
       "value": "\"ma_coupon_list_cell_close_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3472,
+      "offset": 3524,
       "length": 44,
       "value": "\"ma_coupon_list_cell_show_coupon_usage_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3565,
+      "offset": 3617,
       "length": 50,
       "value": "\"ma_coupon_list_cell_coupon_use_limit_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3656,
+      "offset": 3708,
       "length": 40,
       "value": "\"ma_coupon_list_cell_coupon_usable_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3728,
+      "offset": 3780,
       "length": 29,
       "value": "\"ma_coupon_list_loading_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3793,
+      "offset": 3845,
       "length": 34,
       "value": "\"ma_coupon_list_empty_state_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3865,
+      "offset": 3917,
       "length": 36,
       "value": "\"ma_coupon_list_empty_state_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3948,
+      "offset": 4000,
       "length": 47,
       "value": "\"ma_coupon_list_empty_state_show_reload_button\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4030,
+      "offset": 4082,
       "length": 33,
       "value": "\"ma_coupon_list_load_error_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4100,
+      "offset": 4152,
       "length": 35,
       "value": "\"ma_coupon_list_load_error_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4181,
+      "offset": 4233,
       "length": 45,
       "value": "\"ma_coupon_list_invalid_category_error_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4274,
+      "offset": 4326,
       "length": 47,
       "value": "\"ma_coupon_list_invalid_category_error_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4358,
+      "offset": 4410,
       "length": 35,
       "value": "\"ma_coupon_list_reload_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4427,
+      "offset": 4479,
       "length": 31,
       "value": "\"ma_coupon_detail_screen_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4503,
+      "offset": 4555,
       "length": 43,
       "value": "\"ma_coupon_detail_auto_brightness_increase\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4594,
+      "offset": 4646,
       "length": 47,
       "value": "\"ma_coupon_detail_available_period_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4686,
+      "offset": 4738,
       "length": 44,
       "value": "\"ma_coupon_detail_use_condition_header_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4773,
+      "offset": 4825,
       "length": 42,
       "value": "\"ma_coupon_detail_unlimit_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4851,
+      "offset": 4903,
       "length": 34,
       "value": "\"ma_coupon_detail_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4923,
+      "offset": 4975,
       "length": 36,
       "value": "\"ma_coupon_detail_close_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5001,
+      "offset": 5053,
       "length": 41,
       "value": "\"ma_coupon_detail_show_coupon_usage_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5089,
+      "offset": 5141,
       "length": 47,
       "value": "\"ma_coupon_detail_coupon_use_limit_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5175,
+      "offset": 5227,
       "length": 37,
       "value": "\"ma_coupon_detail_coupon_usable_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5252,
+      "offset": 5304,
       "length": 38,
       "value": "\"ma_coupon_favorite_list_screen_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5341,
+      "offset": 5393,
       "length": 52,
       "value": "\"ma_coupon_favorite_list_number_of_coupons_per_load\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5451,
+      "offset": 5503,
       "length": 59,
       "value": "\"ma_coupon_favorite_list_cell_available_period_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5569,
+      "offset": 5621,
       "length": 61,
       "value": "\"ma_coupon_favorite_list_cell_show_use_condition_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5683,
+      "offset": 5735,
       "length": 54,
       "value": "\"ma_coupon_favorite_list_cell_unlimit_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5783,
+      "offset": 5835,
       "length": 46,
       "value": "\"ma_coupon_favorite_list_cell_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5877,
+      "offset": 5929,
       "length": 48,
       "value": "\"ma_coupon_favorite_list_cell_close_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5977,
+      "offset": 6029,
       "length": 53,
       "value": "\"ma_coupon_favorite_list_cell_show_coupon_usage_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6087,
+      "offset": 6139,
       "length": 59,
       "value": "\"ma_coupon_favorite_list_cell_coupon_use_limit_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6195,
+      "offset": 6247,
       "length": 49,
       "value": "\"ma_coupon_favorite_list_cell_coupon_usable_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6284,
+      "offset": 6336,
       "length": 38,
       "value": "\"ma_coupon_favorite_list_loading_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6366,
+      "offset": 6418,
       "length": 43,
       "value": "\"ma_coupon_favorite_list_empty_state_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6455,
+      "offset": 6507,
       "length": 45,
       "value": "\"ma_coupon_favorite_list_empty_state_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6555,
+      "offset": 6607,
       "length": 56,
       "value": "\"ma_coupon_favorite_list_empty_state_show_reload_button\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6654,
+      "offset": 6706,
       "length": 42,
       "value": "\"ma_coupon_favorite_list_load_error_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6741,
+      "offset": 6793,
       "length": 44,
       "value": "\"ma_coupon_favorite_list_load_error_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6830,
+      "offset": 6882,
       "length": 44,
       "value": "\"ma_coupon_favorite_list_reload_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6914,
+      "offset": 6966,
       "length": 38,
       "value": "\"ma_coupon_use_condition_dialog_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6991,
+      "offset": 7043,
       "length": 37,
       "value": "\"ma_coupon_detail_error_dialog_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7078,
+      "offset": 7130,
       "length": 50,
       "value": "\"ma_coupon_detail_error_dialog_no_content_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7178,
+      "offset": 7230,
       "length": 50,
       "value": "\"ma_coupon_detail_error_dialog_load_error_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7277,
+      "offset": 7329,
       "length": 49,
       "value": "\"ma_coupon_detail_error_dialog_close_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7375,
+      "offset": 7427,
       "length": 49,
       "value": "\"ma_coupon_error_dialog_use_coupon_general_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7475,
+      "offset": 7527,
       "length": 51,
       "value": "\"ma_coupon_error_dialog_use_coupon_general_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7585,
+      "offset": 7637,
       "length": 61,
       "value": "\"ma_coupon_error_dialog_use_coupon_general_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7748,
+      "length": 49,
+      "value": "\"ma_coupon_favorite_list_unavailable_error_title\""
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7849,
+      "length": 51,
+      "value": "\"ma_coupon_favorite_list_unavailable_error_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
@@ -16256,532 +16319,553 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1138,
+      "offset": 1130,
+      "length": 24,
+      "value": "\"ma_coupon_use_favorite\""
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1190,
       "length": 34,
       "value": "\"ma_coupon_list_number_of_columns\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1216,
+      "offset": 1268,
       "length": 43,
       "value": "\"ma_coupon_favorite_list_number_of_columns\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1297,
+      "offset": 1349,
       "length": 36,
       "value": "\"ma_coupon_list_detail_screen_style\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1379,
+      "offset": 1431,
       "length": 45,
       "value": "\"ma_coupon_favorite_list_detail_screen_style\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 1512,
       "length": 34,
       "value": "\"ma_coupon_default_use_limit_type\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1526,
+      "offset": 1578,
       "length": 29,
       "value": "\"ma_coupon_default_use_limit\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1598,
+      "offset": 1650,
       "length": 42,
       "value": "\"ma_coupon_default_fixed_period_use_limit\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1684,
+      "offset": 1736,
       "length": 43,
       "value": "\"ma_coupon_use_coupon_confirm_dialog_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1773,
+      "offset": 1825,
       "length": 45,
       "value": "\"ma_coupon_use_coupon_confirm_dialog_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1870,
+      "offset": 1922,
       "length": 53,
       "value": "\"ma_coupon_use_coupon_confirm_dialog_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1978,
+      "offset": 2030,
       "length": 56,
       "value": "\"ma_coupon_use_coupon_confirm_dialog_cancel_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2072,
+      "offset": 2124,
       "length": 36,
       "value": "\"ma_coupon_default_web_browser_type\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2140,
+      "offset": 2192,
       "length": 29,
       "value": "\"ma_coupon_list_screen_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2207,
+      "offset": 2259,
       "length": 37,
       "value": "\"ma_coupon_list_coupon_sort_key_name\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2280,
+      "offset": 2332,
       "length": 34,
       "value": "\"ma_coupon_list_coupon_sort_order\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2357,
+      "offset": 2409,
       "length": 43,
       "value": "\"ma_coupon_list_number_of_coupons_per_load\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2451,
+      "offset": 2503,
       "length": 53,
       "value": "\"ma_coupon_list_show_open_favorite_button_on_top_bar\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2550,
+      "offset": 2602,
       "length": 45,
       "value": "\"ma_coupon_list_overall_coupon_category_name\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2644,
+      "offset": 2696,
       "length": 49,
       "value": "\"ma_coupon_list_show_overall_coupon_category_tab\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2740,
+      "offset": 2792,
       "length": 46,
       "value": "\"ma_coupon_list_available_coupons_header_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2839,
+      "offset": 2891,
       "length": 53,
       "value": "\"ma_coupon_list_before_available_coupons_header_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2937,
+      "offset": 2989,
       "length": 44,
       "value": "\"ma_coupon_list_expired_coupons_header_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3031,
+      "offset": 3083,
       "length": 50,
       "value": "\"ma_coupon_list_cell_available_period_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3132,
+      "offset": 3184,
       "length": 52,
       "value": "\"ma_coupon_list_cell_show_use_condition_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3229,
+      "offset": 3281,
       "length": 45,
       "value": "\"ma_coupon_list_cell_unlimit_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3312,
+      "offset": 3364,
       "length": 37,
       "value": "\"ma_coupon_list_cell_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3389,
+      "offset": 3441,
       "length": 39,
       "value": "\"ma_coupon_list_cell_close_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3472,
+      "offset": 3524,
       "length": 44,
       "value": "\"ma_coupon_list_cell_show_coupon_usage_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3565,
+      "offset": 3617,
       "length": 50,
       "value": "\"ma_coupon_list_cell_coupon_use_limit_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3656,
+      "offset": 3708,
       "length": 40,
       "value": "\"ma_coupon_list_cell_coupon_usable_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3728,
+      "offset": 3780,
       "length": 29,
       "value": "\"ma_coupon_list_loading_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3793,
+      "offset": 3845,
       "length": 34,
       "value": "\"ma_coupon_list_empty_state_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3865,
+      "offset": 3917,
       "length": 36,
       "value": "\"ma_coupon_list_empty_state_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3948,
+      "offset": 4000,
       "length": 47,
       "value": "\"ma_coupon_list_empty_state_show_reload_button\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4030,
+      "offset": 4082,
       "length": 33,
       "value": "\"ma_coupon_list_load_error_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4100,
+      "offset": 4152,
       "length": 35,
       "value": "\"ma_coupon_list_load_error_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4181,
+      "offset": 4233,
       "length": 45,
       "value": "\"ma_coupon_list_invalid_category_error_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4274,
+      "offset": 4326,
       "length": 47,
       "value": "\"ma_coupon_list_invalid_category_error_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4358,
+      "offset": 4410,
       "length": 35,
       "value": "\"ma_coupon_list_reload_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4427,
+      "offset": 4479,
       "length": 31,
       "value": "\"ma_coupon_detail_screen_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4503,
+      "offset": 4555,
       "length": 43,
       "value": "\"ma_coupon_detail_auto_brightness_increase\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4594,
+      "offset": 4646,
       "length": 47,
       "value": "\"ma_coupon_detail_available_period_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4686,
+      "offset": 4738,
       "length": 44,
       "value": "\"ma_coupon_detail_use_condition_header_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4773,
+      "offset": 4825,
       "length": 42,
       "value": "\"ma_coupon_detail_unlimit_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4851,
+      "offset": 4903,
       "length": 34,
       "value": "\"ma_coupon_detail_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4923,
+      "offset": 4975,
       "length": 36,
       "value": "\"ma_coupon_detail_close_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5001,
+      "offset": 5053,
       "length": 41,
       "value": "\"ma_coupon_detail_show_coupon_usage_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5089,
+      "offset": 5141,
       "length": 47,
       "value": "\"ma_coupon_detail_coupon_use_limit_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5175,
+      "offset": 5227,
       "length": 37,
       "value": "\"ma_coupon_detail_coupon_usable_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5252,
+      "offset": 5304,
       "length": 38,
       "value": "\"ma_coupon_favorite_list_screen_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5341,
+      "offset": 5393,
       "length": 52,
       "value": "\"ma_coupon_favorite_list_number_of_coupons_per_load\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5451,
+      "offset": 5503,
       "length": 59,
       "value": "\"ma_coupon_favorite_list_cell_available_period_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5569,
+      "offset": 5621,
       "length": 61,
       "value": "\"ma_coupon_favorite_list_cell_show_use_condition_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5683,
+      "offset": 5735,
       "length": 54,
       "value": "\"ma_coupon_favorite_list_cell_unlimit_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5783,
+      "offset": 5835,
       "length": 46,
       "value": "\"ma_coupon_favorite_list_cell_use_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5877,
+      "offset": 5929,
       "length": 48,
       "value": "\"ma_coupon_favorite_list_cell_close_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5977,
+      "offset": 6029,
       "length": 53,
       "value": "\"ma_coupon_favorite_list_cell_show_coupon_usage_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6087,
+      "offset": 6139,
       "length": 59,
       "value": "\"ma_coupon_favorite_list_cell_coupon_use_limit_text_format\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6195,
+      "offset": 6247,
       "length": 49,
       "value": "\"ma_coupon_favorite_list_cell_coupon_usable_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6284,
+      "offset": 6336,
       "length": 38,
       "value": "\"ma_coupon_favorite_list_loading_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6366,
+      "offset": 6418,
       "length": 43,
       "value": "\"ma_coupon_favorite_list_empty_state_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6455,
+      "offset": 6507,
       "length": 45,
       "value": "\"ma_coupon_favorite_list_empty_state_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6555,
+      "offset": 6607,
       "length": 56,
       "value": "\"ma_coupon_favorite_list_empty_state_show_reload_button\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6654,
+      "offset": 6706,
       "length": 42,
       "value": "\"ma_coupon_favorite_list_load_error_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6741,
+      "offset": 6793,
       "length": 44,
       "value": "\"ma_coupon_favorite_list_load_error_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6830,
+      "offset": 6882,
       "length": 44,
       "value": "\"ma_coupon_favorite_list_reload_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6914,
+      "offset": 6966,
       "length": 38,
       "value": "\"ma_coupon_use_condition_dialog_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6991,
+      "offset": 7043,
       "length": 37,
       "value": "\"ma_coupon_detail_error_dialog_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7078,
+      "offset": 7130,
       "length": 50,
       "value": "\"ma_coupon_detail_error_dialog_no_content_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7178,
+      "offset": 7230,
       "length": 50,
       "value": "\"ma_coupon_detail_error_dialog_load_error_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7277,
+      "offset": 7329,
       "length": 49,
       "value": "\"ma_coupon_detail_error_dialog_close_button_text\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7375,
+      "offset": 7427,
       "length": 49,
       "value": "\"ma_coupon_error_dialog_use_coupon_general_title\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7475,
+      "offset": 7527,
       "length": 51,
       "value": "\"ma_coupon_error_dialog_use_coupon_general_message\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7585,
+      "offset": 7637,
       "length": 61,
       "value": "\"ma_coupon_error_dialog_use_coupon_general_close_button_text\""
     },
     {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7748,
+      "length": 49,
+      "value": "\"ma_coupon_favorite_list_unavailable_error_title\""
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7849,
+      "length": 51,
+      "value": "\"ma_coupon_favorite_list_unavailable_error_message\""
+    },
+    {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/CouponList\/NautilusFavoriteCouponListModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 879,
+      "offset": 924,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/CouponList\/NautilusFavoriteCouponListModel.swift",
       "kind": "Array",
-      "offset": 936,
+      "offset": 981,
       "length": 2,
       "value": "[]"
     },
@@ -17012,6 +17096,13 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponError.swift",
       "kind": "IntegerLiteral",
+      "offset": 854,
+      "length": 20,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponError.swift",
+      "kind": "IntegerLiteral",
       "offset": 464,
       "length": 10,
       "value": "1"
@@ -17050,6 +17141,13 @@
       "offset": 783,
       "length": 16,
       "value": "6"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 854,
+      "length": 20,
+      "value": "7"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
@@ -17320,21 +17418,21 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/CouponList\/NautilusCouponListPresenter.swift",
       "kind": "Dictionary",
-      "offset": 1521,
+      "offset": 1575,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/CouponList\/NautilusCouponListPresenter.swift",
       "kind": "Array",
-      "offset": 1588,
+      "offset": 1642,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/CouponList\/NautilusCouponListPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 1112,
+      "offset": 1166,
       "length": 27,
       "value": "\"NautilusCouponSDK.NautilusCouponListPresenter\""
     },

@@ -494,6 +494,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
   NautilusCouponErrorUserCancelled = 5,
 /// パラメータが不正
   NautilusCouponErrorInvalidParamater = 6,
+/// 設定値の構成が不正エラー
+  NautilusCouponErrorIllegalConfiguration = 7,
 };
 static NSString * _Nonnull const NautilusCouponErrorDomain = @"NautilusCouponSDK.NautilusCouponError";
 
