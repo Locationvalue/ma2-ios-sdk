@@ -272,6 +272,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// returns:
 /// 店舗一覧画面
 - (UIViewController * _Nonnull)instantiateShopListViewController SWIFT_WARN_UNUSED_RESULT;
+/// 店舗検索一覧画面のView Controllerを取得する
+- (UIViewController * _Nonnull)instantiateShopSearchListViewController SWIFT_WARN_UNUSED_RESULT;
 /// 店舗一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;

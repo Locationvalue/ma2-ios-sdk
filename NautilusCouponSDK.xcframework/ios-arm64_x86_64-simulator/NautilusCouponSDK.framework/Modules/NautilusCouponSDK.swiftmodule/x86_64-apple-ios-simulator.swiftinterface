@@ -21,6 +21,9 @@ import _Concurrency
   public init(coupon: NautilusCouponSDK.NautilusCouponInfo, exchangeID: Swift.Int?)
   @objc deinit
 }
+@objc public protocol NautilusCouponDelegate {
+  @objc func coupon(_ coupon: NautilusCouponSDK.NautilusCoupon, handleCouponCode couponCode: Swift.String, in viewController: UIKit.UIViewController)
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusCouponInfo : ObjectiveC.NSObject {
   final public let couponID: Swift.Int
   final public let couponManageTitle: Swift.String
@@ -119,6 +122,7 @@ public let NautilusCouponErrorDomain: Swift.String
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
+  @objc weak final public var delegate: NautilusCouponSDK.NautilusCouponDelegate?
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func coupon() -> NautilusCouponSDK.NautilusCoupon
   @objc(couponAppNamed:) public static func coupon(appName: Swift.String) -> NautilusCouponSDK.NautilusCoupon

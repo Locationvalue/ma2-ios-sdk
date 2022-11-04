@@ -239,6 +239,7 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
+@protocol NautilusCouponDelegate;
 @class UIViewController;
 @class NautilusCouponCategoryInfo;
 @class NSNumber;
@@ -255,6 +256,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// クーポン情報を利用したアクションを実装するための<code>delegate</code>
+@property (nonatomic, weak) id <NautilusCouponDelegate> _Nullable delegate;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusCoupon * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
 + (NautilusCoupon * _Nonnull)couponAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -435,6 +438,20 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponData")
 @interface NautilusCouponData : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// クーポンの情報をアプリに提供します
+SWIFT_PROTOCOL("_TtP17NautilusCouponSDK22NautilusCouponDelegate_")
+@protocol NautilusCouponDelegate
+/// 引数で渡されたクーポンに対して、アプリ側でアクションを実行するか
+/// \param content <code>NautilusCoupon</code>のインスタンス
+///
+/// \param couponCode クーポンコード
+///
+/// \param viewController メソッドを呼び出した<code>ViewController</code>
+///
+- (void)coupon:(NautilusCoupon * _Nonnull)coupon handleCouponCode:(NSString * _Nonnull)couponCode in:(UIViewController * _Nonnull)viewController;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
@@ -829,6 +846,7 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
+@protocol NautilusCouponDelegate;
 @class UIViewController;
 @class NautilusCouponCategoryInfo;
 @class NSNumber;
@@ -845,6 +863,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// クーポン情報を利用したアクションを実装するための<code>delegate</code>
+@property (nonatomic, weak) id <NautilusCouponDelegate> _Nullable delegate;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusCoupon * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
 + (NautilusCoupon * _Nonnull)couponAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -1025,6 +1045,20 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponData")
 @interface NautilusCouponData : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// クーポンの情報をアプリに提供します
+SWIFT_PROTOCOL("_TtP17NautilusCouponSDK22NautilusCouponDelegate_")
+@protocol NautilusCouponDelegate
+/// 引数で渡されたクーポンに対して、アプリ側でアクションを実行するか
+/// \param content <code>NautilusCoupon</code>のインスタンス
+///
+/// \param couponCode クーポンコード
+///
+/// \param viewController メソッドを呼び出した<code>ViewController</code>
+///
+- (void)coupon:(NautilusCoupon * _Nonnull)coupon handleCouponCode:(NSString * _Nonnull)couponCode in:(UIViewController * _Nonnull)viewController;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
