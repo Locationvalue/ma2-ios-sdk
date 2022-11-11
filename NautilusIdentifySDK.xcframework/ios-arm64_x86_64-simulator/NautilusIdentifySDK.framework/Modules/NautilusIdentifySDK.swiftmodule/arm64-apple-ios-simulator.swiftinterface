@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusIdentifySDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusIdentifySDK
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -10,7 +9,6 @@ import NautilusLoggingSDK
 import Swift
 import UIKit
 import _Concurrency
-import _StringProcessing
 @objc public protocol NautilusUser {
   @objc var userID: Swift.String { get }
   @objc var pid: Swift.String { get }
@@ -25,7 +23,7 @@ public let NautilusUserExternalIDTypeNone: Swift.Int
     get
   }
   @_Concurrency.MainActor(unsafe) open class func instantiate() -> NautilusIdentifySDK.NautilusUserInfoView
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) open func setCodeImage(_ codeImage: UIKit.UIImage?)
   @_Concurrency.MainActor(unsafe) open func setCodeString(_ codeString: Swift.String?)
@@ -33,7 +31,7 @@ public let NautilusUserExternalIDTypeNone: Swift.Int
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusUserInfoViewProvider : ObjectiveC.NSObject {
   @objc final public func setCodeImageProvider(_ codeImageProvider: NautilusIdentifySDK.NautilusUserInfoCodeImageProvider?)
-  @objc final public func setCodeImageSize(_ codeImageSize: CoreFoundation.CGSize)
+  @objc final public func setCodeImageSize(_ codeImageSize: CoreGraphics.CGSize)
   @objc final public func provideUserInfoView() -> UIKit.UIView
   @objc final public func provideUserInfoView(user: NautilusIdentifySDK.NautilusUser) -> UIKit.UIView
   @objc final public func provideUserInfoView(viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
@@ -70,7 +68,7 @@ public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIde
   @objc final public func getUserInfoView() -> UIKit.UIView
   @objc final public func getUserInfoView(viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
   @objc final public func setCodeImageProvider(_ codeImageProvider: NautilusIdentifySDK.NautilusUserInfoCodeImageProvider?)
-  @objc final public func setCodeImageSize(_ codeImageSize: CoreFoundation.CGSize)
+  @objc final public func setCodeImageSize(_ codeImageSize: CoreGraphics.CGSize)
   @objc final public func removeCID()
   @objc final public func removeReferenceNumber()
   final public func getReferenceNumber(completion: @escaping (Swift.Result<Swift.String, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
@@ -98,7 +96,7 @@ public let NautilusIdentifyErrorDomain: Swift.String
   }
 }
 @objc public protocol NautilusUserInfoCodeImageProvider {
-  @objc func provideCodeImage(for codeString: Swift.String, size: CoreFoundation.CGSize) -> UIKit.UIImage?
+  @objc func provideCodeImage(for codeString: Swift.String, size: CoreGraphics.CGSize) -> UIKit.UIImage?
 }
 extension Foundation.Notification.NautilusApp {
   public static let identifyUpdateCID: Foundation.Notification.Name
