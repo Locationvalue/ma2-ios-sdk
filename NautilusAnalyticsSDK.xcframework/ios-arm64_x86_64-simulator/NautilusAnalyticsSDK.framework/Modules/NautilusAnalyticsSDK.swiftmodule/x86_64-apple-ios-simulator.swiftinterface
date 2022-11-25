@@ -1,28 +1,21 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusAnalyticsSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusAnalyticsSDK
+import Amplitude
 import Foundation
+import NautilusConfigSDK
 import NautilusContainerSDK
 import NautilusCoreSDK
 import NautilusIdentifySDK
 import NautilusLoggingSDK
 import Swift
 import _Concurrency
-import _StringProcessing
 extension Foundation.Notification.NautilusApp {
   public static let analyticsSendEvent: Foundation.Notification.Name
 }
 extension Foundation.Notification.NautilusApp.UserInfoKey {
   public static let analyticsEventType: Swift.String
   public static let analyticsEventProperties: Swift.String
-}
-@objc final public class NautilusAnalyticsEventPayload : ObjectiveC.NSObject {
-  final public let eventName: Swift.String
-  final public let eventProperties: [Swift.String : Any?]?
-  convenience public init(eventName: Swift.String)
-  public init(eventName: Swift.String, eventProperties: [Swift.String : Any?]?)
-  @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusAnalytics : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
@@ -36,14 +29,15 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
-  final public var plugins: [NautilusAnalyticsSDK.NautilusAnalyticsPlugin] {
+  final public var isOptOut: Swift.Bool {
     get
+    set
   }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc final public func configureAmplitude()
+  @objc final public func configureAmplitude(apiKey: Swift.String)
   @objc public static func analytics() -> NautilusAnalyticsSDK.NautilusAnalytics
   @objc(analyticsAppNamed:) public static func analytics(appName: Swift.String) -> NautilusAnalyticsSDK.NautilusAnalytics
-  @objc final public func addPlugin(_ plugin: NautilusAnalyticsSDK.NautilusAnalyticsPlugin)
-  @objc final public func removePlugin(_ plugin: NautilusAnalyticsSDK.NautilusAnalyticsPlugin)
   @objc(sendEventWithEventType:) final public func sendEvent(_ event: NautilusAnalyticsSDK.NautilusAnalyticsEvent)
   @objc(sendEventWithEventType:eventProperties:) final public func sendEvent(_ event: NautilusAnalyticsSDK.NautilusAnalyticsEvent, eventProperties: [Swift.String : Any]?)
   @objc(sendEvent:) final public func sendEvent(_ eventName: Swift.String)
@@ -60,17 +54,6 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   @objc final public func removeUserID()
   @objc final public func sendUserProperty()
   @objc deinit
-}
-@objc public protocol NautilusAnalyticsPlugin {
-  @objc var name: Swift.String { get }
-  @objc init(name: Swift.String)
-  @objc func setup(_ analytics: NautilusAnalyticsSDK.NautilusAnalytics)
-  @objc func sendEvent(payload: NautilusAnalyticsSDK.NautilusAnalyticsEventPayload) -> NautilusAnalyticsSDK.NautilusAnalyticsEventPayload
-  @objc func setUserProperty(propertyName: Swift.String, value: Any?)
-  @objc func removeUserProperty(propertyName: Swift.String)
-  @objc func sendUserProperty()
-  @objc func setUserID(_ userID: Swift.String)
-  @objc func removeUserID()
 }
 @objc public enum NautilusAnalyticsEvent : Swift.Int {
   case showTopPage

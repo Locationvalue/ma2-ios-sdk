@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusLotteryUISDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusLotteryUISDK
 import Foundation
 import Lottie
 import NautilusAnalyticsSDK
@@ -17,14 +16,13 @@ import NautilusUISDK
 import Swift
 import UIKit
 import _Concurrency
-import _StringProcessing
 @objc public protocol NautilusLotteryDetailViewControllerDelegate {
   @objc func lotteryDetail(_ viewController: NautilusLotteryUISDK.NautilusLotteryDetailViewController, didOpen lottery: NautilusLotterySDK.NautilusLotteryInfo, prize: NautilusLotterySDK.NautilusLotteryPrizeInfo)
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class NautilusLotteryDetailViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) weak public var delegate: NautilusLotteryUISDK.NautilusLotteryDetailViewControllerDelegate?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
+    @_Concurrency.MainActor(unsafe) @objc get
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -33,7 +31,7 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) final public class NautilusLotteryListViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
+    @_Concurrency.MainActor(unsafe) @objc get
   }
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
@@ -70,6 +68,6 @@ import _StringProcessing
 }
 extension UIKit.UINavigationController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
+    @_Concurrency.MainActor(unsafe) @objc get
   }
 }
