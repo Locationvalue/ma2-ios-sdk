@@ -1,9 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusUISDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusUISDK
 import Foundation
-import NautilusAnalyticsSDK
 import NautilusConfigSDK
 import NautilusCoreSDK
 import NautilusLoggingSDK
@@ -12,19 +10,18 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
-import _StringProcessing
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MACellLabel : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MASubCellLabel : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MACellButton : UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) public var insets: UIKit.UIEdgeInsets
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NautilusAppTabViewCell : UIKit.UICollectionViewCell {
@@ -32,8 +29,8 @@ import _StringProcessing
   @_Concurrency.MainActor(unsafe) public var selectedBar: UIKit.UIView
   @_Concurrency.MainActor(unsafe) public var isActiveCell: Swift.Bool?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var isSelected: Swift.Bool {
-    @objc get
-    @objc set
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
   @_Concurrency.MainActor(unsafe) public func setUpContents(textName: Swift.String, textColor: UIKit.UIColor?, cellBackgroundColor: UIKit.UIColor?, width: NautilusUISDK.CategoryCellWidth?)
@@ -49,7 +46,7 @@ import _StringProcessing
   @_Concurrency.MainActor(unsafe) public var selectedIndex: Swift.Int {
     get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc @_Concurrency.MainActor(unsafe) public func selectItem(at index: Swift.Int)
   @objc deinit
 }
@@ -75,9 +72,9 @@ extension NautilusUISDK.NautilusAppPageViewController : UIKit.UIPageViewControll
 }
 public struct NautilusUIUtil {
   public static func htmlToAttributedString(htmlString: Swift.String, family: Swift.String, point: Swift.String, weight: Swift.String, hexColor: Swift.String) -> Foundation.NSAttributedString?
-  public static func createActivityIndicator(viewWidth: CoreFoundation.CGFloat, viewHeight: CoreFoundation.CGFloat, text: Swift.String?) -> NautilusUISDK.ActivityStackView
-  public static func rowHeight(font: UIKit.UIFont, row: Swift.Int) -> CoreFoundation.CGFloat
-  public static func rawRect(font: UIKit.UIFont, text: Swift.String) -> CoreFoundation.CGRect
+  public static func createActivityIndicator(viewWidth: CoreGraphics.CGFloat, viewHeight: CoreGraphics.CGFloat, text: Swift.String?) -> NautilusUISDK.ActivityStackView
+  public static func rowHeight(font: UIKit.UIFont, row: Swift.Int) -> CoreGraphics.CGFloat
+  public static func rawRect(font: UIKit.UIFont, text: Swift.String) -> CoreGraphics.CGRect
 }
 extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var parentViewController: UIKit.UIViewController? {
@@ -91,7 +88,7 @@ extension UIKit.UIView {
 }
 extension UIKit.UIColor {
   convenience public init(hexCode: Swift.String)
-  convenience public init(hex: Swift.String, alpha: CoreFoundation.CGFloat = 1.0)
+  convenience public init(hex: Swift.String, alpha: CoreGraphics.CGFloat = 1.0)
 }
 @objc final public class NautilusInAppBrowserOption : ObjectiveC.NSObject {
   public init(title: Swift.String? = nil, isSendID: Swift.Bool = false)
@@ -105,13 +102,13 @@ extension UIKit.UIColor {
   @objc @_Concurrency.MainActor(unsafe) public static func initialize(redirectorKey: Swift.String, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption?, configuration: NautilusUISDK.NautilusWebHelper.Configuration?) -> NautilusUISDK.NautilusInAppBrowserViewController
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NautilusAppTabView : UIKit.UICollectionView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
@@ -134,17 +131,17 @@ extension UIKit.UIColor {
   }
   public struct Style {
     public let backgroundColor: UIKit.UIColor
-    public let selectionShadowRadius: CoreFoundation.CGFloat
+    public let selectionShadowRadius: CoreGraphics.CGFloat
     public let selectionStyle: NautilusUISDK.NautilusAppTopBar.SelectionStyle
     public let selectionBarColor: UIKit.UIColor
-    public let selectionBarHeight: CoreFoundation.CGFloat
+    public let selectionBarHeight: CoreGraphics.CGFloat
     public let selectionBoundingBoxColor: UIKit.UIColor
     public let selectionBoundingBoxInsets: UIKit.UIEdgeInsets
-    public let selectionBoundingBoxCornerRadius: CoreFoundation.CGFloat
+    public let selectionBoundingBoxCornerRadius: CoreGraphics.CGFloat
     public static var `default`: NautilusUISDK.NautilusAppTopBar.Style {
       get
     }
-    public init(backgroundColor: UIKit.UIColor, selectionShadowRadius: CoreFoundation.CGFloat, selectionStyle: NautilusUISDK.NautilusAppTopBar.SelectionStyle, selectionBarColor: UIKit.UIColor, selectionBarHeight: CoreFoundation.CGFloat, selectionBoundingBoxColor: UIKit.UIColor, selectionBoundingBoxInsets: UIKit.UIEdgeInsets, selectionBoundingBoxCornerRadius: CoreFoundation.CGFloat)
+    public init(backgroundColor: UIKit.UIColor, selectionShadowRadius: CoreGraphics.CGFloat, selectionStyle: NautilusUISDK.NautilusAppTopBar.SelectionStyle, selectionBarColor: UIKit.UIColor, selectionBarHeight: CoreGraphics.CGFloat, selectionBoundingBoxColor: UIKit.UIColor, selectionBoundingBoxInsets: UIKit.UIEdgeInsets, selectionBoundingBoxCornerRadius: CoreGraphics.CGFloat)
   }
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var delegate: NautilusUISDK.NautilusAppTopBarDelegate?
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var dataSource: NautilusUISDK.NautilusAppTopBarDataSource?
@@ -155,9 +152,9 @@ extension UIKit.UIColor {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
+  @objc override final public func awakeFromNib()
   @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) final public func reloadData()
   @_Concurrency.MainActor(unsafe) final public func selectItem(at index: Swift.Int, animated: Swift.Bool = true)
@@ -232,14 +229,14 @@ public protocol HTMLViewDelegate : AnyObject {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override final public func updateConstraints()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NautilusAppContentsCollectionView : UIKit.UICollectionView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
@@ -259,12 +256,12 @@ extension NautilusUISDK.NautilusAppContentsCollectionView : UIKit.UICollectionVi
     }
   }
   @_Concurrency.MainActor(unsafe) @objc override final public var isHighlighted: Swift.Bool {
-    @objc get
-    @objc set
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
   @_Concurrency.MainActor(unsafe) @objc override final public var isEnabled: Swift.Bool {
-    @objc get
-    @objc set
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
   @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var textColor: UIKit.UIColor? {
     @objc get
@@ -274,11 +271,11 @@ extension NautilusUISDK.NautilusAppContentsCollectionView : UIKit.UICollectionVi
     @objc get
     @objc set
   }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var titleFontSize: CoreFoundation.CGFloat {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var titleFontSize: CoreGraphics.CGFloat {
     @objc get
     @objc set
   }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var titleFontSizeDisabled: CoreFoundation.CGFloat {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var titleFontSizeDisabled: CoreGraphics.CGFloat {
     @objc get
     @objc set
   }
@@ -314,10 +311,10 @@ extension NautilusUISDK.NautilusAppContentsCollectionView : UIKit.UICollectionVi
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) @objc override final public func prepareForInterfaceBuilder()
-  @_Concurrency.MainActor(unsafe) @objc override final public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc override final public func awakeFromNib()
+  @objc override final public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor(unsafe) @objc override final public func hitTest(_ point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
   @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
   @objc deinit
 }
@@ -331,10 +328,20 @@ extension NautilusUISDK.NautilusAppContentsCollectionView : UIKit.UICollectionVi
     @objc set
   }
   @_Concurrency.MainActor(unsafe) @objc weak public var gridView: NautilusUISDK.NautilusGridView?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @objc override dynamic public init()
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepare()
   @objc deinit
+}
+public protocol NautilusContentsCreatable {
+  func createCollectionView(insetTop: CoreGraphics.CGFloat, column: NautilusUISDK.ContentsColumn, detailView: NautilusUISDK.TransitionStyle, headerSize: CoreGraphics.CGSize, completion: @escaping (NautilusUISDK.NautilusAppContentsCollectionView) -> Swift.Void)
+  func createZeroContentsView(insetTop: CoreGraphics.CGFloat, image: UIKit.UIImage?, text: Swift.String?) -> UIKit.UIView
+  func createErrorContentsView(insetTop: CoreGraphics.CGFloat, image: UIKit.UIImage?, text: Swift.String?, buttonTitle: Swift.String?, action: ObjectiveC.Selector) -> UIKit.UIView
+}
+extension NautilusUISDK.NautilusContentsCreatable where Self : UIKit.UIViewController {
+  public func createCollectionView(insetTop: CoreGraphics.CGFloat, column: NautilusUISDK.ContentsColumn, detailView: NautilusUISDK.TransitionStyle, headerSize: CoreGraphics.CGSize, completion: @escaping (NautilusUISDK.NautilusAppContentsCollectionView) -> Swift.Void)
+  public func createZeroContentsView(insetTop: CoreGraphics.CGFloat, image: UIKit.UIImage?, text: Swift.String?) -> UIKit.UIView
+  public func createErrorContentsView(insetTop: CoreGraphics.CGFloat, image: UIKit.UIImage?, text: Swift.String?, buttonTitle: Swift.String?, action: ObjectiveC.Selector) -> UIKit.UIView
 }
 @objc public protocol NautilusURLHandler {
   @objc func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, in viewController: UIKit.UIViewController)
@@ -393,7 +400,7 @@ extension NautilusUISDK.NautilusAppContentsCollectionView : UIKit.UICollectionVi
   }
   @objc @_Concurrency.MainActor(unsafe) public var pickerYearFormat: Swift.String?
   @objc @_Concurrency.MainActor(unsafe) public var pickerMonthFormat: Swift.String?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc public func numberOfComponents(in pickerView: UIKit.UIPickerView) -> Swift.Int
   @_Concurrency.MainActor(unsafe) @objc public func pickerView(_ pickerView: UIKit.UIPickerView, numberOfRowsInComponent component: Swift.Int) -> Swift.Int
   @_Concurrency.MainActor(unsafe) @objc public func pickerView(_ pickerView: UIKit.UIPickerView, titleForRow row: Swift.Int, forComponent component: Swift.Int) -> Swift.String?
@@ -403,7 +410,7 @@ extension NautilusUISDK.NautilusAppContentsCollectionView : UIKit.UICollectionVi
 public protocol NautilusBottomSheetContainerViewControllerDelegate : AnyObject {
   func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController, didChangeTo screenOverlayType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType)
   func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController)
-  func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController, update sheetContainerViewFrame: CoreFoundation.CGRect, didChangeBottomSheetFrameWithReason reason: NautilusUISDK.NautilusBottomSheetFrameChangeReason)
+  func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController, update sheetContainerViewFrame: CoreGraphics.CGRect, didChangeBottomSheetFrameWithReason reason: NautilusUISDK.NautilusBottomSheetFrameChangeReason)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NautilusBottomSheetContainerViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
   public enum BottomSheetScreenOverlayType {
@@ -422,7 +429,7 @@ public protocol NautilusBottomSheetContainerViewControllerDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) open var initialBottomSheetOverlayType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType {
     get
   }
-  @_Concurrency.MainActor(unsafe) open var sheetMoveHandleSize: CoreFoundation.CGSize {
+  @_Concurrency.MainActor(unsafe) open var sheetMoveHandleSize: CoreGraphics.CGSize {
     get
   }
   @_Concurrency.MainActor(unsafe) open var sheetMoveHandleEdgeInsets: UIKit.UIEdgeInsets {
@@ -440,7 +447,7 @@ public protocol NautilusBottomSheetContainerViewControllerDelegate : AnyObject {
   @available(iOS 11.0, *)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewSafeAreaInsetsDidChange()
   @_Concurrency.MainActor(unsafe) public func updateBottomSheetScreenOverlayType(_ screenType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType)
-  @_Concurrency.MainActor(unsafe) public func estimateBottomSheetSize(for screenOverlayType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) public func estimateBottomSheetSize(for screenOverlayType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType) -> CoreGraphics.CGSize
   @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -457,12 +464,12 @@ public enum NautilusBottomSheetFrameChangeReason {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class GhostButton : UIKit.UIControl {
   @_Concurrency.MainActor(unsafe) @objc override final public var isHighlighted: Swift.Bool {
-    @objc get
-    @objc set
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
   @_Concurrency.MainActor(unsafe) @objc override final public var isEnabled: Swift.Bool {
-    @objc get
-    @objc set
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
   @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var textColor: UIKit.UIColor? {
     @objc get
@@ -472,11 +479,11 @@ public enum NautilusBottomSheetFrameChangeReason {
     @objc get
     @objc set
   }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var titleFontSize: CoreFoundation.CGFloat {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var titleFontSize: CoreGraphics.CGFloat {
     @objc get
     @objc set
   }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var titleFontSizeDisabled: CoreFoundation.CGFloat {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var titleFontSizeDisabled: CoreGraphics.CGFloat {
     @objc get
     @objc set
   }
@@ -488,10 +495,10 @@ public enum NautilusBottomSheetFrameChangeReason {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) @objc override final public func prepareForInterfaceBuilder()
-  @_Concurrency.MainActor(unsafe) @objc override final public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc override final public func awakeFromNib()
+  @objc override final public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor(unsafe) @objc override final public func hitTest(_ point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc open class NautilusWebViewNavigationDelegate : ObjectiveC.NSObject, WebKit.WKNavigationDelegate {
@@ -507,24 +514,24 @@ public enum NautilusBottomSheetFrameChangeReason {
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class NautilusGridViewCell : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) open var isSelected: Swift.Bool
   @_Concurrency.MainActor(unsafe) open var isHighlighted: Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ContentsLayout : UIKit.UICollectionViewLayout, NautilusUISDK.SetContentsLayout {
-  @_Concurrency.MainActor(unsafe) public func setLayoutData(headerSize: CoreFoundation.CGSize, itemHeights: [[CoreFoundation.CGFloat]], column: NautilusUISDK.ContentsColumn)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var collectionViewContentSize: CoreFoundation.CGSize {
-    @objc get
+  @_Concurrency.MainActor(unsafe) public func setLayoutData(headerSize: CoreGraphics.CGSize, itemHeights: [[CoreGraphics.CGFloat]], column: NautilusUISDK.ContentsColumn)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var collectionViewContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepare()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutAttributesForElements(in rect: CoreGraphics.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @objc override dynamic public init()
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 public protocol SetContentsLayout : AnyObject {
-  func setLayoutData(headerSize: CoreFoundation.CGSize, itemHeights: [[CoreFoundation.CGFloat]], column: NautilusUISDK.ContentsColumn)
+  func setLayoutData(headerSize: CoreGraphics.CGSize, itemHeights: [[CoreGraphics.CGFloat]], column: NautilusUISDK.ContentsColumn)
 }
 public enum CellLayoutSize {
   case large
@@ -546,7 +553,7 @@ public enum CellLayoutSize {
   @objc @_Concurrency.MainActor(unsafe) public var indexForSelectedItem: Swift.Int {
     get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc @_Concurrency.MainActor(unsafe) public func loadItems()
   @objc @_Concurrency.MainActor(unsafe) public func selectItem(at index: Swift.Int)
   @objc deinit
@@ -558,13 +565,13 @@ public enum CellLayoutSize {
 @objc public protocol NautilusRadioGroupDelegate {
   @objc func radioGroup(_ radioGroup: NautilusUISDK.NautilusRadioGroup, didSelect index: Swift.Int)
 }
-@objc open class NautilusWebViewWebScriptMessageHandler : ObjectiveC.NSObject, WebKit.WKScriptMessageHandler {
-  final public let name: Swift.String
-  public init(name: Swift.String)
-  public func addScriptMessageHandler(to configuration: WebKit.WKWebViewConfiguration)
-  public func removeScriptMessageHandler(from configuration: WebKit.WKWebViewConfiguration)
-  @objc open func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-  @objc deinit
+public protocol NautilusListViewCreatable {
+  func createCategoryView() -> NautilusUISDK.NautilusAppTabView
+  func createPageView(isCategory: Swift.Bool) -> NautilusUISDK.NautilusAppPageViewController
+}
+extension NautilusUISDK.NautilusListViewCreatable where Self : UIKit.UIViewController {
+  public func createCategoryView() -> NautilusUISDK.NautilusAppTabView
+  public func createPageView(isCategory: Swift.Bool) -> NautilusUISDK.NautilusAppPageViewController
 }
 @objc public protocol NautilusAppTopBarControllerDelegate {
   @objc func numberOfViewControllers(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController) -> Swift.Int
@@ -613,16 +620,16 @@ public enum CellLayoutSize {
     set
   }
   @_Concurrency.MainActor(unsafe) override final public var isHighlighted: Swift.Bool {
-    get
-    set
+    @_Concurrency.MainActor(unsafe) get
+    @_Concurrency.MainActor(unsafe) set
   }
   @_Concurrency.MainActor(unsafe) override final public var isSelected: Swift.Bool {
-    get
-    set
+    @_Concurrency.MainActor(unsafe) get
+    @_Concurrency.MainActor(unsafe) set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
+  @objc override final public func awakeFromNib()
   @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) override final public func updateStyle()
   @objc deinit
@@ -641,7 +648,7 @@ public protocol NautilusAppTabViewDataSource {
 }
 @objc public class CellWidth : ObjectiveC.NSObject {
   public var width: NautilusUISDK.CategoryCellWidth
-  public init(width: CoreFoundation.CGFloat?)
+  public init(width: CoreGraphics.CGFloat?)
   @objc deinit
 }
 @objc public class NautilusCategory : ObjectiveC.NSObject {
@@ -659,12 +666,12 @@ extension NautilusUISDK.NautilusCategory {
 }
 public enum CategoryCellWidth {
   case auto
-  case fixed(width: CoreFoundation.CGFloat)
+  case fixed(width: CoreGraphics.CGFloat)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusMessageDialogViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override final public var title: Swift.String? {
-    @objc get
-    @objc set
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
   @_Concurrency.MainActor(unsafe) final public var message: Swift.String? {
     get
@@ -675,12 +682,12 @@ public enum CategoryCellWidth {
     set
   }
   @_Concurrency.MainActor(unsafe) @objc override final public var modalTransitionStyle: UIKit.UIModalTransitionStyle {
-    @objc get
-    @objc set
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
   @_Concurrency.MainActor(unsafe) @objc override final public var modalPresentationStyle: UIKit.UIModalPresentationStyle {
-    @objc get
-    @objc set
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
   @_Concurrency.MainActor(unsafe) convenience public init(title: Swift.String?, message: Swift.String?, closeButtonImage: UIKit.UIImage?)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
@@ -713,7 +720,7 @@ public enum CategoryCellWidth {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ContentsFlowLayout : UIKit.UICollectionViewFlowLayout {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func shouldInvalidateLayout(forBoundsChange newBounds: CoreGraphics.CGRect) -> Swift.Bool
   @objc deinit
 }
 @objc public enum ContentsColumn : Swift.Int {
@@ -741,21 +748,16 @@ public protocol NautilusStackListViewDataSource : AnyObject {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NautilusStackListView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) weak public var dataSource: NautilusUISDK.NautilusStackListViewDataSource?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) public func clearData()
   @_Concurrency.MainActor(unsafe) public func reloadData()
-  @objc deinit
-}
-@objc open class NautilusAnalyticsWebScriptMessageHandler : NautilusUISDK.NautilusWebViewWebScriptMessageHandler {
-  public init(app: NautilusCoreSDK.NautilusApp, name: Swift.String)
-  @objc override public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NautilusBottomSheetContentViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) open var trackableScrollView: UIKit.UIScrollView? {
     get
   }
-  @_Concurrency.MainActor(unsafe) open var minimumSheetContentHeight: CoreFoundation.CGFloat {
+  @_Concurrency.MainActor(unsafe) open var minimumSheetContentHeight: CoreGraphics.CGFloat {
     get
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -766,7 +768,7 @@ public protocol NautilusStackListViewDataSource : AnyObject {
   @objc func numberOfSections(in gridView: NautilusUISDK.NautilusGridView) -> Swift.Int
   @objc func gridView(_ gridView: NautilusUISDK.NautilusGridView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
   @objc func gridView(_ gridView: NautilusUISDK.NautilusGridView, cellForItemAt indexPath: Foundation.IndexPath) -> NautilusUISDK.NautilusGridViewCell
-  @objc func gridView(_ gridView: NautilusUISDK.NautilusGridView, cellHeightThatFitsTo size: CoreFoundation.CGSize, forItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @objc func gridView(_ gridView: NautilusUISDK.NautilusGridView, cellHeightThatFitsTo size: CoreGraphics.CGSize, forItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
 }
 @objc public protocol NautilusGridViewDelegate {
   @objc func gridView(_ gridView: NautilusUISDK.NautilusGridView, didSelectItemAt indexPath: Foundation.IndexPath)
@@ -783,8 +785,8 @@ public protocol NautilusStackListViewDataSource : AnyObject {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, gridLayout: NautilusUISDK.NautilusGridViewLayout)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreGraphics.CGRect, gridLayout: NautilusUISDK.NautilusGridViewLayout)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) final public func reloadData()
   @_Concurrency.MainActor(unsafe) final public func reloadItem(at indexPath: Foundation.IndexPath)
@@ -820,7 +822,7 @@ public protocol NautilusStackListViewDataSource : AnyObject {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   @_Concurrency.MainActor(unsafe) open func updateStyle()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
@@ -866,7 +868,7 @@ public protocol NautilusStackListViewDataSource : AnyObject {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) override dynamic public init(frame: CoreGraphics.CGRect)
   @objc deinit
 }
 @objc public protocol NautilusDatePickerGroupDelegate {
@@ -883,8 +885,6 @@ public protocol NautilusStackListViewDataSource : AnyObject {
   }
   public static var handler: NautilusUISDK.NautilusURLHandler?
   public static var preprocessor: NautilusUISDK.NautilusURLPreprocessor?
-  @objc public static func addMessageHandler(_ messageHandler: NautilusUISDK.NautilusWebViewWebScriptMessageHandler)
-  @objc public static func removeMessageHandler(_ messageHandler: NautilusUISDK.NautilusWebViewWebScriptMessageHandler)
   @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, in viewController: UIKit.UIViewController)
   @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption, in viewController: UIKit.UIViewController)
   @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, configuration: NautilusUISDK.NautilusWebHelper.Configuration, in viewController: UIKit.UIViewController)
@@ -905,7 +905,7 @@ public protocol NautilusStackListViewDataSource : AnyObject {
   @objc @_Concurrency.MainActor(unsafe) public var indicesForSelectedItem: [Swift.Int] {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc @_Concurrency.MainActor(unsafe) public func loadItems()
   @objc @_Concurrency.MainActor(unsafe) public func selectItem(at index: Swift.Int)
   @objc @_Concurrency.MainActor(unsafe) public func deselectItem(at index: Swift.Int)
