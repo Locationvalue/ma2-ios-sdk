@@ -283,6 +283,7 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class NautilusComponentDependency;
 @class NautilusApp;
 @protocol NautilusCouponDelegate;
+@class NautilusCouponRouter;
 @class UIViewController;
 @class NautilusCouponCategoryInfo;
 enum NautilusCouponPublishType : NSInteger;
@@ -300,6 +301,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// クーポン情報を利用したアクションを実装するための<code>delegate</code>
 @property (nonatomic, weak) id <NautilusCouponDelegate> _Nullable delegate;
+@property (nonatomic, readonly, strong) NautilusCouponRouter * _Nonnull router;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusCoupon * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
 + (NautilusCoupon * _Nonnull)couponAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -496,6 +498,18 @@ SWIFT_PROTOCOL("_TtP17NautilusCouponSDK22NautilusCouponDelegate_")
 - (void)coupon:(NautilusCoupon * _Nonnull)coupon handleCouponCode:(NSString * _Nonnull)couponCode in:(UIViewController * _Nonnull)viewController;
 @end
 
+
+/// ルーターから、クーポン詳細画面を生成するためのプロトコル
+SWIFT_PROTOCOL("_TtP17NautilusCouponSDK34NautilusCouponDetailInstantiatable_")
+@protocol NautilusCouponDetailInstantiatable
+/// クーポン詳細画面を生成する
+/// \param app SDKのインスタンス
+///
+/// \param coupon 詳細画面に表示するクーポン
+///
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app coupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+@end
+
 typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
 /// 不明
   NautilusCouponErrorUnknown = 0,
@@ -537,6 +551,21 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+/// ルーターから、クーポン一覧画面を生成するためのプロトコル
+SWIFT_PROTOCOL("_TtP17NautilusCouponSDK32NautilusCouponListInstantiatable_")
+@protocol NautilusCouponListInstantiatable
+/// クーポン一覧画面を生成する
+/// \param app SDKのインスタンス
+///
+/// \param category 表示するカテゴリーの指定。全てのクーポンを表示する場合は、 <code>nil</code>を指定する。
+///
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app category:(NautilusCouponCategoryInfo * _Nullable)category SWIFT_WARN_UNUSED_RESULT;
+/// 一覧画面で表示しているクーポンのカテゴリー
+/// 全てのクーポンを表示している場合は、<code>nil</code>となる。
+@property (nonatomic, readonly, strong) NautilusCouponCategoryInfo * _Nullable couponCategory;
+@end
 
 
 /// クーポン閲覧APIに引き渡すパラメーター
@@ -585,6 +614,81 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponPublishType, open) {
   NautilusCouponPublishTypePrize = 4,
 };
 
+/// SDK内で遷移可能な画面の一覧
+typedef SWIFT_ENUM(NSInteger, NautilusCouponRoutableScreen, open) {
+/// カテゴリータブ付きのクーポン一覧画面
+  NautilusCouponRoutableScreenCouponTabList = 0,
+/// カテゴリータブ無しのクーポン一覧画面
+  NautilusCouponRoutableScreenCouponList = 1,
+/// クーポン詳細画面
+  NautilusCouponRoutableScreenCouponDetail = 2,
+/// お気に入りクーポン一覧画面
+  NautilusCouponRoutableScreenFavoriteCouponList = 3,
+};
+
+
+/// SDKでの画面遷移を制御するルーター
+SWIFT_CLASS("_TtC17NautilusCouponSDK20NautilusCouponRouter")
+@interface NautilusCouponRouter : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// 指定の画面の遷移先を登録する
+/// \param screen 対象となる遷移先の名称
+///
+/// \param viewControllerClass 遷移先となる画面のクラス
+///
+- (void)registerWithScreen:(enum NautilusCouponRoutableScreen)screen viewControllerClass:(SWIFT_METATYPE(UIViewController) _Nonnull)viewControllerClass;
+/// 登録済みの遷移先の画面を登録解除する
+/// 登録解除後は、デフォルトの遷移先に遷移するようになる
+/// \param screen 登録解除の対象となる遷移先の名称
+///
+- (void)unregisterWithScreen:(enum NautilusCouponRoutableScreen)screen;
+/// カテゴリータブ付きのクーポン一覧画面を生成する
+/// \param category 表示時に選択するカテゴリーの指定。表示時に特定のタブを選択しないときは、<code>nil</code>を指定する。
+///
+- (UIViewController * _Nonnull)instantiateCouponTabListWithCategory:(NautilusCouponCategoryInfo * _Nullable)category SWIFT_WARN_UNUSED_RESULT;
+/// クーポン一覧画面を生成する
+/// \param category 表示するカテゴリーの指定。全てのクーポンを表示する場合は、<code>nil</code>を指定する。
+///
+- (UIViewController * _Nonnull)instantiateCouponListWithCategory:(NautilusCouponCategoryInfo * _Nullable)category SWIFT_WARN_UNUSED_RESULT;
+/// クーポン詳細画面を生成する
+/// \param coupon 詳細画面に表示するクーポン
+///
+- (UIViewController * _Nonnull)instantiateCouponDetailWithCoupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// お気に入りクーポン一覧画面を生成する
+- (UIViewController * _Nonnull)instantiateFavoriteCouponList SWIFT_WARN_UNUSED_RESULT;
+/// カテゴリータブ付きのクーポン一覧画面に遷移する
+/// note:
+/// 基本的にはプッシュ遷移
+/// \param category 表示時に選択するカテゴリーの指定。表示時に特定のタブを選択しないときは、<code>nil</code>を指定する。
+///
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeCouponTabListWithCategory:(NautilusCouponCategoryInfo * _Nullable)category in:(UIViewController * _Nonnull)viewController;
+/// クーポン一覧画面に遷移する
+/// note:
+/// 基本的にはプッシュ遷移
+/// \param category 表示するカテゴリーの指定。全てのクーポンを表示する場合は、<code>nil</code>を指定する。
+///
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeCouponListWithCategory:(NautilusCouponCategoryInfo * _Nullable)category in:(UIViewController * _Nonnull)viewController;
+/// クーポン詳細画面に遷移する
+/// note:
+/// モーダル遷移
+/// \param coupon 詳細画面に表示するクーポン
+///
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeCouponDetailWithCoupon:(NautilusCouponInfo * _Nonnull)coupon in:(UIViewController * _Nonnull)viewController;
+/// お気に入りクーポン一覧画面に遷移する
+/// note:
+/// モーダル遷移
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeFavoriteCouponListIn:(UIViewController * _Nonnull)viewController;
+@end
+
 
 /// APIから取得するデータの並び順
 SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponSortKey")
@@ -615,6 +719,18 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyOrder, open) {
 };
 
 
+/// ルーターから、カテゴリータブ付きのクーポン一覧画面を生成するためのプロトコル
+SWIFT_PROTOCOL("_TtP17NautilusCouponSDK35NautilusCouponTabListInstantiatable_")
+@protocol NautilusCouponTabListInstantiatable
+/// カテゴリータブ付きのクーポン一覧画面を生成する
+/// \param app SDKのインスタンス
+///
+/// \param category 表示時に選択するカテゴリーの指定。表示時に特定のタブを選択しないときは、<code>nil</code>を指定する。
+///
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app category:(NautilusCouponCategoryInfo * _Nullable)category SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// クーポン利用APIに引き渡すパラメーター
 SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponUseInfo")
 @interface NautilusCouponUseInfo : NSObject
@@ -628,6 +744,16 @@ SWIFT_PROTOCOL("_TtP17NautilusCouponSDK30NautilusCouponUseValidObserver_")
 @protocol NautilusCouponUseValidObserver
 /// クーポンが無効になった時呼ばれる
 - (void)onCouponInvalidWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
+@end
+
+
+/// ルーターから、お気に入りクーポン一覧画面を生成するためのプロトコル
+SWIFT_PROTOCOL("_TtP17NautilusCouponSDK40NautilusFavoriteCouponListInstantiatable_")
+@protocol NautilusFavoriteCouponListInstantiatable
+/// クーポン詳細画面を生成する
+/// \param app SDKのインスタンス
+///
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PublishTiming, open) {
