@@ -254,12 +254,10 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
-
-
-
 @class NautilusComponentDependency;
 @class NSString;
 @class NautilusApp;
+@protocol NautilusAnalyticsPlugin;
 enum NautilusAnalyticsEvent : NSInteger;
 
 SWIFT_CLASS("_TtC20NautilusAnalyticsSDK17NautilusAnalytics")
@@ -272,30 +270,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusAnalyticsSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
-/// 設定値から取得したインスタンス名・APIキーでAmplitudeを初期化する
-- (void)configureAmplitude;
-/// デフォルトのインスタンス名でAmplitudeを初期化する
-/// \param apiKey APIキー
-///
-- (void)configureAmplitudeWithApiKey:(NSString * _Nonnull)apiKey;
 + (NautilusAnalytics * _Nonnull)analytics SWIFT_WARN_UNUSED_RESULT;
 + (NautilusAnalytics * _Nonnull)analyticsAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
-/// Amplitudeに決まったイベントを送信する（プロパティなし）
+/// プラグインの追加
+/// \param plugin 追加するプラグイン
+///
+- (void)addPlugin:(id <NautilusAnalyticsPlugin> _Nonnull)plugin;
+/// プラグインの削除
+/// \param plugin 削除するプラグイン
+///
+- (void)removePlugin:(id <NautilusAnalyticsPlugin> _Nonnull)plugin;
+/// イベントを送信する（プロパティなし）
 /// \param event イベント名
 ///
 - (void)sendEventWithEventType:(enum NautilusAnalyticsEvent)event;
-/// Amplitudeに決まったイベントを送信する
+/// イベントを送信する
 /// \param event イベント名
 ///
 /// \param eventProperties イベントプロパティ
 ///
 - (void)sendEventWithEventType:(enum NautilusAnalyticsEvent)event eventProperties:(NSDictionary<NSString *, id> * _Nullable)eventProperties;
-/// Amplitudeにイベントを送信する（プロパティなし）
+/// イベントを送信する（プロパティなし）
 /// \param eventName イベント名
 ///
 - (void)sendEvent:(NSString * _Nonnull)eventName;
-/// Amplitudeにイベントを送信する
+/// イベントを送信する
 /// \param eventName イベント名
 ///
 /// \param eventProperties イベントプロパティ
@@ -359,7 +361,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// Amplitudeに送るイベント名
+
+/// 分析プラットフォームに送るイベント名
 typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEvent, open) {
 /// トップページを見る
   NautilusAnalyticsEventShowTopPage = 0,
@@ -491,7 +494,23 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEvent, open) {
   NautilusAnalyticsEventTapPrizeChecking = 63,
 };
 
-/// イベントプロパティ：Amplitudeに送る時の名前の定義
+/// 分析SDKから送信するイベントのチャネル定義
+typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEventChannel, open) {
+/// アプリ
+  NautilusAnalyticsEventChannelApp = 0,
+/// アプリ内WebView
+  NautilusAnalyticsEventChannelWebInApp = 1,
+};
+
+
+/// 分析SDKから送信されるイベントのペイロード
+SWIFT_CLASS("_TtC20NautilusAnalyticsSDK29NautilusAnalyticsEventPayload")
+@interface NautilusAnalyticsEventPayload : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// イベントプロパティ：分析プラットフォームに送る時の名前の定義
 typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEventProperty, open) {
 /// 直前のイベント
   NautilusAnalyticsEventPropertyPreviousEvent = 0,
@@ -645,7 +664,45 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEventProperty, open) {
   NautilusAnalyticsEventPropertyPrizePoint = 74,
 };
 
-/// ユーザプロパティ：Amplitudeに送る時の名前の定義
+
+/// イベント送信、ユーザープロパティ送信、ユーザーIDの設定が行われたことを検知するためのインターフェース
+SWIFT_PROTOCOL("_TtP20NautilusAnalyticsSDK23NautilusAnalyticsPlugin_")
+@protocol NautilusAnalyticsPlugin
+/// プラグイン名
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+/// 初期化
+/// \param name プラグイン名 
+///
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name;
+/// 初期化
+/// \param analytics NautilusAnalytics 
+///
+- (void)setup:(NautilusAnalytics * _Nonnull)analytics;
+/// イベント送信
+/// \param payload アプリから送信されるイベントのペイロード 
+///
+- (NautilusAnalyticsEventPayload * _Nonnull)sendEventWithPayload:(NautilusAnalyticsEventPayload * _Nonnull)payload SWIFT_WARN_UNUSED_RESULT;
+/// ユーザープロパティ設定
+/// \param propertyName プロパティ名
+///
+/// \param value プロパティ
+///
+- (void)setUserPropertyWithPropertyName:(NSString * _Nonnull)propertyName value:(id _Nullable)value;
+/// ユーザープロパティの削除
+/// \param propertyName プロパティ名 
+///
+- (void)removeUserPropertyWithPropertyName:(NSString * _Nonnull)propertyName;
+/// ユーザープロパティ送信
+- (void)sendUserProperty;
+/// ユーザーIDの設定
+/// \param userID ユーザID 
+///
+- (void)setUserID:(NSString * _Nonnull)userID;
+/// ユーザーIDの削除
+- (void)removeUserID;
+@end
+
+/// ユーザプロパティ：分析プラットフォームに送る時の名前の定義
 typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsUserProperty, open) {
 /// CID
   NautilusAnalyticsUserPropertyCid = 0,

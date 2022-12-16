@@ -81,6 +81,7 @@ public let NautilusBannerErrorDomain: Swift.String
   case parseFailure
   case userCancelled
   case invalidParamater
+  case invalidInstance
   public var nautilusBannerErrorCode: Swift.Int {
     get
   }
@@ -115,6 +116,9 @@ public let NautilusBannerErrorDomain: Swift.String
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
+  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+    @objc get
+  }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func banner() -> NautilusBannerSDK.NautilusBanner
   @objc(bannerAppNamed:) public static func banner(appName: Swift.String) -> NautilusBannerSDK.NautilusBanner

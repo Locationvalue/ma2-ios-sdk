@@ -59,6 +59,9 @@ import _StringProcessing
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
+  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+    @objc get
+  }
   @objc weak final public var delegate: NautilusContentSDK.NautilusContentDelegate?
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func content() -> NautilusContentSDK.NautilusContent
@@ -147,6 +150,7 @@ public let NautilusContentErrorDomain: Swift.String
   case userCancelled
   case invalidParamater
   case illegalConfiguration
+  case invalidInstance
   public var nautilusContentErrorCode: Swift.Int {
     get
   }

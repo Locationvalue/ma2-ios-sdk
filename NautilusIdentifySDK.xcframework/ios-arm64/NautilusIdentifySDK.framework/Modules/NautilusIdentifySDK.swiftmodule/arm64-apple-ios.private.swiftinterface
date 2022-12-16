@@ -56,6 +56,9 @@ public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIde
   final public var cid: Swift.String {
     get
   }
+  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+    @objc get
+  }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func identify() -> NautilusIdentifySDK.NautilusIdentify
   @objc(identifyAppNamed:) public static func identify(appName: Swift.String) -> NautilusIdentifySDK.NautilusIdentify
@@ -67,6 +70,8 @@ public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIde
   @objc final public func setManageCode(userID: Swift.String, manageCode: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc final public func setExternalID(userID: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc final public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  final public func setServerStatusToLogin(manageCode: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
+  final public func setServerStatusToLogout(manageCode: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
   @objc final public func getUserInfoView() -> UIKit.UIView
   @objc final public func getUserInfoView(viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
   @objc final public func setCodeImageProvider(_ codeImageProvider: NautilusIdentifySDK.NautilusUserInfoCodeImageProvider?)
@@ -85,6 +90,7 @@ public let NautilusIdentifyErrorDomain: Swift.String
   case parseFailure
   case userCancelled
   case invalidParamater
+  case invalidInstance
   public var nautilusIdentifyErrorCode: Swift.Int {
     get
   }

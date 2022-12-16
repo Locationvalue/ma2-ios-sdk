@@ -276,6 +276,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusIdentifySDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusIdentify * _Nonnull)identify SWIFT_WARN_UNUSED_RESULT;
 + (NautilusIdentify * _Nonnull)identifyAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -299,6 +301,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
 /// 不明
   NautilusIdentifyErrorUnknown = 0,
@@ -314,6 +317,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
   NautilusIdentifyErrorUserCancelled = 5,
 /// パラメータが不正
   NautilusIdentifyErrorInvalidParamater = 6,
+/// 不正なインスタンス
+  NautilusIdentifyErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const NautilusIdentifyErrorDomain = @"NautilusIdentifySDK.NautilusIdentifyError";
 
@@ -649,6 +654,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusIdentifySDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusIdentify * _Nonnull)identify SWIFT_WARN_UNUSED_RESULT;
 + (NautilusIdentify * _Nonnull)identifyAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -672,6 +679,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
 /// 不明
   NautilusIdentifyErrorUnknown = 0,
@@ -687,6 +695,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
   NautilusIdentifyErrorUserCancelled = 5,
 /// パラメータが不正
   NautilusIdentifyErrorInvalidParamater = 6,
+/// 不正なインスタンス
+  NautilusIdentifyErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const NautilusIdentifyErrorDomain = @"NautilusIdentifySDK.NautilusIdentifyError";
 

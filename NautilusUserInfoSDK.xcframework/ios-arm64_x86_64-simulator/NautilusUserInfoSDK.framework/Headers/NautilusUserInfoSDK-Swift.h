@@ -430,26 +430,35 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusUserInfoSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusUserInfo * _Nonnull)userInfo SWIFT_WARN_UNUSED_RESULT;
 + (NautilusUserInfo * _Nonnull)userInfoAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 会員属性の取得
+/// \param completion 成功時は会員属性情報, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)loadUserAttributeWithCompletion:(void (^ _Nonnull)(NautilusUserAttribute * _Nullable, NSError * _Nullable))completion;
 /// 会員属性の登録
-/// \param userAttribute loadUserAttributeメソッドで取得した会員情報
+/// \param userAttribute loadUserAttribute(completion:) メソッドで取得した会員情報
 ///
-/// \param updateList NautilusUserAttributeUpdater.updateList
-///
-/// \param completion (送信結果 / エラー情報)
+/// \param completion 成功時は true, 失敗時は false を受け取るクロージャ
 ///
 - (void)uploadUserAttributeWithUserAttribute:(NautilusUserAttribute * _Nonnull)userAttribute completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-/// アンケートの取得
+/// アンケート項目の取得
+/// \param completion 成功時はアンケート項目, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)loadUserEnquetesWithCompletion:(void (^ _Nonnull)(NSArray<NautilusUserEnquete *> * _Nullable, NSError * _Nullable))completion;
-/// アンケートの登録
+/// アンケート回答を登録
+/// \param enqueteAnswer アンケートの回答
+///
+/// \param completion 成功時は true, 失敗時は false を受け取るクロージャ
+///
 - (void)uploadUserEnqueteWithEnqueteAnswer:(NautilusUserEnqueteAnswer * _Nonnull)enqueteAnswer completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 /// 会員属性 オプション属性
@@ -488,6 +497,8 @@ typedef SWIFT_ENUM(NSInteger, UserInfoNetworkServiceError, open) {
   UserInfoNetworkServiceErrorParseFailure = 4,
 /// 明示的にユーザーによりキャンセルされた
   UserInfoNetworkServiceErrorUserCancelled = 5,
+/// 不正なインスタンス
+  UserInfoNetworkServiceErrorInvalidInstance = 6,
 };
 static NSString * _Nonnull const UserInfoNetworkServiceErrorDomain = @"NautilusUserInfoSDK.UserInfoNetworkServiceError";
 
@@ -931,26 +942,35 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusUserInfoSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusUserInfo * _Nonnull)userInfo SWIFT_WARN_UNUSED_RESULT;
 + (NautilusUserInfo * _Nonnull)userInfoAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 会員属性の取得
+/// \param completion 成功時は会員属性情報, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)loadUserAttributeWithCompletion:(void (^ _Nonnull)(NautilusUserAttribute * _Nullable, NSError * _Nullable))completion;
 /// 会員属性の登録
-/// \param userAttribute loadUserAttributeメソッドで取得した会員情報
+/// \param userAttribute loadUserAttribute(completion:) メソッドで取得した会員情報
 ///
-/// \param updateList NautilusUserAttributeUpdater.updateList
-///
-/// \param completion (送信結果 / エラー情報)
+/// \param completion 成功時は true, 失敗時は false を受け取るクロージャ
 ///
 - (void)uploadUserAttributeWithUserAttribute:(NautilusUserAttribute * _Nonnull)userAttribute completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-/// アンケートの取得
+/// アンケート項目の取得
+/// \param completion 成功時はアンケート項目, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)loadUserEnquetesWithCompletion:(void (^ _Nonnull)(NSArray<NautilusUserEnquete *> * _Nullable, NSError * _Nullable))completion;
-/// アンケートの登録
+/// アンケート回答を登録
+/// \param enqueteAnswer アンケートの回答
+///
+/// \param completion 成功時は true, 失敗時は false を受け取るクロージャ
+///
 - (void)uploadUserEnqueteWithEnqueteAnswer:(NautilusUserEnqueteAnswer * _Nonnull)enqueteAnswer completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 /// 会員属性 オプション属性
@@ -989,6 +1009,8 @@ typedef SWIFT_ENUM(NSInteger, UserInfoNetworkServiceError, open) {
   UserInfoNetworkServiceErrorParseFailure = 4,
 /// 明示的にユーザーによりキャンセルされた
   UserInfoNetworkServiceErrorUserCancelled = 5,
+/// 不正なインスタンス
+  UserInfoNetworkServiceErrorInvalidInstance = 6,
 };
 static NSString * _Nonnull const UserInfoNetworkServiceErrorDomain = @"NautilusUserInfoSDK.UserInfoNetworkServiceError";
 
