@@ -312,8 +312,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, copy) NSString * _Nullable name;
-/// <code>NautilusLotteryUISDK</code>の機能の利用可否ステータス
-@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusLotteryUI * _Nonnull)lotteryUI SWIFT_WARN_UNUSED_RESULT;
 + (NautilusLotteryUI * _Nonnull)lotteryAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;

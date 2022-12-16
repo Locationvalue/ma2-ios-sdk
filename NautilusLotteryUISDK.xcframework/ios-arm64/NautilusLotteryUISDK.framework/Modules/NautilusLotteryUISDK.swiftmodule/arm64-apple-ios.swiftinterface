@@ -56,9 +56,6 @@ import _StringProcessing
   }
   @objc final public var app: NautilusCoreSDK.NautilusApp
   @objc final public var name: Swift.String?
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
-    @objc get
-  }
   weak final public var delegate: NautilusLotteryUISDK.NautilusLotteryUIDelegate?
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func lotteryUI() -> NautilusLotteryUISDK.NautilusLotteryUI

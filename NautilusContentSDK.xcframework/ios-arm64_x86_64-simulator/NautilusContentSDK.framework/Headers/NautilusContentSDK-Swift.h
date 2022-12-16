@@ -279,8 +279,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
-/// <code>NautilusContentSDK</code>の機能の利用可否ステータス
-@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 /// コンテンツ情報を利用したアクションを実装するための<code>delegate</code>
 /// <ul>
 ///   <li>
@@ -300,7 +298,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// コンテンツ一覧画面（カテゴリタブあり）
 - (UIViewController * _Nonnull)instantiateContentListViewController SWIFT_WARN_UNUSED_RESULT;
 /// カテゴリ選択された状態でコンテンツ一覧画面を返却する
-/// \param category 選択したいカテゴリ
+/// \param category カテゴリ（<code>NautilusContentCategoryInfo</code>）
 ///
 /// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
 ///
@@ -309,7 +307,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// コンテンツ一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
 - (UIViewController * _Nonnull)instantiateContentListViewControllerWithCategory:(NautilusContentCategoryInfo * _Nullable)category useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
 /// カテゴリ選択された状態でコンテンツ一覧画面を返却する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param categoryID カテゴリID. nilの場合はすべて
 ///
 /// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
@@ -330,115 +328,37 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// お気に入りコンテンツVCを返す
 - (UIViewController * _Nonnull)instantiateFavoriteContentListViewController SWIFT_WARN_UNUSED_RESULT;
 /// コンテンツ詳細VCを返す
-/// \param contentID コンテンツID
-///
-/// \param contentType <code>NautilusContentType</code>で定義されたコンテンツ種別
-///
-///
-/// returns:
-/// コンテンツ詳細VC
 - (UIViewController * _Nonnull)instantiateContentDetailViewControllerWithContentID:(NSInteger)contentID contentType:(enum NautilusContentType)contentType SWIFT_WARN_UNUSED_RESULT;
 /// 共通コンテンツ一覧を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param offset 取得開始位置
-///
-/// \param limit 件数
-///
-/// \param useCache キャッシュを利用する場合 true, しない場合 false
-///
-/// \param contentIDs コンテンツIDの配列
-///
-/// \param categoryIDs カテゴリIDの配列
-///
-/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順の配列
-///
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
-///
-/// \param completion 成功時は共通コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getCommonContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 共通コンテンツの件数を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
-///
-/// \param completion 成功時は共通コンテンツの件数, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getCommonContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 /// 個人別コンテンツ一覧を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param offset 取得開始位置
-///
-/// \param limit 件数
-///
-/// \param useCache キャッシュを利用する場合 true, しない場合 false
-///
-/// \param contentIDs コンテンツIDの配列
-///
-/// \param categoryIDs カテゴリIDの配列
-///
-/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順
-///
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
-///
-/// \param completion 成功時は個人別コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getPrivateContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 個人別コンテンツの件数を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
-///
-/// \param completion 成功時は個人別コンテンツの件数, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getPrivateContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 /// お気に入り店舗コンテンツ一覧を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param offset 取得開始位置
-///
-/// \param limit 件数
-///
-/// \param useCache キャッシュを利用する場合 true, しない場合 false
-///
-/// \param contentIDs コンテンツIDの配列
-///
-/// \param categoryIDs カテゴリIDの配列
-///
-/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順
-///
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
-///
-/// \param completion 成功時はお気に入り店舗コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getFavoriteShopContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// お気に入り店舗コンテンツの件数を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
-///
-/// \param completion 成功時はお気に入り店舗コンテンツの件数, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getFavoriteShopContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
-/// お気に入りコンテンツ登録, 削除を行う
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param addFavoriteContentIDs 登録したいコンテンツIDの配列
-///
-/// \param removeFavoriteContentIDs 削除したいコンテンツIDの配列
-///
-/// \param completion 成功時は true, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// お気に入りコンテンツ登録、削除を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)updateFavoriteWithAddFavoriteContentIDs:(NSArray<NSNumber *> * _Nullable)addFavoriteContentIDs removeFavoriteContentIDs:(NSArray<NSNumber *> * _Nullable)removeFavoriteContentIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// お気に入りコンテンツの一覧を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param completion 成功時はお気に入りコンテンツの一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getFavoriteContentListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// コンテンツカテゴリー一覧を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param completion 成功時はコンテンツカテゴリー一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getContentCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusContentCategoryInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 /// コンテンツカテゴリーのデータ
@@ -502,12 +422,9 @@ typedef SWIFT_ENUM(NSInteger, NautilusContentError, open) {
   NautilusContentErrorParseFailure = 4,
 /// 明示的にユーザーによりキャンセルされた
   NautilusContentErrorUserCancelled = 5,
-/// 不正なパラメータ
   NautilusContentErrorInvalidParamater = 6,
 /// 設定値の構成が不正エラー
   NautilusContentErrorIllegalConfiguration = 7,
-/// 不正なインスタンス
-  NautilusContentErrorInvalidInstance = 8,
 };
 static NSString * _Nonnull const NautilusContentErrorDomain = @"NautilusContentSDK.NautilusContentError";
 
@@ -869,8 +786,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
-/// <code>NautilusContentSDK</code>の機能の利用可否ステータス
-@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 /// コンテンツ情報を利用したアクションを実装するための<code>delegate</code>
 /// <ul>
 ///   <li>
@@ -890,7 +805,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// コンテンツ一覧画面（カテゴリタブあり）
 - (UIViewController * _Nonnull)instantiateContentListViewController SWIFT_WARN_UNUSED_RESULT;
 /// カテゴリ選択された状態でコンテンツ一覧画面を返却する
-/// \param category 選択したいカテゴリ
+/// \param category カテゴリ（<code>NautilusContentCategoryInfo</code>）
 ///
 /// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
 ///
@@ -899,7 +814,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// コンテンツ一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
 - (UIViewController * _Nonnull)instantiateContentListViewControllerWithCategory:(NautilusContentCategoryInfo * _Nullable)category useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
 /// カテゴリ選択された状態でコンテンツ一覧画面を返却する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param categoryID カテゴリID. nilの場合はすべて
 ///
 /// \param useCategoryTab カテゴリタブをつけるかどうかのフラグ
@@ -920,115 +835,37 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// お気に入りコンテンツVCを返す
 - (UIViewController * _Nonnull)instantiateFavoriteContentListViewController SWIFT_WARN_UNUSED_RESULT;
 /// コンテンツ詳細VCを返す
-/// \param contentID コンテンツID
-///
-/// \param contentType <code>NautilusContentType</code>で定義されたコンテンツ種別
-///
-///
-/// returns:
-/// コンテンツ詳細VC
 - (UIViewController * _Nonnull)instantiateContentDetailViewControllerWithContentID:(NSInteger)contentID contentType:(enum NautilusContentType)contentType SWIFT_WARN_UNUSED_RESULT;
 /// 共通コンテンツ一覧を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param offset 取得開始位置
-///
-/// \param limit 件数
-///
-/// \param useCache キャッシュを利用する場合 true, しない場合 false
-///
-/// \param contentIDs コンテンツIDの配列
-///
-/// \param categoryIDs カテゴリIDの配列
-///
-/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順の配列
-///
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
-///
-/// \param completion 成功時は共通コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getCommonContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 共通コンテンツの件数を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
-///
-/// \param completion 成功時は共通コンテンツの件数, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getCommonContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 /// 個人別コンテンツ一覧を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param offset 取得開始位置
-///
-/// \param limit 件数
-///
-/// \param useCache キャッシュを利用する場合 true, しない場合 false
-///
-/// \param contentIDs コンテンツIDの配列
-///
-/// \param categoryIDs カテゴリIDの配列
-///
-/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順
-///
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
-///
-/// \param completion 成功時は個人別コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getPrivateContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 個人別コンテンツの件数を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
-///
-/// \param completion 成功時は個人別コンテンツの件数, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getPrivateContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 /// お気に入り店舗コンテンツ一覧を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param offset 取得開始位置
-///
-/// \param limit 件数
-///
-/// \param useCache キャッシュを利用する場合 true, しない場合 false
-///
-/// \param contentIDs コンテンツIDの配列
-///
-/// \param categoryIDs カテゴリIDの配列
-///
-/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順
-///
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
-///
-/// \param completion 成功時はお気に入り店舗コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getFavoriteShopContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// お気に入り店舗コンテンツの件数を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
-///
-/// \param completion 成功時はお気に入り店舗コンテンツの件数, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getFavoriteShopContentCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
-/// お気に入りコンテンツ登録, 削除を行う
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param addFavoriteContentIDs 登録したいコンテンツIDの配列
-///
-/// \param removeFavoriteContentIDs 削除したいコンテンツIDの配列
-///
-/// \param completion 成功時は true, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// お気に入りコンテンツ登録、削除を行う
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)updateFavoriteWithAddFavoriteContentIDs:(NSArray<NSNumber *> * _Nullable)addFavoriteContentIDs removeFavoriteContentIDs:(NSArray<NSNumber *> * _Nullable)removeFavoriteContentIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// お気に入りコンテンツの一覧を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param completion 成功時はお気に入りコンテンツの一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getFavoriteContentListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// コンテンツカテゴリー一覧を取得する
-/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
-/// \param completion 成功時はコンテンツカテゴリー一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
-///
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)getContentCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusContentCategoryInfo *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 /// コンテンツカテゴリーのデータ
@@ -1092,12 +929,9 @@ typedef SWIFT_ENUM(NSInteger, NautilusContentError, open) {
   NautilusContentErrorParseFailure = 4,
 /// 明示的にユーザーによりキャンセルされた
   NautilusContentErrorUserCancelled = 5,
-/// 不正なパラメータ
   NautilusContentErrorInvalidParamater = 6,
 /// 設定値の構成が不正エラー
   NautilusContentErrorIllegalConfiguration = 7,
-/// 不正なインスタンス
-  NautilusContentErrorInvalidInstance = 8,
 };
 static NSString * _Nonnull const NautilusContentErrorDomain = @"NautilusContentSDK.NautilusContentError";
 

@@ -270,8 +270,6 @@ typedef SWIFT_ENUM(NSInteger, GeoUtilApiError, open) {
   GeoUtilApiErrorUserCancelled = 5,
 /// 不正なパラメータ
   GeoUtilApiErrorInvalidParamater = 6,
-/// 不正なインスタンス
-  GeoUtilApiErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const GeoUtilApiErrorDomain = @"NautilusGeoUtilSDK.GeoUtilApiError";
 
@@ -293,8 +291,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentTyp
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, copy) NSString * _Nullable name;
-/// <code>NautilusGeoUtilSDK</code>の機能の利用可否ステータス
-@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusGeoUtil * _Nonnull)geoUtil SWIFT_WARN_UNUSED_RESULT;
 + (NautilusGeoUtil * _Nonnull)geoUtilAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -308,7 +304,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 /// 市区町村データ
@@ -708,8 +703,6 @@ typedef SWIFT_ENUM(NSInteger, GeoUtilApiError, open) {
   GeoUtilApiErrorUserCancelled = 5,
 /// 不正なパラメータ
   GeoUtilApiErrorInvalidParamater = 6,
-/// 不正なインスタンス
-  GeoUtilApiErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const GeoUtilApiErrorDomain = @"NautilusGeoUtilSDK.GeoUtilApiError";
 
@@ -731,8 +724,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentTyp
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, copy) NSString * _Nullable name;
-/// <code>NautilusGeoUtilSDK</code>の機能の利用可否ステータス
-@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusGeoUtil * _Nonnull)geoUtil SWIFT_WARN_UNUSED_RESULT;
 + (NautilusGeoUtil * _Nonnull)geoUtilAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -746,7 +737,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 /// 市区町村データ

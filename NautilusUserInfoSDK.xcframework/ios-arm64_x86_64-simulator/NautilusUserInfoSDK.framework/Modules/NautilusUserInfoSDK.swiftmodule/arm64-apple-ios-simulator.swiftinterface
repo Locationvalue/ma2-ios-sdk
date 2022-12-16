@@ -135,9 +135,6 @@ import _StringProcessing
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
   public static let userInfoErrorDomain: Swift.String
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
-    @objc get
-  }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func userInfo() -> NautilusUserInfoSDK.NautilusUserInfo
   @objc(userInfoAppNamed:) public static func userInfo(appName: Swift.String) -> NautilusUserInfoSDK.NautilusUserInfo
@@ -154,7 +151,6 @@ import _StringProcessing
   case httpConnection
   case parseFailure
   case userCancelled
-  case invalidInstance
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {

@@ -48,9 +48,6 @@ import _StringProcessing
   @objc final public let name: Swift.String?
   final public var shopPinImageProvider: NautilusShopSDK.NautilusShopPinImageProvider?
   final public var shopSearchTagFilteringOperation: NautilusShopSDK.NautilusShopSearchTagFilteringOperation?
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
-    @objc get
-  }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func shop() -> NautilusShopSDK.NautilusShop
   @objc(shopAppNamed:) public static func shop(appName: Swift.String) -> NautilusShopSDK.NautilusShop
@@ -59,7 +56,6 @@ import _StringProcessing
   @objc final public func instantiateShopDetail(shopID: Swift.Int) -> UIKit.UIViewController
   @objc final public func instantiateShopDetail(clientShopCode: Swift.String) -> UIKit.UIViewController
   @objc final public func instantiateShopListViewController() -> UIKit.UIViewController
-  @objc final public func instantiateShopSearchListViewController() -> UIKit.UIViewController
   final public func getShopList(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
   @objc final public func getShopList(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func searchShop(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int?, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
@@ -72,8 +68,6 @@ import _StringProcessing
   @objc final public func getFavoriteShopList(order: NautilusShopSDK.NautilusFavoriteShopSortOrder, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func getShopSearchTagList(completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopSearchTagInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
   @objc final public func getShopSearchTagList(completion: @escaping ([NautilusShopSDK.NautilusShopSearchTagInfo]?, Foundation.NSError?) -> Swift.Void)
-  final public func migrateFavoriteShops(installID: Swift.String, completion: @escaping (Swift.Result<Swift.Void, NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  @objc final public func migrateFavoriteShops(installID: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc deinit
 }
 @objc public enum NautilusShopDetailOpenEvent : Swift.Int {
@@ -144,7 +138,6 @@ public let NautilusShopErrorDomain: Swift.String
   case userCancelled
   case invalidParamater
   case illegalConfiguration
-  case invalidInstance
   public var nautilusShopErrorCode: Swift.Int {
     get
   }

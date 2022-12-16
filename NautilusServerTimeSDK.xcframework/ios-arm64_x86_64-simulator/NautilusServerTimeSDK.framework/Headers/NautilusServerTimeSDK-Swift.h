@@ -269,8 +269,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentTyp
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
-/// <code>NautilusServerTimeSDK</code>の機能の利用可否ステータス
-@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 @property (nonatomic, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
@@ -282,7 +280,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 typedef SWIFT_ENUM(NSInteger, NautilusServerTimeError, open) {
 /// 不明
@@ -299,8 +296,6 @@ typedef SWIFT_ENUM(NSInteger, NautilusServerTimeError, open) {
   NautilusServerTimeErrorUserCancelled = 5,
 /// フォーマット不正など、サーバーからの返ってきた値が不正
   NautilusServerTimeErrorInvalidResponse = 6,
-/// 不正なインスタンス
-  NautilusServerTimeErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const NautilusServerTimeErrorDomain = @"NautilusServerTimeSDK.NautilusServerTimeError";
 
@@ -596,8 +591,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentTyp
 + (NautilusComponentType)componentType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NautilusComponentDependency *> * _Nonnull dependencies;)
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
-/// <code>NautilusServerTimeSDK</code>の機能の利用可否ステータス
-@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 @property (nonatomic, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
@@ -609,7 +602,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 typedef SWIFT_ENUM(NSInteger, NautilusServerTimeError, open) {
 /// 不明
@@ -626,8 +618,6 @@ typedef SWIFT_ENUM(NSInteger, NautilusServerTimeError, open) {
   NautilusServerTimeErrorUserCancelled = 5,
 /// フォーマット不正など、サーバーからの返ってきた値が不正
   NautilusServerTimeErrorInvalidResponse = 6,
-/// 不正なインスタンス
-  NautilusServerTimeErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const NautilusServerTimeErrorDomain = @"NautilusServerTimeSDK.NautilusServerTimeError";
 
