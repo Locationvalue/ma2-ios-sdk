@@ -290,21 +290,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
-/// <code>NautilusNotificationUISDK</code>の機能の利用可否ステータス
-@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusNotificationUI * _Nonnull)notificationUI SWIFT_WARN_UNUSED_RESULT;
 + (NautilusNotificationUI * _Nonnull)notificationUIAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
-/// プッシュ通知一覧画面を表示する
-/// \param viewController 表示元となるVC
-///
-/// \param delegate <code>NautilusNotificationListViewControllerDelegate</code>の移譲先
-///
 - (void)presentNotificationListViewControllerIn:(UIViewController * _Nonnull)viewController delegate:(id <NautilusNotificationListViewControllerDelegate> _Nullable)delegate;
-/// プッシュ通知一覧画面VCを返却する
-///
-/// returns:
-/// プッシュ通知一覧画面VC
 - (NautilusNotificationListViewController * _Nonnull)instantiateNotificationListViewController SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -610,21 +599,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
-/// <code>NautilusNotificationUISDK</code>の機能の利用可否ステータス
-@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusNotificationUI * _Nonnull)notificationUI SWIFT_WARN_UNUSED_RESULT;
 + (NautilusNotificationUI * _Nonnull)notificationUIAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
-/// プッシュ通知一覧画面を表示する
-/// \param viewController 表示元となるVC
-///
-/// \param delegate <code>NautilusNotificationListViewControllerDelegate</code>の移譲先
-///
 - (void)presentNotificationListViewControllerIn:(UIViewController * _Nonnull)viewController delegate:(id <NautilusNotificationListViewControllerDelegate> _Nullable)delegate;
-/// プッシュ通知一覧画面VCを返却する
-///
-/// returns:
-/// プッシュ通知一覧画面VC
 - (NautilusNotificationListViewController * _Nonnull)instantiateNotificationListViewController SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

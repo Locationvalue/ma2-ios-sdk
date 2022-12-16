@@ -40,7 +40,6 @@ public let NautilusNotificationErrorDomain: Swift.String
   case parseFailure
   case userCancelled
   case invalidParameters
-  case invalidInstance
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -83,9 +82,6 @@ public typealias NautilusNotificationHandlerAction = (NautilusNotificationSDK.Na
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
-    @objc get
-  }
   final public var notificationDeviceID: Swift.String? {
     get
   }

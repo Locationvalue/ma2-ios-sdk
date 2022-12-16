@@ -3668,13 +3668,6 @@
         "moduleName": "NautilusUserInfoSDK"
       },
       {
-        "kind": "Import",
-        "name": "NautilusLoggingSDK",
-        "printedName": "NautilusLoggingSDK",
-        "declKind": "Import",
-        "moduleName": "NautilusUserInfoSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "NautilusUserInfo",
         "printedName": "NautilusUserInfo",
@@ -4029,55 +4022,6 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "featureStatus",
-            "printedName": "featureStatus",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusFeatureStatus",
-                "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
-                "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@NautilusUserInfoSDK@objc(cs)NautilusUserInfo(py)featureStatus",
-            "mangledName": "$s19NautilusUserInfoSDK0abC0C13featureStatus0a4CoreD00a7FeatureF0Ovp",
-            "moduleName": "NautilusUserInfoSDK",
-            "objc_name": "featureStatus",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusFeatureStatus",
-                    "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
-                    "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NautilusUserInfoSDK@objc(cs)NautilusUserInfo(im)featureStatus",
-                "mangledName": "$s19NautilusUserInfoSDK0abC0C13featureStatus0a4CoreD00a7FeatureF0Ovg",
-                "moduleName": "NautilusUserInfoSDK",
-                "objc_name": "featureStatus",
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4814,48 +4758,6 @@
               "ObjC"
             ],
             "fixedbinaryorder": 5
-          },
-          {
-            "kind": "Var",
-            "name": "invalidInstance",
-            "printedName": "invalidInstance",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(NautilusUserInfoSDK.UserInfoNetworkServiceError.Type) -> NautilusUserInfoSDK.UserInfoNetworkServiceError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UserInfoNetworkServiceError",
-                    "printedName": "NautilusUserInfoSDK.UserInfoNetworkServiceError",
-                    "usr": "c:@M@NautilusUserInfoSDK@E@UserInfoNetworkServiceError"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "NautilusUserInfoSDK.UserInfoNetworkServiceError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UserInfoNetworkServiceError",
-                        "printedName": "NautilusUserInfoSDK.UserInfoNetworkServiceError",
-                        "usr": "c:@M@NautilusUserInfoSDK@E@UserInfoNetworkServiceError"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@NautilusUserInfoSDK@E@UserInfoNetworkServiceError@UserInfoNetworkServiceErrorInvalidInstance",
-            "mangledName": "$s19NautilusUserInfoSDK0bC19NetworkServiceErrorO15invalidInstanceyA2CmF",
-            "moduleName": "NautilusUserInfoSDK",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 6
           },
           {
             "kind": "Constructor",
@@ -7281,1582 +7183,1561 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1401,
       "length": 7,
       "value": "\"a_pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1428,
       "length": 7,
       "value": "\"a_cid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1462,
       "length": 15,
       "value": "\"a_app_version\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1504,
       "length": 15,
       "value": "\"n_device_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1545,
       "length": 14,
       "value": "\"a_app_locale\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1585,
       "length": 14,
       "value": "\"a_os_version\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1632,
       "length": 23,
       "value": "\"n_shop_account_app_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1678,
       "length": 10,
       "value": "\"n_gender\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1713,
       "length": 12,
       "value": "\"a_birthday\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1754,
       "length": 11,
       "value": "\"n_pref_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1796,
       "length": 19,
       "value": "\"a_municipality_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1839,
       "length": 11,
       "value": "\"a_zipcode\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1874,
       "length": 12,
       "value": "\"n_brand_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1913,
       "length": 15,
       "value": "\"a_manage_code\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1952,
       "length": 10,
       "value": "\"arzh_opt\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1401,
       "length": 7,
       "value": "\"a_pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1428,
       "length": 7,
       "value": "\"a_cid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1462,
       "length": 15,
       "value": "\"a_app_version\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1504,
       "length": 15,
       "value": "\"n_device_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1545,
       "length": 14,
       "value": "\"a_app_locale\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1585,
       "length": 14,
       "value": "\"a_os_version\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1632,
       "length": 23,
       "value": "\"n_shop_account_app_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1678,
       "length": 10,
       "value": "\"n_gender\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1713,
       "length": 12,
       "value": "\"a_birthday\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1754,
       "length": 11,
       "value": "\"n_pref_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1796,
       "length": 19,
       "value": "\"a_municipality_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1839,
       "length": 11,
       "value": "\"a_zipcode\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1874,
       "length": 12,
       "value": "\"n_brand_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1913,
       "length": 15,
       "value": "\"a_manage_code\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 1952,
       "length": 10,
       "value": "\"arzh_opt\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 3889,
       "length": 7,
       "value": "\"a_pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 3916,
       "length": 7,
       "value": "\"a_cid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 3950,
       "length": 15,
       "value": "\"a_app_version\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 3992,
       "length": 15,
       "value": "\"n_device_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 4033,
       "length": 14,
       "value": "\"a_app_locale\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 4073,
       "length": 14,
       "value": "\"a_os_version\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 4120,
       "length": 23,
       "value": "\"n_shop_account_app_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 4173,
       "length": 21,
       "value": "\"arzh_enquete_answer\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 3889,
       "length": 7,
       "value": "\"a_pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 3916,
       "length": 7,
       "value": "\"a_cid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 3950,
       "length": 15,
       "value": "\"a_app_version\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 3992,
       "length": 15,
       "value": "\"n_device_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 4033,
       "length": 14,
       "value": "\"a_app_locale\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 4073,
       "length": 14,
       "value": "\"a_os_version\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 4120,
       "length": 23,
       "value": "\"n_shop_account_app_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 4173,
       "length": 21,
       "value": "\"arzh_enquete_answer\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 5159,
       "length": 12,
       "value": "\"enquete_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 5206,
       "length": 18,
       "value": "\"select_option_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 5260,
       "length": 19,
       "value": "\"select_option_ids\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 5310,
       "length": 13,
       "value": "\"answer_text\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 5159,
       "length": 12,
       "value": "\"enquete_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 5206,
       "length": 18,
       "value": "\"select_option_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 5260,
       "length": 19,
       "value": "\"select_option_ids\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
       "offset": 5310,
       "length": 13,
       "value": "\"answer_text\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttribute.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttribute.swift",
       "kind": "Array",
       "offset": 1447,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttribute.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttribute.swift",
       "kind": "StringLiteral",
       "offset": 249,
       "length": 21,
       "value": "\"NautilusUserInfoSDK.NautilusUserAttribute\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
       "kind": "IntegerLiteral",
       "offset": 278,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
       "kind": "IntegerLiteral",
       "offset": 313,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
       "kind": "IntegerLiteral",
       "offset": 350,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
       "kind": "IntegerLiteral",
       "offset": 278,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
       "kind": "IntegerLiteral",
       "offset": 313,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserGenderType.swift",
       "kind": "IntegerLiteral",
       "offset": 350,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 440,
       "length": 6,
       "value": "\"date\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 466,
       "length": 5,
       "value": "\"pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 493,
       "length": 7,
       "value": "\"items\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 440,
       "length": 6,
       "value": "\"date\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 466,
       "length": 5,
       "value": "\"pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 493,
       "length": 7,
       "value": "\"items\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3497,
       "length": 19,
       "value": "\"enquete_manage_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3538,
       "length": 7,
       "value": "\"title\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3567,
       "length": 7,
       "value": "\"alias\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3617,
       "length": 24,
       "value": "\"publish_start_datetime\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3682,
       "length": 22,
       "value": "\"publish_end_datetime\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3731,
       "length": 9,
       "value": "\"sort_no\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3764,
       "length": 9,
       "value": "\"enquete\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3497,
       "length": 19,
       "value": "\"enquete_manage_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3538,
       "length": 7,
       "value": "\"title\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3567,
       "length": 7,
       "value": "\"alias\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3617,
       "length": 24,
       "value": "\"publish_start_datetime\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3682,
       "length": 22,
       "value": "\"publish_end_datetime\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3731,
       "length": 9,
       "value": "\"sort_no\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 3764,
       "length": 9,
       "value": "\"enquete\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 4971,
       "length": 12,
       "value": "\"enquete_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5012,
       "length": 15,
       "value": "\"enquete_title\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5062,
       "length": 21,
       "value": "\"enquete_description\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5110,
       "length": 13,
       "value": "\"flg_require\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5151,
       "length": 15,
       "value": "\"flg_updatable\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5194,
       "length": 14,
       "value": "\"enquete_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5235,
       "length": 9,
       "value": "\"sort_no\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5274,
       "length": 15,
       "value": "\"select_option\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5315,
       "length": 12,
       "value": "\"answer_ids\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5354,
       "length": 13,
       "value": "\"answer_text\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 4971,
       "length": 12,
       "value": "\"enquete_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5012,
       "length": 15,
       "value": "\"enquete_title\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5062,
       "length": 21,
       "value": "\"enquete_description\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5110,
       "length": 13,
       "value": "\"flg_require\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5151,
       "length": 15,
       "value": "\"flg_updatable\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5194,
       "length": 14,
       "value": "\"enquete_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5235,
       "length": 9,
       "value": "\"sort_no\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5274,
       "length": 15,
       "value": "\"select_option\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5315,
       "length": 12,
       "value": "\"answer_ids\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 5354,
       "length": 13,
       "value": "\"answer_text\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 6431,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 6456,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 6431,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/EnqueteDataEntity.swift",
       "kind": "StringLiteral",
       "offset": 6456,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
       "kind": "StringLiteral",
       "offset": 234,
       "length": 23,
       "value": "\"NautilusUserInfoSDK.NautilusUserEnqueteItem\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
       "kind": "IntegerLiteral",
       "offset": 2133,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
       "kind": "IntegerLiteral",
       "offset": 2185,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
       "kind": "IntegerLiteral",
       "offset": 2234,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
       "kind": "IntegerLiteral",
       "offset": 2270,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
       "kind": "IntegerLiteral",
       "offset": 2133,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
       "kind": "IntegerLiteral",
       "offset": 2185,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
       "kind": "IntegerLiteral",
       "offset": 2234,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
       "kind": "IntegerLiteral",
       "offset": 2270,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteItem.swift",
       "kind": "StringLiteral",
       "offset": 2337,
       "length": 32,
       "value": "\"NautilusUserInfoSDK.NautilusUserEnqueteSelectionItem\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "Array",
       "offset": 901,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "StringLiteral",
       "offset": 286,
       "length": 28,
       "value": "\"NautilusUserInfoSDK.NautilusUserAttributeUpdater\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10262,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10267,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10333,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10338,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10405,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10410,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10481,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10486,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10550,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10555,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10619,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10624,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10691,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10696,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10760,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserAttributeUpdater.swift",
       "kind": "IntegerLiteral",
       "offset": 10765,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttribute.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttribute.swift",
       "kind": "StringLiteral",
       "offset": 253,
       "length": 29,
       "value": "\"NautilusUserInfoSDK.NautilusUserOptionalAttribute\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
       "kind": "StringLiteral",
       "offset": 317,
       "length": 34,
       "value": "\"ma_userinfo_network_timeout_time\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
       "kind": "StringLiteral",
       "offset": 400,
       "length": 50,
       "value": "\"ma_userinfo_upload_user_attribute_retry_interval\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
       "kind": "StringLiteral",
       "offset": 493,
       "length": 43,
       "value": "\"ma_userinfo_upload_enquete_retry_interval\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
       "kind": "StringLiteral",
       "offset": 317,
       "length": 34,
       "value": "\"ma_userinfo_network_timeout_time\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
       "kind": "StringLiteral",
       "offset": 400,
       "length": 50,
       "value": "\"ma_userinfo_upload_user_attribute_retry_interval\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Config\/NautilusUserInfoConfig.swift",
       "kind": "StringLiteral",
       "offset": 493,
       "length": 43,
       "value": "\"ma_userinfo_upload_enquete_retry_interval\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfoModel.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfoModel.swift",
       "kind": "StringLiteral",
       "offset": 593,
       "length": 12,
       "value": "\"yyyy\/MM\/dd\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfoModel.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfoModel.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 12,
       "value": "\"Asia\/Tokyo\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1268,
+      "offset": 1242,
       "length": 29,
       "value": "\"NautilusUserInfoErrorDomain\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1468,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 402,
+      "offset": 376,
       "length": 16,
       "value": "\"NautilusUserInfoSDK.NautilusUserInfo\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 10347,
+      "offset": 7009,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 10394,
+      "offset": 7056,
       "length": 15,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 10453,
+      "offset": 7115,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 10522,
+      "offset": 7184,
       "length": 12,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 10610,
+      "offset": 7272,
       "length": 13,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 10669,
-      "length": 15,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10347,
+      "offset": 7009,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 10394,
+      "offset": 7056,
       "length": 15,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 10453,
+      "offset": 7115,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 10522,
+      "offset": 7184,
       "length": 12,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 10610,
+      "offset": 7272,
       "length": 13,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10669,
-      "length": 15,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 347,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 364,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 381,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 398,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 415,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 432,
       "length": 7,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 449,
       "length": 7,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 466,
       "length": 7,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 483,
       "length": 8,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 347,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 364,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 381,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 398,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 415,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 432,
       "length": 7,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 449,
       "length": 7,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 466,
       "length": 7,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",
       "kind": "IntegerLiteral",
       "offset": 483,
       "length": 8,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserEnquete.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserEnquete.swift",
       "kind": "StringLiteral",
       "offset": 224,
       "length": 19,
       "value": "\"NautilusUserInfoSDK.NautilusUserEnquete\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 662,
       "length": 12,
       "value": "\"yyyy\/MM\/dd\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 710,
       "length": 12,
       "value": "\"Asia\/Tokyo\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2676,
       "length": 6,
       "value": "\"date\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2702,
       "length": 5,
       "value": "\"pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2730,
       "length": 8,
       "value": "\"gender\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2769,
       "length": 10,
       "value": "\"birthday\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2808,
       "length": 9,
       "value": "\"pref_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2848,
       "length": 17,
       "value": "\"municipality_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2889,
       "length": 9,
       "value": "\"zipcode\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2922,
       "length": 10,
       "value": "\"brand_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2959,
       "length": 13,
       "value": "\"manage_code\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2996,
       "length": 5,
       "value": "\"opt\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2676,
       "length": 6,
       "value": "\"date\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2702,
       "length": 5,
       "value": "\"pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2730,
       "length": 8,
       "value": "\"gender\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2769,
       "length": 10,
       "value": "\"birthday\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2808,
       "length": 9,
       "value": "\"pref_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2848,
       "length": 17,
       "value": "\"municipality_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2889,
       "length": 9,
       "value": "\"zipcode\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2922,
       "length": 10,
       "value": "\"brand_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2959,
       "length": 13,
       "value": "\"manage_code\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 2996,
       "length": 5,
       "value": "\"opt\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4255,
       "length": 6,
       "value": "\"opt1\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4285,
       "length": 6,
       "value": "\"opt2\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4315,
       "length": 6,
       "value": "\"opt3\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4345,
       "length": 6,
       "value": "\"opt4\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4375,
       "length": 6,
       "value": "\"opt5\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4405,
       "length": 6,
       "value": "\"opt6\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4435,
       "length": 6,
       "value": "\"opt7\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4465,
       "length": 6,
       "value": "\"opt8\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4495,
       "length": 6,
       "value": "\"opt9\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4526,
       "length": 7,
       "value": "\"opt10\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4255,
       "length": 6,
       "value": "\"opt1\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4285,
       "length": 6,
       "value": "\"opt2\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4315,
       "length": 6,
       "value": "\"opt3\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4345,
       "length": 6,
       "value": "\"opt4\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4375,
       "length": 6,
       "value": "\"opt5\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4405,
       "length": 6,
       "value": "\"opt6\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4435,
       "length": 6,
       "value": "\"opt7\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4465,
       "length": 6,
       "value": "\"opt8\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4495,
       "length": 6,
       "value": "\"opt9\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/MemberAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 4526,
       "length": 7,
       "value": "\"opt10\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/UserInfoCommonEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/UserInfoCommonEntity.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 6,
       "value": "\"date\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/UserInfoCommonEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/UserInfoCommonEntity.swift",
       "kind": "StringLiteral",
       "offset": 443,
       "length": 5,
       "value": "\"pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/UserInfoCommonEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/UserInfoCommonEntity.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 6,
       "value": "\"date\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/UserInfoCommonEntity.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Entity\/UserInfoCommonEntity.swift",
       "kind": "StringLiteral",
       "offset": 443,
       "length": 5,
       "value": "\"pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserEnqueteUpdater.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserEnqueteUpdater.swift",
       "kind": "StringLiteral",
       "offset": 261,
       "length": 26,
       "value": "\"NautilusUserInfoSDK.NautilusUserEnqueteUpdater\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteAnswer.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteAnswer.swift",
       "kind": "StringLiteral",
       "offset": 236,
       "length": 25,
       "value": "\"NautilusUserInfoSDK.NautilusUserEnqueteAnswer\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteAnswerItem.swift",
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserEnqueteAnswerItem.swift",
       "kind": "StringLiteral",
       "offset": 236,
       "length": 29,

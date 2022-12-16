@@ -21,7 +21,6 @@ public let NautilusLotteryErrorDomain: Swift.String
   case parseFailure
   case userCancelled
   case invalidParamater
-  case invalidInstance
   public var nautilusLotteryErrorCode: Swift.Int {
     get
   }
@@ -46,9 +45,6 @@ public let NautilusLotteryErrorDomain: Swift.String
   }
   @objc final public var app: NautilusCoreSDK.NautilusApp
   @objc final public var name: Swift.String?
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
-    @objc get
-  }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func lottery() -> NautilusLotterySDK.NautilusLottery
   @objc(lotteryAppNamed:) public static func lottery(appName: Swift.String) -> NautilusLotterySDK.NautilusLottery
