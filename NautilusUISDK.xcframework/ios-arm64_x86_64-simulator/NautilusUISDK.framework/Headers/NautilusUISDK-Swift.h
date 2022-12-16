@@ -391,6 +391,26 @@ SWIFT_CLASS("_TtC13NautilusUISDK14MASubCellLabel")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
+@class WKUserContentController;
+@class WKScriptMessage;
+
+/// SDKとアプリで利用する汎用的な<code>WKScriptMessageHandler</code>の基本クラス
+SWIFT_CLASS("_TtC13NautilusUISDK38NautilusWebViewWebScriptMessageHandler")
+@interface NautilusWebViewWebScriptMessageHandler : NSObject <WKScriptMessageHandler>
+/// JavaScriptから渡されたメッセージを処理する
+/// important:
+/// 継承先で必ず処理を実装すること
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC13NautilusUISDK40NautilusAnalyticsWebScriptMessageHandler")
+@interface NautilusAnalyticsWebScriptMessageHandler : NautilusWebViewWebScriptMessageHandler
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
 
 SWIFT_CLASS("_TtC13NautilusUISDK33NautilusAppContentsCollectionView")
 @interface NautilusAppContentsCollectionView : UICollectionView
@@ -933,6 +953,10 @@ SWIFT_PROTOCOL("_TtP13NautilusUISDK23NautilusURLPreprocessor_")
 /// このクラスのクラスメソッドを利用して、URLの表示を行います
 SWIFT_CLASS("_TtC13NautilusUISDK17NautilusWebHelper")
 @interface NautilusWebHelper : NSObject
+/// <code>WKWebView</code>に登録するメッセージハンドラーを追加する
++ (void)addMessageHandler:(NautilusWebViewWebScriptMessageHandler * _Nonnull)messageHandler;
+/// 登録済みのメッセージハンドラーを削除する
++ (void)removeMessageHandler:(NautilusWebViewWebScriptMessageHandler * _Nonnull)messageHandler;
 /// URLの表示を行う
 /// important:
 /// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
@@ -1160,6 +1184,7 @@ SWIFT_CLASS("_TtC13NautilusUISDK25NautilusWebViewUIDelegate")
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 @protocol NautilusYearMonthDatePickerGroupDelegate;
 @class UIPickerView;
@@ -1635,6 +1660,26 @@ SWIFT_CLASS("_TtC13NautilusUISDK14MASubCellLabel")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
+@class WKUserContentController;
+@class WKScriptMessage;
+
+/// SDKとアプリで利用する汎用的な<code>WKScriptMessageHandler</code>の基本クラス
+SWIFT_CLASS("_TtC13NautilusUISDK38NautilusWebViewWebScriptMessageHandler")
+@interface NautilusWebViewWebScriptMessageHandler : NSObject <WKScriptMessageHandler>
+/// JavaScriptから渡されたメッセージを処理する
+/// important:
+/// 継承先で必ず処理を実装すること
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC13NautilusUISDK40NautilusAnalyticsWebScriptMessageHandler")
+@interface NautilusAnalyticsWebScriptMessageHandler : NautilusWebViewWebScriptMessageHandler
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
 
 SWIFT_CLASS("_TtC13NautilusUISDK33NautilusAppContentsCollectionView")
 @interface NautilusAppContentsCollectionView : UICollectionView
@@ -2177,6 +2222,10 @@ SWIFT_PROTOCOL("_TtP13NautilusUISDK23NautilusURLPreprocessor_")
 /// このクラスのクラスメソッドを利用して、URLの表示を行います
 SWIFT_CLASS("_TtC13NautilusUISDK17NautilusWebHelper")
 @interface NautilusWebHelper : NSObject
+/// <code>WKWebView</code>に登録するメッセージハンドラーを追加する
++ (void)addMessageHandler:(NautilusWebViewWebScriptMessageHandler * _Nonnull)messageHandler;
+/// 登録済みのメッセージハンドラーを削除する
++ (void)removeMessageHandler:(NautilusWebViewWebScriptMessageHandler * _Nonnull)messageHandler;
 /// URLの表示を行う
 /// important:
 /// <code>handler</code> に値が設定されている場合には、処理を行わず、<code>handler</code>側でURLの表示を行います
@@ -2404,6 +2453,7 @@ SWIFT_CLASS("_TtC13NautilusUISDK25NautilusWebViewUIDelegate")
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 @protocol NautilusYearMonthDatePickerGroupDelegate;
 @class UIPickerView;

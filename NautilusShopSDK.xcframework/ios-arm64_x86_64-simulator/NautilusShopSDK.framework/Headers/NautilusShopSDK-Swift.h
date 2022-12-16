@@ -257,9 +257,9 @@ using UInt = size_t;
 
 /// お気に入り店舗の並び順指定
 typedef SWIFT_ENUM(NSInteger, NautilusFavoriteShopSortOrder, open) {
-/// 昇順, 対応する数値: 2
+/// 昇順
   NautilusFavoriteShopSortOrderAscending = 0,
-/// 降順, 対応する数値: 1
+/// 降順
   NautilusFavoriteShopSortOrderDescending = 1,
 };
 
@@ -284,6 +284,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusShopSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusShop * _Nonnull)shop SWIFT_WARN_UNUSED_RESULT;
 + (NautilusShop * _Nonnull)shopAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -316,27 +318,84 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// returns:
 /// 店舗一覧画面
 - (UIViewController * _Nonnull)instantiateShopListViewController SWIFT_WARN_UNUSED_RESULT;
+/// 店舗検索一覧画面のView Controllerを取得する
+///
+/// returns:
+/// 店舗検索一覧画面
+- (UIViewController * _Nonnull)instantiateShopSearchListViewController SWIFT_WARN_UNUSED_RESULT;
 /// 店舗一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param location 検索中心位置
+///
+/// \param range 検索範囲
+///
+/// \param completion 成功時は店舗一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗一覧を検索して取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param location 検索中心位置
+///
+/// \param range 検索範囲
+///
+/// \param shopName 店舗名
+///
+/// \param prefectures 都道府県の配列
+///
+/// \param shopSearchTags 検索タグ配列の配列（配列同士はand検索）
+///
+/// \param shopIDs 店舗IDの配列
+///
+/// \param clientShopCDs 更新用管理コード配列
+///
+/// \param completion 成功時は店舗一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)searchShopWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nullable)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗詳細を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param shopID 店舗ID
+///
+/// \param clientShopCD 更新用管理コード
+///
+/// \param completion 成功時は店舗詳細, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)getShopDetailWithShopID:(NSInteger)shopID clientShopCD:(NSString * _Nullable)clientShopCD completion:(void (^ _Nonnull)(NautilusShopInfo * _Nullable, NSError * _Nullable))completion;
 /// お気に入り店舗登録、削除を行う
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param addFavoriteShopIDs 登録したい店舗IDの配列
+///
+/// \param removeFavoriteShopIDs 削除したい店舗IDの配列
+///
+/// \param completion 成功時は<code>true</code>, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)updateFavoriteWithAddFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)addFavoriteShopIDs removeFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)removeFavoriteShopIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// お気に入り店舗の一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param order <code>NautilusFavoriteShopSortOrder</code>で定義された並び順
+///
+/// \param completion 成功時はお気に入り店舗の一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)getFavoriteShopListWithOrder:(enum NautilusFavoriteShopSortOrder)order completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗検索タグ一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param completion 成功時は店舗検索タグ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)getShopSearchTagListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusShopSearchTagInfo *> * _Nullable, NSError * _Nullable))completion;
+/// お気に入り店舗データ移行
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)migrateFavoriteShopsWithInstallID:(NSString * _Nonnull)installID completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 /// Amplitude 送信用 enum
 /// 店舗詳細画面を開いた際のトリガー
@@ -365,6 +424,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
   NautilusShopErrorInvalidParamater = 6,
 /// 設定値の構成が不正エラー
   NautilusShopErrorIllegalConfiguration = 7,
+/// 不正なインスタンス
+  NautilusShopErrorInvalidInstance = 8,
 };
 static NSString * _Nonnull const NautilusShopErrorDomain = @"NautilusShopSDK.NautilusShopError";
 
@@ -712,9 +773,9 @@ using UInt = size_t;
 
 /// お気に入り店舗の並び順指定
 typedef SWIFT_ENUM(NSInteger, NautilusFavoriteShopSortOrder, open) {
-/// 昇順, 対応する数値: 2
+/// 昇順
   NautilusFavoriteShopSortOrderAscending = 0,
-/// 降順, 対応する数値: 1
+/// 降順
   NautilusFavoriteShopSortOrderDescending = 1,
 };
 
@@ -739,6 +800,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusShopSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusShop * _Nonnull)shop SWIFT_WARN_UNUSED_RESULT;
 + (NautilusShop * _Nonnull)shopAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -771,27 +834,84 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// returns:
 /// 店舗一覧画面
 - (UIViewController * _Nonnull)instantiateShopListViewController SWIFT_WARN_UNUSED_RESULT;
+/// 店舗検索一覧画面のView Controllerを取得する
+///
+/// returns:
+/// 店舗検索一覧画面
+- (UIViewController * _Nonnull)instantiateShopSearchListViewController SWIFT_WARN_UNUSED_RESULT;
 /// 店舗一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param location 検索中心位置
+///
+/// \param range 検索範囲
+///
+/// \param completion 成功時は店舗一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗一覧を検索して取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param location 検索中心位置
+///
+/// \param range 検索範囲
+///
+/// \param shopName 店舗名
+///
+/// \param prefectures 都道府県の配列
+///
+/// \param shopSearchTags 検索タグ配列の配列（配列同士はand検索）
+///
+/// \param shopIDs 店舗IDの配列
+///
+/// \param clientShopCDs 更新用管理コード配列
+///
+/// \param completion 成功時は店舗一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)searchShopWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nullable)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗詳細を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param shopID 店舗ID
+///
+/// \param clientShopCD 更新用管理コード
+///
+/// \param completion 成功時は店舗詳細, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)getShopDetailWithShopID:(NSInteger)shopID clientShopCD:(NSString * _Nullable)clientShopCD completion:(void (^ _Nonnull)(NautilusShopInfo * _Nullable, NSError * _Nullable))completion;
 /// お気に入り店舗登録、削除を行う
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param addFavoriteShopIDs 登録したい店舗IDの配列
+///
+/// \param removeFavoriteShopIDs 削除したい店舗IDの配列
+///
+/// \param completion 成功時は<code>true</code>, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)updateFavoriteWithAddFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)addFavoriteShopIDs removeFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)removeFavoriteShopIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// お気に入り店舗の一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param order <code>NautilusFavoriteShopSortOrder</code>で定義された並び順
+///
+/// \param completion 成功時はお気に入り店舗の一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)getFavoriteShopListWithOrder:(enum NautilusFavoriteShopSortOrder)order completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗検索タグ一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param completion 成功時は店舗検索タグ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
 - (void)getShopSearchTagListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusShopSearchTagInfo *> * _Nullable, NSError * _Nullable))completion;
+/// お気に入り店舗データ移行
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+- (void)migrateFavoriteShopsWithInstallID:(NSString * _Nonnull)installID completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 /// Amplitude 送信用 enum
 /// 店舗詳細画面を開いた際のトリガー
@@ -820,6 +940,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
   NautilusShopErrorInvalidParamater = 6,
 /// 設定値の構成が不正エラー
   NautilusShopErrorIllegalConfiguration = 7,
+/// 不正なインスタンス
+  NautilusShopErrorInvalidInstance = 8,
 };
 static NSString * _Nonnull const NautilusShopErrorDomain = @"NautilusShopSDK.NautilusShopError";
 

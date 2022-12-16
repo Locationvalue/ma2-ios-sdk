@@ -304,6 +304,7 @@ SWIFT_CLASS("_TtC15NautilusCoreSDK24NautilusAppConfigBuilder")
 - (void)setEnvironment:(enum NautilusDeploymentEnvironment)environment;
 @end
 
+enum NautilusAppInitializationError : NSInteger;
 
 /// Nautilusで発生するイベントを受け取るデリゲート
 SWIFT_PROTOCOL("_TtP15NautilusCoreSDK19NautilusAppDelegate_")
@@ -315,8 +316,18 @@ SWIFT_PROTOCOL("_TtP15NautilusCoreSDK19NautilusAppDelegate_")
 /// <code>NautilusApp</code>のインスタンスの初期化に失敗
 /// \param app 初期化に失敗した<code>NautilusApp</code>のインスタンス
 ///
-- (void)onFailureNautilusAppInitialization:(NautilusApp * _Nonnull)app;
+/// \param error <code>NautilusAppInitializationError</code>で定義されたエラー事由
+///
+- (void)onFailureNautilusAppInitialization:(NautilusApp * _Nonnull)app error:(enum NautilusAppInitializationError)error;
 @end
+
+/// 初期化失敗事由の列挙型
+typedef SWIFT_ENUM(NSInteger, NautilusAppInitializationError, open) {
+/// ヘルスチェックに失敗
+  NautilusAppInitializationErrorCryptoMalfunction = 0,
+/// SDKの初期化に失敗
+  NautilusAppInitializationErrorFeatureUnavailable = 1,
+};
 
 /// MA 2.0 のAPIの接続先
 /// 接続先は、ホスト名とパス内の指定で、切り替わる
@@ -332,6 +343,7 @@ typedef SWIFT_ENUM(NSInteger, NautilusDeploymentEnvironment, open) {
   NautilusDeploymentEnvironmentPublicProduction = 3,
 };
 
+enum NautilusFeatureStatus : NSInteger;
 
 SWIFT_PROTOCOL("_TtP15NautilusCoreSDK15NautilusFeature_")
 @protocol NautilusFeature <NautilusComponent>
@@ -339,7 +351,21 @@ SWIFT_PROTOCOL("_TtP15NautilusCoreSDK15NautilusFeature_")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
 + (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
+/// SDKの機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 @end
+
+/// SDKの機能の利用可否ステータス
+typedef SWIFT_ENUM(NSInteger, NautilusFeatureStatus, open) {
+/// 初期化されていない
+  NautilusFeatureStatusUninitialized = 0,
+/// 利用不可
+  NautilusFeatureStatusUnavailable = 1,
+/// 利用可能
+  NautilusFeatureStatusAvailable = 2,
+/// 制限付きで利用可能
+  NautilusFeatureStatusRestricted = 3,
+};
 
 /// Nautilusの初期化に失敗した理由
 typedef SWIFT_ENUM(NSInteger, NautilusInitializationFailureReason, open) {
@@ -413,8 +439,29 @@ typedef SWIFT_ENUM(NSInteger, NautilusPushDeviceRegistraionFailureReason, open) 
   NautilusPushDeviceRegistraionFailureReasonInvalidCID = 2,
 /// 通信に失敗（サーバーでの処理失敗も含む）
   NautilusPushDeviceRegistraionFailureReasonNetworkError = 3,
+/// SDKインスタンスが不正
+  NautilusPushDeviceRegistraionFailureReasonInvalidInstance = 4,
 };
 static NSString * _Nonnull const NautilusPushDeviceRegistraionFailureReasonDomain = @"NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason";
+
+/// SDKステータスエラー時に表示される文言の列挙型
+typedef SWIFT_ENUM(NSInteger, NautilusStatusErrorKey, open) {
+/// SDKの状態が、 uninitialized / unavailable で利用できないときに表示するエラーのタイトルの文言
+  NautilusStatusErrorKeyUninitializedErrorTitle = 0,
+/// SDKの状態が、 uninitialized / unavailable で利用できないときに表示するエラーのメッセージの文言
+  NautilusStatusErrorKeyUninitializedErrorMessage = 1,
+/// SDKの状態が、 restricted で利用できないときに表示するエラーのタイトルの文言
+  NautilusStatusErrorKeyUnavailableErrorTitle = 2,
+/// SDKの状態が、 restricted で利用できないときに表示するエラーのメッセージの文言
+  NautilusStatusErrorKeyUnavailableErrorMessage = 3,
+};
+
+
+/// SDKステータスエラー時に表示される文言を扱うためのクラス
+SWIFT_CLASS("_TtC15NautilusCoreSDK26NautilusStatusErrorStrings")
+@interface NautilusStatusErrorStrings : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC15NautilusCoreSDK15NetworkListener")
@@ -738,6 +785,7 @@ SWIFT_CLASS("_TtC15NautilusCoreSDK24NautilusAppConfigBuilder")
 - (void)setEnvironment:(enum NautilusDeploymentEnvironment)environment;
 @end
 
+enum NautilusAppInitializationError : NSInteger;
 
 /// Nautilusで発生するイベントを受け取るデリゲート
 SWIFT_PROTOCOL("_TtP15NautilusCoreSDK19NautilusAppDelegate_")
@@ -749,8 +797,18 @@ SWIFT_PROTOCOL("_TtP15NautilusCoreSDK19NautilusAppDelegate_")
 /// <code>NautilusApp</code>のインスタンスの初期化に失敗
 /// \param app 初期化に失敗した<code>NautilusApp</code>のインスタンス
 ///
-- (void)onFailureNautilusAppInitialization:(NautilusApp * _Nonnull)app;
+/// \param error <code>NautilusAppInitializationError</code>で定義されたエラー事由
+///
+- (void)onFailureNautilusAppInitialization:(NautilusApp * _Nonnull)app error:(enum NautilusAppInitializationError)error;
 @end
+
+/// 初期化失敗事由の列挙型
+typedef SWIFT_ENUM(NSInteger, NautilusAppInitializationError, open) {
+/// ヘルスチェックに失敗
+  NautilusAppInitializationErrorCryptoMalfunction = 0,
+/// SDKの初期化に失敗
+  NautilusAppInitializationErrorFeatureUnavailable = 1,
+};
 
 /// MA 2.0 のAPIの接続先
 /// 接続先は、ホスト名とパス内の指定で、切り替わる
@@ -766,6 +824,7 @@ typedef SWIFT_ENUM(NSInteger, NautilusDeploymentEnvironment, open) {
   NautilusDeploymentEnvironmentPublicProduction = 3,
 };
 
+enum NautilusFeatureStatus : NSInteger;
 
 SWIFT_PROTOCOL("_TtP15NautilusCoreSDK15NautilusFeature_")
 @protocol NautilusFeature <NautilusComponent>
@@ -773,7 +832,21 @@ SWIFT_PROTOCOL("_TtP15NautilusCoreSDK15NautilusFeature_")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable configFilename;)
 + (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
+/// SDKの機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 @end
+
+/// SDKの機能の利用可否ステータス
+typedef SWIFT_ENUM(NSInteger, NautilusFeatureStatus, open) {
+/// 初期化されていない
+  NautilusFeatureStatusUninitialized = 0,
+/// 利用不可
+  NautilusFeatureStatusUnavailable = 1,
+/// 利用可能
+  NautilusFeatureStatusAvailable = 2,
+/// 制限付きで利用可能
+  NautilusFeatureStatusRestricted = 3,
+};
 
 /// Nautilusの初期化に失敗した理由
 typedef SWIFT_ENUM(NSInteger, NautilusInitializationFailureReason, open) {
@@ -847,8 +920,29 @@ typedef SWIFT_ENUM(NSInteger, NautilusPushDeviceRegistraionFailureReason, open) 
   NautilusPushDeviceRegistraionFailureReasonInvalidCID = 2,
 /// 通信に失敗（サーバーでの処理失敗も含む）
   NautilusPushDeviceRegistraionFailureReasonNetworkError = 3,
+/// SDKインスタンスが不正
+  NautilusPushDeviceRegistraionFailureReasonInvalidInstance = 4,
 };
 static NSString * _Nonnull const NautilusPushDeviceRegistraionFailureReasonDomain = @"NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason";
+
+/// SDKステータスエラー時に表示される文言の列挙型
+typedef SWIFT_ENUM(NSInteger, NautilusStatusErrorKey, open) {
+/// SDKの状態が、 uninitialized / unavailable で利用できないときに表示するエラーのタイトルの文言
+  NautilusStatusErrorKeyUninitializedErrorTitle = 0,
+/// SDKの状態が、 uninitialized / unavailable で利用できないときに表示するエラーのメッセージの文言
+  NautilusStatusErrorKeyUninitializedErrorMessage = 1,
+/// SDKの状態が、 restricted で利用できないときに表示するエラーのタイトルの文言
+  NautilusStatusErrorKeyUnavailableErrorTitle = 2,
+/// SDKの状態が、 restricted で利用できないときに表示するエラーのメッセージの文言
+  NautilusStatusErrorKeyUnavailableErrorMessage = 3,
+};
+
+
+/// SDKステータスエラー時に表示される文言を扱うためのクラス
+SWIFT_CLASS("_TtC15NautilusCoreSDK26NautilusStatusErrorStrings")
+@interface NautilusStatusErrorStrings : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC15NautilusCoreSDK15NetworkListener")

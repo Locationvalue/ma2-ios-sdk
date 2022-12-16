@@ -274,44 +274,47 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, copy) NSString * _Nullable name;
+/// <code>NautilusLotterySDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusLottery * _Nonnull)lottery SWIFT_WARN_UNUSED_RESULT;
 + (NautilusLottery * _Nonnull)lotteryAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 抽選一覧を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-/// \param lotteryID 取得する抽選のIDの指定、負の値ならば全件取得
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param lotteryID 取得する抽選のIDの指定, 負の値ならば全件取得
 ///
-/// \param ignoreMissed ハズレの抽選を除外するか
+/// \param ignoreMissed ハズレの抽選を除外する時は true, しない時は false
 ///
-/// \param completion 取得した抽選一覧、もしくはエラーをコールバックします
+/// \param completion 成功時は抽選一覧, 失敗時はエラーを受け取るクロージャ
 ///
 - (void)requestLotteryListWithLotteryID:(NSInteger)lotteryID ignoreMissed:(BOOL)ignoreMissed completion:(void (^ _Nonnull)(NSArray<NautilusLotteryInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 抽選一覧の件数を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-/// \param checkDateTime 最終確認時刻
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param checkDateTime 取得基準時刻. 基準時刻より後に配信された件数を取得.
 ///
-/// \param ignoreMissed ハズレの抽選を除外するか
+/// \param ignoreMissed ハズレの抽選を除外する時は true, しない時は false
 ///
-/// \param completion 抽選一覧の件数、またはエラーをコールバックします
+/// \param completion 成功時は抽選一覧の件数, 失敗時はエラーを受け取るクロージャ
 ///
 - (void)getLotteryCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime ignoreMissed:(BOOL)ignoreMissed completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 /// 抽選の間隔を確認する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param lotteryID 間隔を確認する抽選のIDの指定
 ///
-/// \param completion 抽選の間隔確認の結果、またはエラーをコールバックします
+/// \param completion 成功時は抽選間隔の確認結果, 失敗時はエラーを受け取るクロージャ
 ///
 - (void)checkLotteryIntervalWithLotteryID:(NSInteger)lotteryID completion:(void (^ _Nonnull)(NautilusLotteryIntervalCheckResult * _Nullable, NSError * _Nullable))completion;
 /// 抽選処理を実行する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param lotteryID 抽選処理を実行する抽選のIDの指定
 ///
-/// \param completion 抽選結果、またはエラーをコールバックします
+/// \param completion 成功時は抽選結果, 失敗時はエラーを受け取るクロージャ
 ///
 - (void)applyLotteryWithLotteryID:(NSInteger)lotteryID completion:(void (^ _Nonnull)(NautilusLotteryResult * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 /// <code>NautilusLottery</code>のエラー定義
 typedef SWIFT_ENUM(NSInteger, NautilusLotteryError, open) {
@@ -329,6 +332,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusLotteryError, open) {
   NautilusLotteryErrorUserCancelled = 5,
 /// 不正なパラメータ
   NautilusLotteryErrorInvalidParamater = 6,
+/// 不正なインスタンス
+  NautilusLotteryErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const NautilusLotteryErrorDomain = @"NautilusLotterySDK.NautilusLotteryError";
 
@@ -690,44 +695,47 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, copy) NSString * _Nullable name;
+/// <code>NautilusLotterySDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusLottery * _Nonnull)lottery SWIFT_WARN_UNUSED_RESULT;
 + (NautilusLottery * _Nonnull)lotteryAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 抽選一覧を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-/// \param lotteryID 取得する抽選のIDの指定、負の値ならば全件取得
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param lotteryID 取得する抽選のIDの指定, 負の値ならば全件取得
 ///
-/// \param ignoreMissed ハズレの抽選を除外するか
+/// \param ignoreMissed ハズレの抽選を除外する時は true, しない時は false
 ///
-/// \param completion 取得した抽選一覧、もしくはエラーをコールバックします
+/// \param completion 成功時は抽選一覧, 失敗時はエラーを受け取るクロージャ
 ///
 - (void)requestLotteryListWithLotteryID:(NSInteger)lotteryID ignoreMissed:(BOOL)ignoreMissed completion:(void (^ _Nonnull)(NSArray<NautilusLotteryInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 抽選一覧の件数を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-/// \param checkDateTime 最終確認時刻
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param checkDateTime 取得基準時刻. 基準時刻より後に配信された件数を取得.
 ///
-/// \param ignoreMissed ハズレの抽選を除外するか
+/// \param ignoreMissed ハズレの抽選を除外する時は true, しない時は false
 ///
-/// \param completion 抽選一覧の件数、またはエラーをコールバックします
+/// \param completion 成功時は抽選一覧の件数, 失敗時はエラーを受け取るクロージャ
 ///
 - (void)getLotteryCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime ignoreMissed:(BOOL)ignoreMissed completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 /// 抽選の間隔を確認する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param lotteryID 間隔を確認する抽選のIDの指定
 ///
-/// \param completion 抽選の間隔確認の結果、またはエラーをコールバックします
+/// \param completion 成功時は抽選間隔の確認結果, 失敗時はエラーを受け取るクロージャ
 ///
 - (void)checkLotteryIntervalWithLotteryID:(NSInteger)lotteryID completion:(void (^ _Nonnull)(NautilusLotteryIntervalCheckResult * _Nullable, NSError * _Nullable))completion;
 /// 抽選処理を実行する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param lotteryID 抽選処理を実行する抽選のIDの指定
 ///
-/// \param completion 抽選結果、またはエラーをコールバックします
+/// \param completion 成功時は抽選結果, 失敗時はエラーを受け取るクロージャ
 ///
 - (void)applyLotteryWithLotteryID:(NSInteger)lotteryID completion:(void (^ _Nonnull)(NautilusLotteryResult * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 /// <code>NautilusLottery</code>のエラー定義
 typedef SWIFT_ENUM(NSInteger, NautilusLotteryError, open) {
@@ -745,6 +753,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusLotteryError, open) {
   NautilusLotteryErrorUserCancelled = 5,
 /// 不正なパラメータ
   NautilusLotteryErrorInvalidParamater = 6,
+/// 不正なインスタンス
+  NautilusLotteryErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const NautilusLotteryErrorDomain = @"NautilusLotterySDK.NautilusLotteryError";
 

@@ -68,6 +68,9 @@ extension NautilusInAppMessageSDK.NautilusInAppMessageControllerDelegate {
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
+  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+    @objc get
+  }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func inAppMessage() -> NautilusInAppMessageSDK.NautilusInAppMessageFeature
   @objc(inAppMessageAppNamed:) public static func inAppMessage(appName: Swift.String) -> NautilusInAppMessageSDK.NautilusInAppMessageFeature

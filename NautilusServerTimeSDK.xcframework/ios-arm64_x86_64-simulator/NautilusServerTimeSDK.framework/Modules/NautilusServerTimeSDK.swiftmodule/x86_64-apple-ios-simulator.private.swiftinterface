@@ -46,6 +46,9 @@ extension Foundation.DateFormatter {
   final public var status: NautilusServerTimeSDK.NautilusServerTimeStatus {
     get
   }
+  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+    @objc get
+  }
   public static let minimumUpdateTimeInterval: Swift.Double
   final public var retryTimeInterval: Foundation.TimeInterval {
     get
@@ -74,6 +77,7 @@ public let NautilusServerTimeErrorDomain: Swift.String
   case parseFailure
   case userCancelled
   case invalidResponse
+  case invalidInstance
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
