@@ -35,7 +35,6 @@ final public class NautilusRequestPolicy : NautilusCoreSDK.RequestPolicy {
 extension Foundation.Notification {
   public enum NautilusApp {
     public static let featureInitializationSuccess: Foundation.Notification.Name
-    public static let featureInitializationFailure: Foundation.Notification.Name
     public enum UserInfoKey {
       public static let feature: Swift.String
     }
@@ -45,6 +44,37 @@ extension Foundation.Notification {
   @objc static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc static var configFilename: Swift.String? { get }
   @objc var app: NautilusCoreSDK.NautilusApp { get }
+  @objc var featureStatus: NautilusCoreSDK.NautilusFeatureStatus { get }
+}
+@objc public enum NautilusFeatureStatus : Swift.Int {
+  case uninitialized
+  case unavailable
+  case available
+  case restricted
+  public var isAvailable: Swift.Bool {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc final public class NautilusStatusErrorStrings : ObjectiveC.NSObject {
+  public static func string(for key: NautilusCoreSDK.NautilusStatusErrorKey) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum NautilusStatusErrorKey : Swift.Int {
+  case uninitializedErrorTitle
+  case uninitializedErrorMessage
+  case unavailableErrorTitle
+  case unavailableErrorMessage
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public protocol APIClient {
   var service: NautilusCoreSDK.NetworkService { get }
@@ -147,6 +177,7 @@ public protocol NautilusRequestParameter : NautilusCoreSDK.RequestParameter {
   case alreadyRegistered
   case invalidCID
   case networkError
+  case invalidInstance
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -300,6 +331,9 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
   final public let notificationCenter: Foundation.NotificationCenter
   final public var locationProvider: NautilusCoreSDK.NautilusLocationProvider?
   final public var isInitialized: Swift.Bool {
+    get
+  }
+  final public var canManageNautilusSecretData: Swift.Bool {
     get
   }
   @objc public static func app() -> NautilusCoreSDK.NautilusApp
@@ -487,7 +521,16 @@ open class NautilusAPICommonRequest<P, T, TD> where P : NautilusCoreSDK.RequestP
 }
 @objc public protocol NautilusAppDelegate {
   @objc func onSuccessNautilusAppInitialization(_ app: NautilusCoreSDK.NautilusApp)
-  @objc func onFailureNautilusAppInitialization(_ app: NautilusCoreSDK.NautilusApp)
+  @objc func onFailureNautilusAppInitialization(_ app: NautilusCoreSDK.NautilusApp, error: NautilusCoreSDK.NautilusAppInitializationError)
+}
+@objc public enum NautilusAppInitializationError : Swift.Int {
+  case cryptoMalfunction
+  case featureUnavailable
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers open class NautilusAPIClient : ObjectiveC.NSObject, NautilusCoreSDK.APIClient {
   @objc open class func instantiate() -> Self
@@ -505,6 +548,12 @@ open class NautilusAPICommonRequest<P, T, TD> where P : NautilusCoreSDK.RequestP
   @objc public func cancel()
   @objc deinit
 }
+extension NautilusCoreSDK.NautilusFeatureStatus : Swift.Equatable {}
+extension NautilusCoreSDK.NautilusFeatureStatus : Swift.Hashable {}
+extension NautilusCoreSDK.NautilusFeatureStatus : Swift.RawRepresentable {}
+extension NautilusCoreSDK.NautilusStatusErrorKey : Swift.Equatable {}
+extension NautilusCoreSDK.NautilusStatusErrorKey : Swift.Hashable {}
+extension NautilusCoreSDK.NautilusStatusErrorKey : Swift.RawRepresentable {}
 extension NautilusCoreSDK.NautilusDeviceSystemType : Swift.Equatable {}
 extension NautilusCoreSDK.NautilusDeviceSystemType : Swift.Hashable {}
 extension NautilusCoreSDK.NautilusInitializationFailureReason : Swift.Equatable {}
@@ -521,3 +570,6 @@ extension NautilusCoreSDK.RequestScheme : Swift.Hashable {}
 extension NautilusCoreSDK.RequestMethod : Swift.Equatable {}
 extension NautilusCoreSDK.RequestMethod : Swift.Hashable {}
 extension NautilusCoreSDK.NautilusAPICommonRequest : NautilusCoreSDK.Request {}
+extension NautilusCoreSDK.NautilusAppInitializationError : Swift.Equatable {}
+extension NautilusCoreSDK.NautilusAppInitializationError : Swift.Hashable {}
+extension NautilusCoreSDK.NautilusAppInitializationError : Swift.RawRepresentable {}

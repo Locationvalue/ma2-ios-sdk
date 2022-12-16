@@ -3668,6 +3668,13 @@
         "moduleName": "NautilusUserInfoSDK"
       },
       {
+        "kind": "Import",
+        "name": "NautilusLoggingSDK",
+        "printedName": "NautilusLoggingSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusUserInfoSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "NautilusUserInfo",
         "printedName": "NautilusUserInfo",
@@ -4022,6 +4029,55 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featureStatus",
+            "printedName": "featureStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusFeatureStatus",
+                "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusUserInfoSDK@objc(cs)NautilusUserInfo(py)featureStatus",
+            "mangledName": "$s19NautilusUserInfoSDK0abC0C13featureStatus0a4CoreD00a7FeatureF0Ovp",
+            "moduleName": "NautilusUserInfoSDK",
+            "objc_name": "featureStatus",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusFeatureStatus",
+                    "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusUserInfoSDK@objc(cs)NautilusUserInfo(im)featureStatus",
+                "mangledName": "$s19NautilusUserInfoSDK0abC0C13featureStatus0a4CoreD00a7FeatureF0Ovg",
+                "moduleName": "NautilusUserInfoSDK",
+                "objc_name": "featureStatus",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4758,6 +4814,48 @@
               "ObjC"
             ],
             "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "invalidInstance",
+            "printedName": "invalidInstance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusUserInfoSDK.UserInfoNetworkServiceError.Type) -> NautilusUserInfoSDK.UserInfoNetworkServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoNetworkServiceError",
+                    "printedName": "NautilusUserInfoSDK.UserInfoNetworkServiceError",
+                    "usr": "c:@M@NautilusUserInfoSDK@E@UserInfoNetworkServiceError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusUserInfoSDK.UserInfoNetworkServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoNetworkServiceError",
+                        "printedName": "NautilusUserInfoSDK.UserInfoNetworkServiceError",
+                        "usr": "c:@M@NautilusUserInfoSDK@E@UserInfoNetworkServiceError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusUserInfoSDK@E@UserInfoNetworkServiceError@UserInfoNetworkServiceErrorInvalidInstance",
+            "mangledName": "$s19NautilusUserInfoSDK0bC19NetworkServiceErrorO15invalidInstanceyA2CmF",
+            "moduleName": "NautilusUserInfoSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Constructor",
@@ -8186,86 +8284,107 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1242,
+      "offset": 1268,
       "length": 29,
       "value": "\"NautilusUserInfoErrorDomain\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1468,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 376,
+      "offset": 402,
       "length": 16,
       "value": "\"NautilusUserInfoSDK.NautilusUserInfo\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7009,
+      "offset": 10347,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7056,
+      "offset": 10394,
       "length": 15,
       "value": "2"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7115,
+      "offset": 10453,
       "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7184,
+      "offset": 10522,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7272,
+      "offset": 10610,
       "length": 13,
       "value": "5"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7009,
+      "offset": 10669,
+      "length": 15,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10347,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7056,
+      "offset": 10394,
       "length": 15,
       "value": "2"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7115,
+      "offset": 10453,
       "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7184,
+      "offset": 10522,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7272,
+      "offset": 10610,
       "length": 13,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/Base\/NautilusUserInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10669,
+      "length": 15,
+      "value": "6"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UserInfo\/Sources\/API\/Data\/NautilusUserOptionalAttributeKey.swift",

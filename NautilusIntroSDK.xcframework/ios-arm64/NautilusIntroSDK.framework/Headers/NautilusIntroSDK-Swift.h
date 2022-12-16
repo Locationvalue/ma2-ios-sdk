@@ -273,6 +273,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusIntroSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusIntroduction * _Nonnull)introduction SWIFT_WARN_UNUSED_RESULT;
 + (NautilusIntroduction * _Nonnull)introductionAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -295,6 +297,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP16NautilusIntroSDK28NautilusIntroductionDelegate_")

@@ -1069,6 +1069,13 @@
       },
       {
         "kind": "Import",
+        "name": "NautilusUISDK",
+        "printedName": "NautilusUISDK",
+        "declKind": "Import",
+        "moduleName": "NautilusLotteryUISDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1568,6 +1575,55 @@
                   "Final"
                 ],
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featureStatus",
+            "printedName": "featureStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusFeatureStatus",
+                "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(py)featureStatus",
+            "mangledName": "$s20NautilusLotteryUISDK0aB2UIC13featureStatus0A7CoreSDK0a7FeatureF0Ovp",
+            "moduleName": "NautilusLotteryUISDK",
+            "objc_name": "featureStatus",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusFeatureStatus",
+                    "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)featureStatus",
+                "mangledName": "$s20NautilusLotteryUISDK0aB2UIC13featureStatus0A7CoreSDK0a7FeatureF0Ovg",
+                "moduleName": "NautilusLotteryUISDK",
+                "objc_name": "featureStatus",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
               }
             ]
           },
@@ -2079,6 +2135,13 @@
       },
       {
         "kind": "Import",
+        "name": "NautilusUISDK",
+        "printedName": "NautilusUISDK",
+        "declKind": "Import",
+        "moduleName": "NautilusLotteryUISDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2268,7 +2331,7 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/View\/NautilusLotteryListPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 509,
+      "offset": 575,
       "length": 20,
       "value": "\"NautilusLotteryUISDK.LotteryListPresenter\""
     },
@@ -2299,6 +2362,13 @@
       "offset": 981,
       "length": 12,
       "value": "\"lottery-id\""
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/NautilusLotteryUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1891,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/NautilusLotteryUI.swift",

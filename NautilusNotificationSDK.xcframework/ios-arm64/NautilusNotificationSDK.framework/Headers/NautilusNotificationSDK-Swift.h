@@ -275,6 +275,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusNotificationSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 @property (nonatomic, readonly, strong) NautilusNotificationHandler * _Nonnull notificationHandler;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusNotification * _Nonnull)notification SWIFT_WARN_UNUSED_RESULT;
@@ -293,30 +295,31 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 ///
 - (void)registerPushTargetWithRegistrationTarget:(NautilusRegistrationTarget * _Nonnull)registrationTarget completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
-/// \param completion 完了ハンドラ
+/// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getRemoteNotificationsWithCompletion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
-/// \param start 取得開始位位置
+/// \param start 取得開始位置
 ///
 /// \param count 取得件数の指定
 ///
-/// \param completion 完了ハンドラ
+/// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
-/// \param start 取得開始位位置
+/// \param start 取得開始位置
 ///
 /// \param count 取得件数の指定
 ///
 /// \param checkDate 最終確認日時
 ///
-/// \param completion 完了ハンドラ
+/// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count checkDate:(NSDate * _Nonnull)checkDate completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 @class UNNotificationRequest;
 @class NautilusPushNotificationInfo;
@@ -350,6 +353,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusNotificationNetworkError, open) {
   NautilusNotificationNetworkErrorUserCancelled = 5,
 /// パラメーターが不正（SDK内の事前チェック）
   NautilusNotificationNetworkErrorInvalidParameters = 6,
+/// SDKインスタンスが不正
+  NautilusNotificationNetworkErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const NautilusNotificationNetworkErrorDomain = @"NautilusNotificationSDK.NautilusNotificationNetworkError";
 

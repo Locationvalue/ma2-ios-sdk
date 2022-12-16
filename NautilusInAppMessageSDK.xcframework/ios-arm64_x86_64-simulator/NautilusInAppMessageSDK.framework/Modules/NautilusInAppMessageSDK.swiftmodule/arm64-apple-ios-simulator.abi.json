@@ -1792,6 +1792,55 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "featureStatus",
+            "printedName": "featureStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusFeatureStatus",
+                "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusInAppMessageFeature(py)featureStatus",
+            "mangledName": "$s23NautilusInAppMessageSDK0abcD7FeatureC13featureStatus0a4CoreE00afH0Ovp",
+            "moduleName": "NautilusInAppMessageSDK",
+            "objc_name": "featureStatus",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusFeatureStatus",
+                    "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusInAppMessageFeature(im)featureStatus",
+                "mangledName": "$s23NautilusInAppMessageSDK0abcD7FeatureC13featureStatus0a4CoreE00afH0Ovg",
+                "moduleName": "NautilusInAppMessageSDK",
+                "objc_name": "featureStatus",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(application:)",
@@ -4896,6 +4945,13 @@
       "offset": 5956,
       "length": 7,
       "value": "\"count\""
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/Base\/NautilusInAppMessageFeature.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1271,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/Base\/NautilusInAppMessageFeature.swift",

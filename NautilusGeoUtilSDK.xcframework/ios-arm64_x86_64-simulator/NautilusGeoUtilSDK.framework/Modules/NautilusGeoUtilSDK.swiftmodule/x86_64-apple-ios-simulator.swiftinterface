@@ -20,6 +20,7 @@ public let NautilusGeoUtilErrorDomain: Swift.String
   case parseFailure
   case userCancelled
   case invalidParamater
+  case invalidInstance
   public var nautilusGeoUtilErrorCode: Swift.Int {
     get
   }
@@ -117,6 +118,9 @@ extension NautilusGeoUtilSDK.NautilusPrefectureCode {
     @objc get
   }
   @objc final public var name: Swift.String?
+  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+    @objc get
+  }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
   @objc public static func geoUtil() -> NautilusGeoUtilSDK.NautilusGeoUtil
   @objc(geoUtilAppNamed:) public static func geoUtil(appName: Swift.String) -> NautilusGeoUtilSDK.NautilusGeoUtil

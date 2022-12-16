@@ -412,6 +412,48 @@
           },
           {
             "kind": "Var",
+            "name": "invalidInstance",
+            "printedName": "invalidInstance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusLotterySDK.NautilusLotteryError.Type) -> NautilusLotterySDK.NautilusLotteryError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusLotteryError",
+                    "printedName": "NautilusLotterySDK.NautilusLotteryError",
+                    "usr": "c:@M@NautilusLotterySDK@E@NautilusLotteryError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusLotterySDK.NautilusLotteryError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusLotteryError",
+                        "printedName": "NautilusLotterySDK.NautilusLotteryError",
+                        "usr": "c:@M@NautilusLotterySDK@E@NautilusLotteryError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusLotterySDK@E@NautilusLotteryError@NautilusLotteryErrorInvalidInstance",
+            "mangledName": "$s18NautilusLotterySDK0aB5ErrorO15invalidInstanceyA2CmF",
+            "moduleName": "NautilusLotterySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
             "name": "nautilusLotteryErrorCode",
             "printedName": "nautilusLotteryErrorCode",
             "children": [
@@ -725,6 +767,13 @@
         "kind": "Import",
         "name": "NautilusAnalyticsSDK",
         "printedName": "NautilusAnalyticsSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusLotterySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusLoggingSDK",
+        "printedName": "NautilusLoggingSDK",
         "declKind": "Import",
         "moduleName": "NautilusLotterySDK"
       },
@@ -1138,6 +1187,55 @@
                   "Final"
                 ],
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featureStatus",
+            "printedName": "featureStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusFeatureStatus",
+                "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLottery(py)featureStatus",
+            "mangledName": "$s18NautilusLotterySDK0aB0C13featureStatus0a4CoreC00a7FeatureE0Ovp",
+            "moduleName": "NautilusLotterySDK",
+            "objc_name": "featureStatus",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusFeatureStatus",
+                    "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLottery(im)featureStatus",
+                "mangledName": "$s18NautilusLotterySDK0aB0C13featureStatus0a4CoreC00a7FeatureE0Ovg",
+                "moduleName": "NautilusLotterySDK",
+                "objc_name": "featureStatus",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
               }
             ]
           },
@@ -4502,6 +4600,13 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Lottery\/Sources\/Base\/NautilusLotteryError.swift",
       "kind": "IntegerLiteral",
+      "offset": 894,
+      "length": 15,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Lottery\/Sources\/Base\/NautilusLotteryError.swift",
+      "kind": "IntegerLiteral",
       "offset": 513,
       "length": 10,
       "value": "1"
@@ -4542,6 +4647,13 @@
       "value": "6"
     },
     {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Lottery\/Sources\/Base\/NautilusLotteryError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 894,
+      "length": 15,
+      "value": "7"
+    },
+    {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Lottery\/Sources\/Config\/NautilusLotteryConfig.swift",
       "kind": "StringLiteral",
       "offset": 318,
@@ -4557,8 +4669,15 @@
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Lottery\/Sources\/Base\/NautilusLottery.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1297,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Lottery\/Sources\/Base\/NautilusLottery.swift",
       "kind": "StringLiteral",
-      "offset": 377,
+      "offset": 403,
       "length": 15,
       "value": "\"NautilusLotterySDK.NautilusLottery\""
     },

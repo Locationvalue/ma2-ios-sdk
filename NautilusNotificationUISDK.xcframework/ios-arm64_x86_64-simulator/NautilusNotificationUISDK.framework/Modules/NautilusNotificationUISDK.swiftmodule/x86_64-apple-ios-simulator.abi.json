@@ -915,6 +915,55 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "featureStatus",
+            "printedName": "featureStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusFeatureStatus",
+                "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationUI(py)featureStatus",
+            "mangledName": "$s25NautilusNotificationUISDK0aB2UIC13featureStatus0A7CoreSDK0a7FeatureF0Ovp",
+            "moduleName": "NautilusNotificationUISDK",
+            "objc_name": "featureStatus",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusFeatureStatus",
+                    "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationUI(im)featureStatus",
+                "mangledName": "$s25NautilusNotificationUISDK0aB2UIC13featureStatus0A7CoreSDK0a7FeatureF0Ovg",
+                "moduleName": "NautilusNotificationUISDK",
+                "objc_name": "featureStatus",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(application:)",
@@ -1063,7 +1112,8 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1232,28 +1282,28 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewModel.swift",
       "kind": "Array",
-      "offset": 1181,
+      "offset": 1209,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1259,
+      "offset": 1287,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1349,
+      "offset": 1377,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 613,
+      "offset": 641,
       "length": 33,
       "value": "\"NautilusNotificationUISDK.NautilusNotificationListViewModel\""
     },
@@ -1396,6 +1446,13 @@
       "offset": 1228,
       "length": 49,
       "value": "\"ma_notification_history_list_reload_button_text\""
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Base\/NautilusNotificationUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1250,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Base\/NautilusNotificationUI.swift",

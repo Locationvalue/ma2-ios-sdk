@@ -401,6 +401,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusInAppMessageSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessage SWIFT_WARN_UNUSED_RESULT;
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessageAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -408,6 +410,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -837,6 +840,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NSString * _Nullable)configFilename SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusInAppMessageSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessage SWIFT_WARN_UNUSED_RESULT;
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessageAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
@@ -844,6 +849,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 

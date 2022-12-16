@@ -276,30 +276,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusBannerSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusBanner * _Nonnull)banner SWIFT_WARN_UNUSED_RESULT;
 + (NautilusBanner * _Nonnull)bannerAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// バナーのカテゴリー一覧を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-/// \param completion 一覧を取得した後実行するブロック
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param completion 成功時はカテゴリー一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getBannerCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusBannerCategory *> * _Nullable, NSError * _Nullable))completion;
 /// 指定されたカテゴリのバナー情報一覧を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param categoryID カテゴリID
 ///
-/// \param completion 一覧を取得した後実行するブロック
+/// \param completion 成功時はバナー情報一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getBannerListWithCategoryID:(NSInteger)categoryID completion:(void (^ _Nonnull)(NSArray<NautilusBannerInfo *> * _Nullable, NSError * _Nullable))completion;
 /// バナーアクションログを送信
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param bannerLogs <code>NautilusBannerLog</code>の配列
 ///
-/// \param completion ログ送信後実行するブロック
+/// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)sendBannerLogWithBannerLogs:(NSArray<NautilusBannerLog *> * _Nonnull)bannerLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 /// アプリ内遷移の情報
@@ -357,7 +361,10 @@ typedef SWIFT_ENUM(NSInteger, NautilusBannerError, open) {
   NautilusBannerErrorParseFailure = 4,
 /// 明示的にユーザーによりキャンセルされた
   NautilusBannerErrorUserCancelled = 5,
+/// パラメータが不正
   NautilusBannerErrorInvalidParamater = 6,
+/// インスタンスが不正
+  NautilusBannerErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const NautilusBannerErrorDomain = @"NautilusBannerSDK.NautilusBannerError";
 
@@ -743,30 +750,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NSArray<NautilusComponentDependency *> * _Nonnull)dependencies SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// <code>NautilusBannerSDK</code>の機能の利用可否ステータス
+@property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
 + (NautilusBanner * _Nonnull)banner SWIFT_WARN_UNUSED_RESULT;
 + (NautilusBanner * _Nonnull)bannerAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// バナーのカテゴリー一覧を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-/// \param completion 一覧を取得した後実行するブロック
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param completion 成功時はカテゴリー一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getBannerCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusBannerCategory *> * _Nullable, NSError * _Nullable))completion;
 /// 指定されたカテゴリのバナー情報一覧を取得する
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param categoryID カテゴリID
 ///
-/// \param completion 一覧を取得した後実行するブロック
+/// \param completion 成功時はバナー情報一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getBannerListWithCategoryID:(NSInteger)categoryID completion:(void (^ _Nonnull)(NSArray<NautilusBannerInfo *> * _Nullable, NSError * _Nullable))completion;
 /// バナーアクションログを送信
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param bannerLogs <code>NautilusBannerLog</code>の配列
 ///
-/// \param completion ログ送信後実行するブロック
+/// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)sendBannerLogWithBannerLogs:(NSArray<NautilusBannerLog *> * _Nonnull)bannerLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 /// アプリ内遷移の情報
@@ -824,7 +835,10 @@ typedef SWIFT_ENUM(NSInteger, NautilusBannerError, open) {
   NautilusBannerErrorParseFailure = 4,
 /// 明示的にユーザーによりキャンセルされた
   NautilusBannerErrorUserCancelled = 5,
+/// パラメータが不正
   NautilusBannerErrorInvalidParamater = 6,
+/// インスタンスが不正
+  NautilusBannerErrorInvalidInstance = 7,
 };
 static NSString * _Nonnull const NautilusBannerErrorDomain = @"NautilusBannerSDK.NautilusBannerError";
 

@@ -1429,6 +1429,106 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "featureStatus",
+            "printedName": "featureStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusFeatureStatus",
+                "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusConfigSDK@objc(cs)NautilusConfig(py)featureStatus",
+            "mangledName": "$s17NautilusConfigSDK0aB0C13featureStatus0a4CoreC00a7FeatureE0Ovp",
+            "moduleName": "NautilusConfigSDK",
+            "objc_name": "featureStatus",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusFeatureStatus",
+                    "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusConfigSDK@objc(cs)NautilusConfig(im)featureStatus",
+                "mangledName": "$s17NautilusConfigSDK0aB0C13featureStatus0a4CoreC00a7FeatureE0Ovg",
+                "moduleName": "NautilusConfigSDK",
+                "objc_name": "featureStatus",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isActive",
+            "printedName": "isActive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusConfigSDK@objc(cs)NautilusConfig(py)isActive",
+            "mangledName": "$s17NautilusConfigSDK0aB0C8isActiveSbvp",
+            "moduleName": "NautilusConfigSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusConfigSDK@objc(cs)NautilusConfig(im)isActive",
+                "mangledName": "$s17NautilusConfigSDK0aB0C8isActiveSbvg",
+                "moduleName": "NautilusConfigSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(application:)",
@@ -2584,6 +2684,13 @@
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Config\/Sources\/Base\/NautilusConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 516,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Config\/Sources\/Base\/NautilusConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1051,
       "length": 5,
       "value": "false"
     },

@@ -430,6 +430,55 @@
           },
           {
             "kind": "Var",
+            "name": "featureStatus",
+            "printedName": "featureStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusFeatureStatus",
+                "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusServerTimeSDK@objc(cs)NautilusServerTime(py)featureStatus",
+            "mangledName": "$s21NautilusServerTimeSDK0abC0C13featureStatus0a4CoreD00a7FeatureF0Ovp",
+            "moduleName": "NautilusServerTimeSDK",
+            "objc_name": "featureStatus",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusFeatureStatus",
+                    "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusServerTimeSDK@objc(cs)NautilusServerTime(im)featureStatus",
+                "mangledName": "$s21NautilusServerTimeSDK0abC0C13featureStatus0a4CoreD00a7FeatureF0Ovg",
+                "moduleName": "NautilusServerTimeSDK",
+                "objc_name": "featureStatus",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "minimumUpdateTimeInterval",
             "printedName": "minimumUpdateTimeInterval",
             "children": [
@@ -1591,6 +1640,48 @@
             "fixedbinaryorder": 6
           },
           {
+            "kind": "Var",
+            "name": "invalidInstance",
+            "printedName": "invalidInstance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusServerTimeSDK.NautilusServerTimeError.Type) -> NautilusServerTimeSDK.NautilusServerTimeError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusServerTimeError",
+                    "printedName": "NautilusServerTimeSDK.NautilusServerTimeError",
+                    "usr": "c:@M@NautilusServerTimeSDK@E@NautilusServerTimeError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusServerTimeSDK.NautilusServerTimeError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusServerTimeError",
+                        "printedName": "NautilusServerTimeSDK.NautilusServerTimeError",
+                        "usr": "c:@M@NautilusServerTimeSDK@E@NautilusServerTimeError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusServerTimeSDK@E@NautilusServerTimeError@NautilusServerTimeErrorInvalidInstance",
+            "mangledName": "$s21NautilusServerTimeSDK0abC5ErrorO15invalidInstanceyA2CmF",
+            "moduleName": "NautilusServerTimeSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -2684,29 +2775,36 @@
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1243,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "IntegerLiteral",
-      "offset": 1247,
+      "offset": 2248,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 1533,
+      "offset": 2534,
       "length": 31,
       "value": "\"Ignore new retryTimeInterval.\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 2026,
+      "offset": 3027,
       "length": 32,
       "value": "\"Ignore new updateTimeInterval.\""
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "BooleanLiteral",
-      "offset": 2600,
+      "offset": 3601,
       "length": 5,
       "value": "false"
     },
@@ -2825,6 +2923,13 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
+      "offset": 929,
+      "length": 15,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
+      "kind": "IntegerLiteral",
       "offset": 492,
       "length": 10,
       "value": "1"
@@ -2863,6 +2968,13 @@
       "offset": 868,
       "length": 15,
       "value": "6"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 929,
+      "length": 15,
+      "value": "7"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeStatus.swift",

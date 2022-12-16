@@ -454,6 +454,55 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "featureStatus",
+            "printedName": "featureStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusFeatureStatus",
+                "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusIntroSDK@objc(cs)NautilusIntroduction(py)featureStatus",
+            "mangledName": "$s16NautilusIntroSDK0A12IntroductionC13featureStatus0a4CoreC00a7FeatureF0Ovp",
+            "moduleName": "NautilusIntroSDK",
+            "objc_name": "featureStatus",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusFeatureStatus",
+                    "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusIntroSDK@objc(cs)NautilusIntroduction(im)featureStatus",
+                "mangledName": "$s16NautilusIntroSDK0A12IntroductionC13featureStatus0a4CoreC00a7FeatureF0Ovg",
+                "moduleName": "NautilusIntroSDK",
+                "objc_name": "featureStatus",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(application:)",
@@ -1756,6 +1805,13 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1404,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
       "kind": "StringLiteral",
       "offset": 399,
       "length": 20,
@@ -1897,7 +1953,7 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
       "kind": "Dictionary",
-      "offset": 1507,
+      "offset": 1643,
       "length": 3,
       "value": "[]"
     }

@@ -388,6 +388,48 @@
           },
           {
             "kind": "Var",
+            "name": "invalidInstance",
+            "printedName": "invalidInstance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusGeoUtilSDK.GeoUtilApiError.Type) -> NautilusGeoUtilSDK.GeoUtilApiError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GeoUtilApiError",
+                    "printedName": "NautilusGeoUtilSDK.GeoUtilApiError",
+                    "usr": "c:@M@NautilusGeoUtilSDK@E@GeoUtilApiError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusGeoUtilSDK.GeoUtilApiError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GeoUtilApiError",
+                        "printedName": "NautilusGeoUtilSDK.GeoUtilApiError",
+                        "usr": "c:@M@NautilusGeoUtilSDK@E@GeoUtilApiError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusGeoUtilSDK@E@GeoUtilApiError@GeoUtilApiErrorInvalidInstance",
+            "mangledName": "$s18NautilusGeoUtilSDK0bC8ApiErrorO15invalidInstanceyA2CmF",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
             "name": "nautilusGeoUtilErrorCode",
             "printedName": "nautilusGeoUtilErrorCode",
             "children": [
@@ -3335,6 +3377,13 @@
         "moduleName": "NautilusGeoUtilSDK"
       },
       {
+        "kind": "Import",
+        "name": "NautilusLoggingSDK",
+        "printedName": "NautilusLoggingSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusGeoUtilSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "NautilusGeoUtil",
         "printedName": "NautilusGeoUtil",
@@ -3743,6 +3792,55 @@
                   "Final"
                 ],
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featureStatus",
+            "printedName": "featureStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusFeatureStatus",
+                "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusGeoUtilSDK@objc(cs)NautilusGeoUtil(py)featureStatus",
+            "mangledName": "$s18NautilusGeoUtilSDK0abC0C13featureStatus0a4CoreD00a7FeatureF0Ovp",
+            "moduleName": "NautilusGeoUtilSDK",
+            "objc_name": "featureStatus",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusFeatureStatus",
+                    "printedName": "NautilusCoreSDK.NautilusFeatureStatus",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusFeatureStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusGeoUtilSDK@objc(cs)NautilusGeoUtil(im)featureStatus",
+                "mangledName": "$s18NautilusGeoUtilSDK0abC0C13featureStatus0a4CoreD00a7FeatureF0Ovg",
+                "moduleName": "NautilusGeoUtilSDK",
+                "objc_name": "featureStatus",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
               }
             ]
           },
@@ -4212,6 +4310,13 @@
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/GeoUtilError.swift",
       "kind": "IntegerLiteral",
+      "offset": 881,
+      "length": 15,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/GeoUtilError.swift",
+      "kind": "IntegerLiteral",
       "offset": 500,
       "length": 10,
       "value": "1"
@@ -4250,6 +4355,13 @@
       "offset": 819,
       "length": 16,
       "value": "6"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/GeoUtilError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 881,
+      "length": 15,
+      "value": "7"
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/NautilusPrefectureCode.swift",
@@ -4932,8 +5044,15 @@
     },
     {
       "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/NautilusGeoUtil.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1024,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nhamada\/project\/Nautilus\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/NautilusGeoUtil.swift",
       "kind": "StringLiteral",
-      "offset": 394,
+      "offset": 420,
       "length": 15,
       "value": "\"NautilusGeoUtilSDK.NautilusGeoUtil\""
     }
