@@ -256,6 +256,11 @@ public typealias NautilusLocationPermissionCompletionHandler = ((Swift.Bool) -> 
   @objc func requestUpdateUserLocation(completion: @escaping NautilusCoreSDK.NautilusUserLocationUpdateCompletionHandler)
   @objc func requestLocationPermission(completion: @escaping NautilusCoreSDK.NautilusLocationPermissionCompletionHandler)
 }
+public typealias NautilusCameraPermissionCompletionHandler = ((Swift.Bool) -> Swift.Void)
+@objc public protocol NautilusCameraPermissionProvider {
+  @objc var shouldCloseScreenWhenDenied: Swift.Bool { get }
+  @objc func requestCameraPermission(completion: @escaping NautilusCoreSDK.NautilusCameraPermissionCompletionHandler)
+}
 @_hasMissingDesignatedInitializers final public class LifeCycleNotificationCenter {
   public static let shared: NautilusCoreSDK.LifeCycleNotificationCenter
   final public func setup()
@@ -330,6 +335,7 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
   final public let name: Swift.String
   final public let notificationCenter: Foundation.NotificationCenter
   final public var locationProvider: NautilusCoreSDK.NautilusLocationProvider?
+  final public var cameraPermissionProvider: NautilusCoreSDK.NautilusCameraPermissionProvider?
   final public var isInitialized: Swift.Bool {
     get
   }

@@ -329,6 +329,29 @@ typedef SWIFT_ENUM(NSInteger, NautilusAppInitializationError, open) {
   NautilusAppInitializationErrorFeatureUnavailable = 1,
 };
 
+
+/// カメラの使用権限をSDKヘ提供するためのプロトコル
+SWIFT_PROTOCOL("_TtP15NautilusCoreSDK32NautilusCameraPermissionProvider_")
+@protocol NautilusCameraPermissionProvider
+/// 拒否された場合に画面を閉じるか否か
+///
+/// returns:
+///
+/// <ul>
+///   <li>
+///     <code>true</code>: コードリーダー画面を閉じる
+///   </li>
+///   <li>
+///     <code>false</code>: コードリーダー画面を閉じない
+///   </li>
+/// </ul>
+@property (nonatomic, readonly) BOOL shouldCloseScreenWhenDenied;
+/// カメラ使用の許諾を要求する
+/// \param completion カメラの使用許諾の結果を受け取る処理. 許可された場合は、<code>true</code> を渡す. それ以外の場合は、<code>false</code>を渡す.
+///
+- (void)requestCameraPermissionWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+@end
+
 /// MA 2.0 のAPIの接続先
 /// 接続先は、ホスト名とパス内の指定で、切り替わる
 /// つまり、2つの定義で接続先が指定される
@@ -809,6 +832,29 @@ typedef SWIFT_ENUM(NSInteger, NautilusAppInitializationError, open) {
 /// SDKの初期化に失敗
   NautilusAppInitializationErrorFeatureUnavailable = 1,
 };
+
+
+/// カメラの使用権限をSDKヘ提供するためのプロトコル
+SWIFT_PROTOCOL("_TtP15NautilusCoreSDK32NautilusCameraPermissionProvider_")
+@protocol NautilusCameraPermissionProvider
+/// 拒否された場合に画面を閉じるか否か
+///
+/// returns:
+///
+/// <ul>
+///   <li>
+///     <code>true</code>: コードリーダー画面を閉じる
+///   </li>
+///   <li>
+///     <code>false</code>: コードリーダー画面を閉じない
+///   </li>
+/// </ul>
+@property (nonatomic, readonly) BOOL shouldCloseScreenWhenDenied;
+/// カメラ使用の許諾を要求する
+/// \param completion カメラの使用許諾の結果を受け取る処理. 許可された場合は、<code>true</code> を渡す. それ以外の場合は、<code>false</code>を渡す.
+///
+- (void)requestCameraPermissionWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+@end
 
 /// MA 2.0 のAPIの接続先
 /// 接続先は、ホスト名とパス内の指定で、切り替わる

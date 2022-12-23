@@ -5167,6 +5167,126 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusCameraPermissionProvider",
+        "printedName": "NautilusCameraPermissionProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shouldCloseScreenWhenDenied",
+            "printedName": "shouldCloseScreenWhenDenied",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider(py)shouldCloseScreenWhenDenied",
+            "mangledName": "$s15NautilusCoreSDK0A24CameraPermissionProviderP27shouldCloseScreenWhenDeniedSbvp",
+            "moduleName": "NautilusCoreSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider(im)shouldCloseScreenWhenDenied",
+                "mangledName": "$s15NautilusCoreSDK0A24CameraPermissionProviderP27shouldCloseScreenWhenDeniedSbvg",
+                "moduleName": "NautilusCoreSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.NautilusCameraPermissionProvider>",
+                "sugared_genericSig": "<Self where Self : NautilusCoreSDK.NautilusCameraPermissionProvider>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "requestCameraPermission",
+            "printedName": "requestCameraPermission(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider(im)requestCameraPermissionWithCompletion:",
+            "mangledName": "$s15NautilusCoreSDK0A24CameraPermissionProviderP07requestdE010completionyySbc_tF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.NautilusCameraPermissionProvider>",
+            "sugared_genericSig": "<Self where Self : NautilusCoreSDK.NautilusCameraPermissionProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider",
+        "mangledName": "$s15NautilusCoreSDK0A24CameraPermissionProviderP",
+        "moduleName": "NautilusCoreSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -7308,6 +7428,127 @@
                 "declKind": "Accessor",
                 "usr": "s:15NautilusCoreSDK0A3AppC16locationProviderAA0a8LocationF0_pSgvM",
                 "mangledName": "$s15NautilusCoreSDK0A3AppC16locationProviderAA0a8LocationF0_pSgvM",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cameraPermissionProvider",
+            "printedName": "cameraPermissionProvider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCameraPermissionProvider",
+                    "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider",
+                    "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvp",
+            "mangledName": "$s15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvp",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCameraPermissionProvider",
+                        "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider",
+                        "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvg",
+                "mangledName": "$s15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCameraPermissionProvider",
+                        "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider",
+                        "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvs",
+                "mangledName": "$s15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvs",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvM",
+                "mangledName": "$s15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvM",
                 "moduleName": "NautilusCoreSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -16610,21 +16851,21 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 1110,
+      "offset": 1298,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 1244,
+      "offset": 1432,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "Array",
-      "offset": 1515,
+      "offset": 1703,
       "length": 2,
       "value": "[]"
     },
