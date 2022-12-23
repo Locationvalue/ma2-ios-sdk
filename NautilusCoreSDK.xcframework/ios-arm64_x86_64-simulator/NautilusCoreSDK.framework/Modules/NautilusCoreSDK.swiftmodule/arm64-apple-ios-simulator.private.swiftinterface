@@ -2,7 +2,6 @@
 // swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusCoreSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
-import AVFoundation
 import CoreTelephony
 import Foundation
 import NautilusContainerSDK
@@ -87,21 +86,6 @@ public protocol APIClient {
   func send<R>(request: R, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
   func cancel()
 }
-@objc final public class NautilusCodeReaderSetting : ObjectiveC.NSObject {
-  final public let title: Swift.String
-  final public let usageText: Swift.String
-  final public let codeFormat: NautilusCoreSDK.NautilusCodeFormat
-  public init(title: Swift.String, usageText: Swift.String, codeFormat: NautilusCoreSDK.NautilusCodeFormat)
-  @objc deinit
-}
-@objc public enum NautilusCodeFormat : Swift.Int {
-  case qrCode
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 public enum NautilusDeviceInfo {
   public static var systemType: NautilusCoreSDK.NautilusDeviceSystemType {
     get
@@ -171,21 +155,6 @@ extension Foundation.URLSession {
 public protocol NautilusRequestParameter : NautilusCoreSDK.RequestParameter {
   var queryParameters: [Swift.String : Any]? { get }
   var data: Foundation.Data? { get }
-}
-@objc public enum NautilusCodeReaderError : Swift.Int, Swift.Error {
-  case cameraDeviceError
-  case metadataError
-  case codeTextError
-  case codeFormatError
-  case unknown
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public static var _nsErrorDomain: Swift.String {
-    get
-  }
-  public var rawValue: Swift.Int {
-    get
-  }
 }
 @objc public enum NautilusInitializationFailureReason : Swift.Int, Swift.Error {
   case cancelled = -10
@@ -287,11 +256,6 @@ public typealias NautilusLocationPermissionCompletionHandler = ((Swift.Bool) -> 
   @objc func requestUpdateUserLocation(completion: @escaping NautilusCoreSDK.NautilusUserLocationUpdateCompletionHandler)
   @objc func requestLocationPermission(completion: @escaping NautilusCoreSDK.NautilusLocationPermissionCompletionHandler)
 }
-public typealias NautilusCameraPermissionCompletionHandler = ((Swift.Bool) -> Swift.Void)
-@objc public protocol NautilusCameraPermissionProvider {
-  @objc var shouldCloseScreenWhenDenied: Swift.Bool { get }
-  @objc func requestCameraPermission(completion: @escaping NautilusCoreSDK.NautilusCameraPermissionCompletionHandler)
-}
 @_hasMissingDesignatedInitializers final public class LifeCycleNotificationCenter {
   public static let shared: NautilusCoreSDK.LifeCycleNotificationCenter
   final public func setup()
@@ -344,10 +308,6 @@ public protocol NetworkService {
   func cancelAll()
   func cancel(uuid: Foundation.UUID)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusCodeReader : ObjectiveC.NSObject {
-  @objc public static func instantiateCodeReaderViewController(_ app: NautilusCoreSDK.NautilusApp, setting: NautilusCoreSDK.NautilusCodeReaderSetting, handler: NautilusCoreSDK.NautilusCodeReaderHandler) -> UIKit.UIViewController
-  @objc deinit
-}
 final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
   public static let `default`: NautilusCoreSDK.NetworkService
   final public var loggers: [NautilusCoreSDK.NetworkServiceLogger] {
@@ -362,10 +322,6 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
   final public func cancel(uuid: Foundation.UUID)
   @objc deinit
 }
-@objc public protocol NautilusCodeReaderHandler {
-  @objc func codeReaderHandle(_ viewController: UIKit.UIViewController, codeText: Swift.String) -> Swift.Bool
-  @objc func handleCodeDetectionError(_ viewController: UIKit.UIViewController, error: NautilusCoreSDK.NautilusCodeReaderError) -> Swift.Bool
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusApp : ObjectiveC.NSObject {
   final public var deployEnvironment: NautilusCoreSDK.NautilusDeploymentEnvironment {
     get
@@ -374,7 +330,6 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
   final public let name: Swift.String
   final public let notificationCenter: Foundation.NotificationCenter
   final public var locationProvider: NautilusCoreSDK.NautilusLocationProvider?
-  final public var cameraPermissionProvider: NautilusCoreSDK.NautilusCameraPermissionProvider?
   final public var isInitialized: Swift.Bool {
     get
   }
@@ -599,14 +554,8 @@ extension NautilusCoreSDK.NautilusFeatureStatus : Swift.RawRepresentable {}
 extension NautilusCoreSDK.NautilusStatusErrorKey : Swift.Equatable {}
 extension NautilusCoreSDK.NautilusStatusErrorKey : Swift.Hashable {}
 extension NautilusCoreSDK.NautilusStatusErrorKey : Swift.RawRepresentable {}
-extension NautilusCoreSDK.NautilusCodeFormat : Swift.Equatable {}
-extension NautilusCoreSDK.NautilusCodeFormat : Swift.Hashable {}
-extension NautilusCoreSDK.NautilusCodeFormat : Swift.RawRepresentable {}
 extension NautilusCoreSDK.NautilusDeviceSystemType : Swift.Equatable {}
 extension NautilusCoreSDK.NautilusDeviceSystemType : Swift.Hashable {}
-extension NautilusCoreSDK.NautilusCodeReaderError : Swift.Equatable {}
-extension NautilusCoreSDK.NautilusCodeReaderError : Swift.Hashable {}
-extension NautilusCoreSDK.NautilusCodeReaderError : Swift.RawRepresentable {}
 extension NautilusCoreSDK.NautilusInitializationFailureReason : Swift.Equatable {}
 extension NautilusCoreSDK.NautilusInitializationFailureReason : Swift.Hashable {}
 extension NautilusCoreSDK.NautilusInitializationFailureReason : Swift.RawRepresentable {}
