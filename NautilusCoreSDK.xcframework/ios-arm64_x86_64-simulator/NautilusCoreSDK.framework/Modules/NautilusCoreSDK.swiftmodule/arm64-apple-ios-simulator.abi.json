@@ -1929,6 +1929,477 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusCodeReaderSetting",
+        "printedName": "NautilusCodeReaderSetting",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A17CodeReaderSettingC5titleSSvp",
+            "mangledName": "$s15NautilusCoreSDK0A17CodeReaderSettingC5titleSSvp",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A17CodeReaderSettingC5titleSSvg",
+                "mangledName": "$s15NautilusCoreSDK0A17CodeReaderSettingC5titleSSvg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "usageText",
+            "printedName": "usageText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A17CodeReaderSettingC9usageTextSSvp",
+            "mangledName": "$s15NautilusCoreSDK0A17CodeReaderSettingC9usageTextSSvp",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A17CodeReaderSettingC9usageTextSSvg",
+                "mangledName": "$s15NautilusCoreSDK0A17CodeReaderSettingC9usageTextSSvg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "codeFormat",
+            "printedName": "codeFormat",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCodeFormat",
+                "printedName": "NautilusCoreSDK.NautilusCodeFormat",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeFormat"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A17CodeReaderSettingC10codeFormatAA0adH0Ovp",
+            "mangledName": "$s15NautilusCoreSDK0A17CodeReaderSettingC10codeFormatAA0adH0Ovp",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCodeFormat",
+                    "printedName": "NautilusCoreSDK.NautilusCodeFormat",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeFormat"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A17CodeReaderSettingC10codeFormatAA0adH0Ovg",
+                "mangledName": "$s15NautilusCoreSDK0A17CodeReaderSettingC10codeFormatAA0adH0Ovg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:usageText:codeFormat:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCodeReaderSetting",
+                "printedName": "NautilusCoreSDK.NautilusCodeReaderSetting",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusCodeReaderSetting"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCodeFormat",
+                "printedName": "NautilusCoreSDK.NautilusCodeFormat",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeFormat"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NautilusCoreSDK0A17CodeReaderSettingC5title9usageText10codeFormatACSS_SSAA0adK0Otcfc",
+            "mangledName": "$s15NautilusCoreSDK0A17CodeReaderSettingC5title9usageText10codeFormatACSS_SSAA0adK0Otcfc",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCodeReaderSetting",
+                "printedName": "NautilusCoreSDK.NautilusCodeReaderSetting",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusCodeReaderSetting"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusCodeReaderSetting(im)init",
+            "mangledName": "$s15NautilusCoreSDK0A17CodeReaderSettingCACycfc",
+            "moduleName": "NautilusCoreSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusCodeReaderSetting",
+        "mangledName": "$s15NautilusCoreSDK0A17CodeReaderSettingC",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusCodeFormat",
+        "printedName": "NautilusCodeFormat",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "qrCode",
+            "printedName": "qrCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusCodeFormat.Type) -> NautilusCoreSDK.NautilusCodeFormat",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCodeFormat",
+                    "printedName": "NautilusCoreSDK.NautilusCodeFormat",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeFormat"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusCodeFormat.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCodeFormat",
+                        "printedName": "NautilusCoreSDK.NautilusCodeFormat",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeFormat"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeFormat@NautilusCodeFormatQrCode",
+            "mangledName": "$s15NautilusCoreSDK0A10CodeFormatO02qrD0yA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusCodeFormat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCodeFormat",
+                    "printedName": "NautilusCoreSDK.NautilusCodeFormat",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeFormat"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NautilusCoreSDK0A10CodeFormatO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15NautilusCoreSDK0A10CodeFormatO8rawValueACSgSi_tcfc",
+            "moduleName": "NautilusCoreSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A10CodeFormatO8rawValueSivp",
+            "mangledName": "$s15NautilusCoreSDK0A10CodeFormatO8rawValueSivp",
+            "moduleName": "NautilusCoreSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A10CodeFormatO8rawValueSivg",
+                "mangledName": "$s15NautilusCoreSDK0A10CodeFormatO8rawValueSivg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeFormat",
+        "mangledName": "$s15NautilusCoreSDK0A10CodeFormatO",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3060,6 +3531,407 @@
             "printedName": "DataConvertible",
             "usr": "s:15NautilusCoreSDK15DataConvertibleP",
             "mangledName": "$s15NautilusCoreSDK15DataConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusCodeReaderError",
+        "printedName": "NautilusCodeReaderError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cameraDeviceError",
+            "printedName": "cameraDeviceError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusCodeReaderError.Type) -> NautilusCoreSDK.NautilusCodeReaderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCodeReaderError",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCodeReaderError",
+                        "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError@NautilusCodeReaderErrorCameraDeviceError",
+            "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO012cameraDeviceF0yA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "metadataError",
+            "printedName": "metadataError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusCodeReaderError.Type) -> NautilusCoreSDK.NautilusCodeReaderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCodeReaderError",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCodeReaderError",
+                        "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError@NautilusCodeReaderErrorMetadataError",
+            "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO08metadataF0yA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "codeTextError",
+            "printedName": "codeTextError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusCodeReaderError.Type) -> NautilusCoreSDK.NautilusCodeReaderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCodeReaderError",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCodeReaderError",
+                        "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError@NautilusCodeReaderErrorCodeTextError",
+            "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO08codeTextF0yA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "codeFormatError",
+            "printedName": "codeFormatError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusCodeReaderError.Type) -> NautilusCoreSDK.NautilusCodeReaderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCodeReaderError",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCodeReaderError",
+                        "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError@NautilusCodeReaderErrorCodeFormatError",
+            "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO010codeFormatF0yA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusCodeReaderError.Type) -> NautilusCoreSDK.NautilusCodeReaderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCodeReaderError",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCodeReaderError",
+                        "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError@NautilusCodeReaderErrorUnknown",
+            "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO7unknownyA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusCodeReaderError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCodeReaderError",
+                    "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NautilusCoreSDK0A15CodeReaderErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "NautilusCoreSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A15CodeReaderErrorO8rawValueSivp",
+            "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO8rawValueSivp",
+            "moduleName": "NautilusCoreSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A15CodeReaderErrorO8rawValueSivg",
+                "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO8rawValueSivg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_nsErrorDomain",
+            "printedName": "_nsErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A15CodeReaderErrorO03_nsF6DomainSSvpZ",
+            "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO03_nsF6DomainSSvpZ",
+            "moduleName": "NautilusCoreSDK",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A15CodeReaderErrorO03_nsF6DomainSSvgZ",
+                "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO03_nsF6DomainSSvgZ",
+                "moduleName": "NautilusCoreSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError",
+        "mangledName": "$s15NautilusCoreSDK0A15CodeReaderErrorO",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_BridgedNSError",
+            "printedName": "_BridgedNSError",
+            "usr": "s:10Foundation15_BridgedNSErrorP",
+            "mangledName": "$s10Foundation15_BridgedNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeableError",
+            "printedName": "_ObjectiveCBridgeableError",
+            "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
+            "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
           }
         ]
       },
@@ -5167,6 +6039,126 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusCameraPermissionProvider",
+        "printedName": "NautilusCameraPermissionProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shouldCloseScreenWhenDenied",
+            "printedName": "shouldCloseScreenWhenDenied",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider(py)shouldCloseScreenWhenDenied",
+            "mangledName": "$s15NautilusCoreSDK0A24CameraPermissionProviderP27shouldCloseScreenWhenDeniedSbvp",
+            "moduleName": "NautilusCoreSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider(im)shouldCloseScreenWhenDenied",
+                "mangledName": "$s15NautilusCoreSDK0A24CameraPermissionProviderP27shouldCloseScreenWhenDeniedSbvg",
+                "moduleName": "NautilusCoreSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.NautilusCameraPermissionProvider>",
+                "sugared_genericSig": "<Self where Self : NautilusCoreSDK.NautilusCameraPermissionProvider>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "requestCameraPermission",
+            "printedName": "requestCameraPermission(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider(im)requestCameraPermissionWithCompletion:",
+            "mangledName": "$s15NautilusCoreSDK0A24CameraPermissionProviderP07requestdE010completionyySbc_tF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.NautilusCameraPermissionProvider>",
+            "sugared_genericSig": "<Self where Self : NautilusCoreSDK.NautilusCameraPermissionProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider",
+        "mangledName": "$s15NautilusCoreSDK0A24CameraPermissionProviderP",
+        "moduleName": "NautilusCoreSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -6510,6 +7502,146 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusCodeReader",
+        "printedName": "NautilusCodeReader",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "instantiateCodeReaderViewController",
+            "printedName": "instantiateCodeReaderViewController(_:setting:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusApp",
+                "printedName": "NautilusCoreSDK.NautilusApp",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusApp"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCodeReaderSetting",
+                "printedName": "NautilusCoreSDK.NautilusCodeReaderSetting",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusCodeReaderSetting"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCodeReaderHandler",
+                "printedName": "NautilusCoreSDK.NautilusCodeReaderHandler",
+                "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCodeReaderHandler"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusCodeReader(cm)instantiateCodeReaderViewController:setting:handler:",
+            "mangledName": "$s15NautilusCoreSDK0A10CodeReaderC011instantiatedE14ViewController_7setting7handlerSo06UIViewH0CAA0A3AppC_AA0adE7SettingCAA0adE7Handler_ptFZ",
+            "moduleName": "NautilusCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusCodeReader",
+        "mangledName": "$s15NautilusCoreSDK0A10CodeReaderC",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "NautilusNetworkService",
         "printedName": "NautilusNetworkService",
@@ -6914,6 +8046,110 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusCodeReaderHandler",
+        "printedName": "NautilusCodeReaderHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "codeReaderHandle",
+            "printedName": "codeReaderHandle(_:codeText:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCodeReaderHandler(im)codeReaderHandle:codeText:",
+            "mangledName": "$s15NautilusCoreSDK0A17CodeReaderHandlerP04codeE6Handle_0G4TextSbSo16UIViewControllerC_SStF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.NautilusCodeReaderHandler>",
+            "sugared_genericSig": "<Self where Self : NautilusCoreSDK.NautilusCodeReaderHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleCodeDetectionError",
+            "printedName": "handleCodeDetectionError(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCodeReaderError",
+                "printedName": "NautilusCoreSDK.NautilusCodeReaderError",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusCodeReaderError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCodeReaderHandler(im)handleCodeDetectionError:error:",
+            "mangledName": "$s15NautilusCoreSDK0A17CodeReaderHandlerP06handleD14DetectionError_5errorSbSo16UIViewControllerC_AA0adeI0OtF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.NautilusCodeReaderHandler>",
+            "sugared_genericSig": "<Self where Self : NautilusCoreSDK.NautilusCodeReaderHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCodeReaderHandler",
+        "mangledName": "$s15NautilusCoreSDK0A17CodeReaderHandlerP",
+        "moduleName": "NautilusCoreSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -7308,6 +8544,127 @@
                 "declKind": "Accessor",
                 "usr": "s:15NautilusCoreSDK0A3AppC16locationProviderAA0a8LocationF0_pSgvM",
                 "mangledName": "$s15NautilusCoreSDK0A3AppC16locationProviderAA0a8LocationF0_pSgvM",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cameraPermissionProvider",
+            "printedName": "cameraPermissionProvider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusCameraPermissionProvider",
+                    "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider",
+                    "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvp",
+            "mangledName": "$s15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvp",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCameraPermissionProvider",
+                        "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider",
+                        "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvg",
+                "mangledName": "$s15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCameraPermissionProvider",
+                        "printedName": "NautilusCoreSDK.NautilusCameraPermissionProvider",
+                        "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusCameraPermissionProvider"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvs",
+                "mangledName": "$s15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvs",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvM",
+                "mangledName": "$s15NautilusCoreSDK0A3AppC24cameraPermissionProviderAA0a6CamerafG0_pSgvM",
                 "moduleName": "NautilusCoreSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -8508,6 +9865,30 @@
             "mangledName": "$sSY"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK"
       },
       {
         "kind": "Import",
@@ -16328,6 +17709,69 @@
       "value": "3"
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/Base\/NautilusCodeReaderSetting.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 25,
+      "value": "\"NautilusCoreSDK.NautilusCodeReaderSetting\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/Base\/NautilusCodeReaderError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 255,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/Base\/NautilusCodeReaderError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 278,
+      "length": 13,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/Base\/NautilusCodeReaderError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 301,
+      "length": 15,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/Base\/NautilusCodeReaderError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 326,
+      "length": 7,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/Base\/NautilusCodeReaderError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 255,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/Base\/NautilusCodeReaderError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 278,
+      "length": 13,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/Base\/NautilusCodeReaderError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 301,
+      "length": 15,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/Base\/NautilusCodeReaderError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 326,
+      "length": 7,
+      "value": "4"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 334,
@@ -16610,21 +18054,21 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 1110,
+      "offset": 1298,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 1244,
+      "offset": 1432,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "Array",
-      "offset": 1515,
+      "offset": 1703,
       "length": 2,
       "value": "[]"
     },
@@ -16669,6 +18113,62 @@
       "offset": 744,
       "length": 16,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/UI\/NautilusCodeReaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8808,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/UI\/NautilusCodeReaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8863,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/UI\/NautilusCodeReaderViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 8944,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/UI\/NautilusCodeReaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9000,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/UI\/NautilusCodeReaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9055,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/UI\/NautilusCodeReaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9105,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/UI\/NautilusCodeReaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9162,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CodeReader\/Sources\/UI\/NautilusCodeReaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9221,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
