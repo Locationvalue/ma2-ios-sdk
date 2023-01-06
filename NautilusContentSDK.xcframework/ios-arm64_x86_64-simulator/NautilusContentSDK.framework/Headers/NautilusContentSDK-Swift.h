@@ -356,7 +356,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時は共通コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getCommonContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getCommonContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "getCommonContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)");
+/// 共通コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param useCache キャッシュを利用する場合 true, しない場合 false
+///
+/// \param contentIDs コンテンツIDの配列
+///
+/// \param categoryIDs カテゴリIDの配列
+///
+/// \param searchWord 検索ワード
+///
+/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順の配列
+///
+/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
+///
+/// \param completion 成功時は共通コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getCommonContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs searchWord:(NSString * _Nullable)searchWord sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 共通コンテンツの件数を取得する
 /// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
@@ -382,7 +403,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時は個人別コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getPrivateContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getPrivateContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "getPrivateContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)");
+/// 個人別コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param useCache キャッシュを利用する場合 true, しない場合 false
+///
+/// \param contentIDs コンテンツIDの配列
+///
+/// \param categoryIDs カテゴリIDの配列
+///
+/// \param searchWord 検索ワード
+///
+/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順
+///
+/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
+///
+/// \param completion 成功時は個人別コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getPrivateContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs searchWord:(NSString * _Nullable)searchWord sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 個人別コンテンツの件数を取得する
 /// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
@@ -408,7 +450,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時はお気に入り店舗コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getFavoriteShopContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getFavoriteShopContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "getFavoriteShopContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)");
+/// お気に入り店舗コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param useCache キャッシュを利用する場合 true, しない場合 false
+///
+/// \param contentIDs コンテンツIDの配列
+///
+/// \param categoryIDs カテゴリIDの配列
+///
+/// \param searchWord 検索ワード
+///
+/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順
+///
+/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
+///
+/// \param completion 成功時はお気に入り店舗コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getFavoriteShopContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs searchWord:(NSString * _Nullable)searchWord sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// お気に入り店舗コンテンツの件数を取得する
 /// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
@@ -946,7 +1009,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時は共通コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getCommonContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getCommonContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "getCommonContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)");
+/// 共通コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param useCache キャッシュを利用する場合 true, しない場合 false
+///
+/// \param contentIDs コンテンツIDの配列
+///
+/// \param categoryIDs カテゴリIDの配列
+///
+/// \param searchWord 検索ワード
+///
+/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順の配列
+///
+/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
+///
+/// \param completion 成功時は共通コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getCommonContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs searchWord:(NSString * _Nullable)searchWord sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 共通コンテンツの件数を取得する
 /// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
@@ -972,7 +1056,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時は個人別コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getPrivateContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getPrivateContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "getPrivateContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)");
+/// 個人別コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param useCache キャッシュを利用する場合 true, しない場合 false
+///
+/// \param contentIDs コンテンツIDの配列
+///
+/// \param categoryIDs カテゴリIDの配列
+///
+/// \param searchWord 検索ワード
+///
+/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順
+///
+/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
+///
+/// \param completion 成功時は個人別コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getPrivateContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs searchWord:(NSString * _Nullable)searchWord sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 個人別コンテンツの件数を取得する
 /// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.
@@ -998,7 +1103,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時はお気に入り店舗コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getFavoriteShopContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getFavoriteShopContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "getFavoriteShopContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)");
+/// お気に入り店舗コンテンツ一覧を取得する
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param useCache キャッシュを利用する場合 true, しない場合 false
+///
+/// \param contentIDs コンテンツIDの配列
+///
+/// \param categoryIDs カテゴリIDの配列
+///
+/// \param searchWord 検索ワード
+///
+/// \param sortKeys <code>NautilusContentSortKey</code>で定義された並び順
+///
+/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたコンテンツを取得する.
+///
+/// \param completion 成功時はお気に入り店舗コンテンツ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getFavoriteShopContentListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache contentIDs:(NSArray<NSNumber *> * _Nullable)contentIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs searchWord:(NSString * _Nullable)searchWord sortKeys:(NSArray<NautilusContentSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusContentInfo *> * _Nullable, NSError * _Nullable))completion;
 /// お気に入り店舗コンテンツの件数を取得する
 /// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信された件数を取得する.

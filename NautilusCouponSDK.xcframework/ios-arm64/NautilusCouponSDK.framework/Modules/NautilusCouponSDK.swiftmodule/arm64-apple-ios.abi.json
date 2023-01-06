@@ -1841,6 +1841,71 @@
           },
           {
             "kind": "Var",
+            "name": "searchWord",
+            "printedName": "searchWord",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17NautilusCouponSDK0aB4InfoC10searchWordSSSgvp",
+            "mangledName": "$s17NautilusCouponSDK0aB4InfoC10searchWordSSSgvp",
+            "moduleName": "NautilusCouponSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17NautilusCouponSDK0aB4InfoC10searchWordSSSgvg",
+                "mangledName": "$s17NautilusCouponSDK0aB4InfoC10searchWordSSSgvg",
+                "moduleName": "NautilusCouponSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "couponImages",
             "printedName": "couponImages",
             "children": [
@@ -5917,6 +5982,207 @@
             "usr": "s:17NautilusCouponSDK0aB0C09getCommonB4List6offset5limit8useCache9couponIDs08categoryL08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0Q0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "mangledName": "$s17NautilusCouponSDK0aB0C09getCommonB4List6offset5limit8useCache9couponIDs08categoryL08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0Q0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCommonCouponList",
+            "printedName": "getCommonCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponSortKey",
+                        "printedName": "NautilusCouponSDK.NautilusCouponSortKey",
+                        "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[NautilusCouponSDK.NautilusCouponInfo]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusCouponInfo",
+                            "printedName": "NautilusCouponSDK.NautilusCouponInfo",
+                            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponError",
+                        "printedName": "NautilusCouponSDK.NautilusCouponError",
+                        "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17NautilusCouponSDK0aB0C09getCommonB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "mangledName": "$s17NautilusCouponSDK0aB0C09getCommonB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "moduleName": "NautilusCouponSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -6093,7 +6359,201 @@
             "usr": "c:@CM@NautilusCouponSDK@objc(cs)NautilusCoupon(im)getCommonCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:completion:",
             "mangledName": "$s17NautilusCouponSDK0aB0C09getCommonB4List6offset5limit8useCache9couponIDs08categoryL08sortKeys13checkDateTime10completionySi_SiSbSaySiGSgANSayAA0aB7SortKeyCGSg10Foundation0Q0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusCouponSDK",
+            "deprecated": true,
             "objc_name": "getCommonCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCommonCouponList",
+            "printedName": "getCommonCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponSortKey",
+                        "printedName": "NautilusCouponSDK.NautilusCouponSortKey",
+                        "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusCouponSDK.NautilusCouponInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusCouponSDK.NautilusCouponInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusCouponInfo",
+                                "printedName": "NautilusCouponSDK.NautilusCouponInfo",
+                                "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NautilusCouponSDK@objc(cs)NautilusCoupon(im)getCommonCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
+            "mangledName": "$s17NautilusCouponSDK0aB0C09getCommonB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySi_SiSbSaySiGSgAOSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusCouponSDK",
+            "objc_name": "getCommonCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -6427,6 +6887,207 @@
             "usr": "s:17NautilusCouponSDK0aB0C010getPrivateB4List6offset5limit8useCache9couponIDs08categoryL08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0Q0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "mangledName": "$s17NautilusCouponSDK0aB0C010getPrivateB4List6offset5limit8useCache9couponIDs08categoryL08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0Q0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPrivateCouponList",
+            "printedName": "getPrivateCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponSortKey",
+                        "printedName": "NautilusCouponSDK.NautilusCouponSortKey",
+                        "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[NautilusCouponSDK.NautilusCouponInfo]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusCouponInfo",
+                            "printedName": "NautilusCouponSDK.NautilusCouponInfo",
+                            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponError",
+                        "printedName": "NautilusCouponSDK.NautilusCouponError",
+                        "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17NautilusCouponSDK0aB0C010getPrivateB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "mangledName": "$s17NautilusCouponSDK0aB0C010getPrivateB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "moduleName": "NautilusCouponSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -6603,7 +7264,201 @@
             "usr": "c:@CM@NautilusCouponSDK@objc(cs)NautilusCoupon(im)getPrivateCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:completion:",
             "mangledName": "$s17NautilusCouponSDK0aB0C010getPrivateB4List6offset5limit8useCache9couponIDs08categoryL08sortKeys13checkDateTime10completionySi_SiSbSaySiGSgANSayAA0aB7SortKeyCGSg10Foundation0Q0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusCouponSDK",
+            "deprecated": true,
             "objc_name": "getPrivateCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPrivateCouponList",
+            "printedName": "getPrivateCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponSortKey",
+                        "printedName": "NautilusCouponSDK.NautilusCouponSortKey",
+                        "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusCouponSDK.NautilusCouponInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusCouponSDK.NautilusCouponInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusCouponInfo",
+                                "printedName": "NautilusCouponSDK.NautilusCouponInfo",
+                                "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NautilusCouponSDK@objc(cs)NautilusCoupon(im)getPrivateCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
+            "mangledName": "$s17NautilusCouponSDK0aB0C010getPrivateB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySi_SiSbSaySiGSgAOSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusCouponSDK",
+            "objc_name": "getPrivateCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -6937,6 +7792,207 @@
             "usr": "s:17NautilusCouponSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache9couponIDs08categoryM08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0R0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "mangledName": "$s17NautilusCouponSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache9couponIDs08categoryM08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0R0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFavoriteShopCouponList",
+            "printedName": "getFavoriteShopCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponSortKey",
+                        "printedName": "NautilusCouponSDK.NautilusCouponSortKey",
+                        "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[NautilusCouponSDK.NautilusCouponInfo]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusCouponInfo",
+                            "printedName": "NautilusCouponSDK.NautilusCouponInfo",
+                            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponError",
+                        "printedName": "NautilusCouponSDK.NautilusCouponError",
+                        "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17NautilusCouponSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache9couponIDs08categoryM010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0T0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "mangledName": "$s17NautilusCouponSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache9couponIDs08categoryM010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0T0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "moduleName": "NautilusCouponSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -7113,7 +8169,201 @@
             "usr": "c:@CM@NautilusCouponSDK@objc(cs)NautilusCoupon(im)getFavoriteShopCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:completion:",
             "mangledName": "$s17NautilusCouponSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache9couponIDs08categoryM08sortKeys13checkDateTime10completionySi_SiSbSaySiGSgANSayAA0aB7SortKeyCGSg10Foundation0R0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusCouponSDK",
+            "deprecated": true,
             "objc_name": "getFavoriteShopCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFavoriteShopCouponList",
+            "printedName": "getFavoriteShopCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponSortKey",
+                        "printedName": "NautilusCouponSDK.NautilusCouponSortKey",
+                        "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusCouponSDK.NautilusCouponInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusCouponSDK.NautilusCouponInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusCouponInfo",
+                                "printedName": "NautilusCouponSDK.NautilusCouponInfo",
+                                "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NautilusCouponSDK@objc(cs)NautilusCoupon(im)getFavoriteShopCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
+            "mangledName": "$s17NautilusCouponSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache9couponIDs08categoryM010searchWord8sortKeys13checkDateTime10completionySi_SiSbSaySiGSgAOSSSgSayAA0aB7SortKeyCGSg10Foundation0T0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusCouponSDK",
+            "objc_name": "getFavoriteShopCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -7461,6 +8711,221 @@
             "usr": "s:17NautilusCouponSDK0aB0C08getPrizeB4List6offset5limit8useCache9couponIDs08categoryL08sortKeys13checkDateTime10exchangeID10completionySiSg_ANSbSgSaySiGSgAQSayAA0aB7SortKeyCGSg10Foundation0Q0VSgANys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "mangledName": "$s17NautilusCouponSDK0aB0C08getPrizeB4List6offset5limit8useCache9couponIDs08categoryL08sortKeys13checkDateTime10exchangeID10completionySiSg_ANSbSgSaySiGSgAQSayAA0aB7SortKeyCGSg10Foundation0Q0VSgANys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPrizeCouponList",
+            "printedName": "getPrizeCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:exchangeID:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponSortKey",
+                        "printedName": "NautilusCouponSDK.NautilusCouponSortKey",
+                        "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[NautilusCouponSDK.NautilusCouponInfo]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusCouponInfo",
+                            "printedName": "NautilusCouponSDK.NautilusCouponInfo",
+                            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponError",
+                        "printedName": "NautilusCouponSDK.NautilusCouponError",
+                        "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17NautilusCouponSDK0aB0C08getPrizeB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10exchangeID10completionySiSg_AOSbSgSaySiGSgARSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgAOys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "mangledName": "$s17NautilusCouponSDK0aB0C08getPrizeB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10exchangeID10completionySiSg_AOSbSgSaySiGSgARSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgAOys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "moduleName": "NautilusCouponSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -7643,7 +9108,207 @@
             "usr": "c:@CM@NautilusCouponSDK@objc(cs)NautilusCoupon(im)getPrizeCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:exchangeID:completion:",
             "mangledName": "$s17NautilusCouponSDK0aB0C08getPrizeB4List6offset5limit8useCache9couponIDs08categoryL08sortKeys13checkDateTime10exchangeID10completionySi_SiSbSaySiGSgAOSayAA0aB7SortKeyCGSg10Foundation0Q0VSgSiySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusCouponSDK",
+            "deprecated": true,
             "objc_name": "getPrizeCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:exchangeID:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPrizeCouponList",
+            "printedName": "getPrizeCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:exchangeID:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusCouponSDK.NautilusCouponSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCouponSortKey",
+                        "printedName": "NautilusCouponSDK.NautilusCouponSortKey",
+                        "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusCouponSDK.NautilusCouponInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusCouponSDK.NautilusCouponInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusCouponInfo",
+                                "printedName": "NautilusCouponSDK.NautilusCouponInfo",
+                                "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NautilusCouponSDK@objc(cs)NautilusCoupon(im)getPrizeCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:exchangeID:completion:",
+            "mangledName": "$s17NautilusCouponSDK0aB0C08getPrizeB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10exchangeID10completionySi_SiSbSaySiGSgAPSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgSiySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusCouponSDK",
+            "objc_name": "getPrizeCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:exchangeID:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -18405,7 +20070,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "StringLiteral",
-      "offset": 9446,
+      "offset": 9646,
       "length": 3,
       "value": "\"-\""
     },

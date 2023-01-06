@@ -384,7 +384,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時はクーポン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getCommonCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getCommonCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "getCommonCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)");
+/// 共通クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 取得件数の指定
+///
+/// \param useCache キャッシュを利用する場合 true, しない場合 false
+///
+/// \param couponIDs クーポンIDの配列
+///
+/// \param categoryIDs カテゴリIDの配列
+///
+/// \param searchWord 検索ワード
+///
+/// \param sortKeys <code>NautilusCouponSortKey</code> で定義された並び順
+///
+/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたクーポンを取得する
+///
+/// \param completion 成功時はクーポン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getCommonCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs searchWord:(NSString * _Nullable)searchWord sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 共通クーポン件数を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたクーポン件数を取得する
@@ -410,7 +431,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時はクーポン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getPrivateCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getPrivateCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "getPrivateCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)");
+/// 個人別クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 取得件数の指定
+///
+/// \param useCache キャッシュを利用する場合 true, しない場合 false
+///
+/// \param couponIDs クーポンIDの配列
+///
+/// \param categoryIDs カテゴリIDの配列
+///
+/// \param searchWord 検索ワード
+///
+/// \param sortKeys <code>NautilusCouponSortKey</code> で定義された並び順
+///
+/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたクーポンを取得する
+///
+/// \param completion 成功時はクーポン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getPrivateCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs searchWord:(NSString * _Nullable)searchWord sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 個人別クーポン件数を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたクーポン件数を取得する
@@ -436,7 +478,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時はクーポン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getFavoriteShopCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getFavoriteShopCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "getFavoriteShopCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)");
+/// お気に入り店舗クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 取得件数の指定
+///
+/// \param useCache キャッシュを利用する場合 true, しない場合 false
+///
+/// \param couponIDs クーポンIDの配列
+///
+/// \param categoryIDs カテゴリIDの配列
+///
+/// \param searchWord 検索ワード
+///
+/// \param sortKeys <code>NautilusCouponSortKey</code> で定義された並び順
+///
+/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたクーポンを取得する
+///
+/// \param completion 成功時はクーポン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getFavoriteShopCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs searchWord:(NSString * _Nullable)searchWord sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
 /// お気に入り店舗クーポン件数を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたクーポン件数を取得する
@@ -464,7 +527,30 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時はクーポン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getPrizeCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime exchangeID:(NSInteger)exchangeID completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)getPrizeCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime exchangeID:(NSInteger)exchangeID completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "getPrizeCouponList(offset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)");
+/// 景品クーポン一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 取得件数の指定
+///
+/// \param useCache キャッシュを利用する場合 true, しない場合 false
+///
+/// \param couponIDs クーポンIDの配列
+///
+/// \param categoryIDs カテゴリIDの配列
+///
+/// \param searchWord 検索ワード
+///
+/// \param sortKeys <code>NautilusCouponSortKey</code> で定義された並び順
+///
+/// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたクーポンを取得する
+///
+/// \param exchangeID 景品交換ID
+///
+/// \param completion 成功時はクーポン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getPrizeCouponListWithOffset:(NSInteger)offset limit:(NSInteger)limit useCache:(BOOL)useCache couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs categoryIDs:(NSArray<NSNumber *> * _Nullable)categoryIDs searchWord:(NSString * _Nullable)searchWord sortKeys:(NSArray<NautilusCouponSortKey *> * _Nullable)sortKeys checkDateTime:(NSDate * _Nullable)checkDateTime exchangeID:(NSInteger)exchangeID completion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 景品クーポン件数を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたクーポン件数を取得する

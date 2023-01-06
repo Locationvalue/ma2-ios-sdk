@@ -752,6 +752,71 @@
           },
           {
             "kind": "Var",
+            "name": "searchWord",
+            "printedName": "searchWord",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusContentSDK0aB4InfoC10searchWordSSSgvp",
+            "mangledName": "$s18NautilusContentSDK0aB4InfoC10searchWordSSSgvp",
+            "moduleName": "NautilusContentSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusContentSDK0aB4InfoC10searchWordSSSgvg",
+                "mangledName": "$s18NautilusContentSDK0aB4InfoC10searchWordSSSgvg",
+                "moduleName": "NautilusContentSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "contentImages",
             "printedName": "contentImages",
             "children": [
@@ -2563,6 +2628,206 @@
             "usr": "s:18NautilusContentSDK0aB0C09getCommonB4List6offset5limit8useCache10contentIDs08categoryL08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0Q0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "mangledName": "$s18NautilusContentSDK0aB0C09getCommonB4List6offset5limit8useCache10contentIDs08categoryL08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0Q0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusContentSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCommonContentList",
+            "printedName": "getCommonContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusContentSDK.NautilusContentSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusContentSDK.NautilusContentSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentSortKey",
+                        "printedName": "NautilusContentSDK.NautilusContentSortKey",
+                        "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[NautilusContentSDK.NautilusContentInfo]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusContentInfo",
+                            "printedName": "NautilusContentSDK.NautilusContentInfo",
+                            "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentInfo"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentError",
+                        "printedName": "NautilusContentSDK.NautilusContentError",
+                        "usr": "c:@M@NautilusContentSDK@E@NautilusContentError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18NautilusContentSDK0aB0C09getCommonB4List6offset5limit8useCache10contentIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "mangledName": "$s18NautilusContentSDK0aB0C09getCommonB4List6offset5limit8useCache10contentIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "moduleName": "NautilusContentSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -2738,7 +3003,200 @@
             "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContent(im)getCommonContentListWithOffset:limit:useCache:contentIDs:categoryIDs:sortKeys:checkDateTime:completion:",
             "mangledName": "$s18NautilusContentSDK0aB0C09getCommonB4List6offset5limit8useCache10contentIDs08categoryL08sortKeys13checkDateTime10completionySi_SiSbSaySiGSgANSayAA0aB7SortKeyCGSg10Foundation0Q0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusContentSDK",
+            "deprecated": true,
             "objc_name": "getCommonContentListWithOffset:limit:useCache:contentIDs:categoryIDs:sortKeys:checkDateTime:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCommonContentList",
+            "printedName": "getCommonContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusContentSDK.NautilusContentSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusContentSDK.NautilusContentSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentSortKey",
+                        "printedName": "NautilusContentSDK.NautilusContentSortKey",
+                        "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusContentSDK.NautilusContentInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusContentSDK.NautilusContentInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusContentInfo",
+                                "printedName": "NautilusContentSDK.NautilusContentInfo",
+                                "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContent(im)getCommonContentListWithOffset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
+            "mangledName": "$s18NautilusContentSDK0aB0C09getCommonB4List6offset5limit8useCache10contentIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySi_SiSbSaySiGSgAOSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusContentSDK",
+            "objc_name": "getCommonContentListWithOffset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -3069,6 +3527,206 @@
             "usr": "s:18NautilusContentSDK0aB0C010getPrivateB4List6offset5limit8useCache10contentIDs08categoryL08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0Q0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "mangledName": "$s18NautilusContentSDK0aB0C010getPrivateB4List6offset5limit8useCache10contentIDs08categoryL08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0Q0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusContentSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPrivateContentList",
+            "printedName": "getPrivateContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusContentSDK.NautilusContentSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusContentSDK.NautilusContentSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentSortKey",
+                        "printedName": "NautilusContentSDK.NautilusContentSortKey",
+                        "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[NautilusContentSDK.NautilusContentInfo]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusContentInfo",
+                            "printedName": "NautilusContentSDK.NautilusContentInfo",
+                            "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentInfo"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentError",
+                        "printedName": "NautilusContentSDK.NautilusContentError",
+                        "usr": "c:@M@NautilusContentSDK@E@NautilusContentError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18NautilusContentSDK0aB0C010getPrivateB4List6offset5limit8useCache10contentIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "mangledName": "$s18NautilusContentSDK0aB0C010getPrivateB4List6offset5limit8useCache10contentIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "moduleName": "NautilusContentSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -3244,7 +3902,200 @@
             "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContent(im)getPrivateContentListWithOffset:limit:useCache:contentIDs:categoryIDs:sortKeys:checkDateTime:completion:",
             "mangledName": "$s18NautilusContentSDK0aB0C010getPrivateB4List6offset5limit8useCache10contentIDs08categoryL08sortKeys13checkDateTime10completionySi_SiSbSaySiGSgANSayAA0aB7SortKeyCGSg10Foundation0Q0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusContentSDK",
+            "deprecated": true,
             "objc_name": "getPrivateContentListWithOffset:limit:useCache:contentIDs:categoryIDs:sortKeys:checkDateTime:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPrivateContentList",
+            "printedName": "getPrivateContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusContentSDK.NautilusContentSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusContentSDK.NautilusContentSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentSortKey",
+                        "printedName": "NautilusContentSDK.NautilusContentSortKey",
+                        "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusContentSDK.NautilusContentInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusContentSDK.NautilusContentInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusContentInfo",
+                                "printedName": "NautilusContentSDK.NautilusContentInfo",
+                                "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContent(im)getPrivateContentListWithOffset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
+            "mangledName": "$s18NautilusContentSDK0aB0C010getPrivateB4List6offset5limit8useCache10contentIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySi_SiSbSaySiGSgAOSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusContentSDK",
+            "objc_name": "getPrivateContentListWithOffset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -3575,6 +4426,206 @@
             "usr": "s:18NautilusContentSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache10contentIDs08categoryM08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0R0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "mangledName": "$s18NautilusContentSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache10contentIDs08categoryM08sortKeys13checkDateTime10completionySiSg_AMSbSgSaySiGSgAPSayAA0aB7SortKeyCGSg10Foundation0R0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusContentSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFavoriteShopContentList",
+            "printedName": "getFavoriteShopContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusContentSDK.NautilusContentSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusContentSDK.NautilusContentSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentSortKey",
+                        "printedName": "NautilusContentSDK.NautilusContentSortKey",
+                        "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[NautilusContentSDK.NautilusContentInfo]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusContentInfo",
+                            "printedName": "NautilusContentSDK.NautilusContentInfo",
+                            "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentInfo"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentError",
+                        "printedName": "NautilusContentSDK.NautilusContentError",
+                        "usr": "c:@M@NautilusContentSDK@E@NautilusContentError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18NautilusContentSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache10contentIDs08categoryM010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0T0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "mangledName": "$s18NautilusContentSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache10contentIDs08categoryM010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0T0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "moduleName": "NautilusContentSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -3750,7 +4801,200 @@
             "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContent(im)getFavoriteShopContentListWithOffset:limit:useCache:contentIDs:categoryIDs:sortKeys:checkDateTime:completion:",
             "mangledName": "$s18NautilusContentSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache10contentIDs08categoryM08sortKeys13checkDateTime10completionySi_SiSbSaySiGSgANSayAA0aB7SortKeyCGSg10Foundation0R0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusContentSDK",
+            "deprecated": true,
             "objc_name": "getFavoriteShopContentListWithOffset:limit:useCache:contentIDs:categoryIDs:sortKeys:checkDateTime:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFavoriteShopContentList",
+            "printedName": "getFavoriteShopContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusContentSDK.NautilusContentSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusContentSDK.NautilusContentSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentSortKey",
+                        "printedName": "NautilusContentSDK.NautilusContentSortKey",
+                        "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusContentSDK.NautilusContentInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusContentSDK.NautilusContentInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusContentInfo",
+                                "printedName": "NautilusContentSDK.NautilusContentInfo",
+                                "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContent(im)getFavoriteShopContentListWithOffset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
+            "mangledName": "$s18NautilusContentSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache10contentIDs08categoryM010searchWord8sortKeys13checkDateTime10completionySi_SiSbSaySiGSgAOSSSgSayAA0aB7SortKeyCGSg10Foundation0T0VSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusContentSDK",
+            "objc_name": "getFavoriteShopContentListWithOffset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -8196,7 +9440,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentInfo.swift",
       "kind": "StringLiteral",
-      "offset": 4075,
+      "offset": 4179,
       "length": 3,
       "value": "\"-\""
     },
@@ -8252,28 +9496,28 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 42181,
+      "offset": 55598,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 42200,
+      "offset": 55617,
       "length": 12,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 42181,
+      "offset": 55598,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 42200,
+      "offset": 55617,
       "length": 12,
       "value": "2"
     },
