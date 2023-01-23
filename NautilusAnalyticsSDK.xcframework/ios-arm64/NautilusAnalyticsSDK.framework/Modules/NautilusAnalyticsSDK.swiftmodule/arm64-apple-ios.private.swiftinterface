@@ -46,7 +46,7 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   final public var plugins: [NautilusAnalyticsSDK.NautilusAnalyticsPlugin] {
     get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func analytics() -> NautilusAnalyticsSDK.NautilusAnalytics
   @objc(analyticsAppNamed:) public static func analytics(appName: Swift.String) -> NautilusAnalyticsSDK.NautilusAnalytics
   @objc final public func addPlugin(_ plugin: NautilusAnalyticsSDK.NautilusAnalyticsPlugin)

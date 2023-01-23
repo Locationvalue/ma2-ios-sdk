@@ -934,7 +934,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(application:)",
+            "printedName": "initialize(application:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -946,14 +946,53 @@
                 "name": "NautilusApp",
                 "printedName": "NautilusCoreSDK.NautilusApp",
                 "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusApp"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusAnalyticsSDK@objc(cs)NautilusAnalytics(cm)initializeWithApplication:",
-            "mangledName": "$s20NautilusAnalyticsSDK0aB0C10initialize11applicationy0a4CoreC00A3AppC_tFZ",
+            "usr": "c:@M@NautilusAnalyticsSDK@objc(cs)NautilusAnalytics(cm)initializeWithApplication:completion:",
+            "mangledName": "$s20NautilusAnalyticsSDK0aB0C10initialize11application10completiony0a4CoreC00A3AppC_ySb_So7NSErrorCSgtctFZ",
             "moduleName": "NautilusAnalyticsSDK",
             "static": true,
-            "objc_name": "initializeWithApplication:",
+            "objc_name": "initializeWithApplication:completion:",
             "declAttributes": [
               "Final",
               "ObjC",
@@ -9869,28 +9908,28 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalytics.swift",
       "kind": "BooleanLiteral",
-      "offset": 1721,
+      "offset": 1457,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalytics.swift",
       "kind": "Array",
-      "offset": 1941,
+      "offset": 1677,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalytics.swift",
       "kind": "BooleanLiteral",
-      "offset": 2407,
+      "offset": 2143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalytics.swift",
       "kind": "Array",
-      "offset": 2650,
+      "offset": 2386,
       "length": 2,
       "value": "[]"
     },

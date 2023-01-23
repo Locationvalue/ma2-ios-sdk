@@ -284,6 +284,7 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class NautilusApp;
 @protocol NautilusCouponDelegate;
 @class NautilusCouponRouter;
+@class NSError;
 @class UIViewController;
 @class NautilusCouponCategoryInfo;
 enum NautilusCouponPublishType : NSInteger;
@@ -304,7 +305,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// クーポン情報を利用したアクションを実装するための<code>delegate</code>
 @property (nonatomic, weak) id <NautilusCouponDelegate> _Nullable delegate;
 @property (nonatomic, readonly, strong) NautilusCouponRouter * _Nonnull router;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusCoupon * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
 + (NautilusCoupon * _Nonnull)couponAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// クーポン一覧画面を返す
@@ -359,7 +360,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @class NautilusCouponSortKey;
 @class NSDate;
 @class NautilusCouponInfo;
-@class NSError;
 @class NautilusCouponUseInfo;
 @class NautilusCouponPublishTrigger;
 @class NautilusCouponLog;
@@ -1275,6 +1275,7 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class NautilusApp;
 @protocol NautilusCouponDelegate;
 @class NautilusCouponRouter;
+@class NSError;
 @class UIViewController;
 @class NautilusCouponCategoryInfo;
 enum NautilusCouponPublishType : NSInteger;
@@ -1295,7 +1296,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// クーポン情報を利用したアクションを実装するための<code>delegate</code>
 @property (nonatomic, weak) id <NautilusCouponDelegate> _Nullable delegate;
 @property (nonatomic, readonly, strong) NautilusCouponRouter * _Nonnull router;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusCoupon * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
 + (NautilusCoupon * _Nonnull)couponAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// クーポン一覧画面を返す
@@ -1350,7 +1351,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @class NautilusCouponSortKey;
 @class NSDate;
 @class NautilusCouponInfo;
-@class NSError;
 @class NautilusCouponUseInfo;
 @class NautilusCouponPublishTrigger;
 @class NautilusCouponLog;

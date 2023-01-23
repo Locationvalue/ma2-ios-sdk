@@ -258,8 +258,8 @@ using UInt = size_t;
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
-@class NSDate;
 @class NSError;
+@class NSDate;
 
 SWIFT_CLASS("_TtC21NautilusServerTimeSDK18NautilusServerTime")
 @interface NautilusServerTime : NSObject <NautilusFeature>
@@ -273,7 +273,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 @property (nonatomic, strong) NautilusApp * _Nonnull app;
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusServerTime * _Nonnull)serverTime SWIFT_WARN_UNUSED_RESULT;
 + (NautilusServerTime * _Nonnull)serverTimeAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// サーバー時刻の更新を行う

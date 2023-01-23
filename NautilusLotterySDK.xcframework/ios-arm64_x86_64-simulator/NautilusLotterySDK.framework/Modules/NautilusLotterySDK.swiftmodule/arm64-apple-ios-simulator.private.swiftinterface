@@ -49,7 +49,7 @@ public let NautilusLotteryErrorDomain: Swift.String
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func lottery() -> NautilusLotterySDK.NautilusLottery
   @objc(lotteryAppNamed:) public static func lottery(appName: Swift.String) -> NautilusLotterySDK.NautilusLottery
   final public func getLotteryList(lotteryID: Swift.Int?, ignoreMissed: Swift.Bool?, completion: @escaping (Swift.Result<[NautilusLotterySDK.NautilusLotteryInfo], NautilusLotterySDK.NautilusLotteryError>) -> Swift.Void)

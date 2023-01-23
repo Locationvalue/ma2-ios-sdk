@@ -266,11 +266,11 @@ typedef SWIFT_ENUM(NSInteger, NautilusFavoriteShopSortOrder, open) {
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
+@class NSError;
 @class UINavigationController;
 @class UIViewController;
 @class NautilusLocation;
 @class NautilusShopInfo;
-@class NSError;
 @class NautilusShopSearchTagInfo;
 
 /// アプリとのインターフェース
@@ -286,7 +286,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusShopSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusShop * _Nonnull)shop SWIFT_WARN_UNUSED_RESULT;
 + (NautilusShop * _Nonnull)shopAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 店舗検索画面を返却する

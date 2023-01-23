@@ -60,7 +60,7 @@ extension Foundation.DateFormatter {
   }
   @objc final public var app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func serverTime() -> NautilusServerTimeSDK.NautilusServerTime
   @objc(serverTimeAppNamed:) public static func serverTime(appName: Swift.String) -> NautilusServerTimeSDK.NautilusServerTime
   final public func now() -> Foundation.Date?

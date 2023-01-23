@@ -66,7 +66,7 @@ import _StringProcessing
   @objc final public var isActive: Swift.Bool {
     get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func config() -> NautilusConfigSDK.NautilusConfig
   @objc(configAppNamed:) public static func config(appName: Swift.String) -> NautilusConfigSDK.NautilusConfig
   @objc final public func activate()

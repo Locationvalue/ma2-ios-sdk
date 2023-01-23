@@ -90,7 +90,7 @@ public typealias NautilusNotificationHandlerAction = (NautilusNotificationSDK.Na
     get
   }
   @objc final public let notificationHandler: NautilusNotificationSDK.NautilusNotificationHandler
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func notification() -> NautilusNotificationSDK.NautilusNotification
   @objc(notificationAppNamed:) public static func notification(appName: Swift.String) -> NautilusNotificationSDK.NautilusNotification
   @objc final public func removePushDeviceID()

@@ -257,6 +257,7 @@ using UInt = size_t;
 @class NautilusComponentDependency;
 @class NSString;
 @class NautilusApp;
+@class NSError;
 @protocol NautilusAnalyticsPlugin;
 enum NautilusAnalyticsEvent : NSInteger;
 
@@ -272,7 +273,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusAnalyticsSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusAnalytics * _Nonnull)analytics SWIFT_WARN_UNUSED_RESULT;
 + (NautilusAnalytics * _Nonnull)analyticsAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// プラグインの追加
@@ -1017,6 +1018,7 @@ using UInt = size_t;
 @class NautilusComponentDependency;
 @class NSString;
 @class NautilusApp;
+@class NSError;
 @protocol NautilusAnalyticsPlugin;
 enum NautilusAnalyticsEvent : NSInteger;
 
@@ -1032,7 +1034,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusAnalyticsSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusAnalytics * _Nonnull)analytics SWIFT_WARN_UNUSED_RESULT;
 + (NautilusAnalytics * _Nonnull)analyticsAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// プラグインの追加

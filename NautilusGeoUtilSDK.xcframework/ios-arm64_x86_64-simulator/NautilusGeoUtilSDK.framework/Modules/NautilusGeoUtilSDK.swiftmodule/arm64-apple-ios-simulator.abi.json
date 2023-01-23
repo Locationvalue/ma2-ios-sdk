@@ -3847,7 +3847,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(application:)",
+            "printedName": "initialize(application:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3859,14 +3859,53 @@
                 "name": "NautilusApp",
                 "printedName": "NautilusCoreSDK.NautilusApp",
                 "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusApp"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusGeoUtilSDK@objc(cs)NautilusGeoUtil(cm)initializeWithApplication:",
-            "mangledName": "$s18NautilusGeoUtilSDK0abC0C10initialize11applicationy0a4CoreD00A3AppC_tFZ",
+            "usr": "c:@M@NautilusGeoUtilSDK@objc(cs)NautilusGeoUtil(cm)initializeWithApplication:completion:",
+            "mangledName": "$s18NautilusGeoUtilSDK0abC0C10initialize11application10completiony0a4CoreD00A3AppC_ySb_So7NSErrorCSgtctFZ",
             "moduleName": "NautilusGeoUtilSDK",
             "static": true,
-            "objc_name": "initializeWithApplication:",
+            "objc_name": "initializeWithApplication:completion:",
             "declAttributes": [
               "Final",
               "ObjC",

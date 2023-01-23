@@ -260,8 +260,8 @@ using UInt = size_t;
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
-@class NautilusBannerCategory;
 @class NSError;
+@class NautilusBannerCategory;
 @class NautilusBannerInfo;
 @class NautilusBannerLog;
 
@@ -278,7 +278,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusBannerSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusBanner * _Nonnull)banner SWIFT_WARN_UNUSED_RESULT;
 + (NautilusBanner * _Nonnull)bannerAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// バナーのカテゴリー一覧を取得する

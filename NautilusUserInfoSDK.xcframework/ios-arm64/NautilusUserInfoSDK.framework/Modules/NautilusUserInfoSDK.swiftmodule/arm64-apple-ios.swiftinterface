@@ -138,7 +138,7 @@ import _StringProcessing
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func userInfo() -> NautilusUserInfoSDK.NautilusUserInfo
   @objc(userInfoAppNamed:) public static func userInfo(appName: Swift.String) -> NautilusUserInfoSDK.NautilusUserInfo
   @objc final public func loadUserAttribute(completion: @escaping (NautilusUserInfoSDK.NautilusUserAttribute?, Foundation.NSError?) -> Swift.Void)

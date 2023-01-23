@@ -432,7 +432,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusUserInfoSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusUserInfo * _Nonnull)userInfo SWIFT_WARN_UNUSED_RESULT;
 + (NautilusUserInfo * _Nonnull)userInfoAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 会員属性の取得

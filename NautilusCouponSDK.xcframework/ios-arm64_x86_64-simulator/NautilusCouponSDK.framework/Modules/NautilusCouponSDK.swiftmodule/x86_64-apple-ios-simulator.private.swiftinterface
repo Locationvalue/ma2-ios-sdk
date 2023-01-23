@@ -141,7 +141,7 @@ public let NautilusCouponErrorDomain: Swift.String
   }
   @objc weak final public var delegate: NautilusCouponSDK.NautilusCouponDelegate?
   @objc final public let router: NautilusCouponSDK.NautilusCouponRouter
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func coupon() -> NautilusCouponSDK.NautilusCoupon
   @objc(couponAppNamed:) public static func coupon(appName: Swift.String) -> NautilusCouponSDK.NautilusCoupon
   @objc final public func instantiateCouponListViewController() -> UIKit.UIViewController

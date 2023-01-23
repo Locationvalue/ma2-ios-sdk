@@ -260,8 +260,8 @@ using UInt = size_t;
 @class NautilusComponentDependency;
 @class NSString;
 @class NautilusApp;
-@protocol NautilusUser;
 @class NSError;
+@protocol NautilusUser;
 @class UIView;
 @class NautilusUserInfoView;
 @protocol NautilusUserInfoCodeImageProvider;
@@ -278,7 +278,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusIdentifySDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusIdentify * _Nonnull)identify SWIFT_WARN_UNUSED_RESULT;
 + (NautilusIdentify * _Nonnull)identifyAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 指定されたIDのユーザーに切り替える
@@ -638,8 +638,8 @@ using UInt = size_t;
 @class NautilusComponentDependency;
 @class NSString;
 @class NautilusApp;
-@protocol NautilusUser;
 @class NSError;
+@protocol NautilusUser;
 @class UIView;
 @class NautilusUserInfoView;
 @protocol NautilusUserInfoCodeImageProvider;
@@ -656,7 +656,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusIdentifySDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusIdentify * _Nonnull)identify SWIFT_WARN_UNUSED_RESULT;
 + (NautilusIdentify * _Nonnull)identifyAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 指定されたIDのユーザーに切り替える

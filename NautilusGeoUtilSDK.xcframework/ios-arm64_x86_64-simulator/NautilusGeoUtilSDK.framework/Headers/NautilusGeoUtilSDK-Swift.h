@@ -278,9 +278,9 @@ static NSString * _Nonnull const GeoUtilApiErrorDomain = @"NautilusGeoUtilSDK.Ge
 @class NSString;
 @class NautilusApp;
 @class NautilusComponentDependency;
+@class NSError;
 enum NautilusPrefectureCode : NSInteger;
 @class NautilusMunicipalityCode;
-@class NSError;
 
 /// アプリとのインターフェースクラス：都道府県、市区町村情報
 SWIFT_CLASS("_TtC18NautilusGeoUtilSDK15NautilusGeoUtil")
@@ -295,7 +295,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, copy) NSString * _Nullable name;
 /// <code>NautilusGeoUtilSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusGeoUtil * _Nonnull)geoUtil SWIFT_WARN_UNUSED_RESULT;
 + (NautilusGeoUtil * _Nonnull)geoUtilAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 市区町村データを取得する
@@ -716,9 +716,9 @@ static NSString * _Nonnull const GeoUtilApiErrorDomain = @"NautilusGeoUtilSDK.Ge
 @class NSString;
 @class NautilusApp;
 @class NautilusComponentDependency;
+@class NSError;
 enum NautilusPrefectureCode : NSInteger;
 @class NautilusMunicipalityCode;
-@class NSError;
 
 /// アプリとのインターフェースクラス：都道府県、市区町村情報
 SWIFT_CLASS("_TtC18NautilusGeoUtilSDK15NautilusGeoUtil")
@@ -733,7 +733,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, copy) NSString * _Nullable name;
 /// <code>NautilusGeoUtilSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusGeoUtil * _Nonnull)geoUtil SWIFT_WARN_UNUSED_RESULT;
 + (NautilusGeoUtil * _Nonnull)geoUtilAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 市区町村データを取得する

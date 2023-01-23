@@ -260,13 +260,13 @@ using UInt = size_t;
 @class NautilusComponentDependency;
 @class NautilusApp;
 @protocol NautilusContentDelegate;
+@class NSError;
 @class UIViewController;
 @class NautilusContentCategoryInfo;
 enum NautilusContentType : NSInteger;
 @class NautilusContentSortKey;
 @class NSDate;
 @class NautilusContentInfo;
-@class NSError;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC18NautilusContentSDK15NautilusContent")
@@ -291,7 +291,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///   </li>
 /// </ul>
 @property (nonatomic, weak) id <NautilusContentDelegate> _Nullable delegate;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusContent * _Nonnull)content SWIFT_WARN_UNUSED_RESULT;
 + (NautilusContent * _Nonnull)shopAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// コンテンツ一覧画面を返す
@@ -913,13 +913,13 @@ using UInt = size_t;
 @class NautilusComponentDependency;
 @class NautilusApp;
 @protocol NautilusContentDelegate;
+@class NSError;
 @class UIViewController;
 @class NautilusContentCategoryInfo;
 enum NautilusContentType : NSInteger;
 @class NautilusContentSortKey;
 @class NSDate;
 @class NautilusContentInfo;
-@class NSError;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC18NautilusContentSDK15NautilusContent")
@@ -944,7 +944,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///   </li>
 /// </ul>
 @property (nonatomic, weak) id <NautilusContentDelegate> _Nullable delegate;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusContent * _Nonnull)content SWIFT_WARN_UNUSED_RESULT;
 + (NautilusContent * _Nonnull)shopAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// コンテンツ一覧画面を返す

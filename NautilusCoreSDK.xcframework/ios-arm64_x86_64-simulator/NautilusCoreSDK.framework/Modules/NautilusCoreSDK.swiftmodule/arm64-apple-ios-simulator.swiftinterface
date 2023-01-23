@@ -34,14 +34,13 @@ final public class NautilusRequestPolicy : NautilusCoreSDK.RequestPolicy {
 }
 extension Foundation.Notification {
   public enum NautilusApp {
-    public static let featureInitializationSuccess: Foundation.Notification.Name
     public enum UserInfoKey {
-      public static let feature: Swift.String
     }
   }
 }
+public typealias NautilusFeatureInitializationCompletion = (Swift.Bool, Foundation.NSError?) -> Swift.Void
 @objc public protocol NautilusFeature : NautilusContainerSDK.NautilusComponent {
-  @objc static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc static var configFilename: Swift.String? { get }
   @objc var app: NautilusCoreSDK.NautilusApp { get }
   @objc var featureStatus: NautilusCoreSDK.NautilusFeatureStatus { get }

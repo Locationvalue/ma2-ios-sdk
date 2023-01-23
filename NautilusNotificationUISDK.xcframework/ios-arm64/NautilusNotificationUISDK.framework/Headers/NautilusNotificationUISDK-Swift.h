@@ -279,6 +279,7 @@ SWIFT_PROTOCOL("_TtP25NautilusNotificationUISDK46NautilusNotificationListViewCon
 @end
 
 @class NautilusComponentDependency;
+@class NSError;
 
 SWIFT_CLASS("_TtC25NautilusNotificationUISDK22NautilusNotificationUI")
 @interface NautilusNotificationUI : NSObject <NautilusFeature>
@@ -292,7 +293,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusNotificationUISDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusNotificationUI * _Nonnull)notificationUI SWIFT_WARN_UNUSED_RESULT;
 + (NautilusNotificationUI * _Nonnull)notificationUIAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// プッシュ通知一覧画面を表示する

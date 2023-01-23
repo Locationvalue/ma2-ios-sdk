@@ -121,7 +121,7 @@ extension NautilusGeoUtilSDK.NautilusPrefectureCode {
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func geoUtil() -> NautilusGeoUtilSDK.NautilusGeoUtil
   @objc(geoUtilAppNamed:) public static func geoUtil(appName: Swift.String) -> NautilusGeoUtilSDK.NautilusGeoUtil
   final public func getMunicipalityList(prefectureCode: NautilusGeoUtilSDK.NautilusPrefectureCode, completion: @escaping (Swift.Result<[NautilusGeoUtilSDK.NautilusMunicipalityCode], NautilusGeoUtilSDK.GeoUtilApiError>) -> Swift.Void)

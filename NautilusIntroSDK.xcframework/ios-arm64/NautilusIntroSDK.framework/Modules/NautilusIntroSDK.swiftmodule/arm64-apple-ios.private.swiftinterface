@@ -33,7 +33,7 @@ import _StringProcessing
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func introduction() -> NautilusIntroSDK.NautilusIntroduction
   @objc(introductionAppNamed:) public static func introduction(appName: Swift.String) -> NautilusIntroSDK.NautilusIntroduction
   @objc final public func presentIntroduction(in viewController: UIKit.UIViewController, introList: NautilusIntroSDK.NautilusIntroductionList, animated: Swift.Bool, delegate: NautilusIntroSDK.NautilusIntroductionDelegate?)

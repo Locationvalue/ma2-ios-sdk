@@ -390,6 +390,7 @@ SWIFT_PROTOCOL("_TtP23NautilusInAppMessageSDK38NautilusInAppMessageControllerDel
 
 @class NautilusComponentDependency;
 @class NautilusApp;
+@class NSError;
 
 SWIFT_CLASS("_TtC23NautilusInAppMessageSDK27NautilusInAppMessageFeature")
 @interface NautilusInAppMessageFeature : NSObject <NautilusFeature>
@@ -403,7 +404,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusInAppMessageSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessage SWIFT_WARN_UNUSED_RESULT;
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessageAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 - (void)triggerWithEventID:(NSString * _Nonnull)eventID;
@@ -829,6 +830,7 @@ SWIFT_PROTOCOL("_TtP23NautilusInAppMessageSDK38NautilusInAppMessageControllerDel
 
 @class NautilusComponentDependency;
 @class NautilusApp;
+@class NSError;
 
 SWIFT_CLASS("_TtC23NautilusInAppMessageSDK27NautilusInAppMessageFeature")
 @interface NautilusInAppMessageFeature : NSObject <NautilusFeature>
@@ -842,7 +844,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusInAppMessageSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessage SWIFT_WARN_UNUSED_RESULT;
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessageAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 - (void)triggerWithEventID:(NSString * _Nonnull)eventID;

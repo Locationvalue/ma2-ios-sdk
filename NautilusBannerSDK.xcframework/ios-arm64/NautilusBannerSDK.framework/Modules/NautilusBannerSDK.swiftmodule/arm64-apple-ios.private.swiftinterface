@@ -119,7 +119,7 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func banner() -> NautilusBannerSDK.NautilusBanner
   @objc(bannerAppNamed:) public static func banner(appName: Swift.String) -> NautilusBannerSDK.NautilusBanner
   final public func getBannerCategoryList(completion: @escaping (Swift.Result<[NautilusBannerSDK.NautilusBannerCategory], NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)

@@ -659,7 +659,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(application:)",
+            "printedName": "initialize(application:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -671,11 +671,50 @@
                 "name": "NautilusApp",
                 "printedName": "NautilusCoreSDK.NautilusApp",
                 "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusApp"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusFeature(cm)initializeWithApplication:",
-            "mangledName": "$s15NautilusCoreSDK0A7FeatureP10initialize11applicationyAA0A3AppC_tFZ",
+            "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusFeature(cm)initializeWithApplication:completion:",
+            "mangledName": "$s15NautilusCoreSDK0A7FeatureP10initialize11application10completionyAA0A3AppC_ySb_So7NSErrorCSgtctFZ",
             "moduleName": "NautilusCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.NautilusFeature>",
             "sugared_genericSig": "<Self where Self : NautilusCoreSDK.NautilusFeature>",
@@ -12829,105 +12868,9 @@
             "printedName": "NautilusApp",
             "children": [
               {
-                "kind": "Var",
-                "name": "featureInitializationSuccess",
-                "printedName": "featureInitializationSuccess",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Name",
-                    "printedName": "Foundation.NSNotification.Name",
-                    "usr": "c:@T@NSNotificationName"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:10Foundation12NotificationV15NautilusCoreSDKE0C3AppO28featureInitializationSuccessSo18NSNotificationNameavpZ",
-                "mangledName": "$s10Foundation12NotificationV15NautilusCoreSDKE0C3AppO28featureInitializationSuccessSo18NSNotificationNameavpZ",
-                "moduleName": "NautilusCoreSDK",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Name",
-                        "printedName": "Foundation.NSNotification.Name",
-                        "usr": "c:@T@NSNotificationName"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:10Foundation12NotificationV15NautilusCoreSDKE0C3AppO28featureInitializationSuccessSo18NSNotificationNameavgZ",
-                    "mangledName": "$s10Foundation12NotificationV15NautilusCoreSDKE0C3AppO28featureInitializationSuccessSo18NSNotificationNameavgZ",
-                    "moduleName": "NautilusCoreSDK",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
                 "kind": "TypeDecl",
                 "name": "UserInfoKey",
                 "printedName": "UserInfoKey",
-                "children": [
-                  {
-                    "kind": "Var",
-                    "name": "feature",
-                    "printedName": "feature",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Var",
-                    "usr": "s:10Foundation12NotificationV15NautilusCoreSDKE0C3AppO11UserInfoKeyO7featureSSvpZ",
-                    "mangledName": "$s10Foundation12NotificationV15NautilusCoreSDKE0C3AppO11UserInfoKeyO7featureSSvpZ",
-                    "moduleName": "NautilusCoreSDK",
-                    "static": true,
-                    "declAttributes": [
-                      "HasInitialValue",
-                      "HasStorage",
-                      "AccessControl"
-                    ],
-                    "isLet": true,
-                    "hasStorage": true,
-                    "accessors": [
-                      {
-                        "kind": "Accessor",
-                        "name": "Get",
-                        "printedName": "Get()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "declKind": "Accessor",
-                        "usr": "s:10Foundation12NotificationV15NautilusCoreSDKE0C3AppO11UserInfoKeyO7featureSSvgZ",
-                        "mangledName": "$s10Foundation12NotificationV15NautilusCoreSDKE0C3AppO11UserInfoKeyO7featureSSvgZ",
-                        "moduleName": "NautilusCoreSDK",
-                        "static": true,
-                        "implicit": true,
-                        "accessorKind": "get"
-                      }
-                    ]
-                  }
-                ],
                 "declKind": "Enum",
                 "usr": "s:10Foundation12NotificationV15NautilusCoreSDKE0C3AppO11UserInfoKeyO",
                 "mangledName": "$s10Foundation12NotificationV15NautilusCoreSDKE0C3AppO11UserInfoKeyO",
@@ -16472,57 +16415,43 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
-      "kind": "StringLiteral",
-      "offset": 330,
-      "length": 41,
-      "value": "\"NautilusAppFeatureInitializationSuccess\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
-      "kind": "StringLiteral",
-      "offset": 456,
-      "length": 9,
-      "value": "\"feature\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
-      "offset": 1905,
+      "offset": 1978,
       "length": 11,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
-      "offset": 1947,
+      "offset": 2020,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
-      "offset": 2002,
+      "offset": 2075,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
-      "offset": 1905,
+      "offset": 1978,
       "length": 11,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
-      "offset": 1947,
+      "offset": 2020,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
-      "offset": 2002,
+      "offset": 2075,
       "length": 10,
       "value": "3"
     },

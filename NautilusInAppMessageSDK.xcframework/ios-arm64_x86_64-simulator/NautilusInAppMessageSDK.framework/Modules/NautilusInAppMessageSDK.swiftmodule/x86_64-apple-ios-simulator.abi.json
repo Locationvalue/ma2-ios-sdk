@@ -1843,7 +1843,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(application:)",
+            "printedName": "initialize(application:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1855,14 +1855,53 @@
                 "name": "NautilusApp",
                 "printedName": "NautilusCoreSDK.NautilusApp",
                 "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusApp"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusInAppMessageFeature(cm)initializeWithApplication:",
-            "mangledName": "$s23NautilusInAppMessageSDK0abcD7FeatureC10initialize11applicationy0a4CoreE00aC0C_tFZ",
+            "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusInAppMessageFeature(cm)initializeWithApplication:completion:",
+            "mangledName": "$s23NautilusInAppMessageSDK0abcD7FeatureC10initialize11application10completiony0a4CoreE00aC0C_ySb_So7NSErrorCSgtctFZ",
             "moduleName": "NautilusInAppMessageSDK",
             "static": true,
-            "objc_name": "initializeWithApplication:",
+            "objc_name": "initializeWithApplication:completion:",
             "declAttributes": [
               "Final",
               "ObjC",

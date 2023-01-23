@@ -258,6 +258,7 @@ using UInt = size_t;
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
+@class NSError;
 @class UIViewController;
 @class NautilusIntroductionList;
 @protocol NautilusIntroductionDelegate;
@@ -275,7 +276,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// <code>NautilusIntroSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusIntroduction * _Nonnull)introduction SWIFT_WARN_UNUSED_RESULT;
 + (NautilusIntroduction * _Nonnull)introductionAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// イントロ画面を表示する

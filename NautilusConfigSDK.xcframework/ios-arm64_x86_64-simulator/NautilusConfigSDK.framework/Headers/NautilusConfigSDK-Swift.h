@@ -259,6 +259,7 @@ using UInt = size_t;
 @class NautilusComponentDependency;
 @class NSString;
 @class NautilusApp;
+@class NSError;
 @protocol NautilusConfigValue;
 
 SWIFT_CLASS("_TtC17NautilusConfigSDK14NautilusConfig")
@@ -275,7 +276,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 /// 設定値がDBに読み込まれている
 @property (nonatomic, readonly) BOOL isActive;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusConfig * _Nonnull)config SWIFT_WARN_UNUSED_RESULT;
 + (NautilusConfig * _Nonnull)configAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 - (void)activate;
@@ -616,6 +617,7 @@ using UInt = size_t;
 @class NautilusComponentDependency;
 @class NSString;
 @class NautilusApp;
+@class NSError;
 @protocol NautilusConfigValue;
 
 SWIFT_CLASS("_TtC17NautilusConfigSDK14NautilusConfig")
@@ -632,7 +634,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 /// 設定値がDBに読み込まれている
 @property (nonatomic, readonly) BOOL isActive;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusConfig * _Nonnull)config SWIFT_WARN_UNUSED_RESULT;
 + (NautilusConfig * _Nonnull)configAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 - (void)activate;

@@ -51,7 +51,7 @@ import _StringProcessing
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func shop() -> NautilusShopSDK.NautilusShop
   @objc(shopAppNamed:) public static func shop(appName: Swift.String) -> NautilusShopSDK.NautilusShop
   @objc final public func createShop() -> UIKit.UINavigationController

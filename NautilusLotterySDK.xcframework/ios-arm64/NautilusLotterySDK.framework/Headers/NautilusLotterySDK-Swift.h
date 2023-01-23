@@ -257,8 +257,8 @@ using UInt = size_t;
 @class NSString;
 @class NautilusComponentDependency;
 @class NautilusApp;
-@class NautilusLotteryInfo;
 @class NSError;
+@class NautilusLotteryInfo;
 @class NSDate;
 @class NautilusLotteryIntervalCheckResult;
 @class NautilusLotteryResult;
@@ -276,7 +276,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, copy) NSString * _Nullable name;
 /// <code>NautilusLotterySDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusLottery * _Nonnull)lottery SWIFT_WARN_UNUSED_RESULT;
 + (NautilusLottery * _Nonnull)lotteryAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// 抽選一覧を取得する

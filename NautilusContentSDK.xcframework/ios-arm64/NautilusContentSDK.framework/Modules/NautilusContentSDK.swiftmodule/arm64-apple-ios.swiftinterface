@@ -64,7 +64,7 @@ import _StringProcessing
     @objc get
   }
   @objc weak final public var delegate: NautilusContentSDK.NautilusContentDelegate?
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp)
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func content() -> NautilusContentSDK.NautilusContent
   @objc(shopAppNamed:) public static func content(appName: Swift.String) -> NautilusContentSDK.NautilusContent
   @objc final public func instantiateContentListViewController() -> UIKit.UIViewController

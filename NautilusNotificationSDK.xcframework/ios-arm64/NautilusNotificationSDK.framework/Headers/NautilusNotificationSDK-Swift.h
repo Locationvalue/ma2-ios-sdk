@@ -259,8 +259,8 @@ using UInt = size_t;
 @class NSString;
 @class NautilusApp;
 @class NautilusNotificationHandler;
-@class NSData;
 @class NSError;
+@class NSData;
 @class NautilusRegistrationTarget;
 @class NautilusRemoteMessage;
 @class NSDate;
@@ -278,7 +278,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 /// <code>NautilusNotificationSDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
 @property (nonatomic, readonly, strong) NautilusNotificationHandler * _Nonnull notificationHandler;
-+ (void)initializeWithApplication:(NautilusApp * _Nonnull)application;
++ (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusNotification * _Nonnull)notification SWIFT_WARN_UNUSED_RESULT;
 + (NautilusNotification * _Nonnull)notificationAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 - (void)removePushDeviceID;
