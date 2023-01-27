@@ -2452,14 +2452,15 @@
             "moduleName": "NautilusIdentifySDK",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "setServerStatusToLogout",
-            "printedName": "setServerStatusToLogout(manageCode:completion:)",
+            "name": "setServerStatusToLogin",
+            "printedName": "setServerStatusToLogin(manageCode:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2471,6 +2472,69 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusIdentifySDK@objc(cs)NautilusIdentify(im)setServerStatusToLoginWithManageCode:completion:",
+            "mangledName": "$s19NautilusIdentifySDK0aB0C22setServerStatusToLogin10manageCode10completionySS_ySb_So7NSErrorCSgtctF",
+            "moduleName": "NautilusIdentifySDK",
+            "objc_name": "setServerStatusToLoginWithManageCode:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setServerStatusToLogout",
+            "printedName": "setServerStatusToLogout(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeFunc",
@@ -2506,12 +2570,76 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19NautilusIdentifySDK0aB0C23setServerStatusToLogout10manageCode10completionySS_ys6ResultOySbAA0aB5ErrorOGctF",
-            "mangledName": "$s19NautilusIdentifySDK0aB0C23setServerStatusToLogout10manageCode10completionySS_ys6ResultOySbAA0aB5ErrorOGctF",
+            "usr": "s:19NautilusIdentifySDK0aB0C23setServerStatusToLogout10completionyys6ResultOySbAA0aB5ErrorOGc_tF",
+            "mangledName": "$s19NautilusIdentifySDK0aB0C23setServerStatusToLogout10completionyys6ResultOySbAA0aB5ErrorOGc_tF",
             "moduleName": "NautilusIdentifySDK",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setServerStatusToLogout",
+            "printedName": "setServerStatusToLogout(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusIdentifySDK@objc(cs)NautilusIdentify(im)setServerStatusToLogoutWithCompletion:",
+            "mangledName": "$s19NautilusIdentifySDK0aB0C23setServerStatusToLogout10completionyySb_So7NSErrorCSgtc_tF",
+            "moduleName": "NautilusIdentifySDK",
+            "objc_name": "setServerStatusToLogoutWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4217,196 +4345,196 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 1935,
+      "offset": 2524,
       "length": 7,
       "value": "\"a_pid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 1962,
+      "offset": 2551,
       "length": 7,
       "value": "\"a_cid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 1996,
+      "offset": 2585,
       "length": 15,
       "value": "\"a_app_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2038,
+      "offset": 2627,
       "length": 15,
       "value": "\"n_device_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2076,
+      "offset": 2665,
       "length": 11,
       "value": "\"n_os_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2113,
+      "offset": 2702,
       "length": 14,
       "value": "\"a_app_locale\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2153,
+      "offset": 2742,
       "length": 14,
       "value": "\"a_os_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2200,
+      "offset": 2789,
       "length": 23,
       "value": "\"n_shop_account_app_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2260,
+      "offset": 2849,
       "length": 16,
       "value": "\"a_contact_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2300,
+      "offset": 2889,
       "length": 13,
       "value": "\"n_flg_login\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2338,
+      "offset": 2927,
       "length": 7,
       "value": "\"a_lat\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2371,
+      "offset": 2960,
       "length": 7,
       "value": "\"a_lon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2404,
+      "offset": 2993,
       "length": 15,
       "value": "\"zh_User-Agent\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2443,
+      "offset": 3032,
       "length": 10,
       "value": "\"arzh_opt\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 1935,
+      "offset": 2524,
       "length": 7,
       "value": "\"a_pid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 1962,
+      "offset": 2551,
       "length": 7,
       "value": "\"a_cid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 1996,
+      "offset": 2585,
       "length": 15,
       "value": "\"a_app_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2038,
+      "offset": 2627,
       "length": 15,
       "value": "\"n_device_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2076,
+      "offset": 2665,
       "length": 11,
       "value": "\"n_os_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2113,
+      "offset": 2702,
       "length": 14,
       "value": "\"a_app_locale\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2153,
+      "offset": 2742,
       "length": 14,
       "value": "\"a_os_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2200,
+      "offset": 2789,
       "length": 23,
       "value": "\"n_shop_account_app_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2260,
+      "offset": 2849,
       "length": 16,
       "value": "\"a_contact_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2300,
+      "offset": 2889,
       "length": 13,
       "value": "\"n_flg_login\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2338,
+      "offset": 2927,
       "length": 7,
       "value": "\"a_lat\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2371,
+      "offset": 2960,
       "length": 7,
       "value": "\"a_lon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2404,
+      "offset": 2993,
       "length": 15,
       "value": "\"zh_User-Agent\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/RequestBodyJSON.swift",
       "kind": "StringLiteral",
-      "offset": 2443,
+      "offset": 3032,
       "length": 10,
       "value": "\"arzh_opt\""
     },

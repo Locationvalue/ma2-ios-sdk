@@ -289,6 +289,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)setManageCodeWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)setExternalIDWithUserID:(NSString * _Nonnull)userID externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)setManageCodeAndExternalIDWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// 「ログイン状態」を登録する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param manageCode ログイン対象となるマネージコード
+///
+/// \param completion 成功なら true, 失敗なら<code>NSError</code>を受け取るクロージャ
+///
+- (void)setServerStatusToLoginWithManageCode:(NSString * _Nonnull)manageCode completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// 「ログアウト状態」を登録する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param completion 成功なら true, 失敗なら<code>NSError</code>を受け取るクロージャ
+///
+- (void)setServerStatusToLogoutWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (UIView * _Nonnull)getUserInfoView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nonnull)getUserInfoViewWithViewType:(SWIFT_METATYPE(NautilusUserInfoView) _Nonnull)viewType SWIFT_WARN_UNUSED_RESULT;
 - (void)setCodeImageProvider:(id <NautilusUserInfoCodeImageProvider> _Nullable)codeImageProvider;
@@ -667,6 +679,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)setManageCodeWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)setExternalIDWithUserID:(NSString * _Nonnull)userID externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)setManageCodeAndExternalIDWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// 「ログイン状態」を登録する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param manageCode ログイン対象となるマネージコード
+///
+/// \param completion 成功なら true, 失敗なら<code>NSError</code>を受け取るクロージャ
+///
+- (void)setServerStatusToLoginWithManageCode:(NSString * _Nonnull)manageCode completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// 「ログアウト状態」を登録する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param completion 成功なら true, 失敗なら<code>NSError</code>を受け取るクロージャ
+///
+- (void)setServerStatusToLogoutWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (UIView * _Nonnull)getUserInfoView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nonnull)getUserInfoViewWithViewType:(SWIFT_METATYPE(NautilusUserInfoView) _Nonnull)viewType SWIFT_WARN_UNUSED_RESULT;
 - (void)setCodeImageProvider:(id <NautilusUserInfoCodeImageProvider> _Nullable)codeImageProvider;
