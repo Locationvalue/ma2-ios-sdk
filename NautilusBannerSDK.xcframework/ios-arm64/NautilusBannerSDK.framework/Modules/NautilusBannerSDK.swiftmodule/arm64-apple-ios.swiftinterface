@@ -124,7 +124,7 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc(bannerAppNamed:) public static func banner(appName: Swift.String) -> NautilusBannerSDK.NautilusBanner
   final public func getBannerCategoryList(completion: @escaping (Swift.Result<[NautilusBannerSDK.NautilusBannerCategory], NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
   @objc final public func getBannerCategoryList(completion: @escaping ([NautilusBannerSDK.NautilusBannerCategory]?, Foundation.NSError?) -> Swift.Void)
-  final public func getBannerList(categoryID: Swift.Int, completion: @escaping (Swift.Result<[NautilusBannerSDK.NautilusBannerInfo], NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
+  final public func getBannerList(categoryID: Swift.Int?, completion: @escaping (Swift.Result<[NautilusBannerSDK.NautilusBannerInfo], NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
   @objc final public func getBannerList(categoryID: Swift.Int, completion: @escaping ([NautilusBannerSDK.NautilusBannerInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Result<Swift.Void, NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
   @objc final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)

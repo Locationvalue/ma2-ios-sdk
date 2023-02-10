@@ -3957,9 +3957,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -4003,8 +4011,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17NautilusBannerSDK0aB0C03getB4List10categoryID10completionySi_ys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
-            "mangledName": "$s17NautilusBannerSDK0aB0C03getB4List10categoryID10completionySi_ys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "usr": "s:17NautilusBannerSDK0aB0C03getB4List10categoryID10completionySiSg_ys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "mangledName": "$s17NautilusBannerSDK0aB0C03getB4List10categoryID10completionySiSg_ys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
@@ -5929,6 +5937,13 @@
       "offset": 1384,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2829,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",

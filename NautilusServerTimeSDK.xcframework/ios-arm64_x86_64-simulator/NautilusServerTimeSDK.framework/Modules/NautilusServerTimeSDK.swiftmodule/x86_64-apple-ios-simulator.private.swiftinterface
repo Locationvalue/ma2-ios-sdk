@@ -43,7 +43,7 @@ extension Foundation.DateFormatter {
   }
   public static let defaultRetryTimeInterval: Swift.Double
   public static let defaultUpdateTimeInterval: Swift.Double
-  final public var status: NautilusServerTimeSDK.NautilusServerTimeStatus {
+  final public var serverTimeStatus: NautilusServerTimeSDK.NautilusServerTimeStatus {
     get
   }
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
