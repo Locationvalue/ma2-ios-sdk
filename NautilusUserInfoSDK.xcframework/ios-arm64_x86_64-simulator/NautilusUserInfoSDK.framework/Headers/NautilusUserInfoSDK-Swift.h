@@ -499,6 +499,24 @@ typedef SWIFT_ENUM(NSInteger, UserInfoNetworkServiceError, open) {
   UserInfoNetworkServiceErrorUserCancelled = 5,
 /// 不正なインスタンス
   UserInfoNetworkServiceErrorInvalidInstance = 6,
+/// パラメータ不正
+  UserInfoNetworkServiceErrorInvalidParameters = 100,
+/// パラメータが不足している
+  UserInfoNetworkServiceErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  UserInfoNetworkServiceErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  UserInfoNetworkServiceErrorServerError = 200,
+/// メンテナンス中
+  UserInfoNetworkServiceErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  UserInfoNetworkServiceErrorUnknownAPIService = 903,
+/// PIDが未登録
+  UserInfoNetworkServiceErrorInvalidUserPID = 905,
+/// API KEYが不正
+  UserInfoNetworkServiceErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  UserInfoNetworkServiceErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const UserInfoNetworkServiceErrorDomain = @"NautilusUserInfoSDK.UserInfoNetworkServiceError";
 
@@ -1011,6 +1029,24 @@ typedef SWIFT_ENUM(NSInteger, UserInfoNetworkServiceError, open) {
   UserInfoNetworkServiceErrorUserCancelled = 5,
 /// 不正なインスタンス
   UserInfoNetworkServiceErrorInvalidInstance = 6,
+/// パラメータ不正
+  UserInfoNetworkServiceErrorInvalidParameters = 100,
+/// パラメータが不足している
+  UserInfoNetworkServiceErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  UserInfoNetworkServiceErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  UserInfoNetworkServiceErrorServerError = 200,
+/// メンテナンス中
+  UserInfoNetworkServiceErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  UserInfoNetworkServiceErrorUnknownAPIService = 903,
+/// PIDが未登録
+  UserInfoNetworkServiceErrorInvalidUserPID = 905,
+/// API KEYが不正
+  UserInfoNetworkServiceErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  UserInfoNetworkServiceErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const UserInfoNetworkServiceErrorDomain = @"NautilusUserInfoSDK.UserInfoNetworkServiceError";
 

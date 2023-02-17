@@ -4670,6 +4670,639 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "NautilusErrorCode",
+        "printedName": "NautilusErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusErrorCode.Type) -> NautilusCoreSDK.NautilusErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusErrorCode",
+                        "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode@NautilusErrorCodeUnknown",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO7unknownyA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "invalidParameters",
+            "printedName": "invalidParameters",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusErrorCode.Type) -> NautilusCoreSDK.NautilusErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusErrorCode",
+                        "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode@NautilusErrorCodeInvalidParameters",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO17invalidParametersyA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "missingRequiredParameter",
+            "printedName": "missingRequiredParameter",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusErrorCode.Type) -> NautilusCoreSDK.NautilusErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusErrorCode",
+                        "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode@NautilusErrorCodeMissingRequiredParameter",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO24missingRequiredParameteryA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "unexpectedParameterFormat",
+            "printedName": "unexpectedParameterFormat",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusErrorCode.Type) -> NautilusCoreSDK.NautilusErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusErrorCode",
+                        "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode@NautilusErrorCodeUnexpectedParameterFormat",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO25unexpectedParameterFormatyA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusErrorCode.Type) -> NautilusCoreSDK.NautilusErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusErrorCode",
+                        "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode@NautilusErrorCodeServerError",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO06serverD0yA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "serviceMaintenance",
+            "printedName": "serviceMaintenance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusErrorCode.Type) -> NautilusCoreSDK.NautilusErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusErrorCode",
+                        "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode@NautilusErrorCodeServiceMaintenance",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO18serviceMaintenanceyA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "unknownAPIService",
+            "printedName": "unknownAPIService",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusErrorCode.Type) -> NautilusCoreSDK.NautilusErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusErrorCode",
+                        "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode@NautilusErrorCodeUnknownAPIService",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO17unknownAPIServiceyA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "invalidUserPID",
+            "printedName": "invalidUserPID",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusErrorCode.Type) -> NautilusCoreSDK.NautilusErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusErrorCode",
+                        "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode@NautilusErrorCodeInvalidUserPID",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO14invalidUserPIDyA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "developerError",
+            "printedName": "developerError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusErrorCode.Type) -> NautilusCoreSDK.NautilusErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusErrorCode",
+                        "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode@NautilusErrorCodeDeveloperError",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO09developerD0yA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "requiresLoginStatus",
+            "printedName": "requiresLoginStatus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NautilusErrorCode.Type) -> NautilusCoreSDK.NautilusErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusErrorCode",
+                        "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode@NautilusErrorCodeRequiresLoginStatus",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO19requiresLoginStatusyA2CmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NautilusCoreSDK0A9ErrorCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "NautilusCoreSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A9ErrorCodeO8rawValueSivp",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO8rawValueSivp",
+            "moduleName": "NautilusCoreSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A9ErrorCodeO8rawValueSivg",
+                "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO8rawValueSivg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_nsErrorDomain",
+            "printedName": "_nsErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A9ErrorCodeO03_nsD6DomainSSvpZ",
+            "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO03_nsD6DomainSSvpZ",
+            "moduleName": "NautilusCoreSDK",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A9ErrorCodeO03_nsD6DomainSSvgZ",
+                "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO03_nsD6DomainSSvgZ",
+                "moduleName": "NautilusCoreSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode",
+        "mangledName": "$s15NautilusCoreSDK0A9ErrorCodeO",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_BridgedNSError",
+            "printedName": "_BridgedNSError",
+            "usr": "s:10Foundation15_BridgedNSErrorP",
+            "mangledName": "$s10Foundation15_BridgedNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeableError",
+            "printedName": "_ObjectiveCBridgeableError",
+            "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
+            "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "NautilusLocation",
         "printedName": "NautilusLocation",
         "children": [
@@ -8909,14 +9542,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "NautilusErrorCode",
+                "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15NautilusCoreSDK13ErrorResponseC9errorCodeSivp",
-            "mangledName": "$s15NautilusCoreSDK13ErrorResponseC9errorCodeSivp",
+            "usr": "s:15NautilusCoreSDK13ErrorResponseC9errorCodeAA0adG0Ovp",
+            "mangledName": "$s15NautilusCoreSDK13ErrorResponseC9errorCodeAA0adG0Ovp",
             "moduleName": "NautilusCoreSDK",
             "declAttributes": [
               "Final",
@@ -8934,14 +9567,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "NautilusErrorCode",
+                    "printedName": "NautilusCoreSDK.NautilusErrorCode",
+                    "usr": "c:@M@NautilusCoreSDK@E@NautilusErrorCode"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15NautilusCoreSDK13ErrorResponseC9errorCodeSivg",
-                "mangledName": "$s15NautilusCoreSDK13ErrorResponseC9errorCodeSivg",
+                "usr": "s:15NautilusCoreSDK13ErrorResponseC9errorCodeAA0adG0Ovg",
+                "mangledName": "$s15NautilusCoreSDK13ErrorResponseC9errorCodeAA0adG0Ovg",
                 "moduleName": "NautilusCoreSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -16729,6 +17362,146 @@
       "value": "\"flagsNotification\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 309,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 371,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 456,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 545,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 602,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 666,
+      "length": 3,
+      "value": "901"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 741,
+      "length": 3,
+      "value": "903"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 795,
+      "length": 3,
+      "value": "905"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 850,
+      "length": 3,
+      "value": "906"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 930,
+      "length": 3,
+      "value": "907"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 309,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 371,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 456,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 545,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 602,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 666,
+      "length": 3,
+      "value": "901"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 741,
+      "length": 3,
+      "value": "903"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 795,
+      "length": 3,
+      "value": "905"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 850,
+      "length": 3,
+      "value": "906"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 930,
+      "length": 3,
+      "value": "907"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusLocationProvider.swift",
       "kind": "StringLiteral",
       "offset": 257,
@@ -16843,70 +17616,70 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
-      "offset": 340,
+      "offset": 345,
       "length": 6,
       "value": "\"date\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
-      "offset": 375,
+      "offset": 380,
       "length": 11,
       "value": "\"error_msg\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
-      "offset": 412,
+      "offset": 417,
       "length": 12,
       "value": "\"error_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
-      "offset": 444,
+      "offset": 449,
       "length": 5,
       "value": "\"pid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
-      "offset": 474,
+      "offset": 479,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
-      "offset": 340,
+      "offset": 345,
       "length": 6,
       "value": "\"date\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
-      "offset": 375,
+      "offset": 380,
       "length": 11,
       "value": "\"error_msg\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
-      "offset": 412,
+      "offset": 417,
       "length": 12,
       "value": "\"error_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
-      "offset": 444,
+      "offset": 449,
       "length": 5,
       "value": "\"pid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
-      "offset": 474,
+      "offset": 479,
       "length": 11,
       "value": "\"device_id\""
     },

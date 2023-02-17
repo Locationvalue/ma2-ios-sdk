@@ -331,6 +331,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
   NautilusIdentifyErrorInvalidParamater = 6,
 /// 不正なインスタンス
   NautilusIdentifyErrorInvalidInstance = 7,
+/// パラメータ不正
+  NautilusIdentifyErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusIdentifyErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusIdentifyErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusIdentifyErrorServerError = 200,
+/// メンテナンス中
+  NautilusIdentifyErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusIdentifyErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusIdentifyErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusIdentifyErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusIdentifyErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusIdentifyErrorDomain = @"NautilusIdentifySDK.NautilusIdentifyError";
 
@@ -721,6 +739,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
   NautilusIdentifyErrorInvalidParamater = 6,
 /// 不正なインスタンス
   NautilusIdentifyErrorInvalidInstance = 7,
+/// パラメータ不正
+  NautilusIdentifyErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusIdentifyErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusIdentifyErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusIdentifyErrorServerError = 200,
+/// メンテナンス中
+  NautilusIdentifyErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusIdentifyErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusIdentifyErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusIdentifyErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusIdentifyErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusIdentifyErrorDomain = @"NautilusIdentifySDK.NautilusIdentifyError";
 

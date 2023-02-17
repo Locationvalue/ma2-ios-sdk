@@ -740,6 +740,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
   NautilusCouponErrorInvalidInstance = 7,
 /// 設定値の構成が不正エラー
   NautilusCouponErrorIllegalConfiguration = 8,
+/// パラメータ不正
+  NautilusCouponErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusCouponErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusCouponErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusCouponErrorServerError = 200,
+/// メンテナンス中
+  NautilusCouponErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusCouponErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusCouponErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusCouponErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusCouponErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusCouponErrorDomain = @"NautilusCouponSDK.NautilusCouponError";
 

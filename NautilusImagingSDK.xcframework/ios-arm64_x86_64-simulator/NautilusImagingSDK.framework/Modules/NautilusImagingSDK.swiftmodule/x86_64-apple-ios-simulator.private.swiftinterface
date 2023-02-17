@@ -8,6 +8,9 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+extension Foundation.URLSession {
+  public static var imageDownloader: Foundation.URLSession
+}
 final public class NautilusImageDownloader {
   public static var shared: NautilusImagingSDK.NautilusImageDownloader
   public init(session: Foundation.URLSession = .shared)

@@ -365,6 +365,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusBannerError, open) {
   NautilusBannerErrorInvalidParamater = 6,
 /// インスタンスが不正
   NautilusBannerErrorInvalidInstance = 7,
+/// パラメータ不正
+  NautilusBannerErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusBannerErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusBannerErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusBannerErrorServerError = 200,
+/// メンテナンス中
+  NautilusBannerErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusBannerErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusBannerErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusBannerErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusBannerErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusBannerErrorDomain = @"NautilusBannerSDK.NautilusBannerError";
 

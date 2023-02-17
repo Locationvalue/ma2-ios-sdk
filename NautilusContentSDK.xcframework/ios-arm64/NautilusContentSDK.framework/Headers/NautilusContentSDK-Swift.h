@@ -571,6 +571,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusContentError, open) {
   NautilusContentErrorIllegalConfiguration = 7,
 /// 不正なインスタンス
   NautilusContentErrorInvalidInstance = 8,
+/// パラメータ不正
+  NautilusContentErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusContentErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusContentErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusContentErrorServerError = 200,
+/// メンテナンス中
+  NautilusContentErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusContentErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusContentErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusContentErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusContentErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusContentErrorDomain = @"NautilusContentSDK.NautilusContentError";
 

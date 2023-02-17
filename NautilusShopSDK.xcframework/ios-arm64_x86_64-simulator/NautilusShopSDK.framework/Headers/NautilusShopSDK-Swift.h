@@ -426,6 +426,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
   NautilusShopErrorIllegalConfiguration = 7,
 /// 不正なインスタンス
   NautilusShopErrorInvalidInstance = 8,
+/// パラメータ不正
+  NautilusShopErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusShopErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusShopErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusShopErrorServerError = 200,
+/// メンテナンス中
+  NautilusShopErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusShopErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusShopErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusShopErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusShopErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusShopErrorDomain = @"NautilusShopSDK.NautilusShopError";
 
@@ -942,6 +960,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
   NautilusShopErrorIllegalConfiguration = 7,
 /// 不正なインスタンス
   NautilusShopErrorInvalidInstance = 8,
+/// パラメータ不正
+  NautilusShopErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusShopErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusShopErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusShopErrorServerError = 200,
+/// メンテナンス中
+  NautilusShopErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusShopErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusShopErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusShopErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusShopErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusShopErrorDomain = @"NautilusShopSDK.NautilusShopError";
 

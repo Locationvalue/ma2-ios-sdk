@@ -235,6 +235,26 @@ extension Foundation.Date {
   public static func convertTemplateDateTime(from date: Foundation.Date, template: Swift.String) -> Swift.String
   public static func formatDate(string: Swift.String, format: Swift.String) -> Foundation.Date
 }
+@objc public enum NautilusErrorCode : Swift.Int, Swift.Error, Swift.Decodable {
+  case unknown = -1
+  case invalidParameters = 100
+  case missingRequiredParameter = 101
+  case unexpectedParameterFormat = 102
+  case serverError = 200
+  case serviceMaintenance = 901
+  case unknownAPIService = 903
+  case invalidUserPID = 905
+  case developerError = 906
+  case requiresLoginStatus = 907
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc public class NautilusLocation : ObjectiveC.NSObject {
   final public let latitude: Swift.Double
   final public let longitude: Swift.Double
@@ -405,7 +425,7 @@ extension Swift.Bool : NautilusCoreSDK.UserDefaultConvertible {
 public class ErrorResponse : NautilusCoreSDK.Response, Swift.Decodable {
   final public let date: Foundation.Date
   final public let errorMessage: Swift.String
-  final public let errorCode: Swift.Int
+  final public let errorCode: NautilusCoreSDK.NautilusErrorCode
   final public let pid: Swift.String?
   final public let deviceID: Swift.String?
   required public init(from decoder: Swift.Decoder) throws
@@ -567,6 +587,9 @@ extension NautilusCoreSDK.NautilusInitializationFailureReason : Swift.RawReprese
 extension NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason : Swift.Equatable {}
 extension NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason : Swift.Hashable {}
 extension NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason : Swift.RawRepresentable {}
+extension NautilusCoreSDK.NautilusErrorCode : Swift.Equatable {}
+extension NautilusCoreSDK.NautilusErrorCode : Swift.Hashable {}
+extension NautilusCoreSDK.NautilusErrorCode : Swift.RawRepresentable {}
 extension NautilusCoreSDK.NautilusDeploymentEnvironment : Swift.Equatable {}
 extension NautilusCoreSDK.NautilusDeploymentEnvironment : Swift.Hashable {}
 extension NautilusCoreSDK.NautilusDeploymentEnvironment : Swift.RawRepresentable {}

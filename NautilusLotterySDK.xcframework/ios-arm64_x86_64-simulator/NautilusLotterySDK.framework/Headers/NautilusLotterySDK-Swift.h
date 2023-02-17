@@ -334,6 +334,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusLotteryError, open) {
   NautilusLotteryErrorInvalidParamater = 6,
 /// 不正なインスタンス
   NautilusLotteryErrorInvalidInstance = 7,
+/// パラメータ不正
+  NautilusLotteryErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusLotteryErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusLotteryErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusLotteryErrorServerError = 200,
+/// メンテナンス中
+  NautilusLotteryErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusLotteryErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusLotteryErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusLotteryErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusLotteryErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusLotteryErrorDomain = @"NautilusLotterySDK.NautilusLotteryError";
 
@@ -755,6 +773,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusLotteryError, open) {
   NautilusLotteryErrorInvalidParamater = 6,
 /// 不正なインスタンス
   NautilusLotteryErrorInvalidInstance = 7,
+/// パラメータ不正
+  NautilusLotteryErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusLotteryErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusLotteryErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusLotteryErrorServerError = 200,
+/// メンテナンス中
+  NautilusLotteryErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusLotteryErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusLotteryErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusLotteryErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusLotteryErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusLotteryErrorDomain = @"NautilusLotterySDK.NautilusLotteryError";
 

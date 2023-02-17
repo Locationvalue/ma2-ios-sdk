@@ -366,6 +366,31 @@ typedef SWIFT_ENUM(NSInteger, NautilusDeploymentEnvironment, open) {
   NautilusDeploymentEnvironmentPublicProduction = 3,
 };
 
+/// APIのエラーコード
+typedef SWIFT_ENUM(NSInteger, NautilusErrorCode, open) {
+/// 未定義
+  NautilusErrorCodeUnknown = -1,
+/// パラメータ不正
+  NautilusErrorCodeInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusErrorCodeMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusErrorCodeUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusErrorCodeServerError = 200,
+/// メンテナンス中
+  NautilusErrorCodeServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusErrorCodeUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusErrorCodeInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusErrorCodeDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusErrorCodeRequiresLoginStatus = 907,
+};
+static NSString * _Nonnull const NautilusErrorCodeDomain = @"NautilusCoreSDK.NautilusErrorCode";
+
 @class NSError;
 enum NautilusFeatureStatus : NSInteger;
 

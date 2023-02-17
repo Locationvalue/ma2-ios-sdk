@@ -39,8 +39,16 @@ public let NautilusNotificationErrorDomain: Swift.String
   case httpConnection
   case parseFailure
   case userCancelled
-  case invalidParameters
   case invalidInstance
+  case invalidParameters = 100
+  case missingRequiredParameter = 101
+  case unexpectedParameterFormat = 102
+  case serverError = 200
+  case serviceMaintenance = 901
+  case unknownAPIService = 903
+  case invalidUserPID = 905
+  case developerError = 906
+  case requiresLoginStatus = 907
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {

@@ -301,6 +301,24 @@ typedef SWIFT_ENUM(NSInteger, NautilusServerTimeError, open) {
   NautilusServerTimeErrorInvalidResponse = 6,
 /// 不正なインスタンス
   NautilusServerTimeErrorInvalidInstance = 7,
+/// パラメータ不正
+  NautilusServerTimeErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusServerTimeErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusServerTimeErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusServerTimeErrorServerError = 200,
+/// メンテナンス中
+  NautilusServerTimeErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusServerTimeErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusServerTimeErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusServerTimeErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusServerTimeErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusServerTimeErrorDomain = @"NautilusServerTimeSDK.NautilusServerTimeError";
 

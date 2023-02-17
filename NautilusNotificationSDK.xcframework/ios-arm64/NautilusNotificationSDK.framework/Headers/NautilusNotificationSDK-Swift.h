@@ -351,10 +351,26 @@ typedef SWIFT_ENUM(NSInteger, NautilusNotificationNetworkError, open) {
   NautilusNotificationNetworkErrorParseFailure = 4,
 /// 明示的にユーザーによりキャンセルされた
   NautilusNotificationNetworkErrorUserCancelled = 5,
-/// パラメーターが不正（SDK内の事前チェック）
-  NautilusNotificationNetworkErrorInvalidParameters = 6,
 /// SDKインスタンスが不正
-  NautilusNotificationNetworkErrorInvalidInstance = 7,
+  NautilusNotificationNetworkErrorInvalidInstance = 6,
+/// パラメータ不正
+  NautilusNotificationNetworkErrorInvalidParameters = 100,
+/// パラメータが不足している
+  NautilusNotificationNetworkErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  NautilusNotificationNetworkErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  NautilusNotificationNetworkErrorServerError = 200,
+/// メンテナンス中
+  NautilusNotificationNetworkErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  NautilusNotificationNetworkErrorUnknownAPIService = 903,
+/// PIDが未登録
+  NautilusNotificationNetworkErrorInvalidUserPID = 905,
+/// API KEYが不正
+  NautilusNotificationNetworkErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  NautilusNotificationNetworkErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const NautilusNotificationNetworkErrorDomain = @"NautilusNotificationSDK.NautilusNotificationNetworkError";
 

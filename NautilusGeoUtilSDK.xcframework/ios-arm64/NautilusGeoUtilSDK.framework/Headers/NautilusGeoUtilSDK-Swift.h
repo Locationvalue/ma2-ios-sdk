@@ -272,6 +272,24 @@ typedef SWIFT_ENUM(NSInteger, GeoUtilApiError, open) {
   GeoUtilApiErrorInvalidParamater = 6,
 /// 不正なインスタンス
   GeoUtilApiErrorInvalidInstance = 7,
+/// パラメータ不正
+  GeoUtilApiErrorInvalidParameters = 100,
+/// パラメータが不足している
+  GeoUtilApiErrorMissingRequiredParameter = 101,
+/// パラメータフォーマット不正
+  GeoUtilApiErrorUnexpectedParameterFormat = 102,
+/// サーバ側エラー
+  GeoUtilApiErrorServerError = 200,
+/// メンテナンス中
+  GeoUtilApiErrorServiceMaintenance = 901,
+/// 指定したAPIが存在しない
+  GeoUtilApiErrorUnknownAPIService = 903,
+/// PIDが未登録
+  GeoUtilApiErrorInvalidUserPID = 905,
+/// API KEYが不正
+  GeoUtilApiErrorDeveloperError = 906,
+/// 未ログインのため利用不可
+  GeoUtilApiErrorRequiresLoginStatus = 907,
 };
 static NSString * _Nonnull const GeoUtilApiErrorDomain = @"NautilusGeoUtilSDK.GeoUtilApiError";
 

@@ -1224,48 +1224,6 @@
           },
           {
             "kind": "Var",
-            "name": "invalidParameters",
-            "printedName": "invalidParameters",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusNotificationNetworkError",
-                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
-                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NautilusNotificationNetworkError",
-                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
-                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorInvalidParameters",
-            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO17invalidParametersyA2CmF",
-            "moduleName": "NautilusNotificationSDK",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 6
-          },
-          {
-            "kind": "Var",
             "name": "invalidInstance",
             "printedName": "invalidInstance",
             "children": [
@@ -1304,7 +1262,385 @@
               "RawDocComment",
               "ObjC"
             ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "invalidParameters",
+            "printedName": "invalidParameters",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNotificationNetworkError",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorInvalidParameters",
+            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO17invalidParametersyA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
             "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "missingRequiredParameter",
+            "printedName": "missingRequiredParameter",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNotificationNetworkError",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorMissingRequiredParameter",
+            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO24missingRequiredParameteryA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "unexpectedParameterFormat",
+            "printedName": "unexpectedParameterFormat",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNotificationNetworkError",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorUnexpectedParameterFormat",
+            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO25unexpectedParameterFormatyA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNotificationNetworkError",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorServerError",
+            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO06serverE0yA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "serviceMaintenance",
+            "printedName": "serviceMaintenance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNotificationNetworkError",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorServiceMaintenance",
+            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO18serviceMaintenanceyA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "unknownAPIService",
+            "printedName": "unknownAPIService",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNotificationNetworkError",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorUnknownAPIService",
+            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO17unknownAPIServiceyA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "invalidUserPID",
+            "printedName": "invalidUserPID",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNotificationNetworkError",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorInvalidUserPID",
+            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO14invalidUserPIDyA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "developerError",
+            "printedName": "developerError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNotificationNetworkError",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorDeveloperError",
+            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO09developerE0yA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "requiresLoginStatus",
+            "printedName": "requiresLoginStatus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNotificationNetworkError",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorRequiresLoginStatus",
+            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO19requiresLoginStatusyA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Constructor",
@@ -4630,16 +4966,72 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 863,
-      "length": 17,
+      "offset": 833,
+      "length": 15,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 929,
-      "length": 15,
-      "value": "7"
+      "offset": 931,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1016,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1105,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1162,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1226,
+      "length": 3,
+      "value": "901"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1301,
+      "length": 3,
+      "value": "903"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1355,
+      "length": 3,
+      "value": "905"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1410,
+      "length": 3,
+      "value": "906"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1490,
+      "length": 3,
+      "value": "907"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
@@ -4679,16 +5071,72 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 863,
-      "length": 17,
+      "offset": 833,
+      "length": 15,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 929,
-      "length": 15,
-      "value": "7"
+      "offset": 931,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1016,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1105,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1162,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1226,
+      "length": 3,
+      "value": "901"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1301,
+      "length": 3,
+      "value": "903"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1355,
+      "length": 3,
+      "value": "905"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1410,
+      "length": 3,
+      "value": "906"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1490,
+      "length": 3,
+      "value": "907"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
@@ -4938,7 +5386,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
       "kind": "BooleanLiteral",
-      "offset": 1538,
+      "offset": 1542,
       "length": 5,
       "value": "false"
     },
