@@ -632,21 +632,32 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// returns:
 /// 有効期間終了までの秒数
 - (NSInteger)calculateUsedCouponValidDurationFromNowOf:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
-/// クーポンの有効期間が終了したら通知するオブザーバを登録
-/// \param observer <code>NautilusCouponUseValidObserver</code> を継承したクラス
+/// クーポンの有効期間が終了後に通知を受け取るオブザーバーを登録する
+/// \param observer クーポンの有効期限が切れた後に通知を受け取るオブザーバーのインスタンス
 ///
-/// \param coupon 有効期間内のクーポン
+/// \param coupon 監視対象のクーポン
 ///
 ///
 /// returns:
-/// 有効期間の終了通知登録が成功したかどうか
+/// 正常にオブザーバーの登録ができれば、<code>true</code>が返る。クーポンが利用済みではない、クーポンの利用期限が既に切れている、など、登録ができなかった場合は、<code>false</code>が返る。
 - (BOOL)registerCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
-/// クーポンの有効期間が終了したら通知するオブザーバの登録解除
-/// \param coupon 有効期間の終了通知を登録済みのクーポン
+/// クーポンの有効期間が終了後に通知を受け取るオブザーバーの登録を解除する
+/// \param observer クーポンの有効期限が切れた後に通知を受け取るオブザーバーのインスタンス
+///
+/// \param coupon 監視対象のクーポン
 ///
 ///
 /// returns:
-/// 処理成功は <code>true</code>, 失敗は <code>false</code>
+/// 登録解除に成功した場合は、 <code>true</code> が返る。それ以外の場合は、<code>false</code>が返る。
+- (BOOL)unregisterCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon;
+/// クーポンの有効期間が終了後に通知を受け取るオブザーバーの登録を解除する
+/// important:
+/// 対象のクーポンを監視しているすべてのオブザーバーの登録が解除される
+/// \param coupon 監視対象のクーポン
+///
+///
+/// returns:
+/// 登録解除に成功した場合は、 <code>true</code> が返る。それ以外の場合は、<code>false</code>が返る。
 - (BOOL)unregisterCouponUseValidObserverFor:(NautilusCouponInfo * _Nonnull)coupon;
 @end
 
@@ -970,10 +981,14 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponUseInfo")
 @end
 
 
-/// クーポン利用を監視する
+/// クーポン利用後の有効期限の超過を監視するためのオブザーバー
 SWIFT_PROTOCOL("_TtP17NautilusCouponSDK30NautilusCouponUseValidObserver_")
 @protocol NautilusCouponUseValidObserver
-/// クーポンが無効になった時呼ばれる
+/// アプリの実行中のインスタンスの同一性を担保するためのハッシュ値
+@property (nonatomic, readonly) NSInteger hash;
+/// クーポンの利用期限を超過したときに呼ばれる
+/// \param coupon 利用期限を過ぎたクーポン
+///
 - (void)onCouponInvalidWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
 @end
 
@@ -1641,21 +1656,32 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// returns:
 /// 有効期間終了までの秒数
 - (NSInteger)calculateUsedCouponValidDurationFromNowOf:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
-/// クーポンの有効期間が終了したら通知するオブザーバを登録
-/// \param observer <code>NautilusCouponUseValidObserver</code> を継承したクラス
+/// クーポンの有効期間が終了後に通知を受け取るオブザーバーを登録する
+/// \param observer クーポンの有効期限が切れた後に通知を受け取るオブザーバーのインスタンス
 ///
-/// \param coupon 有効期間内のクーポン
+/// \param coupon 監視対象のクーポン
 ///
 ///
 /// returns:
-/// 有効期間の終了通知登録が成功したかどうか
+/// 正常にオブザーバーの登録ができれば、<code>true</code>が返る。クーポンが利用済みではない、クーポンの利用期限が既に切れている、など、登録ができなかった場合は、<code>false</code>が返る。
 - (BOOL)registerCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
-/// クーポンの有効期間が終了したら通知するオブザーバの登録解除
-/// \param coupon 有効期間の終了通知を登録済みのクーポン
+/// クーポンの有効期間が終了後に通知を受け取るオブザーバーの登録を解除する
+/// \param observer クーポンの有効期限が切れた後に通知を受け取るオブザーバーのインスタンス
+///
+/// \param coupon 監視対象のクーポン
 ///
 ///
 /// returns:
-/// 処理成功は <code>true</code>, 失敗は <code>false</code>
+/// 登録解除に成功した場合は、 <code>true</code> が返る。それ以外の場合は、<code>false</code>が返る。
+- (BOOL)unregisterCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon;
+/// クーポンの有効期間が終了後に通知を受け取るオブザーバーの登録を解除する
+/// important:
+/// 対象のクーポンを監視しているすべてのオブザーバーの登録が解除される
+/// \param coupon 監視対象のクーポン
+///
+///
+/// returns:
+/// 登録解除に成功した場合は、 <code>true</code> が返る。それ以外の場合は、<code>false</code>が返る。
 - (BOOL)unregisterCouponUseValidObserverFor:(NautilusCouponInfo * _Nonnull)coupon;
 @end
 
@@ -1979,10 +2005,14 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponUseInfo")
 @end
 
 
-/// クーポン利用を監視する
+/// クーポン利用後の有効期限の超過を監視するためのオブザーバー
 SWIFT_PROTOCOL("_TtP17NautilusCouponSDK30NautilusCouponUseValidObserver_")
 @protocol NautilusCouponUseValidObserver
-/// クーポンが無効になった時呼ばれる
+/// アプリの実行中のインスタンスの同一性を担保するためのハッシュ値
+@property (nonatomic, readonly) NSInteger hash;
+/// クーポンの利用期限を超過したときに呼ばれる
+/// \param coupon 利用期限を過ぎたクーポン
+///
 - (void)onCouponInvalidWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
 @end
 

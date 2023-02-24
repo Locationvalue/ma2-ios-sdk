@@ -70,6 +70,7 @@ import _StringProcessing
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, category: NautilusCouponSDK.NautilusCouponCategoryInfo?) -> UIKit.UIViewController
 }
 @objc public protocol NautilusCouponUseValidObserver {
+  @objc var hash: Swift.Int { get }
   @objc func onCouponInvalid(coupon: NautilusCouponSDK.NautilusCouponInfo)
 }
 @objc public class NautilusCouponPublishTrigger : ObjectiveC.NSObject {
@@ -213,6 +214,8 @@ extension NautilusCouponSDK.NautilusCoupon {
   @objc final public func isValidUsedCoupon(_ coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
   @objc final public func calculateUsedCouponValidDurationFromNow(of coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Int
   @objc final public func registerCouponUseValidObserver(_ observer: NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
+  @discardableResult
+  @objc final public func unregisterCouponUseValidObserver(_ observer: NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
   @discardableResult
   @objc final public func unregisterCouponUseValidObserver(for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
 }

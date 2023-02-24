@@ -309,6 +309,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCouponSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "NautilusCouponUseInfo",
         "printedName": "NautilusCouponUseInfo",
@@ -2721,6 +2731,55 @@
         "printedName": "NautilusCouponUseValidObserver",
         "children": [
           {
+            "kind": "Var",
+            "name": "hash",
+            "printedName": "hash",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusCouponSDK@objc(pl)NautilusCouponUseValidObserver(py)hash",
+            "mangledName": "$s17NautilusCouponSDK0aB16UseValidObserverP4hashSivp",
+            "moduleName": "NautilusCouponSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusCouponSDK@objc(pl)NautilusCouponUseValidObserver(im)hash",
+                "mangledName": "$s17NautilusCouponSDK0aB16UseValidObserverP4hashSivg",
+                "moduleName": "NautilusCouponSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NautilusCouponSDK.NautilusCouponUseValidObserver>",
+                "sugared_genericSig": "<Self where Self : NautilusCouponSDK.NautilusCouponUseValidObserver>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "onCouponInvalid",
             "printedName": "onCouponInvalid(coupon:)",
@@ -2809,6 +2868,13 @@
         "kind": "Import",
         "name": "NautilusAnalyticsSDK",
         "printedName": "NautilusAnalyticsSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusCouponSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusUISDK",
+        "printedName": "NautilusUISDK",
         "declKind": "Import",
         "moduleName": "NautilusCouponSDK"
       },
@@ -11204,6 +11270,44 @@
             "declAttributes": [
               "Final",
               "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unregisterCouponUseValidObserver",
+            "printedName": "unregisterCouponUseValidObserver(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCouponUseValidObserver",
+                "printedName": "NautilusCouponSDK.NautilusCouponUseValidObserver",
+                "usr": "c:@M@NautilusCouponSDK@objc(pl)NautilusCouponUseValidObserver"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCouponInfo",
+                "printedName": "NautilusCouponSDK.NautilusCouponInfo",
+                "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NautilusCouponSDK@objc(cs)NautilusCoupon(im)unregisterCouponUseValidObserver:for:",
+            "mangledName": "$s17NautilusCouponSDK0aB0C010unregisterB16UseValidObserver_3forSbAA0abefG0_p_AA0aB4InfoCtF",
+            "moduleName": "NautilusCouponSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
               "ObjC",
               "RawDocComment"
             ],
@@ -21015,13 +21119,6 @@
       "offset": 1906,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
-      "kind": "Dictionary",
-      "offset": 3612,
-      "length": 3,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
