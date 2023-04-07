@@ -144,6 +144,16 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   case doneLotteryRunning
   case showLotteryResult
   case tapPrizeChecking
+  case showStampCardList
+  case showStampCardDetail
+  case showStampCardDescriptionMessage
+  case tapStampCardPrizeExchange
+  case tapStampCardCheckIn
+  case showStampCardPrizeAutoExchangeDialog
+  case showStampCardCompleteDialog
+  case showStampCardExchangeSelectDialog
+  case showStampCardExchangeSuccessDialog
+  case tapStampCardExchangeSuccessLinkInDialog
   public static let showIntroduction: Swift.String
   public var eventName: Swift.String {
     get
@@ -242,6 +252,10 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   case prizeType
   case prizeCouponExchangeID
   case prizePoint
+  case stampCardID
+  case stampCardTitle
+  case stampCardPrizeID
+  case stampCardPrizeTitle
   public var propertyName: Swift.String {
     get
   }

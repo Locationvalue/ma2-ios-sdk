@@ -28,6 +28,24 @@ import _StringProcessing
   @objc public static func instantiateCodeReaderViewController(_ app: NautilusCoreSDK.NautilusApp, setting: NautilusCodeReaderSDK.NautilusCodeReaderSetting, handler: NautilusCodeReaderSDK.NautilusCodeReaderHandler) -> UIKit.UIViewController
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusCodeReaderViewController : UIKit.UIViewController, AVFoundation.AVCaptureMetadataOutputObjectsDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc final public func metadataOutput(_ output: AVFoundation.AVCaptureMetadataOutput, didOutput metadataObjects: [AVFoundation.AVMetadataObject], from connection: AVFoundation.AVCaptureConnection)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NautilusCodeReaderSDK.NautilusCodeReaderViewController : NautilusCodeReaderSDK.NautilusCodeReaderInstantiatable {
+  @_Concurrency.MainActor(unsafe) @objc public static func instantiate(app: NautilusCoreSDK.NautilusApp, setting: NautilusCodeReaderSDK.NautilusCodeReaderSetting, handler: NautilusCodeReaderSDK.NautilusCodeReaderHandler) -> UIKit.UIViewController
+}
+@objc public protocol NautilusCodeReaderInstantiatable {
+  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, setting: NautilusCodeReaderSDK.NautilusCodeReaderSetting, handler: NautilusCodeReaderSDK.NautilusCodeReaderHandler) -> UIKit.UIViewController
+}
 @objc public protocol NautilusCodeReaderHandler {
   @objc func codeReaderHandle(_ viewController: UIKit.UIViewController, codeText: Swift.String) -> Swift.Bool
   @objc func handleCodeDetectionError(_ viewController: UIKit.UIViewController, error: NautilusCodeReaderSDK.NautilusCodeReaderError) -> Swift.Bool

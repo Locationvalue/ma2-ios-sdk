@@ -493,6 +493,26 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEvent, open) {
   NautilusAnalyticsEventShowLotteryResult = 62,
 /// 抽選結果を「確認するボタン」をタップ
   NautilusAnalyticsEventTapPrizeChecking = 63,
+/// スタンプカードリストを見る
+  NautilusAnalyticsEventShowStampCardList = 64,
+/// スタンプカード詳細を見る
+  NautilusAnalyticsEventShowStampCardDetail = 65,
+/// スタンプカード説明テキストを見る
+  NautilusAnalyticsEventShowStampCardDescriptionMessage = 66,
+/// スタンプカードの景品交換をタップする
+  NautilusAnalyticsEventTapStampCardPrizeExchange = 67,
+/// スタンプを貯めるをタップする
+  NautilusAnalyticsEventTapStampCardCheckIn = 68,
+/// スタンプカードの自動付与景品ダイアログを見る
+  NautilusAnalyticsEventShowStampCardPrizeAutoExchangeDialog = 69,
+/// スタンプカードのコンプリートダイアログを見る
+  NautilusAnalyticsEventShowStampCardCompleteDialog = 70,
+/// スタンプカードを交換しますかダイアログを見る
+  NautilusAnalyticsEventShowStampCardExchangeSelectDialog = 71,
+/// スタンプカードを交換しましたを見る
+  NautilusAnalyticsEventShowStampCardExchangeSuccessDialog = 72,
+/// スタンプカードを交換しました画面内リンクをタップ
+  NautilusAnalyticsEventTapStampCardExchangeSuccessLinkInDialog = 73,
 };
 
 /// 分析SDKから送信するイベントのチャネル定義
@@ -663,6 +683,14 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEventProperty, open) {
   NautilusAnalyticsEventPropertyPrizeCouponExchangeID = 73,
 /// 付与ポイント
   NautilusAnalyticsEventPropertyPrizePoint = 74,
+/// スタンプカードID
+  NautilusAnalyticsEventPropertyStampCardID = 75,
+/// スタンプカードタイトル
+  NautilusAnalyticsEventPropertyStampCardTitle = 76,
+/// スタンプカードPrizeID
+  NautilusAnalyticsEventPropertyStampCardPrizeID = 77,
+/// スタンプカードPrizeタイトル
+  NautilusAnalyticsEventPropertyStampCardPrizeTitle = 78,
 };
 
 
@@ -1254,6 +1282,26 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEvent, open) {
   NautilusAnalyticsEventShowLotteryResult = 62,
 /// 抽選結果を「確認するボタン」をタップ
   NautilusAnalyticsEventTapPrizeChecking = 63,
+/// スタンプカードリストを見る
+  NautilusAnalyticsEventShowStampCardList = 64,
+/// スタンプカード詳細を見る
+  NautilusAnalyticsEventShowStampCardDetail = 65,
+/// スタンプカード説明テキストを見る
+  NautilusAnalyticsEventShowStampCardDescriptionMessage = 66,
+/// スタンプカードの景品交換をタップする
+  NautilusAnalyticsEventTapStampCardPrizeExchange = 67,
+/// スタンプを貯めるをタップする
+  NautilusAnalyticsEventTapStampCardCheckIn = 68,
+/// スタンプカードの自動付与景品ダイアログを見る
+  NautilusAnalyticsEventShowStampCardPrizeAutoExchangeDialog = 69,
+/// スタンプカードのコンプリートダイアログを見る
+  NautilusAnalyticsEventShowStampCardCompleteDialog = 70,
+/// スタンプカードを交換しますかダイアログを見る
+  NautilusAnalyticsEventShowStampCardExchangeSelectDialog = 71,
+/// スタンプカードを交換しましたを見る
+  NautilusAnalyticsEventShowStampCardExchangeSuccessDialog = 72,
+/// スタンプカードを交換しました画面内リンクをタップ
+  NautilusAnalyticsEventTapStampCardExchangeSuccessLinkInDialog = 73,
 };
 
 /// 分析SDKから送信するイベントのチャネル定義
@@ -1424,6 +1472,14 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEventProperty, open) {
   NautilusAnalyticsEventPropertyPrizeCouponExchangeID = 73,
 /// 付与ポイント
   NautilusAnalyticsEventPropertyPrizePoint = 74,
+/// スタンプカードID
+  NautilusAnalyticsEventPropertyStampCardID = 75,
+/// スタンプカードタイトル
+  NautilusAnalyticsEventPropertyStampCardTitle = 76,
+/// スタンプカードPrizeID
+  NautilusAnalyticsEventPropertyStampCardPrizeID = 77,
+/// スタンプカードPrizeタイトル
+  NautilusAnalyticsEventPropertyStampCardPrizeTitle = 78,
 };
 
 

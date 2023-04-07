@@ -230,7 +230,10 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AVFoundation;
+@import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -330,11 +333,50 @@ SWIFT_PROTOCOL("_TtP21NautilusCodeReaderSDK25NautilusCodeReaderHandler_")
 @end
 
 
+/// ルーターから、コードリーダー画面を生成するためのプロトコル
+SWIFT_PROTOCOL("_TtP21NautilusCodeReaderSDK32NautilusCodeReaderInstantiatable_")
+@protocol NautilusCodeReaderInstantiatable
+/// コードリーダー画面を生成する
+/// \param app SDKのインスタンス
+///
+/// \param setting コードリーダー画面の表示設定
+///
+/// \param handler コード読み込み結果の受け取り先
+///
+///
+/// returns:
+/// コードリーダー画面
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app setting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// コードリーダー画面の表示設定
 SWIFT_CLASS("_TtC21NautilusCodeReaderSDK25NautilusCodeReaderSetting")
 @interface NautilusCodeReaderSetting : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class AVCaptureMetadataOutput;
+@class AVMetadataObject;
+@class AVCaptureConnection;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC21NautilusCodeReaderSDK32NautilusCodeReaderViewController")
+@interface NautilusCodeReaderViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)captureOutput:(AVCaptureMetadataOutput * _Nonnull)output didOutputMetadataObjects:(NSArray<AVMetadataObject *> * _Nonnull)metadataObjects fromConnection:(AVCaptureConnection * _Nonnull)connection;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface NautilusCodeReaderViewController (SWIFT_EXTENSION(NautilusCodeReaderSDK)) <NautilusCodeReaderInstantiatable>
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app setting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif
@@ -577,7 +619,10 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AVFoundation;
+@import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -677,11 +722,50 @@ SWIFT_PROTOCOL("_TtP21NautilusCodeReaderSDK25NautilusCodeReaderHandler_")
 @end
 
 
+/// ルーターから、コードリーダー画面を生成するためのプロトコル
+SWIFT_PROTOCOL("_TtP21NautilusCodeReaderSDK32NautilusCodeReaderInstantiatable_")
+@protocol NautilusCodeReaderInstantiatable
+/// コードリーダー画面を生成する
+/// \param app SDKのインスタンス
+///
+/// \param setting コードリーダー画面の表示設定
+///
+/// \param handler コード読み込み結果の受け取り先
+///
+///
+/// returns:
+/// コードリーダー画面
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app setting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// コードリーダー画面の表示設定
 SWIFT_CLASS("_TtC21NautilusCodeReaderSDK25NautilusCodeReaderSetting")
 @interface NautilusCodeReaderSetting : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class AVCaptureMetadataOutput;
+@class AVMetadataObject;
+@class AVCaptureConnection;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC21NautilusCodeReaderSDK32NautilusCodeReaderViewController")
+@interface NautilusCodeReaderViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)captureOutput:(AVCaptureMetadataOutput * _Nonnull)output didOutputMetadataObjects:(NSArray<AVMetadataObject *> * _Nonnull)metadataObjects fromConnection:(AVCaptureConnection * _Nonnull)connection;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface NautilusCodeReaderViewController (SWIFT_EXTENSION(NautilusCodeReaderSDK)) <NautilusCodeReaderInstantiatable>
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app setting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif
