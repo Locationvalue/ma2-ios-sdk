@@ -4629,6 +4629,80 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "stopCarouselScroll",
+            "printedName": "stopCarouselScroll(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[NautilusBannerSDK.NautilusBannerCarouselView]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusBannerCarouselView",
+                    "printedName": "NautilusBannerSDK.NautilusBannerCarouselView",
+                    "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCarouselView"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBanner(im)stopCarouselScroll:",
+            "mangledName": "$s17NautilusBannerSDK0aB0C18stopCarouselScrollyySayAA0abE4ViewCGF",
+            "moduleName": "NautilusBannerSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resumeCarouselScroll",
+            "printedName": "resumeCarouselScroll(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[NautilusBannerSDK.NautilusBannerCarouselView]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusBannerCarouselView",
+                    "printedName": "NautilusBannerSDK.NautilusBannerCarouselView",
+                    "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCarouselView"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBanner(im)resumeCarouselScroll:",
+            "mangledName": "$s17NautilusBannerSDK0aB0C20resumeCarouselScrollyySayAA0abE4ViewCGF",
+            "moduleName": "NautilusBannerSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",

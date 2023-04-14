@@ -264,6 +264,7 @@ using UInt = size_t;
 @class NautilusBannerCategory;
 @class NautilusBannerInfo;
 @class NautilusBannerLog;
+@class NautilusBannerCarouselView;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusBannerSDK14NautilusBanner")
@@ -300,6 +301,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)sendBannerLogWithBannerLogs:(NSArray<NautilusBannerLog *> * _Nonnull)bannerLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// カルーセルのスクロールを止める
+/// \param carouselViews スクロールを止めたい<code>NautilusBannerCarouselView</code>の配列
+///
+- (void)stopCarouselScroll:(NSArray<NautilusBannerCarouselView *> * _Nonnull)carouselViews;
+/// カルーセルのスクロールを再開する
+/// 開始は画像読み込みをトリガーにして自動で開始されるのでこのメソッドを利用する必要はない
+/// \param carouselViews スクロールを再開したい<code>NautilusBannerCarouselView</code>の配列
+///
+- (void)resumeCarouselScroll:(NSArray<NautilusBannerCarouselView *> * _Nonnull)carouselViews;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -756,6 +766,7 @@ using UInt = size_t;
 @class NautilusBannerCategory;
 @class NautilusBannerInfo;
 @class NautilusBannerLog;
+@class NautilusBannerCarouselView;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusBannerSDK14NautilusBanner")
@@ -792,6 +803,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)sendBannerLogWithBannerLogs:(NSArray<NautilusBannerLog *> * _Nonnull)bannerLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// カルーセルのスクロールを止める
+/// \param carouselViews スクロールを止めたい<code>NautilusBannerCarouselView</code>の配列
+///
+- (void)stopCarouselScroll:(NSArray<NautilusBannerCarouselView *> * _Nonnull)carouselViews;
+/// カルーセルのスクロールを再開する
+/// 開始は画像読み込みをトリガーにして自動で開始されるのでこのメソッドを利用する必要はない
+/// \param carouselViews スクロールを再開したい<code>NautilusBannerCarouselView</code>の配列
+///
+- (void)resumeCarouselScroll:(NSArray<NautilusBannerCarouselView *> * _Nonnull)carouselViews;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

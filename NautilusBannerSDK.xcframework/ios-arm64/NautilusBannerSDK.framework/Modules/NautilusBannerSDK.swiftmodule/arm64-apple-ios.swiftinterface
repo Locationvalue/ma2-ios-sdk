@@ -137,6 +137,8 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc final public func getBannerList(categoryID: Swift.Int, completion: @escaping ([NautilusBannerSDK.NautilusBannerInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Result<Swift.Void, NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
   @objc final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc final public func stopCarouselScroll(_ carouselViews: [NautilusBannerSDK.NautilusBannerCarouselView])
+  @objc final public func resumeCarouselScroll(_ carouselViews: [NautilusBannerSDK.NautilusBannerCarouselView])
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class NautilusBannerCategory : ObjectiveC.NSObject {
