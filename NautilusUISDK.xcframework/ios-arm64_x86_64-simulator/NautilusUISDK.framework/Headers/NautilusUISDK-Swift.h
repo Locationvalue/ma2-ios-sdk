@@ -1198,7 +1198,7 @@ SWIFT_CLASS("_TtC13NautilusUISDK32NautilusYearMonthDatePickerGroup")
 @property (nonatomic, copy) NSString * _Nullable datePickerTitle;
 /// 内部的に保持している<code>UITextField</code>の<code>placeholder</code>にアクセスする
 @property (nonatomic, copy) NSString * _Nullable placeholder;
-/// 内部的に保持している<code>dateFormatter</code>のロケールにアクセスする（デフォルトは日本語）
+/// 内部的に保持している<code>dateFormatter</code>のロケールにアクセスする（デフォルトは日本）
 @property (nonatomic, copy) NSLocale * _Nonnull locale;
 /// 内部的に保持している<code>dateFormatter</code>のタイムゾーンにアクセスする（デフォルトは東京）
 @property (nonatomic, copy) NSTimeZone * _Nonnull timeZone;
@@ -2467,7 +2467,7 @@ SWIFT_CLASS("_TtC13NautilusUISDK32NautilusYearMonthDatePickerGroup")
 @property (nonatomic, copy) NSString * _Nullable datePickerTitle;
 /// 内部的に保持している<code>UITextField</code>の<code>placeholder</code>にアクセスする
 @property (nonatomic, copy) NSString * _Nullable placeholder;
-/// 内部的に保持している<code>dateFormatter</code>のロケールにアクセスする（デフォルトは日本語）
+/// 内部的に保持している<code>dateFormatter</code>のロケールにアクセスする（デフォルトは日本）
 @property (nonatomic, copy) NSLocale * _Nonnull locale;
 /// 内部的に保持している<code>dateFormatter</code>のタイムゾーンにアクセスする（デフォルトは東京）
 @property (nonatomic, copy) NSTimeZone * _Nonnull timeZone;
