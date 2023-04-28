@@ -189,7 +189,7 @@ import _StringProcessing
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc public class NautilusCheckInResultInfo : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusCheckInResultInfo : ObjectiveC.NSObject {
   final public let stampID: Swift.Int?
   final public let numberOfAddedStamps: Swift.Int?
   final public let prizes: [NautilusStampSDK.NautilusStampPrizeExchangeResult]

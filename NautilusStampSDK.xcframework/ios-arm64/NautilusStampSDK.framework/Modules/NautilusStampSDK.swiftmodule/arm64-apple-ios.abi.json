@@ -7552,32 +7552,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusCheckInResultInfo",
-                "printedName": "NautilusStampSDK.NautilusCheckInResultInfo",
-                "usr": "c:@M@NautilusStampSDK@objc(cs)NautilusCheckInResultInfo"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@NautilusStampSDK@objc(cs)NautilusCheckInResultInfo(im)init",
-            "mangledName": "$s16NautilusStampSDK0A17CheckInResultInfoCACycfc",
-            "moduleName": "NautilusStampSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -7591,6 +7565,7 @@
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -12000,13 +11975,6 @@
       "offset": 3390,
       "length": 9,
       "value": "\"sort_no\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusCheckInResultInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 242,
-      "length": 25,
-      "value": "\"NautilusStampSDK.NautilusCheckInResultInfo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/MigrateStampCardEntity.swift",
