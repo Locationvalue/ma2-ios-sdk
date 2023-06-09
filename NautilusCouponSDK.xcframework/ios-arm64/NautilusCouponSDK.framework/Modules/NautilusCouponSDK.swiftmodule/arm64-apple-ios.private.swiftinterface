@@ -160,7 +160,7 @@ public let NautilusCouponErrorDomain: Swift.String
   @objc final public func instantiateCouponListViewController(categoryID: Swift.Int, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
   @objc final public func instantiateCouponListViewController(categoryAlias: Swift.String?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
   @objc final public func instantiateFavoriteCouponListViewController() -> UIKit.UIViewController
-  final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int?, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
+  final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int? = nil, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
   @objc final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
   @objc deinit
 }
