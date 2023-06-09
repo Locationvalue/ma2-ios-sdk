@@ -160,7 +160,8 @@ public let NautilusCouponErrorDomain: Swift.String
   @objc final public func instantiateCouponListViewController(categoryID: Swift.Int, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
   @objc final public func instantiateCouponListViewController(categoryAlias: Swift.String?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
   @objc final public func instantiateFavoriteCouponListViewController() -> UIKit.UIViewController
-  @objc final public func instantiateCouponDetailViewController(couponID: Swift.Int, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
+  final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int?, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
+  @objc final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
   @objc deinit
 }
 extension NautilusCouponSDK.NautilusCoupon {
@@ -302,7 +303,7 @@ extension NautilusCouponSDK.NautilusCoupon {
   @objc func addFavorite(coupon: NautilusCouponSDK.NautilusCouponInfo)
   @objc func removeFavorite(coupon: NautilusCouponSDK.NautilusCouponInfo)
   @objc func showCouponUseCondition(couponID: Swift.Int)
-  @objc func useCoupon(couponID: Swift.Int)
+  @objc func useCoupon(couponID: Swift.Int, type: NautilusCouponSDK.NautilusCouponPublishType, exchangeID: Foundation.NSNumber?)
   @objc func toggleCouponUseView(cell: NautilusCouponSDK.NautilusCouponBaseCell, couponID: Swift.Int)
 }
 @objc public class NautilusCouponData : ObjectiveC.NSObject {

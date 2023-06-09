@@ -346,12 +346,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// クーポンID・タイプからクーポン詳細画面を返す
 /// \param couponID クーポンID
 ///
+/// \param exchangeID 交換ID, 景品クーポンの場合必須
+///
 /// \param couponType クーポンタイプ(<code>NautilusCouponPublishType</code>)
 ///
 ///
 /// returns:
 /// クーポン詳細画面
-- (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID exchangeID:(NSInteger)exchangeID couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -688,6 +690,7 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK26NautilusCouponCategoryInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSNumber;
 
 /// セル内のボタンタップ時の処理
 SWIFT_PROTOCOL("_TtP17NautilusCouponSDK31NautilusCouponCellActionHandler_")
@@ -695,7 +698,7 @@ SWIFT_PROTOCOL("_TtP17NautilusCouponSDK31NautilusCouponCellActionHandler_")
 - (void)addFavoriteWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
 - (void)removeFavoriteWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
 - (void)showCouponUseConditionWithCouponID:(NSInteger)couponID;
-- (void)useCouponWithCouponID:(NSInteger)couponID;
+- (void)useCouponWithCouponID:(NSInteger)couponID type:(enum NautilusCouponPublishType)type exchangeID:(NSNumber * _Nullable)exchangeID;
 - (void)toggleCouponUseViewWithCell:(NautilusCouponBaseCell * _Nonnull)cell couponID:(NSInteger)couponID;
 @end
 
