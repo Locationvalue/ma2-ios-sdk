@@ -12,6 +12,7 @@ import NautilusImagingSDK
 import NautilusLoggingSDK
 import NautilusUISDK
 import Swift
+import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -24,14 +25,16 @@ import _StringProcessing
   @_Concurrency.MainActor(unsafe) public func prepare(for bannerInstance: NautilusBannerSDK.NautilusBanner)
   @objc deinit
 }
-@objc public class NautilusBannerLog : ObjectiveC.NSObject {
+@objc public class NautilusBannerLog : ObjectiveC.NSObject, Swift.Codable {
   final public let bannerID: Swift.Int
   final public let actionDatetime: Foundation.Date
   final public let type: NautilusBannerSDK.NautilusBannerLogType
   public init(bannerID: Swift.Int, actionDatetime: Foundation.Date, type: NautilusBannerSDK.NautilusBannerLogType)
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
 }
-@objc public enum NautilusBannerLogType : Swift.Int {
+@objc public enum NautilusBannerLogType : Swift.Int, Swift.Codable {
   case show
   case tap
   public init?(rawValue: Swift.Int)
@@ -137,6 +140,10 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc final public func getBannerList(categoryID: Swift.Int, completion: @escaping ([NautilusBannerSDK.NautilusBannerInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Result<Swift.Void, NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
   @objc final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  final public func storeBannerActionLog(bannerLog: NautilusBannerSDK.NautilusBannerLog, completion: @escaping (Swift.Result<Swift.Void, NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
+  @objc final public func storeBannerActionLog(bannerLog: NautilusBannerSDK.NautilusBannerLog, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  final public func flushBannerActionLog(completion: @escaping (Swift.Result<Swift.Void, NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
+  @objc final public func flushBannerActionLog(completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc final public func stopCarouselScroll(_ carouselViews: [NautilusBannerSDK.NautilusBannerCarouselView])
   @objc final public func resumeCarouselScroll(_ carouselViews: [NautilusBannerSDK.NautilusBannerCarouselView])
   @objc deinit

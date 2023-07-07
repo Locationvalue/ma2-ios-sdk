@@ -649,6 +649,35 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusBannerLog",
+                "printedName": "NautilusBannerSDK.NautilusBannerLog",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerLog"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17NautilusBannerSDK0aB3LogC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17NautilusBannerSDK0aB3LogC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NautilusBannerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init()",
             "children": [
               {
@@ -671,6 +700,31 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17NautilusBannerSDK0aB3LogC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17NautilusBannerSDK0aB3LogC6encode2toys7Encoder_p_tKF",
+            "moduleName": "NautilusBannerSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -687,6 +741,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -945,6 +1013,20 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -4630,6 +4712,250 @@
           },
           {
             "kind": "Function",
+            "name": "storeBannerActionLog",
+            "printedName": "storeBannerActionLog(bannerLog:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusBannerLog",
+                "printedName": "NautilusBannerSDK.NautilusBannerLog",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerLog"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), NautilusBannerSDK.NautilusBannerError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), NautilusBannerSDK.NautilusBannerError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusBannerError",
+                        "printedName": "NautilusBannerSDK.NautilusBannerError",
+                        "usr": "c:@M@NautilusBannerSDK@E@NautilusBannerError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17NautilusBannerSDK0aB0C05storeB9ActionLog06bannerF010completionyAA0abF0C_ys6ResultOyytAA0aB5ErrorOGctF",
+            "mangledName": "$s17NautilusBannerSDK0aB0C05storeB9ActionLog06bannerF010completionyAA0abF0C_ys6ResultOyytAA0aB5ErrorOGctF",
+            "moduleName": "NautilusBannerSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "storeBannerActionLog",
+            "printedName": "storeBannerActionLog(bannerLog:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusBannerLog",
+                "printedName": "NautilusBannerSDK.NautilusBannerLog",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerLog"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBanner(im)storeBannerActionLogWithBannerLog:completion:",
+            "mangledName": "$s17NautilusBannerSDK0aB0C05storeB9ActionLog06bannerF010completionyAA0abF0C_ySb_So7NSErrorCSgtctF",
+            "moduleName": "NautilusBannerSDK",
+            "objc_name": "storeBannerActionLogWithBannerLog:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flushBannerActionLog",
+            "printedName": "flushBannerActionLog(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), NautilusBannerSDK.NautilusBannerError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), NautilusBannerSDK.NautilusBannerError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusBannerError",
+                        "printedName": "NautilusBannerSDK.NautilusBannerError",
+                        "usr": "c:@M@NautilusBannerSDK@E@NautilusBannerError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17NautilusBannerSDK0aB0C05flushB9ActionLog10completionyys6ResultOyytAA0aB5ErrorOGc_tF",
+            "mangledName": "$s17NautilusBannerSDK0aB0C05flushB9ActionLog10completionyys6ResultOyytAA0aB5ErrorOGc_tF",
+            "moduleName": "NautilusBannerSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flushBannerActionLog",
+            "printedName": "flushBannerActionLog(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBanner(im)flushBannerActionLogWithCompletion:",
+            "mangledName": "$s17NautilusBannerSDK0aB0C05flushB9ActionLog10completionyySb_So7NSErrorCSgtc_tF",
+            "moduleName": "NautilusBannerSDK",
+            "objc_name": "flushBannerActionLogWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "stopCarouselScroll",
             "printedName": "stopCarouselScroll(_:)",
             "children": [
@@ -5100,6 +5426,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "NautilusLoggingSDK",
+        "printedName": "NautilusLoggingSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusBannerSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "NautilusBannerCarouselView",
         "printedName": "NautilusBannerCarouselView",
@@ -5475,6 +5808,13 @@
         "kind": "Import",
         "name": "NautilusLoggingSDK",
         "printedName": "NautilusLoggingSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusBannerSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
         "declKind": "Import",
         "moduleName": "NautilusBannerSDK"
       },
@@ -6190,14 +6530,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerLog.swift",
       "kind": "IntegerLiteral",
-      "offset": 760,
+      "offset": 1282,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerLog.swift",
       "kind": "IntegerLiteral",
-      "offset": 760,
+      "offset": 1282,
       "length": 3,
       "value": "1"
     },
@@ -6518,8 +6858,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2799,
+      "length": 35,
+      "value": "\"com.locationvalue.nautilus.banner\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2829,
+      "offset": 3056,
       "length": 1,
       "value": "0"
     },
@@ -6529,6 +6876,20 @@
       "offset": 393,
       "length": 14,
       "value": "\"NautilusBannerSDK.NautilusBanner\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 17322,
+      "length": 31,
+      "value": "\"__nautilus_banner_show_logs__\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
+      "kind": "Array",
+      "offset": 17369,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Config\/NautilusBannerConfig.swift",
@@ -6624,7 +6985,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerCarouselView.swift",
       "kind": "StringLiteral",
-      "offset": 383,
+      "offset": 409,
       "length": 14,
       "value": "\"CarouselView\""
     },

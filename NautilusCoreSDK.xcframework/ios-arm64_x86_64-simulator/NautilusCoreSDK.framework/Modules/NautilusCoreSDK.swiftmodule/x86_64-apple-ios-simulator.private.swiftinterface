@@ -204,6 +204,20 @@ extension Swift.Array : NautilusCoreSDK.KeyChainConvertible {
   public init?(with value: Any)
   public func convertDataArray() -> [Foundation.Data]?
 }
+final public class NautilusConcurrencyService : NautilusCoreSDK.NetworkService {
+  public static let `default`: NautilusCoreSDK.NetworkService
+  final public var loggers: [NautilusCoreSDK.NetworkServiceLogger] {
+    get
+  }
+  public init(session: Foundation.URLSession)
+  final public func addLogger(_ logger: NautilusCoreSDK.NetworkServiceLogger)
+  final public func removeLogger(_ logger: NautilusCoreSDK.NetworkServiceLogger)
+  final public func send<R>(request: R, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
+  final public func send<R>(request: R, callbackQueue: Foundation.OperationQueue?, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
+  final public func cancelAll()
+  final public func cancel(uuid: Foundation.UUID)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers final public class NetworkListener : ObjectiveC.NSObject {
   final public var isListening: Swift.Bool {
     get

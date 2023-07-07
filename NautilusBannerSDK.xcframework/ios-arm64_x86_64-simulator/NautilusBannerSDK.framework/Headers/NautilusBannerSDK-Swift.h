@@ -301,6 +301,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)sendBannerLogWithBannerLogs:(NSArray<NautilusBannerLog *> * _Nonnull)bannerLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// バナーログを溜めて送信する
+/// 10件溜めて送信
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param bannerLog <code>NautilusBannerLog</code>バナーログ
+///
+/// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)storeBannerActionLogWithBannerLog:(NautilusBannerLog * _Nonnull)bannerLog completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// 溜めているバナーログを強制的に送信する
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)flushBannerActionLogWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// カルーセルのスクロールを止める
 /// \param carouselViews スクロールを止めたい<code>NautilusBannerCarouselView</code>の配列
 ///
@@ -803,6 +816,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)sendBannerLogWithBannerLogs:(NSArray<NautilusBannerLog *> * _Nonnull)bannerLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// バナーログを溜めて送信する
+/// 10件溜めて送信
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param bannerLog <code>NautilusBannerLog</code>バナーログ
+///
+/// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)storeBannerActionLogWithBannerLog:(NautilusBannerLog * _Nonnull)bannerLog completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// 溜めているバナーログを強制的に送信する
+/// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
+/// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)flushBannerActionLogWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// カルーセルのスクロールを止める
 /// \param carouselViews スクロールを止めたい<code>NautilusBannerCarouselView</code>の配列
 ///
