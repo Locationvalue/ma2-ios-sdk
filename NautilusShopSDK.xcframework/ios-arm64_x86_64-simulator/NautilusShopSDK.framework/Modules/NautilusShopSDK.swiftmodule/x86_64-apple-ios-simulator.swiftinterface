@@ -62,8 +62,12 @@ import _StringProcessing
   @objc final public func instantiateShopSearchListViewController() -> UIKit.UIViewController
   final public func getShopList(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
   @objc final public func getShopList(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
+  @available(*, deprecated, renamed: "searchShop(offset:limit:location:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)")
   final public func searchShop(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int?, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
+  final public func searchShop(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int?, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
+  @available(*, deprecated, renamed: "searchShop(offset:limit:location:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)")
   @objc final public func searchShop(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int, shopName: Swift.String?, prefectures: [Swift.Int]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
+  @objc final public func searchShop(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int, shopName: Swift.String?, prefectures: [Swift.Int]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func getShopDetail(shopID: Swift.Int?, clientShopCD: Swift.String?, completion: @escaping (Swift.Result<NautilusShopSDK.NautilusShopInfo, NautilusShopSDK.NautilusShopError>) -> Swift.Void)
   @objc final public func getShopDetail(shopID: Swift.Int, clientShopCD: Swift.String?, completion: @escaping (NautilusShopSDK.NautilusShopInfo?, Foundation.NSError?) -> Swift.Void)
   final public func updateFavorite(addFavoriteShopIDs: [Swift.Int]?, removeFavoriteShopIDs: [Swift.Int]?, completion: @escaping (Swift.Result<Swift.Void, NautilusShopSDK.NautilusShopError>) -> Swift.Void)
@@ -82,6 +86,29 @@ import _StringProcessing
   case tapOnShopList
   case tapOnSearchMap
   case tapOnFavoriteShopList
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSearchSortKey : ObjectiveC.NSObject {
+  final public let keyName: NautilusShopSDK.NautilusShopSearchSortKeyName
+  final public let order: NautilusShopSDK.NautilusShopSearchSortKeyOrder
+  public init(keyName: NautilusShopSDK.NautilusShopSearchSortKeyName, order: NautilusShopSDK.NautilusShopSearchSortKeyOrder)
+  @objc deinit
+}
+@objc public enum NautilusShopSearchSortKeyName : Swift.Int {
+  case latitude
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NautilusShopSearchSortKeyOrder : Swift.Int {
+  case ascending
+  case descending
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -169,6 +196,12 @@ public let NautilusShopErrorDomain: Swift.String
 extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.Equatable {}
 extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.Hashable {}
 extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.RawRepresentable {}
+extension NautilusShopSDK.NautilusShopSearchSortKeyName : Swift.Equatable {}
+extension NautilusShopSDK.NautilusShopSearchSortKeyName : Swift.Hashable {}
+extension NautilusShopSDK.NautilusShopSearchSortKeyName : Swift.RawRepresentable {}
+extension NautilusShopSDK.NautilusShopSearchSortKeyOrder : Swift.Equatable {}
+extension NautilusShopSDK.NautilusShopSearchSortKeyOrder : Swift.Hashable {}
+extension NautilusShopSDK.NautilusShopSearchSortKeyOrder : Swift.RawRepresentable {}
 extension NautilusShopSDK.NautilusFavoriteShopSortOrder : Swift.Equatable {}
 extension NautilusShopSDK.NautilusFavoriteShopSortOrder : Swift.Hashable {}
 extension NautilusShopSDK.NautilusFavoriteShopSortOrder : Swift.RawRepresentable {}

@@ -272,6 +272,7 @@ typedef SWIFT_ENUM(NSInteger, NautilusFavoriteShopSortOrder, open) {
 @class NautilusLocation;
 @class NautilusShopInfo;
 @class NautilusShopSearchTagInfo;
+@class NautilusShopSearchSortKey;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC15NautilusShopSDK12NautilusShop")
@@ -358,7 +359,32 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param completion 成功時は店舗一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)searchShopWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nullable)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+- (void)searchShopWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nullable)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("", "searchShop(offset:limit:location:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)");
+/// 店舗一覧を検索して取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param offset 取得開始位置
+///
+/// \param limit 件数
+///
+/// \param location 検索中心位置
+///
+/// \param range 検索範囲
+///
+/// \param shopName 店舗名
+///
+/// \param prefectures 都道府県の配列
+///
+/// \param shopSearchTags 検索タグ配列の配列（配列同士はand検索）
+///
+/// \param shopIDs 店舗IDの配列
+///
+/// \param clientShopCDs 更新用管理コード配列
+///
+/// \param sortKeys 店舗の並び順
+///
+/// \param completion 成功時は店舗一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)searchShopWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nullable)location range:(NSInteger)range shopName:(NSString * _Nullable)shopName prefectures:(NSArray<NSNumber *> * _Nullable)prefectures shopSearchTags:(NSArray<NSArray<NautilusShopSearchTagInfo *> *> * _Nullable)shopSearchTags shopIDs:(NSArray<NSNumber *> * _Nullable)shopIDs clientShopCDs:(NSArray<NSString *> * _Nullable)clientShopCDs sortKeys:(NSArray<NautilusShopSearchSortKey *> * _Nullable)sortKeys completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗詳細を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param shopID 店舗ID
@@ -481,6 +507,29 @@ SWIFT_PROTOCOL("_TtP15NautilusShopSDK28NautilusShopPinImageProvider_")
 ///
 - (UIImage * _Nonnull)provideShopPinImageWith:(NautilusShopInfo * _Nonnull)shopInfo SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
+/// APIから取得する店舗データの並び順
+SWIFT_CLASS("_TtC15NautilusShopSDK25NautilusShopSearchSortKey")
+@interface NautilusShopSearchSortKey : NSObject
+/// 引数なし初期化は禁止
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// APIから取得するデータの並び順のキー名
+typedef SWIFT_ENUM(NSInteger, NautilusShopSearchSortKeyName, open) {
+/// 緯度
+  NautilusShopSearchSortKeyNameLatitude = 0,
+};
+
+/// APIから取得するデータの並び順の順序指定
+typedef SWIFT_ENUM(NSInteger, NautilusShopSearchSortKeyOrder, open) {
+/// 昇順
+  NautilusShopSearchSortKeyOrderAscending = 0,
+/// 降順
+  NautilusShopSearchSortKeyOrderDescending = 1,
+};
 
 
 /// 店舗検索タグを指定して検索する際に、APIに渡す店舗検索タグの並びを任意に指定するためのプロトコル
