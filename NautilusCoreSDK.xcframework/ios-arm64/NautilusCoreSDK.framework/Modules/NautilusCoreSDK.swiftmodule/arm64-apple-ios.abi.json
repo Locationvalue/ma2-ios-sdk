@@ -13937,6 +13937,16 @@
         "usr": "s:10Foundation12NotificationV",
         "mangledName": "$s10Foundation12NotificationV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -14086,6 +14096,16 @@
         "mangledName": "$s10Foundation11JSONDecoderC",
         "moduleName": "Foundation",
         "isOpen": true,
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -14185,6 +14205,16 @@
         "mangledName": "$s10Foundation19PropertyListDecoderC",
         "moduleName": "Foundation",
         "isOpen": true,
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -15676,48 +15706,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
                   }
                 ]
               }
             ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
           },
           {
             "kind": "Conformance",
@@ -15763,39 +15784,48 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
+                "name": "Regions",
+                "printedName": "Regions",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NSArray",
-                    "printedName": "Foundation.NSArray",
-                    "usr": "c:objc(cs)NSArray"
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
                   }
                 ]
               }
             ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
           },
           {
             "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ContiguousBytes",
-            "printedName": "ContiguousBytes",
-            "usr": "s:10Foundation15ContiguousBytesP",
-            "mangledName": "$s10Foundation15ContiguousBytesP"
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
           }
         ]
       },
@@ -16187,36 +16217,31 @@
         "usr": "s:10Foundation4DateV",
         "mangledName": "$s10Foundation4DateV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSDate",
-                    "printedName": "Foundation.NSDate",
-                    "usr": "c:objc(cs)NSDate"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Comparable",
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -16231,35 +16256,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Strideable",
-            "printedName": "Strideable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Stride",
-                "printedName": "Stride",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sx",
-            "mangledName": "$sSx"
           },
           {
             "kind": "Conformance",
@@ -16281,6 +16277,42 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -16313,17 +16345,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Strideable",
+            "printedName": "Strideable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Stride",
+                "printedName": "Stride",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
           }
         ]
       },
@@ -17440,763 +17480,2639 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequestPolicy.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequestPolicy.swift",
       "kind": "FloatLiteral",
       "offset": 702,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequestPolicy.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequestPolicy.swift",
       "kind": "FloatLiteral",
       "offset": 917,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequestPolicy.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequestPolicy.swift",
       "kind": "FloatLiteral",
       "offset": 1168,
       "length": 4,
       "value": "30.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 344,
+      "length": 34,
+      "value": "\"Do not call initializer: init().\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
+      "kind": "Array",
+      "offset": 1027,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
+      "kind": "Array",
+      "offset": 1147,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
+      "kind": "Array",
+      "offset": 1434,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
       "offset": 1978,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
       "offset": 2020,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
       "offset": 2075,
       "length": 10,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
       "offset": 1978,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
       "offset": 2020,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeature.swift",
       "kind": "IntegerLiteral",
       "offset": 2075,
       "length": 10,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 919,
+      "length": 10,
+      "value": "\"nautilus\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1311,
+      "length": 10,
+      "value": "\"nautilus\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
       "kind": "IntegerLiteral",
       "offset": 1759,
       "length": 25,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
       "kind": "IntegerLiteral",
       "offset": 1908,
       "length": 21,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
       "kind": "IntegerLiteral",
       "offset": 2056,
       "length": 23,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2203,
+      "length": 38,
+      "value": "\"ma_feature_uninitialized_error_title\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2302,
+      "length": 40,
+      "value": "\"ma_feature_uninitialized_error_message\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2399,
+      "length": 36,
+      "value": "\"ma_feature_unavailable_error_title\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2494,
+      "length": 38,
+      "value": "\"ma_feature_unavailable_error_message\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
       "kind": "IntegerLiteral",
       "offset": 1759,
       "length": 25,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
       "kind": "IntegerLiteral",
       "offset": 1908,
       "length": 21,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusStatusErrorStrings.swift",
       "kind": "IntegerLiteral",
       "offset": 2056,
       "length": 23,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1156,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1220,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1862,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2070,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2138,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2347,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2417,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2562,
+      "length": 24,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2574,
+      "length": 1,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2585,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3126,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3170,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3211,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusDeviceInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3253,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 385,
+      "length": 10,
+      "value": "\"Nautilus\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 405,
+      "length": 7,
+      "value": "\"plist\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "Dictionary",
+      "offset": 548,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "Dictionary",
+      "offset": 677,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1028,
+      "length": 42,
+      "value": "\"[Nautilus\/F] Missing key \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1060,
+      "length": 2,
+      "value": "\" in plist\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1442,
+      "length": 42,
+      "value": "\"[Nautilus\/F] Missing key \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1474,
+      "length": 2,
+      "value": "\" in plist\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 334,
       "length": 3,
-      "value": "10"
+      "value": "-10"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 357,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 426,
       "length": 12,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 574,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 635,
       "length": 14,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 701,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 334,
       "length": 1,
-      "value": "10"
+      "value": "-10"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 357,
       "length": 1,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 426,
       "length": 12,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 574,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 635,
       "length": 14,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 701,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 914,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 988,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1057,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1146,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1207,
       "length": 15,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 914,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 988,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1057,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1146,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1207,
       "length": 15,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "kind": "Array",
+      "offset": 1635,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2264,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2316,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3045,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3085,
+      "length": 48,
+      "value": "\"[Nautilus\/F] Could not be encoded in the Data.\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 4375,
+      "length": 14,
+      "value": "\"MyAppService\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "kind": "Array",
+      "offset": 5127,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
       "kind": "StringLiteral",
       "offset": 5405,
       "length": 21,
       "value": "\"CopyMatching error.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
       "kind": "StringLiteral",
       "offset": 5454,
       "length": 15,
       "value": "\"cast failure.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
       "kind": "StringLiteral",
       "offset": 5497,
       "length": 19,
       "value": "\"value is nothing.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
       "kind": "StringLiteral",
       "offset": 5543,
       "length": 19,
       "value": "\"Keychain's error.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
       "kind": "StringLiteral",
       "offset": 5405,
       "length": 21,
       "value": "\"CopyMatching error.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
       "kind": "StringLiteral",
       "offset": 5454,
       "length": 15,
       "value": "\"cast failure.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
       "kind": "StringLiteral",
       "offset": 5497,
       "length": 19,
       "value": "\"value is nothing.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/KeyChainPropertyWrapper.swift",
       "kind": "StringLiteral",
       "offset": 5543,
       "length": 19,
       "value": "\"Keychain's error.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
       "kind": "Array",
       "offset": 551,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
+      "kind": "StringLiteral",
+      "offset": 958,
+      "length": 23,
+      "value": "\"com.locationvalue.log\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2670,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3458,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
       "kind": "BooleanLiteral",
       "offset": 3643,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5188,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6316,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6322,
+      "length": 3,
+      "value": "600"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
       "kind": "StringLiteral",
       "offset": 2888,
       "length": 18,
       "value": "\"NautilusCoreSDK.MANetworkOperation\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
       "kind": "StringLiteral",
       "offset": 478,
       "length": 21,
       "value": "\"http:\/\/m.imanara.jp\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
       "kind": "BooleanLiteral",
       "offset": 741,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 867,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 944,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1531,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1982,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2197,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2456,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2476,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3098,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
       "kind": "StringLiteral",
       "offset": 3203,
       "length": 19,
       "value": "\"flagsNotification\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "StringLiteral",
+      "offset": 3669,
+      "length": 21,
+      "value": "\"http:\/\/m.imanara.jp\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3706,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/Date+ISO8601.swift",
+      "kind": "StringLiteral",
+      "offset": 427,
+      "length": 12,
+      "value": "\"Asia\/Tokyo\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/Date+ISO8601.swift",
+      "kind": "StringLiteral",
+      "offset": 764,
+      "length": 12,
+      "value": "\"Asia\/Tokyo\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/Date+ISO8601.swift",
+      "kind": "StringLiteral",
+      "offset": 1256,
+      "length": 7,
+      "value": "\"ja_JP\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/Date+ISO8601.swift",
+      "kind": "StringLiteral",
+      "offset": 1683,
+      "length": 7,
+      "value": "\"ja_JP\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/Date+ISO8601.swift",
+      "kind": "StringLiteral",
+      "offset": 1802,
+      "length": 21,
+      "value": "\"yyyyMMMdd(EEE)HH:mm\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/Date+ISO8601.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1892,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/Date+ISO8601.swift",
+      "kind": "StringLiteral",
+      "offset": 2506,
+      "length": 7,
+      "value": "\"ja_JP\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/Date+ISO8601.swift",
+      "kind": "StringLiteral",
+      "offset": 2974,
+      "length": 7,
+      "value": "\"ja_JP\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 309,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 371,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 456,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 545,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 602,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 666,
       "length": 3,
       "value": "901"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 741,
       "length": 3,
       "value": "903"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 795,
       "length": 3,
       "value": "905"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 850,
       "length": 3,
       "value": "906"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 930,
       "length": 3,
       "value": "907"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 309,
       "length": 1,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 371,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 456,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 545,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 602,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 666,
       "length": 3,
       "value": "901"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 741,
       "length": 3,
       "value": "903"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 795,
       "length": 3,
       "value": "905"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 850,
       "length": 3,
       "value": "906"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 930,
       "length": 3,
       "value": "907"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusLocationProvider.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusLocationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 504,
+      "length": 6,
+      "value": "\"%.6f\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusLocationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 652,
+      "length": 6,
+      "value": "\"%.6f\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusLocationProvider.swift",
       "kind": "StringLiteral",
       "offset": 257,
       "length": 16,
       "value": "\"NautilusCoreSDK.NautilusLocation\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/LifeCycle\/LifeCycleNotificationCenter.swift",
+      "kind": "StringLiteral",
+      "offset": 281,
+      "length": 15,
+      "value": "\"alreadyLaunch\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/LifeCycle\/LifeCycleNotificationCenter.swift",
+      "kind": "StringLiteral",
+      "offset": 356,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/LifeCycle\/LifeCycleNotificationCenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1182,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/LifeCycle\/LifeCycleNotificationCenter.swift",
+      "kind": "StringLiteral",
+      "offset": 1452,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 20,
+      "value": "\"NetworkLog [\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 537,
+      "length": 1,
+      "value": "\"]\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 701,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 764,
+      "length": 34,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 777,
+      "length": 1,
+      "value": "\": Request URL=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 797,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 820,
+      "length": 31,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 833,
+      "length": 1,
+      "value": "\": =Header Fields=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 976,
+      "length": 41,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 989,
+      "length": 1,
+      "value": "\":     \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1004,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1016,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1074,
+      "length": 30,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1087,
+      "length": 1,
+      "value": "\":     No headers\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1136,
+      "length": 25,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1149,
+      "length": 1,
+      "value": "\": =Queries=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1276,
+      "length": 48,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1289,
+      "length": 1,
+      "value": "\":     \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1305,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1320,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1323,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1381,
+      "length": 30,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1394,
+      "length": 1,
+      "value": "\":     No queries\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1443,
+      "length": 56,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1456,
+      "length": 1,
+      "value": "\": Method=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1489,
+      "length": 8,
+      "value": "\"(none)\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1498,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1566,
+      "length": 22,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1579,
+      "length": 1,
+      "value": "\": =Body=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1686,
+      "length": 27,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1699,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1712,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1764,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1777,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1786,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1844,
+      "length": 28,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1857,
+      "length": 1,
+      "value": "\": No body data\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2102,
+      "length": 35,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2115,
+      "length": 1,
+      "value": "\": Response URL=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2136,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2159,
+      "length": 54,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2172,
+      "length": 1,
+      "value": "\": Status Code=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2212,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2235,
+      "length": 31,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2248,
+      "length": 1,
+      "value": "\": =Header Fields=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2398,
+      "length": 41,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2411,
+      "length": 1,
+      "value": "\":     \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2426,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2438,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2496,
+      "length": 30,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2509,
+      "length": 1,
+      "value": "\":     No headers\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2591,
+      "length": 22,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2604,
+      "length": 1,
+      "value": "\": =Body=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2711,
+      "length": 27,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2724,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2737,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2789,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2802,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2811,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2869,
+      "length": 28,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2882,
+      "length": 1,
+      "value": "\": No body data\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2978,
+      "length": 30,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2991,
+      "length": 1,
+      "value": "\": Error=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NetworkServiceSystemLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 3007,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1657,
+      "length": 25,
+      "value": "\"ma2_shop_account_app_id\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2148,
+      "length": 21,
+      "value": "\"shop_account_app_id\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2283,
+      "length": 70,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2322,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2352,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2375,
+      "length": 62,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2404,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2436,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2463,
+      "length": 82,
+      "value": "\"Device\/\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2528,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2539,
+      "length": 3,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2544,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2572,
+      "length": 113,
+      "value": "\"Network\/\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2674,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2684,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2710,
+      "length": 51,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2721,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2731,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2745,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/NautilusAppInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2760,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
       "kind": "StringLiteral",
       "offset": 340,
       "length": 23,
       "value": "\"nautilus-core-service\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeatureContainer.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
+      "kind": "BooleanLiteral",
+      "offset": 898,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2478,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2958,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3077,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3117,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3365,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
+      "kind": "StringLiteral",
+      "offset": 3411,
+      "length": 56,
+      "value": "\"Failed to delete value for key `\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
+      "kind": "StringLiteral",
+      "offset": 3450,
+      "length": 1,
+      "value": "\"` from Keychain.\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/NautilusKeychain.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3488,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusFeatureContainer.swift",
       "kind": "Array",
       "offset": 327,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
       "kind": "Array",
       "offset": 528,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 870,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
+      "kind": "StringLiteral",
+      "offset": 907,
+      "length": 27,
+      "value": "\"com.locationvalue.network\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2538,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3346,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
       "kind": "BooleanLiteral",
       "offset": 3535,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5136,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6304,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6310,
+      "length": 3,
+      "value": "600"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
       "kind": "StringLiteral",
       "offset": 2756,
       "length": 18,
       "value": "\"NautilusCoreSDK.MANetworkOperation\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "Dictionary",
       "offset": 432,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 494,
+      "length": 9,
+      "value": "\"ma2.app\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "BooleanLiteral",
       "offset": 1298,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "BooleanLiteral",
       "offset": 1432,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "Array",
       "offset": 1703,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 2896,
+      "length": 28,
+      "value": "\"Initialize: \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 2923,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 3119,
+      "length": 14,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 3125,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 3132,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 3174,
+      "length": 29,
+      "value": "\"Initialized: \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 3202,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 4386,
+      "length": 64,
+      "value": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 4473,
+      "length": 12,
+      "value": "\"0123456789\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 4530,
+      "length": 12,
+      "value": "\"health_pid\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4577,
+      "length": 2,
+      "value": "65"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 4594,
+      "length": 12,
+      "value": "\"health_cid\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4641,
+      "length": 2,
+      "value": "65"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 4658,
+      "length": 16,
+      "value": "\"health_user_id\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4709,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 4726,
+      "length": 18,
+      "value": "\"health_manage_cd\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4779,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 4796,
+      "length": 23,
+      "value": "\"health_push_device_id\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4854,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4896,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5307,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5328,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5467,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5488,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5616,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5637,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5668,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5688,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5796,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 6306,
+      "length": 75,
+      "value": "\"Feature \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 6329,
+      "length": 4,
+      "value": "\" must initialize during SDK initialization process.\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 6450,
+      "length": 28,
+      "value": "\"Initialize: \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 6477,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 6626,
+      "length": 65,
+      "value": "\"Initialized (\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 6651,
+      "length": 9,
+      "value": "\"Success\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 6663,
+      "length": 9,
+      "value": "\"Failure\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 6673,
+      "length": 1,
+      "value": "\"): \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 6690,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "Array",
+      "offset": 7108,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "Array",
+      "offset": 8398,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 9295,
+      "length": 31,
+      "value": "\"All features are initialized.\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 9416,
+      "length": 29,
+      "value": "\"Initialize: \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 9444,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 9857,
+      "length": 34,
+      "value": "\"Initialize Skip: \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 9890,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10120,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10403,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 10615,
+      "length": 57,
+      "value": "\"Initialize Skip due to duplicated call: \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 10671,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10718,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10962,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 11170,
+      "length": 66,
+      "value": "\"Initialized (\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 11195,
+      "length": 9,
+      "value": "\"Success\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 11207,
+      "length": 9,
+      "value": "\"Failure\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 11217,
+      "length": 1,
+      "value": "\"): \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 11235,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 12278,
+      "length": 39,
+      "value": "\"Cannot get PID: \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 12316,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 12618,
+      "length": 49,
+      "value": "\"Initialization failure: \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 12666,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12828,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 13053,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
+      "kind": "StringLiteral",
+      "offset": 13278,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/UserDefaultsPropertyWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 640,
+      "length": 47,
+      "value": "\"No value stored in `UserDefaults`: key=\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/UserDefaultsPropertyWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 686,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/UserDefaultsPropertyWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 863,
+      "length": 47,
+      "value": "\"Stored value in `UserDefaults` is wrong type.\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/PropertyWrapper\/UserDefaultsPropertyWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1249,
+      "length": 61,
+      "value": "\"Failed to store new value to `UserDefaults`: incorrect type\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 563,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 664,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 744,
       "length": 16,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 563,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 664,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/DeploymentEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 744,
       "length": 16,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 345,
       "length": 6,
       "value": "\"date\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 11,
       "value": "\"error_msg\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 12,
       "value": "\"error_code\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 5,
       "value": "\"pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 479,
       "length": 11,
       "value": "\"device_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 345,
       "length": 6,
       "value": "\"date\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 11,
       "value": "\"error_msg\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 12,
       "value": "\"error_code\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 5,
       "value": "\"pid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 479,
       "length": 11,
       "value": "\"device_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppSettings.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/ErrorResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1348,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppSettings.swift",
       "kind": "StringLiteral",
       "offset": 486,
       "length": 24,
       "value": "\"__nautilus_boot_date__\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppSettings.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppSettings.swift",
       "kind": "StringLiteral",
       "offset": 526,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppSettings.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppSettings.swift",
       "kind": "StringLiteral",
       "offset": 600,
       "length": 26,
       "value": "\"__nautilus_app_version__\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppSettings.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppSettings.swift",
       "kind": "StringLiteral",
       "offset": 642,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppInitializationError.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 618,
+      "length": 6,
+      "value": "\"http\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 665,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 1052,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 1097,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 1141,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 1188,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 661,
+      "length": 12,
+      "value": "\"User-Agent\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 731,
+      "length": 18,
+      "value": "\"X-DearOne-Secret\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 819,
+      "length": 11,
+      "value": "\"a_api_key\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 966,
+      "length": 16,
+      "value": "\"Content-Length\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 986,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1000,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1488,
+      "length": 70,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1527,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1557,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1580,
+      "length": 62,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1609,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1641,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1668,
+      "length": 82,
+      "value": "\"Device\/\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1733,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1744,
+      "length": 3,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1749,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1777,
+      "length": 113,
+      "value": "\"Network\/\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1879,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1889,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1915,
+      "length": 51,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1926,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1936,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1950,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1965,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppInitializationError.swift",
       "kind": "IntegerLiteral",
       "offset": 391,
       "length": 18,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppInitializationError.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppInitializationError.swift",
       "kind": "IntegerLiteral",
       "offset": 391,
       "length": 18,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NautilusAPIClient.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Client\/NautilusAPIClient.swift",
       "kind": "Array",
       "offset": 1688,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/Bundle+Keys.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/Bundle+Keys.swift",
       "kind": "StringLiteral",
       "offset": 256,
       "length": 20,
       "value": "\"CFBundleIdentifier\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/Bundle+Keys.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/Bundle+Keys.swift",
       "kind": "StringLiteral",
       "offset": 309,
       "length": 14,
       "value": "\"CFBundleName\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/Bundle+Keys.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/Bundle+Keys.swift",
       "kind": "StringLiteral",
       "offset": 370,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/Bundle+Keys.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/Bundle+Keys.swift",
       "kind": "StringLiteral",
       "offset": 429,
       "length": 10,
       "value": "\"Nautilus\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/Bundle+Keys.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2.0\/NautilusSDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Info\/Bundle+Keys.swift",
       "kind": "StringLiteral",
       "offset": 467,
       "length": 7,

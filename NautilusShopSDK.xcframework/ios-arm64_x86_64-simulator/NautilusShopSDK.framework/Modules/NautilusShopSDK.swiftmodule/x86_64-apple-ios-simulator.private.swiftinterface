@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusShopSDK
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.124.4 clang-1500.0.38.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusShopSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreData
 import CoreLocation
+import DeveloperToolsSupport
 import Foundation
 import MapKit
 import NautilusAnalyticsSDK
@@ -16,9 +17,11 @@ import NautilusImagingSDK
 import NautilusLoggingSDK
 import NautilusUISDK
 import Swift
+import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public protocol NautilusShopSearchTagFilteringOperation {
   @objc func transformSearchCondition(tags: [NautilusShopSDK.NautilusShopSearchTagInfo]) -> [[NautilusShopSDK.NautilusShopSearchTagInfo]]
 }
@@ -46,8 +49,8 @@ import _StringProcessing
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
-  final public var shopPinImageProvider: NautilusShopSDK.NautilusShopPinImageProvider?
-  final public var shopSearchTagFilteringOperation: NautilusShopSDK.NautilusShopSearchTagFilteringOperation?
+  final public var shopPinImageProvider: (any NautilusShopSDK.NautilusShopPinImageProvider)?
+  final public var shopSearchTagFilteringOperation: (any NautilusShopSDK.NautilusShopSearchTagFilteringOperation)?
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
