@@ -323,7 +323,7 @@ public enum NautilusKeychain {
   public static func loadString(for key: Swift.String) -> Swift.String?
   public static func loadString(for key: Swift.String, defaultValue: Swift.String) -> Swift.String
   @discardableResult
-  public static func storeString(value: Swift.String, for key: Swift.String) -> Swift.Bool
+  public static func storeString(value: Swift.String, for key: Swift.String, access: CoreFoundation.CFString = kSecAttrAccessibleWhenUnlockedThisDeviceOnly) -> Swift.Bool
   @discardableResult
   public static func deleteString(for key: Swift.String) -> Swift.Bool
 }
@@ -373,6 +373,9 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
     get
   }
   final public var canManageNautilusSecretData: Swift.Bool {
+    get
+  }
+  final public var isSecureDataAvailable: Swift.Bool {
     get
   }
   @objc public static func app() -> NautilusCoreSDK.NautilusApp
@@ -564,6 +567,7 @@ open class NautilusAPICommonRequest<P, T, TD> where P : NautilusCoreSDK.RequestP
 }
 @objc public enum NautilusAppInitializationError : Swift.Int {
   case cryptoMalfunction
+  case deviceLockedState
   case featureUnavailable
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int

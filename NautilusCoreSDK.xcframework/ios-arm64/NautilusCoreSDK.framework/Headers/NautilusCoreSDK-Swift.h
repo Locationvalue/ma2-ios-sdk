@@ -325,8 +325,10 @@ SWIFT_PROTOCOL("_TtP15NautilusCoreSDK19NautilusAppDelegate_")
 typedef SWIFT_ENUM(NSInteger, NautilusAppInitializationError, open) {
 /// ヘルスチェックに失敗
   NautilusAppInitializationErrorCryptoMalfunction = 0,
+/// 端末ロック判定されているためキーチェーンの利用ができない
+  NautilusAppInitializationErrorDeviceLockedState = 1,
 /// SDKの初期化に失敗
-  NautilusAppInitializationErrorFeatureUnavailable = 1,
+  NautilusAppInitializationErrorFeatureUnavailable = 2,
 };
 
 
