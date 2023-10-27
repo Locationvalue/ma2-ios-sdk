@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusAnalyticsSDK
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusAnalyticsSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import NautilusContainerSDK
@@ -10,6 +10,7 @@ import NautilusLoggingSDK
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 extension Foundation.Notification.NautilusApp {
   public static let analyticsSendEvent: Foundation.Notification.Name
 }
@@ -43,14 +44,14 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
     get
     set
   }
-  final public var plugins: [NautilusAnalyticsSDK.NautilusAnalyticsPlugin] {
+  final public var plugins: [any NautilusAnalyticsSDK.NautilusAnalyticsPlugin] {
     get
   }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func analytics() -> NautilusAnalyticsSDK.NautilusAnalytics
   @objc(analyticsAppNamed:) public static func analytics(appName: Swift.String) -> NautilusAnalyticsSDK.NautilusAnalytics
-  @objc final public func addPlugin(_ plugin: NautilusAnalyticsSDK.NautilusAnalyticsPlugin)
-  @objc final public func removePlugin(_ plugin: NautilusAnalyticsSDK.NautilusAnalyticsPlugin)
+  @objc final public func addPlugin(_ plugin: any NautilusAnalyticsSDK.NautilusAnalyticsPlugin)
+  @objc final public func removePlugin(_ plugin: any NautilusAnalyticsSDK.NautilusAnalyticsPlugin)
   @objc(sendEventWithEventType:) final public func sendEvent(_ event: NautilusAnalyticsSDK.NautilusAnalyticsEvent)
   @objc(sendEventWithEventType:eventProperties:) final public func sendEvent(_ event: NautilusAnalyticsSDK.NautilusAnalyticsEvent, eventProperties: [Swift.String : Any]?)
   @objc(sendEvent:) final public func sendEvent(_ eventName: Swift.String)
