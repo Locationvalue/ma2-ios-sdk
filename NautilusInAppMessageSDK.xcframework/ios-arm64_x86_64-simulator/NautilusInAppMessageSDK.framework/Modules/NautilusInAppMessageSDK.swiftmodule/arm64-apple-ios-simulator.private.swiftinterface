@@ -1,9 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusInAppMessageSDK
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusInAppMessageSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreData
-import DeveloperToolsSupport
 import Foundation
 import NautilusAnalyticsSDK
 import NautilusConfigSDK
@@ -15,11 +14,9 @@ import NautilusLoggingSDK
 import NautilusUISDK
 import SafariServices
 import Swift
-import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
-import _SwiftConcurrencyShims
 public struct NautilusInAppMessageViewConditionGroupItem : Swift.Equatable {
   public let eventID: NautilusInAppMessageSDK.NautilusEventIdentifierType
   public let eventCount: Swift.Int
@@ -133,7 +130,7 @@ extension Swift.Int {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusInAppMessageController : ObjectiveC.NSObject {
-  @objc weak public static var delegate: (any NautilusInAppMessageSDK.NautilusInAppMessageControllerDelegate)?
+  @objc weak public static var delegate: NautilusInAppMessageSDK.NautilusInAppMessageControllerDelegate?
   @objc public static func addInAppMessage(_ message: NautilusInAppMessageSDK.NautilusInAppMessage)
   @objc deinit
 }

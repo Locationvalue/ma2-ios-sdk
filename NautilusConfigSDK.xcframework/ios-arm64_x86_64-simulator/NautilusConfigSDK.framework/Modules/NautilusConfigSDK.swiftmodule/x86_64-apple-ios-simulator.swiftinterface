@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusConfigSDK
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusConfigSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreData
 import Foundation
@@ -10,7 +10,6 @@ import NautilusLoggingSDK
 import Swift
 import _Concurrency
 import _StringProcessing
-import _SwiftConcurrencyShims
 @objc public protocol NautilusConfigValue {
   @objc var keyName: Swift.String { get }
   @objc var boolValue: Swift.Bool { get }
@@ -74,15 +73,15 @@ import _SwiftConcurrencyShims
   @objc final public func reset()
   @discardableResult
   @objc final public func reload() -> Swift.Bool
-  @objc(configValueForKey:) final public func configValue(for key: Swift.String) -> (any NautilusConfigSDK.NautilusConfigValue)?
-  @objc(configValueForKey:defaultBoolValue:) final public func configValue(for key: Swift.String, default: Swift.Bool) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultIntegerValue:) final public func configValue(for key: Swift.String, default: Swift.Int) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultDoubleValue:) final public func configValue(for key: Swift.String, default: Swift.Double) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultStringValue:) final public func configValue(for key: Swift.String, default: Swift.String) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultBoolArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.Bool]) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultIntegerArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.Int]) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultDoubleArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.Double]) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultStringArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.String]) -> any NautilusConfigSDK.NautilusConfigValue
+  @objc(configValueForKey:) final public func configValue(for key: Swift.String) -> NautilusConfigSDK.NautilusConfigValue?
+  @objc(configValueForKey:defaultBoolValue:) final public func configValue(for key: Swift.String, default: Swift.Bool) -> NautilusConfigSDK.NautilusConfigValue
+  @objc(configValueForKey:defaultIntegerValue:) final public func configValue(for key: Swift.String, default: Swift.Int) -> NautilusConfigSDK.NautilusConfigValue
+  @objc(configValueForKey:defaultDoubleValue:) final public func configValue(for key: Swift.String, default: Swift.Double) -> NautilusConfigSDK.NautilusConfigValue
+  @objc(configValueForKey:defaultStringValue:) final public func configValue(for key: Swift.String, default: Swift.String) -> NautilusConfigSDK.NautilusConfigValue
+  @objc(configValueForKey:defaultBoolArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.Bool]) -> NautilusConfigSDK.NautilusConfigValue
+  @objc(configValueForKey:defaultIntegerArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.Int]) -> NautilusConfigSDK.NautilusConfigValue
+  @objc(configValueForKey:defaultDoubleArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.Double]) -> NautilusConfigSDK.NautilusConfigValue
+  @objc(configValueForKey:defaultStringArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.String]) -> NautilusConfigSDK.NautilusConfigValue
   @objc deinit
 }
 @objc public protocol NautilusConfigStatus {
