@@ -1,8 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusCouponSDK
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusCouponSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
-import DeveloperToolsSupport
 import Foundation
 import NautilusAnalyticsSDK
 import NautilusConfigSDK
@@ -14,11 +13,9 @@ import NautilusLoggingSDK
 import NautilusServerTimeSDK
 import NautilusUISDK
 import Swift
-import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
-import _SwiftConcurrencyShims
 @objc public protocol NautilusCouponListInstantiatable {
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, category: NautilusCouponSDK.NautilusCouponCategoryInfo?) -> UIKit.UIViewController
   @objc var couponCategory: NautilusCouponSDK.NautilusCouponCategoryInfo? { get }
@@ -152,7 +149,7 @@ public let NautilusCouponErrorDomain: Swift.String
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
-  @objc weak final public var delegate: (any NautilusCouponSDK.NautilusCouponDelegate)?
+  @objc weak final public var delegate: NautilusCouponSDK.NautilusCouponDelegate?
   @objc final public let router: NautilusCouponSDK.NautilusCouponRouter
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func coupon() -> NautilusCouponSDK.NautilusCoupon
@@ -217,9 +214,9 @@ extension NautilusCouponSDK.NautilusCoupon {
   @objc final public func calculateUsedCouponValidEndDate(of coupon: NautilusCouponSDK.NautilusCouponInfo) -> Foundation.Date?
   @objc final public func isValidUsedCoupon(_ coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
   @objc final public func calculateUsedCouponValidDurationFromNow(of coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Int
-  @objc final public func registerCouponUseValidObserver(_ observer: any NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
+  @objc final public func registerCouponUseValidObserver(_ observer: NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
   @discardableResult
-  @objc final public func unregisterCouponUseValidObserver(_ observer: any NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
+  @objc final public func unregisterCouponUseValidObserver(_ observer: NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
   @discardableResult
   @objc final public func unregisterCouponUseValidObserver(for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
 }
@@ -302,7 +299,7 @@ extension NautilusCouponSDK.NautilusCoupon {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponFavoriteButton: UIKit.UIButton!
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponCoverImageOverlayView: UIKit.UIView!
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponCoverImageOverlayImageView: UIKit.UIImageView!
-  @_Concurrency.MainActor(unsafe) weak public var actionHandler: (any NautilusCouponSDK.NautilusCouponCellActionHandler)?
+  @_Concurrency.MainActor(unsafe) weak public var actionHandler: NautilusCouponSDK.NautilusCouponCellActionHandler?
   @_Concurrency.MainActor(unsafe) final public let imageDownloader: NautilusImagingSDK.NautilusImageDownloader
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
