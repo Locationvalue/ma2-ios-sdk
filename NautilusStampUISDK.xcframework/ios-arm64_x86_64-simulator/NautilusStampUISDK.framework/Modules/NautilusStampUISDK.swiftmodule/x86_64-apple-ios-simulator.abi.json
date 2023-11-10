@@ -1126,9 +1126,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "NautilusStampPrizeInfo",
-                "printedName": "NautilusStampSDK.NautilusStampPrizeInfo",
-                "usr": "c:@M@NautilusStampSDK@objc(cs)NautilusStampPrizeInfo"
+                "name": "NautilusStampPrizeExchangeResult",
+                "printedName": "NautilusStampSDK.NautilusStampPrizeExchangeResult",
+                "usr": "c:@M@NautilusStampSDK@objc(cs)NautilusStampPrizeExchangeResult"
               },
               {
                 "kind": "TypeNominal",
@@ -1139,7 +1139,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@NautilusStampUISDK@objc(pl)NautilusStampCardPrizeActionDelegate(im)stampCard:showPrizeButtonTitleForStampCardInfo:prizeInfo:in:",
-            "mangledName": "$s18NautilusStampUISDK0aB23CardPrizeActionDelegateP05stampD0_04showe14ButtonTitleForbD4Info05prizeM02inSSAA0abD2UIC_0aB3SDK0abdM0CAJ0abeM0CSo16UIViewControllerCtF",
+            "mangledName": "$s18NautilusStampUISDK0aB23CardPrizeActionDelegateP05stampD0_04showe14ButtonTitleForbD4Info05prizeM02inSSAA0abD2UIC_0aB3SDK0abdM0CAJ0abE14ExchangeResultCSo16UIViewControllerCtF",
             "moduleName": "NautilusStampUISDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NautilusStampUISDK.NautilusStampCardPrizeActionDelegate>",
             "sugared_genericSig": "<Self where Self : NautilusStampUISDK.NautilusStampCardPrizeActionDelegate>",
@@ -1176,9 +1176,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "NautilusStampPrizeInfo",
-                "printedName": "NautilusStampSDK.NautilusStampPrizeInfo",
-                "usr": "c:@M@NautilusStampSDK@objc(cs)NautilusStampPrizeInfo"
+                "name": "NautilusStampPrizeExchangeResult",
+                "printedName": "NautilusStampSDK.NautilusStampPrizeExchangeResult",
+                "usr": "c:@M@NautilusStampSDK@objc(cs)NautilusStampPrizeExchangeResult"
               },
               {
                 "kind": "TypeNominal",
@@ -1189,7 +1189,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@NautilusStampUISDK@objc(pl)NautilusStampCardPrizeActionDelegate(im)stampCard:handleStampCardInfo:prizeInfo:in:",
-            "mangledName": "$s18NautilusStampUISDK0aB23CardPrizeActionDelegateP05stampD0_06handlebD4Info05prizeJ02inSbAA0abD2UIC_0aB3SDK0abdJ0CAJ0abeJ0CSo16UIViewControllerCtF",
+            "mangledName": "$s18NautilusStampUISDK0aB23CardPrizeActionDelegateP05stampD0_06handlebD4Info05prizeJ02inSbAA0abD2UIC_0aB3SDK0abdJ0CAJ0abE14ExchangeResultCSo16UIViewControllerCtF",
             "moduleName": "NautilusStampUISDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NautilusStampUISDK.NautilusStampCardPrizeActionDelegate>",
             "sugared_genericSig": "<Self where Self : NautilusStampUISDK.NautilusStampCardPrizeActionDelegate>",
@@ -1662,6 +1662,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -2552,6 +2559,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -3025,6 +3039,34 @@
         "moduleName": "NautilusStampUISDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusStampUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NautilusStampUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NautilusStampUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "NautilusStampUISDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "UINavigationController",
         "printedName": "UINavigationController",
@@ -3160,6 +3202,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -3172,11 +3221,242 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1052,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1132,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1271,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1669,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1814,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2005,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2062,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2666,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2675,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2686,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2696,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampDescriptionDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5912,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4529,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4536,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4760,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9300,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9304,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9354,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9358,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "FloatLiteral",
+      "offset": 9415,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9457,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9573,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9596,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9635,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9831,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10010,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10052,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/NautilusStampCardUI.swift",
+      "kind": "StringLiteral",
+      "offset": 482,
+      "length": 30,
+      "value": "\"moduleapps-stampcard-ui.json\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/NautilusStampCardUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 798,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/NautilusStampCardUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 892,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/NautilusStampCardUI.swift",
       "kind": "BooleanLiteral",
       "offset": 1464,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/NautilusStampCardUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2918,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/NautilusStampCardUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3149,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/NautilusStampCardUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5885,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/NautilusStampCardUI.swift",
@@ -3186,6 +3466,720 @@
       "value": "\"NautilusStampUISDK.NautilusStampCardUI\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 654,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 872,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 984,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1127,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1183,
+      "length": 4,
+      "value": "1.15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1192,
+      "length": 4,
+      "value": "1.15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1381,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1588,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1818,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1883,
+      "length": 4,
+      "value": "0.85"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1892,
+      "length": 4,
+      "value": "0.85"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2026,
+      "length": 3,
+      "value": "136"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2037,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2049,
+      "length": 3,
+      "value": "236"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2061,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2141,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2150,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2161,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2171,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2227,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2301,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2378,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2459,
+      "length": 8,
+      "value": "\"222222\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2488,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2568,
+      "length": 8,
+      "value": "\"FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2653,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampBaseDialogViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2743,
+      "length": 8,
+      "value": "\"222222\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "StringLiteral",
+      "offset": 544,
+      "length": 24,
+      "value": "\"NautilusStampPrizeView\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2329,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2837,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2850,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2905,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2958,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3022,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3087,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3190,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3237,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3666,
+      "length": 4,
+      "value": "14.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4171,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4180,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4192,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4202,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "StringLiteral",
+      "offset": 5285,
+      "length": 36,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "StringLiteral",
+      "offset": 5317,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "StringLiteral",
+      "offset": 5320,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5421,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5481,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5613,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5898,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5960,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5993,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6274,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6465,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampPrizeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7767,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogCell.swift",
+      "kind": "StringLiteral",
+      "offset": 554,
+      "length": 30,
+      "value": "\"NautilusStampPrizeDialogCell\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogCell.swift",
+      "kind": "StringLiteral",
+      "offset": 677,
+      "length": 30,
+      "value": "\"NautilusStampPrizeDialogCell\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1203,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1250,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogCell.swift",
+      "kind": "StringLiteral",
+      "offset": 1299,
+      "length": 8,
+      "value": "\"333333\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1740,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 309,
+      "length": 51,
+      "value": "\"ma_stampcard_list_cell_overlay_icon_stampcard_new\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 428,
+      "length": 33,
+      "value": "\"ma_stampcard_list_cell_no_image\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 536,
+      "length": 34,
+      "value": "\"ma_stampcard_detail_close_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 655,
+      "length": 45,
+      "value": "\"ma_stampcard_detail_show_description_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 772,
+      "length": 37,
+      "value": "\"ma_stampcard_detail_no_header_image\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 896,
+      "length": 48,
+      "value": "\"ma_stampcard_detail_non_collected_stamp_normal\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 1029,
+      "length": 46,
+      "value": "\"ma_stampcard_detail_non_collected_stamp_last\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 1159,
+      "length": 44,
+      "value": "\"ma_stampcard_detail_collected_stamp_normal\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 1285,
+      "length": 42,
+      "value": "\"ma_stampcard_detail_collected_stamp_last\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 1410,
+      "length": 43,
+      "value": "\"ma_stampcard_detail_checkin_button_active\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 1537,
+      "length": 44,
+      "value": "\"ma_stampcard_detail_checkin_button_disable\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 1652,
+      "length": 36,
+      "value": "\"ma_stampcard_detail_no_prize_image\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 1780,
+      "length": 53,
+      "value": "\"ma_stampcard_detail_description_dialog_close_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 1937,
+      "length": 68,
+      "value": "\"ma_stampcard_detail_stamp_prize_auto_exchanged_dialog_close_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 2105,
+      "length": 70,
+      "value": "\"ma_stampcard_detail_stamp_prize_auto_exchanged_dialog_no_prize_image\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig+Image.swift",
+      "kind": "StringLiteral",
+      "offset": 2264,
+      "length": 50,
+      "value": "\"ma_stampcard_detail_complete_dialog_close_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 27,
+      "value": "\"NautilusStampCardListCell\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "StringLiteral",
+      "offset": 508,
+      "length": 27,
+      "value": "\"NautilusStampCardListCell\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1517,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 1528,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 1572,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 1614,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1675,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1728,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1824,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1935,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2417,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2472,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2854,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2888,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2931,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2973,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3485,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3957,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "StringLiteral",
+      "offset": 4429,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "StringLiteral",
+      "offset": 4622,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4996,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5001,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5015,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5021,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5313,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5671,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1993,
@@ -3193,6 +4187,503 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2635,
+      "length": 25,
+      "value": "\"NautilusStampCardDetail\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2752,
+      "length": 25,
+      "value": "\"NautilusStampCardDetail\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2851,
+      "length": 30,
+      "value": "\"Invalid Identifier or Class.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4171,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4276,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5610,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5882,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5887,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5901,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5907,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5994,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6144,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7567,
+      "length": 46,
+      "value": "\"Invalid NautilusCommonErrorView.ErrorReason.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7976,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 8479,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9517,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10098,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10700,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10875,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 11625,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12281,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13378,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 14041,
+      "length": 11,
+      "value": "\"閉じる\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15819,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16387,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16513,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16663,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17115,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17757,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18337,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18942,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 18953,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 19002,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 19049,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 19107,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19166,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20036,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20082,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20235,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 20278,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20345,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20426,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21006,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21140,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21723,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21911,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21992,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23465,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24016,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24634,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24662,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 24831,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 25424,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25552,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25562,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25574,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25585,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26053,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26614,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26869,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27090,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 28782,
+      "length": 42,
+      "value": "\"Succeed to NautilusStampCardPrizeAction.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 28876,
+      "length": 41,
+      "value": "\"Failed to NautilusStampCardPrizeAction.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 30464,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 30761,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 30989,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 31762,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 32561,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 34483,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 35121,
+      "length": 42,
+      "value": "\"Succeed to NautilusStampCardPrizeAction.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/NautilusStampCardDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 35207,
+      "length": 41,
+      "value": "\"Failed to NautilusStampCardPrizeAction.\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/NautilusStampRoutingTable.swift",
       "kind": "IntegerLiteral",
       "offset": 420,
@@ -3219,6 +4710,104 @@
       "offset": 481,
       "length": 15,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/NautilusStampRoutingTable.swift",
+      "kind": "Dictionary",
+      "offset": 1201,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1354,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1698,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1754,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1995,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2049,
+      "length": 8,
+      "value": "\"EDEDED\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2161,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2833,
+      "length": 2,
+      "value": "-8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2925,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4336,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4677,
+      "length": 2,
+      "value": "-8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5207,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5360,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampPrizeDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5719,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
@@ -3229,12 +4818,523 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1729,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1897,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2713,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2805,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2810,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2897,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2946,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
       "kind": "StringLiteral",
       "offset": 575,
       "length": 30,
       "value": "\"NautilusStampUISDK.NautilusStampCardListPresenter\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4370,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4844,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4885,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 324,
+      "length": 32,
+      "value": "\"ma_stampcard_list_screen_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 32,
+      "value": "\"ma_stampcard_list_loading_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 466,
+      "length": 48,
+      "value": "\"ma_stampcard_list_cell_stampcard_new_threshold\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 565,
+      "length": 54,
+      "value": "\"ma_stampcard_list_cell_publish_start_datetime_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 668,
+      "length": 52,
+      "value": "\"ma_stampcard_list_cell_publish_end_datetime_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 763,
+      "length": 45,
+      "value": "\"ma_stampcard_list_cell_publish_period_infix\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 865,
+      "length": 61,
+      "value": "\"ma_stampcard_list_cell_prize_exchange_limit_datetime_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 962,
+      "length": 37,
+      "value": "\"ma_stampcard_list_empty_state_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1037,
+      "length": 39,
+      "value": "\"ma_stampcard_list_empty_state_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1123,
+      "length": 50,
+      "value": "\"ma_stampcard_list_empty_state_show_reload_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1210,
+      "length": 38,
+      "value": "\"ma_stampcard_list_reload_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1283,
+      "length": 36,
+      "value": "\"ma_stampcard_list_load_error_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1356,
+      "length": 38,
+      "value": "\"ma_stampcard_list_load_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1438,
+      "length": 46,
+      "value": "\"ma_stampcard_list_cell_publish_period_prefix\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1532,
+      "length": 51,
+      "value": "\"ma_stampcard_list_cell_prize_exchange_enable_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1617,
+      "length": 34,
+      "value": "\"ma_stampcard_detail_screen_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1685,
+      "length": 34,
+      "value": "\"ma_stampcard_detail_loading_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1768,
+      "length": 51,
+      "value": "\"ma_stampcard_detail_publish_start_datetime_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1866,
+      "length": 49,
+      "value": "\"ma_stampcard_detail_publish_end_datetime_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1954,
+      "length": 40,
+      "value": "\"ma_stampcard_detail_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2044,
+      "length": 53,
+      "value": "\"ma_stampcard_detail_error_dialog_no_content_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2147,
+      "length": 53,
+      "value": "\"ma_stampcard_detail_error_dialog_load_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2249,
+      "length": 52,
+      "value": "\"ma_stampcard_detail_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2343,
+      "length": 44,
+      "value": "\"ma_stampcard_detail_prize_list_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2428,
+      "length": 42,
+      "value": "\"ma_stampcard_detail_publish_period_infix\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2512,
+      "length": 43,
+      "value": "\"ma_stampcard_detail_publish_period_prefix\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2601,
+      "length": 48,
+      "value": "\"ma_stampcard_detail_prize_exchange_notice_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2707,
+      "length": 62,
+      "value": "\"ma_stampcard_detail_stamps_required_to_exchange_prize_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2820,
+      "length": 53,
+      "value": "\"ma_stampcard_detail_prize_exchangeable_count_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2921,
+      "length": 50,
+      "value": "\"ma_stampcard_detail_prize_remaining_count_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3017,
+      "length": 48,
+      "value": "\"ma_stampcard_detail_exchange_prize_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3120,
+      "length": 58,
+      "value": "\"ma_stampcard_detail_prize_exchange_limit_datetime_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3224,
+      "length": 48,
+      "value": "\"ma_stampcard_detail_prize_exchange_enable_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3317,
+      "length": 46,
+      "value": "\"ma_stampcard_detail_description_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3420,
+      "length": 61,
+      "value": "\"ma_stampcard_detail_stamp_prize_auto_exchanged_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3529,
+      "length": 50,
+      "value": "\"ma_stampcard_exchange_prize_confirm_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3629,
+      "length": 52,
+      "value": "\"ma_stampcard_exchange_prize_confirm_dialog_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3742,
+      "length": 65,
+      "value": "\"ma_stampcard_exchange_prize_confirm_dialog_exchange_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3866,
+      "length": 63,
+      "value": "\"ma_stampcard_exchange_prize_confirm_dialog_cancel_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3977,
+      "length": 50,
+      "value": "\"ma_stampcard_exchange_prize_success_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4077,
+      "length": 52,
+      "value": "\"ma_stampcard_exchange_prize_success_dialog_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4187,
+      "length": 62,
+      "value": "\"ma_stampcard_exchange_prize_success_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4311,
+      "length": 67,
+      "value": "\"ma_stampcard_exchange_prize_success_dialog_show_prize_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4424,
+      "length": 48,
+      "value": "\"ma_stampcard_exchange_prize_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4520,
+      "length": 50,
+      "value": "\"ma_stampcard_exchange_prize_error_dialog_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4626,
+      "length": 60,
+      "value": "\"ma_stampcard_exchange_prize_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4726,
+      "length": 42,
+      "value": "\"ma_stampcard_detail_qr_code_reader_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4814,
+      "length": 48,
+      "value": "\"ma_stampcard_detail_qr_code_reader_description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4911,
+      "length": 53,
+      "value": "\"ma_stampcard_qr_code_reader_read_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5015,
+      "length": 55,
+      "value": "\"ma_stampcard_qr_code_reader_read_error_dialog_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5129,
+      "length": 65,
+      "value": "\"ma_stampcard_qr_code_reader_read_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5254,
+      "length": 66,
+      "value": "\"ma_stampcard_qr_code_reader_enable_continuous_read_if_read_error\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5375,
+      "length": 59,
+      "value": "\"ma_stampcard_checkin_get_location_info_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5491,
+      "length": 61,
+      "value": "\"ma_stampcard_checkin_get_location_info_error_dialog_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5617,
+      "length": 71,
+      "value": "\"ma_stampcard_checkin_get_location_info_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5723,
+      "length": 36,
+      "value": "\"ma_stampcard_stamp_check_in_method\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5799,
+      "length": 41,
+      "value": "\"ma_stampcard_checkin_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5882,
+      "length": 43,
+      "value": "\"ma_stampcard_checkin_error_dialog_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5975,
+      "length": 53,
+      "value": "\"ma_stampcard_checkin_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6083,
+      "length": 58,
+      "value": "\"ma_stampcard_checkin_interval_failure_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6198,
+      "length": 60,
+      "value": "\"ma_stampcard_checkin_interval_failure_error_dialog_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6323,
+      "length": 70,
+      "value": "\"ma_stampcard_checkin_interval_failure_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6433,
+      "length": 41,
+      "value": "\"ma_stampcard_detail_exchange_limit_text\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
       "offset": 324,
@@ -3678,443 +5778,975 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 324,
-      "length": 32,
-      "value": "\"ma_stampcard_list_screen_title\""
+      "offset": 6903,
+      "length": 20,
+      "value": "\"スタンプ一覧\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 388,
-      "length": 32,
-      "value": "\"ma_stampcard_list_loading_text\""
+      "offset": 7110,
+      "length": 20,
+      "value": "\"読み込み中...\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7325,
+      "length": 6,
+      "value": "604800"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 466,
-      "length": 48,
-      "value": "\"ma_stampcard_list_cell_stampcard_new_threshold\""
+      "offset": 7564,
+      "length": 15,
+      "value": "\"yyyy\/MM\/dd(E)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 565,
-      "length": 54,
-      "value": "\"ma_stampcard_list_cell_publish_start_datetime_format\""
+      "offset": 7807,
+      "length": 15,
+      "value": "\"yyyy\/MM\/dd(E)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 668,
-      "length": 52,
-      "value": "\"ma_stampcard_list_cell_publish_end_datetime_format\""
+      "offset": 8023,
+      "length": 5,
+      "value": "\" ~ \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 763,
-      "length": 45,
-      "value": "\"ma_stampcard_list_cell_publish_period_infix\""
+      "offset": 8316,
+      "length": 22,
+      "value": "\"交換はMM\/ddまで\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 865,
-      "length": 61,
-      "value": "\"ma_stampcard_list_cell_prize_exchange_limit_datetime_format\""
+      "offset": 8540,
+      "length": 62,
+      "value": "\"現在、スタンプカードが掲載されていません\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 962,
-      "length": 37,
-      "value": "\"ma_stampcard_list_empty_state_title\""
+      "offset": 8811,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9075,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1037,
-      "length": 39,
-      "value": "\"ma_stampcard_list_empty_state_message\""
+      "offset": 9302,
+      "length": 17,
+      "value": "\"再読み込み\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 9512,
+      "length": 17,
+      "value": "\"通信エラー\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 9729,
       "length": 50,
-      "value": "\"ma_stampcard_list_empty_state_show_reload_button\""
+      "value": "\"読み込み中にエラーが発生しました\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1210,
+      "offset": 9983,
+      "length": 10,
+      "value": "\"期間: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10239,
       "length": 38,
-      "value": "\"ma_stampcard_list_reload_button_text\""
+      "value": "\"交換できる特典があります\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1283,
-      "length": 36,
-      "value": "\"ma_stampcard_list_load_error_title\""
+      "offset": 10478,
+      "length": 23,
+      "value": "\"スタンプカード\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1356,
-      "length": 38,
-      "value": "\"ma_stampcard_list_load_error_message\""
+      "offset": 10696,
+      "length": 20,
+      "value": "\"読み込み中...\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10944,
+      "length": 12,
+      "value": "\"yyyy\/MM\/dd\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11180,
+      "length": 18,
+      "value": "\"yyyy\/MM\/dd HH:mm\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11406,
+      "length": 11,
+      "value": "\"エラー\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11649,
+      "length": 77,
+      "value": "\"該当するスタンプカードは、現在、配信されていません\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11958,
+      "length": 152,
+      "value": "\"スタンプカードが取得できませんでした。お手数ですが、電波環境をご確認いただき、再表示をしてください。\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12355,
+      "length": 11,
+      "value": "\"閉じる\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12583,
+      "length": 20,
+      "value": "\"特典クーポン\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12801,
+      "length": 5,
+      "value": "\" ~ \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13006,
+      "length": 10,
+      "value": "\"期間: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13245,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13529,
+      "length": 28,
+      "value": "\"スタンプ累計%d個で\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13819,
+      "length": 16,
+      "value": "\"%d回利用可\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14100,
+      "length": 22,
+      "value": "\"あと%d枚で交換\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14341,
+      "length": 11,
+      "value": "\"交換済\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14574,
+      "length": 14,
+      "value": "\"交換する\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14850,
+      "length": 42,
+      "value": "\"交換可能期限：yyyy\/MM\/dd(E) HH:mm\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15134,
+      "length": 29,
+      "value": "\"特典と交換できます\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15392,
+      "length": 14,
+      "value": "\"注意事項\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15639,
+      "length": 20,
+      "value": "\"獲得クーポン\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15880,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16110,
+      "length": 47,
+      "value": "\"スタンプ景品の交換をしますか？\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16419,
+      "length": 14,
+      "value": "\"交換する\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16700,
+      "length": 17,
+      "value": "\"キャンセル\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16938,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17168,
+      "length": 44,
+      "value": "\"スタンプ景品の交換をしました\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17471,
+      "length": 11,
+      "value": "\"閉じる\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17746,
+      "length": 17,
+      "value": "\"クーポンへ\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17980,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18206,
+      "length": 50,
+      "value": "\"スタンプ景品の交換に失敗しました\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18511,
+      "length": 11,
+      "value": "\"閉じる\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18740,
+      "length": 25,
+      "value": "\"QRコードスキャン\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18992,
+      "length": 43,
+      "value": "\"QRコードを読み取ってください\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19303,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19580,
+      "length": 55,
+      "value": "\"QRコードの読み取りが行えませんでした\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19941,
+      "length": 11,
+      "value": "\"閉じる\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20225,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 20511,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 20803,
+      "length": 50,
+      "value": "\"位置情報の取得が行えませんでした\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 21174,
+      "length": 11,
+      "value": "\"閉じる\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 21386,
+      "length": 18,
+      "value": "\"qr_code_plus_gps\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 21708,
+      "length": 29,
+      "value": "\"チェックインエラー\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 21991,
+      "length": 71,
+      "value": "\"スタンプカードのチェックインができませんでした\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 22351,
+      "length": 11,
+      "value": "\"閉じる\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 22639,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 22925,
+      "length": 125,
+      "value": "\"指定された時間が経過していないため、スタンプカードのチェックインができませんでした\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 23365,
+      "length": 11,
+      "value": "\"閉じる\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 23808,
+      "length": 9,
+      "value": "\"qr_code\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 23859,
+      "length": 18,
+      "value": "\"qr_code_plus_gps\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 23953,
+      "length": 23,
+      "value": "\"Invalid String Value.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 779,
+      "length": 8,
+      "value": "\"FD5B3C\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 971,
+      "length": 8,
+      "value": "\"FD5B3C\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1165,
+      "length": 8,
+      "value": "\"FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1373,
+      "length": 8,
+      "value": "\"757575\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1568,
+      "length": 8,
+      "value": "\"FD5B3C\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1760,
+      "length": 8,
+      "value": "\"222222\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1969,
+      "length": 8,
+      "value": "\"F8F0CC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2154,
+      "length": 8,
+      "value": "\"333333\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2362,
+      "length": 8,
+      "value": "\"1992D6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2558,
+      "length": 8,
+      "value": "\"757575\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2746,
+      "length": 8,
+      "value": "\"1992D6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2956,
+      "length": 8,
+      "value": "\"D8D8D8\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 3150,
+      "length": 8,
+      "value": "\"FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 3366,
+      "length": 8,
+      "value": "\"FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampColorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 3582,
+      "length": 8,
+      "value": "\"222222\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 10,
+      "value": "\"Nautilus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 7,
+      "value": "\"plist\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "Dictionary",
+      "offset": 551,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "Dictionary",
+      "offset": 681,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1028,
+      "length": 42,
+      "value": "\"[Nautilus\/F] Missing key \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1060,
+      "length": 2,
+      "value": "\" in plist\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/Bundle+SDK.swift",
       "kind": "StringLiteral",
       "offset": 1438,
+      "length": 42,
+      "value": "\"[Nautilus\/F] Missing key \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1470,
+      "length": 2,
+      "value": "\" in plist\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1246,
+      "length": 23,
+      "value": "\"NautilusStampCardList\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1361,
+      "length": 23,
+      "value": "\"NautilusStampCardList\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1456,
+      "length": 30,
+      "value": "\"Invalid Identifier or Class.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2773,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3205,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3421,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3431,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3442,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3452,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3710,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4166,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6520,
       "length": 46,
-      "value": "\"ma_stampcard_list_cell_publish_period_prefix\""
+      "value": "\"Invalid NautilusCommonErrorView.ErrorReason.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1532,
-      "length": 51,
-      "value": "\"ma_stampcard_list_cell_prize_exchange_enable_text\""
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6642,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1617,
-      "length": 34,
-      "value": "\"ma_stampcard_detail_screen_title\""
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7352,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1685,
-      "length": 34,
-      "value": "\"ma_stampcard_detail_loading_text\""
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7751,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1768,
-      "length": 51,
-      "value": "\"ma_stampcard_detail_publish_start_datetime_format\""
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7961,
+      "length": 4,
+      "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1866,
-      "length": 49,
-      "value": "\"ma_stampcard_detail_publish_end_datetime_format\""
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8152,
+      "length": 4,
+      "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1954,
-      "length": 40,
-      "value": "\"ma_stampcard_detail_error_dialog_title\""
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8432,
+      "length": 4,
+      "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 2044,
-      "length": 53,
-      "value": "\"ma_stampcard_detail_error_dialog_no_content_message\""
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8504,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 2147,
-      "length": 53,
-      "value": "\"ma_stampcard_detail_error_dialog_load_error_message\""
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8639,
+      "length": 4,
+      "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 2249,
-      "length": 52,
-      "value": "\"ma_stampcard_detail_error_dialog_close_button_text\""
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/List\/NautilusStampCardListViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8780,
+      "length": 4,
+      "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/NautilusStampCardRouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4279,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/NautilusStampCardRouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4556,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/NautilusStampCardRouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5507,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/NautilusStampCardRouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6287,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/NautilusStampCardRouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6570,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampCompleteDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1164,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampCompleteDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1928,
+      "length": 2,
+      "value": "-8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampCompleteDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2020,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampCompleteDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2553,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampCompleteDialogViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2559,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampCompleteDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2566,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampCompleteDialogViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2574,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/View\/Detail\/Dialog\/NautilusStampCompleteDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3639,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2343,
+      "offset": 790,
+      "length": 43,
+      "value": "\"ma_stampcard_detail_checkin_button_active\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1022,
       "length": 44,
-      "value": "\"ma_stampcard_detail_prize_list_header_text\""
+      "value": "\"ma_stampcard_detail_checkin_button_disable\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2428,
+      "offset": 1236,
+      "length": 34,
+      "value": "\"ma_stampcard_detail_close_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1455,
       "length": 42,
-      "value": "\"ma_stampcard_detail_publish_period_infix\""
+      "value": "\"ma_stampcard_detail_collected_stamp_last\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2512,
-      "length": 43,
-      "value": "\"ma_stampcard_detail_publish_period_prefix\""
+      "offset": 1686,
+      "length": 44,
+      "value": "\"ma_stampcard_detail_collected_stamp_normal\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2601,
-      "length": 48,
-      "value": "\"ma_stampcard_detail_prize_exchange_notice_text\""
+      "offset": 1930,
+      "length": 50,
+      "value": "\"ma_stampcard_detail_complete_dialog_close_button\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2707,
-      "length": 62,
-      "value": "\"ma_stampcard_detail_stamps_required_to_exchange_prize_format\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 2820,
+      "offset": 2186,
       "length": 53,
-      "value": "\"ma_stampcard_detail_prize_exchangeable_count_format\""
+      "value": "\"ma_stampcard_detail_description_dialog_close_button\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2921,
-      "length": 50,
-      "value": "\"ma_stampcard_detail_prize_remaining_count_format\""
+      "offset": 2409,
+      "length": 37,
+      "value": "\"ma_stampcard_detail_no_header_image\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3017,
-      "length": 48,
-      "value": "\"ma_stampcard_detail_exchange_prize_button_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3120,
-      "length": 58,
-      "value": "\"ma_stampcard_detail_prize_exchange_limit_datetime_format\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3224,
-      "length": 48,
-      "value": "\"ma_stampcard_detail_prize_exchange_enable_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3317,
-      "length": 46,
-      "value": "\"ma_stampcard_detail_description_dialog_title\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3420,
-      "length": 61,
-      "value": "\"ma_stampcard_detail_stamp_prize_auto_exchanged_dialog_title\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3529,
-      "length": 50,
-      "value": "\"ma_stampcard_exchange_prize_confirm_dialog_title\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3629,
-      "length": 52,
-      "value": "\"ma_stampcard_exchange_prize_confirm_dialog_message\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3742,
-      "length": 65,
-      "value": "\"ma_stampcard_exchange_prize_confirm_dialog_exchange_button_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3866,
-      "length": 63,
-      "value": "\"ma_stampcard_exchange_prize_confirm_dialog_cancel_button_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3977,
-      "length": 50,
-      "value": "\"ma_stampcard_exchange_prize_success_dialog_title\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4077,
-      "length": 52,
-      "value": "\"ma_stampcard_exchange_prize_success_dialog_message\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4187,
-      "length": 62,
-      "value": "\"ma_stampcard_exchange_prize_success_dialog_close_button_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4311,
-      "length": 67,
-      "value": "\"ma_stampcard_exchange_prize_success_dialog_show_prize_button_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4424,
-      "length": 48,
-      "value": "\"ma_stampcard_exchange_prize_error_dialog_title\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4520,
-      "length": 50,
-      "value": "\"ma_stampcard_exchange_prize_error_dialog_message\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4626,
-      "length": 60,
-      "value": "\"ma_stampcard_exchange_prize_error_dialog_close_button_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4726,
-      "length": 42,
-      "value": "\"ma_stampcard_detail_qr_code_reader_title\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4814,
-      "length": 48,
-      "value": "\"ma_stampcard_detail_qr_code_reader_description\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4911,
-      "length": 53,
-      "value": "\"ma_stampcard_qr_code_reader_read_error_dialog_title\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5015,
-      "length": 55,
-      "value": "\"ma_stampcard_qr_code_reader_read_error_dialog_message\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5129,
-      "length": 65,
-      "value": "\"ma_stampcard_qr_code_reader_read_error_dialog_close_button_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5254,
-      "length": 66,
-      "value": "\"ma_stampcard_qr_code_reader_enable_continuous_read_if_read_error\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5375,
-      "length": 59,
-      "value": "\"ma_stampcard_checkin_get_location_info_error_dialog_title\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5491,
-      "length": 61,
-      "value": "\"ma_stampcard_checkin_get_location_info_error_dialog_message\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5617,
-      "length": 71,
-      "value": "\"ma_stampcard_checkin_get_location_info_error_dialog_close_button_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5723,
+      "offset": 2614,
       "length": 36,
-      "value": "\"ma_stampcard_stamp_check_in_method\""
+      "value": "\"ma_stampcard_detail_no_prize_image\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5799,
-      "length": 41,
-      "value": "\"ma_stampcard_checkin_error_dialog_title\""
+      "offset": 2842,
+      "length": 46,
+      "value": "\"ma_stampcard_detail_non_collected_stamp_last\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5882,
-      "length": 43,
-      "value": "\"ma_stampcard_checkin_error_dialog_message\""
+      "offset": 3084,
+      "length": 48,
+      "value": "\"ma_stampcard_detail_non_collected_stamp_normal\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5975,
-      "length": 53,
-      "value": "\"ma_stampcard_checkin_error_dialog_close_button_text\""
+      "offset": 3323,
+      "length": 45,
+      "value": "\"ma_stampcard_detail_show_description_button\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6083,
-      "length": 58,
-      "value": "\"ma_stampcard_checkin_interval_failure_error_dialog_title\""
+      "offset": 3601,
+      "length": 68,
+      "value": "\"ma_stampcard_detail_stamp_prize_auto_exchanged_dialog_close_button\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6198,
-      "length": 60,
-      "value": "\"ma_stampcard_checkin_interval_failure_error_dialog_message\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6323,
+      "offset": 3900,
       "length": 70,
-      "value": "\"ma_stampcard_checkin_interval_failure_error_dialog_close_button_text\""
+      "value": "\"ma_stampcard_detail_stamp_prize_auto_exchanged_dialog_no_prize_image\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6433,
-      "length": 41,
-      "value": "\"ma_stampcard_detail_exchange_limit_text\""
+      "offset": 4132,
+      "length": 33,
+      "value": "\"ma_stampcard_list_cell_no_image\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusStampUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphonesimulator\/NautilusStampUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4366,
+      "length": 51,
+      "value": "\"ma_stampcard_list_cell_overlay_icon_stampcard_new\""
     }
   ]
 }
