@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusIdentifySDK
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusIdentifySDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import NautilusConfigSDK
@@ -11,6 +11,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc final public class NautilusAppOptionalAttribute : ObjectiveC.NSObject {
   final public func put(_ key: NautilusIdentifySDK.NautilusAppOptionalAttributeKey, value: Swift.String?)
   final public subscript(key: NautilusIdentifySDK.NautilusAppOptionalAttributeKey) -> Swift.String? {
@@ -40,12 +41,12 @@ public let NautilusUserExternalIDTypeNone: Swift.Int
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusUserInfoViewProvider : ObjectiveC.NSObject {
-  @objc final public func setCodeImageProvider(_ codeImageProvider: NautilusIdentifySDK.NautilusUserInfoCodeImageProvider?)
+  @objc final public func setCodeImageProvider(_ codeImageProvider: (any NautilusIdentifySDK.NautilusUserInfoCodeImageProvider)?)
   @objc final public func setCodeImageSize(_ codeImageSize: CoreFoundation.CGSize)
   @objc final public func provideUserInfoView() -> UIKit.UIView
-  @objc final public func provideUserInfoView(user: NautilusIdentifySDK.NautilusUser) -> UIKit.UIView
+  @objc final public func provideUserInfoView(user: any NautilusIdentifySDK.NautilusUser) -> UIKit.UIView
   @objc final public func provideUserInfoView(viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
-  @objc final public func provideUserInfoView(user: NautilusIdentifySDK.NautilusUser, viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
+  @objc final public func provideUserInfoView(user: any NautilusIdentifySDK.NautilusUser, viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
   @objc deinit
 }
 public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void
@@ -71,7 +72,7 @@ public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIde
   @objc public static func identify() -> NautilusIdentifySDK.NautilusIdentify
   @objc(identifyAppNamed:) public static func identify(appName: Swift.String) -> NautilusIdentifySDK.NautilusIdentify
   @objc final public func changeUser(userID: Swift.String?)
-  @objc final public func getCurrentUser() -> NautilusIdentifySDK.NautilusUser
+  @objc final public func getCurrentUser() -> any NautilusIdentifySDK.NautilusUser
   final public func setManageCode(userID: Swift.String, manageCode: Swift.String, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
   final public func setExternalID(userID: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
   final public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
@@ -86,7 +87,7 @@ public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIde
   @objc final public func setAppAttributeOpt(opt: NautilusIdentifySDK.NautilusAppOptionalAttribute, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc final public func getUserInfoView() -> UIKit.UIView
   @objc final public func getUserInfoView(viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
-  @objc final public func setCodeImageProvider(_ codeImageProvider: NautilusIdentifySDK.NautilusUserInfoCodeImageProvider?)
+  @objc final public func setCodeImageProvider(_ codeImageProvider: (any NautilusIdentifySDK.NautilusUserInfoCodeImageProvider)?)
   @objc final public func setCodeImageSize(_ codeImageSize: CoreFoundation.CGSize)
   @objc final public func removeCID()
   @objc final public func removeReferenceNumber()
