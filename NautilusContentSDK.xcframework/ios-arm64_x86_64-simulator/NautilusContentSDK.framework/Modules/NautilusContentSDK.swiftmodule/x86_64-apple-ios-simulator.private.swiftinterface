@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusContentSDK
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusContentSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import DeveloperToolsSupport
 import Foundation
 import NautilusAnalyticsSDK
 import NautilusConfigSDK
@@ -12,9 +13,11 @@ import NautilusImagingSDK
 import NautilusLoggingSDK
 import NautilusUISDK
 import Swift
+import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusContentInfo : ObjectiveC.NSObject {
   final public let contentID: Swift.Int
   final public let contentTitle: Swift.String?
@@ -41,8 +44,8 @@ import _StringProcessing
   final public let aspectRatio: Swift.Double?
   final public let sortNo: Swift.Int?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol NautilusContentDelegate {
   @objc func content(_ content: NautilusContentSDK.NautilusContent, canHandle contentInfo: NautilusContentSDK.NautilusContentInfo, in viewController: UIKit.UIViewController) -> Swift.Bool
@@ -64,7 +67,7 @@ import _StringProcessing
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
-  @objc weak final public var delegate: NautilusContentSDK.NautilusContentDelegate?
+  @objc weak final public var delegate: (any NautilusContentSDK.NautilusContentDelegate)?
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func content() -> NautilusContentSDK.NautilusContent
   @objc(shopAppNamed:) public static func content(appName: Swift.String) -> NautilusContentSDK.NautilusContent
@@ -143,7 +146,7 @@ import _StringProcessing
     get
   }
 }
-@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusContentTabViewController : NautilusUISDK.NautilusAppTopBarController, NautilusUISDK.NautilusAppTopBarControllerDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusContentTabViewController : NautilusUISDK.NautilusAppTopBarController, NautilusUISDK.NautilusAppTopBarControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override final public func appTopBar(_ appTopBar: NautilusUISDK.NautilusAppTopBar, viewForItemAt index: Swift.Int) -> NautilusUISDK.NautilusAppTopBarItemView
   @_Concurrency.MainActor(unsafe) @objc override final public func numberOfItems(in appTopBar: NautilusUISDK.NautilusAppTopBar) -> Swift.Int
