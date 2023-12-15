@@ -82,9 +82,13 @@ extension NautilusStampRallyUISDK.NautilusStampRallyListViewController : Nautilu
   @_Concurrency.MainActor(unsafe) override final public var bottomSheetContentViewController: NautilusUISDK.NautilusBottomSheetContentViewController {
     get
   }
+  @_Concurrency.MainActor(unsafe) override final public var initialBottomSheetOverlayType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType {
+    get
+  }
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) final public func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController, didChangeTo screenOverlayType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType)
   @_Concurrency.MainActor(unsafe) final public func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController)
   @_Concurrency.MainActor(unsafe) final public func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController, update sheetContainerViewFrame: CoreFoundation.CGRect, didChangeBottomSheetFrameWithReason reason: NautilusUISDK.NautilusBottomSheetFrameChangeReason)
