@@ -3739,48 +3739,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
                   }
                 ]
               }
             ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
           },
           {
             "kind": "Conformance",
@@ -3826,39 +3817,48 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
+                "name": "Regions",
+                "printedName": "Regions",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NSArray",
-                    "printedName": "Foundation.NSArray",
-                    "usr": "c:objc(cs)NSArray"
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
                   }
                 ]
               }
             ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
           },
           {
             "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ContiguousBytes",
-            "printedName": "ContiguousBytes",
-            "usr": "s:10Foundation15ContiguousBytesP",
-            "mangledName": "$s10Foundation15ContiguousBytesP"
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
           },
           {
             "kind": "Conformance",
@@ -4194,6 +4194,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/NautilusAnalyticsAmplitudePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 522,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
       "kind": "BooleanLiteral",
       "offset": 396,
@@ -4206,6 +4213,104 @@
       "offset": 466,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1048,
+      "length": 35,
+      "value": "\"Amplitude is already initialized.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1230,
+      "length": 29,
+      "value": "\"Amplitude API key is empty.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1375,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1772,
+      "length": 80,
+      "value": "\"Failed to send log event to Amplitude, because Amplitude API key is not given.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2171,
+      "length": 86,
+      "value": "\"Failed to send user properties to Amplitude, because Amplitude API key is not given.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2569,
+      "length": 69,
+      "value": "\"User property `\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2592,
+      "length": 1,
+      "value": "\"` is invalid value type: `\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2636,
+      "length": 1,
+      "value": "\"`\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3142,
+      "length": 86,
+      "value": "\"Failed to send user properties to Amplitude, because Amplitude API key is not given.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3466,
+      "length": 32,
+      "value": "\"User property `\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3489,
+      "length": 1,
+      "value": "\"` is nil\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3610,
+      "length": 69,
+      "value": "\"User property `\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3633,
+      "length": 1,
+      "value": "\"` is invalid value type: `\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3677,
+      "length": 1,
+      "value": "\"`\""
     }
   ]
 }

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusIntroSDK
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusIntroSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import NautilusAnalyticsSDK
@@ -14,6 +14,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public protocol NautilusIntroductionDelegate {
   @objc func introductionDidFinish(_ introduction: NautilusIntroSDK.NautilusIntroduction)
   @objc func introductionDidSkip(_ introduction: NautilusIntroSDK.NautilusIntroduction)
@@ -36,8 +37,8 @@ import _StringProcessing
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func introduction() -> NautilusIntroSDK.NautilusIntroduction
   @objc(introductionAppNamed:) public static func introduction(appName: Swift.String) -> NautilusIntroSDK.NautilusIntroduction
-  @objc final public func presentIntroduction(in viewController: UIKit.UIViewController, introList: NautilusIntroSDK.NautilusIntroductionList, animated: Swift.Bool, delegate: NautilusIntroSDK.NautilusIntroductionDelegate?)
-  @objc final public func instantiateIntroductionViewController(introList: NautilusIntroSDK.NautilusIntroductionList, delegate: NautilusIntroSDK.NautilusIntroductionDelegate?) -> UIKit.UIViewController
+  @objc final public func presentIntroduction(in viewController: UIKit.UIViewController, introList: NautilusIntroSDK.NautilusIntroductionList, animated: Swift.Bool, delegate: (any NautilusIntroSDK.NautilusIntroductionDelegate)?)
+  @objc final public func instantiateIntroductionViewController(introList: NautilusIntroSDK.NautilusIntroductionList, delegate: (any NautilusIntroSDK.NautilusIntroductionDelegate)?) -> UIKit.UIViewController
   @objc deinit
 }
 @objc final public class NautilusIntroductionListItem : ObjectiveC.NSObject {
