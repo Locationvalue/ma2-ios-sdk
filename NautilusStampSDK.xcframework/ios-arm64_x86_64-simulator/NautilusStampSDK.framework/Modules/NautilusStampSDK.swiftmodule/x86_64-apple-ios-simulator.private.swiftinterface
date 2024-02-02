@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusStampSDK
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusStampSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import NautilusConfigSDK
@@ -12,6 +12,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public enum NautilusStampPrizeUseLimitType : Swift.Int {
   case day
   case month
@@ -150,10 +151,32 @@ import _StringProcessing
   final public let point: Swift.Int?
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusStampRallyInfo : ObjectiveC.NSObject {
+  final public let stampRallyID: Swift.Int
+  final public let stampRallyTitle: Swift.String
+  final public let publishStartDate: Foundation.Date
+  final public let publishEndDate: Foundation.Date?
+  final public let prizeExchangeLimitDate: Foundation.Date?
+  final public let stampRallyText: Swift.String
+  final public let numberOfStamps: Swift.Int
+  final public let headerImageURL: Foundation.URL
+  final public let headerImageAspectRatio: Swift.Double
+  final public let alias: Swift.String?
+  final public let stampRallyPrizes: [NautilusStampSDK.NautilusStampPrizeInfo]?
+  final public let numberOfCurrentStamps: Swift.Int?
+  final public let numberOfExpiredStamps: Swift.Int?
+  final public let stampCompleteImagePath: Foundation.URL?
+  final public let stampCompleteImageAspectRatio: Swift.Double?
+  final public let currentLap: Swift.Int?
+  final public let checkPoints: [NautilusStampSDK.NautilusCheckPoint]?
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusCheckPoint : ObjectiveC.NSObject {
+  final public let checkPointID: Swift.Int?
   final public let checkPointName: Swift.String?
-  final public let latitude: Swift.Double?
-  final public let longitude: Swift.Double?
+  final public let latitude: Swift.String?
+  final public let longitude: Swift.String?
+  final public let checkinResult: Swift.Bool?
   final public let checkPointImages: [NautilusStampSDK.NautilusCheckPointImage]?
   final public let position: Swift.Int?
   @objc deinit
@@ -221,8 +244,16 @@ import _StringProcessing
   @objc final public func checkIn(checkInDevice: NautilusStampSDK.NautilusStampCheckInDeviceInfo, completion: @escaping ([NautilusStampSDK.NautilusCheckInResultInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func checkIn(stampCard: NautilusStampSDK.NautilusStampCardInfo, checkInDevice: NautilusStampSDK.NautilusStampCheckInDeviceInfo, completion: @escaping (Swift.Result<[NautilusStampSDK.NautilusCheckInResultInfo], NautilusStampSDK.NautilusStampError>) -> Swift.Void)
   @objc final public func checkIn(stampCard: NautilusStampSDK.NautilusStampCardInfo, checkInDevice: NautilusStampSDK.NautilusStampCheckInDeviceInfo, completion: @escaping ([NautilusStampSDK.NautilusCheckInResultInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func checkIn(stampRally: NautilusStampSDK.NautilusStampRallyInfo, checkInDevice: NautilusStampSDK.NautilusStampCheckInDeviceInfo, completion: @escaping (Swift.Result<[NautilusStampSDK.NautilusCheckInResultInfo], NautilusStampSDK.NautilusStampError>) -> Swift.Void)
+  @objc final public func checkIn(stampRally: NautilusStampSDK.NautilusStampRallyInfo, checkInDevice: NautilusStampSDK.NautilusStampCheckInDeviceInfo, completion: @escaping ([NautilusStampSDK.NautilusCheckInResultInfo]?, Foundation.NSError?) -> Swift.Void)
   final public func exchangePrize(stampCard: NautilusStampSDK.NautilusStampCardInfo, prizes: NautilusStampSDK.NautilusExchangePrizeRequestInfo, completion: @escaping (Swift.Result<[NautilusStampSDK.NautilusStampPrizeExchangeResult], NautilusStampSDK.NautilusStampError>) -> Swift.Void)
   @objc final public func exchangePrize(stampCard: NautilusStampSDK.NautilusStampCardInfo, prizes: NautilusStampSDK.NautilusExchangePrizeRequestInfo, completion: @escaping ([NautilusStampSDK.NautilusStampPrizeExchangeResult]?, Foundation.NSError?) -> Swift.Void)
+  final public func getStampRallyList(stampRallyIDs: [Swift.Int]?, completion: @escaping (Swift.Result<[NautilusStampSDK.NautilusStampRallyInfo], NautilusStampSDK.NautilusStampError>) -> Swift.Void)
+  @objc final public func getStampRallyList(stampRallyIDs: [Swift.Int]?, completion: @escaping ([NautilusStampSDK.NautilusStampRallyInfo]?, Foundation.NSError?) -> Swift.Void)
+  final public func getStampRallyCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusStampSDK.NautilusStampError>) -> Swift.Void)
+  @objc final public func getStampRallyCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  final public func exchangePrize(stampRally: NautilusStampSDK.NautilusStampRallyInfo, prizes: NautilusStampSDK.NautilusExchangePrizeRequestInfo, completion: @escaping (Swift.Result<[NautilusStampSDK.NautilusStampPrizeExchangeResult], NautilusStampSDK.NautilusStampError>) -> Swift.Void)
+  @objc final public func exchangePrize(stampRally: NautilusStampSDK.NautilusStampRallyInfo, prizes: NautilusStampSDK.NautilusExchangePrizeRequestInfo, completion: @escaping ([NautilusStampSDK.NautilusStampPrizeExchangeResult]?, Foundation.NSError?) -> Swift.Void)
   final public func migrateStampCard(installId: Swift.String, manageCode: Swift.String? = nil, completion: @escaping (Swift.Result<Swift.Void, NautilusStampSDK.NautilusStampError>) -> Swift.Void)
   @objc final public func migrateStampCard(installId: Swift.String, manageCode: Swift.String? = nil, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc deinit
