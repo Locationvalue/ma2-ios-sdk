@@ -152,8 +152,11 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class NautilusBannerCategory : ObjectiveC.NSObject {
+  final public let hierarchy: Swift.Int
+  final public let parentCategoryIdentifier: Swift.Int?
   final public let categoryIdentifier: Swift.Int
   final public let categoryName: Swift.String
+  final public let sortNo: Swift.Int
   final public let alias: Swift.String
   @objc deinit
 }
