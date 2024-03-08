@@ -5804,6 +5804,48 @@
           },
           {
             "kind": "Var",
+            "name": "showStoreSearchWidemap",
+            "printedName": "showStoreSearchWidemap",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusAnalyticsSDK.NautilusAnalyticsEvent.Type) -> NautilusAnalyticsSDK.NautilusAnalyticsEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAnalyticsEvent",
+                    "printedName": "NautilusAnalyticsSDK.NautilusAnalyticsEvent",
+                    "usr": "c:@M@NautilusAnalyticsSDK@E@NautilusAnalyticsEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusAnalyticsSDK.NautilusAnalyticsEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusAnalyticsEvent",
+                        "printedName": "NautilusAnalyticsSDK.NautilusAnalyticsEvent",
+                        "usr": "c:@M@NautilusAnalyticsSDK@E@NautilusAnalyticsEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusAnalyticsSDK@E@NautilusAnalyticsEvent@NautilusAnalyticsEventShowStoreSearchWidemap",
+            "mangledName": "$s20NautilusAnalyticsSDK0aB5EventO22showStoreSearchWidemapyA2CmF",
+            "moduleName": "NautilusAnalyticsSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 88
+          },
+          {
+            "kind": "Var",
             "name": "showIntroduction",
             "printedName": "showIntroduction",
             "children": [
@@ -12511,626 +12553,640 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7496,
+      "length": 22,
+      "value": "88"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 7547,
+      "offset": 7627,
       "length": 19,
       "value": "\"show introduction\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 7699,
+      "offset": 7779,
       "length": 15,
       "value": "\"show top page\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 7767,
+      "offset": 7847,
       "length": 21,
       "value": "\"move app background\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 7841,
+      "offset": 7921,
       "length": 21,
       "value": "\"move app foreground\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 7957,
+      "offset": 8037,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8055,
+      "offset": 8135,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8153,
+      "offset": 8233,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8251,
+      "offset": 8331,
       "length": 3,
       "value": "\"4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8349,
+      "offset": 8429,
       "length": 3,
       "value": "\"5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8447,
+      "offset": 8527,
       "length": 3,
       "value": "\"6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8506,
+      "offset": 8586,
       "length": 24,
       "value": "\"tap introduction close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8580,
+      "offset": 8660,
       "length": 19,
       "value": "\"show terms of use\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8650,
+      "offset": 8730,
       "length": 21,
       "value": "\"tap terms of use OK\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8726,
+      "offset": 8806,
       "length": 23,
       "value": "\"show member attribute\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8811,
+      "offset": 8891,
       "length": 31,
       "value": "\"tap member attribute register\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8902,
+      "offset": 8982,
       "length": 29,
       "value": "\"tap member attribute cancel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 8977,
+      "offset": 9057,
       "length": 13,
       "value": "\"show survey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9041,
+      "offset": 9121,
       "length": 19,
       "value": "\"tap survey answer\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9111,
+      "offset": 9191,
       "length": 19,
       "value": "\"tap survey cancel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9178,
+      "offset": 9258,
       "length": 15,
       "value": "\"show pushlist\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9247,
+      "offset": 9327,
       "length": 22,
       "value": "\"tap pushlist history\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9322,
+      "offset": 9402,
       "length": 22,
       "value": "\"done set manege code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9397,
+      "offset": 9477,
       "length": 22,
       "value": "\"show coupon list all\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9477,
+      "offset": 9557,
       "length": 27,
       "value": "\"show coupon list category\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9556,
+      "offset": 9636,
       "length": 20,
       "value": "\"show coupon detail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9632,
+      "offset": 9712,
       "length": 25,
       "value": "\"tap coupon favorite add\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9716,
+      "offset": 9796,
       "length": 28,
       "value": "\"tap coupon favorite delete\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9802,
+      "offset": 9882,
       "length": 27,
       "value": "\"show coupon favorite list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9877,
+      "offset": 9957,
       "length": 16,
       "value": "\"tap coupon use\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 9941,
+      "offset": 10021,
       "length": 16,
       "value": "\"tap coupon web\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10012,
+      "offset": 10092,
       "length": 23,
       "value": "\"tap coupon conditions\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10087,
+      "offset": 10167,
       "length": 21,
       "value": "\"show in-app message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10159,
+      "offset": 10239,
       "length": 20,
       "value": "\"tap in-app message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10232,
+      "offset": 10312,
       "length": 22,
       "value": "\"close in-app message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10308,
+      "offset": 10388,
       "length": 23,
       "value": "\"show store search map\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10381,
+      "offset": 10461,
       "length": 18,
       "value": "\"swipe store list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10451,
+      "offset": 10531,
       "length": 22,
       "value": "\"tap store pin in map\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10522,
+      "offset": 10602,
       "length": 17,
       "value": "\"show store list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10590,
+      "offset": 10670,
       "length": 19,
       "value": "\"show store detail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10662,
+      "offset": 10742,
       "length": 22,
       "value": "\"tap store tel number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10731,
+      "offset": 10811,
       "length": 15,
       "value": "\"tap store web\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10791,
+      "offset": 10871,
       "length": 13,
       "value": "\"tap map app\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10859,
+      "offset": 10939,
       "length": 24,
       "value": "\"tap store favorite add\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 10941,
+      "offset": 11021,
       "length": 27,
       "value": "\"tap store favorite delete\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11025,
+      "offset": 11105,
       "length": 26,
       "value": "\"show favorite store list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11102,
+      "offset": 11182,
       "length": 19,
       "value": "\"done store search\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11186,
+      "offset": 11266,
       "length": 35,
       "value": "\"tap store search condition delete\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11291,
+      "offset": 11371,
       "length": 41,
       "value": "\"tap store keyword search history delete\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11398,
+      "offset": 11478,
       "length": 36,
       "value": "\"show store search filtering screen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11504,
+      "offset": 11584,
       "length": 41,
       "value": "\"tap store search filtering screen close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11615,
+      "offset": 11695,
       "length": 41,
       "value": "\"tap store search filtering screen clear\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11717,
+      "offset": 11797,
       "length": 31,
       "value": "\"show store search area select\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11793,
+      "offset": 11873,
       "length": 12,
       "value": "\"tap banner\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11860,
+      "offset": 11940,
       "length": 24,
       "value": "\"show contents list all\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11944,
+      "offset": 12024,
       "length": 29,
       "value": "\"show contents list category\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12027,
+      "offset": 12107,
       "length": 22,
       "value": "\"show contents detail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12107,
+      "offset": 12187,
       "length": 27,
       "value": "\"tap contents favorite add\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12195,
+      "offset": 12275,
       "length": 30,
       "value": "\"tap contents favorite delete\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12285,
+      "offset": 12365,
       "length": 29,
       "value": "\"show contents favorite list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12364,
+      "offset": 12444,
       "length": 18,
       "value": "\"tap contents web\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12433,
+      "offset": 12513,
       "length": 19,
       "value": "\"show lottery list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12505,
+      "offset": 12585,
       "length": 21,
       "value": "\"show lottery detail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12580,
+      "offset": 12660,
       "length": 22,
       "value": "\"done lottery running\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12655,
+      "offset": 12735,
       "length": 21,
       "value": "\"show lottery result\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12728,
+      "offset": 12808,
       "length": 20,
       "value": "\"tap prize checking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12801,
+      "offset": 12881,
       "length": 22,
       "value": "\"show stamp card list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12878,
+      "offset": 12958,
       "length": 24,
       "value": "\"show stamp card detail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12969,
+      "offset": 13049,
       "length": 37,
       "value": "\"show stamp card description message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 13067,
+      "offset": 13147,
       "length": 31,
       "value": "\"tap stamp card prize exchange\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 13153,
+      "offset": 13233,
       "length": 25,
       "value": "\"tap stamp card check in\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 13250,
+      "offset": 13330,
       "length": 44,
       "value": "\"show stamp card prize auto exchange dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 13357,
+      "offset": 13437,
       "length": 33,
       "value": "\"show stamp card complete dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 13459,
+      "offset": 13539,
       "length": 40,
       "value": "\"show stamp card exchange select dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 13569,
+      "offset": 13649,
       "length": 41,
       "value": "\"show stamp card exchange success dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 13685,
+      "offset": 13765,
       "length": 48,
       "value": "\"tap stamp card exchange success link in dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 13787,
+      "offset": 13867,
       "length": 23,
       "value": "\"show stamp rally list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 13866,
+      "offset": 13946,
       "length": 25,
       "value": "\"show stamp rally detail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 13948,
+      "offset": 14028,
       "length": 27,
       "value": "\"tap stamp rally spot list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 14033,
+      "offset": 14113,
       "length": 28,
       "value": "\"show stamp rally spot list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 14123,
+      "offset": 14203,
       "length": 32,
       "value": "\"tap stamp rally prize exchange\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 14211,
+      "offset": 14291,
       "length": 26,
       "value": "\"tap stamp rally check in\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 14310,
+      "offset": 14390,
       "length": 45,
       "value": "\"show stamp rally prize auto exchange dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 14419,
+      "offset": 14499,
       "length": 34,
       "value": "\"show stamp rally complete dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 14523,
+      "offset": 14603,
       "length": 41,
       "value": "\"show stamp rally exchange select dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 14635,
+      "offset": 14715,
       "length": 42,
       "value": "\"show stamp rally exchange success dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 14753,
+      "offset": 14833,
       "length": 49,
       "value": "\"tap stamp rally exchange success link in dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 14855,
+      "offset": 14935,
       "length": 22,
       "value": "\"tap stamp rally spot\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 14936,
+      "offset": 15016,
       "length": 30,
       "value": "\"tap stamp rally spot map app\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
       "kind": "StringLiteral",
-      "offset": 15027,
+      "offset": 15107,
       "length": 33,
       "value": "\"tap stamp rally spot pin in map\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 15198,
+      "length": 27,
+      "value": "\"show store search widemap\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
@@ -13740,6 +13796,13 @@
       "offset": 7413,
       "length": 25,
       "value": "87"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7496,
+      "length": 22,
+      "value": "88"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEventChannel.swift",

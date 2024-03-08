@@ -73,6 +73,7 @@ public let NautilusServerTimeErrorDomain: Swift.String
 @objc public enum NautilusServerTimeError : Swift.Int, Swift.Error {
   case unknown
   case connection
+  case timedout
   case apiProcessError
   case httpConnection
   case parseFailure

@@ -265,6 +265,7 @@ public let NautilusStampErrorDomain: Swift.String
   }
   case unknown
   case connection
+  case timedout
   case apiProcessError
   case httpConnection
   case parseFailure

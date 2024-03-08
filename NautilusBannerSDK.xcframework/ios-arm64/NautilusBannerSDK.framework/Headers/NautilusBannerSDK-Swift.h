@@ -422,18 +422,20 @@ typedef SWIFT_ENUM(NSInteger, NautilusBannerError, open) {
   NautilusBannerErrorUnknown = 0,
 /// 接続エラー
   NautilusBannerErrorConnection = 1,
+/// タイムアウト
+  NautilusBannerErrorTimedout = 2,
 /// API処理エラー
-  NautilusBannerErrorApiProcessError = 2,
+  NautilusBannerErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusBannerErrorHttpConnection = 3,
+  NautilusBannerErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusBannerErrorParseFailure = 4,
+  NautilusBannerErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusBannerErrorUserCancelled = 5,
+  NautilusBannerErrorUserCancelled = 6,
 /// パラメータが不正
-  NautilusBannerErrorInvalidParamater = 6,
+  NautilusBannerErrorInvalidParamater = 7,
 /// インスタンスが不正
-  NautilusBannerErrorInvalidInstance = 7,
+  NautilusBannerErrorInvalidInstance = 8,
 /// パラメータ不正
   NautilusBannerErrorInvalidParameters = 100,
 /// パラメータが不足している

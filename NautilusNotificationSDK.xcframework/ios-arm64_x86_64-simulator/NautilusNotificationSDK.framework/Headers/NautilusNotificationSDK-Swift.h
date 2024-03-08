@@ -390,16 +390,18 @@ typedef SWIFT_ENUM(NSInteger, NautilusNotificationNetworkError, open) {
   NautilusNotificationNetworkErrorUnknown = 0,
 /// 接続エラー
   NautilusNotificationNetworkErrorConnection = 1,
+/// タイムアウト
+  NautilusNotificationNetworkErrorTimedout = 2,
 /// API処理エラー
-  NautilusNotificationNetworkErrorApiProcessError = 2,
+  NautilusNotificationNetworkErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusNotificationNetworkErrorHttpConnection = 3,
+  NautilusNotificationNetworkErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusNotificationNetworkErrorParseFailure = 4,
+  NautilusNotificationNetworkErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusNotificationNetworkErrorUserCancelled = 5,
+  NautilusNotificationNetworkErrorUserCancelled = 6,
 /// SDKインスタンスが不正
-  NautilusNotificationNetworkErrorInvalidInstance = 6,
+  NautilusNotificationNetworkErrorInvalidInstance = 7,
 /// パラメータ不正
   NautilusNotificationNetworkErrorInvalidParameters = 100,
 /// パラメータが不足している
@@ -845,16 +847,18 @@ typedef SWIFT_ENUM(NSInteger, NautilusNotificationNetworkError, open) {
   NautilusNotificationNetworkErrorUnknown = 0,
 /// 接続エラー
   NautilusNotificationNetworkErrorConnection = 1,
+/// タイムアウト
+  NautilusNotificationNetworkErrorTimedout = 2,
 /// API処理エラー
-  NautilusNotificationNetworkErrorApiProcessError = 2,
+  NautilusNotificationNetworkErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusNotificationNetworkErrorHttpConnection = 3,
+  NautilusNotificationNetworkErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusNotificationNetworkErrorParseFailure = 4,
+  NautilusNotificationNetworkErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusNotificationNetworkErrorUserCancelled = 5,
+  NautilusNotificationNetworkErrorUserCancelled = 6,
 /// SDKインスタンスが不正
-  NautilusNotificationNetworkErrorInvalidInstance = 6,
+  NautilusNotificationNetworkErrorInvalidInstance = 7,
 /// パラメータ不正
   NautilusNotificationNetworkErrorInvalidParameters = 100,
 /// パラメータが不足している

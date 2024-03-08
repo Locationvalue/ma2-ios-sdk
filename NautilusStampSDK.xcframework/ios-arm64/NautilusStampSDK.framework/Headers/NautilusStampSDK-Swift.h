@@ -520,18 +520,20 @@ typedef SWIFT_ENUM(NSInteger, NautilusStampError, open) {
   NautilusStampErrorUnknown = 0,
 /// 接続エラー
   NautilusStampErrorConnection = 1,
+/// タイムアウト
+  NautilusStampErrorTimedout = 2,
 /// API処理エラー
-  NautilusStampErrorApiProcessError = 2,
+  NautilusStampErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusStampErrorHttpConnection = 3,
+  NautilusStampErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusStampErrorParseFailure = 4,
+  NautilusStampErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusStampErrorUserCancelled = 5,
+  NautilusStampErrorUserCancelled = 6,
 /// 不正なパラメータ
-  NautilusStampErrorInvalidParamater = 6,
+  NautilusStampErrorInvalidParamater = 7,
 /// 不正なSDKインスタンス
-  NautilusStampErrorInvalidInstance = 7,
+  NautilusStampErrorInvalidInstance = 8,
 /// パラメータ不正
   NautilusStampErrorInvalidParameters = 100,
 /// パラメータが不足している

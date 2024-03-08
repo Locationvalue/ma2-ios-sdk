@@ -331,6 +331,7 @@ public enum NautilusKeychain {
 public enum NetworkServiceError : Swift.Error {
   case unknown
   case connection(errorCode: Swift.Int, message: Swift.String)
+  case timedout(errorCode: Swift.Int, message: Swift.String)
   case apiProcessError(httpStatusCode: Swift.Int, error: NautilusCoreSDK.ErrorResponse)
   case httpConnection(statusCode: Swift.Int, url: Foundation.URL?)
   case parseFailure

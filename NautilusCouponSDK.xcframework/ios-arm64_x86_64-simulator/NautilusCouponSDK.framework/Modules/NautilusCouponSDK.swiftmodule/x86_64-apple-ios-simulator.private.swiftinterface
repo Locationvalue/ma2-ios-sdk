@@ -109,6 +109,7 @@ public let NautilusCouponErrorDomain: Swift.String
 @objc public enum NautilusCouponError : Swift.Int, Swift.Error {
   case unknown
   case connection
+  case timedout
   case apiProcessError
   case httpConnection
   case parseFailure
@@ -157,13 +158,21 @@ public let NautilusCouponErrorDomain: Swift.String
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func coupon() -> NautilusCouponSDK.NautilusCoupon
   @objc(couponAppNamed:) public static func coupon(appName: Swift.String) -> NautilusCouponSDK.NautilusCoupon
+  @available(*, deprecated, message: "Use NautilusCouponRouter function.")
   @objc final public func instantiateCouponListViewController() -> UIKit.UIViewController
+  @available(*, deprecated, message: "Use NautilusCouponRouter function.")
   @objc final public func instantiateCouponListViewController(category: NautilusCouponSDK.NautilusCouponCategoryInfo?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  @available(*, deprecated, message: "Use NautilusCouponRouter function.")
   final public func instantiateCouponListViewController(categoryID: Swift.Int?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  @available(*, deprecated, message: "Use NautilusCouponRouter function.")
   @objc final public func instantiateCouponListViewController(categoryID: Swift.Int, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  @available(*, deprecated, message: "Use NautilusCouponRouter function.")
   @objc final public func instantiateCouponListViewController(categoryAlias: Swift.String?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  @available(*, deprecated, message: "Use NautilusCouponRouter function.")
   @objc final public func instantiateFavoriteCouponListViewController() -> UIKit.UIViewController
+  @available(*, deprecated, message: "Use NautilusCouponRouter function.")
   final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int? = nil, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
+  @available(*, deprecated, message: "Use NautilusCouponRouter function.")
   @objc final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
   @objc deinit
 }
@@ -245,6 +254,7 @@ extension NautilusCouponSDK.NautilusCoupon {
   @objc final public func instantiateCouponTabList(category: NautilusCouponSDK.NautilusCouponCategoryInfo?) -> UIKit.UIViewController
   @objc final public func instantiateCouponList(category: NautilusCouponSDK.NautilusCouponCategoryInfo?) -> UIKit.UIViewController
   @objc final public func instantiateCouponDetail(coupon: NautilusCouponSDK.NautilusCouponInfo) -> UIKit.UIViewController
+  @objc final public func instantiateCouponDetail(couponIDInfo: NautilusCouponSDK.NautilusCouponIDInfo, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
   @objc final public func instantiateFavoriteCouponList() -> UIKit.UIViewController
   @objc final public func routeCouponTabList(category: NautilusCouponSDK.NautilusCouponCategoryInfo?, in viewController: UIKit.UIViewController)
   @objc final public func routeCouponList(category: NautilusCouponSDK.NautilusCouponCategoryInfo?, in viewController: UIKit.UIViewController)
@@ -254,6 +264,7 @@ extension NautilusCouponSDK.NautilusCoupon {
 }
 @objc public protocol NautilusCouponDetailInstantiatable {
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, coupon: NautilusCouponSDK.NautilusCouponInfo) -> UIKit.UIViewController
+  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, couponIDInfo: NautilusCouponSDK.NautilusCouponIDInfo, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
 }
 @objc public class NautilusCouponIDInfo : ObjectiveC.NSObject {
   final public let couponID: Swift.Int

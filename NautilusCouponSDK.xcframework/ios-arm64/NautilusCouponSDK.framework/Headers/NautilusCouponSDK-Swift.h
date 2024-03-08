@@ -359,7 +359,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// クーポン一覧画面（カテゴリタブあり）
-- (UIViewController * _Nonnull)instantiateCouponListViewController SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)instantiateCouponListViewController SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusCouponRouter function.");
 /// カテゴリ選択された状態でクーポン一覧画面を返却する
 /// \param category カテゴリ（<code>NautilusCouponCategoryInfo</code>）. nilの場合はすべて
 ///
@@ -368,7 +368,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// クーポン一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
-- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategory:(NautilusCouponCategoryInfo * _Nullable)category useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategory:(NautilusCouponCategoryInfo * _Nullable)category useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusCouponRouter function.");
 /// カテゴリ選択された状態でクーポン一覧画面を返却する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param categoryID カテゴリID. <code>NSNotFound</code>の場合はすべて
@@ -378,7 +378,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// クーポン一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
-- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategoryID:(NSInteger)categoryID useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategoryID:(NSInteger)categoryID useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusCouponRouter function.");
 /// カテゴリ選択された状態でクーポン一覧画面を返却する
 /// \param categoryAlias カテゴリのエイリアス. nilの場合はすべて
 ///
@@ -387,9 +387,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// クーポン一覧画面（<code>useCategoryTab</code>が<code>true</code>の時カテゴリタブあり）
-- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategoryAlias:(NSString * _Nullable)categoryAlias useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)instantiateCouponListViewControllerWithCategoryAlias:(NSString * _Nullable)categoryAlias useCategoryTab:(BOOL)useCategoryTab SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusCouponRouter function.");
 /// お気に入りクーポン一覧VCを返す
-- (UIViewController * _Nonnull)instantiateFavoriteCouponListViewController SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)instantiateFavoriteCouponListViewController SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusCouponRouter function.");
 /// クーポンID・タイプからクーポン詳細画面を返す
 /// \param couponID クーポンID
 ///
@@ -400,7 +400,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// クーポン詳細画面
-- (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID exchangeID:(NSInteger)exchangeID couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID exchangeID:(NSInteger)exchangeID couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusCouponRouter function.");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -787,6 +787,14 @@ SWIFT_PROTOCOL("_TtP17NautilusCouponSDK34NautilusCouponDetailInstantiatable_")
 /// \param coupon 詳細画面に表示するクーポン
 ///
 + (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app coupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// クーポン詳細画面を生成する
+/// \param app SDKのインスタンス
+///
+/// \param couponIDInfo クーポンIDと発行IDの組の情報
+///
+/// \param couponType クーポンタイプ(<code>NautilusCouponPublishType</code>)
+///
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app couponIDInfo:(NautilusCouponIDInfo * _Nonnull)couponIDInfo couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
@@ -794,20 +802,22 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
   NautilusCouponErrorUnknown = 0,
 /// 接続エラー
   NautilusCouponErrorConnection = 1,
+/// タイムアウト
+  NautilusCouponErrorTimedout = 2,
 /// API処理エラー
-  NautilusCouponErrorApiProcessError = 2,
+  NautilusCouponErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusCouponErrorHttpConnection = 3,
+  NautilusCouponErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusCouponErrorParseFailure = 4,
+  NautilusCouponErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusCouponErrorUserCancelled = 5,
+  NautilusCouponErrorUserCancelled = 6,
 /// パラメータが不正
-  NautilusCouponErrorInvalidParamater = 6,
+  NautilusCouponErrorInvalidParamater = 7,
 /// 不正なSDKインスタンス
-  NautilusCouponErrorInvalidInstance = 7,
+  NautilusCouponErrorInvalidInstance = 8,
 /// 設定値の構成が不正エラー
-  NautilusCouponErrorIllegalConfiguration = 8,
+  NautilusCouponErrorIllegalConfiguration = 9,
 /// パラメータ不正
   NautilusCouponErrorInvalidParameters = 100,
 /// パラメータが不足している
@@ -963,6 +973,12 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK20NautilusCouponRouter")
 /// \param coupon 詳細画面に表示するクーポン
 ///
 - (UIViewController * _Nonnull)instantiateCouponDetailWithCoupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// クーポン詳細画面を生成する
+/// \param couponIDInfo クーポンIDと発行IDの組の情報
+///
+/// \param couponType クーポンタイプ(<code>NautilusCouponPublishType</code>)
+///
+- (UIViewController * _Nonnull)instantiateCouponDetailWithCouponIDInfo:(NautilusCouponIDInfo * _Nonnull)couponIDInfo couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
 /// お気に入りクーポン一覧画面を生成する
 - (UIViewController * _Nonnull)instantiateFavoriteCouponList SWIFT_WARN_UNUSED_RESULT;
 /// カテゴリータブ付きのクーポン一覧画面に遷移する

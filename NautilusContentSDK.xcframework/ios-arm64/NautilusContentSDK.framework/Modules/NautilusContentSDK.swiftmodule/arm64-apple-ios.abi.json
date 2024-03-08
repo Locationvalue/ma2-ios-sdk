@@ -7798,6 +7798,48 @@
           },
           {
             "kind": "Var",
+            "name": "timedout",
+            "printedName": "timedout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusContentSDK.NautilusContentError.Type) -> NautilusContentSDK.NautilusContentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusContentError",
+                    "printedName": "NautilusContentSDK.NautilusContentError",
+                    "usr": "c:@M@NautilusContentSDK@E@NautilusContentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusContentSDK.NautilusContentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentError",
+                        "printedName": "NautilusContentSDK.NautilusContentError",
+                        "usr": "c:@M@NautilusContentSDK@E@NautilusContentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusContentSDK@E@NautilusContentError@NautilusContentErrorTimedout",
+            "mangledName": "$s18NautilusContentSDK0aB5ErrorO8timedoutyA2CmF",
+            "moduleName": "NautilusContentSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
             "name": "apiProcessError",
             "printedName": "apiProcessError",
             "children": [
@@ -7836,7 +7878,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -7878,7 +7920,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -7920,7 +7962,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -7962,7 +8004,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -8004,7 +8046,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -8046,7 +8088,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -8088,7 +8130,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -8130,7 +8172,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -8172,7 +8214,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -8214,7 +8256,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -8256,7 +8298,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -8298,7 +8340,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -8340,7 +8382,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -8382,7 +8424,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -8424,7 +8466,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -8466,7 +8508,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -10084,126 +10126,154 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6664,
-      "length": 79,
+      "offset": 6593,
+      "length": 53,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6682,
+      "offset": 6604,
       "length": 1,
-      "value": "\":Bad API Key Error \""
+      "value": "\": Timedout Error \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6719,
+      "offset": 6633,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6741,
+      "offset": 6644,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6825,
-      "length": 82,
+      "offset": 6796,
+      "length": 79,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6839,
+      "offset": 6814,
       "length": 1,
-      "value": "\"  \""
+      "value": "\":Bad API Key Error \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
       "offset": 6851,
       "length": 1,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 6873,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 6957,
+      "length": 82,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 6971,
+      "length": 1,
+      "value": "\"  \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 6983,
+      "length": 1,
       "value": "\": HttpConnection Error. url: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6906,
+      "offset": 7038,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6963,
+      "offset": 7095,
       "length": 65,
       "value": "\"During \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6981,
+      "offset": 7113,
       "length": 7,
       "value": "\" process, network access is cancelled by user.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7083,
+      "offset": 7215,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7094,
+      "offset": 7226,
       "length": 1,
       "value": "\": Parse Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7172,
+      "offset": 7304,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7183,
+      "offset": 7315,
       "length": 1,
       "value": "\": Configuration Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7256,
+      "offset": 7388,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7267,
+      "offset": 7399,
       "length": 1,
       "value": "\": Unknown Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8928,
+      "offset": 9060,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentFavoriteListModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9394,
+      "offset": 9526,
       "length": 5,
       "value": "false"
     },
@@ -11638,63 +11708,84 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
       "kind": "StringLiteral",
-      "offset": 3070,
+      "offset": 3060,
+      "length": 72,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3073,
+      "length": 1,
+      "value": "\": requestCategoryList: timedout Error. message: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3131,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3221,
       "length": 89,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
       "kind": "StringLiteral",
-      "offset": 3088,
+      "offset": 3239,
       "length": 1,
       "value": "\": requestCategoryList: API Process Error. err_code: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
       "kind": "StringLiteral",
-      "offset": 3158,
+      "offset": 3309,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
       "kind": "StringLiteral",
-      "offset": 3241,
+      "offset": 3392,
       "length": 91,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
       "kind": "StringLiteral",
-      "offset": 3255,
+      "offset": 3406,
       "length": 1,
       "value": "\": requestCategoryList: HttpConnection Error. url: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
       "kind": "StringLiteral",
-      "offset": 3331,
+      "offset": 3482,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
       "kind": "StringLiteral",
-      "offset": 3388,
+      "offset": 3539,
       "length": 43,
       "value": "\"requestCategoryList: userCancelled Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
       "kind": "StringLiteral",
-      "offset": 3486,
+      "offset": 3637,
       "length": 42,
       "value": "\"requestCategoryList: parseFailure Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/CategoryTab\/NautilusContentTabModel.swift",
       "kind": "StringLiteral",
-      "offset": 3578,
+      "offset": 3729,
       "length": 37,
       "value": "\"requestCategoryList: unknown Error.\""
     },
@@ -12346,111 +12437,118 @@
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
       "offset": 517,
-      "length": 15,
+      "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 576,
-      "length": 14,
+      "offset": 562,
+      "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 645,
-      "length": 12,
+      "offset": 621,
+      "length": 14,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 733,
-      "length": 13,
+      "offset": 690,
+      "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 789,
-      "length": 16,
+      "offset": 778,
+      "length": 13,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 860,
-      "length": 20,
+      "offset": 834,
+      "length": 16,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 926,
-      "length": 15,
+      "offset": 905,
+      "length": 20,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1024,
+      "offset": 971,
+      "length": 15,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1069,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1109,
+      "offset": 1154,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1198,
+      "offset": 1243,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1255,
+      "offset": 1300,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1319,
+      "offset": 1364,
       "length": 3,
       "value": "901"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1394,
+      "offset": 1439,
       "length": 3,
       "value": "903"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1448,
+      "offset": 1493,
       "length": 3,
       "value": "905"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1503,
+      "offset": 1548,
       "length": 3,
       "value": "906"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1583,
+      "offset": 1628,
       "length": 3,
       "value": "907"
     },
@@ -12465,111 +12563,118 @@
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
       "offset": 517,
-      "length": 15,
+      "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 576,
-      "length": 14,
+      "offset": 562,
+      "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 645,
-      "length": 12,
+      "offset": 621,
+      "length": 14,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 733,
-      "length": 13,
+      "offset": 690,
+      "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 789,
-      "length": 16,
+      "offset": 778,
+      "length": 13,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 860,
-      "length": 20,
+      "offset": 834,
+      "length": 16,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 926,
-      "length": 15,
+      "offset": 905,
+      "length": 20,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1024,
+      "offset": 971,
+      "length": 15,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1069,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1109,
+      "offset": 1154,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1198,
+      "offset": 1243,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1255,
+      "offset": 1300,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1319,
+      "offset": 1364,
       "length": 3,
       "value": "901"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1394,
+      "offset": 1439,
       "length": 3,
       "value": "903"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1448,
+      "offset": 1493,
       "length": 3,
       "value": "905"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1503,
+      "offset": 1548,
       "length": 3,
       "value": "906"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1583,
+      "offset": 1628,
       "length": 3,
       "value": "907"
     },
@@ -13738,112 +13843,133 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6761,
-      "length": 79,
+      "offset": 6710,
+      "length": 53,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6779,
+      "offset": 6721,
       "length": 1,
-      "value": "\":Bad API Key Error \""
+      "value": "\": Timedout Error. errorCode: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 6816,
-      "length": 1,
-      "value": "\":\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
-      "kind": "StringLiteral",
-      "offset": 6838,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
-      "kind": "StringLiteral",
-      "offset": 6922,
-      "length": 82,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
-      "kind": "StringLiteral",
-      "offset": 6936,
-      "length": 1,
-      "value": "\"  \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
-      "kind": "StringLiteral",
-      "offset": 6948,
-      "length": 1,
-      "value": "\": HttpConnection Error. url: \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
-      "kind": "StringLiteral",
-      "offset": 7003,
+      "offset": 6762,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7060,
+      "offset": 6913,
+      "length": 79,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 6931,
+      "length": 1,
+      "value": "\":Bad API Key Error \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 6968,
+      "length": 1,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 6990,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7074,
+      "length": 82,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7088,
+      "length": 1,
+      "value": "\"  \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7100,
+      "length": 1,
+      "value": "\": HttpConnection Error. url: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7155,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7212,
       "length": 65,
       "value": "\"During \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7078,
+      "offset": 7230,
       "length": 7,
       "value": "\" process, network access is cancelled by user.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7180,
+      "offset": 7332,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7191,
+      "offset": 7343,
       "length": 1,
       "value": "\": Parse Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7269,
+      "offset": 7421,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7280,
+      "offset": 7432,
       "length": 1,
       "value": "\": Configuration Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7353,
+      "offset": 7505,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/List\/NautilusContentListModel.swift",
       "kind": "StringLiteral",
-      "offset": 7364,
+      "offset": 7516,
       "length": 1,
       "value": "\": Unknown Error.\""
     },
@@ -14655,119 +14781,140 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11077,
+      "offset": 11026,
+      "length": 78,
+      "value": "\"updateFavorite: Timedout Error. errorCode: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
+      "kind": "StringLiteral",
+      "offset": 11082,
+      "length": 1,
+      "value": "\", message: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
+      "kind": "StringLiteral",
+      "offset": 11103,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
+      "kind": "StringLiteral",
+      "offset": 11254,
       "length": 79,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11095,
+      "offset": 11272,
       "length": 1,
       "value": "\":Bad API Key Error \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11132,
+      "offset": 11309,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11154,
+      "offset": 11331,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11238,
+      "offset": 11415,
       "length": 86,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11252,
+      "offset": 11429,
       "length": 14,
       "value": "\"  updateFavorite: HttpConnection Error. url: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11323,
+      "offset": 11500,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11380,
+      "offset": 11557,
       "length": 69,
       "value": "\"During updateFavorite process, network access is cancelled by user.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11504,
+      "offset": 11681,
       "length": 30,
       "value": "\"updateFavorite: Parse Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11597,
+      "offset": 11774,
       "length": 38,
       "value": "\"updateFavorite: Configuration Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 11685,
+      "offset": 11862,
       "length": 32,
       "value": "\"updateFavorite: Unknown Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 12954,
+      "offset": 13131,
       "length": 64,
       "value": "\"Succeed to send content log[\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 13002,
+      "offset": 13179,
       "length": 1,
       "value": "\"]: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 13017,
+      "offset": 13194,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 13086,
+      "offset": 13263,
       "length": 80,
       "value": "\"Failed to send content log[\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 13133,
+      "offset": 13310,
       "length": 1,
       "value": "\"]: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailModel.swift",
       "kind": "StringLiteral",
-      "offset": 13165,
+      "offset": 13342,
       "length": 2,
       "value": "\"\""
     },

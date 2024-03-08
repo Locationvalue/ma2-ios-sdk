@@ -307,18 +307,20 @@ typedef SWIFT_ENUM(NSInteger, GeoUtilApiError, open) {
   GeoUtilApiErrorUnknown = 0,
 /// 接続エラー
   GeoUtilApiErrorConnection = 1,
+/// タイムアウト
+  GeoUtilApiErrorTimedout = 2,
 /// API処理エラー
-  GeoUtilApiErrorApiProcessError = 2,
+  GeoUtilApiErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  GeoUtilApiErrorHttpConnection = 3,
+  GeoUtilApiErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  GeoUtilApiErrorParseFailure = 4,
+  GeoUtilApiErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  GeoUtilApiErrorUserCancelled = 5,
+  GeoUtilApiErrorUserCancelled = 6,
 /// 不正なパラメータ
-  GeoUtilApiErrorInvalidParamater = 6,
+  GeoUtilApiErrorInvalidParamater = 7,
 /// 不正なインスタンス
-  GeoUtilApiErrorInvalidInstance = 7,
+  GeoUtilApiErrorInvalidInstance = 8,
 /// パラメータ不正
   GeoUtilApiErrorInvalidParameters = 100,
 /// パラメータが不足している
@@ -810,18 +812,20 @@ typedef SWIFT_ENUM(NSInteger, GeoUtilApiError, open) {
   GeoUtilApiErrorUnknown = 0,
 /// 接続エラー
   GeoUtilApiErrorConnection = 1,
+/// タイムアウト
+  GeoUtilApiErrorTimedout = 2,
 /// API処理エラー
-  GeoUtilApiErrorApiProcessError = 2,
+  GeoUtilApiErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  GeoUtilApiErrorHttpConnection = 3,
+  GeoUtilApiErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  GeoUtilApiErrorParseFailure = 4,
+  GeoUtilApiErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  GeoUtilApiErrorUserCancelled = 5,
+  GeoUtilApiErrorUserCancelled = 6,
 /// 不正なパラメータ
-  GeoUtilApiErrorInvalidParamater = 6,
+  GeoUtilApiErrorInvalidParamater = 7,
 /// 不正なインスタンス
-  GeoUtilApiErrorInvalidInstance = 7,
+  GeoUtilApiErrorInvalidInstance = 8,
 /// パラメータ不正
   GeoUtilApiErrorInvalidParameters = 100,
 /// パラメータが不足している

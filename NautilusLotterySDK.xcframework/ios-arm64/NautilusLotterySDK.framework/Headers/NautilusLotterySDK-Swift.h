@@ -369,18 +369,20 @@ typedef SWIFT_ENUM(NSInteger, NautilusLotteryError, open) {
   NautilusLotteryErrorUnknown = 0,
 /// 接続エラー
   NautilusLotteryErrorConnection = 1,
+/// タイムアウト
+  NautilusLotteryErrorTimedout = 2,
 /// API処理エラー
-  NautilusLotteryErrorApiProcessError = 2,
+  NautilusLotteryErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusLotteryErrorHttpConnection = 3,
+  NautilusLotteryErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusLotteryErrorParseFailure = 4,
+  NautilusLotteryErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusLotteryErrorUserCancelled = 5,
+  NautilusLotteryErrorUserCancelled = 6,
 /// 不正なパラメータ
-  NautilusLotteryErrorInvalidParamater = 6,
+  NautilusLotteryErrorInvalidParamater = 7,
 /// 不正なインスタンス
-  NautilusLotteryErrorInvalidInstance = 7,
+  NautilusLotteryErrorInvalidInstance = 8,
 /// パラメータ不正
   NautilusLotteryErrorInvalidParameters = 100,
 /// パラメータが不足している

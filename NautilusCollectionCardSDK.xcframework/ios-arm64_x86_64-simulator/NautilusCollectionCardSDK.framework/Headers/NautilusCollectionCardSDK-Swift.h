@@ -388,18 +388,20 @@ typedef SWIFT_ENUM(NSInteger, NautilusCollectionCardError, open) {
   NautilusCollectionCardErrorUnknown = 0,
 /// 接続エラー
   NautilusCollectionCardErrorConnection = 1,
+/// タイムアウト
+  NautilusCollectionCardErrorTimedout = 2,
 /// API処理エラー
-  NautilusCollectionCardErrorApiProcessError = 2,
+  NautilusCollectionCardErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusCollectionCardErrorHttpConnection = 3,
+  NautilusCollectionCardErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusCollectionCardErrorParseFailure = 4,
+  NautilusCollectionCardErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusCollectionCardErrorUserCancelled = 5,
+  NautilusCollectionCardErrorUserCancelled = 6,
 /// 不正なパラメータ
-  NautilusCollectionCardErrorInvalidParamater = 6,
+  NautilusCollectionCardErrorInvalidParamater = 7,
 /// 不正なSDKインスタンス
-  NautilusCollectionCardErrorInvalidInstance = 7,
+  NautilusCollectionCardErrorInvalidInstance = 8,
 /// パラメータ不正
   NautilusCollectionCardErrorInvalidParameters = 100,
 /// パラメータが不足している
@@ -898,18 +900,20 @@ typedef SWIFT_ENUM(NSInteger, NautilusCollectionCardError, open) {
   NautilusCollectionCardErrorUnknown = 0,
 /// 接続エラー
   NautilusCollectionCardErrorConnection = 1,
+/// タイムアウト
+  NautilusCollectionCardErrorTimedout = 2,
 /// API処理エラー
-  NautilusCollectionCardErrorApiProcessError = 2,
+  NautilusCollectionCardErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusCollectionCardErrorHttpConnection = 3,
+  NautilusCollectionCardErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusCollectionCardErrorParseFailure = 4,
+  NautilusCollectionCardErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusCollectionCardErrorUserCancelled = 5,
+  NautilusCollectionCardErrorUserCancelled = 6,
 /// 不正なパラメータ
-  NautilusCollectionCardErrorInvalidParamater = 6,
+  NautilusCollectionCardErrorInvalidParamater = 7,
 /// 不正なSDKインスタンス
-  NautilusCollectionCardErrorInvalidInstance = 7,
+  NautilusCollectionCardErrorInvalidInstance = 8,
 /// パラメータ不正
   NautilusCollectionCardErrorInvalidParameters = 100,
 /// パラメータが不足している

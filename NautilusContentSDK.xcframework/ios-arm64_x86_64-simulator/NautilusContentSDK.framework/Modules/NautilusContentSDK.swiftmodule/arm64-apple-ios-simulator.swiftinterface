@@ -161,6 +161,7 @@ public let NautilusContentErrorDomain: Swift.String
 @objc public enum NautilusContentError : Swift.Int, Swift.Error {
   case unknown
   case connection
+  case timedout
   case apiProcessError
   case httpConnection
   case parseFailure

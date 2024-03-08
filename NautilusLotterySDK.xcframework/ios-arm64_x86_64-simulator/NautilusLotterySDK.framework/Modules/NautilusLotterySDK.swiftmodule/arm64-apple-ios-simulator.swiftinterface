@@ -17,6 +17,7 @@ public let NautilusLotteryErrorDomain: Swift.String
 @objc public enum NautilusLotteryError : Swift.Int, Swift.Error {
   case unknown
   case connection
+  case timedout
   case apiProcessError
   case httpConnection
   case parseFailure

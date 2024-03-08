@@ -151,6 +151,7 @@ import _SwiftConcurrencyShims
 @objc public enum UserInfoNetworkServiceError : Swift.Int, Swift.Error {
   case unknown
   case connection
+  case timedout
   case apiProcessError
   case httpConnection
   case parseFailure

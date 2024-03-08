@@ -7073,6 +7073,72 @@
           },
           {
             "kind": "Var",
+            "name": "timedout",
+            "printedName": "timedout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusCoreSDK.NetworkServiceError.Type) -> (Swift.Int, Swift.String) -> NautilusCoreSDK.NetworkServiceError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String) -> NautilusCoreSDK.NetworkServiceError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkServiceError",
+                        "printedName": "NautilusCoreSDK.NetworkServiceError",
+                        "usr": "s:15NautilusCoreSDK19NetworkServiceErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(errorCode: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusCoreSDK.NetworkServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkServiceError",
+                        "printedName": "NautilusCoreSDK.NetworkServiceError",
+                        "usr": "s:15NautilusCoreSDK19NetworkServiceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15NautilusCoreSDK19NetworkServiceErrorO8timedoutyACSi_SStcACmF",
+            "mangledName": "$s15NautilusCoreSDK19NetworkServiceErrorO8timedoutyACSi_SStcACmF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "apiProcessError",
             "printedName": "apiProcessError",
             "children": [
@@ -18218,14 +18284,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6316,
+      "offset": 6628,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6322,
+      "offset": 6634,
       "length": 3,
       "value": "600"
     },
@@ -19289,14 +19355,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6304,
+      "offset": 6616,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6310,
+      "offset": 6622,
       "length": 3,
       "value": "600"
     },

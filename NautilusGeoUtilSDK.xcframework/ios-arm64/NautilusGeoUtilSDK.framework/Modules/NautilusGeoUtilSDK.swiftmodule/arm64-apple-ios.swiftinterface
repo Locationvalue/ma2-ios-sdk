@@ -16,6 +16,7 @@ public let NautilusGeoUtilErrorDomain: Swift.String
 @objc public enum GeoUtilApiError : Swift.Int, Swift.Error {
   case unknown
   case connection
+  case timedout
   case apiProcessError
   case httpConnection
   case parseFailure

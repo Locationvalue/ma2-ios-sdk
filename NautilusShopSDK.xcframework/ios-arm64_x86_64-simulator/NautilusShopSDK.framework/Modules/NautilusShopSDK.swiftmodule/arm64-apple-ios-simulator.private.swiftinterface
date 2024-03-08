@@ -256,6 +256,7 @@ public let NautilusShopErrorDomain: Swift.String
 @objc public enum NautilusShopError : Swift.Int, Swift.Error {
   case unknown
   case connection
+  case timedout
   case apiProcessError
   case httpConnection
   case parseFailure

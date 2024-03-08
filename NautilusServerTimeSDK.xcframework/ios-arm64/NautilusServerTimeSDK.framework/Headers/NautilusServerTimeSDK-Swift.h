@@ -336,18 +336,20 @@ typedef SWIFT_ENUM(NSInteger, NautilusServerTimeError, open) {
   NautilusServerTimeErrorUnknown = 0,
 /// 接続エラー
   NautilusServerTimeErrorConnection = 1,
+/// タイムアウト
+  NautilusServerTimeErrorTimedout = 2,
 /// API処理エラー
-  NautilusServerTimeErrorApiProcessError = 2,
+  NautilusServerTimeErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusServerTimeErrorHttpConnection = 3,
+  NautilusServerTimeErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusServerTimeErrorParseFailure = 4,
+  NautilusServerTimeErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusServerTimeErrorUserCancelled = 5,
+  NautilusServerTimeErrorUserCancelled = 6,
 /// フォーマット不正など、サーバーからの返ってきた値が不正
-  NautilusServerTimeErrorInvalidResponse = 6,
+  NautilusServerTimeErrorInvalidResponse = 7,
 /// 不正なインスタンス
-  NautilusServerTimeErrorInvalidInstance = 7,
+  NautilusServerTimeErrorInvalidInstance = 8,
 /// パラメータ不正
   NautilusServerTimeErrorInvalidParameters = 100,
 /// パラメータが不足している

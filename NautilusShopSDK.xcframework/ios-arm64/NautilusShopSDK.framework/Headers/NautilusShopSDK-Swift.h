@@ -601,20 +601,22 @@ typedef SWIFT_ENUM(NSInteger, NautilusShopError, open) {
   NautilusShopErrorUnknown = 0,
 /// 接続エラー
   NautilusShopErrorConnection = 1,
+/// タイムアウト
+  NautilusShopErrorTimedout = 2,
 /// API処理エラー
-  NautilusShopErrorApiProcessError = 2,
+  NautilusShopErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusShopErrorHttpConnection = 3,
+  NautilusShopErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusShopErrorParseFailure = 4,
+  NautilusShopErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusShopErrorUserCancelled = 5,
+  NautilusShopErrorUserCancelled = 6,
 /// 不正なパラメータが渡された
-  NautilusShopErrorInvalidParamater = 6,
+  NautilusShopErrorInvalidParamater = 7,
 /// 設定値の構成が不正エラー
-  NautilusShopErrorIllegalConfiguration = 7,
+  NautilusShopErrorIllegalConfiguration = 8,
 /// 不正なインスタンス
-  NautilusShopErrorInvalidInstance = 8,
+  NautilusShopErrorInvalidInstance = 9,
 /// パラメータ不正
   NautilusShopErrorInvalidParameters = 100,
 /// パラメータが不足している

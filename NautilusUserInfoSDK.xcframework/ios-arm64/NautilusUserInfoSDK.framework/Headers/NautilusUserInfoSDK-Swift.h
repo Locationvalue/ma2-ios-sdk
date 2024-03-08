@@ -536,16 +536,18 @@ typedef SWIFT_ENUM(NSInteger, UserInfoNetworkServiceError, open) {
   UserInfoNetworkServiceErrorUnknown = 0,
 /// 接続エラー
   UserInfoNetworkServiceErrorConnection = 1,
+/// タイムアウト
+  UserInfoNetworkServiceErrorTimedout = 2,
 /// API処理エラー
-  UserInfoNetworkServiceErrorApiProcessError = 2,
+  UserInfoNetworkServiceErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  UserInfoNetworkServiceErrorHttpConnection = 3,
+  UserInfoNetworkServiceErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  UserInfoNetworkServiceErrorParseFailure = 4,
+  UserInfoNetworkServiceErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  UserInfoNetworkServiceErrorUserCancelled = 5,
+  UserInfoNetworkServiceErrorUserCancelled = 6,
 /// 不正なインスタンス
-  UserInfoNetworkServiceErrorInvalidInstance = 6,
+  UserInfoNetworkServiceErrorInvalidInstance = 7,
 /// パラメータ不正
   UserInfoNetworkServiceErrorInvalidParameters = 100,
 /// パラメータが不足している

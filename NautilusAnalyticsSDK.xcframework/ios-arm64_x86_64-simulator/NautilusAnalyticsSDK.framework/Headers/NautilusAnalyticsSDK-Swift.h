@@ -588,6 +588,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEvent, open) {
   NautilusAnalyticsEventTapStampRallySpotMapApp = 86,
 /// スポット一覧地図内のピンをタップする
   NautilusAnalyticsEventTapStampRallySpotPinInMap = 87,
+/// 店舗検索広域地図画面を見る
+  NautilusAnalyticsEventShowStoreSearchWidemap = 88,
 };
 
 /// 分析SDKから送信するイベントのチャネル定義
@@ -1464,6 +1466,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEvent, open) {
   NautilusAnalyticsEventTapStampRallySpotMapApp = 86,
 /// スポット一覧地図内のピンをタップする
   NautilusAnalyticsEventTapStampRallySpotPinInMap = 87,
+/// 店舗検索広域地図画面を見る
+  NautilusAnalyticsEventShowStoreSearchWidemap = 88,
 };
 
 /// 分析SDKから送信するイベントのチャネル定義

@@ -397,18 +397,20 @@ typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
   NautilusIdentifyErrorUnknown = 0,
 /// 接続エラー
   NautilusIdentifyErrorConnection = 1,
+/// タイムアウト
+  NautilusIdentifyErrorTimedout = 2,
 /// API処理エラー
-  NautilusIdentifyErrorApiProcessError = 2,
+  NautilusIdentifyErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusIdentifyErrorHttpConnection = 3,
+  NautilusIdentifyErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusIdentifyErrorParseFailure = 4,
+  NautilusIdentifyErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusIdentifyErrorUserCancelled = 5,
+  NautilusIdentifyErrorUserCancelled = 6,
 /// パラメータが不正
-  NautilusIdentifyErrorInvalidParamater = 6,
+  NautilusIdentifyErrorInvalidParamater = 7,
 /// 不正なインスタンス
-  NautilusIdentifyErrorInvalidInstance = 7,
+  NautilusIdentifyErrorInvalidInstance = 8,
 /// パラメータ不正
   NautilusIdentifyErrorInvalidParameters = 100,
 /// パラメータが不足している
@@ -883,18 +885,20 @@ typedef SWIFT_ENUM(NSInteger, NautilusIdentifyError, open) {
   NautilusIdentifyErrorUnknown = 0,
 /// 接続エラー
   NautilusIdentifyErrorConnection = 1,
+/// タイムアウト
+  NautilusIdentifyErrorTimedout = 2,
 /// API処理エラー
-  NautilusIdentifyErrorApiProcessError = 2,
+  NautilusIdentifyErrorApiProcessError = 3,
 /// HTTP/HTTPS通信エラー
-  NautilusIdentifyErrorHttpConnection = 3,
+  NautilusIdentifyErrorHttpConnection = 4,
 /// レスポンスのパースエラー
-  NautilusIdentifyErrorParseFailure = 4,
+  NautilusIdentifyErrorParseFailure = 5,
 /// 明示的にユーザーによりキャンセルされた
-  NautilusIdentifyErrorUserCancelled = 5,
+  NautilusIdentifyErrorUserCancelled = 6,
 /// パラメータが不正
-  NautilusIdentifyErrorInvalidParamater = 6,
+  NautilusIdentifyErrorInvalidParamater = 7,
 /// 不正なインスタンス
-  NautilusIdentifyErrorInvalidInstance = 7,
+  NautilusIdentifyErrorInvalidInstance = 8,
 /// パラメータ不正
   NautilusIdentifyErrorInvalidParameters = 100,
 /// パラメータが不足している

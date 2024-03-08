@@ -11452,6 +11452,48 @@
           },
           {
             "kind": "Var",
+            "name": "timedout",
+            "printedName": "timedout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusStampSDK.NautilusStampError.Type) -> NautilusStampSDK.NautilusStampError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusStampError",
+                    "printedName": "NautilusStampSDK.NautilusStampError",
+                    "usr": "c:@M@NautilusStampSDK@E@NautilusStampError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusStampSDK.NautilusStampError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusStampError",
+                        "printedName": "NautilusStampSDK.NautilusStampError",
+                        "usr": "c:@M@NautilusStampSDK@E@NautilusStampError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusStampSDK@E@NautilusStampError@NautilusStampErrorTimedout",
+            "mangledName": "$s16NautilusStampSDK0aB5ErrorO8timedoutyA2CmF",
+            "moduleName": "NautilusStampSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
             "name": "apiProcessError",
             "printedName": "apiProcessError",
             "children": [
@@ -11490,7 +11532,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -11532,7 +11574,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -11574,7 +11616,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -11616,7 +11658,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -11658,7 +11700,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -11700,7 +11742,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -11742,7 +11784,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -11784,7 +11826,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -11826,7 +11868,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -11868,7 +11910,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -11910,7 +11952,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -11952,7 +11994,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -11994,7 +12036,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -12036,7 +12078,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -12078,7 +12120,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Constructor",
@@ -14098,28 +14140,28 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12387,
+      "offset": 12440,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12434,
+      "offset": 12487,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12620,
+      "offset": 12673,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12667,
+      "offset": 12720,
       "length": 1,
       "value": "2"
     },
@@ -14848,104 +14890,111 @@
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
       "offset": 669,
-      "length": 15,
+      "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 728,
-      "length": 14,
+      "offset": 714,
+      "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 797,
-      "length": 12,
+      "offset": 773,
+      "length": 14,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 885,
-      "length": 13,
+      "offset": 842,
+      "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 941,
-      "length": 16,
+      "offset": 930,
+      "length": 13,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1006,
-      "length": 15,
+      "offset": 986,
+      "length": 16,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1104,
+      "offset": 1051,
+      "length": 15,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1149,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1189,
+      "offset": 1234,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1278,
+      "offset": 1323,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1335,
+      "offset": 1380,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1399,
+      "offset": 1444,
       "length": 3,
       "value": "901"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1474,
+      "offset": 1519,
       "length": 3,
       "value": "903"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1528,
+      "offset": 1573,
       "length": 3,
       "value": "905"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1583,
+      "offset": 1628,
       "length": 3,
       "value": "906"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1663,
+      "offset": 1708,
       "length": 3,
       "value": "907"
     },
@@ -14960,104 +15009,111 @@
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
       "offset": 669,
-      "length": 15,
+      "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 728,
-      "length": 14,
+      "offset": 714,
+      "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 797,
-      "length": 12,
+      "offset": 773,
+      "length": 14,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 885,
-      "length": 13,
+      "offset": 842,
+      "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 941,
-      "length": 16,
+      "offset": 930,
+      "length": 13,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1006,
-      "length": 15,
+      "offset": 986,
+      "length": 16,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1104,
+      "offset": 1051,
+      "length": 15,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1149,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1189,
+      "offset": 1234,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1278,
+      "offset": 1323,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1335,
+      "offset": 1380,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1399,
+      "offset": 1444,
       "length": 3,
       "value": "901"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1474,
+      "offset": 1519,
       "length": 3,
       "value": "903"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1528,
+      "offset": 1573,
       "length": 3,
       "value": "905"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1583,
+      "offset": 1628,
       "length": 3,
       "value": "906"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1663,
+      "offset": 1708,
       "length": 3,
       "value": "907"
     }

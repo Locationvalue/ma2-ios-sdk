@@ -115,6 +115,7 @@ public let NautilusIdentifyErrorDomain: Swift.String
 @objc public enum NautilusIdentifyError : Swift.Int, Swift.Error {
   case unknown
   case connection
+  case timedout
   case apiProcessError
   case httpConnection
   case parseFailure
