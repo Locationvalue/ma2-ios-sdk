@@ -1470,6 +1470,48 @@
           },
           {
             "kind": "Var",
+            "name": "timedout",
+            "printedName": "timedout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusServerTimeSDK.NautilusServerTimeError.Type) -> NautilusServerTimeSDK.NautilusServerTimeError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusServerTimeError",
+                    "printedName": "NautilusServerTimeSDK.NautilusServerTimeError",
+                    "usr": "c:@M@NautilusServerTimeSDK@E@NautilusServerTimeError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusServerTimeSDK.NautilusServerTimeError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusServerTimeError",
+                        "printedName": "NautilusServerTimeSDK.NautilusServerTimeError",
+                        "usr": "c:@M@NautilusServerTimeSDK@E@NautilusServerTimeError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusServerTimeSDK@E@NautilusServerTimeError@NautilusServerTimeErrorTimedout",
+            "mangledName": "$s21NautilusServerTimeSDK0abC5ErrorO8timedoutyA2CmF",
+            "moduleName": "NautilusServerTimeSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
             "name": "apiProcessError",
             "printedName": "apiProcessError",
             "children": [
@@ -1508,7 +1550,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -1550,7 +1592,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -1592,7 +1634,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -1634,7 +1676,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -1676,7 +1718,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -1718,7 +1760,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -1760,7 +1802,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -1802,7 +1844,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -1844,7 +1886,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -1886,7 +1928,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -1928,7 +1970,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -1970,7 +2012,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -2012,7 +2054,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -2054,7 +2096,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -2096,40 +2138,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 16
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "NautilusServerTimeSDK.NautilusServerTimeError?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusServerTimeError",
-                    "printedName": "NautilusServerTimeSDK.NautilusServerTimeError",
-                    "usr": "c:@M@NautilusServerTimeSDK@E@NautilusServerTimeError"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:21NautilusServerTimeSDK0abC5ErrorO8rawValueACSgSi_tcfc",
-            "mangledName": "$s21NautilusServerTimeSDK0abC5ErrorO8rawValueACSgSi_tcfc",
-            "moduleName": "NautilusServerTimeSDK",
-            "implicit": true,
-            "init_kind": "Designated"
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -2169,6 +2178,39 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusServerTimeSDK.NautilusServerTimeError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusServerTimeError",
+                    "printedName": "NautilusServerTimeSDK.NautilusServerTimeError",
+                    "usr": "c:@M@NautilusServerTimeSDK@E@NautilusServerTimeError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21NautilusServerTimeSDK0abC5ErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s21NautilusServerTimeSDK0abC5ErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "NautilusServerTimeSDK",
+            "implicit": true,
+            "init_kind": "Designated"
           },
           {
             "kind": "Var",
@@ -2606,6 +2648,16 @@
         "usr": "s:10Foundation8CalendarV",
         "mangledName": "$s10Foundation8CalendarV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -2621,28 +2673,6 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSCalendar",
-                    "printedName": "Foundation.NSCalendar",
-                    "usr": "c:objc(cs)NSCalendar"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -2674,6 +2704,42 @@
           },
           {
             "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSCalendar",
+                    "printedName": "Foundation.NSCalendar",
+                    "usr": "c:objc(cs)NSCalendar"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -2693,20 +2759,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
           }
         ]
       },
@@ -2764,6 +2816,16 @@
         "usr": "s:10Foundation6LocaleV",
         "mangledName": "$s10Foundation6LocaleV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -2779,6 +2841,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -2804,10 +2873,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSLocale",
+                    "printedName": "Foundation.NSLocale",
+                    "usr": "c:objc(cs)NSLocale"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
@@ -2829,28 +2913,6 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSLocale",
-                    "printedName": "Foundation.NSLocale",
-                    "usr": "c:objc(cs)NSLocale"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
@@ -2922,6 +2984,16 @@
         "usr": "s:10Foundation8TimeZoneV",
         "mangledName": "$s10Foundation8TimeZoneV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -2937,28 +3009,6 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSTimeZone",
-                    "printedName": "Foundation.NSTimeZone",
-                    "usr": "c:objc(cs)NSTimeZone"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -2990,6 +3040,42 @@
           },
           {
             "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSTimeZone",
+                    "printedName": "Foundation.NSTimeZone",
+                    "usr": "c:objc(cs)NSTimeZone"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -3009,20 +3095,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
           }
         ]
       },
@@ -3163,6 +3235,41 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 334,
+      "length": 16,
+      "value": "\"yyyyMMddHHmmss\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 657,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 687,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1418,
+      "length": 7,
+      "value": "\"ja_JP\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1627,
+      "length": 12,
+      "value": "\"Asia\/Tokyo\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Config\/NautilusServerTimeConfig.swift",
       "kind": "StringLiteral",
       "offset": 327,
@@ -3175,6 +3282,27 @@
       "offset": 327,
       "length": 36,
       "value": "\"ma_servertime_network_timeout_time\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Config\/NautilusServerTimeConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 712,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 415,
+      "length": 28,
+      "value": "\"moduleapps-servertime.json\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "Array",
+      "offset": 661,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
@@ -3227,10 +3355,227 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4566,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 4714,
+      "length": 40,
+      "value": "\"@@@@ \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 4732,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 4741,
+      "length": 11,
+      "value": "\" instantiate\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4955,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5232,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 7065,
+      "length": 82,
+      "value": "\"NautilusServerSDK is \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 7115,
+      "length": 1,
+      "value": "\". \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 7129,
+      "length": 6,
+      "value": "\" cannot executed.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 8239,
+      "length": 82,
+      "value": "\"NautilusServerSDK is \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 8289,
+      "length": 1,
+      "value": "\". \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 8303,
+      "length": 6,
+      "value": "\" cannot executed.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8520,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8666,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13064,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
       "offset": 306,
       "length": 18,
       "value": "\"NautilusServerTimeSDK.NautilusServerTime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 14083,
+      "length": 15,
+      "value": "\"uninitialized\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 14145,
+      "length": 13,
+      "value": "\"unavailable\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 14203,
+      "length": 11,
+      "value": "\"available\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 14260,
+      "length": 12,
+      "value": "\"restricted\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 14368,
+      "length": 50,
+      "value": "\"Invalid Feature Status in NautilusServerTimeSDK.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14874,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14937,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "StringLiteral",
+      "offset": 15037,
+      "length": 50,
+      "value": "\"Invalid Feature Status in NautilusServerTimeSDK.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15479,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15510,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 529,
+      "length": 16,
+      "value": "\"\/timecheck.php\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1240,
+      "length": 27,
+      "value": "\"ma2dev-timecheck.lvdev.jp\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1335,
+      "length": 26,
+      "value": "\"timecheck.moduleapps.com\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1480,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1620,
+      "length": 5,
+      "value": "\"stg\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1697,
+      "length": 5,
+      "value": "\"prd\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime+DataStore.swift",
@@ -3306,104 +3651,111 @@
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
       "offset": 539,
-      "length": 15,
+      "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 598,
-      "length": 14,
+      "offset": 584,
+      "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 667,
-      "length": 12,
+      "offset": 643,
+      "length": 14,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 755,
-      "length": 13,
+      "offset": 712,
+      "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 868,
-      "length": 15,
+      "offset": 800,
+      "length": 13,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 929,
+      "offset": 913,
       "length": 15,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1027,
+      "offset": 974,
+      "length": 15,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1072,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1112,
+      "offset": 1157,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1201,
+      "offset": 1246,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1258,
+      "offset": 1303,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1322,
+      "offset": 1367,
       "length": 3,
       "value": "901"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1397,
+      "offset": 1442,
       "length": 3,
       "value": "903"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1451,
+      "offset": 1496,
       "length": 3,
       "value": "905"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1506,
+      "offset": 1551,
       "length": 3,
       "value": "906"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1586,
+      "offset": 1631,
       "length": 3,
       "value": "907"
     },
@@ -3418,104 +3770,111 @@
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
       "offset": 539,
-      "length": 15,
+      "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 598,
-      "length": 14,
+      "offset": 584,
+      "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 667,
-      "length": 12,
+      "offset": 643,
+      "length": 14,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 755,
-      "length": 13,
+      "offset": 712,
+      "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 868,
-      "length": 15,
+      "offset": 800,
+      "length": 13,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 929,
+      "offset": 913,
       "length": 15,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1027,
+      "offset": 974,
+      "length": 15,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1072,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1112,
+      "offset": 1157,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1201,
+      "offset": 1246,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1258,
+      "offset": 1303,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1322,
+      "offset": 1367,
       "length": 3,
       "value": "901"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1397,
+      "offset": 1442,
       "length": 3,
       "value": "903"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1451,
+      "offset": 1496,
       "length": 3,
       "value": "905"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1506,
+      "offset": 1551,
       "length": 3,
       "value": "906"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTimeError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1586,
+      "offset": 1631,
       "length": 3,
       "value": "907"
     },
