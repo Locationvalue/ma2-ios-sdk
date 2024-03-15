@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusBannerSDK
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NautilusBannerSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import DeveloperToolsSupport
 import Foundation
 import NautilusAnalyticsSDK
 import NautilusConfigSDK
@@ -12,12 +13,14 @@ import NautilusImagingSDK
 import NautilusLoggingSDK
 import NautilusUISDK
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class NautilusBannerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: NautilusBannerSDK.NautilusBannerViewDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any NautilusBannerSDK.NautilusBannerViewDelegate)?
   @_Concurrency.MainActor(unsafe) public var currentBannerCategory: NautilusBannerSDK.NautilusBannerCategory? {
     get
     set
@@ -30,9 +33,9 @@ import _StringProcessing
   final public let actionDatetime: Foundation.Date
   final public let type: NautilusBannerSDK.NautilusBannerLogType
   public init(bannerID: Swift.Int, actionDatetime: Foundation.Date, type: NautilusBannerSDK.NautilusBannerLogType)
-  required public init(from decoder: Swift.Decoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc public enum NautilusBannerLogType : Swift.Int, Swift.Codable {
   case show
@@ -79,6 +82,7 @@ public let NautilusBannerErrorDomain: Swift.String
 @objc public enum NautilusBannerError : Swift.Int, Swift.Error {
   case unknown
   case connection
+  case timedout
   case apiProcessError
   case httpConnection
   case parseFailure
@@ -149,8 +153,11 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class NautilusBannerCategory : ObjectiveC.NSObject {
+  final public let hierarchy: Swift.Int
+  final public let parentCategoryIdentifier: Swift.Int?
   final public let categoryIdentifier: Swift.Int
   final public let categoryName: Swift.String
+  final public let sortNo: Swift.Int
   final public let alias: Swift.String
   @objc deinit
 }
@@ -162,7 +169,6 @@ public let NautilusBannerErrorDomain: Swift.String
 }
 extension NautilusBannerSDK.NautilusBannerCarouselView : UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
 }

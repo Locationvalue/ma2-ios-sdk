@@ -1056,6 +1056,48 @@
           },
           {
             "kind": "Var",
+            "name": "timedout",
+            "printedName": "timedout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusNotificationNetworkError.Type) -> NautilusNotificationSDK.NautilusNotificationNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNotificationNetworkError",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError@NautilusNotificationNetworkErrorTimedout",
+            "mangledName": "$s23NautilusNotificationSDK0aB12NetworkErrorO8timedoutyA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
             "name": "apiProcessError",
             "printedName": "apiProcessError",
             "children": [
@@ -1094,7 +1136,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -1136,7 +1178,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -1178,7 +1220,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -1220,7 +1262,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -1262,7 +1304,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -1304,7 +1346,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -1346,7 +1388,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -1388,7 +1430,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -1430,7 +1472,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -1472,7 +1514,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -1514,7 +1556,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -1556,7 +1598,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -1598,7 +1640,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -1640,7 +1682,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Constructor",
@@ -4719,6 +4761,41 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/OpenPushMessageAPIRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 413,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/OpenPushMessageAPIRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 458,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushHistoryAPIRequest.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2729,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushHistoryAPIRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2736,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushHistoryAPIRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2739,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusRegistrationTarget.swift",
       "kind": "StringLiteral",
       "offset": 367,
@@ -4727,6 +4804,13 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushHistoryAPIResponse.swift",
+      "kind": "Array",
+      "offset": 509,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushHistoryAPIResponse.swift",
       "kind": "StringLiteral",
       "offset": 854,
       "length": 6,
@@ -4920,6 +5004,13 @@
       "offset": 358,
       "length": 11,
       "value": "\"device_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusRemoteMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1793,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
@@ -4939,97 +5030,104 @@
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
       "offset": 555,
-      "length": 15,
+      "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 614,
-      "length": 14,
+      "offset": 600,
+      "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 683,
-      "length": 12,
+      "offset": 659,
+      "length": 14,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 771,
-      "length": 13,
+      "offset": 728,
+      "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 833,
-      "length": 15,
+      "offset": 816,
+      "length": 13,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 931,
+      "offset": 878,
+      "length": 15,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 976,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1016,
+      "offset": 1061,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1105,
+      "offset": 1150,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1162,
+      "offset": 1207,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1226,
+      "offset": 1271,
       "length": 3,
       "value": "901"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1301,
+      "offset": 1346,
       "length": 3,
       "value": "903"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1355,
+      "offset": 1400,
       "length": 3,
       "value": "905"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1410,
+      "offset": 1455,
       "length": 3,
       "value": "906"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1490,
+      "offset": 1535,
       "length": 3,
       "value": "907"
     },
@@ -5044,97 +5142,104 @@
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
       "offset": 555,
-      "length": 15,
+      "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 614,
-      "length": 14,
+      "offset": 600,
+      "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 683,
-      "length": 12,
+      "offset": 659,
+      "length": 14,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 771,
-      "length": 13,
+      "offset": 728,
+      "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 833,
-      "length": 15,
+      "offset": 816,
+      "length": 13,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 931,
+      "offset": 878,
+      "length": 15,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 976,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1016,
+      "offset": 1061,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1105,
+      "offset": 1150,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1162,
+      "offset": 1207,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1226,
+      "offset": 1271,
       "length": 3,
       "value": "901"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1301,
+      "offset": 1346,
       "length": 3,
       "value": "903"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1355,
+      "offset": 1400,
       "length": 3,
       "value": "905"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1410,
+      "offset": 1455,
       "length": 3,
       "value": "906"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1490,
+      "offset": 1535,
       "length": 3,
       "value": "907"
     },
@@ -5230,6 +5335,237 @@
       "value": "\"ma2.0\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3681,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3741,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4348,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4679,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4815,
+      "length": 30,
+      "value": "\"Missing notification feature\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4866,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4995,
+      "length": 63,
+      "value": "\"Missing Push Device ID: Why this device receive notification?\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5079,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5790,
+      "length": 72,
+      "value": "\"Succeed to register a log of opening push notification[\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5860,
+      "length": 1,
+      "value": "\"]\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5970,
+      "length": 110,
+      "value": "\"Failed to register a log of opening push notification[\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 6039,
+      "length": 1,
+      "value": "\"]: error = \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 6079,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6554,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6935,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6977,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7354,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7567,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7717,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8105,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8974,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotificationHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9160,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 507,
+      "length": 22,
+      "value": "\"\/api\/register_device\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 576,
+      "length": 21,
+      "value": "\"\/api\/register_token\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 645,
+      "length": 31,
+      "value": "\"\/api\/register_push_target_key\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 727,
+      "length": 24,
+      "value": "\"\/api\/open_push_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 801,
+      "length": 23,
+      "value": "\"\/api\/get_push_history\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3227,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 3420,
+      "length": 14,
+      "value": "\"ps5.lvdev.jp\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 3502,
+      "length": 19,
+      "value": "\"ps.moduleapps.com\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3637,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 3774,
+      "length": 5,
+      "value": "\"stg\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/NautilusEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 3851,
+      "length": 5,
+      "value": "\"prd\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/OpenPushMessageAPIResponse.swift",
       "kind": "StringLiteral",
       "offset": 853,
@@ -5270,6 +5606,62 @@
       "offset": 915,
       "length": 5,
       "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 409,
+      "length": 10,
+      "value": "\"Nautilus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 429,
+      "length": 7,
+      "value": "\"plist\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "Dictionary",
+      "offset": 572,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "Dictionary",
+      "offset": 701,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1052,
+      "length": 42,
+      "value": "\"[Nautilus\/F] Missing key \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1084,
+      "length": 2,
+      "value": "\" in plist\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1466,
+      "length": 42,
+      "value": "\"[Nautilus\/F] Missing key \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/Bundle+SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1498,
+      "length": 2,
+      "value": "\" in plist\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/RegisterDeviceEntity.swift",
@@ -5370,6 +5762,20 @@
       "value": "\"ma_notification_device_token_retry_time_interval\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Config\/NautilusNotificationConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 812,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Config\/NautilusNotificationConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1089,
+      "length": 2,
+      "value": "60"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
       "kind": "StringLiteral",
       "offset": 543,
@@ -5386,9 +5792,240 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
       "kind": "BooleanLiteral",
+      "offset": 1054,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1144,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 1218,
+      "length": 30,
+      "value": "\"moduleapps-notification.json\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
       "offset": 1542,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3084,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 3459,
+      "length": 47,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 3477,
+      "length": 8,
+      "value": "\" requires `NautilusIdentify`\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 3742,
+      "length": 47,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 3760,
+      "length": 8,
+      "value": "\" requires `NautilusIdentify`\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5392,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5738,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5792,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5924,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7467,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 7631,
+      "length": 88,
+      "value": "\"NautilusNotificationSDK is \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 7687,
+      "length": 1,
+      "value": "\". \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 7701,
+      "length": 6,
+      "value": "\" cannot executed.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 7826,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 8214,
+      "length": 88,
+      "value": "\"NautilusNotificationSDK is \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 8270,
+      "length": 1,
+      "value": "\". \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 8284,
+      "length": 6,
+      "value": "\" cannot executed.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 8419,
+      "length": 8,
+      "value": "\"%02hhx\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 10934,
+      "length": 88,
+      "value": "\"NautilusNotificationSDK is \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 10990,
+      "length": 1,
+      "value": "\". \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 11004,
+      "length": 6,
+      "value": "\" cannot executed.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 14202,
+      "length": 88,
+      "value": "\"NautilusNotificationSDK is \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 14258,
+      "length": 1,
+      "value": "\". \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 14272,
+      "length": 6,
+      "value": "\" cannot executed.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16564,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16850,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 21080,
+      "length": 88,
+      "value": "\"NautilusNotificationSDK is \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 21136,
+      "length": 1,
+      "value": "\". \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 21150,
+      "length": 6,
+      "value": "\" cannot executed.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23243,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
@@ -5396,6 +6033,104 @@
       "offset": 340,
       "length": 20,
       "value": "\"NautilusNotificationSDK.NautilusNotification\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26554,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26617,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 26717,
+      "length": 52,
+      "value": "\"Invalid Feature Status in NautilusNotificationSDK.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27161,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27192,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 27384,
+      "length": 15,
+      "value": "\"uninitialized\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 27446,
+      "length": 13,
+      "value": "\"unavailable\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 27504,
+      "length": 11,
+      "value": "\"available\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 27561,
+      "length": 12,
+      "value": "\"restricted\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 27669,
+      "length": 52,
+      "value": "\"Invalid Feature Status in NautilusNotificationSDK.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/RegisterDeviceRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 718,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/RegisterDeviceRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 765,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/RegisterDeviceRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 808,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/RegisterDeviceRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 848,
+      "length": 1,
+      "value": "4"
     }
   ]
 }
