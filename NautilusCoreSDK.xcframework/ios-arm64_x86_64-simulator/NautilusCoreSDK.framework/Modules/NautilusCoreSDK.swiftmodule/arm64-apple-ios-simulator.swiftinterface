@@ -369,6 +369,7 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
   weak final public var delegate: (any NautilusCoreSDK.NautilusAppDelegate)?
   final public let name: Swift.String
   final public let notificationCenter: Foundation.NotificationCenter
+  public static let maintenanceKey: Swift.String
   final public var locationProvider: (any NautilusCoreSDK.NautilusLocationProvider)?
   final public var cameraPermissionProvider: (any NautilusCoreSDK.NautilusCameraPermissionProvider)?
   final public var isInitialized: Swift.Bool {
@@ -378,6 +379,9 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
     get
   }
   final public var isSecureDataAvailable: Swift.Bool {
+    get
+  }
+  final public var isMaintenance: Swift.Bool {
     get
   }
   @objc public static func app() -> NautilusCoreSDK.NautilusApp
@@ -571,6 +575,7 @@ open class NautilusAPICommonRequest<P, T, TD> where P : NautilusCoreSDK.RequestP
   case cryptoMalfunction
   case deviceLockedState
   case featureUnavailable
+  case maintenance
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
