@@ -376,6 +376,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusAppInitializationError, open) {
   NautilusAppInitializationErrorDeviceLockedState = 1,
 /// SDKの初期化に失敗
   NautilusAppInitializationErrorFeatureUnavailable = 2,
+/// メンテナンス中
+  NautilusAppInitializationErrorMaintenance = 3,
 };
 
 
@@ -955,6 +957,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusAppInitializationError, open) {
   NautilusAppInitializationErrorDeviceLockedState = 1,
 /// SDKの初期化に失敗
   NautilusAppInitializationErrorFeatureUnavailable = 2,
+/// メンテナンス中
+  NautilusAppInitializationErrorMaintenance = 3,
 };
 
 
