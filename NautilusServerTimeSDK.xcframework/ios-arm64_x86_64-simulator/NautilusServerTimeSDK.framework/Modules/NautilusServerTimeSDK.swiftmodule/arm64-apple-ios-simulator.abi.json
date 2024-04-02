@@ -1050,12 +1050,19 @@
           {
             "kind": "Function",
             "name": "updateServerTime",
-            "printedName": "updateServerTime(completion:)",
+            "printedName": "updateServerTime(force:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeFunc",
@@ -1091,8 +1098,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21NautilusServerTimeSDK0abC0C06updatebC010completionyys6ResultOy10Foundation4DateVAA0abC5ErrorOGc_tF",
-            "mangledName": "$s21NautilusServerTimeSDK0abC0C06updatebC010completionyys6ResultOy10Foundation4DateVAA0abC5ErrorOGc_tF",
+            "usr": "s:21NautilusServerTimeSDK0abC0C06updatebC05force10completionySb_ys6ResultOy10Foundation4DateVAA0abC5ErrorOGctF",
+            "mangledName": "$s21NautilusServerTimeSDK0abC0C06updatebC05force10completionySb_ys6ResultOy10Foundation4DateVAA0abC5ErrorOGctF",
             "moduleName": "NautilusServerTimeSDK",
             "declAttributes": [
               "Final",
@@ -3435,43 +3442,64 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8210,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 8239,
+      "offset": 8472,
       "length": 82,
       "value": "\"NautilusServerSDK is \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 8289,
+      "offset": 8522,
       "length": 1,
       "value": "\". \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 8303,
+      "offset": 8536,
       "length": 6,
       "value": "\" cannot executed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "BooleanLiteral",
-      "offset": 8750,
+      "offset": 9037,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "BooleanLiteral",
-      "offset": 8896,
+      "offset": 9183,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "BooleanLiteral",
-      "offset": 13294,
+      "offset": 12004,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12812,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13754,
       "length": 5,
       "value": "false"
     },
@@ -3485,70 +3513,70 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 14313,
+      "offset": 14773,
       "length": 15,
       "value": "\"uninitialized\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 14375,
+      "offset": 14835,
       "length": 13,
       "value": "\"unavailable\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 14433,
+      "offset": 14893,
       "length": 11,
       "value": "\"available\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 14490,
+      "offset": 14950,
       "length": 12,
       "value": "\"restricted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 14598,
+      "offset": 15058,
       "length": 50,
       "value": "\"Invalid Feature Status in NautilusServerTimeSDK.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "BooleanLiteral",
-      "offset": 15104,
+      "offset": 15564,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "BooleanLiteral",
-      "offset": 15167,
+      "offset": 15627,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "StringLiteral",
-      "offset": 15267,
+      "offset": 15727,
       "length": 50,
       "value": "\"Invalid Feature Status in NautilusServerTimeSDK.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "BooleanLiteral",
-      "offset": 15709,
+      "offset": 16169,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "BooleanLiteral",
-      "offset": 15740,
+      "offset": 16200,
       "length": 4,
       "value": "true"
     },
