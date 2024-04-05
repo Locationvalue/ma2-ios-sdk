@@ -715,11 +715,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// returns:
 /// 登録解除に成功した場合は、 <code>true</code> が返る。それ以外の場合は、<code>false</code>が返る。
 - (BOOL)unregisterCouponUseValidObserverFor:(NautilusCouponInfo * _Nonnull)coupon;
-/// ポイント管理として登録した景品を一覧で取得
-/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
-/// \param completion レスポンスを呼び元へ渡すためのコールバック
-///
-- (void)getPointPrizeCouponListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
 @end
 
 @class UIImageView;
