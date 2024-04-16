@@ -146,6 +146,13 @@
         "moduleName": "NautilusIntroSDK"
       },
       {
+        "kind": "Import",
+        "name": "NautilusUISDK",
+        "printedName": "NautilusUISDK",
+        "declKind": "Import",
+        "moduleName": "NautilusIntroSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "NautilusIntroduction",
         "printedName": "NautilusIntroduction",
@@ -1831,10 +1838,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       }
@@ -1844,17 +1851,171 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "StringLiteral",
+      "offset": 531,
+      "length": 30,
+      "value": "\"moduleapps-introduction.json\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
       "kind": "BooleanLiteral",
-      "offset": 1404,
+      "offset": 961,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1054,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1148,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1235,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1541,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3413,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3850,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3974,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
       "kind": "StringLiteral",
-      "offset": 399,
+      "offset": 420,
       "length": 20,
       "value": "\"NautilusIntroSDK.NautilusIntroduction\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7825,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7888,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "StringLiteral",
+      "offset": 7988,
+      "length": 45,
+      "value": "\"Invalid Feature Status in NautilusIntroSDK.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8421,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8452,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "StringLiteral",
+      "offset": 8645,
+      "length": 15,
+      "value": "\"uninitialized\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "StringLiteral",
+      "offset": 8707,
+      "length": 13,
+      "value": "\"unavailable\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "StringLiteral",
+      "offset": 8765,
+      "length": 11,
+      "value": "\"available\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "StringLiteral",
+      "offset": 8822,
+      "length": 12,
+      "value": "\"restricted\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Base\/NautilusIntroduction.swift",
+      "kind": "StringLiteral",
+      "offset": 8930,
+      "length": 45,
+      "value": "\"Invalid Feature Status in NautilusIntroSDK.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Entities\/NautilusIntroductionActionType.swift",
+      "kind": "StringLiteral",
+      "offset": 371,
+      "length": 6,
+      "value": "\"next\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Entities\/NautilusIntroductionActionType.swift",
+      "kind": "StringLiteral",
+      "offset": 417,
+      "length": 7,
+      "value": "\"close\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Entities\/NautilusIntroductionActionType.swift",
+      "kind": "StringLiteral",
+      "offset": 494,
+      "length": 51,
+      "value": "\"Invalid introduction action button type: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Entities\/NautilusIntroductionActionType.swift",
+      "kind": "StringLiteral",
+      "offset": 544,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Entities\/NautilusIntroductionListItem.swift",
@@ -1878,6 +2039,90 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionPageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1482,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionPageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1599,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionPageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2255,
+      "length": 81,
+      "value": "\"Introduction image `\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionPageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2308,
+      "length": 1,
+      "value": "\"` is missing in App Bundle.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 32,
+      "value": "\"ma_intro_default_button_action\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 412,
+      "length": 37,
+      "value": "\"ma_intro_default_action_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 39,
+      "value": "\"ma_intro_last_page_action_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 35,
+      "value": "\"ma_intro_action_button_text_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 646,
+      "length": 41,
+      "value": "\"ma_intro_action_button_background_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 722,
+      "length": 31,
+      "value": "\"ma_intro_page_indicator_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 795,
+      "length": 39,
+      "value": "\"ma_intro_current_page_indicator_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 881,
+      "length": 46,
+      "value": "\"ma_intro_show_page_indicator_for_single_page\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
       "kind": "StringLiteral",
       "offset": 340,
@@ -1936,58 +2181,58 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 340,
-      "length": 32,
-      "value": "\"ma_intro_default_button_action\""
+      "offset": 1497,
+      "length": 6,
+      "value": "\"next\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 412,
-      "length": 37,
-      "value": "\"ma_intro_default_action_button_text\""
+      "offset": 1765,
+      "length": 8,
+      "value": "\"次へ\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 490,
-      "length": 39,
-      "value": "\"ma_intro_last_page_action_button_text\""
+      "offset": 2018,
+      "length": 14,
+      "value": "\"はじめる\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 567,
-      "length": 35,
-      "value": "\"ma_intro_action_button_text_color\""
+      "offset": 2301,
+      "length": 11,
+      "value": "\"#FFFFFFFF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 646,
-      "length": 41,
-      "value": "\"ma_intro_action_button_background_color\""
+      "offset": 2585,
+      "length": 11,
+      "value": "\"#FFE95861\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 722,
-      "length": 31,
-      "value": "\"ma_intro_page_indicator_color\""
+      "offset": 2869,
+      "length": 11,
+      "value": "\"#FFD4D4D4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 795,
-      "length": 39,
-      "value": "\"ma_intro_current_page_indicator_color\""
+      "offset": 3194,
+      "length": 11,
+      "value": "\"#FFE95861\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/Config\/NautilusIntroductionConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 881,
-      "length": 46,
-      "value": "\"ma_intro_show_page_indicator_for_single_page\""
+      "kind": "BooleanLiteral",
+      "offset": 3516,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
@@ -1995,6 +2240,342 @@
       "offset": 1643,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2105,
+      "length": 94,
+      "value": "\"NautilusIntroSDK is \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2167,
+      "length": 1,
+      "value": "\". \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2181,
+      "length": 6,
+      "value": "\" cannot executed.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2831,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3172,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3511,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3603,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3808,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3961,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4284,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4430,
+      "length": 3,
+      "value": "-60"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4580,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4891,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5324,
+      "length": 29,
+      "value": "\"No introduction page found.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5480,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6003,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6281,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6320,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6727,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6770,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6922,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7208,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7378,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7462,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7546,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7630,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7714,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7884,
+      "length": 18,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7899,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7901,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7988,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 8919,
+      "length": 11,
+      "value": "\"閉じる\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9062,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9279,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10611,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10679,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10747,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10815,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10883,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10951,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 11097,
+      "length": 14,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11108,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 11110,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11170,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11841,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11926,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12421,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Intro\/Sources\/View\/NautilusIntroductionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12506,
+      "length": 1,
+      "value": "1"
     }
   ]
 }
