@@ -40,13 +40,9 @@ import _SwiftConcurrencyShims
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func stampCardUI() -> NautilusStampUISDK.NautilusStampCardUI
   @objc(stampUIAppNamed:) public static func stampCardUI(appName: Swift.String) -> NautilusStampUISDK.NautilusStampCardUI
-  @available(*, deprecated, message: "Use NautilusStampCardRouter function.")
   @objc final public func presentStampCardListViewController(in viewController: UIKit.UIViewController)
-  @available(*, deprecated, message: "Use NautilusStampCardRouter function.")
   @objc final public func instantiateStampCardListViewController() -> NautilusStampUISDK.NautilusStampCardListViewController
-  @available(*, deprecated, message: "Use NautilusStampCardRouter function.")
   @objc final public func instantiateStampCardDetailViewController(stampCardID: Swift.Int, hasCloseButton: Swift.Bool) -> NautilusStampUISDK.NautilusStampCardDetailViewController
-  @available(*, deprecated, message: "Use NautilusStampCardRouter function.")
   @objc final public func instantiateStampCardDetailViewController(stampCard: NautilusStampSDK.NautilusStampCardInfo, hasCloseButton: Swift.Bool) -> NautilusStampUISDK.NautilusStampCardDetailViewController
   @objc deinit
 }

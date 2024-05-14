@@ -61,8 +61,6 @@ import _SwiftConcurrencyShims
   final public let isFavorited: Swift.Bool?
   final public let useCount: Swift.Int?
   final public let exchangeID: Swift.Int?
-  final public let alias: Swift.String?
-  final public let requirePoint: Swift.Int?
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusCouponImageInfo : ObjectiveC.NSObject {
@@ -233,8 +231,6 @@ extension NautilusCouponSDK.NautilusCoupon {
   @objc final public func unregisterCouponUseValidObserver(_ observer: any NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
   @discardableResult
   @objc final public func unregisterCouponUseValidObserver(for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
-  final public func getPointPrizeCouponList(completion: @escaping (Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>) -> Swift.Void)
-  @objc final public func getPointPrizeCouponList(completion: @escaping ([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?) -> Swift.Void)
 }
 @objc public class NautilusCouponLog : ObjectiveC.NSObject {
   final public let coupon: NautilusCouponSDK.NautilusCouponInfo

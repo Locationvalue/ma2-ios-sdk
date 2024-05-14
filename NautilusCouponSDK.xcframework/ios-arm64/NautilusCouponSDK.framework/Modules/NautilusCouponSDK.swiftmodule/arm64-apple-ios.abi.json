@@ -2326,136 +2326,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "alias",
-            "printedName": "alias",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17NautilusCouponSDK0aB4InfoC5aliasSSSgvp",
-            "mangledName": "$s17NautilusCouponSDK0aB4InfoC5aliasSSSgvp",
-            "moduleName": "NautilusCouponSDK",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17NautilusCouponSDK0aB4InfoC5aliasSSSgvg",
-                "mangledName": "$s17NautilusCouponSDK0aB4InfoC5aliasSSSgvg",
-                "moduleName": "NautilusCouponSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "requirePoint",
-            "printedName": "requirePoint",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17NautilusCouponSDK0aB4InfoC12requirePointSiSgvp",
-            "mangledName": "$s17NautilusCouponSDK0aB4InfoC12requirePointSiSgvp",
-            "moduleName": "NautilusCouponSDK",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17NautilusCouponSDK0aB4InfoC12requirePointSiSgvg",
-                "mangledName": "$s17NautilusCouponSDK0aB4InfoC12requirePointSiSgvg",
-                "moduleName": "NautilusCouponSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Class",
@@ -11727,149 +11597,6 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getPointPrizeCouponList",
-            "printedName": "getPointPrizeCouponList(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[NautilusCouponSDK.NautilusCouponInfo], NautilusCouponSDK.NautilusCouponError>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[NautilusCouponSDK.NautilusCouponInfo]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NautilusCouponInfo",
-                            "printedName": "NautilusCouponSDK.NautilusCouponInfo",
-                            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NautilusCouponError",
-                        "printedName": "NautilusCouponSDK.NautilusCouponError",
-                        "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponError"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17NautilusCouponSDK0aB0C013getPointPrizeB4List10completionyys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGc_tF",
-            "mangledName": "$s17NautilusCouponSDK0aB0C013getPointPrizeB4List10completionyys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGc_tF",
-            "moduleName": "NautilusCouponSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getPointPrizeCouponList",
-            "printedName": "getPointPrizeCouponList(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "([NautilusCouponSDK.NautilusCouponInfo]?, Foundation.NSError?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "[NautilusCouponSDK.NautilusCouponInfo]?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Array",
-                            "printedName": "[NautilusCouponSDK.NautilusCouponInfo]",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "NautilusCouponInfo",
-                                "printedName": "NautilusCouponSDK.NautilusCouponInfo",
-                                "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
-                              }
-                            ],
-                            "usr": "s:Sa"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSError",
-                            "printedName": "Foundation.NSError",
-                            "usr": "c:objc(cs)NSError"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@NautilusCouponSDK@objc(cs)NautilusCoupon(im)getPointPrizeCouponListWithCompletion:",
-            "mangledName": "$s17NautilusCouponSDK0aB0C013getPointPrizeB4List10completionyySayAA0aB4InfoCGSg_So7NSErrorCSgtc_tF",
-            "moduleName": "NautilusCouponSDK",
-            "objc_name": "getPointPrizeCouponListWithCompletion:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -13735,23 +13462,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "NautilusCouponSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusCoreSDK",
-        "printedName": "NautilusCoreSDK",
-        "declKind": "Import",
-        "moduleName": "NautilusCouponSDK"
       },
       {
         "kind": "Import",
@@ -20068,462 +19778,455 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 4744,
+      "offset": 4582,
       "length": 25,
       "value": "\"requestCommonCouponList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 5756,
+      "offset": 5594,
       "length": 26,
       "value": "\"requestCommonCouponCount\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 7783,
+      "offset": 7621,
       "length": 26,
       "value": "\"requestPrivateCouponList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 8806,
+      "offset": 8644,
       "length": 27,
       "value": "\"requestPrivateCouponCount\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 10824,
+      "offset": 10662,
       "length": 23,
       "value": "\"requestShopCouponList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 11840,
+      "offset": 11678,
       "length": 24,
       "value": "\"requestShopCouponCount\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 13968,
+      "offset": 13806,
       "length": 24,
       "value": "\"requestPrizeCouponList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 15149,
+      "offset": 14987,
       "length": 25,
       "value": "\"requestPrizeCouponCount\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 16561,
+      "offset": 16399,
       "length": 11,
       "value": "\"useCoupon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 17812,
+      "offset": 17650,
       "length": 16,
       "value": "\"useMultiCoupon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 18962,
+      "offset": 18800,
       "length": 26,
       "value": "\"requestSetFavoriteCoupon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 19884,
+      "offset": 19722,
       "length": 23,
       "value": "\"requestFavoriteCoupon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 20737,
+      "offset": 20575,
       "length": 21,
       "value": "\"requestCategoryList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 22093,
+      "offset": 21931,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 22246,
+      "offset": 22084,
       "length": 27,
       "value": "\"requestPublishPrizeCoupon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 23550,
+      "offset": 23388,
       "length": 22,
       "value": "\"requestCouponViewLog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 24475,
-      "length": 25,
-      "value": "\"getPointPrizeCouponList\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
-      "kind": "StringLiteral",
-      "offset": 24863,
+      "offset": 23773,
       "length": 31,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 24874,
+      "offset": 23784,
       "length": 1,
       "value": "\": Connection Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 24993,
+      "offset": 23903,
       "length": 53,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25004,
+      "offset": 23914,
       "length": 1,
       "value": "\": Timeout Error. \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25033,
+      "offset": 23943,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25044,
+      "offset": 23954,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25196,
+      "offset": 24106,
       "length": 80,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25214,
+      "offset": 24124,
       "length": 1,
       "value": "\":Bad API Key Error  \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25252,
+      "offset": 24162,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25274,
+      "offset": 24184,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25358,
+      "offset": 24268,
       "length": 82,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25372,
+      "offset": 24282,
       "length": 1,
       "value": "\"  \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25384,
+      "offset": 24294,
       "length": 1,
       "value": "\": HttpConnection Error. url: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25439,
+      "offset": 24349,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25496,
+      "offset": 24406,
       "length": 65,
       "value": "\"During \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25514,
+      "offset": 24424,
       "length": 7,
       "value": "\" process, network access is cancelled by user.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25616,
+      "offset": 24526,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25627,
+      "offset": 24537,
       "length": 1,
       "value": "\": Parse Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25705,
+      "offset": 24615,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25716,
+      "offset": 24626,
       "length": 1,
       "value": "\": Configuration Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25789,
+      "offset": 24699,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 25800,
+      "offset": 24710,
       "length": 1,
       "value": "\": Unknown Error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 26697,
+      "offset": 25607,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 26751,
+      "offset": 25661,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 26802,
+      "offset": 25712,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 26854,
+      "offset": 25764,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 29180,
+      "offset": 28090,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 29793,
+      "offset": 28703,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 29859,
+      "offset": 28769,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 29927,
+      "offset": 28837,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 30303,
+      "offset": 29213,
       "length": 25,
       "value": "\"requestCommonCouponList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 30357,
+      "offset": 29267,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 30590,
+      "offset": 29500,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 31218,
+      "offset": 30128,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 31286,
+      "offset": 30196,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 31356,
+      "offset": 30266,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 31736,
+      "offset": 30646,
       "length": 26,
       "value": "\"requestPrivateCouponList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 31791,
+      "offset": 30701,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 32015,
+      "offset": 30925,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 32654,
+      "offset": 31564,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 32724,
+      "offset": 31634,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 32796,
+      "offset": 31706,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 33180,
+      "offset": 32090,
       "length": 23,
       "value": "\"requestShopCouponList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 33232,
+      "offset": 32142,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 34005,
+      "offset": 32915,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 34069,
+      "offset": 32979,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 34135,
+      "offset": 33045,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "StringLiteral",
-      "offset": 34594,
+      "offset": 33504,
       "length": 24,
       "value": "\"requestPrizeCouponList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponModel.swift",
       "kind": "Array",
-      "offset": 34647,
+      "offset": 33557,
       "length": 2,
       "value": "[]"
     },
@@ -23680,98 +23383,77 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2947,
+      "offset": 2644,
       "length": 51,
       "value": "\"Do not instantiate `NautilusCouponInfo` directly.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3921,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 4097,
+      "offset": 3828,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 4161,
+      "offset": 3892,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 4222,
+      "offset": 3953,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6042,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7743,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7919,
+      "offset": 7498,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7983,
+      "offset": 7562,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 8044,
+      "offset": 7623,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "StringLiteral",
-      "offset": 9630,
+      "offset": 9071,
       "length": 51,
       "value": "\"Do not instantiate `NautilusCouponInfo` directly.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10004,
+      "offset": 9445,
       "length": 46,
       "value": "\"Coupon image: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10037,
+      "offset": 9478,
       "length": 2,
       "value": "\" is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCouponInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10341,
+      "offset": 9782,
       "length": 3,
       "value": "\"-\""
     },
@@ -24681,21 +24363,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/Detail\/NautilusCouponDetailPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 4496,
+      "offset": 4776,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/Detail\/NautilusCouponDetailPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 4692,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/Detail\/NautilusCouponDetailPresenter.swift",
-      "kind": "StringLiteral",
-      "offset": 4820,
+      "offset": 4904,
       "length": 7,
       "value": "\"ja_JP\""
     },
@@ -26710,106 +26385,85 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
-      "kind": "StringLiteral",
-      "offset": 85274,
-      "length": 82,
-      "value": "\"NautilusCouponSDK is \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
-      "kind": "StringLiteral",
-      "offset": 85324,
-      "length": 1,
-      "value": "\". \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
-      "kind": "StringLiteral",
-      "offset": 85338,
-      "length": 6,
-      "value": "\" cannot executed.\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "IntegerLiteral",
-      "offset": 87940,
+      "offset": 86200,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "IntegerLiteral",
-      "offset": 87981,
+      "offset": 86241,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "BooleanLiteral",
-      "offset": 89909,
+      "offset": 88169,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "BooleanLiteral",
-      "offset": 89972,
+      "offset": 88232,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "StringLiteral",
-      "offset": 90072,
+      "offset": 88332,
       "length": 46,
       "value": "\"Invalid Feature Status in NautilusCouponSDK.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "BooleanLiteral",
-      "offset": 90506,
+      "offset": 88766,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "BooleanLiteral",
-      "offset": 90537,
+      "offset": 88797,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "StringLiteral",
-      "offset": 90730,
+      "offset": 88990,
       "length": 15,
       "value": "\"uninitialized\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "StringLiteral",
-      "offset": 90792,
+      "offset": 89052,
       "length": 13,
       "value": "\"unavailable\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "StringLiteral",
-      "offset": 90850,
+      "offset": 89110,
       "length": 11,
       "value": "\"available\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "StringLiteral",
-      "offset": 90907,
+      "offset": 89167,
       "length": 12,
       "value": "\"restricted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Base\/NautilusCoupon.swift",
       "kind": "StringLiteral",
-      "offset": 91015,
+      "offset": 89275,
       "length": 46,
       "value": "\"Invalid Feature Status in NautilusCouponSDK.\""
     },
@@ -29147,406 +28801,378 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1900,
+      "offset": 1850,
       "length": 11,
       "value": "\"coupon_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1945,
+      "offset": 1895,
       "length": 21,
       "value": "\"coupon_manage_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1994,
+      "offset": 1944,
       "length": 14,
       "value": "\"coupon_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2035,
+      "offset": 1985,
       "length": 13,
       "value": "\"coupon_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2075,
+      "offset": 2025,
       "length": 13,
       "value": "\"notice_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2125,
+      "offset": 2075,
       "length": 24,
       "value": "\"publish_start_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2184,
+      "offset": 2134,
       "length": 22,
       "value": "\"publish_end_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2239,
+      "offset": 2189,
       "length": 20,
       "value": "\"use_start_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2290,
+      "offset": 2240,
       "length": 18,
       "value": "\"use_end_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2332,
+      "offset": 2282,
       "length": 9,
       "value": "\"barcode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2374,
+      "offset": 2324,
       "length": 20,
       "value": "\"barcode_image_path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2421,
+      "offset": 2371,
       "length": 13,
       "value": "\"coupon_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2459,
+      "offset": 2409,
       "length": 11,
       "value": "\"max_sheet\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2494,
+      "offset": 2444,
       "length": 10,
       "value": "\"use_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2529,
+      "offset": 2479,
       "length": 11,
       "value": "\"use_limit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2568,
+      "offset": 2518,
       "length": 14,
       "value": "\"category_ids\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2605,
+      "offset": 2555,
       "length": 9,
       "value": "\"sort_no\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2641,
+      "offset": 2591,
       "length": 12,
       "value": "\"searchword\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2685,
+      "offset": 2635,
       "length": 19,
       "value": "\"coupon_image_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2732,
+      "offset": 2682,
       "length": 14,
       "value": "\"use_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2773,
+      "offset": 2723,
       "length": 13,
       "value": "\"coupon_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2811,
+      "offset": 2761,
       "length": 14,
       "value": "\"flg_favorite\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2850,
+      "offset": 2800,
       "length": 11,
       "value": "\"use_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2888,
+      "offset": 2838,
       "length": 13,
       "value": "\"exchange_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2923,
-      "length": 7,
-      "value": "\"alias\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 2959,
-      "length": 15,
-      "value": "\"require_point\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 1900,
+      "offset": 1850,
       "length": 11,
       "value": "\"coupon_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1945,
+      "offset": 1895,
       "length": 21,
       "value": "\"coupon_manage_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1994,
+      "offset": 1944,
       "length": 14,
       "value": "\"coupon_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2035,
+      "offset": 1985,
       "length": 13,
       "value": "\"coupon_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2075,
+      "offset": 2025,
       "length": 13,
       "value": "\"notice_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2125,
+      "offset": 2075,
       "length": 24,
       "value": "\"publish_start_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2184,
+      "offset": 2134,
       "length": 22,
       "value": "\"publish_end_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2239,
+      "offset": 2189,
       "length": 20,
       "value": "\"use_start_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2290,
+      "offset": 2240,
       "length": 18,
       "value": "\"use_end_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2332,
+      "offset": 2282,
       "length": 9,
       "value": "\"barcode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2374,
+      "offset": 2324,
       "length": 20,
       "value": "\"barcode_image_path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2421,
+      "offset": 2371,
       "length": 13,
       "value": "\"coupon_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2459,
+      "offset": 2409,
       "length": 11,
       "value": "\"max_sheet\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2494,
+      "offset": 2444,
       "length": 10,
       "value": "\"use_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2529,
+      "offset": 2479,
       "length": 11,
       "value": "\"use_limit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2568,
+      "offset": 2518,
       "length": 14,
       "value": "\"category_ids\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2605,
+      "offset": 2555,
       "length": 9,
       "value": "\"sort_no\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2641,
+      "offset": 2591,
       "length": 12,
       "value": "\"searchword\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2685,
+      "offset": 2635,
       "length": 19,
       "value": "\"coupon_image_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2732,
+      "offset": 2682,
       "length": 14,
       "value": "\"use_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2773,
+      "offset": 2723,
       "length": 13,
       "value": "\"coupon_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2811,
+      "offset": 2761,
       "length": 14,
       "value": "\"flg_favorite\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2850,
+      "offset": 2800,
       "length": 11,
       "value": "\"use_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2888,
+      "offset": 2838,
       "length": 13,
       "value": "\"exchange_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2923,
-      "length": 7,
-      "value": "\"alias\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 2959,
-      "length": 15,
-      "value": "\"require_point\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 5380,
+      "offset": 5110,
       "length": 12,
       "value": "\"image_path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 5420,
+      "offset": 5150,
       "length": 14,
       "value": "\"aspect_ratio\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 5457,
+      "offset": 5187,
       "length": 9,
       "value": "\"sort_no\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 5380,
+      "offset": 5110,
       "length": 12,
       "value": "\"image_path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 5420,
+      "offset": 5150,
       "length": 14,
       "value": "\"aspect_ratio\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/Entity\/CouponListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 5457,
+      "offset": 5187,
       "length": 9,
       "value": "\"sort_no\""
     },
@@ -30554,371 +30180,350 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 822,
+      "offset": 792,
       "length": 80,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 852,
+      "offset": 822,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 878,
+      "offset": 848,
       "length": 1,
       "value": "\"\/get_common_coupon_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 955,
+      "offset": 925,
       "length": 81,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 985,
+      "offset": 955,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1011,
+      "offset": 981,
       "length": 1,
       "value": "\"\/get_common_coupon_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1089,
+      "offset": 1059,
       "length": 81,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1119,
+      "offset": 1089,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1145,
+      "offset": 1115,
       "length": 1,
       "value": "\"\/get_private_coupon_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1224,
+      "offset": 1194,
       "length": 82,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1254,
+      "offset": 1224,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1280,
+      "offset": 1250,
       "length": 1,
       "value": "\"\/get_private_coupon_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1364,
+      "offset": 1334,
       "length": 87,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1394,
+      "offset": 1364,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1420,
+      "offset": 1390,
       "length": 1,
       "value": "\"\/get_favorite_shop_coupon_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1514,
+      "offset": 1484,
       "length": 88,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1544,
+      "offset": 1514,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1570,
+      "offset": 1540,
       "length": 1,
       "value": "\"\/get_favorite_shop_coupon_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1653,
+      "offset": 1623,
       "length": 79,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1683,
+      "offset": 1653,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1709,
+      "offset": 1679,
       "length": 1,
       "value": "\"\/get_prize_coupon_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1788,
+      "offset": 1758,
       "length": 80,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1818,
+      "offset": 1788,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1844,
+      "offset": 1814,
       "length": 1,
       "value": "\"\/get_prize_coupon_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1913,
+      "offset": 1883,
       "length": 68,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1943,
+      "offset": 1913,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1969,
+      "offset": 1939,
       "length": 1,
       "value": "\"\/use_coupon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2031,
+      "offset": 2001,
       "length": 74,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2061,
+      "offset": 2031,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2087,
+      "offset": 2057,
       "length": 1,
       "value": "\"\/use_coupon_multi\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2158,
+      "offset": 2128,
       "length": 77,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2188,
+      "offset": 2158,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2214,
+      "offset": 2184,
       "length": 1,
       "value": "\"\/set_favorite_coupon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2292,
+      "offset": 2262,
       "length": 82,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2322,
+      "offset": 2292,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2348,
+      "offset": 2318,
       "length": 1,
       "value": "\"\/get_favorite_coupon_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2422,
+      "offset": 2392,
       "length": 75,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2452,
+      "offset": 2422,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2478,
+      "offset": 2448,
       "length": 1,
       "value": "\"\/get_category_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2551,
+      "offset": 2521,
       "length": 78,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2581,
+      "offset": 2551,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2607,
+      "offset": 2577,
       "length": 1,
       "value": "\"\/publish_prize_coupon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2678,
+      "offset": 2648,
       "length": 77,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2708,
+      "offset": 2678,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2734,
+      "offset": 2704,
       "length": 1,
       "value": "\"\/set_coupon_view_log\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2811,
-      "length": 78,
-      "value": "\"\/api\/\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 2841,
-      "length": 1,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 2867,
-      "length": 1,
-      "value": "\"\/get_point_prize_list\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 9335,
+      "offset": 8803,
       "length": 18,
       "value": "\"coupon5.lvdev.jp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 9421,
+      "offset": 8889,
       "length": 19,
       "value": "\"cp.moduleapps.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 9559,
+      "offset": 9027,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 9699,
+      "offset": 9167,
       "length": 5,
       "value": "\"stg\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/API\/NautilusEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 9776,
+      "offset": 9244,
       "length": 5,
       "value": "\"prd\""
     },

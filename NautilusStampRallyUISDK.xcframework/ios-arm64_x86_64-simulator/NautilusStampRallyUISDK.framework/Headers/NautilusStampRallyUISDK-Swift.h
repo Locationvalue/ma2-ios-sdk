@@ -477,32 +477,6 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 /// returns:
 /// スタンプラリー詳細画面
 - (UIViewController * _Nonnull)instantiateStampRallyDetailWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
-/// コードリーダー画面に遷移する
-/// \param setting コードリーダー画面の表示設定
-///
-/// \param handler コード読み込み結果の受け取り先
-///
-///
-/// returns:
-/// コードリーダー画面
-- (UIViewController * _Nonnull)instantiateStampCodeReaderWithSetting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler SWIFT_WARN_UNUSED_RESULT;
-/// スポット一覧画面を生成する
-/// <ul>
-///   <li>
-///     Parameters:
-///   </li>
-///   <li>
-///     stampRally: スタンプラリー情報
-///   </li>
-///   <li>
-///     hasCloseButton: 閉じるボタンを表示するか true:表示する, false:表示しない
-///   </li>
-/// </ul>
-- (UIViewController * _Nonnull)instantiateStampRallySpotListWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
-/// スタンプラリー一覧画面に遷移する
-/// \param viewController 表示元になるView Controllerのインスタンス
-///
-- (void)routeStampRallyListIn:(UIViewController * _Nonnull)viewController;
 /// スタンプラリー詳細画面に遷移する
 /// モーダル遷移(fullScreen)
 /// \param stampRally スタンプラリー情報
@@ -517,9 +491,31 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 ///
 /// \param handler コード読み込み結果の受け取り先
 ///
+///
+/// returns:
+/// コードリーダー画面
+- (UIViewController * _Nonnull)instantiateStampCodeReaderWithSetting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler SWIFT_WARN_UNUSED_RESULT;
+/// コードリーダー画面に遷移する
+/// \param setting コードリーダー画面の表示設定
+///
+/// \param handler コード読み込み結果の受け取り先
+///
 /// \param viewController 表示元になるView Controllerのインスタンス
 ///
 - (void)routeStampCodeReaderWithSetting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler in:(UIViewController * _Nonnull)viewController;
+/// スポット一覧画面を生成する
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     stampRally: スタンプラリー情報
+///   </li>
+///   <li>
+///     hasCloseButton: 閉じるボタンを表示するか true:表示する, false:表示しない
+///   </li>
+/// </ul>
+- (UIViewController * _Nonnull)instantiateStampRallySpotListWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 /// スポット一覧画面に遷移する
 /// モーダル遷移(fullScreen)
 /// \param stampRally スタンプラリー情報
@@ -600,12 +596,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// スタンプラリーが1件の場合, 詳細画面に遷移する
 /// \param viewController 画面遷移元となる ViewController
 ///
-- (void)presentStampRallyListViewControllerIn:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
+- (void)presentStampRallyListViewControllerIn:(UIViewController * _Nonnull)viewController;
 /// スタンプラリー一覧画面を生成する
 ///
 /// returns:
 /// スタンプラリー一覧画面
-- (NautilusStampRallyListViewController * _Nonnull)instantiateStampRallyListViewController SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
+- (NautilusStampRallyListViewController * _Nonnull)instantiateStampRallyListViewController SWIFT_WARN_UNUSED_RESULT;
 /// スタンプラリー詳細画面を生成する
 /// \param stampRallyID 詳細画面に表示するスタンプラリーのID
 ///
@@ -614,7 +610,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// スタンプラリー詳細画面
-- (NautilusStampRallyDetailViewController * _Nonnull)instantiateStampRallyDetailViewControllerWithStampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
+- (NautilusStampRallyDetailViewController * _Nonnull)instantiateStampRallyDetailViewControllerWithStampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 /// スタンプラリー詳細画面を生成する
 /// \param stampRally 詳細画面に表示するスタンプラリー情報
 ///
@@ -623,7 +619,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// スタンプラリー詳細画面
-- (NautilusStampRallyDetailViewController * _Nonnull)instantiateStampRallyDetailViewControllerWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
+- (NautilusStampRallyDetailViewController * _Nonnull)instantiateStampRallyDetailViewControllerWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 /// スタンプラリースポット一覧画面を生成する
 /// \param stampRally スポット一覧画面に表示するスタンプラリー情報
 ///
@@ -632,7 +628,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// スポット一覧画面
-- (UIViewController * _Nonnull)instantiateStampRallySpotListViewControllerWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
+- (UIViewController * _Nonnull)instantiateStampRallySpotListViewControllerWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1127,32 +1123,6 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 /// returns:
 /// スタンプラリー詳細画面
 - (UIViewController * _Nonnull)instantiateStampRallyDetailWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
-/// コードリーダー画面に遷移する
-/// \param setting コードリーダー画面の表示設定
-///
-/// \param handler コード読み込み結果の受け取り先
-///
-///
-/// returns:
-/// コードリーダー画面
-- (UIViewController * _Nonnull)instantiateStampCodeReaderWithSetting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler SWIFT_WARN_UNUSED_RESULT;
-/// スポット一覧画面を生成する
-/// <ul>
-///   <li>
-///     Parameters:
-///   </li>
-///   <li>
-///     stampRally: スタンプラリー情報
-///   </li>
-///   <li>
-///     hasCloseButton: 閉じるボタンを表示するか true:表示する, false:表示しない
-///   </li>
-/// </ul>
-- (UIViewController * _Nonnull)instantiateStampRallySpotListWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
-/// スタンプラリー一覧画面に遷移する
-/// \param viewController 表示元になるView Controllerのインスタンス
-///
-- (void)routeStampRallyListIn:(UIViewController * _Nonnull)viewController;
 /// スタンプラリー詳細画面に遷移する
 /// モーダル遷移(fullScreen)
 /// \param stampRally スタンプラリー情報
@@ -1167,9 +1137,31 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 ///
 /// \param handler コード読み込み結果の受け取り先
 ///
+///
+/// returns:
+/// コードリーダー画面
+- (UIViewController * _Nonnull)instantiateStampCodeReaderWithSetting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler SWIFT_WARN_UNUSED_RESULT;
+/// コードリーダー画面に遷移する
+/// \param setting コードリーダー画面の表示設定
+///
+/// \param handler コード読み込み結果の受け取り先
+///
 /// \param viewController 表示元になるView Controllerのインスタンス
 ///
 - (void)routeStampCodeReaderWithSetting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler in:(UIViewController * _Nonnull)viewController;
+/// スポット一覧画面を生成する
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     stampRally: スタンプラリー情報
+///   </li>
+///   <li>
+///     hasCloseButton: 閉じるボタンを表示するか true:表示する, false:表示しない
+///   </li>
+/// </ul>
+- (UIViewController * _Nonnull)instantiateStampRallySpotListWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 /// スポット一覧画面に遷移する
 /// モーダル遷移(fullScreen)
 /// \param stampRally スタンプラリー情報
@@ -1250,12 +1242,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// スタンプラリーが1件の場合, 詳細画面に遷移する
 /// \param viewController 画面遷移元となる ViewController
 ///
-- (void)presentStampRallyListViewControllerIn:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
+- (void)presentStampRallyListViewControllerIn:(UIViewController * _Nonnull)viewController;
 /// スタンプラリー一覧画面を生成する
 ///
 /// returns:
 /// スタンプラリー一覧画面
-- (NautilusStampRallyListViewController * _Nonnull)instantiateStampRallyListViewController SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
+- (NautilusStampRallyListViewController * _Nonnull)instantiateStampRallyListViewController SWIFT_WARN_UNUSED_RESULT;
 /// スタンプラリー詳細画面を生成する
 /// \param stampRallyID 詳細画面に表示するスタンプラリーのID
 ///
@@ -1264,7 +1256,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// スタンプラリー詳細画面
-- (NautilusStampRallyDetailViewController * _Nonnull)instantiateStampRallyDetailViewControllerWithStampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
+- (NautilusStampRallyDetailViewController * _Nonnull)instantiateStampRallyDetailViewControllerWithStampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 /// スタンプラリー詳細画面を生成する
 /// \param stampRally 詳細画面に表示するスタンプラリー情報
 ///
@@ -1273,7 +1265,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// スタンプラリー詳細画面
-- (NautilusStampRallyDetailViewController * _Nonnull)instantiateStampRallyDetailViewControllerWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
+- (NautilusStampRallyDetailViewController * _Nonnull)instantiateStampRallyDetailViewControllerWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 /// スタンプラリースポット一覧画面を生成する
 /// \param stampRally スポット一覧画面に表示するスタンプラリー情報
 ///
@@ -1282,7 +1274,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// スポット一覧画面
-- (UIViewController * _Nonnull)instantiateStampRallySpotListViewControllerWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
+- (UIViewController * _Nonnull)instantiateStampRallySpotListViewControllerWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

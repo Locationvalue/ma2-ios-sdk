@@ -2052,13 +2052,11 @@
             "usr": "c:@M@NautilusStampRallyUISDK@objc(cs)NautilusStampRallyUI(im)presentStampRallyListViewControllerIn:",
             "mangledName": "$s23NautilusStampRallyUISDK0abC2UIC07presentbC18ListViewController2inySo06UIViewI0C_tF",
             "moduleName": "NautilusStampRallyUISDK",
-            "deprecated": true,
             "objc_name": "presentStampRallyListViewControllerIn:",
             "declAttributes": [
               "Final",
               "AccessControl",
               "ObjC",
-              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -2079,12 +2077,10 @@
             "usr": "c:@M@NautilusStampRallyUISDK@objc(cs)NautilusStampRallyUI(im)instantiateStampRallyListViewController",
             "mangledName": "$s23NautilusStampRallyUISDK0abC2UIC011instantiatebC18ListViewControllerAA0abcghI0CyF",
             "moduleName": "NautilusStampRallyUISDK",
-            "deprecated": true,
             "declAttributes": [
               "Final",
               "AccessControl",
               "ObjC",
-              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -2117,13 +2113,11 @@
             "usr": "c:@M@NautilusStampRallyUISDK@objc(cs)NautilusStampRallyUI(im)instantiateStampRallyDetailViewControllerWithStampRallyID:hasCloseButton:",
             "mangledName": "$s23NautilusStampRallyUISDK0abC2UIC011instantiatebC20DetailViewController05stampC2ID14hasCloseButtonAA0abcghI0CSi_SbtF",
             "moduleName": "NautilusStampRallyUISDK",
-            "deprecated": true,
             "objc_name": "instantiateStampRallyDetailViewControllerWithStampRallyID:hasCloseButton:",
             "declAttributes": [
               "Final",
               "AccessControl",
               "ObjC",
-              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -2156,13 +2150,11 @@
             "usr": "c:@M@NautilusStampRallyUISDK@objc(cs)NautilusStampRallyUI(im)instantiateStampRallyDetailViewControllerWithStampRally:hasCloseButton:",
             "mangledName": "$s23NautilusStampRallyUISDK0abC2UIC011instantiatebC20DetailViewController05stampC014hasCloseButtonAA0abcghI0C0aB3SDK0abC4InfoC_SbtF",
             "moduleName": "NautilusStampRallyUISDK",
-            "deprecated": true,
             "objc_name": "instantiateStampRallyDetailViewControllerWithStampRally:hasCloseButton:",
             "declAttributes": [
               "Final",
               "AccessControl",
               "ObjC",
-              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -2195,13 +2187,11 @@
             "usr": "c:@M@NautilusStampRallyUISDK@objc(cs)NautilusStampRallyUI(im)instantiateStampRallySpotListViewControllerWithStampRally:hasCloseButton:",
             "mangledName": "$s23NautilusStampRallyUISDK0abC2UIC011instantiatebC22SpotListViewController05stampC014hasCloseButtonSo06UIViewJ0C0aB3SDK0abC4InfoC_SbtF",
             "moduleName": "NautilusStampRallyUISDK",
-            "deprecated": true,
             "objc_name": "instantiateStampRallySpotListViewControllerWithStampRally:hasCloseButton:",
             "declAttributes": [
               "Final",
               "AccessControl",
               "ObjC",
-              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -4199,110 +4189,6 @@
           },
           {
             "kind": "Function",
-            "name": "instantiateStampCodeReader",
-            "printedName": "instantiateStampCodeReader(setting:handler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusCodeReaderSetting",
-                "printedName": "NautilusCodeReaderSDK.NautilusCodeReaderSetting",
-                "usr": "c:@M@NautilusCodeReaderSDK@objc(cs)NautilusCodeReaderSetting"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusCodeReaderHandler",
-                "printedName": "NautilusCodeReaderSDK.NautilusCodeReaderHandler",
-                "usr": "c:@M@NautilusCodeReaderSDK@objc(pl)NautilusCodeReaderHandler"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusStampRallyUISDK@objc(cs)NautilusStampRallyRouter(im)instantiateStampCodeReaderWithSetting:handler:",
-            "mangledName": "$s23NautilusStampRallyUISDK0abC6RouterC011instantiateB10CodeReader7setting7handlerSo16UIViewControllerC0agH3SDK0agH7SettingC_AI0agH7Handler_ptF",
-            "moduleName": "NautilusStampRallyUISDK",
-            "objc_name": "instantiateStampCodeReaderWithSetting:handler:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "instantiateStampRallySpotList",
-            "printedName": "instantiateStampRallySpotList(stampRally:hasCloseButton:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusStampRallyInfo",
-                "printedName": "NautilusStampSDK.NautilusStampRallyInfo",
-                "usr": "c:@M@NautilusStampSDK@objc(cs)NautilusStampRallyInfo"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusStampRallyUISDK@objc(cs)NautilusStampRallyRouter(im)instantiateStampRallySpotListWithStampRally:hasCloseButton:",
-            "mangledName": "$s23NautilusStampRallyUISDK0abC6RouterC011instantiatebC8SpotList05stampC014hasCloseButtonSo16UIViewControllerC0aB3SDK0abC4InfoC_SbtF",
-            "moduleName": "NautilusStampRallyUISDK",
-            "objc_name": "instantiateStampRallySpotListWithStampRally:hasCloseButton:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "routeStampRallyList",
-            "printedName": "routeStampRallyList(in:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusStampRallyUISDK@objc(cs)NautilusStampRallyRouter(im)routeStampRallyListIn:",
-            "mangledName": "$s23NautilusStampRallyUISDK0abC6RouterC05routebC4List2inySo16UIViewControllerC_tF",
-            "moduleName": "NautilusStampRallyUISDK",
-            "objc_name": "routeStampRallyListIn:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "routeStampRallyDetail",
             "printedName": "routeStampRallyDetail(stampRally:hasCloseButton:in:)",
             "children": [
@@ -4345,6 +4231,43 @@
           },
           {
             "kind": "Function",
+            "name": "instantiateStampCodeReader",
+            "printedName": "instantiateStampCodeReader(setting:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCodeReaderSetting",
+                "printedName": "NautilusCodeReaderSDK.NautilusCodeReaderSetting",
+                "usr": "c:@M@NautilusCodeReaderSDK@objc(cs)NautilusCodeReaderSetting"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusCodeReaderHandler",
+                "printedName": "NautilusCodeReaderSDK.NautilusCodeReaderHandler",
+                "usr": "c:@M@NautilusCodeReaderSDK@objc(pl)NautilusCodeReaderHandler"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusStampRallyUISDK@objc(cs)NautilusStampRallyRouter(im)instantiateStampCodeReaderWithSetting:handler:",
+            "mangledName": "$s23NautilusStampRallyUISDK0abC6RouterC011instantiateB10CodeReader7setting7handlerSo16UIViewControllerC0agH3SDK0agH7SettingC_AI0agH7Handler_ptF",
+            "moduleName": "NautilusStampRallyUISDK",
+            "objc_name": "instantiateStampCodeReaderWithSetting:handler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "routeStampCodeReader",
             "printedName": "routeStampCodeReader(setting:handler:in:)",
             "children": [
@@ -4377,6 +4300,43 @@
             "mangledName": "$s23NautilusStampRallyUISDK0abC6RouterC05routeB10CodeReader7setting7handler2iny0agH3SDK0agH7SettingC_AH0agH7Handler_pSo16UIViewControllerCtF",
             "moduleName": "NautilusStampRallyUISDK",
             "objc_name": "routeStampCodeReaderWithSetting:handler:in:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "instantiateStampRallySpotList",
+            "printedName": "instantiateStampRallySpotList(stampRally:hasCloseButton:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusStampRallyInfo",
+                "printedName": "NautilusStampSDK.NautilusStampRallyInfo",
+                "usr": "c:@M@NautilusStampSDK@objc(cs)NautilusStampRallyInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusStampRallyUISDK@objc(cs)NautilusStampRallyRouter(im)instantiateStampRallySpotListWithStampRally:hasCloseButton:",
+            "mangledName": "$s23NautilusStampRallyUISDK0abC6RouterC011instantiatebC8SpotList05stampC014hasCloseButtonSo16UIViewControllerC0aB3SDK0abC4InfoC_SbtF",
+            "moduleName": "NautilusStampRallyUISDK",
+            "objc_name": "instantiateStampRallySpotListWithStampRally:hasCloseButton:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -7897,7 +7857,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/Base\/NautilusStampRallyUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 7571,
+      "offset": 7490,
       "length": 4,
       "value": "true"
     },
@@ -7911,56 +7871,56 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/Base\/NautilusStampRallyUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 11593,
+      "offset": 11188,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/Base\/NautilusStampRallyUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 11656,
+      "offset": 11251,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/Base\/NautilusStampRallyUI.swift",
       "kind": "StringLiteral",
-      "offset": 11756,
+      "offset": 11351,
       "length": 45,
       "value": "\"Invalid Feature Status in NautilusStampSDK.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/Base\/NautilusStampRallyUI.swift",
       "kind": "StringLiteral",
-      "offset": 12101,
+      "offset": 11696,
       "length": 15,
       "value": "\"uninitialized\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/Base\/NautilusStampRallyUI.swift",
       "kind": "StringLiteral",
-      "offset": 12163,
+      "offset": 11758,
       "length": 13,
       "value": "\"unavailable\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/Base\/NautilusStampRallyUI.swift",
       "kind": "StringLiteral",
-      "offset": 12221,
+      "offset": 11816,
       "length": 11,
       "value": "\"available\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/Base\/NautilusStampRallyUI.swift",
       "kind": "StringLiteral",
-      "offset": 12278,
+      "offset": 11873,
       "length": 12,
       "value": "\"restricted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/Base\/NautilusStampRallyUI.swift",
       "kind": "StringLiteral",
-      "offset": 12386,
+      "offset": 11981,
       "length": 45,
       "value": "\"Invalid Feature Status in NautilusStampSDK.\""
     },
@@ -8107,42 +8067,42 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 2542,
+      "offset": 2511,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 671,
+      "offset": 640,
       "length": 38,
       "value": "\"NautilusStampRallyUISDK.NautilusStampRallySpotListMapPresenter\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3555,
+      "offset": 3524,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3610,
+      "offset": 3579,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3616,
+      "offset": 3585,
       "length": 3,
       "value": "-10"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 4285,
+      "offset": 4254,
       "length": 1,
       "value": "0"
     },
@@ -8604,322 +8564,322 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3998,
+      "offset": 3944,
       "length": 101,
       "value": "\"NautilusStampRallyUISDK is \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4067,
+      "offset": 4013,
       "length": 1,
       "value": "\". \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4081,
+      "offset": 4027,
       "length": 6,
       "value": "\" cannot executed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5292,
+      "offset": 5238,
       "length": 95,
       "value": "\"NautilusServerSDK is \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5355,
+      "offset": 5301,
       "length": 1,
       "value": "\". \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5369,
+      "offset": 5315,
       "length": 6,
       "value": "\" cannot executed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6592,
+      "offset": 6538,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6653,
+      "offset": 6599,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6808,
+      "offset": 6754,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6976,
+      "offset": 6922,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7131,
+      "offset": 7077,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7511,
+      "offset": 7457,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7958,
+      "offset": 7904,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8261,
+      "offset": 8207,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8618,
+      "offset": 8564,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9091,
+      "offset": 9037,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10471,
+      "offset": 10417,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10557,
+      "offset": 10503,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10671,
+      "offset": 10617,
       "length": 3,
       "value": "-12"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10794,
+      "offset": 10740,
       "length": 3,
       "value": "-44"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11370,
+      "offset": 11316,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11374,
+      "offset": 11320,
       "length": 3,
       "value": "111"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12554,
+      "offset": 12500,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14304,
+      "offset": 14250,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14803,
+      "offset": 14749,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15277,
+      "offset": 15223,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16044,
+      "offset": 15990,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16578,
+      "offset": 16482,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16948,
+      "offset": 16737,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16997,
+      "offset": 16794,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17089,
+      "offset": 17065,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17380,
+      "offset": 17175,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19176,
+      "offset": 18971,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19305,
+      "offset": 19100,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19904,
+      "offset": 19699,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21071,
+      "offset": 20866,
       "length": 30,
       "value": "\"Invalid screen overlay type.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 21385,
+      "offset": 21180,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 21480,
+      "offset": 21275,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 21552,
+      "offset": 21347,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 21739,
+      "offset": 21534,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 21901,
+      "offset": 21696,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22132,
+      "offset": 21927,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22289,
+      "offset": 22084,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22460,
+      "offset": 22255,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25134,
+      "offset": 24929,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/SpotList\/NautilusStampRallySpotListMapViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25174,
+      "offset": 24969,
       "length": 2,
       "value": "\"\""
     },
@@ -9472,42 +9432,28 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/NautilusStampRallyRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 5273,
+      "offset": 3988,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/NautilusStampRallyRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 5551,
+      "offset": 5650,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/NautilusStampRallyRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 6533,
+      "offset": 5935,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/NautilusStampRallyRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 7317,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/NautilusStampRallyRouter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7602,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampRallyUI\/Sources\/View\/NautilusStampRallyRouter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8587,
+      "offset": 7821,
       "length": 4,
       "value": "true"
     },
