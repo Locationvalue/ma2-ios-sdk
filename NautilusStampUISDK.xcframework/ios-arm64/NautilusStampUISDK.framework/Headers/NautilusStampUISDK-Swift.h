@@ -509,12 +509,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// スタンプカードが1枚の場合, 詳細画面に遷移する
 /// \param viewController 画面遷移元となる ViewController
 ///
-- (void)presentStampCardListViewControllerIn:(UIViewController * _Nonnull)viewController;
+- (void)presentStampCardListViewControllerIn:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use NautilusStampCardRouter function.");
 /// スタンプカード一覧画面を生成する
 ///
 /// returns:
 /// スタンプカード一覧画面
-- (NautilusStampCardListViewController * _Nonnull)instantiateStampCardListViewController SWIFT_WARN_UNUSED_RESULT;
+- (NautilusStampCardListViewController * _Nonnull)instantiateStampCardListViewController SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampCardRouter function.");
 /// スタンプカード詳細画面を生成する
 /// \param stampCardID 詳細画面に表示するスタンプカードのID
 ///
@@ -523,7 +523,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// スタンプカード詳細画面
-- (NautilusStampCardDetailViewController * _Nonnull)instantiateStampCardDetailViewControllerWithStampCardID:(NSInteger)stampCardID hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
+- (NautilusStampCardDetailViewController * _Nonnull)instantiateStampCardDetailViewControllerWithStampCardID:(NSInteger)stampCardID hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampCardRouter function.");
 /// スタンプカード詳細画面を生成する
 /// \param stampCard 詳細画面に表示するスタンプカードのデータ
 ///
@@ -532,7 +532,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// スタンプカード詳細画面
-- (NautilusStampCardDetailViewController * _Nonnull)instantiateStampCardDetailViewControllerWithStampCard:(NautilusStampCardInfo * _Nonnull)stampCard hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
+- (NautilusStampCardDetailViewController * _Nonnull)instantiateStampCardDetailViewControllerWithStampCard:(NautilusStampCardInfo * _Nonnull)stampCard hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusStampCardRouter function.");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
