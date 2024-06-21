@@ -762,6 +762,8 @@ SWIFT_CLASS("_TtC15NautilusShopSDK25NautilusShopSearchSortKey")
 typedef SWIFT_ENUM(NSInteger, NautilusShopSearchSortKeyName, open) {
 /// 緯度
   NautilusShopSearchSortKeyNameLatitude = 0,
+/// 地図の中心点からの距離
+  NautilusShopSearchSortKeyNameMapDist = 1,
 };
 
 /// APIから取得するデータの並び順の順序指定

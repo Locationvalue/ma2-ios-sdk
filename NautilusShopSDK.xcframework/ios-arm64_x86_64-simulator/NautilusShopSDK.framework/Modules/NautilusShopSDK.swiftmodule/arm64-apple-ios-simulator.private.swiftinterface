@@ -173,6 +173,7 @@ import _SwiftConcurrencyShims
 }
 @objc public enum NautilusShopSearchSortKeyName : Swift.Int {
   case latitude
+  case mapDist
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

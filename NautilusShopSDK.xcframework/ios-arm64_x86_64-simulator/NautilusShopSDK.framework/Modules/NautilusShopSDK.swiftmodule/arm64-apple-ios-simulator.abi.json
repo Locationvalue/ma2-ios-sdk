@@ -7441,6 +7441,48 @@
             "fixedbinaryorder": 0
           },
           {
+            "kind": "Var",
+            "name": "mapDist",
+            "printedName": "mapDist",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusShopSDK.NautilusShopSearchSortKeyName.Type) -> NautilusShopSDK.NautilusShopSearchSortKeyName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusShopSearchSortKeyName",
+                    "printedName": "NautilusShopSDK.NautilusShopSearchSortKeyName",
+                    "usr": "c:@M@NautilusShopSDK@E@NautilusShopSearchSortKeyName"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusShopSDK.NautilusShopSearchSortKeyName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusShopSearchSortKeyName",
+                        "printedName": "NautilusShopSDK.NautilusShopSearchSortKeyName",
+                        "usr": "c:@M@NautilusShopSDK@E@NautilusShopSearchSortKeyName"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusShopSDK@E@NautilusShopSearchSortKeyName@NautilusShopSearchSortKeyNameMapDist",
+            "mangledName": "$s15NautilusShopSDK0aB17SearchSortKeyNameO7mapDistyA2CmF",
+            "moduleName": "NautilusShopSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -18470,36 +18512,57 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopSearchSortKey.swift",
+      "kind": "IntegerLiteral",
+      "offset": 972,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopSearchSortKey.swift",
       "kind": "StringLiteral",
-      "offset": 1029,
+      "offset": 1088,
       "length": 10,
       "value": "\"latitude\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopSearchSortKey.swift",
+      "kind": "StringLiteral",
+      "offset": 1149,
+      "length": 10,
+      "value": "\"map_dist\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopSearchSortKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 1235,
+      "offset": 972,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopSearchSortKey.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1355,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopSearchSortKey.swift",
       "kind": "StringLiteral",
-      "offset": 1355,
+      "offset": 1475,
       "length": 5,
       "value": "\"asc\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopSearchSortKey.swift",
       "kind": "StringLiteral",
-      "offset": 1414,
+      "offset": 1534,
       "length": 6,
       "value": "\"desc\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopSearchSortKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 1235,
+      "offset": 1355,
       "length": 10,
       "value": "1"
     },
@@ -19822,6 +19885,20 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
+      "offset": 19593,
+      "length": 30,
+      "value": "\"ma_shop_search_map_sort_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19668,
+      "length": 38,
+      "value": "\"ma_shop_search_widemap_map_sort_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
       "offset": 327,
       "length": 30,
       "value": "\"ma_shop_network_timeout_time\""
@@ -21137,1408 +21214,1464 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19593,
+      "length": 30,
+      "value": "\"ma_shop_search_map_sort_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19668,
+      "length": 38,
+      "value": "\"ma_shop_search_widemap_map_sort_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 20035,
+      "offset": 20186,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 20234,
+      "offset": 20385,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 20486,
+      "offset": 20637,
       "length": 9,
       "value": "35.681111"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 20751,
+      "offset": 20902,
       "length": 10,
       "value": "139.766667"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 20998,
+      "offset": 21149,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 21316,
+      "offset": 21467,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 21684,
+      "offset": 21835,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 22031,
+      "offset": 22182,
       "length": 17,
       "value": "\"店舗を検索\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 22350,
+      "offset": 22501,
       "length": 14,
       "value": "\"検索条件\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 22712,
+      "offset": 22863,
       "length": 14,
       "value": "\"リセット\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 23011,
+      "offset": 23162,
       "length": 11,
       "value": "\"エラー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 23312,
+      "offset": 23463,
       "length": 140,
       "value": "\"店舗の検索が行えませんでした。お手数ですが、電波環境をご確認いただき、再表示をしてください。\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 23758,
+      "offset": 23909,
       "length": 11,
       "value": "\"閉じる\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 23976,
+      "offset": 24127,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 24326,
+      "offset": 24477,
       "length": 17,
       "value": "\"店舗を検索\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 24668,
+      "offset": 24819,
       "length": 17,
       "value": "\"キャンセル\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 24969,
+      "offset": 25120,
       "length": 8,
       "value": "\"履歴\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25276,
+      "offset": 25427,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 25657,
+      "offset": 25808,
       "length": 14,
       "value": "\"詳細検索\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 26004,
+      "offset": 26155,
       "length": 11,
       "value": "\"クリア\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "Array",
-      "offset": 26280,
+      "offset": 26431,
       "length": 34,
       "value": "[\"business\", \"prefecture\", \"tags\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 26449,
+      "offset": 26600,
       "length": 10,
       "value": "\"business\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 26519,
+      "offset": 26670,
       "length": 12,
       "value": "\"prefecture\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 26593,
+      "offset": 26744,
       "length": 6,
       "value": "\"tags\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 27009,
+      "offset": 27160,
       "length": 23,
       "value": "\"ブランドを選択\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 27350,
+      "offset": 27501,
       "length": 20,
       "value": "\"エリアを選択\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 27708,
+      "offset": 27859,
       "length": 29,
       "value": "\"選択されていません\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 28123,
+      "offset": 28274,
       "length": 13,
       "value": "\"%sを選択\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 28443,
+      "offset": 28594,
       "length": 14,
       "value": "\"検索する\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 28956,
+      "offset": 29107,
       "length": 4,
       "value": "\"or\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 29470,
+      "offset": 29621,
       "length": 5,
       "value": "\"and\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 29759,
+      "offset": 29910,
       "length": 11,
       "value": "\"エラー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 30058,
+      "offset": 30209,
       "length": 143,
       "value": "\"検索条件が取得できませんでした。お手数ですが、電波環境をご確認いただき、再表示をしてください。\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 30505,
+      "offset": 30656,
       "length": 11,
       "value": "\"閉じる\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 30822,
+      "offset": 30973,
       "length": 14,
       "value": "\"設定なし\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 31145,
+      "offset": 31296,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 31793,
+      "offset": 31944,
       "length": 11,
       "value": "\"collapsed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 32094,
+      "offset": 32245,
       "length": 20,
       "value": "\"リストを表示\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 32426,
+      "offset": 32577,
       "length": 11,
       "value": "\"shop_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 32808,
+      "offset": 32959,
       "length": 11,
       "value": "\"open_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 33190,
+      "offset": 33341,
       "length": 10,
       "value": "\"distance\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 33658,
+      "offset": 33809,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 34062,
+      "offset": 34213,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 34454,
+      "offset": 34605,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 34806,
+      "offset": 34957,
       "length": 3,
       "value": "\"m\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 35201,
+      "offset": 35352,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 35603,
+      "offset": 35754,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 35993,
+      "offset": 36144,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 36343,
+      "offset": 36494,
       "length": 4,
       "value": "\"km\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 36705,
+      "offset": 36856,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 37033,
+      "offset": 37184,
       "length": 11,
       "value": "\"shop_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 37416,
+      "offset": 37567,
       "length": 9,
       "value": "\"address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 37779,
+      "offset": 37930,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 38059,
+      "offset": 38210,
       "length": 14,
       "value": "\"店舗情報\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 38308,
+      "offset": 38459,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 38610,
+      "offset": 38761,
       "length": 14,
       "value": "\"経路検索\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "Array",
-      "offset": 38883,
+      "offset": 39034,
       "length": 704,
       "value": "[\"map\", \"name\", \"images\", \"links\", \"telephone\", \"business_hour\", \"holiday\", \"shop_tags\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 39935,
+      "offset": 40086,
       "length": 14,
       "value": "\"営業時間\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 40213,
+      "offset": 40364,
       "length": 11,
       "value": "\"定休日\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 40520,
+      "offset": 40671,
       "length": 23,
       "value": "\"平均予算（昼）\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 40843,
+      "offset": 40994,
       "length": 23,
       "value": "\"平均予算（夜）\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 41145,
+      "offset": 41296,
       "length": 14,
       "value": "\"平均予算\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 41432,
+      "offset": 41583,
       "length": 14,
       "value": "\"アピール\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 41736,
+      "offset": 41887,
       "length": 23,
       "value": "\"キャッチコピー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 42028,
+      "offset": 42179,
       "length": 8,
       "value": "\"住所\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 42315,
+      "offset": 42466,
       "length": 14,
       "value": "\"電話番号\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 42603,
+      "offset": 42754,
       "length": 8,
       "value": "\"業態\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 42884,
+      "offset": 43035,
       "length": 14,
       "value": "\"アクセス\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 43201,
+      "offset": 43352,
       "length": 14,
       "value": "\"緊急告知\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 43486,
+      "offset": 43637,
       "length": 8,
       "value": "\"距離\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 43859,
+      "offset": 44010,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 44234,
+      "offset": 44385,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 44597,
+      "offset": 44748,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 44920,
+      "offset": 45071,
       "length": 3,
       "value": "\"m\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 45286,
+      "offset": 45437,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 45659,
+      "offset": 45810,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 46020,
+      "offset": 46171,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 46341,
+      "offset": 46492,
       "length": 4,
       "value": "\"km\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 46674,
+      "offset": 46825,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 46985,
+      "offset": 47136,
       "length": 23,
       "value": "\"お気に入り店舗\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 47260,
+      "offset": 47411,
       "length": 12,
       "value": "\"descending\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 47611,
+      "offset": 47762,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 47927,
+      "offset": 48078,
       "length": 11,
       "value": "\"shop_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 48310,
+      "offset": 48461,
       "length": 11,
       "value": "\"open_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 48693,
+      "offset": 48844,
       "length": 9,
       "value": "\"address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 49125,
+      "offset": 49276,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 49526,
+      "offset": 49677,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 49931,
+      "offset": 50082,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 50324,
+      "offset": 50475,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 50677,
+      "offset": 50828,
       "length": 3,
       "value": "\"m\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 51073,
+      "offset": 51224,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 51476,
+      "offset": 51627,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 51867,
+      "offset": 52018,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 52218,
+      "offset": 52369,
       "length": 4,
       "value": "\"km\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 52532,
+      "offset": 52683,
       "length": 65,
       "value": "\"お気に入りに登録されている店舗はありません\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 52901,
+      "offset": 53052,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 53256,
+      "offset": 53407,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 53589,
+      "offset": 53740,
       "length": 17,
       "value": "\"通信エラー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 53931,
+      "offset": 54082,
       "length": 50,
       "value": "\"読み込み中にエラーが発生しました\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 54316,
+      "offset": 54467,
       "length": 17,
       "value": "\"再読み込み\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 54696,
+      "offset": 54847,
       "length": 20,
       "value": "\"再取得エラー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 55077,
+      "offset": 55228,
       "length": 50,
       "value": "\"店舗情報の読み込みに失敗しました\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 55516,
+      "offset": 55667,
       "length": 11,
       "value": "\"閉じる\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 55788,
+      "offset": 55939,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 56053,
+      "offset": 56204,
       "length": 56,
       "value": "\"このエリアに該当する店舗はありません\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 56495,
+      "offset": 56646,
       "length": 11,
       "value": "\"エラー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 56896,
+      "offset": 57047,
       "length": 71,
       "value": "\"該当する店舗の情報は、現在、掲載されていません\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 57306,
+      "offset": 57457,
       "length": 146,
       "value": "\"店舗の情報が取得できませんでした。お手数ですが、電波環境をご確認いただき、再表示をしてください。\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 57855,
+      "offset": 58006,
       "length": 11,
       "value": "\"閉じる\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 58136,
+      "offset": 58287,
       "length": 14,
       "value": "\"店舗一覧\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 58428,
+      "offset": 58579,
       "length": 11,
       "value": "\"shop_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 58776,
+      "offset": 58927,
       "length": 11,
       "value": "\"open_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 59124,
+      "offset": 59275,
       "length": 9,
       "value": "\"address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 59521,
+      "offset": 59672,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 59887,
+      "offset": 60038,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 60257,
+      "offset": 60408,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 60615,
+      "offset": 60766,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 60933,
+      "offset": 61084,
       "length": 3,
       "value": "\"m\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 61294,
+      "offset": 61445,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 61662,
+      "offset": 61813,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 62018,
+      "offset": 62169,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 62334,
+      "offset": 62485,
       "length": 4,
       "value": "\"km\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 62577,
+      "offset": 62728,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 62816,
+      "offset": 62967,
       "length": 44,
       "value": "\"該当する店舗情報はありません\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 63095,
+      "offset": 63246,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 63381,
+      "offset": 63532,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 63664,
+      "offset": 63815,
       "length": 17,
       "value": "\"通信エラー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 63960,
+      "offset": 64111,
       "length": 50,
       "value": "\"読み込み中にエラーが発生しました\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 64295,
+      "offset": 64446,
       "length": 17,
       "value": "\"再読み込み\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 64606,
+      "offset": 64757,
       "length": 17,
       "value": "\"構成エラー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 64915,
+      "offset": 65066,
       "length": 68,
       "value": "\"表示対象となるコンテンツが登録されていません\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 65262,
+      "offset": 65413,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 65618,
+      "offset": 65769,
       "length": 17,
       "value": "\"店舗を検索\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 65935,
+      "offset": 66086,
       "length": 11,
       "value": "\"shop_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 66305,
+      "offset": 66456,
       "length": 11,
       "value": "\"open_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 66675,
+      "offset": 66826,
       "length": 10,
       "value": "\"distance\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 67095,
+      "offset": 67246,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 67483,
+      "offset": 67634,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 67875,
+      "offset": 68026,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 68255,
+      "offset": 68406,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 68595,
+      "offset": 68746,
       "length": 3,
       "value": "\"m\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 68978,
+      "offset": 69129,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 69368,
+      "offset": 69519,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 69746,
+      "offset": 69897,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 70084,
+      "offset": 70235,
       "length": 4,
       "value": "\"km\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 70398,
+      "offset": 70549,
       "length": 14,
       "value": "\"検索条件\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 70768,
+      "offset": 70919,
       "length": 14,
       "value": "\"リセット\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 71034,
+      "offset": 71185,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 71337,
+      "offset": 71488,
       "length": 38,
       "value": "\"該当する店舗はありません\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 71674,
+      "offset": 71825,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 72017,
+      "offset": 72168,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 72336,
+      "offset": 72487,
       "length": 17,
       "value": "\"通信エラー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 72667,
+      "offset": 72818,
       "length": 50,
       "value": "\"読み込み中にエラーが発生しました\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 73024,
+      "offset": 73175,
       "length": 17,
       "value": "\"再読み込み\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 73347,
+      "offset": 73498,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 73627,
+      "offset": 73778,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 73917,
+      "offset": 74068,
       "length": 9,
       "value": "35.681111"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 74212,
+      "offset": 74363,
       "length": 10,
       "value": "139.766667"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 74489,
+      "offset": 74640,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 74841,
+      "offset": 74992,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 75239,
+      "offset": 75390,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 75616,
+      "offset": 75767,
       "length": 17,
       "value": "\"店舗を検索\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 75965,
+      "offset": 76116,
       "length": 14,
       "value": "\"検索条件\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 76357,
+      "offset": 76508,
       "length": 14,
       "value": "\"リセット\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 76738,
+      "offset": 76889,
       "length": 11,
       "value": "\"collapsed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 77070,
+      "offset": 77221,
       "length": 11,
       "value": "\"エラー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 77417,
+      "offset": 77568,
       "length": 140,
       "value": "\"店舗の検索が行えませんでした。お手数ですが、電波環境をご確認いただき、再表示をしてください。\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 77909,
+      "offset": 78060,
       "length": 11,
       "value": "\"閉じる\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 78270,
+      "offset": 78421,
       "length": 11,
       "value": "\"shop_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 78681,
+      "offset": 78832,
       "length": 9,
       "value": "\"address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 79072,
+      "offset": 79223,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 79397,
+      "offset": 79548,
       "length": 20,
       "value": "\"リストを表示\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 79763,
+      "offset": 79914,
       "length": 11,
       "value": "\"shop_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 80179,
+      "offset": 80330,
       "length": 11,
       "value": "\"open_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 80595,
+      "offset": 80746,
       "length": 10,
       "value": "\"distance\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 81097,
+      "offset": 81248,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 81535,
+      "offset": 81686,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 81961,
+      "offset": 82112,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 82347,
+      "offset": 82498,
       "length": 3,
       "value": "\"m\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 82776,
+      "offset": 82927,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 83212,
+      "offset": 83363,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 83636,
+      "offset": 83787,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 84020,
+      "offset": 84171,
       "length": 4,
       "value": "\"km\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 84416,
+      "offset": 84567,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 84730,
+      "offset": 84881,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 85037,
+      "offset": 85188,
       "length": 44,
       "value": "\"該当する店舗情報はありません\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 85384,
+      "offset": 85535,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 85736,
+      "offset": 85887,
       "length": 17,
       "value": "\"通信エラー\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 86101,
+      "offset": 86252,
       "length": 50,
       "value": "\"読み込み中にエラーが発生しました\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 86481,
+      "offset": 86632,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 86751,
+      "offset": 86876,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 87188,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 87504,
       "length": 11,
       "value": "\"shop_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 86806,
+      "offset": 87559,
       "length": 9,
       "value": "\"address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 86858,
+      "offset": 87611,
       "length": 11,
       "value": "\"open_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 86913,
+      "offset": 87666,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 86986,
+      "offset": 87739,
       "length": 23,
       "value": "\"Invalid Element Type.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 87264,
+      "offset": 88017,
       "length": 11,
       "value": "\"shop_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 87327,
+      "offset": 88080,
       "length": 9,
       "value": "\"address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 87387,
+      "offset": 88140,
       "length": 10,
       "value": "\"distance\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 87449,
+      "offset": 88202,
       "length": 11,
       "value": "\"open_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 87512,
+      "offset": 88265,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 87597,
+      "offset": 88350,
+      "length": 23,
+      "value": "\"Invalid Element Type.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 88541,
+      "length": 10,
+      "value": "\"latitude\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 88603,
+      "length": 10,
+      "value": "\"map_dist\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 88664,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 88745,
       "length": 23,
       "value": "\"Invalid Element Type.\""
     },
@@ -22811,259 +22944,259 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29603,
+      "offset": 30026,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29720,
+      "offset": 30143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 29989,
+      "offset": 30412,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30144,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 30215,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 30290,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 30352,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 30507,
+      "offset": 30567,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 31233,
+      "offset": 30638,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32874,
+      "offset": 30713,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33079,
+      "offset": 30775,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30930,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 31656,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 33297,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 33502,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34530,
+      "offset": 34953,
       "length": 30,
       "value": "\"Invalid screen overlay type.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34844,
+      "offset": 35267,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34939,
+      "offset": 35362,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35011,
+      "offset": 35434,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35198,
+      "offset": 35621,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35360,
+      "offset": 35783,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35591,
+      "offset": 36014,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35748,
+      "offset": 36171,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35919,
+      "offset": 36342,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 36907,
+      "offset": 37330,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 37309,
+      "offset": 37732,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 37678,
+      "offset": 38101,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 38475,
+      "offset": 38898,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 38620,
+      "offset": 39043,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 38673,
+      "offset": 39096,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 39269,
+      "offset": 39692,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 39413,
+      "offset": 39836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 39469,
+      "offset": 39892,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 39589,
+      "offset": 40012,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 39985,
+      "offset": 40408,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 42162,
+      "offset": 42585,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 42434,
+      "offset": 42857,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 43396,
+      "offset": 43819,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 43844,
+      "offset": 44267,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "StringLiteral",
-      "offset": 44024,
+      "offset": 44447,
       "length": 14,
       "value": "\"スワイプ\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "StringLiteral",
-      "offset": 44088,
+      "offset": 44511,
       "length": 20,
       "value": "\"リンクタップ\""
     },
