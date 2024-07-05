@@ -6,8 +6,8 @@ import CoreTelephony
 import Foundation
 import NautilusContainerSDK
 import NautilusLoggingSDK
+import Network
 import Swift
-import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -219,21 +219,21 @@ final public class NautilusConcurrencyService : NautilusCoreSDK.NetworkService {
   final public func cancel(uuid: Foundation.UUID)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers final public class NetworkListener : ObjectiveC.NSObject {
-  final public var isListening: Swift.Bool {
+@_inheritsConvenienceInitializers @objc final public class NautilusNetworkListener : ObjectiveC.NSObject {
+  @objc public static let shared: NautilusCoreSDK.NautilusNetworkListener
+  @objc public static let notificationCenter: Foundation.NotificationCenter
+  @objc final public var isListening: Swift.Bool {
     get
   }
   @discardableResult
-  final public func listenerStart() -> Swift.Bool
+  @objc final public func listenerStart() -> Swift.Bool
+  @objc final public func listenerStop()
+  @objc public static func isOnline() -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
 extension Foundation.NSNotification.Name {
-  public static let flagsNotification: Foundation.Notification.Name
-}
-public struct NetworkListenerUtil {
-  public static let notificationCenter: Foundation.NotificationCenter
-  public static func isOnline() -> Swift.Bool
+  public static let networkListenerNotification: Foundation.Notification.Name
 }
 @_inheritsConvenienceInitializers @objc final public class NautilusAppConfigBuilder : ObjectiveC.NSObject {
   @objc override dynamic public init()

@@ -4644,16 +4644,131 @@
       },
       {
         "kind": "Import",
-        "name": "SystemConfiguration",
-        "printedName": "SystemConfiguration",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusLoggingSDK",
+        "printedName": "NautilusLoggingSDK",
         "declKind": "Import",
         "moduleName": "NautilusCoreSDK"
       },
       {
         "kind": "TypeDecl",
-        "name": "NetworkListener",
-        "printedName": "NetworkListener",
+        "name": "NautilusNetworkListener",
+        "printedName": "NautilusNetworkListener",
         "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusNetworkListener",
+                "printedName": "NautilusCoreSDK.NautilusNetworkListener",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener(cpy)shared",
+            "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerC6sharedACvpZ",
+            "moduleName": "NautilusCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusNetworkListener",
+                    "printedName": "NautilusCoreSDK.NautilusNetworkListener",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener(cm)shared",
+                "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerC6sharedACvgZ",
+                "moduleName": "NautilusCoreSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notificationCenter",
+            "printedName": "notificationCenter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NotificationCenter",
+                "printedName": "Foundation.NotificationCenter",
+                "usr": "c:objc(cs)NSNotificationCenter"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener(cpy)notificationCenter",
+            "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerC18notificationCenterSo014NSNotificationG0CvpZ",
+            "moduleName": "NautilusCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NotificationCenter",
+                    "printedName": "Foundation.NotificationCenter",
+                    "usr": "c:objc(cs)NSNotificationCenter"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener(cm)notificationCenter",
+                "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerC18notificationCenterSo014NSNotificationG0CvgZ",
+                "moduleName": "NautilusCoreSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "isListening",
@@ -4667,15 +4782,17 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15NautilusCoreSDK15NetworkListenerC11isListeningSbvp",
-            "mangledName": "$s15NautilusCoreSDK15NetworkListenerC11isListeningSbvp",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener(py)isListening",
+            "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerC11isListeningSbvp",
             "moduleName": "NautilusCoreSDK",
             "declAttributes": [
               "HasInitialValue",
               "Final",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -4692,12 +4809,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15NautilusCoreSDK15NetworkListenerC11isListeningSbvg",
-                "mangledName": "$s15NautilusCoreSDK15NetworkListenerC11isListeningSbvg",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener(im)isListening",
+                "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerC11isListeningSbvg",
                 "moduleName": "NautilusCoreSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4716,13 +4834,63 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15NautilusCoreSDK15NetworkListenerC13listenerStartSbyF",
-            "mangledName": "$s15NautilusCoreSDK15NetworkListenerC13listenerStartSbyF",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener(im)listenerStart",
+            "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerC13listenerStartSbyF",
             "moduleName": "NautilusCoreSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
-              "DiscardableResult"
+              "DiscardableResult",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "listenerStop",
+            "printedName": "listenerStop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener(im)listenerStop",
+            "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerC12listenerStopyyF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isOnline",
+            "printedName": "isOnline()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener(cm)isOnline",
+            "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerC8isOnlineSbyFZ",
+            "moduleName": "NautilusCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4733,14 +4901,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "NetworkListener",
-                "printedName": "NautilusCoreSDK.NetworkListener",
-                "usr": "c:@M@NautilusCoreSDK@objc(cs)NetworkListener"
+                "name": "NautilusNetworkListener",
+                "printedName": "NautilusCoreSDK.NautilusNetworkListener",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@NautilusCoreSDK@objc(cs)NetworkListener(im)init",
-            "mangledName": "$s15NautilusCoreSDK15NetworkListenerCACycfc",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener(im)init",
+            "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerCACycfc",
             "moduleName": "NautilusCoreSDK",
             "overriding": true,
             "implicit": true,
@@ -4754,13 +4922,14 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@NautilusCoreSDK@objc(cs)NetworkListener",
-        "mangledName": "$s15NautilusCoreSDK15NetworkListenerC",
+        "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusNetworkListener",
+        "mangledName": "$s15NautilusCoreSDK0A15NetworkListenerC",
         "moduleName": "NautilusCoreSDK",
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "inheritsConvenienceInitializers": true,
@@ -4817,89 +4986,6 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NetworkListenerUtil",
-        "printedName": "NetworkListenerUtil",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "notificationCenter",
-            "printedName": "notificationCenter",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NotificationCenter",
-                "printedName": "Foundation.NotificationCenter",
-                "usr": "c:objc(cs)NSNotificationCenter"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15NautilusCoreSDK19NetworkListenerUtilV18notificationCenterSo014NSNotificationH0CvpZ",
-            "mangledName": "$s15NautilusCoreSDK19NetworkListenerUtilV18notificationCenterSo014NSNotificationH0CvpZ",
-            "moduleName": "NautilusCoreSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NotificationCenter",
-                    "printedName": "Foundation.NotificationCenter",
-                    "usr": "c:objc(cs)NSNotificationCenter"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15NautilusCoreSDK19NetworkListenerUtilV18notificationCenterSo014NSNotificationH0CvgZ",
-                "mangledName": "$s15NautilusCoreSDK19NetworkListenerUtilV18notificationCenterSo014NSNotificationH0CvgZ",
-                "moduleName": "NautilusCoreSDK",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "isOnline",
-            "printedName": "isOnline()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15NautilusCoreSDK19NetworkListenerUtilV8isOnlineSbyFZ",
-            "mangledName": "$s15NautilusCoreSDK19NetworkListenerUtilV8isOnlineSbyFZ",
-            "moduleName": "NautilusCoreSDK",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:15NautilusCoreSDK19NetworkListenerUtilV",
-        "mangledName": "$s15NautilusCoreSDK19NetworkListenerUtilV",
-        "moduleName": "NautilusCoreSDK",
-        "declAttributes": [
-          "AccessControl"
         ]
       },
       {
@@ -16144,8 +16230,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "flagsNotification",
-            "printedName": "flagsNotification",
+            "name": "networkListenerNotification",
+            "printedName": "networkListenerNotification",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16155,13 +16241,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:So18NSNotificationNamea15NautilusCoreSDKE17flagsNotificationABvpZ",
-            "mangledName": "$sSo18NSNotificationNamea15NautilusCoreSDKE17flagsNotificationABvpZ",
+            "usr": "s:So18NSNotificationNamea15NautilusCoreSDKE27networkListenerNotificationABvpZ",
+            "mangledName": "$sSo18NSNotificationNamea15NautilusCoreSDKE27networkListenerNotificationABvpZ",
             "moduleName": "NautilusCoreSDK",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "isLet": true,
@@ -16180,8 +16267,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:So18NSNotificationNamea15NautilusCoreSDKE17flagsNotificationABvgZ",
-                "mangledName": "$sSo18NSNotificationNamea15NautilusCoreSDKE17flagsNotificationABvgZ",
+                "usr": "s:So18NSNotificationNamea15NautilusCoreSDKE27networkListenerNotificationABvgZ",
+                "mangledName": "$sSo18NSNotificationNamea15NautilusCoreSDKE27networkListenerNotificationABvgZ",
                 "moduleName": "NautilusCoreSDK",
                 "static": true,
                 "implicit": true,
@@ -18447,94 +18534,66 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1211,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1434,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
       "kind": "StringLiteral",
-      "offset": 478,
-      "length": 21,
-      "value": "\"http:\/\/m.imanara.jp\""
+      "offset": 1898,
+      "length": 9,
+      "value": "\"Monitor\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
       "kind": "BooleanLiteral",
-      "offset": 741,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
-      "kind": "BooleanLiteral",
-      "offset": 867,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
-      "kind": "BooleanLiteral",
-      "offset": 944,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1531,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1982,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2197,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2456,
+      "offset": 1995,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
       "kind": "BooleanLiteral",
-      "offset": 2476,
+      "offset": 2015,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
       "kind": "BooleanLiteral",
-      "offset": 3098,
+      "offset": 2214,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
       "kind": "StringLiteral",
-      "offset": 3203,
-      "length": 19,
-      "value": "\"flagsNotification\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
-      "kind": "StringLiteral",
-      "offset": 3669,
-      "length": 21,
-      "value": "\"http:\/\/m.imanara.jp\""
+      "offset": 2592,
+      "length": 43,
+      "value": "\"NautilusNetworkListener is not listening.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
       "kind": "BooleanLiteral",
-      "offset": 3706,
+      "offset": 2656,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NetworkListener.swift",
+      "kind": "StringLiteral",
+      "offset": 2971,
+      "length": 29,
+      "value": "\"networkListenerNotification\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Utility\/Date+ISO8601.swift",
@@ -18770,14 +18829,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/LifeCycle\/LifeCycleNotificationCenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1182,
+      "offset": 1164,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/LifeCycle\/LifeCycleNotificationCenter.swift",
       "kind": "StringLiteral",
-      "offset": 1452,
+      "offset": 1434,
       "length": 2,
       "value": "\"\""
     },

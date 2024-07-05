@@ -529,6 +529,37 @@ SWIFT_PROTOCOL("_TtP15NautilusCoreSDK24NautilusLocationProvider_")
 - (void)requestLocationPermissionWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 @end
 
+@class NSNotificationCenter;
+
+/// ネットワークの状態を監視する
+SWIFT_CLASS("_TtC15NautilusCoreSDK23NautilusNetworkListener")
+@interface NautilusNetworkListener : NSObject
+/// NautilusNetworkListener Singleton
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NautilusNetworkListener * _Nonnull shared;)
++ (NautilusNetworkListener * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// 通信可・不可の通知を受け取りたい場合は NautilusNetworkListener.notificationCenter に addObserver してください
+/// 通知の名前は .networkListenerNotification です
+/// object に NWPath? が渡されます
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNotificationCenter * _Nonnull notificationCenter;)
++ (NSNotificationCenter * _Nonnull)notificationCenter SWIFT_WARN_UNUSED_RESULT;
+/// 監視中かどうかを判定します
+@property (nonatomic, readonly) BOOL isListening;
+/// 監視を開始します
+///
+/// returns:
+/// 監視中の場合は true を返します
+- (BOOL)listenerStart;
+/// 監視を停止します
+- (void)listenerStop;
+/// ネットワークがオンラインかどうかを判定します
+/// start してすぐは正しく取得できない場合がある
+///
+/// returns:
+/// オンラインの場合は true を返します
++ (BOOL)isOnline SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 /// CIDを利用したPUSHサービスへの端末登録が失敗した理由
 typedef SWIFT_ENUM(NSInteger, NautilusPushDeviceRegistraionFailureReason, open) {
 /// 処理成功
@@ -560,12 +591,6 @@ typedef SWIFT_ENUM(NSInteger, NautilusStatusErrorKey, open) {
 /// SDKステータスエラー時に表示される文言を扱うためのクラス
 SWIFT_CLASS("_TtC15NautilusCoreSDK26NautilusStatusErrorStrings")
 @interface NautilusStatusErrorStrings : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC15NautilusCoreSDK15NetworkListener")
-@interface NetworkListener : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1110,6 +1135,37 @@ SWIFT_PROTOCOL("_TtP15NautilusCoreSDK24NautilusLocationProvider_")
 - (void)requestLocationPermissionWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 @end
 
+@class NSNotificationCenter;
+
+/// ネットワークの状態を監視する
+SWIFT_CLASS("_TtC15NautilusCoreSDK23NautilusNetworkListener")
+@interface NautilusNetworkListener : NSObject
+/// NautilusNetworkListener Singleton
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NautilusNetworkListener * _Nonnull shared;)
++ (NautilusNetworkListener * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// 通信可・不可の通知を受け取りたい場合は NautilusNetworkListener.notificationCenter に addObserver してください
+/// 通知の名前は .networkListenerNotification です
+/// object に NWPath? が渡されます
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNotificationCenter * _Nonnull notificationCenter;)
++ (NSNotificationCenter * _Nonnull)notificationCenter SWIFT_WARN_UNUSED_RESULT;
+/// 監視中かどうかを判定します
+@property (nonatomic, readonly) BOOL isListening;
+/// 監視を開始します
+///
+/// returns:
+/// 監視中の場合は true を返します
+- (BOOL)listenerStart;
+/// 監視を停止します
+- (void)listenerStop;
+/// ネットワークがオンラインかどうかを判定します
+/// start してすぐは正しく取得できない場合がある
+///
+/// returns:
+/// オンラインの場合は true を返します
++ (BOOL)isOnline SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 /// CIDを利用したPUSHサービスへの端末登録が失敗した理由
 typedef SWIFT_ENUM(NSInteger, NautilusPushDeviceRegistraionFailureReason, open) {
 /// 処理成功
@@ -1141,12 +1197,6 @@ typedef SWIFT_ENUM(NSInteger, NautilusStatusErrorKey, open) {
 /// SDKステータスエラー時に表示される文言を扱うためのクラス
 SWIFT_CLASS("_TtC15NautilusCoreSDK26NautilusStatusErrorStrings")
 @interface NautilusStatusErrorStrings : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC15NautilusCoreSDK15NetworkListener")
-@interface NetworkListener : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
