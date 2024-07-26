@@ -1090,6 +1090,688 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "_NautilusConfigValue",
+        "printedName": "_NautilusConfigValue",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "keyName",
+            "printedName": "keyName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17NautilusConfigSDK01_aB5ValueC7keyNameSSvp",
+            "mangledName": "$s17NautilusConfigSDK01_aB5ValueC7keyNameSSvp",
+            "moduleName": "NautilusConfigSDK",
+            "objc_name": "keyName",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17NautilusConfigSDK01_aB5ValueC7keyNameSSvg",
+                "mangledName": "$s17NautilusConfigSDK01_aB5ValueC7keyNameSSvg",
+                "moduleName": "NautilusConfigSDK",
+                "implicit": true,
+                "objc_name": "keyName",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "boolValue",
+            "printedName": "boolValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17NautilusConfigSDK01_aB5ValueC04boolD0Sbvp",
+            "mangledName": "$s17NautilusConfigSDK01_aB5ValueC04boolD0Sbvp",
+            "moduleName": "NautilusConfigSDK",
+            "objc_name": "boolValue",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17NautilusConfigSDK01_aB5ValueC04boolD0Sbvg",
+                "mangledName": "$s17NautilusConfigSDK01_aB5ValueC04boolD0Sbvg",
+                "moduleName": "NautilusConfigSDK",
+                "implicit": true,
+                "objc_name": "boolValue",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "integerValue",
+            "printedName": "integerValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17NautilusConfigSDK01_aB5ValueC07integerD0Sivp",
+            "mangledName": "$s17NautilusConfigSDK01_aB5ValueC07integerD0Sivp",
+            "moduleName": "NautilusConfigSDK",
+            "objc_name": "integerValue",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17NautilusConfigSDK01_aB5ValueC07integerD0Sivg",
+                "mangledName": "$s17NautilusConfigSDK01_aB5ValueC07integerD0Sivg",
+                "moduleName": "NautilusConfigSDK",
+                "implicit": true,
+                "objc_name": "integerValue",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "doubleValue",
+            "printedName": "doubleValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17NautilusConfigSDK01_aB5ValueC06doubleD0Sdvp",
+            "mangledName": "$s17NautilusConfigSDK01_aB5ValueC06doubleD0Sdvp",
+            "moduleName": "NautilusConfigSDK",
+            "objc_name": "doubleValue",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17NautilusConfigSDK01_aB5ValueC06doubleD0Sdvg",
+                "mangledName": "$s17NautilusConfigSDK01_aB5ValueC06doubleD0Sdvg",
+                "moduleName": "NautilusConfigSDK",
+                "implicit": true,
+                "objc_name": "doubleValue",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stringValue",
+            "printedName": "stringValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17NautilusConfigSDK01_aB5ValueC06stringD0SSvp",
+            "mangledName": "$s17NautilusConfigSDK01_aB5ValueC06stringD0SSvp",
+            "moduleName": "NautilusConfigSDK",
+            "objc_name": "stringValue",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17NautilusConfigSDK01_aB5ValueC06stringD0SSvg",
+                "mangledName": "$s17NautilusConfigSDK01_aB5ValueC06stringD0SSvg",
+                "moduleName": "NautilusConfigSDK",
+                "implicit": true,
+                "objc_name": "stringValue",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "boolArrayValue",
+            "printedName": "boolArrayValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Bool]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17NautilusConfigSDK01_aB5ValueC09boolArrayD0SaySbGvp",
+            "mangledName": "$s17NautilusConfigSDK01_aB5ValueC09boolArrayD0SaySbGvp",
+            "moduleName": "NautilusConfigSDK",
+            "objc_name": "boolArrayValue",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Bool]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17NautilusConfigSDK01_aB5ValueC09boolArrayD0SaySbGvg",
+                "mangledName": "$s17NautilusConfigSDK01_aB5ValueC09boolArrayD0SaySbGvg",
+                "moduleName": "NautilusConfigSDK",
+                "implicit": true,
+                "objc_name": "boolArrayValue",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "integerArrayValue",
+            "printedName": "integerArrayValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17NautilusConfigSDK01_aB5ValueC012integerArrayD0SaySiGvp",
+            "mangledName": "$s17NautilusConfigSDK01_aB5ValueC012integerArrayD0SaySiGvp",
+            "moduleName": "NautilusConfigSDK",
+            "objc_name": "integerArrayValue",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17NautilusConfigSDK01_aB5ValueC012integerArrayD0SaySiGvg",
+                "mangledName": "$s17NautilusConfigSDK01_aB5ValueC012integerArrayD0SaySiGvg",
+                "moduleName": "NautilusConfigSDK",
+                "implicit": true,
+                "objc_name": "integerArrayValue",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "doubleArrayValue",
+            "printedName": "doubleArrayValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Double]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17NautilusConfigSDK01_aB5ValueC011doubleArrayD0SaySdGvp",
+            "mangledName": "$s17NautilusConfigSDK01_aB5ValueC011doubleArrayD0SaySdGvp",
+            "moduleName": "NautilusConfigSDK",
+            "objc_name": "doubleArrayValue",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17NautilusConfigSDK01_aB5ValueC011doubleArrayD0SaySdGvg",
+                "mangledName": "$s17NautilusConfigSDK01_aB5ValueC011doubleArrayD0SaySdGvg",
+                "moduleName": "NautilusConfigSDK",
+                "implicit": true,
+                "objc_name": "doubleArrayValue",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stringArrayValue",
+            "printedName": "stringArrayValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17NautilusConfigSDK01_aB5ValueC011stringArrayD0SaySSGvp",
+            "mangledName": "$s17NautilusConfigSDK01_aB5ValueC011stringArrayD0SaySSGvp",
+            "moduleName": "NautilusConfigSDK",
+            "objc_name": "stringArrayValue",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17NautilusConfigSDK01_aB5ValueC011stringArrayD0SaySSGvg",
+                "mangledName": "$s17NautilusConfigSDK01_aB5ValueC011stringArrayD0SaySSGvg",
+                "moduleName": "NautilusConfigSDK",
+                "implicit": true,
+                "objc_name": "stringArrayValue",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(keyName:boolValue:integerValue:doubleValue:stringValue:boolArrayValue:integerArrayValue:doubleArrayValue:stringArrayValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_NautilusConfigValue",
+                "printedName": "NautilusConfigSDK._NautilusConfigValue",
+                "usr": "s:17NautilusConfigSDK01_aB5ValueC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Bool]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Double]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17NautilusConfigSDK01_aB5ValueC7keyName04boolD007integerD006doubleD006stringD00g5ArrayD00hkD00ikD00jkD0ACSS_SbSiSdSSSaySbGSaySiGSaySdGSaySSGtcfc",
+            "mangledName": "$s17NautilusConfigSDK01_aB5ValueC7keyName04boolD007integerD006doubleD006stringD00g5ArrayD00hkD00ikD00jkD0ACSS_SbSiSdSSSaySbGSaySiGSaySdGSaySSGtcfc",
+            "moduleName": "NautilusConfigSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17NautilusConfigSDK01_aB5ValueC",
+        "mangledName": "$s17NautilusConfigSDK01_aB5ValueC",
+        "moduleName": "NautilusConfigSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "NautilusConfigValue",
+            "printedName": "NautilusConfigValue",
+            "usr": "c:@M@NautilusConfigSDK@objc(pl)NautilusConfigValue",
+            "mangledName": "$s17NautilusConfigSDK0aB5ValueP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -2078,6 +2760,46 @@
               "Final",
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debugConfigUpdate",
+            "printedName": "debugConfigUpdate(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any NautilusConfigSDK.NautilusConfigValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusConfigValue",
+                    "printedName": "any NautilusConfigSDK.NautilusConfigValue",
+                    "usr": "c:@M@NautilusConfigSDK@objc(pl)NautilusConfigValue"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17NautilusConfigSDK0aB0C05debugB6Update4withSbSayAA0aB5Value_pG_tF",
+            "mangledName": "$s17NautilusConfigSDK0aB0C05debugB6Update4withSbSayAA0aB5Value_pG_tF",
+            "moduleName": "NautilusConfigSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "Available",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },

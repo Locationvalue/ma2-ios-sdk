@@ -48,6 +48,19 @@ import _SwiftConcurrencyShims
   }
   @objc deinit
 }
+final public class _NautilusConfigValue : NautilusConfigSDK.NautilusConfigValue {
+  @objc final public let keyName: Swift.String
+  @objc final public let boolValue: Swift.Bool
+  @objc final public let integerValue: Swift.Int
+  @objc final public let doubleValue: Swift.Double
+  @objc final public let stringValue: Swift.String
+  @objc final public let boolArrayValue: [Swift.Bool]
+  @objc final public let integerArrayValue: [Swift.Int]
+  @objc final public let doubleArrayValue: [Swift.Double]
+  @objc final public let stringArrayValue: [Swift.String]
+  public init(keyName: Swift.String, boolValue: Swift.Bool = NautilusConfigDefaultValues.boolValue, integerValue: Swift.Int = NautilusConfigDefaultValues.integerValue, doubleValue: Swift.Double = NautilusConfigDefaultValues.doubleValue, stringValue: Swift.String = NautilusConfigDefaultValues.stringValue, boolArrayValue: [Swift.Bool] = NautilusConfigDefaultValues.boolArrayValue, integerArrayValue: [Swift.Int] = NautilusConfigDefaultValues.integerArrayValue, doubleArrayValue: [Swift.Double] = NautilusConfigDefaultValues.doubleArrayValue, stringArrayValue: [Swift.String] = NautilusConfigDefaultValues.stringArrayValue)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc final public class NautilusConfig : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
@@ -82,6 +95,9 @@ import _SwiftConcurrencyShims
   @objc(configValueForKey:defaultIntegerArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.Int]) -> any NautilusConfigSDK.NautilusConfigValue
   @objc(configValueForKey:defaultDoubleArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.Double]) -> any NautilusConfigSDK.NautilusConfigValue
   @objc(configValueForKey:defaultStringArrayValue:) final public func configValue(for key: Swift.String, default: [Swift.String]) -> any NautilusConfigSDK.NautilusConfigValue
+  @available(*, deprecated, message: "Do not use in a production environment.")
+  @discardableResult
+  final public func debugConfigUpdate(with newValues: [any NautilusConfigSDK.NautilusConfigValue]) -> Swift.Bool
   @objc deinit
 }
 @objc public protocol NautilusConfigStatus {
