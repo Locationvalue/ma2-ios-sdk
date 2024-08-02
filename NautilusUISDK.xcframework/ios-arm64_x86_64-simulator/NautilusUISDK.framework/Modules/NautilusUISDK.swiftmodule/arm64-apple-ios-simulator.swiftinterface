@@ -194,6 +194,7 @@ extension UIKit.UIColor {
   @objc var disableColor: UIKit.UIColor { get }
   @objc var onDisableColor: UIKit.UIColor { get }
   @objc var accentColor: UIKit.UIColor { get }
+  @objc var onAccentColor: UIKit.UIColor { get }
   @objc var textLinkColor: UIKit.UIColor { get }
 }
 @_hasMissingDesignatedInitializers @objc public class NautilusUIComponent : ObjectiveC.NSObject, NautilusUISDK.NautilusColor {
@@ -291,6 +292,9 @@ extension UIKit.UIColor {
     @objc get
   }
   @objc public var accentColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var onAccentColor: UIKit.UIColor {
     @objc get
   }
   @objc public var textLinkColor: UIKit.UIColor {
@@ -531,6 +535,14 @@ public protocol NautilusBottomSheetContainerViewControllerDelegate : AnyObject {
   }
   @_Concurrency.MainActor(unsafe) public var currentBottomSheetScreenOverlayType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType {
     get
+  }
+  @_Concurrency.MainActor(unsafe) public var sheetContainerView: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var handleView: UIKit.UIView {
+    get
+    set
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()

@@ -717,6 +717,8 @@ SWIFT_PROTOCOL("_TtP13NautilusUISDK13NautilusColor_")
 @property (nonatomic, readonly, strong) UIColor * _Nonnull onDisableColor;
 /// アクセントカラー
 @property (nonatomic, readonly, strong) UIColor * _Nonnull accentColor;
+/// オンアクセントカラー
+@property (nonatomic, readonly, strong) UIColor * _Nonnull onAccentColor;
 /// テキストリンクカラー
 @property (nonatomic, readonly, strong) UIColor * _Nonnull textLinkColor;
 @end
@@ -1069,6 +1071,8 @@ SWIFT_CLASS("_TtC13NautilusUISDK19NautilusUIComponent")
 @property (nonatomic, readonly, strong) UIColor * _Nonnull onDisableColor;
 /// アクセントカラー
 @property (nonatomic, readonly, strong) UIColor * _Nonnull accentColor;
+/// オンアクセントカラー
+@property (nonatomic, readonly, strong) UIColor * _Nonnull onAccentColor;
 /// リンクテキストカラー
 @property (nonatomic, readonly, strong) UIColor * _Nonnull textLinkColor;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -2158,6 +2162,8 @@ SWIFT_PROTOCOL("_TtP13NautilusUISDK13NautilusColor_")
 @property (nonatomic, readonly, strong) UIColor * _Nonnull onDisableColor;
 /// アクセントカラー
 @property (nonatomic, readonly, strong) UIColor * _Nonnull accentColor;
+/// オンアクセントカラー
+@property (nonatomic, readonly, strong) UIColor * _Nonnull onAccentColor;
 /// テキストリンクカラー
 @property (nonatomic, readonly, strong) UIColor * _Nonnull textLinkColor;
 @end
@@ -2510,6 +2516,8 @@ SWIFT_CLASS("_TtC13NautilusUISDK19NautilusUIComponent")
 @property (nonatomic, readonly, strong) UIColor * _Nonnull onDisableColor;
 /// アクセントカラー
 @property (nonatomic, readonly, strong) UIColor * _Nonnull accentColor;
+/// オンアクセントカラー
+@property (nonatomic, readonly, strong) UIColor * _Nonnull onAccentColor;
 /// リンクテキストカラー
 @property (nonatomic, readonly, strong) UIColor * _Nonnull textLinkColor;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

@@ -6874,6 +6874,55 @@
           },
           {
             "kind": "Var",
+            "name": "onAccentColor",
+            "printedName": "onAccentColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusUISDK@objc(pl)NautilusColor(py)onAccentColor",
+            "mangledName": "$s13NautilusUISDK0A5ColorP08onAccentC0So7UIColorCvp",
+            "moduleName": "NautilusUISDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusUISDK@objc(pl)NautilusColor(im)onAccentColor",
+                "mangledName": "$s13NautilusUISDK0A5ColorP08onAccentC0So7UIColorCvg",
+                "moduleName": "NautilusUISDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NautilusUISDK.NautilusColor>",
+                "sugared_genericSig": "<Self where Self : NautilusUISDK.NautilusColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "textLinkColor",
             "printedName": "textLinkColor",
             "children": [
@@ -8376,6 +8425,53 @@
                 "mangledName": "$s13NautilusUISDK0A11UIComponentC11accentColorSo7UIColorCvg",
                 "moduleName": "NautilusUISDK",
                 "objc_name": "accentColor",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onAccentColor",
+            "printedName": "onAccentColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusUISDK@objc(cs)NautilusUIComponent(py)onAccentColor",
+            "mangledName": "$s13NautilusUISDK0A11UIComponentC13onAccentColorSo7UIColorCvp",
+            "moduleName": "NautilusUISDK",
+            "objc_name": "onAccentColor",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusUISDK@objc(cs)NautilusUIComponent(im)onAccentColor",
+                "mangledName": "$s13NautilusUISDK0A11UIComponentC13onAccentColorSo7UIColorCvg",
+                "moduleName": "NautilusUISDK",
+                "objc_name": "onAccentColor",
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -15462,6 +15558,178 @@
                 "moduleName": "NautilusUISDK",
                 "implicit": true,
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sheetContainerView",
+            "printedName": "sheetContainerView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NautilusUISDK0A34BottomSheetContainerViewControllerC05sheeteF0So6UIViewCvp",
+            "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC05sheeteF0So6UIViewCvp",
+            "moduleName": "NautilusUISDK",
+            "declAttributes": [
+              "Custom",
+              "Lazy",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NautilusUISDK0A34BottomSheetContainerViewControllerC05sheeteF0So6UIViewCvg",
+                "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC05sheeteF0So6UIViewCvg",
+                "moduleName": "NautilusUISDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NautilusUISDK0A34BottomSheetContainerViewControllerC05sheeteF0So6UIViewCvs",
+                "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC05sheeteF0So6UIViewCvs",
+                "moduleName": "NautilusUISDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NautilusUISDK0A34BottomSheetContainerViewControllerC05sheeteF0So6UIViewCvM",
+                "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC05sheeteF0So6UIViewCvM",
+                "moduleName": "NautilusUISDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "handleView",
+            "printedName": "handleView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NautilusUISDK0A34BottomSheetContainerViewControllerC06handleF0So6UIViewCvp",
+            "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC06handleF0So6UIViewCvp",
+            "moduleName": "NautilusUISDK",
+            "declAttributes": [
+              "Custom",
+              "Lazy",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NautilusUISDK0A34BottomSheetContainerViewControllerC06handleF0So6UIViewCvg",
+                "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC06handleF0So6UIViewCvg",
+                "moduleName": "NautilusUISDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NautilusUISDK0A34BottomSheetContainerViewControllerC06handleF0So6UIViewCvs",
+                "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC06handleF0So6UIViewCvs",
+                "moduleName": "NautilusUISDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NautilusUISDK0A34BottomSheetContainerViewControllerC06handleF0So6UIViewCvM",
+                "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC06handleF0So6UIViewCvM",
+                "moduleName": "NautilusUISDK",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -33388,581 +33656,595 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2647,
+      "offset": 2725,
       "length": 18,
       "value": "\"ma_ui_general_ok\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2695,
+      "offset": 2773,
       "length": 22,
       "value": "\"ma_ui_general_cancel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2744,
+      "offset": 2822,
       "length": 19,
       "value": "\"ma_ui_general_yes\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2789,
+      "offset": 2867,
       "length": 18,
       "value": "\"ma_ui_general_no\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2836,
+      "offset": 2914,
       "length": 21,
       "value": "\"ma_ui_general_close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2887,
+      "offset": 2965,
       "length": 22,
       "value": "\"ma_ui_general_delete\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2939,
+      "offset": 3017,
       "length": 22,
       "value": "\"ma_ui_general_submit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2991,
+      "offset": 3069,
       "length": 22,
       "value": "\"ma_ui_general_select\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3042,
+      "offset": 3120,
       "length": 21,
       "value": "\"ma_ui_general_retry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3093,
+      "offset": 3171,
       "length": 22,
       "value": "\"ma_ui_general_reload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3164,
+      "offset": 3242,
       "length": 44,
       "value": "\"ma_ui_inappbrowser_error_dialog_load_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3255,
+      "offset": 3333,
       "length": 46,
       "value": "\"ma_ui_inappbrowser_error_dialog_load_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3354,
+      "offset": 3432,
       "length": 48,
       "value": "\"ma_ui_inappbrowser_confirm_dialog_repost_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3457,
+      "offset": 3535,
       "length": 50,
       "value": "\"ma_ui_inappbrowser_confirm_dialog_repost_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3565,
+      "offset": 3643,
       "length": 54,
       "value": "\"ma_ui_inappbrowser_error_dialog_invalid_scheme_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3679,
+      "offset": 3757,
       "length": 56,
       "value": "\"ma_ui_inappbrowser_error_dialog_invalid_scheme_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3795,
+      "offset": 3873,
       "length": 57,
       "value": "\"ma_ui_inappbrowser_error_dialog_scheme_open_error_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3914,
+      "offset": 3992,
       "length": 59,
       "value": "\"ma_ui_inappbrowser_error_dialog_scheme_open_error_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4017,
+      "offset": 4095,
       "length": 38,
       "value": "\"ma_ui_inappbrowser_show_error_dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4084,
+      "offset": 4162,
       "length": 21,
       "value": "\"ma_ui_primary_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4136,
+      "offset": 4214,
       "length": 24,
       "value": "\"ma_ui_on_primary_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4200,
+      "offset": 4278,
       "length": 34,
       "value": "\"ma_ui_on_primary_color_container\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4261,
+      "offset": 4339,
       "length": 19,
       "value": "\"ma_ui_focus_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4312,
+      "offset": 4390,
       "length": 24,
       "value": "\"ma_ui_foundation_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4371,
+      "offset": 4449,
       "length": 28,
       "value": "\"ma_ui_foundation_color_low\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4436,
+      "offset": 4514,
       "length": 31,
       "value": "\"ma_ui_on_foundation_color_low\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4501,
+      "offset": 4579,
       "length": 27,
       "value": "\"ma_ui_on_foundation_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4572,
+      "offset": 4650,
       "length": 39,
       "value": "\"ma_ui_on_foundation_color_modest_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4660,
+      "offset": 4738,
       "length": 44,
       "value": "\"ma_ui_on_foundation_color_modest_component\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4756,
+      "offset": 4834,
       "length": 48,
       "value": "\"ma_ui_on_foundation_color_modest_separate_thin\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4856,
+      "offset": 4934,
       "length": 48,
       "value": "\"ma_ui_on_foundation_color_modest_separate_bold\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4956,
+      "offset": 5034,
       "length": 48,
       "value": "\"ma_ui_on_foundation_color_modest_separate_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5032,
+      "offset": 5110,
       "length": 20,
       "value": "\"ma_ui_shadow_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5085,
+      "offset": 5163,
       "length": 26,
       "value": "\"ma_ui_overlay_color_deep\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5144,
+      "offset": 5222,
       "length": 26,
       "value": "\"ma_ui_overlay_color_dark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5198,
+      "offset": 5276,
       "length": 21,
       "value": "\"ma_ui_top_bar_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5249,
+      "offset": 5327,
       "length": 24,
       "value": "\"ma_ui_on_top_bar_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5302,
+      "offset": 5380,
       "length": 21,
       "value": "\"ma_ui_disable_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5354,
+      "offset": 5432,
       "length": 24,
       "value": "\"ma_ui_on_disable_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5406,
+      "offset": 5484,
       "length": 20,
       "value": "\"ma_ui_accent_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5456,
+      "offset": 5534,
+      "length": 23,
+      "value": "\"ma_ui_on_accent_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
+      "kind": "StringLiteral",
+      "offset": 5587,
       "length": 23,
       "value": "\"ma_ui_text_link_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2647,
+      "offset": 2725,
       "length": 18,
       "value": "\"ma_ui_general_ok\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2695,
+      "offset": 2773,
       "length": 22,
       "value": "\"ma_ui_general_cancel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2744,
+      "offset": 2822,
       "length": 19,
       "value": "\"ma_ui_general_yes\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2789,
+      "offset": 2867,
       "length": 18,
       "value": "\"ma_ui_general_no\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2836,
+      "offset": 2914,
       "length": 21,
       "value": "\"ma_ui_general_close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2887,
+      "offset": 2965,
       "length": 22,
       "value": "\"ma_ui_general_delete\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2939,
+      "offset": 3017,
       "length": 22,
       "value": "\"ma_ui_general_submit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2991,
+      "offset": 3069,
       "length": 22,
       "value": "\"ma_ui_general_select\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3042,
+      "offset": 3120,
       "length": 21,
       "value": "\"ma_ui_general_retry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3093,
+      "offset": 3171,
       "length": 22,
       "value": "\"ma_ui_general_reload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3164,
+      "offset": 3242,
       "length": 44,
       "value": "\"ma_ui_inappbrowser_error_dialog_load_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3255,
+      "offset": 3333,
       "length": 46,
       "value": "\"ma_ui_inappbrowser_error_dialog_load_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3354,
+      "offset": 3432,
       "length": 48,
       "value": "\"ma_ui_inappbrowser_confirm_dialog_repost_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3457,
+      "offset": 3535,
       "length": 50,
       "value": "\"ma_ui_inappbrowser_confirm_dialog_repost_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3565,
+      "offset": 3643,
       "length": 54,
       "value": "\"ma_ui_inappbrowser_error_dialog_invalid_scheme_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3679,
+      "offset": 3757,
       "length": 56,
       "value": "\"ma_ui_inappbrowser_error_dialog_invalid_scheme_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3795,
+      "offset": 3873,
       "length": 57,
       "value": "\"ma_ui_inappbrowser_error_dialog_scheme_open_error_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3914,
+      "offset": 3992,
       "length": 59,
       "value": "\"ma_ui_inappbrowser_error_dialog_scheme_open_error_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4017,
+      "offset": 4095,
       "length": 38,
       "value": "\"ma_ui_inappbrowser_show_error_dialog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4084,
+      "offset": 4162,
       "length": 21,
       "value": "\"ma_ui_primary_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4136,
+      "offset": 4214,
       "length": 24,
       "value": "\"ma_ui_on_primary_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4200,
+      "offset": 4278,
       "length": 34,
       "value": "\"ma_ui_on_primary_color_container\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4261,
+      "offset": 4339,
       "length": 19,
       "value": "\"ma_ui_focus_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4312,
+      "offset": 4390,
       "length": 24,
       "value": "\"ma_ui_foundation_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4371,
+      "offset": 4449,
       "length": 28,
       "value": "\"ma_ui_foundation_color_low\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4436,
+      "offset": 4514,
       "length": 31,
       "value": "\"ma_ui_on_foundation_color_low\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4501,
+      "offset": 4579,
       "length": 27,
       "value": "\"ma_ui_on_foundation_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4572,
+      "offset": 4650,
       "length": 39,
       "value": "\"ma_ui_on_foundation_color_modest_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4660,
+      "offset": 4738,
       "length": 44,
       "value": "\"ma_ui_on_foundation_color_modest_component\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4756,
+      "offset": 4834,
       "length": 48,
       "value": "\"ma_ui_on_foundation_color_modest_separate_thin\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4856,
+      "offset": 4934,
       "length": 48,
       "value": "\"ma_ui_on_foundation_color_modest_separate_bold\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4956,
+      "offset": 5034,
       "length": 48,
       "value": "\"ma_ui_on_foundation_color_modest_separate_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5032,
+      "offset": 5110,
       "length": 20,
       "value": "\"ma_ui_shadow_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5085,
+      "offset": 5163,
       "length": 26,
       "value": "\"ma_ui_overlay_color_deep\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5144,
+      "offset": 5222,
       "length": 26,
       "value": "\"ma_ui_overlay_color_dark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5198,
+      "offset": 5276,
       "length": 21,
       "value": "\"ma_ui_top_bar_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5249,
+      "offset": 5327,
       "length": 24,
       "value": "\"ma_ui_on_top_bar_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5302,
+      "offset": 5380,
       "length": 21,
       "value": "\"ma_ui_disable_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5354,
+      "offset": 5432,
       "length": 24,
       "value": "\"ma_ui_on_disable_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5406,
+      "offset": 5484,
       "length": 20,
       "value": "\"ma_ui_accent_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 5456,
+      "offset": 5534,
+      "length": 23,
+      "value": "\"ma_ui_on_accent_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
+      "kind": "StringLiteral",
+      "offset": 5587,
       "length": 23,
       "value": "\"ma_ui_text_link_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2543,
+      "offset": 2621,
       "length": 19,
       "value": "\"NautilusUISDK.NautilusUIComponent\""
     },
@@ -34130,7 +34412,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/BottomSheet\/NautilusBottomSheetContainerViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3511,
+      "offset": 3638,
       "length": 4,
       "value": "0.25"
     },
