@@ -39,10 +39,6 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
-  final public var isOptOut: Swift.Bool {
-    get
-    set
-  }
   final public var plugins: [any NautilusAnalyticsSDK.NautilusAnalyticsPlugin] {
     get
   }

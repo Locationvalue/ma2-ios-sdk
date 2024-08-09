@@ -333,6 +333,10 @@ public protocol HTMLViewDelegate : AnyObject {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) final public var lineHeightMultiple: CoreFoundation.CGFloat {
+    get
+    set
+  }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
