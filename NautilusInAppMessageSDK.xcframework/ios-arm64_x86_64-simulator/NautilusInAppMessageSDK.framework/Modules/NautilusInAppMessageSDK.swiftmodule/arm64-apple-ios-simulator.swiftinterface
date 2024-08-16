@@ -33,6 +33,7 @@ public struct NautilusInAppMessageViewConditionGroup : Swift.Equatable {
   public static func == (a: NautilusInAppMessageSDK.NautilusInAppMessageViewConditionGroup, b: NautilusInAppMessageSDK.NautilusInAppMessageViewConditionGroup) -> Swift.Bool
 }
 @objc public protocol NautilusInAppMessageControllerDelegate {
+  @objc func undisplayedInAppMessage(eventID: Swift.String)
   @objc func inAppMessageBeforeDisplay(inAppMessageID: NautilusInAppMessageSDK.NautilusInAppMessageIdentifierType)
   @objc func inAppMessageAfterDisplay(inAppMessageID: NautilusInAppMessageSDK.NautilusInAppMessageIdentifierType)
   @objc func inAppMessageBeforeClose(inAppMessageID: NautilusInAppMessageSDK.NautilusInAppMessageIdentifierType)

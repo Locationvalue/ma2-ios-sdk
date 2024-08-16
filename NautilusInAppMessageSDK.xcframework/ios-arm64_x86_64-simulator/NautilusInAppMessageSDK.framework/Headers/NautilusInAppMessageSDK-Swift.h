@@ -374,6 +374,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <NautilusInAppMessage
 
 SWIFT_PROTOCOL("_TtP23NautilusInAppMessageSDK38NautilusInAppMessageControllerDelegate_")
 @protocol NautilusInAppMessageControllerDelegate
+/// 表示されるアプリ内メッセージがない場合に呼ばれる
+/// \param eventID アプリ内メッセージが表示されなかったイベントID
+///
+- (void)undisplayedInAppMessageWithEventID:(NSString * _Nonnull)eventID;
 /// アプリ内メッセージが表示される前に呼ばれる
 /// \param inAppMessageID 表示されるアプリ内メッセージのID
 ///
@@ -863,6 +867,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <NautilusInAppMessage
 
 SWIFT_PROTOCOL("_TtP23NautilusInAppMessageSDK38NautilusInAppMessageControllerDelegate_")
 @protocol NautilusInAppMessageControllerDelegate
+/// 表示されるアプリ内メッセージがない場合に呼ばれる
+/// \param eventID アプリ内メッセージが表示されなかったイベントID
+///
+- (void)undisplayedInAppMessageWithEventID:(NSString * _Nonnull)eventID;
 /// アプリ内メッセージが表示される前に呼ばれる
 /// \param inAppMessageID 表示されるアプリ内メッセージのID
 ///

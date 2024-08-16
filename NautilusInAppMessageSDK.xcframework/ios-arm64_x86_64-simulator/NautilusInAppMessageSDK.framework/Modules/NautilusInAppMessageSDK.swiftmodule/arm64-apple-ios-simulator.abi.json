@@ -543,6 +543,37 @@
         "children": [
           {
             "kind": "Function",
+            "name": "undisplayedInAppMessage",
+            "printedName": "undisplayedInAppMessage(eventID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusInAppMessageSDK@objc(pl)NautilusInAppMessageControllerDelegate(im)undisplayedInAppMessageWithEventID:",
+            "mangledName": "$s23NautilusInAppMessageSDK0abcD18ControllerDelegateP011undisplayedbcD07eventIDySS_tF",
+            "moduleName": "NautilusInAppMessageSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusInAppMessageSDK.NautilusInAppMessageControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : NautilusInAppMessageSDK.NautilusInAppMessageControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "inAppMessageBeforeDisplay",
             "printedName": "inAppMessageBeforeDisplay(inAppMessageID:)",
             "children": [
