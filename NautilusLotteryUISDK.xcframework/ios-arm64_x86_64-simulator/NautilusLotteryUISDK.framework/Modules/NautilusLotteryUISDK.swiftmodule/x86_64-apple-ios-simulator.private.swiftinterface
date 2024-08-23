@@ -67,6 +67,8 @@ import _SwiftConcurrencyShims
   @objc(lotteryAppNamed:) public static func lotteryUI(appName: Swift.String) -> NautilusLotteryUISDK.NautilusLotteryUI
   @objc final public func presentLotteryListViewController(in viewController: UIKit.UIViewController)
   @objc final public func instantiateLotteryListViewController() -> NautilusLotteryUISDK.NautilusLotteryListViewController
+  @available(*, deprecated, message: "50387:特定案件用のメソッドです。他案件での使用は避けてください。")
+  @objc final public func instantiateLotteryListViewController(excludeAliasList: [Swift.String]) -> NautilusLotteryUISDK.NautilusLotteryListViewController
   @objc final public func presentLotteryDetailViewController(in viewController: UIKit.UIViewController, lotteryID: Swift.Int)
   @objc final public func instantiateLotteryDetailViewController(lotteryID: Swift.Int) -> NautilusLotteryUISDK.NautilusLotteryDetailViewController
   @objc final public func presentLotteryDetailViewController(in viewController: UIKit.UIViewController, lottery: NautilusLotterySDK.NautilusLotteryInfo)

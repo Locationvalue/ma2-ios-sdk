@@ -374,6 +374,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// returns:
 /// 抽選一覧画面の View Controller
 - (NautilusLotteryListViewController * _Nonnull)instantiateLotteryListViewController SWIFT_WARN_UNUSED_RESULT;
+/// 抽選一覧画面を生成する
+/// \param excludeAliasList 一覧表示から除外するアイテムのエイリアスのリスト
+///
+///
+/// returns:
+/// 抽選一覧画面の View Controller
+- (NautilusLotteryListViewController * _Nonnull)instantiateLotteryListViewControllerWithExcludeAliasList:(NSArray<NSString *> * _Nonnull)excludeAliasList SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("50387:特定案件用のメソッドです。他案件での使用は避けてください。");
 /// 抽選詳細画面を表示する
 /// \param viewController 抽選詳細画面を表示するView Controller
 ///
@@ -814,6 +821,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// returns:
 /// 抽選一覧画面の View Controller
 - (NautilusLotteryListViewController * _Nonnull)instantiateLotteryListViewController SWIFT_WARN_UNUSED_RESULT;
+/// 抽選一覧画面を生成する
+/// \param excludeAliasList 一覧表示から除外するアイテムのエイリアスのリスト
+///
+///
+/// returns:
+/// 抽選一覧画面の View Controller
+- (NautilusLotteryListViewController * _Nonnull)instantiateLotteryListViewControllerWithExcludeAliasList:(NSArray<NSString *> * _Nonnull)excludeAliasList SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("50387:特定案件用のメソッドです。他案件での使用は避けてください。");
 /// 抽選詳細画面を表示する
 /// \param viewController 抽選詳細画面を表示するView Controller
 ///

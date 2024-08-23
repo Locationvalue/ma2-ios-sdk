@@ -1950,6 +1950,47 @@
           },
           {
             "kind": "Function",
+            "name": "instantiateLotteryListViewController",
+            "printedName": "instantiateLotteryListViewController(excludeAliasList:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusLotteryListViewController",
+                "printedName": "NautilusLotteryUISDK.NautilusLotteryListViewController",
+                "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryListViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)instantiateLotteryListViewControllerWithExcludeAliasList:",
+            "mangledName": "$s20NautilusLotteryUISDK0aB2UIC011instantiateB18ListViewController012excludeAliasF0AA0abfgH0CSaySSG_tF",
+            "moduleName": "NautilusLotteryUISDK",
+            "deprecated": true,
+            "objc_name": "instantiateLotteryListViewControllerWithExcludeAliasList:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "presentLotteryDetailViewController",
             "printedName": "presentLotteryDetailViewController(in:lotteryID:)",
             "children": [
