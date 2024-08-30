@@ -302,60 +302,6 @@ extension NautilusCouponSDK.NautilusCoupon {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class NautilusCouponBaseCell : UIKit.UICollectionViewCell {
-  @_Concurrency.MainActor(unsafe) open class var defaultCellIdentifier: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) open class var nib: UIKit.UINib {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) open class func register(to collectionView: UIKit.UICollectionView)
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponCoverImageView: UIKit.UIImageView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponTitleLabel: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponExpirePeriodLabel: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponFavoriteButton: UIKit.UIButton!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponCoverImageOverlayView: UIKit.UIView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponCoverImageOverlayImageView: UIKit.UIImageView!
-  @_Concurrency.MainActor(unsafe) weak public var actionHandler: (any NautilusCouponSDK.NautilusCouponCellActionHandler)?
-  @_Concurrency.MainActor(unsafe) final public let imageDownloader: NautilusImagingSDK.NautilusImageDownloader
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-@objc public protocol NautilusCouponCellActionHandler {
-  @objc func addFavorite(coupon: NautilusCouponSDK.NautilusCouponInfo)
-  @objc func removeFavorite(coupon: NautilusCouponSDK.NautilusCouponInfo)
-  @objc func showCouponUseCondition(couponIDInfo: NautilusCouponSDK.NautilusCouponIDInfo)
-  @objc func useCoupon(couponID: Swift.Int, type: NautilusCouponSDK.NautilusCouponPublishType, exchangeID: Foundation.NSNumber?)
-  @objc func toggleCouponUseView(cell: NautilusCouponSDK.NautilusCouponBaseCell, couponID: Swift.Int)
-}
-@objc public class NautilusCouponData : ObjectiveC.NSObject {
-  final public let couponID: Swift.Int
-  final public let couponManageTitle: Swift.String
-  final public let couponTitle: Swift.String?
-  final public let couponText: Swift.String
-  final public let noticeText: Swift.String?
-  final public let publishStartDatetime: Swift.String
-  final public let publishEndDatetime: Swift.String?
-  final public let useStartDatetime: Swift.String?
-  final public let useEndDatetime: Swift.String?
-  final public let barcode: Swift.String?
-  final public let barcodeImagePath: Swift.String?
-  final public let couponCode: Swift.String?
-  final public let maxSheet: Swift.Int?
-  final public let useType: NautilusCouponSDK.NautilusAppExchangeType?
-  final public let useLimit: Swift.Int?
-  final public let categoryIDs: [Swift.Int]?
-  final public let sortNo: Swift.Int?
-  final public let searchword: Swift.String?
-  final public let couponImageList: [NautilusCouponSDK.CustomCellCouponImageList]?
-  final public let useDatetime: Swift.String?
-  final public let couponType: Swift.Int?
-  final public let favorite: Swift.Bool?
-  final public let useCount: Swift.Int?
-  public init(couponID: Swift.Int, couponManageTitle: Swift.String, couponTitle: Swift.String?, couponText: Swift.String, noticeText: Swift.String?, publishStartDatetime: Swift.String, publishEndDatetime: Swift.String?, useStartDatetime: Swift.String?, useEndDatetime: Swift.String?, barcode: Swift.String?, barcodeImagePath: Swift.String?, couponCode: Swift.String?, maxSheet: Swift.Int?, useType: NautilusCouponSDK.NautilusAppExchangeType?, useLimit: Swift.Int?, categoryIDs: [Swift.Int]?, sortNo: Swift.Int?, searchword: Swift.String?, couponImageList: [NautilusCouponSDK.CustomCellCouponImageList]?, useDatetime: Swift.String?, couponType: Swift.Int?, favorite: Swift.Bool?, useCount: Swift.Int?)
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers @objc public class CustomCellCouponImageList : ObjectiveC.NSObject {
   final public let imagePath: Swift.String
   final public let aspectRatio: Swift.Double
@@ -378,18 +324,6 @@ extension NautilusCouponSDK.NautilusCoupon {
   case firstDownload = 2
   case cardPublication = 3
   case codePublication = 4
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers @objc public class CardType : ObjectiveC.NSObject {
-  @objc deinit
-}
-@objc public enum SectionType : Swift.Int {
-  case useStatus
-  case none
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -448,9 +382,6 @@ extension NautilusCouponSDK.NautilusCouponPublishType : Swift.RawRepresentable {
 extension NautilusCouponSDK.PublishTiming : Swift.Equatable {}
 extension NautilusCouponSDK.PublishTiming : Swift.Hashable {}
 extension NautilusCouponSDK.PublishTiming : Swift.RawRepresentable {}
-extension NautilusCouponSDK.SectionType : Swift.Equatable {}
-extension NautilusCouponSDK.SectionType : Swift.Hashable {}
-extension NautilusCouponSDK.SectionType : Swift.RawRepresentable {}
 extension NautilusCouponSDK.NautilusCouponExchangeType : Swift.Equatable {}
 extension NautilusCouponSDK.NautilusCouponExchangeType : Swift.Hashable {}
 extension NautilusCouponSDK.NautilusCouponExchangeType : Swift.RawRepresentable {}

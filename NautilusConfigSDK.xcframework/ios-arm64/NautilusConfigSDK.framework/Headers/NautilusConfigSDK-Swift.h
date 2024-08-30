@@ -366,21 +366,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<NSStri
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, NautilusConfigFetchStatus, open) {
-  NautilusConfigFetchStatusFetchNotYet = 0,
-  NautilusConfigFetchStatusLastFetchSuccess = 1,
-  NautilusConfigFetchStatusLastFetchFailure = 2,
-};
-
-@class NSDate;
-
-SWIFT_PROTOCOL("_TtP17NautilusConfigSDK20NautilusConfigStatus_")
-@protocol NautilusConfigStatus
-@property (nonatomic, readonly) NSInteger configVersion;
-@property (nonatomic, readonly, copy) NSDate * _Nullable lastFetchDate;
-@property (nonatomic, readonly) enum NautilusConfigFetchStatus lastFetchStatus;
-@end
-
 
 SWIFT_PROTOCOL("_TtP17NautilusConfigSDK19NautilusConfigValue_")
 @protocol NautilusConfigValue

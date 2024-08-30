@@ -595,7 +595,6 @@ SWIFT_CLASS("_TtC15NautilusCoreSDK26NautilusStatusErrorStrings")
 @end
 
 
-
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

@@ -303,7 +303,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@class NautilusApp;
 @class NSString;
 @class NSBundle;
 @class NSCoder;
@@ -313,7 +312,6 @@ SWIFT_CLASS("_TtC25NautilusNotificationUISDK38NautilusNotificationListViewContro
 @interface NautilusNotificationListViewController : UIViewController
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
-- (void)prepareWith:(NautilusApp * _Nonnull)app;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -326,6 +324,7 @@ SWIFT_PROTOCOL("_TtP25NautilusNotificationUISDK46NautilusNotificationListViewCon
 @end
 
 @class NautilusComponentDependency;
+@class NautilusApp;
 @class NSError;
 
 SWIFT_CLASS("_TtC25NautilusNotificationUISDK22NautilusNotificationUI")
@@ -673,7 +672,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@class NautilusApp;
 @class NSString;
 @class NSBundle;
 @class NSCoder;
@@ -683,7 +681,6 @@ SWIFT_CLASS("_TtC25NautilusNotificationUISDK38NautilusNotificationListViewContro
 @interface NautilusNotificationListViewController : UIViewController
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
-- (void)prepareWith:(NautilusApp * _Nonnull)app;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -696,6 +693,7 @@ SWIFT_PROTOCOL("_TtP25NautilusNotificationUISDK46NautilusNotificationListViewCon
 @end
 
 @class NautilusComponentDependency;
+@class NautilusApp;
 @class NSError;
 
 SWIFT_CLASS("_TtC25NautilusNotificationUISDK22NautilusNotificationUI")

@@ -100,21 +100,3 @@ final public class _NautilusConfigValue : NautilusConfigSDK.NautilusConfigValue 
   final public func debugConfigUpdate(with newValues: [any NautilusConfigSDK.NautilusConfigValue]) -> Swift.Bool
   @objc deinit
 }
-@objc public protocol NautilusConfigStatus {
-  @objc var configVersion: Swift.Int { get }
-  @objc var lastFetchDate: Foundation.Date? { get }
-  @objc var lastFetchStatus: NautilusConfigSDK.NautilusConfigFetchStatus { get }
-}
-@objc public enum NautilusConfigFetchStatus : Swift.Int {
-  case fetchNotYet = 0
-  case lastFetchSuccess = 1
-  case lastFetchFailure = 2
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-extension NautilusConfigSDK.NautilusConfigFetchStatus : Swift.Equatable {}
-extension NautilusConfigSDK.NautilusConfigFetchStatus : Swift.Hashable {}
-extension NautilusConfigSDK.NautilusConfigFetchStatus : Swift.RawRepresentable {}

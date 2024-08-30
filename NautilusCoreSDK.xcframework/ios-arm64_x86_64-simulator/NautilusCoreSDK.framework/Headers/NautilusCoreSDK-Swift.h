@@ -595,7 +595,6 @@ SWIFT_CLASS("_TtC15NautilusCoreSDK26NautilusStatusErrorStrings")
 @end
 
 
-
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -1199,7 +1198,6 @@ SWIFT_CLASS("_TtC15NautilusCoreSDK26NautilusStatusErrorStrings")
 @interface NautilusStatusErrorStrings : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 #endif

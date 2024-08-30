@@ -16,30 +16,11 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MACellLabel : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MASubCellLabel : UIKit.UILabel {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MACellButton : UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) public var insets: UIKit.UIEdgeInsets
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NautilusAppTabViewCell : UIKit.UICollectionViewCell {
-  @_Concurrency.MainActor(unsafe) public var cellNameLabel: UIKit.UILabel
-  @_Concurrency.MainActor(unsafe) public var selectedBar: UIKit.UIView
-  @_Concurrency.MainActor(unsafe) public var isActiveCell: Swift.Bool?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var isSelected: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
-  @_Concurrency.MainActor(unsafe) public func setUpContents(textName: Swift.String, textColor: UIKit.UIColor?, cellBackgroundColor: UIKit.UIColor?, width: NautilusUISDK.CategoryCellWidth?)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class NautilusDropdownGroup : UIKit.UIView {
@@ -64,21 +45,8 @@ import _SwiftConcurrencyShims
   @objc func dropdownGroup(_ dropdownGroup: NautilusUISDK.NautilusDropdownGroup, didSelect index: Swift.Int)
   @objc func dropdownGroup(_ dropdownGroup: NautilusUISDK.NautilusDropdownGroup, actionSheet: UIKit.UIAlertController)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NautilusAppPageViewController : UIKit.UIPageViewController {
-  @_Concurrency.MainActor(unsafe) public var childVC: [UIKit.UIViewController]?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(transitionStyle style: UIKit.UIPageViewController.TransitionStyle, navigationOrientation: UIKit.UIPageViewController.NavigationOrientation, options: [UIKit.UIPageViewController.OptionsKey : Any]? = nil)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension NautilusUISDK.NautilusAppPageViewController : UIKit.UIPageViewControllerDataSource {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerBefore viewController: UIKit.UIViewController) -> UIKit.UIViewController?
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerAfter viewController: UIKit.UIViewController) -> UIKit.UIViewController?
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func presentationCount(for pageViewController: UIKit.UIPageViewController) -> Swift.Int
-}
 public struct NautilusUIUtil {
   public static func htmlToAttributedString(htmlString: Swift.String, family: Swift.String, point: Swift.String, weight: Swift.String, hexColor: Swift.String) -> Foundation.NSAttributedString?
-  public static func createActivityIndicator(viewWidth: CoreFoundation.CGFloat, viewHeight: CoreFoundation.CGFloat, text: Swift.String?) -> NautilusUISDK.ActivityStackView
   public static func rowHeight(font: UIKit.UIFont, row: Swift.Int) -> CoreFoundation.CGFloat
   public static func rawRect(font: UIKit.UIFont, text: Swift.String) -> CoreFoundation.CGRect
 }
@@ -86,11 +54,6 @@ extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var parentViewController: UIKit.UIViewController? {
     get
   }
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ActivityStackView : UIKit.UIStackView {
-  @_Concurrency.MainActor(unsafe) public var indicatorView: UIKit.UIActivityIndicatorView?
-  @_Concurrency.MainActor(unsafe) public var activityLabel: UIKit.UILabel?
-  @objc deinit
 }
 extension UIKit.UIColor {
   convenience public init(hexCode: Swift.String)
@@ -110,11 +73,6 @@ extension UIKit.UIColor {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NautilusAppTabView : UIKit.UICollectionView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
@@ -342,13 +300,6 @@ public protocol HTMLViewDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override final public func updateConstraints()
   @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NautilusAppContentsCollectionView : UIKit.UICollectionView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension NautilusUISDK.NautilusAppContentsCollectionView : UIKit.UICollectionViewDelegateFlowLayout {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class ContainedButton : UIKit.UIControl {
   @objc public enum NautilusBorderRadiusStyle : Swift.Int {
@@ -623,31 +574,6 @@ public enum NautilusBottomSheetFrameChangeReason {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ContentsLayout : UIKit.UICollectionViewLayout, NautilusUISDK.SetContentsLayout {
-  @_Concurrency.MainActor(unsafe) public func setLayoutData(headerSize: CoreFoundation.CGSize, itemHeights: [[CoreFoundation.CGFloat]], column: NautilusUISDK.ContentsColumn)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var collectionViewContentSize: CoreFoundation.CGSize {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepare()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-public protocol SetContentsLayout : AnyObject {
-  func setLayoutData(headerSize: CoreFoundation.CGSize, itemHeights: [[CoreFoundation.CGFloat]], column: NautilusUISDK.ContentsColumn)
-}
-public enum CellLayoutSize {
-  case large
-  case midium
-  case small
-  public static func == (a: NautilusUISDK.CellLayoutSize, b: NautilusUISDK.CellLayoutSize) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class NautilusRadioGroup : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) weak public var dataSource: (any NautilusUISDK.NautilusRadioGroupDataSource)?
   @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any NautilusUISDK.NautilusRadioGroupDelegate)?
@@ -739,40 +665,6 @@ public enum CellLayoutSize {
   @_Concurrency.MainActor(unsafe) override final public func updateStyle()
   @objc deinit
 }
-public protocol NautilusAppTabViewDataSource {
-  var hierarchicalCategories: [[NautilusUISDK.NautilusCategory]]? { get }
-}
-@objc public enum NoneCategory : Swift.Int {
-  case removeMargin
-  case addAllTab
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public class CellWidth : ObjectiveC.NSObject {
-  public var width: NautilusUISDK.CategoryCellWidth
-  public init(width: CoreFoundation.CGFloat?)
-  @objc deinit
-}
-@objc public class NautilusCategory : ObjectiveC.NSObject {
-  final public let hierarchy: Swift.Int
-  final public let parentCategoryID: Swift.Int?
-  final public let categoryID: Swift.Int?
-  final public let categoryName: Swift.String
-  final public let sortNo: Swift.Int
-  final public let alias: Swift.String
-  public init(hierarchy: Swift.Int, parentCategoryID: Swift.Int?, categoryID: Swift.Int?, categoryName: Swift.String, sortNo: Swift.Int, alias: Swift.String)
-  @objc deinit
-}
-extension NautilusUISDK.NautilusCategory {
-  public static let allTab: NautilusUISDK.NautilusCategory
-}
-public enum CategoryCellWidth {
-  case auto
-  case fixed(width: CoreFoundation.CGFloat)
-}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class NautilusMessageDialogViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override final public var title: Swift.String? {
     @objc get
@@ -825,29 +717,6 @@ public enum CategoryCellWidth {
   @_Concurrency.MainActor(unsafe) public static func instantiate(errorInfo: NautilusUISDK.NautilusCommonErrorView.ErrorInfo) -> NautilusUISDK.NautilusCommonErrorView
   @_Concurrency.MainActor(unsafe) public static func instantiate(app: NautilusCoreSDK.NautilusApp, errorInfo: NautilusUISDK.NautilusCommonErrorView.ErrorInfo) -> NautilusUISDK.NautilusCommonErrorView
   @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ContentsFlowLayout : UIKit.UICollectionViewFlowLayout {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
-  @objc deinit
-}
-@objc public enum ContentsColumn : Swift.Int {
-  case one = 1
-  case two = 2
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public enum TransitionStyle : Swift.Int {
-  case dialog
-  case fullscreen
-  case notHaveDetail
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
 }
 public protocol NautilusStackListViewDataSource : AnyObject {
   func numberOfItems(_ stackListView: NautilusUISDK.NautilusStackListView) -> Swift.Int
@@ -1073,16 +942,5 @@ extension NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetSc
 extension NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType : Swift.Hashable {}
 extension NautilusUISDK.NautilusBottomSheetFrameChangeReason : Swift.Equatable {}
 extension NautilusUISDK.NautilusBottomSheetFrameChangeReason : Swift.Hashable {}
-extension NautilusUISDK.CellLayoutSize : Swift.Equatable {}
-extension NautilusUISDK.CellLayoutSize : Swift.Hashable {}
-extension NautilusUISDK.NoneCategory : Swift.Equatable {}
-extension NautilusUISDK.NoneCategory : Swift.Hashable {}
-extension NautilusUISDK.NoneCategory : Swift.RawRepresentable {}
 extension NautilusUISDK.NautilusCommonErrorView.ErrorReason : Swift.Equatable {}
 extension NautilusUISDK.NautilusCommonErrorView.ErrorReason : Swift.Hashable {}
-extension NautilusUISDK.ContentsColumn : Swift.Equatable {}
-extension NautilusUISDK.ContentsColumn : Swift.Hashable {}
-extension NautilusUISDK.ContentsColumn : Swift.RawRepresentable {}
-extension NautilusUISDK.TransitionStyle : Swift.Equatable {}
-extension NautilusUISDK.TransitionStyle : Swift.Hashable {}
-extension NautilusUISDK.TransitionStyle : Swift.RawRepresentable {}

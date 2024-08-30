@@ -25,7 +25,6 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor(unsafe) weak final public var delegate: (any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate)?
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) final public func prepare(with app: NautilusCoreSDK.NautilusApp)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit

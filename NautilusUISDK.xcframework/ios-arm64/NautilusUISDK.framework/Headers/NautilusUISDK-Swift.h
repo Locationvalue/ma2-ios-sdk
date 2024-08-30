@@ -304,26 +304,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class NSCoder;
-
-SWIFT_CLASS("_TtC13NautilusUISDK17ActivityStackView")
-@interface ActivityStackView : UIStackView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-@end
-
-
-
-SWIFT_CLASS("_TtC13NautilusUISDK9CellWidth")
-@interface CellWidth : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 @class UIColor;
 @class NSString;
 @class UIImage;
 enum NautilusBorderRadiusStyle : NSInteger;
+@class NSCoder;
 @class UIEvent;
 @class UIView;
 
@@ -359,35 +345,6 @@ typedef SWIFT_ENUM(NSInteger, NautilusBorderRadiusStyle, open) {
   NautilusBorderRadiusStylePill = 4,
 };
 
-typedef SWIFT_ENUM(NSInteger, ContentsColumn, open) {
-  ContentsColumnOne = 1,
-  ContentsColumnTwo = 2,
-};
-
-
-/// コンテンツCollectionView全体のレイアウト
-SWIFT_CLASS("_TtC13NautilusUISDK18ContentsFlowLayout")
-@interface ContentsFlowLayout : UICollectionViewFlowLayout
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class NSIndexPath;
-@class UICollectionViewLayoutAttributes;
-
-/// コンテンツCollectionView全体のレイアウト
-SWIFT_CLASS("_TtC13NautilusUISDK14ContentsLayout")
-@interface ContentsLayout : UICollectionViewLayout
-@property (nonatomic, readonly) CGSize collectionViewContentSize;
-- (void)prepareLayout;
-- (UICollectionViewLayoutAttributes * _Nullable)layoutAttributesForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (NSArray<UICollectionViewLayoutAttributes *> * _Nullable)layoutAttributesForElementsInRect:(CGRect)rect SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 SWIFT_CLASS("_TtC13NautilusUISDK11GhostButton")
 @interface GhostButton : UIControl
@@ -413,23 +370,6 @@ SWIFT_CLASS("_TtC13NautilusUISDK8HTMLView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 - (void)updateConstraints;
-@end
-
-
-/// ページセルボタンのデフォルト設定
-SWIFT_CLASS("_TtC13NautilusUISDK12MACellButton")
-@interface MACellButton : UIButton
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-/// ページセルラベルのデフォルト設定
-SWIFT_CLASS("_TtC13NautilusUISDK11MACellLabel")
-@interface MACellLabel : UILabel
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
 
@@ -461,50 +401,12 @@ SWIFT_CLASS("_TtC13NautilusUISDK40NautilusAnalyticsWebScriptMessageHandler")
 @end
 
 
-SWIFT_CLASS("_TtC13NautilusUISDK33NautilusAppContentsCollectionView")
-@interface NautilusAppContentsCollectionView : UICollectionView
-- (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface NautilusAppContentsCollectionView (SWIFT_EXTENSION(NautilusUISDK)) <UICollectionViewDelegateFlowLayout>
-@end
-
-
-/// コンテンツページのベースとなるPageViewController
-SWIFT_CLASS("_TtC13NautilusUISDK29NautilusAppPageViewController")
-@interface NautilusAppPageViewController : UIPageViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary<UIPageViewControllerOptionsKey, id> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIViewController;
-
-@interface NautilusAppPageViewController (SWIFT_EXTENSION(NautilusUISDK)) <UIPageViewControllerDataSource>
-- (UIViewController * _Nullable)pageViewController:(UIPageViewController * _Nonnull)pageViewController viewControllerBeforeViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
-- (UIViewController * _Nullable)pageViewController:(UIPageViewController * _Nonnull)pageViewController viewControllerAfterViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)presentationCountForPageViewController:(UIPageViewController * _Nonnull)pageViewController SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-/// カテゴリコレクションビュー
-SWIFT_CLASS("_TtC13NautilusUISDK18NautilusAppTabView")
-@interface NautilusAppTabView : UICollectionView
-- (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 /// カテゴリーセルの実際のレイアウト
 /// width によってサイズが違う
 SWIFT_CLASS("_TtC13NautilusUISDK22NautilusAppTabViewCell")
 @interface NautilusAppTabViewCell : UICollectionViewCell
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-@property (nonatomic, getter=isSelected) BOOL selected;
-- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @protocol NautilusAppTopBarDelegate;
@@ -540,6 +442,7 @@ SWIFT_PROTOCOL("_TtP13NautilusUISDK25NautilusAppTopBarDelegate_")
 - (void)appTopBar:(NautilusAppTopBar * _Nonnull)appTopBar didSelectedAt:(NSInteger)index;
 @end
 
+@class UIPageViewController;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC13NautilusUISDK27NautilusAppTopBarController")
@@ -612,14 +515,6 @@ SWIFT_CLASS("_TtC13NautilusUISDK40NautilusBottomSheetContentViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
-
-
-SWIFT_CLASS("_TtC13NautilusUISDK16NautilusCategory")
-@interface NautilusCategory : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 
 @protocol NautilusCheckBoxGroupDataSource;
 @protocol NautilusCheckBoxGroupDelegate;
@@ -818,6 +713,8 @@ SWIFT_PROTOCOL("_TtP13NautilusUISDK29NautilusDropdownGroupDelegate_")
 
 @protocol NautilusGridViewDataSource;
 @protocol NautilusGridViewDelegate;
+@class UICollectionView;
+@class NSIndexPath;
 
 SWIFT_CLASS("_TtC13NautilusUISDK16NautilusGridView")
 @interface NautilusGridView : UIView <UICollectionViewDataSource, UICollectionViewDelegate>
@@ -1418,17 +1315,6 @@ SWIFT_PROTOCOL("_TtP13NautilusUISDK40NautilusYearMonthDatePickerGroupDelegate_")
 /// ピッカーがクリアされた時に呼ばれます
 - (void)yearMonthDatePickerGroupDidClear:(NautilusYearMonthDatePickerGroup * _Nonnull)pickerGroup;
 @end
-
-typedef SWIFT_ENUM(NSInteger, NoneCategory, open) {
-  NoneCategoryRemoveMargin = 0,
-  NoneCategoryAddAllTab = 1,
-};
-
-typedef SWIFT_ENUM(NSInteger, TransitionStyle, open) {
-  TransitionStyleDialog = 0,
-  TransitionStyleFullscreen = 1,
-  TransitionStyleNotHaveDetail = 2,
-};
 
 
 

@@ -294,11 +294,6 @@ public typealias NautilusCameraPermissionCompletionHandler = ((Swift.Bool) -> Sw
   @objc var shouldCloseScreenWhenDenied: Swift.Bool { get }
   @objc func requestCameraPermission(completion: @escaping NautilusCoreSDK.NautilusCameraPermissionCompletionHandler)
 }
-@_hasMissingDesignatedInitializers final public class LifeCycleNotificationCenter {
-  public static let shared: NautilusCoreSDK.LifeCycleNotificationCenter
-  final public func setup()
-  @objc deinit
-}
 public enum NautilusAppInfo {
   public static var appBundleIdentifier: Swift.String {
     get

@@ -277,12 +277,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreFoundation;
 @import Foundation;
 @import NautilusContainerSDK;
 @import NautilusCoreSDK;
 @import ObjectiveC;
-@import UIKit;
 #endif
 
 #endif
@@ -303,13 +301,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-
-SWIFT_CLASS("_TtC17NautilusCouponSDK8CardType")
-@interface CardType : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 SWIFT_CLASS("_TtC17NautilusCouponSDK25CustomCellCouponImageList")
@@ -722,48 +713,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (void)getPointPrizeCouponListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
 @end
 
-@class UIImageView;
-@class UILabel;
-@class UIButton;
-@class UIView;
-@class NSCoder;
-
-/// クーポンセルクラスの基底クラス
-SWIFT_CLASS("_TtC17NautilusCouponSDK22NautilusCouponBaseCell")
-@interface NautilusCouponBaseCell : UICollectionViewCell
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified couponCoverImageView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified couponTitleLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified couponExpirePeriodLabel;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified couponFavoriteButton;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified couponCoverImageOverlayView;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified couponCoverImageOverlayImageView;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 /// クーポンカテゴリーのデータ
 SWIFT_CLASS("_TtC17NautilusCouponSDK26NautilusCouponCategoryInfo")
 @interface NautilusCouponCategoryInfo : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class NSNumber;
-
-/// セル内のボタンタップ時の処理
-SWIFT_PROTOCOL("_TtP17NautilusCouponSDK31NautilusCouponCellActionHandler_")
-@protocol NautilusCouponCellActionHandler
-- (void)addFavoriteWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
-- (void)removeFavoriteWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
-- (void)showCouponUseConditionWithCouponIDInfo:(NautilusCouponIDInfo * _Nonnull)couponIDInfo;
-- (void)useCouponWithCouponID:(NSInteger)couponID type:(enum NautilusCouponPublishType)type exchangeID:(NSNumber * _Nullable)exchangeID;
-- (void)toggleCouponUseViewWithCell:(NautilusCouponBaseCell * _Nonnull)cell couponID:(NSInteger)couponID;
-@end
-
-
-SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponData")
-@interface NautilusCouponData : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1094,11 +1047,6 @@ typedef SWIFT_ENUM(NSInteger, PublishTiming, open) {
   PublishTimingFirstDownload = 2,
   PublishTimingCardPublication = 3,
   PublishTimingCodePublication = 4,
-};
-
-typedef SWIFT_ENUM(NSInteger, SectionType, open) {
-  SectionTypeUseStatus = 0,
-  SectionTypeNone = 1,
 };
 
 
@@ -1390,12 +1338,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreFoundation;
 @import Foundation;
 @import NautilusContainerSDK;
 @import NautilusCoreSDK;
 @import ObjectiveC;
-@import UIKit;
 #endif
 
 #endif
@@ -1416,13 +1362,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-
-SWIFT_CLASS("_TtC17NautilusCouponSDK8CardType")
-@interface CardType : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 SWIFT_CLASS("_TtC17NautilusCouponSDK25CustomCellCouponImageList")
@@ -1835,48 +1774,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (void)getPointPrizeCouponListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
 @end
 
-@class UIImageView;
-@class UILabel;
-@class UIButton;
-@class UIView;
-@class NSCoder;
-
-/// クーポンセルクラスの基底クラス
-SWIFT_CLASS("_TtC17NautilusCouponSDK22NautilusCouponBaseCell")
-@interface NautilusCouponBaseCell : UICollectionViewCell
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified couponCoverImageView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified couponTitleLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified couponExpirePeriodLabel;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified couponFavoriteButton;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified couponCoverImageOverlayView;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified couponCoverImageOverlayImageView;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 /// クーポンカテゴリーのデータ
 SWIFT_CLASS("_TtC17NautilusCouponSDK26NautilusCouponCategoryInfo")
 @interface NautilusCouponCategoryInfo : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class NSNumber;
-
-/// セル内のボタンタップ時の処理
-SWIFT_PROTOCOL("_TtP17NautilusCouponSDK31NautilusCouponCellActionHandler_")
-@protocol NautilusCouponCellActionHandler
-- (void)addFavoriteWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
-- (void)removeFavoriteWithCoupon:(NautilusCouponInfo * _Nonnull)coupon;
-- (void)showCouponUseConditionWithCouponIDInfo:(NautilusCouponIDInfo * _Nonnull)couponIDInfo;
-- (void)useCouponWithCouponID:(NSInteger)couponID type:(enum NautilusCouponPublishType)type exchangeID:(NSNumber * _Nullable)exchangeID;
-- (void)toggleCouponUseViewWithCell:(NautilusCouponBaseCell * _Nonnull)cell couponID:(NSInteger)couponID;
-@end
-
-
-SWIFT_CLASS("_TtC17NautilusCouponSDK18NautilusCouponData")
-@interface NautilusCouponData : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2207,11 +2108,6 @@ typedef SWIFT_ENUM(NSInteger, PublishTiming, open) {
   PublishTimingFirstDownload = 2,
   PublishTimingCardPublication = 3,
   PublishTimingCodePublication = 4,
-};
-
-typedef SWIFT_ENUM(NSInteger, SectionType, open) {
-  SectionTypeUseStatus = 0,
-  SectionTypeNone = 1,
 };
 
 
