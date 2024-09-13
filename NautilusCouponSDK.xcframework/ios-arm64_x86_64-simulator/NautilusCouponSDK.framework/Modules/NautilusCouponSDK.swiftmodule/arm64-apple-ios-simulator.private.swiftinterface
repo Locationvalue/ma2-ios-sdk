@@ -143,6 +143,16 @@ public let NautilusCouponErrorDomain: Swift.String
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  public enum CouponNotification {
+    public static let updateCouponFavoriteState: Foundation.Notification.Name
+    public static let updateCouponUseState: Foundation.Notification.Name
+    public enum UserInfoKey {
+      public static let couponID: Swift.String
+      public static let couponFavorite: Swift.String
+      public static let exchangeID: Swift.String
+      public static let couponData: Swift.String
+    }
+  }
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -227,6 +237,7 @@ extension NautilusCouponSDK.NautilusCoupon {
   @objc final public func calculateUsedCouponValidEndDate(of coupon: NautilusCouponSDK.NautilusCouponInfo) -> Foundation.Date?
   @objc final public func isValidUsedCoupon(_ coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
   @objc final public func calculateUsedCouponValidDurationFromNow(of coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Int
+  @discardableResult
   @objc final public func registerCouponUseValidObserver(_ observer: any NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool
   @discardableResult
   @objc final public func unregisterCouponUseValidObserver(_ observer: any NautilusCouponSDK.NautilusCouponUseValidObserver, for coupon: NautilusCouponSDK.NautilusCouponInfo) -> Swift.Bool

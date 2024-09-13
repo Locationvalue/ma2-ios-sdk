@@ -596,7 +596,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたクーポン件数を取得する
 ///
-/// \param prizeCouponList 景品クーポン情報の配列（交換IDを指定する場合は指定してください）
+/// \param prizeCouponIDList 景品クーポン情報の配列（交換IDを指定する場合は指定してください）
 ///
 /// \param completion 成功時はクーポンの件数, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
@@ -687,7 +687,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// 正常にオブザーバーの登録ができれば、<code>true</code>が返る。クーポンが利用済みではない、クーポンの利用期限が既に切れている、など、登録ができなかった場合は、<code>false</code>が返る。
-- (BOOL)registerCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)registerCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon;
 /// クーポンの有効期間が終了後に通知を受け取るオブザーバーの登録を解除する
 /// \param observer クーポンの有効期限が切れた後に通知を受け取るオブザーバーのインスタンス
 ///
@@ -1657,7 +1657,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param checkDateTime 取得基準時刻. 基準時刻後に配信されたクーポン件数を取得する
 ///
-/// \param prizeCouponList 景品クーポン情報の配列（交換IDを指定する場合は指定してください）
+/// \param prizeCouponIDList 景品クーポン情報の配列（交換IDを指定する場合は指定してください）
 ///
 /// \param completion 成功時はクーポンの件数, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
@@ -1748,7 +1748,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// 正常にオブザーバーの登録ができれば、<code>true</code>が返る。クーポンが利用済みではない、クーポンの利用期限が既に切れている、など、登録ができなかった場合は、<code>false</code>が返る。
-- (BOOL)registerCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)registerCouponUseValidObserver:(id <NautilusCouponUseValidObserver> _Nonnull)observer for:(NautilusCouponInfo * _Nonnull)coupon;
 /// クーポンの有効期間が終了後に通知を受け取るオブザーバーの登録を解除する
 /// \param observer クーポンの有効期限が切れた後に通知を受け取るオブザーバーのインスタンス
 ///
