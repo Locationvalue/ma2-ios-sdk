@@ -4723,6 +4723,71 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "areaAlias",
+            "printedName": "areaAlias",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25NautilusCollectionCardSDK0A30MemberSettingSelectedImageDataC9areaAliasSSSgvp",
+            "mangledName": "$s25NautilusCollectionCardSDK0A30MemberSettingSelectedImageDataC9areaAliasSSSgvp",
+            "moduleName": "NautilusCollectionCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25NautilusCollectionCardSDK0A30MemberSettingSelectedImageDataC9areaAliasSSSgvg",
+                "mangledName": "$s25NautilusCollectionCardSDK0A30MemberSettingSelectedImageDataC9areaAliasSSSgvg",
+                "moduleName": "NautilusCollectionCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -7862,37 +7927,44 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CollectionCard\/Sources\/API\/Entity\/GetMemberSettingCollectionCardEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1770,
+      "offset": 1806,
       "length": 10,
       "value": "\"image_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CollectionCard\/Sources\/API\/Entity\/GetMemberSettingCollectionCardEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1800,
+      "offset": 1836,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CollectionCard\/Sources\/API\/Entity\/GetMemberSettingCollectionCardEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1827,
+      "offset": 1863,
       "length": 7,
       "value": "\"title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CollectionCard\/Sources\/API\/Entity\/GetMemberSettingCollectionCardEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1865,
+      "offset": 1901,
       "length": 18,
       "value": "\"update_date_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CollectionCard\/Sources\/API\/Entity\/GetMemberSettingCollectionCardEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1915,
+      "offset": 1951,
       "length": 19,
       "value": "\"granted_date_time\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/CollectionCard\/Sources\/API\/Entity\/GetMemberSettingCollectionCardEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1996,
+      "length": 12,
+      "value": "\"area_alias\""
     }
   ]
 }
