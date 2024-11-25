@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "NautilusBannerSDK",
-    "printedName": "NautilusBannerSDK",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -135,9 +135,8 @@
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "ReferenceOwnership",
               "AccessControl",
               "RawDocComment"
@@ -250,9 +249,8 @@
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -359,7 +357,6 @@
             "mangledName": "$s17NautilusBannerSDK0aB4ViewC7prepare3foryAA0aB0C_tF",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -372,7 +369,6 @@
         "mangledName": "$s17NautilusBannerSDK0aB4ViewC",
         "moduleName": "NautilusBannerSDK",
         "declAttributes": [
-          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -387,20 +383,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -782,20 +764,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1017,20 +985,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1825,20 +1779,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2103,20 +2043,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2393,22 +2319,6 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -2842,48 +2752,6 @@
           },
           {
             "kind": "Var",
-            "name": "illegalConfiguration",
-            "printedName": "illegalConfiguration",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(NautilusBannerSDK.NautilusBannerError.Type) -> NautilusBannerSDK.NautilusBannerError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusBannerError",
-                    "printedName": "NautilusBannerSDK.NautilusBannerError",
-                    "usr": "c:@M@NautilusBannerSDK@E@NautilusBannerError"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "NautilusBannerSDK.NautilusBannerError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NautilusBannerError",
-                        "printedName": "NautilusBannerSDK.NautilusBannerError",
-                        "usr": "c:@M@NautilusBannerSDK@E@NautilusBannerError"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@NautilusBannerSDK@E@NautilusBannerError@NautilusBannerErrorIllegalConfiguration",
-            "mangledName": "$s17NautilusBannerSDK0aB5ErrorO20illegalConfigurationyA2CmF",
-            "moduleName": "NautilusBannerSDK",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 9
-          },
-          {
-            "kind": "Var",
             "name": "invalidParameters",
             "printedName": "invalidParameters",
             "children": [
@@ -2922,7 +2790,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -2964,7 +2832,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -3006,7 +2874,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -3048,7 +2916,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -3090,7 +2958,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -3132,7 +3000,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -3174,7 +3042,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -3216,7 +3084,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -3258,7 +3126,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -3425,20 +3293,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3730,20 +3584,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3888,20 +3728,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5310,20 +5136,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5759,20 +5571,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5885,7 +5683,6 @@
             "moduleName": "NautilusBannerSDK",
             "static": true,
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl",
@@ -5913,7 +5710,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -5940,7 +5736,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -5972,7 +5767,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6004,7 +5798,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6036,7 +5829,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6049,7 +5841,6 @@
         "mangledName": "$s17NautilusBannerSDK0aB12CarouselViewC",
         "moduleName": "NautilusBannerSDK",
         "declAttributes": [
-          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -6065,20 +5856,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6348,9 +6125,8 @@
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -6443,7 +6219,6 @@
             "moduleName": "NautilusBannerSDK",
             "static": true,
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl",
@@ -6471,7 +6246,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -6498,7 +6272,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -6528,7 +6301,6 @@
             "moduleName": "NautilusBannerSDK",
             "overriding": true,
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -6541,7 +6313,6 @@
         "mangledName": "$s17NautilusBannerSDK0aB8ListViewC",
         "moduleName": "NautilusBannerSDK",
         "declAttributes": [
-          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -6557,20 +6328,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6699,6 +6456,27 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
       "kind": "StringLiteral",
+      "offset": 433,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 459,
+      "length": 5,
+      "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 486,
+      "length": 7,
+      "value": "\"items\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
       "offset": 1694,
       "length": 11,
       "value": "\"banner_id\""
@@ -6790,6 +6568,104 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
       "kind": "StringLiteral",
+      "offset": 1694,
+      "length": 11,
+      "value": "\"banner_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1739,
+      "length": 21,
+      "value": "\"banner_manage_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1797,
+      "length": 24,
+      "value": "\"publish_start_datetime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1856,
+      "length": 22,
+      "value": "\"publish_end_datetime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1904,
+      "length": 12,
+      "value": "\"image_path\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1943,
+      "length": 13,
+      "value": "\"category_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1979,
+      "length": 9,
+      "value": "\"sort_no\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2013,
+      "length": 11,
+      "value": "\"link_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2049,
+      "length": 11,
+      "value": "\"web_param\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2085,
+      "length": 11,
+      "value": "\"app_trans\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2119,
+      "length": 8,
+      "value": "\"cohort\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2149,
+      "length": 7,
+      "value": "\"alias\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2178,
+      "length": 8,
+      "value": "\"ga_tag\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 942,
+      "length": 10,
+      "value": "\"NautilusBannerSDK.BannerInfo\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
       "offset": 3643,
       "length": 10,
       "value": "\"link_url\""
@@ -6811,9 +6687,51 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
       "kind": "StringLiteral",
+      "offset": 3643,
+      "length": 10,
+      "value": "\"link_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 3685,
+      "length": 19,
+      "value": "\"app_browser_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 3727,
+      "length": 13,
+      "value": "\"flg_use_cid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 3371,
+      "length": 7,
+      "value": "\"NautilusBannerSDK.WebInfo\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
       "offset": 4274,
       "length": 13,
       "value": "\"trans_param\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4274,
+      "length": 13,
+      "value": "\"trans_param\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4133,
+      "length": 9,
+      "value": "\"NautilusBannerSDK.TransInfo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerView.swift",
@@ -6828,6 +6746,20 @@
       "offset": 1895,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 240,
+      "length": 17,
+      "value": "\"NautilusBannerSDK.NautilusBannerLog\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1282,
+      "length": 3,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerLog.swift",
@@ -6849,6 +6781,41 @@
       "offset": 447,
       "length": 5,
       "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerActionLogEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 421,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerActionLogEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 447,
+      "length": 5,
+      "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 222,
+      "length": 18,
+      "value": "\"NautilusBannerSDK.NautilusBannerInfo\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1928,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1984,
+      "length": 8,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerInfo.swift",
@@ -6930,107 +6897,198 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3361,
-      "length": 20,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3464,
+      "offset": 3389,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3549,
+      "offset": 3474,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3638,
+      "offset": 3563,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3695,
+      "offset": 3620,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3759,
+      "offset": 3684,
       "length": 3,
       "value": "901"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3834,
+      "offset": 3759,
       "length": 3,
       "value": "903"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3888,
+      "offset": 3813,
       "length": 3,
       "value": "905"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3943,
+      "offset": 3868,
       "length": 3,
       "value": "906"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 4023,
+      "offset": 3948,
       "length": 3,
       "value": "907"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2865,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2912,
+      "length": 8,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2957,
+      "length": 15,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3016,
+      "length": 14,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3085,
+      "length": 12,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3173,
+      "length": 13,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3229,
+      "length": 16,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3291,
+      "length": 15,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3389,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3474,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3563,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3620,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3684,
+      "length": 3,
+      "value": "901"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3759,
+      "length": 3,
+      "value": "903"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3813,
+      "length": 3,
+      "value": "905"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3868,
+      "length": 3,
+      "value": "906"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3948,
+      "length": 3,
+      "value": "907"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 519,
-      "length": 24,
-      "value": "\"moduleapps-banner.json\""
+      "offset": 4085,
+      "length": 21,
+      "value": "\"NautilusBannerSDK.NautilusBannerWebLink\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 930,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1020,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1111,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1195,
-      "length": 4,
-      "value": "true"
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4466,
+      "length": 21,
+      "value": "\"NautilusBannerSDK.NautilusBannerAppLink\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
@@ -7052,6 +7110,13 @@
       "offset": 3212,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 414,
+      "length": 14,
+      "value": "\"NautilusBannerSDK.NautilusBanner\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBanner.swift",
@@ -7110,11 +7175,81 @@
       "value": "\"ma_banner_list_show_placeholder_image_if_no_banners\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Config\/NautilusBannerConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 32,
+      "value": "\"ma_banner_network_timeout_time\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Config\/NautilusBannerConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
+      "length": 36,
+      "value": "\"ma_banner_carousel_scroll_interval\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Config\/NautilusBannerConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 474,
+      "length": 57,
+      "value": "\"ma_banner_carousel_show_placeholder_image_if_no_banners\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Config\/NautilusBannerConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 575,
+      "length": 42,
+      "value": "\"ma_banner_carousel_image_indicator_style\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Config\/NautilusBannerConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 652,
+      "length": 32,
+      "value": "\"ma_banner_list_default_spacing\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Config\/NautilusBannerConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 736,
+      "length": 53,
+      "value": "\"ma_banner_list_show_placeholder_image_if_no_banners\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerCategory.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 22,
+      "value": "\"NautilusBannerSDK.NautilusBannerCategory\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerCarouselView.swift",
       "kind": "StringLiteral",
       "offset": 409,
       "length": 14,
       "value": "\"CarouselView\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 457,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 483,
+      "length": 5,
+      "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 510,
+      "length": 7,
+      "value": "\"items\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
@@ -7178,6 +7313,55 @@
       "offset": 1414,
       "length": 7,
       "value": "\"alias\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1212,
+      "length": 11,
+      "value": "\"hierarchy\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1256,
+      "length": 20,
+      "value": "\"parent_category_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1303,
+      "length": 13,
+      "value": "\"category_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1345,
+      "length": 15,
+      "value": "\"category_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1383,
+      "length": 9,
+      "value": "\"sort_no\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1414,
+      "length": 7,
+      "value": "\"alias\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/API\/Entity\/BannerCategoryListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 935,
+      "length": 16,
+      "value": "\"NautilusBannerSDK.BannerCategories\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerViewModel.swift",
