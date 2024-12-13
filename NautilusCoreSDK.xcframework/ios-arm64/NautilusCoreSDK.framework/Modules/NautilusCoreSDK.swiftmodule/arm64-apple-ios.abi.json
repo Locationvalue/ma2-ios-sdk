@@ -206,6 +206,204 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "NautilusAppNotificationInfo",
+        "printedName": "NautilusAppNotificationInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pushID",
+            "printedName": "pushID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A19AppNotificationInfoC6pushIDSivp",
+            "mangledName": "$s15NautilusCoreSDK0A19AppNotificationInfoC6pushIDSivp",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A19AppNotificationInfoC6pushIDSivg",
+                "mangledName": "$s15NautilusCoreSDK0A19AppNotificationInfoC6pushIDSivg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(pushID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusAppNotificationInfo",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NautilusCoreSDK0A19AppNotificationInfoC6pushIDACSi_tcfc",
+            "mangledName": "$s15NautilusCoreSDK0A19AppNotificationInfoC6pushIDACSi_tcfc",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusAppNotificationInfo",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo(im)init",
+            "mangledName": "$s15NautilusCoreSDK0A19AppNotificationInfoCACycfc",
+            "moduleName": "NautilusCoreSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo",
+        "mangledName": "$s15NautilusCoreSDK0A19AppNotificationInfoC",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "NautilusRequestPolicy",
         "printedName": "NautilusRequestPolicy",
         "children": [
@@ -9802,6 +10000,80 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "setDeletePushID",
+            "printedName": "setDeletePushID(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusApp(im)setDeletePushID:",
+            "mangledName": "$s15NautilusCoreSDK0A3AppC15setDeletePushIDyySiF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeletePushID",
+            "printedName": "getDeletePushID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A3AppC15getDeletePushIDSiyF",
+            "mangledName": "$s15NautilusCoreSDK0A3AppC15getDeletePushIDSiyF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeDeletePushID",
+            "printedName": "removeDeletePushID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A3AppC18removeDeletePushIDyyF",
+            "mangledName": "$s15NautilusCoreSDK0A3AppC18removeDeletePushIDyyF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "sdkVersionString",
             "printedName": "sdkVersionString",
@@ -18715,6 +18987,20 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppNavigationSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 42,
+      "value": "\"__nautilus_notification_delete_push_id__\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusAppNavigationSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 323,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Network\/NautilusRequestPolicy.swift",
       "kind": "FloatLiteral",
       "offset": 702,
@@ -19074,14 +19360,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "StringLiteral",
-      "offset": 15246,
+      "offset": 15967,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusApp.swift",
       "kind": "StringLiteral",
-      "offset": 15471,
+      "offset": 16192,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },

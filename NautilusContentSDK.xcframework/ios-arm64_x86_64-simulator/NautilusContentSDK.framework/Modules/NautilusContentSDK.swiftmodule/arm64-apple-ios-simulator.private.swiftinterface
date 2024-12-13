@@ -77,7 +77,7 @@ import _SwiftConcurrencyShims
   @objc final public func instantiateContentListViewController(categoryID: Swift.Int, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
   @objc final public func instantiateContentListViewController(categoryAlias: Swift.String?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
   @objc final public func instantiateFavoriteContentListViewController() -> UIKit.UIViewController
-  @objc final public func instantiateContentDetailViewController(contentID: Swift.Int, contentType: NautilusContentSDK.NautilusContentType) -> UIKit.UIViewController
+  @objc final public func instantiateContentDetailViewController(contentID: Swift.Int, contentType: NautilusContentSDK.NautilusContentType, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
   @available(*, deprecated, renamed: "getCommonContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)")
   final public func getCommonContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
   final public func getCommonContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)

@@ -327,6 +327,7 @@ SWIFT_PROTOCOL("_TtP23NautilusStampRallyUISDK32NautilusSpotListPinImageProvider_
 @class NautilusApp;
 @class NautilusStampRallyInfo;
 @class UIViewController;
+@class NautilusAppNotificationInfo;
 
 /// ルーターから、スタンプラリー詳細画面を生成するためのプロトコル
 SWIFT_PROTOCOL("_TtP23NautilusStampRallyUISDK38NautilusStampRallyDetailInstantiatable_")
@@ -342,6 +343,19 @@ SWIFT_PROTOCOL("_TtP23NautilusStampRallyUISDK38NautilusStampRallyDetailInstantia
 /// returns:
 /// カスタムスタンプ詳細画面
 + (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
+/// スタンプラリー詳細画面を生成する
+/// \param app SDKのインスタンス
+///
+/// \param stampRallyID スタンプラリーID
+///
+/// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// カスタムスタンプ詳細画面
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class NSString;
@@ -359,15 +373,16 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK38NautilusStampRallyDetailViewControll
 
 
 
-@interface NautilusStampRallyDetailViewController (SWIFT_EXTENSION(NautilusStampRallyUISDK)) <NautilusStampRallyDetailInstantiatable>
-+ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 
 @interface NautilusStampRallyDetailViewController (SWIFT_EXTENSION(NautilusStampRallyUISDK)) <NautilusCodeReaderHandler>
 - (BOOL)codeReaderHandle:(UIViewController * _Nonnull)viewController codeText:(NSString * _Nonnull)codeText SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)handleCodeDetectionError:(UIViewController * _Nonnull)viewController error:(enum NautilusCodeReaderError)error SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface NautilusStampRallyDetailViewController (SWIFT_EXTENSION(NautilusStampRallyUISDK)) <NautilusStampRallyDetailInstantiatable>
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -481,6 +496,17 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 /// returns:
 /// スタンプラリー詳細画面
 - (UIViewController * _Nonnull)instantiateStampRallyDetailWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
+/// スタンプラリー詳細画面を生成する
+/// \param stampRallyID スタンプラリーID
+///
+/// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// スタンプラリー詳細画面
+- (UIViewController * _Nonnull)instantiateStampRallyDetailWithStampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// コードリーダー画面に遷移する
 /// \param setting コードリーダー画面の表示設定
 ///
@@ -516,6 +542,17 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 /// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
 ///
 - (void)routeStampRallyDetailWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton in:(UIViewController * _Nonnull)viewController;
+/// スタンプラリー詳細画面に遷移する
+/// モーダル遷移(fullScreen)
+/// \param stampRallyID スタンプラリーID
+///
+/// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeStampRallyDetailWithStampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo in:(UIViewController * _Nonnull)viewController;
 /// コードリーダー画面に遷移する
 /// \param setting コードリーダー画面の表示設定
 ///
@@ -981,6 +1018,7 @@ SWIFT_PROTOCOL("_TtP23NautilusStampRallyUISDK32NautilusSpotListPinImageProvider_
 @class NautilusApp;
 @class NautilusStampRallyInfo;
 @class UIViewController;
+@class NautilusAppNotificationInfo;
 
 /// ルーターから、スタンプラリー詳細画面を生成するためのプロトコル
 SWIFT_PROTOCOL("_TtP23NautilusStampRallyUISDK38NautilusStampRallyDetailInstantiatable_")
@@ -996,6 +1034,19 @@ SWIFT_PROTOCOL("_TtP23NautilusStampRallyUISDK38NautilusStampRallyDetailInstantia
 /// returns:
 /// カスタムスタンプ詳細画面
 + (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
+/// スタンプラリー詳細画面を生成する
+/// \param app SDKのインスタンス
+///
+/// \param stampRallyID スタンプラリーID
+///
+/// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// カスタムスタンプ詳細画面
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class NSString;
@@ -1013,15 +1064,16 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK38NautilusStampRallyDetailViewControll
 
 
 
-@interface NautilusStampRallyDetailViewController (SWIFT_EXTENSION(NautilusStampRallyUISDK)) <NautilusStampRallyDetailInstantiatable>
-+ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 
 @interface NautilusStampRallyDetailViewController (SWIFT_EXTENSION(NautilusStampRallyUISDK)) <NautilusCodeReaderHandler>
 - (BOOL)codeReaderHandle:(UIViewController * _Nonnull)viewController codeText:(NSString * _Nonnull)codeText SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)handleCodeDetectionError:(UIViewController * _Nonnull)viewController error:(enum NautilusCodeReaderError)error SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface NautilusStampRallyDetailViewController (SWIFT_EXTENSION(NautilusStampRallyUISDK)) <NautilusStampRallyDetailInstantiatable>
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1135,6 +1187,17 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 /// returns:
 /// スタンプラリー詳細画面
 - (UIViewController * _Nonnull)instantiateStampRallyDetailWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
+/// スタンプラリー詳細画面を生成する
+/// \param stampRallyID スタンプラリーID
+///
+/// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// スタンプラリー詳細画面
+- (UIViewController * _Nonnull)instantiateStampRallyDetailWithStampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// コードリーダー画面に遷移する
 /// \param setting コードリーダー画面の表示設定
 ///
@@ -1170,6 +1233,17 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 /// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
 ///
 - (void)routeStampRallyDetailWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton in:(UIViewController * _Nonnull)viewController;
+/// スタンプラリー詳細画面に遷移する
+/// モーダル遷移(fullScreen)
+/// \param stampRallyID スタンプラリーID
+///
+/// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeStampRallyDetailWithStampRallyID:(NSInteger)stampRallyID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo in:(UIViewController * _Nonnull)viewController;
 /// コードリーダー画面に遷移する
 /// \param setting コードリーダー画面の表示設定
 ///

@@ -351,6 +351,7 @@ SWIFT_CLASS("_TtC20NautilusLotteryUISDK33NautilusLotteryListViewController")
 @class NautilusComponentDependency;
 @class NautilusApp;
 @class NSError;
+@class NautilusAppNotificationInfo;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC20NautilusLotteryUISDK17NautilusLotteryUI")
@@ -390,27 +391,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param lotteryID 抽選詳細画面に表示する抽選のデータの抽選ID
 ///
-- (void)presentLotteryDetailViewControllerIn:(UIViewController * _Nonnull)viewController lotteryID:(NSInteger)lotteryID;
+- (void)presentLotteryDetailViewControllerIn:(UIViewController * _Nonnull)viewController lotteryID:(NSInteger)lotteryID notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo;
 /// 抽選詳細画面を生成する
 /// \param lotteryID 抽選詳細画面に表示する抽選のデータの抽選ID
 ///
 ///
 /// returns:
 /// 抽選詳細画面
-- (NautilusLotteryDetailViewController * _Nonnull)instantiateLotteryDetailViewControllerWithLotteryID:(NSInteger)lotteryID SWIFT_WARN_UNUSED_RESULT;
+- (NautilusLotteryDetailViewController * _Nonnull)instantiateLotteryDetailViewControllerWithLotteryID:(NSInteger)lotteryID notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// 抽選詳細画面を表示する
 /// \param viewController 抽選詳細画面を表示するView Controller
 ///
 /// \param lottery 抽選詳細画面に表示する抽選のデータ
 ///
-- (void)presentLotteryDetailViewControllerIn:(UIViewController * _Nonnull)viewController lottery:(NautilusLotteryInfo * _Nonnull)lottery;
+- (void)presentLotteryDetailViewControllerIn:(UIViewController * _Nonnull)viewController lottery:(NautilusLotteryInfo * _Nonnull)lottery notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo;
 /// 抽選詳細画面を生成する
 /// \param lottery 抽選詳細画面に表示する抽選のデータ
 ///
 ///
 /// returns:
 /// 抽選詳細画面
-- (NautilusLotteryDetailViewController * _Nonnull)instantiateLotteryDetailViewControllerWithLottery:(NautilusLotteryInfo * _Nonnull)lottery SWIFT_WARN_UNUSED_RESULT;
+- (NautilusLotteryDetailViewController * _Nonnull)instantiateLotteryDetailViewControllerWithLottery:(NautilusLotteryInfo * _Nonnull)lottery notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -802,6 +803,7 @@ SWIFT_CLASS("_TtC20NautilusLotteryUISDK33NautilusLotteryListViewController")
 @class NautilusComponentDependency;
 @class NautilusApp;
 @class NSError;
+@class NautilusAppNotificationInfo;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC20NautilusLotteryUISDK17NautilusLotteryUI")
@@ -841,27 +843,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param lotteryID 抽選詳細画面に表示する抽選のデータの抽選ID
 ///
-- (void)presentLotteryDetailViewControllerIn:(UIViewController * _Nonnull)viewController lotteryID:(NSInteger)lotteryID;
+- (void)presentLotteryDetailViewControllerIn:(UIViewController * _Nonnull)viewController lotteryID:(NSInteger)lotteryID notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo;
 /// 抽選詳細画面を生成する
 /// \param lotteryID 抽選詳細画面に表示する抽選のデータの抽選ID
 ///
 ///
 /// returns:
 /// 抽選詳細画面
-- (NautilusLotteryDetailViewController * _Nonnull)instantiateLotteryDetailViewControllerWithLotteryID:(NSInteger)lotteryID SWIFT_WARN_UNUSED_RESULT;
+- (NautilusLotteryDetailViewController * _Nonnull)instantiateLotteryDetailViewControllerWithLotteryID:(NSInteger)lotteryID notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// 抽選詳細画面を表示する
 /// \param viewController 抽選詳細画面を表示するView Controller
 ///
 /// \param lottery 抽選詳細画面に表示する抽選のデータ
 ///
-- (void)presentLotteryDetailViewControllerIn:(UIViewController * _Nonnull)viewController lottery:(NautilusLotteryInfo * _Nonnull)lottery;
+- (void)presentLotteryDetailViewControllerIn:(UIViewController * _Nonnull)viewController lottery:(NautilusLotteryInfo * _Nonnull)lottery notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo;
 /// 抽選詳細画面を生成する
 /// \param lottery 抽選詳細画面に表示する抽選のデータ
 ///
 ///
 /// returns:
 /// 抽選詳細画面
-- (NautilusLotteryDetailViewController * _Nonnull)instantiateLotteryDetailViewControllerWithLottery:(NautilusLotteryInfo * _Nonnull)lottery SWIFT_WARN_UNUSED_RESULT;
+- (NautilusLotteryDetailViewController * _Nonnull)instantiateLotteryDetailViewControllerWithLottery:(NautilusLotteryInfo * _Nonnull)lottery notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

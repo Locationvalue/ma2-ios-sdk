@@ -367,6 +367,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 /// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count checkDate:(NSDate * _Nonnull)checkDate completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
+/// プッシュ通知履歴を削除する
+/// \param pushIDs 削除対象のプッシュIDの配列
+///
+/// \param completion 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)deleteHistoryWithPushIDs:(NSArray<NSNumber *> * _Nonnull)pushIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -830,6 +836,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 /// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count checkDate:(NSDate * _Nonnull)checkDate completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
+/// プッシュ通知履歴を削除する
+/// \param pushIDs 削除対象のプッシュIDの配列
+///
+/// \param completion 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)deleteHistoryWithPushIDs:(NSArray<NSNumber *> * _Nonnull)pushIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

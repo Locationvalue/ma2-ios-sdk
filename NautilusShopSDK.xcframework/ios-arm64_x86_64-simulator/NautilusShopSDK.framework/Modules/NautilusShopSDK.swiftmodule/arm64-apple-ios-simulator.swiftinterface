@@ -24,6 +24,8 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public protocol NautilusShopDetailInstantiatable {
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, shopInfo: NautilusShopSDK.NautilusShopInfo) -> UIKit.UIViewController
+  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, shopID: Swift.Int, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
+  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, clientShopCode: Swift.String, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
 }
 @objc public protocol NautilusShopSearchTagFilteringOperation {
   @objc func transformSearchCondition(tags: [NautilusShopSDK.NautilusShopSearchTagInfo]) -> [[NautilusShopSDK.NautilusShopSearchTagInfo]]
@@ -298,7 +300,11 @@ public let NautilusShopErrorDomain: Swift.String
   @objc final public func register(screen: NautilusShopSDK.NautilusShopRoutableScreen, viewControllerClass: UIKit.UIViewController.Type)
   @objc final public func unregister(screen: NautilusShopSDK.NautilusShopRoutableScreen)
   @objc final public func instantiateShopDetail(shopInfo: NautilusShopSDK.NautilusShopInfo) -> UIKit.UIViewController
+  @objc final public func instantiateShopDetail(shopID: Swift.Int, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
+  @objc final public func instantiateShopDetail(clientShopCode: Swift.String, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
   @objc final public func routeShopDetail(shopInfo: NautilusShopSDK.NautilusShopInfo, in viewController: UIKit.UIViewController)
+  @objc final public func routeShopDetail(shopID: Swift.Int, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil, in viewController: UIKit.UIViewController)
+  @objc final public func routeShopDetail(clientShopCode: Swift.String, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil, in viewController: UIKit.UIViewController)
   @objc deinit
 }
 extension NautilusShopSDK.NautilusShopRoutableScreen : Swift.Equatable {}

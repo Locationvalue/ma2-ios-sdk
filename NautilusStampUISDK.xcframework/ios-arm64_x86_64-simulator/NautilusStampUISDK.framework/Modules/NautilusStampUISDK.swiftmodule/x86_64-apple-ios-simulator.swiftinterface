@@ -71,10 +71,12 @@ extension NautilusStampUISDK.NautilusStampCardDetailViewController : NautilusCod
   @_Concurrency.MainActor @preconcurrency @objc final public func handleCodeDetectionError(_ viewController: UIKit.UIViewController, error: NautilusCodeReaderSDK.NautilusCodeReaderError) -> Swift.Bool
 }
 extension NautilusStampUISDK.NautilusStampCardDetailViewController : NautilusStampUISDK.NautilusStampCardDetailInstantiatable {
+  @_Concurrency.MainActor @preconcurrency @objc public static func instantiate(app: NautilusCoreSDK.NautilusApp, stampCardID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
   @_Concurrency.MainActor @preconcurrency @objc public static func instantiate(app: NautilusCoreSDK.NautilusApp, stampCard: NautilusStampSDK.NautilusStampCardInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
 }
 @objc public protocol NautilusStampCardDetailInstantiatable {
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, stampCard: NautilusStampSDK.NautilusStampCardInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
+  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, stampCardID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
 }
 @objc public enum NautilusStampRoutableScreen : Swift.Int, Swift.CaseIterable {
   case stampCardList
@@ -109,9 +111,11 @@ extension NautilusStampUISDK.NautilusStampCardListViewController : NautilusStamp
   @objc final public func unregister(screen: NautilusStampUISDK.NautilusStampRoutableScreen)
   @objc final public func instantiateStampList() -> UIKit.UIViewController
   @objc final public func instantiateStampDetail(stampCard: NautilusStampSDK.NautilusStampCardInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
+  @objc final public func instantiateStampDetail(stampCardID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
   @objc final public func instantiateStampCodeReader(setting: NautilusCodeReaderSDK.NautilusCodeReaderSetting, handler: any NautilusCodeReaderSDK.NautilusCodeReaderHandler) -> UIKit.UIViewController
   @objc final public func routeStampCardList(in viewController: UIKit.UIViewController)
   @objc final public func routeStampDetail(stampCard: NautilusStampSDK.NautilusStampCardInfo, hasCloseButton: Swift.Bool, in viewController: UIKit.UIViewController)
+  @objc final public func routeStampDetail(stampCardID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil, in viewController: UIKit.UIViewController)
   @objc final public func routeStampCodeReader(setting: NautilusCodeReaderSDK.NautilusCodeReaderSetting, handler: any NautilusCodeReaderSDK.NautilusCodeReaderHandler, in viewController: UIKit.UIViewController)
   @objc deinit
 }

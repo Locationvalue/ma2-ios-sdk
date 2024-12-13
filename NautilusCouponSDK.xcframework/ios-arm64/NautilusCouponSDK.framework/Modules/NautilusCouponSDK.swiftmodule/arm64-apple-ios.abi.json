@@ -6954,7 +6954,7 @@
           {
             "kind": "Function",
             "name": "instantiateCouponDetailViewController",
-            "printedName": "instantiateCouponDetailViewController(couponID:exchangeID:couponType:)",
+            "printedName": "instantiateCouponDetailViewController(couponID:exchangeID:couponType:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6988,11 +6988,26 @@
                 "name": "NautilusCouponPublishType",
                 "printedName": "NautilusCouponSDK.NautilusCouponPublishType",
                 "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponPublishType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17NautilusCouponSDK0aB0C011instantiateB20DetailViewController8couponID08exchangeI00H4TypeSo06UIViewG0CSi_SiSgAA0ab7PublishK0OtF",
-            "mangledName": "$s17NautilusCouponSDK0aB0C011instantiateB20DetailViewController8couponID08exchangeI00H4TypeSo06UIViewG0CSi_SiSgAA0ab7PublishK0OtF",
+            "usr": "s:17NautilusCouponSDK0aB0C011instantiateB20DetailViewController8couponID08exchangeI00H4Type16notificationInfoSo06UIViewG0CSi_SiSgAA0ab7PublishK0O0a4CoreC00a15AppNotificationM0CSgtF",
+            "mangledName": "$s17NautilusCouponSDK0aB0C011instantiateB20DetailViewController8couponID08exchangeI00H4Type16notificationInfoSo06UIViewG0CSi_SiSgAA0ab7PublishK0O0a4CoreC00a15AppNotificationM0CSgtF",
             "moduleName": "NautilusCouponSDK",
             "deprecated": true,
             "declAttributes": [
@@ -7006,7 +7021,7 @@
           {
             "kind": "Function",
             "name": "instantiateCouponDetailViewController",
-            "printedName": "instantiateCouponDetailViewController(couponID:exchangeID:couponType:)",
+            "printedName": "instantiateCouponDetailViewController(couponID:exchangeID:couponType:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7031,14 +7046,29 @@
                 "name": "NautilusCouponPublishType",
                 "printedName": "NautilusCouponSDK.NautilusCouponPublishType",
                 "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponPublishType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCoupon(im)instantiateCouponDetailViewControllerWithCouponID:exchangeID:couponType:",
-            "mangledName": "$s17NautilusCouponSDK0aB0C011instantiateB20DetailViewController8couponID08exchangeI00H4TypeSo06UIViewG0CSi_SiAA0ab7PublishK0OtF",
+            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCoupon(im)instantiateCouponDetailViewControllerWithCouponID:exchangeID:couponType:notificationInfo:",
+            "mangledName": "$s17NautilusCouponSDK0aB0C011instantiateB20DetailViewController8couponID08exchangeI00H4Type16notificationInfoSo06UIViewG0CSi_SiAA0ab7PublishK0O0a4CoreC00a15AppNotificationM0CSgtF",
             "moduleName": "NautilusCouponSDK",
             "deprecated": true,
-            "objc_name": "instantiateCouponDetailViewControllerWithCouponID:exchangeID:couponType:",
+            "objc_name": "instantiateCouponDetailViewControllerWithCouponID:exchangeID:couponType:notificationInfo:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -13293,7 +13323,7 @@
           {
             "kind": "Function",
             "name": "instantiateCouponDetail",
-            "printedName": "instantiateCouponDetail(coupon:)",
+            "printedName": "instantiateCouponDetail(coupon:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13306,13 +13336,28 @@
                 "name": "NautilusCouponInfo",
                 "printedName": "NautilusCouponSDK.NautilusCouponInfo",
                 "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponRouter(im)instantiateCouponDetailWithCoupon:",
-            "mangledName": "$s17NautilusCouponSDK0aB6RouterC011instantiateB6Detail6couponSo16UIViewControllerCAA0aB4InfoC_tF",
+            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponRouter(im)instantiateCouponDetailWithCoupon:notificationInfo:",
+            "mangledName": "$s17NautilusCouponSDK0aB6RouterC011instantiateB6Detail6coupon16notificationInfoSo16UIViewControllerCAA0abI0C_0a4CoreC00a15AppNotificationI0CSgtF",
             "moduleName": "NautilusCouponSDK",
-            "objc_name": "instantiateCouponDetailWithCoupon:",
+            "objc_name": "instantiateCouponDetailWithCoupon:notificationInfo:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -13324,7 +13369,7 @@
           {
             "kind": "Function",
             "name": "instantiateCouponDetail",
-            "printedName": "instantiateCouponDetail(couponIDInfo:couponType:)",
+            "printedName": "instantiateCouponDetail(couponIDInfo:couponType:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13343,13 +13388,28 @@
                 "name": "NautilusCouponPublishType",
                 "printedName": "NautilusCouponSDK.NautilusCouponPublishType",
                 "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponPublishType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponRouter(im)instantiateCouponDetailWithCouponIDInfo:couponType:",
-            "mangledName": "$s17NautilusCouponSDK0aB6RouterC011instantiateB6Detail12couponIDInfo0G4TypeSo16UIViewControllerCAA0abH0C_AA0ab7PublishI0OtF",
+            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponRouter(im)instantiateCouponDetailWithCouponIDInfo:couponType:notificationInfo:",
+            "mangledName": "$s17NautilusCouponSDK0aB6RouterC011instantiateB6Detail12couponIDInfo0G4Type16notificationInfoSo16UIViewControllerCAA0abH0C_AA0ab7PublishI0O0a4CoreC00a15AppNotificationK0CSgtF",
             "moduleName": "NautilusCouponSDK",
-            "objc_name": "instantiateCouponDetailWithCouponIDInfo:couponType:",
+            "objc_name": "instantiateCouponDetailWithCouponIDInfo:couponType:notificationInfo:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -13473,7 +13533,7 @@
           {
             "kind": "Function",
             "name": "routeCouponDetail",
-            "printedName": "routeCouponDetail(coupon:in:)",
+            "printedName": "routeCouponDetail(coupon:notificationInfo:in:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13488,16 +13548,31 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "UIViewController",
                 "printedName": "UIKit.UIViewController",
                 "usr": "c:objc(cs)UIViewController"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponRouter(im)routeCouponDetailWithCoupon:in:",
-            "mangledName": "$s17NautilusCouponSDK0aB6RouterC05routeB6Detail6coupon2inyAA0aB4InfoC_So16UIViewControllerCtF",
+            "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponRouter(im)routeCouponDetailWithCoupon:notificationInfo:in:",
+            "mangledName": "$s17NautilusCouponSDK0aB6RouterC05routeB6Detail6coupon16notificationInfo2inyAA0abI0C_0a4CoreC00a15AppNotificationI0CSgSo16UIViewControllerCtF",
             "moduleName": "NautilusCouponSDK",
-            "objc_name": "routeCouponDetailWithCoupon:in:",
+            "objc_name": "routeCouponDetailWithCoupon:notificationInfo:in:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -13689,7 +13764,7 @@
           {
             "kind": "Function",
             "name": "instantiate",
-            "printedName": "instantiate(app:coupon:)",
+            "printedName": "instantiate(app:coupon:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13708,11 +13783,25 @@
                 "name": "NautilusCouponInfo",
                 "printedName": "NautilusCouponSDK.NautilusCouponInfo",
                 "usr": "c:@M@NautilusCouponSDK@objc(cs)NautilusCouponInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusCouponSDK@objc(pl)NautilusCouponDetailInstantiatable(cm)instantiateWithApp:coupon:",
-            "mangledName": "$s17NautilusCouponSDK0aB20DetailInstantiatableP11instantiate3app6couponSo16UIViewControllerC0a4CoreC00A3AppC_AA0aB4InfoCtFZ",
+            "usr": "c:@M@NautilusCouponSDK@objc(pl)NautilusCouponDetailInstantiatable(cm)instantiateWithApp:coupon:notificationInfo:",
+            "mangledName": "$s17NautilusCouponSDK0aB20DetailInstantiatableP11instantiate3app6coupon16notificationInfoSo16UIViewControllerC0a4CoreC00A3AppC_AA0abJ0CAJ0an12NotificationJ0CSgtFZ",
             "moduleName": "NautilusCouponSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NautilusCouponSDK.NautilusCouponDetailInstantiatable>",
             "sugared_genericSig": "<Self where Self : NautilusCouponSDK.NautilusCouponDetailInstantiatable>",
@@ -13728,7 +13817,7 @@
           {
             "kind": "Function",
             "name": "instantiate",
-            "printedName": "instantiate(app:couponIDInfo:couponType:)",
+            "printedName": "instantiate(app:couponIDInfo:couponType:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13753,11 +13842,25 @@
                 "name": "NautilusCouponPublishType",
                 "printedName": "NautilusCouponSDK.NautilusCouponPublishType",
                 "usr": "c:@M@NautilusCouponSDK@E@NautilusCouponPublishType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusCouponSDK@objc(pl)NautilusCouponDetailInstantiatable(cm)instantiateWithApp:couponIDInfo:couponType:",
-            "mangledName": "$s17NautilusCouponSDK0aB20DetailInstantiatableP11instantiate3app12couponIDInfo0H4TypeSo16UIViewControllerC0a4CoreC00A3AppC_AA0abI0CAA0ab7PublishJ0OtFZ",
+            "usr": "c:@M@NautilusCouponSDK@objc(pl)NautilusCouponDetailInstantiatable(cm)instantiateWithApp:couponIDInfo:couponType:notificationInfo:",
+            "mangledName": "$s17NautilusCouponSDK0aB20DetailInstantiatableP11instantiate3app12couponIDInfo0H4Type16notificationInfoSo16UIViewControllerC0a4CoreC00A3AppC_AA0abI0CAA0ab7PublishJ0OAK0ap12NotificationL0CSgtFZ",
             "moduleName": "NautilusCouponSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NautilusCouponSDK.NautilusCouponDetailInstantiatable>",
             "sugared_genericSig": "<Self where Self : NautilusCouponSDK.NautilusCouponDetailInstantiatable>",
@@ -18079,84 +18182,91 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7635,
+      "offset": 7645,
+      "length": 59,
+      "value": "\"ma_coupon_detail_delete_notification_history_confirm_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7753,
       "length": 49,
       "value": "\"ma_coupon_error_dialog_use_coupon_general_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7735,
+      "offset": 7853,
       "length": 51,
       "value": "\"ma_coupon_error_dialog_use_coupon_general_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7845,
+      "offset": 7963,
       "length": 61,
       "value": "\"ma_coupon_error_dialog_use_coupon_general_close_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7956,
+      "offset": 8074,
       "length": 49,
       "value": "\"ma_coupon_favorite_list_unavailable_error_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8057,
+      "offset": 8175,
       "length": 51,
       "value": "\"ma_coupon_favorite_list_unavailable_error_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8150,
+      "offset": 8268,
       "length": 40,
       "value": "\"ma_coupon_detail_coupon_barcode_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8234,
+      "offset": 8352,
       "length": 43,
       "value": "\"ma_coupon_list_cell_coupon_barcode_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8329,
+      "offset": 8447,
       "length": 52,
       "value": "\"ma_coupon_favorite_list_cell_coupon_barcode_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8419,
+      "offset": 8537,
       "length": 29,
       "value": "\"ma_coupon_code_button_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8497,
+      "offset": 8615,
       "length": 50,
       "value": "\"ma_coupon_list_cell_show_coupon_use_expired_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8594,
+      "offset": 8712,
       "length": 47,
       "value": "\"ma_coupon_detail_show_coupon_use_expired_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/Config\/NautilusCouponConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8698,
+      "offset": 8816,
       "length": 59,
       "value": "\"ma_coupon_favorite_list_cell_show_coupon_use_expired_text\""
     },
@@ -18604,28 +18714,28 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/Detail\/NautilusCouponDetailViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 5301,
+      "offset": 5626,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/Detail\/NautilusCouponDetailViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5423,
+      "offset": 5777,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/Detail\/NautilusCouponDetailViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5539,
+      "offset": 5893,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Coupon\/Sources\/UI\/Detail\/NautilusCouponDetailViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5619,
+      "offset": 5973,
       "length": 5,
       "value": "false"
     },

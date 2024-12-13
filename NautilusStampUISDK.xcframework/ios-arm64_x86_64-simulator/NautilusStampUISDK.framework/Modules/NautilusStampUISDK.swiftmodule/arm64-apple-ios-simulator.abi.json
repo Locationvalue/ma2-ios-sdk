@@ -1617,6 +1617,66 @@
           {
             "kind": "Function",
             "name": "instantiate",
+            "printedName": "instantiate(app:stampCardID:hasCloseButton:notificationInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusApp",
+                "printedName": "NautilusCoreSDK.NautilusApp",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusApp"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NautilusStampUISDK@objc(cs)NautilusStampCardDetailViewController(cm)instantiateWithApp:stampCardID:hasCloseButton:notificationInfo:",
+            "mangledName": "$s18NautilusStampUISDK0aB24CardDetailViewControllerC11instantiate3app05stampD2ID14hasCloseButton16notificationInfoSo06UIViewG0C0A7CoreSDK0A3AppC_SiSbAK0at12NotificationP0CSgtFZ",
+            "moduleName": "NautilusStampUISDK",
+            "static": true,
+            "objc_name": "instantiateWithApp:stampCardID:hasCloseButton:notificationInfo:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "instantiate",
             "printedName": "instantiate(app:stampCard:hasCloseButton:)",
             "children": [
               {
@@ -1812,6 +1872,65 @@
             "declKind": "Func",
             "usr": "c:@M@NautilusStampUISDK@objc(pl)NautilusStampCardDetailInstantiatable(cm)instantiateWithApp:stampCard:hasCloseButton:",
             "mangledName": "$s18NautilusStampUISDK0aB24CardDetailInstantiatableP11instantiate3app05stampD014hasCloseButtonSo16UIViewControllerC0A7CoreSDK0A3AppC_0abP00abD4InfoCSbtFZ",
+            "moduleName": "NautilusStampUISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusStampUISDK.NautilusStampCardDetailInstantiatable>",
+            "sugared_genericSig": "<Self where Self : NautilusStampUISDK.NautilusStampCardDetailInstantiatable>",
+            "static": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "instantiate",
+            "printedName": "instantiate(app:stampCardID:hasCloseButton:notificationInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusApp",
+                "printedName": "NautilusCoreSDK.NautilusApp",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusApp"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusStampUISDK@objc(pl)NautilusStampCardDetailInstantiatable(cm)instantiateWithApp:stampCardID:hasCloseButton:notificationInfo:",
+            "mangledName": "$s18NautilusStampUISDK0aB24CardDetailInstantiatableP11instantiate3app05stampD2ID14hasCloseButton16notificationInfoSo16UIViewControllerC0A7CoreSDK0A3AppC_SiSbAK0at12NotificationO0CSgtFZ",
             "moduleName": "NautilusStampUISDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NautilusStampUISDK.NautilusStampCardDetailInstantiatable>",
             "sugared_genericSig": "<Self where Self : NautilusStampUISDK.NautilusStampCardDetailInstantiatable>",
@@ -2944,6 +3063,58 @@
           },
           {
             "kind": "Function",
+            "name": "instantiateStampDetail",
+            "printedName": "instantiateStampDetail(stampCardID:hasCloseButton:notificationInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusStampUISDK@objc(cs)NautilusStampCardRouter(im)instantiateStampDetailWithStampCardID:hasCloseButton:notificationInfo:",
+            "mangledName": "$s18NautilusStampUISDK0aB10CardRouterC011instantiateB6Detail05stampD2ID14hasCloseButton16notificationInfoSo16UIViewControllerCSi_Sb0A7CoreSDK0a15AppNotificationN0CSgtF",
+            "moduleName": "NautilusStampUISDK",
+            "objc_name": "instantiateStampDetailWithStampCardID:hasCloseButton:notificationInfo:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "instantiateStampCodeReader",
             "printedName": "instantiateStampCodeReader(setting:handler:)",
             "children": [
@@ -3043,6 +3214,63 @@
             "mangledName": "$s18NautilusStampUISDK0aB10CardRouterC05routeB6Detail05stampD014hasCloseButton2iny0aB3SDK0abD4InfoC_SbSo16UIViewControllerCtF",
             "moduleName": "NautilusStampUISDK",
             "objc_name": "routeStampDetailWithStampCard:hasCloseButton:in:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "routeStampDetail",
+            "printedName": "routeStampDetail(stampCardID:hasCloseButton:notificationInfo:in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusStampUISDK@objc(cs)NautilusStampCardRouter(im)routeStampDetailWithStampCardID:hasCloseButton:notificationInfo:in:",
+            "mangledName": "$s18NautilusStampUISDK0aB10CardRouterC05routeB6Detail05stampD2ID14hasCloseButton16notificationInfo2inySi_Sb0A7CoreSDK0a15AppNotificationN0CSgSo16UIViewControllerCtF",
+            "moduleName": "NautilusStampUISDK",
+            "objc_name": "routeStampDetailWithStampCardID:hasCloseButton:notificationInfo:in:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -3828,105 +4056,112 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4911,
+      "offset": 4921,
+      "length": 62,
+      "value": "\"ma_stampcard_detail_delete_notification_history_confirm_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5032,
       "length": 53,
       "value": "\"ma_stampcard_qr_code_reader_read_error_dialog_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5015,
+      "offset": 5136,
       "length": 55,
       "value": "\"ma_stampcard_qr_code_reader_read_error_dialog_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5129,
+      "offset": 5250,
       "length": 65,
       "value": "\"ma_stampcard_qr_code_reader_read_error_dialog_close_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5254,
+      "offset": 5375,
       "length": 66,
       "value": "\"ma_stampcard_qr_code_reader_enable_continuous_read_if_read_error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5375,
+      "offset": 5496,
       "length": 59,
       "value": "\"ma_stampcard_checkin_get_location_info_error_dialog_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5491,
+      "offset": 5612,
       "length": 61,
       "value": "\"ma_stampcard_checkin_get_location_info_error_dialog_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5617,
+      "offset": 5738,
       "length": 71,
       "value": "\"ma_stampcard_checkin_get_location_info_error_dialog_close_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5723,
+      "offset": 5844,
       "length": 36,
       "value": "\"ma_stampcard_stamp_check_in_method\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5799,
+      "offset": 5920,
       "length": 41,
       "value": "\"ma_stampcard_checkin_error_dialog_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5882,
+      "offset": 6003,
       "length": 43,
       "value": "\"ma_stampcard_checkin_error_dialog_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5975,
+      "offset": 6096,
       "length": 53,
       "value": "\"ma_stampcard_checkin_error_dialog_close_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6083,
+      "offset": 6204,
       "length": 58,
       "value": "\"ma_stampcard_checkin_interval_failure_error_dialog_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6198,
+      "offset": 6319,
       "length": 60,
       "value": "\"ma_stampcard_checkin_interval_failure_error_dialog_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6323,
+      "offset": 6444,
       "length": 70,
       "value": "\"ma_stampcard_checkin_interval_failure_error_dialog_close_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/StampUI\/Sources\/Config\/NautilusStampUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6433,
+      "offset": 6554,
       "length": 41,
       "value": "\"ma_stampcard_detail_exchange_limit_text\""
     },

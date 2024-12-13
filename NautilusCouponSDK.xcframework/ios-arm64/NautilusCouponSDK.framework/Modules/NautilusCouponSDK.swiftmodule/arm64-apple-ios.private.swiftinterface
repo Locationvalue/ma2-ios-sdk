@@ -183,9 +183,9 @@ public let NautilusCouponErrorDomain: Swift.String
   @available(*, deprecated, message: "Use NautilusCouponRouter function.")
   @objc final public func instantiateFavoriteCouponListViewController() -> UIKit.UIViewController
   @available(*, deprecated, message: "Use NautilusCouponRouter function.")
-  final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int? = nil, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
+  final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int? = nil, couponType: NautilusCouponSDK.NautilusCouponPublishType, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
   @available(*, deprecated, message: "Use NautilusCouponRouter function.")
-  @objc final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
+  @objc final public func instantiateCouponDetailViewController(couponID: Swift.Int, exchangeID: Swift.Int, couponType: NautilusCouponSDK.NautilusCouponPublishType, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
   @objc deinit
 }
 extension NautilusCouponSDK.NautilusCoupon {
@@ -268,18 +268,18 @@ extension NautilusCouponSDK.NautilusCoupon {
   @objc final public func unregister(screen: NautilusCouponSDK.NautilusCouponRoutableScreen)
   @objc final public func instantiateCouponTabList(category: NautilusCouponSDK.NautilusCouponCategoryInfo?) -> UIKit.UIViewController
   @objc final public func instantiateCouponList(category: NautilusCouponSDK.NautilusCouponCategoryInfo?) -> UIKit.UIViewController
-  @objc final public func instantiateCouponDetail(coupon: NautilusCouponSDK.NautilusCouponInfo) -> UIKit.UIViewController
-  @objc final public func instantiateCouponDetail(couponIDInfo: NautilusCouponSDK.NautilusCouponIDInfo, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
+  @objc final public func instantiateCouponDetail(coupon: NautilusCouponSDK.NautilusCouponInfo, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
+  @objc final public func instantiateCouponDetail(couponIDInfo: NautilusCouponSDK.NautilusCouponIDInfo, couponType: NautilusCouponSDK.NautilusCouponPublishType, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
   @objc final public func instantiateFavoriteCouponList() -> UIKit.UIViewController
   @objc final public func routeCouponTabList(category: NautilusCouponSDK.NautilusCouponCategoryInfo?, in viewController: UIKit.UIViewController)
   @objc final public func routeCouponList(category: NautilusCouponSDK.NautilusCouponCategoryInfo?, in viewController: UIKit.UIViewController)
-  @objc final public func routeCouponDetail(coupon: NautilusCouponSDK.NautilusCouponInfo, in viewController: UIKit.UIViewController)
+  @objc final public func routeCouponDetail(coupon: NautilusCouponSDK.NautilusCouponInfo, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil, in viewController: UIKit.UIViewController)
   @objc final public func routeFavoriteCouponList(in viewController: UIKit.UIViewController)
   @objc deinit
 }
 @objc public protocol NautilusCouponDetailInstantiatable {
-  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, coupon: NautilusCouponSDK.NautilusCouponInfo) -> UIKit.UIViewController
-  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, couponIDInfo: NautilusCouponSDK.NautilusCouponIDInfo, couponType: NautilusCouponSDK.NautilusCouponPublishType) -> UIKit.UIViewController
+  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, coupon: NautilusCouponSDK.NautilusCouponInfo, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
+  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, couponIDInfo: NautilusCouponSDK.NautilusCouponIDInfo, couponType: NautilusCouponSDK.NautilusCouponPublishType, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
 }
 @objc public class NautilusCouponIDInfo : ObjectiveC.NSObject {
   final public let couponID: Swift.Int

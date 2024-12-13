@@ -2064,7 +2064,7 @@
           {
             "kind": "Function",
             "name": "presentLotteryDetailViewController",
-            "printedName": "presentLotteryDetailViewController(in:lotteryID:)",
+            "printedName": "presentLotteryDetailViewController(in:lotteryID:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2082,13 +2082,28 @@
                 "name": "Int",
                 "printedName": "Swift.Int",
                 "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)presentLotteryDetailViewControllerIn:lotteryID:",
-            "mangledName": "$s20NautilusLotteryUISDK0aB2UIC07presentB20DetailViewController2in9lotteryIDySo06UIViewH0C_SitF",
+            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)presentLotteryDetailViewControllerIn:lotteryID:notificationInfo:",
+            "mangledName": "$s20NautilusLotteryUISDK0aB2UIC07presentB20DetailViewController2in9lotteryID16notificationInfoySo06UIViewH0C_Si0A7CoreSDK0a15AppNotificationM0CSgtF",
             "moduleName": "NautilusLotteryUISDK",
-            "objc_name": "presentLotteryDetailViewControllerIn:lotteryID:",
+            "objc_name": "presentLotteryDetailViewControllerIn:lotteryID:notificationInfo:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -2100,7 +2115,7 @@
           {
             "kind": "Function",
             "name": "instantiateLotteryDetailViewController",
-            "printedName": "instantiateLotteryDetailViewController(lotteryID:)",
+            "printedName": "instantiateLotteryDetailViewController(lotteryID:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2113,13 +2128,28 @@
                 "name": "Int",
                 "printedName": "Swift.Int",
                 "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)instantiateLotteryDetailViewControllerWithLotteryID:",
-            "mangledName": "$s20NautilusLotteryUISDK0aB2UIC011instantiateB20DetailViewController9lotteryIDAA0abfgH0CSi_tF",
+            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)instantiateLotteryDetailViewControllerWithLotteryID:notificationInfo:",
+            "mangledName": "$s20NautilusLotteryUISDK0aB2UIC011instantiateB20DetailViewController9lotteryID16notificationInfoAA0abfgH0CSi_0A7CoreSDK0a15AppNotificationL0CSgtF",
             "moduleName": "NautilusLotteryUISDK",
-            "objc_name": "instantiateLotteryDetailViewControllerWithLotteryID:",
+            "objc_name": "instantiateLotteryDetailViewControllerWithLotteryID:notificationInfo:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -2131,7 +2161,7 @@
           {
             "kind": "Function",
             "name": "presentLotteryDetailViewController",
-            "printedName": "presentLotteryDetailViewController(in:lottery:)",
+            "printedName": "presentLotteryDetailViewController(in:lottery:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2149,13 +2179,28 @@
                 "name": "NautilusLotteryInfo",
                 "printedName": "NautilusLotterySDK.NautilusLotteryInfo",
                 "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)presentLotteryDetailViewControllerIn:lottery:",
-            "mangledName": "$s20NautilusLotteryUISDK0aB2UIC07presentB20DetailViewController2in7lotteryySo06UIViewH0C_0aB3SDK0aB4InfoCtF",
+            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)presentLotteryDetailViewControllerIn:lottery:notificationInfo:",
+            "mangledName": "$s20NautilusLotteryUISDK0aB2UIC07presentB20DetailViewController2in7lottery16notificationInfoySo06UIViewH0C_0aB3SDK0abL0C0a4CoreN00a15AppNotificationL0CSgtF",
             "moduleName": "NautilusLotteryUISDK",
-            "objc_name": "presentLotteryDetailViewControllerIn:lottery:",
+            "objc_name": "presentLotteryDetailViewControllerIn:lottery:notificationInfo:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -2167,7 +2212,7 @@
           {
             "kind": "Function",
             "name": "instantiateLotteryDetailViewController",
-            "printedName": "instantiateLotteryDetailViewController(lottery:)",
+            "printedName": "instantiateLotteryDetailViewController(lottery:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2180,13 +2225,28 @@
                 "name": "NautilusLotteryInfo",
                 "printedName": "NautilusLotterySDK.NautilusLotteryInfo",
                 "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)instantiateLotteryDetailViewControllerWithLottery:",
-            "mangledName": "$s20NautilusLotteryUISDK0aB2UIC011instantiateB20DetailViewController7lotteryAA0abfgH0C0aB3SDK0aB4InfoC_tF",
+            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)instantiateLotteryDetailViewControllerWithLottery:notificationInfo:",
+            "mangledName": "$s20NautilusLotteryUISDK0aB2UIC011instantiateB20DetailViewController7lottery16notificationInfoAA0abfgH0C0aB3SDK0abK0C_0a4CoreL00a15AppNotificationK0CSgtF",
             "moduleName": "NautilusLotteryUISDK",
-            "objc_name": "instantiateLotteryDetailViewControllerWithLottery:",
+            "objc_name": "instantiateLotteryDetailViewControllerWithLottery:notificationInfo:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -2877,91 +2937,98 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2072,
+      "offset": 2074,
+      "length": 60,
+      "value": "\"ma_lottery_detail_delete_notification_history_confirm_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2191,
       "length": 59,
       "value": "\"ma_lottery_detail_winning_result_check_coupon_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2187,
+      "offset": 2306,
       "length": 58,
       "value": "\"ma_lottery_detail_winning_result_check_point_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2279,
+      "offset": 2398,
       "length": 32,
       "value": "\"ma_lottery_detail_loading_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2350,
+      "offset": 2469,
       "length": 38,
       "value": "\"ma_lottery_detail_losing_result_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2438,
+      "offset": 2557,
       "length": 51,
       "value": "\"ma_lottery_detail_losing_result_close_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2533,
+      "offset": 2652,
       "length": 43,
       "value": "\"ma_lottery_detail_screen_background_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2620,
+      "offset": 2739,
       "length": 44,
       "value": "\"ma_lottery_detail_lottery_title_text_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2711,
+      "offset": 2830,
       "length": 47,
       "value": "\"ma_lottery_detail_available_period_text_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2797,
+      "offset": 2916,
       "length": 38,
       "value": "\"ma_lottery_winning_result_text_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2876,
+      "offset": 2995,
       "length": 40,
       "value": "\"ma_lottery_winning_result_button_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2961,
+      "offset": 3080,
       "length": 45,
       "value": "\"ma_lottery_winning_result_button_text_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3044,
+      "offset": 3163,
       "length": 37,
       "value": "\"ma_lottery_losing_result_text_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/LotteryUI\/Sources\/Config\/NautilusLotteryUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3125,
+      "offset": 3244,
       "length": 44,
       "value": "\"ma_lottery_losing_result_button_text_color\""
     },

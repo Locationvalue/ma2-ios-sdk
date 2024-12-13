@@ -316,6 +316,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class UIViewController;
 @class NautilusContentCategoryInfo;
 enum NautilusContentType : NSInteger;
+@class NautilusAppNotificationInfo;
 @class NautilusContentSortKey;
 @class NSDate;
 @class NautilusContentInfo;
@@ -386,10 +387,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param contentType <code>NautilusContentType</code>で定義されたコンテンツ種別
 ///
+/// \param notificationInfo プッシュ通知履歴一覧から遷移する場合は必須
+///
 ///
 /// returns:
 /// コンテンツ詳細VC
-- (UIViewController * _Nonnull)instantiateContentDetailViewControllerWithContentID:(NSInteger)contentID contentType:(enum NautilusContentType)contentType SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)instantiateContentDetailViewControllerWithContentID:(NSInteger)contentID contentType:(enum NautilusContentType)contentType notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// 共通コンテンツ一覧を取得する
 /// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param offset 取得開始位置
@@ -1060,6 +1063,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class UIViewController;
 @class NautilusContentCategoryInfo;
 enum NautilusContentType : NSInteger;
+@class NautilusAppNotificationInfo;
 @class NautilusContentSortKey;
 @class NSDate;
 @class NautilusContentInfo;
@@ -1130,10 +1134,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param contentType <code>NautilusContentType</code>で定義されたコンテンツ種別
 ///
+/// \param notificationInfo プッシュ通知履歴一覧から遷移する場合は必須
+///
 ///
 /// returns:
 /// コンテンツ詳細VC
-- (UIViewController * _Nonnull)instantiateContentDetailViewControllerWithContentID:(NSInteger)contentID contentType:(enum NautilusContentType)contentType SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)instantiateContentDetailViewControllerWithContentID:(NSInteger)contentID contentType:(enum NautilusContentType)contentType notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// 共通コンテンツ一覧を取得する
 /// Objective-Cから呼び出す場合は, こちらのメソッドを利用してください
 /// \param offset 取得開始位置

@@ -311,6 +311,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NautilusApp;
 @class NautilusStampCardInfo;
 @class UIViewController;
+@class NautilusAppNotificationInfo;
 
 /// ルーターから、スタンプ詳細画面を生成するためのプロトコル
 SWIFT_PROTOCOL("_TtP18NautilusStampUISDK37NautilusStampCardDetailInstantiatable_")
@@ -326,6 +327,19 @@ SWIFT_PROTOCOL("_TtP18NautilusStampUISDK37NautilusStampCardDetailInstantiatable_
 /// returns:
 /// カスタムスタンプ詳細画面
 + (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampCard:(NautilusStampCardInfo * _Nonnull)stampCard hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
+/// スタンプ詳細画面を生成する
+/// \param app SDKのインスタンス
+///
+/// \param stampCardID スタンプカードID
+///
+/// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// カスタムスタンプ詳細画面
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampCardID:(NSInteger)stampCardID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class NSString;
@@ -343,14 +357,15 @@ SWIFT_CLASS("_TtC18NautilusStampUISDK37NautilusStampCardDetailViewController")
 
 
 
-@interface NautilusStampCardDetailViewController (SWIFT_EXTENSION(NautilusStampUISDK)) <NautilusStampCardDetailInstantiatable>
-+ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampCard:(NautilusStampCardInfo * _Nonnull)stampCard hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 @interface NautilusStampCardDetailViewController (SWIFT_EXTENSION(NautilusStampUISDK)) <NautilusCodeReaderHandler>
 - (BOOL)codeReaderHandle:(UIViewController * _Nonnull)viewController codeText:(NSString * _Nonnull)codeText SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)handleCodeDetectionError:(UIViewController * _Nonnull)viewController error:(enum NautilusCodeReaderError)error SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface NautilusStampCardDetailViewController (SWIFT_EXTENSION(NautilusStampUISDK)) <NautilusStampCardDetailInstantiatable>
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampCardID:(NSInteger)stampCardID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app stampCard:(NautilusStampCardInfo * _Nonnull)stampCard hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -454,6 +469,17 @@ SWIFT_CLASS("_TtC18NautilusStampUISDK23NautilusStampCardRouter")
 /// returns:
 /// スタンプカード詳細画面
 - (UIViewController * _Nonnull)instantiateStampDetailWithStampCard:(NautilusStampCardInfo * _Nonnull)stampCard hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
+/// スタンプカード詳細画面を生成する
+/// \param stampCardID スタンプカードID
+///
+/// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// スタンプカード詳細画面
+- (UIViewController * _Nonnull)instantiateStampDetailWithStampCardID:(NSInteger)stampCardID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// コードリーダー画面を生成する
 /// \param setting コードリーダー画面の表示設定
 ///
@@ -471,11 +497,22 @@ SWIFT_CLASS("_TtC18NautilusStampUISDK23NautilusStampCardRouter")
 /// モーダル遷移(fullScreen)
 /// \param stampCard スタンプカード情報
 ///
+/// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
+///
 /// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeStampDetailWithStampCard:(NautilusStampCardInfo * _Nonnull)stampCard hasCloseButton:(BOOL)hasCloseButton in:(UIViewController * _Nonnull)viewController;
+/// スタンプカード詳細画面に遷移する
+/// モーダル遷移(fullScreen)
+/// \param stampCardID スタンプカードID
 ///
 /// \param hasCloseButton 閉じるボタンを表示するか true:表示する, false:表示しない
 ///
-- (void)routeStampDetailWithStampCard:(NautilusStampCardInfo * _Nonnull)stampCard hasCloseButton:(BOOL)hasCloseButton in:(UIViewController * _Nonnull)viewController;
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeStampDetailWithStampCardID:(NSInteger)stampCardID hasCloseButton:(BOOL)hasCloseButton notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo in:(UIViewController * _Nonnull)viewController;
 /// コードリーダー画面に遷移する
 /// \param setting コードリーダー画面の表示設定
 ///

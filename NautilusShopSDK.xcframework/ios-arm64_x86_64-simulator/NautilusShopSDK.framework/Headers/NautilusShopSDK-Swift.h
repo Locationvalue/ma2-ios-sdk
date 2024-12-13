@@ -366,7 +366,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 ///
 /// returns:
-/// 店舗詳細画面
+/// 店舗詳細のView Controllerを取得する
 - (UIViewController * _Nonnull)instantiateShopDetailWithShopID:(NSInteger)shopID SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusShopRouter function.");
 /// 店舗詳細のView Controllerを取得する
 /// \param clientShopCode 更新用管理コード
@@ -544,6 +544,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @end
 
 
+@class NautilusAppNotificationInfo;
 
 /// ルーターから、店舗詳細画面を生成するためのプロトコル
 SWIFT_PROTOCOL("_TtP15NautilusShopSDK32NautilusShopDetailInstantiatable_")
@@ -557,6 +558,28 @@ SWIFT_PROTOCOL("_TtP15NautilusShopSDK32NautilusShopDetailInstantiatable_")
 /// returns:
 /// 店舗詳細画面インスタンス
 + (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app shopInfo:(NautilusShopInfo * _Nonnull)shopInfo SWIFT_WARN_UNUSED_RESULT;
+/// 店舗詳細画面を生成する
+/// \param app SDKインスタンス
+///
+/// \param shopID 店舗ID
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// 店舗詳細画面インスタンス
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app shopID:(NSInteger)shopID notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
+/// 店舗詳細画面を生成する
+/// \param app SDKインスタンス
+///
+/// \param clientShopCode 更新用管理コード
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// 店舗詳細画面インスタンス
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app clientShopCode:(NSString * _Nonnull)clientShopCode notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class UIColor;
@@ -717,6 +740,24 @@ SWIFT_CLASS("_TtC15NautilusShopSDK18NautilusShopRouter")
 /// returns:
 /// 店舗詳細画面インスタンス
 - (UIViewController * _Nonnull)instantiateShopDetailWithShopInfo:(NautilusShopInfo * _Nonnull)shopInfo SWIFT_WARN_UNUSED_RESULT;
+/// 店舗詳細画面を生成する
+/// \param shopID 店舗ID
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// 店舗詳細画面インスタンス
+- (UIViewController * _Nonnull)instantiateShopDetailWithShopID:(NSInteger)shopID notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
+/// 店舗詳細画面を生成する
+/// \param clientShopCode 更新用管理コード
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// 店舗詳細画面インスタンス
+- (UIViewController * _Nonnull)instantiateShopDetailWithClientShopCode:(NSString * _Nonnull)clientShopCode notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// 店舗詳細画面に遷移する
 /// note:
 /// モーダル遷移
@@ -725,6 +766,26 @@ SWIFT_CLASS("_TtC15NautilusShopSDK18NautilusShopRouter")
 /// \param viewController 表示元になるView Controllerのインスタンス
 ///
 - (void)routeShopDetailWithShopInfo:(NautilusShopInfo * _Nonnull)shopInfo in:(UIViewController * _Nonnull)viewController;
+/// 店舗詳細画面に遷移する
+/// note:
+/// モーダル遷移
+/// \param shopID 店舗ID
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeShopDetailWithShopID:(NSInteger)shopID notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo in:(UIViewController * _Nonnull)viewController;
+/// 店舗詳細画面に遷移する
+/// note:
+/// モーダル遷移
+/// \param clientShopCode 更新用管理コード
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeShopDetailWithClientShopCode:(NSString * _Nonnull)clientShopCode notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo in:(UIViewController * _Nonnull)viewController;
 @end
 
 
@@ -1228,7 +1289,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 ///
 /// returns:
-/// 店舗詳細画面
+/// 店舗詳細のView Controllerを取得する
 - (UIViewController * _Nonnull)instantiateShopDetailWithShopID:(NSInteger)shopID SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusShopRouter function.");
 /// 店舗詳細のView Controllerを取得する
 /// \param clientShopCode 更新用管理コード
@@ -1406,6 +1467,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @end
 
 
+@class NautilusAppNotificationInfo;
 
 /// ルーターから、店舗詳細画面を生成するためのプロトコル
 SWIFT_PROTOCOL("_TtP15NautilusShopSDK32NautilusShopDetailInstantiatable_")
@@ -1419,6 +1481,28 @@ SWIFT_PROTOCOL("_TtP15NautilusShopSDK32NautilusShopDetailInstantiatable_")
 /// returns:
 /// 店舗詳細画面インスタンス
 + (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app shopInfo:(NautilusShopInfo * _Nonnull)shopInfo SWIFT_WARN_UNUSED_RESULT;
+/// 店舗詳細画面を生成する
+/// \param app SDKインスタンス
+///
+/// \param shopID 店舗ID
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// 店舗詳細画面インスタンス
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app shopID:(NSInteger)shopID notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
+/// 店舗詳細画面を生成する
+/// \param app SDKインスタンス
+///
+/// \param clientShopCode 更新用管理コード
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// 店舗詳細画面インスタンス
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app clientShopCode:(NSString * _Nonnull)clientShopCode notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class UIColor;
@@ -1579,6 +1663,24 @@ SWIFT_CLASS("_TtC15NautilusShopSDK18NautilusShopRouter")
 /// returns:
 /// 店舗詳細画面インスタンス
 - (UIViewController * _Nonnull)instantiateShopDetailWithShopInfo:(NautilusShopInfo * _Nonnull)shopInfo SWIFT_WARN_UNUSED_RESULT;
+/// 店舗詳細画面を生成する
+/// \param shopID 店舗ID
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// 店舗詳細画面インスタンス
+- (UIViewController * _Nonnull)instantiateShopDetailWithShopID:(NSInteger)shopID notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
+/// 店舗詳細画面を生成する
+/// \param clientShopCode 更新用管理コード
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+///
+/// returns:
+/// 店舗詳細画面インスタンス
+- (UIViewController * _Nonnull)instantiateShopDetailWithClientShopCode:(NSString * _Nonnull)clientShopCode notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// 店舗詳細画面に遷移する
 /// note:
 /// モーダル遷移
@@ -1587,6 +1689,26 @@ SWIFT_CLASS("_TtC15NautilusShopSDK18NautilusShopRouter")
 /// \param viewController 表示元になるView Controllerのインスタンス
 ///
 - (void)routeShopDetailWithShopInfo:(NautilusShopInfo * _Nonnull)shopInfo in:(UIViewController * _Nonnull)viewController;
+/// 店舗詳細画面に遷移する
+/// note:
+/// モーダル遷移
+/// \param shopID 店舗ID
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeShopDetailWithShopID:(NSInteger)shopID notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo in:(UIViewController * _Nonnull)viewController;
+/// 店舗詳細画面に遷移する
+/// note:
+/// モーダル遷移
+/// \param clientShopCode 更新用管理コード
+///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+/// \param viewController 表示元になるView Controllerのインスタンス
+///
+- (void)routeShopDetailWithClientShopCode:(NSString * _Nonnull)clientShopCode notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo in:(UIViewController * _Nonnull)viewController;
 @end
 
 

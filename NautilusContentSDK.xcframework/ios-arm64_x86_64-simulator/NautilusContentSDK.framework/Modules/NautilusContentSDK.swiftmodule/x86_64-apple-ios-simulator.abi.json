@@ -2572,7 +2572,7 @@
           {
             "kind": "Function",
             "name": "instantiateContentDetailViewController",
-            "printedName": "instantiateContentDetailViewController(contentID:contentType:)",
+            "printedName": "instantiateContentDetailViewController(contentID:contentType:notificationInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2591,13 +2591,28 @@
                 "name": "NautilusContentType",
                 "printedName": "NautilusContentSDK.NautilusContentType",
                 "usr": "c:@M@NautilusContentSDK@E@NautilusContentType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAppNotificationInfo",
+                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
+                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContent(im)instantiateContentDetailViewControllerWithContentID:contentType:",
-            "mangledName": "$s18NautilusContentSDK0aB0C011instantiateB20DetailViewController9contentID0H4TypeSo06UIViewG0CSi_AA0abJ0OtF",
+            "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContent(im)instantiateContentDetailViewControllerWithContentID:contentType:notificationInfo:",
+            "mangledName": "$s18NautilusContentSDK0aB0C011instantiateB20DetailViewController9contentID0H4Type16notificationInfoSo06UIViewG0CSi_AA0abJ0O0a4CoreC00a15AppNotificationL0CSgtF",
             "moduleName": "NautilusContentSDK",
-            "objc_name": "instantiateContentDetailViewControllerWithContentID:contentType:",
+            "objc_name": "instantiateContentDetailViewControllerWithContentID:contentType:notificationInfo:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -10312,14 +10327,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 56273,
+      "offset": 56621,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 56292,
+      "offset": 56640,
       "length": 12,
       "value": "2"
     },
@@ -10599,14 +10614,21 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Config\/NautilusContentConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3753,
+      "offset": 3762,
+      "length": 61,
+      "value": "\"ma_contents_detail_delete_notification_history_confirm_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Config\/NautilusContentConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3873,
       "length": 51,
       "value": "\"ma_contents_favorite_list_unavailable_error_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Config\/NautilusContentConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3856,
+      "offset": 3976,
       "length": 53,
       "value": "\"ma_contents_favorite_list_unavailable_error_message\""
     },
@@ -10963,7 +10985,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/View\/Detail\/NautilusContentDetailViewController.swift",
       "kind": "Array",
-      "offset": 1637,
+      "offset": 1666,
       "length": 2,
       "value": "[]"
     },

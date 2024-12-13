@@ -18,6 +18,11 @@ public protocol NetworkServiceLogger {
   func printResponse(_ data: Foundation.Data?, _ response: Foundation.URLResponse)
   func printError(_ error: any Swift.Error)
 }
+@objc public class NautilusAppNotificationInfo : ObjectiveC.NSObject {
+  final public let pushID: Swift.Int
+  public init(pushID: Swift.Int)
+  @objc deinit
+}
 final public class NautilusRequestPolicy : NautilusCoreSDK.RequestPolicy {
   public enum Preset {
     public static let `default`: NautilusCoreSDK.NautilusRequestPolicy
@@ -389,6 +394,9 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
   final public func getFeature<T>(featureType: T.Type) -> T? where T : NautilusCoreSDK.NautilusFeature
   final public func getAvailableFeatures() -> [any NautilusCoreSDK.NautilusFeature.Type]
   final public func getAllFeatures() -> [any NautilusCoreSDK.NautilusFeature.Type]
+  @objc final public func setDeletePushID(_ pushID: Swift.Int)
+  final public func getDeletePushID() -> Swift.Int
+  final public func removeDeletePushID()
   @objc deinit
 }
 extension NautilusCoreSDK.NautilusApp {

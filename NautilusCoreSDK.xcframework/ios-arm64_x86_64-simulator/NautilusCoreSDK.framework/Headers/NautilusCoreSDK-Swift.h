@@ -328,6 +328,10 @@ SWIFT_CLASS("_TtC15NautilusCoreSDK11NautilusApp")
 + (void)initializeWithName:(NSString * _Nonnull)name apiKey:(NSString * _Nonnull)apiKey config:(NautilusAppConfig * _Nonnull)config;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey config:(NautilusAppConfig * _Nonnull)config delegate:(id <NautilusAppDelegate> _Nullable)delegate;
 + (void)initializeWithName:(NSString * _Nonnull)name apiKey:(NSString * _Nonnull)apiKey config:(NautilusAppConfig * _Nonnull)config delegate:(id <NautilusAppDelegate> _Nullable)delegate;
+/// 削除するpushIDを保存する
+/// \param pushID 削除するpushID
+///
+- (void)setDeletePushID:(NSInteger)pushID;
 @end
 
 
@@ -383,6 +387,14 @@ typedef SWIFT_ENUM(NSInteger, NautilusAppInitializationError, open) {
 /// メンテナンス中
   NautilusAppInitializationErrorMaintenance = 3,
 };
+
+
+/// プッシュ通知に関連する遷移情報
+SWIFT_CLASS("_TtC15NautilusCoreSDK27NautilusAppNotificationInfo")
+@interface NautilusAppNotificationInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 /// カメラの使用権限をSDKヘ提供するためのプロトコル
@@ -937,6 +949,10 @@ SWIFT_CLASS("_TtC15NautilusCoreSDK11NautilusApp")
 + (void)initializeWithName:(NSString * _Nonnull)name apiKey:(NSString * _Nonnull)apiKey config:(NautilusAppConfig * _Nonnull)config;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey config:(NautilusAppConfig * _Nonnull)config delegate:(id <NautilusAppDelegate> _Nullable)delegate;
 + (void)initializeWithName:(NSString * _Nonnull)name apiKey:(NSString * _Nonnull)apiKey config:(NautilusAppConfig * _Nonnull)config delegate:(id <NautilusAppDelegate> _Nullable)delegate;
+/// 削除するpushIDを保存する
+/// \param pushID 削除するpushID
+///
+- (void)setDeletePushID:(NSInteger)pushID;
 @end
 
 
@@ -992,6 +1008,14 @@ typedef SWIFT_ENUM(NSInteger, NautilusAppInitializationError, open) {
 /// メンテナンス中
   NautilusAppInitializationErrorMaintenance = 3,
 };
+
+
+/// プッシュ通知に関連する遷移情報
+SWIFT_CLASS("_TtC15NautilusCoreSDK27NautilusAppNotificationInfo")
+@interface NautilusAppNotificationInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 /// カメラの使用権限をSDKヘ提供するためのプロトコル

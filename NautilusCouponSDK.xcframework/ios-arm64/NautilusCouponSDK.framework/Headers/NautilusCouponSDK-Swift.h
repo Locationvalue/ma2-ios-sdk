@@ -330,6 +330,7 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK23NautilusAppExchangeType")
 @class UIViewController;
 @class NautilusCouponCategoryInfo;
 enum NautilusCouponPublishType : NSInteger;
+@class NautilusAppNotificationInfo;
 
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC17NautilusCouponSDK14NautilusCoupon")
@@ -392,10 +393,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param couponType クーポンタイプ(<code>NautilusCouponPublishType</code>)
 ///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
 ///
 /// returns:
 /// クーポン詳細画面
-- (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID exchangeID:(NSInteger)exchangeID couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusCouponRouter function.");
+- (UIViewController * _Nonnull)instantiateCouponDetailViewControllerWithCouponID:(NSInteger)couponID exchangeID:(NSInteger)exchangeID couponType:(enum NautilusCouponPublishType)couponType notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use NautilusCouponRouter function.");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -748,7 +751,9 @@ SWIFT_PROTOCOL("_TtP17NautilusCouponSDK34NautilusCouponDetailInstantiatable_")
 ///
 /// \param coupon 詳細画面に表示するクーポン
 ///
-+ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app coupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app coupon:(NautilusCouponInfo * _Nonnull)coupon notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// クーポン詳細画面を生成する
 /// \param app SDKのインスタンス
 ///
@@ -756,7 +761,9 @@ SWIFT_PROTOCOL("_TtP17NautilusCouponSDK34NautilusCouponDetailInstantiatable_")
 ///
 /// \param couponType クーポンタイプ(<code>NautilusCouponPublishType</code>)
 ///
-+ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app couponIDInfo:(NautilusCouponIDInfo * _Nonnull)couponIDInfo couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
++ (UIViewController * _Nonnull)instantiateWithApp:(NautilusApp * _Nonnull)app couponIDInfo:(NautilusCouponIDInfo * _Nonnull)couponIDInfo couponType:(enum NautilusCouponPublishType)couponType notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NautilusCouponError, open) {
@@ -934,13 +941,17 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK20NautilusCouponRouter")
 /// クーポン詳細画面を生成する
 /// \param coupon 詳細画面に表示するクーポン
 ///
-- (UIViewController * _Nonnull)instantiateCouponDetailWithCoupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+- (UIViewController * _Nonnull)instantiateCouponDetailWithCoupon:(NautilusCouponInfo * _Nonnull)coupon notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// クーポン詳細画面を生成する
 /// \param couponIDInfo クーポンIDと発行IDの組の情報
 ///
 /// \param couponType クーポンタイプ(<code>NautilusCouponPublishType</code>)
 ///
-- (UIViewController * _Nonnull)instantiateCouponDetailWithCouponIDInfo:(NautilusCouponIDInfo * _Nonnull)couponIDInfo couponType:(enum NautilusCouponPublishType)couponType SWIFT_WARN_UNUSED_RESULT;
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
+- (UIViewController * _Nonnull)instantiateCouponDetailWithCouponIDInfo:(NautilusCouponIDInfo * _Nonnull)couponIDInfo couponType:(enum NautilusCouponPublishType)couponType notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo SWIFT_WARN_UNUSED_RESULT;
 /// お気に入りクーポン一覧画面を生成する
 - (UIViewController * _Nonnull)instantiateFavoriteCouponList SWIFT_WARN_UNUSED_RESULT;
 /// カテゴリータブ付きのクーポン一覧画面に遷移する
@@ -964,9 +975,11 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK20NautilusCouponRouter")
 /// モーダル遷移
 /// \param coupon 詳細画面に表示するクーポン
 ///
+/// \param notificationInfo プッシュ履歴一覧から遷移する時は必須
+///
 /// \param viewController 表示元になるView Controllerのインスタンス
 ///
-- (void)routeCouponDetailWithCoupon:(NautilusCouponInfo * _Nonnull)coupon in:(UIViewController * _Nonnull)viewController;
+- (void)routeCouponDetailWithCoupon:(NautilusCouponInfo * _Nonnull)coupon notificationInfo:(NautilusAppNotificationInfo * _Nullable)notificationInfo in:(UIViewController * _Nonnull)viewController;
 /// お気に入りクーポン一覧画面に遷移する
 /// note:
 /// モーダル遷移

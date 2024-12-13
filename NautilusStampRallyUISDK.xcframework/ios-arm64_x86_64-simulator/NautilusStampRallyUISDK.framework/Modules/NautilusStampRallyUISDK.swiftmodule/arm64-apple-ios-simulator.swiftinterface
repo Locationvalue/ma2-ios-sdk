@@ -130,6 +130,7 @@ extension NautilusStampRallyUISDK.NautilusStampRallySpotListMapViewController : 
   @objc deinit
 }
 extension NautilusStampRallyUISDK.NautilusStampRallyDetailViewController : NautilusStampRallyUISDK.NautilusStampRallyDetailInstantiatable {
+  @_Concurrency.MainActor @preconcurrency @objc public static func instantiate(app: NautilusCoreSDK.NautilusApp, stampRallyID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
   @_Concurrency.MainActor @preconcurrency @objc public static func instantiate(app: NautilusCoreSDK.NautilusApp, stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
 }
 extension NautilusStampRallyUISDK.NautilusStampRallyDetailViewController : NautilusCodeReaderSDK.NautilusCodeReaderHandler {
@@ -138,16 +139,19 @@ extension NautilusStampRallyUISDK.NautilusStampRallyDetailViewController : Nauti
 }
 @objc public protocol NautilusStampRallyDetailInstantiatable {
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
+  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, stampRallyID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusStampRallyRouter : ObjectiveC.NSObject {
   @objc final public func register(screen: NautilusStampRallyUISDK.NautilusStampRallyRoutableScreen, viewControllerClass: UIKit.UIViewController.Type)
   @objc final public func unregister(screen: NautilusStampRallyUISDK.NautilusStampRallyRoutableScreen)
   @objc final public func instantiateStampRallyList() -> UIKit.UIViewController
   @objc final public func instantiateStampRallyDetail(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
+  @objc final public func instantiateStampRallyDetail(stampRallyID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
   @objc final public func instantiateStampCodeReader(setting: NautilusCodeReaderSDK.NautilusCodeReaderSetting, handler: any NautilusCodeReaderSDK.NautilusCodeReaderHandler) -> UIKit.UIViewController
   @objc final public func instantiateStampRallySpotList(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
   @objc final public func routeStampRallyList(in viewController: UIKit.UIViewController)
   @objc final public func routeStampRallyDetail(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool, in viewController: UIKit.UIViewController)
+  @objc final public func routeStampRallyDetail(stampRallyID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil, in viewController: UIKit.UIViewController)
   @objc final public func routeStampCodeReader(setting: NautilusCodeReaderSDK.NautilusCodeReaderSetting, handler: any NautilusCodeReaderSDK.NautilusCodeReaderHandler, in viewController: UIKit.UIViewController)
   @objc final public func routeStampRallySpotList(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool, in viewController: UIKit.UIViewController)
   @objc deinit

@@ -124,6 +124,8 @@ public typealias NautilusNotificationHandlerAction = (NautilusNotificationSDK.Na
   @objc final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
   @objc final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, checkDate: Foundation.Date, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
   final public func getRemoteNotifications(start: Swift.Int? = nil, count: Swift.Int? = nil, checkDate: Foundation.Date? = nil, isExternalPushOnly: Swift.Bool? = nil, completion: @escaping (Swift.Result<[NautilusNotificationSDK.NautilusRemoteMessage], NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
+  final public func deleteHistory(pushIDs: [Swift.Int], completion: @escaping (Swift.Result<Swift.Void, NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
+  @objc final public func deleteHistory(pushIDs: [Swift.Int], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc deinit
 }
 extension NautilusNotificationSDK.NautilusNotificationNetworkError : Swift.Equatable {}
