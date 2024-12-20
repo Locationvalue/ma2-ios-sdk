@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NautilusNotificationSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -41,6 +42,7 @@ public let NautilusNotificationErrorDomain: Swift.String
   case parseFailure
   case userCancelled
   case invalidInstance
+  case illegalConfiguration
   case invalidParameters = 100
   case missingRequiredParameter = 101
   case unexpectedParameterFormat = 102
@@ -122,6 +124,8 @@ public typealias NautilusNotificationHandlerAction = (NautilusNotificationSDK.Na
   @objc final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
   @objc final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, checkDate: Foundation.Date, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
   final public func getRemoteNotifications(start: Swift.Int? = nil, count: Swift.Int? = nil, checkDate: Foundation.Date? = nil, isExternalPushOnly: Swift.Bool? = nil, completion: @escaping (Swift.Result<[NautilusNotificationSDK.NautilusRemoteMessage], NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
+  final public func deleteHistory(pushIDs: [Swift.Int], completion: @escaping (Swift.Result<Swift.Void, NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
+  @objc final public func deleteHistory(pushIDs: [Swift.Int], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc deinit
 }
 extension NautilusNotificationSDK.NautilusNotificationNetworkError : Swift.Equatable {}

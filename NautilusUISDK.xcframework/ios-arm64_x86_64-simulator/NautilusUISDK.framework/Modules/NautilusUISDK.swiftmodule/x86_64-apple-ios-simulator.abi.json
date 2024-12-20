@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "NautilusUISDK",
+    "printedName": "NautilusUISDK",
     "children": [
       {
         "kind": "Import",
@@ -46,6 +46,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -58,6 +59,7 @@
         "mangledName": "$s13NautilusUISDK14MASubCellLabelC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
@@ -73,6 +75,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -157,6 +173,7 @@
         "mangledName": "$s13NautilusUISDK0A14AppTabViewCellC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
@@ -173,6 +190,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -277,8 +308,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC",
@@ -389,8 +421,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC",
@@ -509,6 +542,7 @@
             "mangledName": "$s13NautilusUISDK0A13DropdownGroupC08dropdownD5TitleSSSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -615,8 +649,9 @@
             "mangledName": "$s13NautilusUISDK0A13DropdownGroupC13selectedIndexSivp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl",
               "RawDocComment"
@@ -671,6 +706,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -700,6 +736,7 @@
             "moduleName": "NautilusUISDK",
             "objc_name": "selectItemAt:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -713,6 +750,7 @@
         "mangledName": "$s13NautilusUISDK0A13DropdownGroupC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -727,6 +765,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -885,6 +937,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -977,6 +1045,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1149,6 +1233,22 @@
         "moduleName": "NautilusUISDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1252,6 +1352,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1372,8 +1486,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1484,8 +1599,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1589,8 +1705,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1689,6 +1806,7 @@
             "objc_name": "initializeWithLinkURL:inAppBrowserSettings:inAppBrowserOption:configuration:",
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -1756,6 +1874,7 @@
             "objc_name": "initializeWithRedirectorKey:inAppBrowserSettings:inAppBrowserOption:configuration:",
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -1783,6 +1902,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1809,6 +1929,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1903,6 +2024,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1959,6 +2081,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -2000,6 +2123,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -2011,6 +2135,7 @@
         "mangledName": "$s13NautilusUISDK0A26InAppBrowserViewControllerC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -2024,6 +2149,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2152,6 +2291,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2240,6 +2395,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2438,6 +2609,20 @@
               "RawDocComment"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -3015,6 +3200,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -3035,8 +3236,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "IBOutlet",
@@ -3154,8 +3356,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "IBOutlet",
@@ -3273,8 +3476,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl",
               "RawDocComment"
@@ -3324,8 +3528,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -3430,6 +3635,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -3472,6 +3678,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl"
@@ -3498,6 +3705,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -3525,6 +3733,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -3547,6 +3756,7 @@
             "mangledName": "$s13NautilusUISDK0A9AppTopBarC10reloadDatayyF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl",
@@ -3584,6 +3794,7 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -3596,6 +3807,7 @@
         "mangledName": "$s13NautilusUISDK0A9AppTopBarC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -3610,6 +3822,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3801,6 +4027,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5061,6 +5301,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6657,6 +6913,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6921,6 +7191,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -6987,6 +7271,7 @@
             "static": true,
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7016,6 +7301,7 @@
             "moduleName": "NautilusUISDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl",
@@ -7029,6 +7315,7 @@
         "mangledName": "$s13NautilusUISDK0A11LoadingViewC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -7044,6 +7331,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7173,6 +7474,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -7198,8 +7515,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
             ],
@@ -7321,8 +7639,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -7434,8 +7753,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -7531,8 +7851,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -7628,8 +7949,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -7734,6 +8056,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -7775,6 +8098,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl"
@@ -7801,6 +8125,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -7827,6 +8152,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -7839,6 +8165,7 @@
         "mangledName": "$s13NautilusUISDK8HTMLViewC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -7852,6 +8179,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8234,6 +8575,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -8291,6 +8646,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -8395,6 +8751,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -8505,8 +8862,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -8630,8 +8988,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -8747,8 +9106,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -8848,8 +9208,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -8957,8 +9318,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -9082,8 +9444,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -9207,8 +9570,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -9332,8 +9696,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -9456,6 +9821,7 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "IBInspectable",
@@ -9576,6 +9942,7 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "IBInspectable",
@@ -9689,8 +10056,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -9790,8 +10158,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -9899,6 +10268,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -9925,6 +10295,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -9951,6 +10322,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -10006,6 +10378,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -10032,6 +10405,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -10044,6 +10418,7 @@
         "mangledName": "$s13NautilusUISDK15ContainedButtonC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -10059,6 +10434,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10336,6 +10725,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -10363,8 +10768,9 @@
             "declAttributes": [
               "HasInitialValue",
               "ObjC",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -10459,8 +10865,9 @@
             "declAttributes": [
               "HasInitialValue",
               "ObjC",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
             ],
@@ -10575,6 +10982,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -10616,6 +11024,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Required"
@@ -10643,6 +11052,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -10656,6 +11066,7 @@
         "moduleName": "NautilusUISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -10674,6 +11085,20 @@
             "printedName": "NautilusGridViewLayout",
             "usr": "c:@M@NautilusUISDK@objc(pl)NautilusGridViewLayout",
             "mangledName": "$s13NautilusUISDK0A14GridViewLayoutP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -10805,6 +11230,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -11034,6 +11475,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -11164,6 +11619,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -11188,8 +11659,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC",
@@ -11308,6 +11780,7 @@
             "mangledName": "$s13NautilusUISDK0A24YearMonthDatePickerGroupC04dateF5TitleSSSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -11422,6 +11895,7 @@
             "mangledName": "$s13NautilusUISDK0A24YearMonthDatePickerGroupC11placeholderSSSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -11528,6 +12002,7 @@
             "mangledName": "$s13NautilusUISDK0A24YearMonthDatePickerGroupC6locale10Foundation6LocaleVvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -11618,6 +12093,7 @@
             "mangledName": "$s13NautilusUISDK0A24YearMonthDatePickerGroupC8timeZone10Foundation04TimeI0Vvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -11708,6 +12184,7 @@
             "mangledName": "$s13NautilusUISDK0A24YearMonthDatePickerGroupC8calendar10Foundation8CalendarVvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -11807,8 +12284,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -11926,8 +12404,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12045,8 +12524,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12164,8 +12644,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12283,8 +12764,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12402,8 +12884,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12522,6 +13005,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -12554,6 +13038,7 @@
             "objc_name": "numberOfComponentsInPickerView:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -12591,6 +13076,7 @@
             "objc_name": "pickerView:numberOfRowsInComponent:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -12641,6 +13127,7 @@
             "objc_name": "pickerView:titleForRow:forComponent:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -12683,6 +13170,7 @@
             "objc_name": "pickerView:didSelectRow:inComponent:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -12694,6 +13182,7 @@
         "mangledName": "$s13NautilusUISDK0A24YearMonthDatePickerGroupC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -12708,6 +13197,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -12910,6 +13413,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -13150,6 +13669,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -13182,6 +13715,7 @@
             "moduleName": "NautilusUISDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -13226,6 +13760,7 @@
             "moduleName": "NautilusUISDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -13270,6 +13805,7 @@
             "moduleName": "NautilusUISDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -13314,6 +13850,7 @@
             "moduleName": "NautilusUISDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -13357,8 +13894,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
             ],
@@ -13470,8 +14008,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl"
             ],
@@ -13524,8 +14063,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl"
             ],
@@ -13569,6 +14109,7 @@
             "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC05sheeteF0So6UIViewCvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Lazy",
               "AccessControl",
@@ -13655,6 +14196,7 @@
             "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC06handleF0So6UIViewCvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Lazy",
               "AccessControl",
@@ -13745,6 +14287,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -13772,6 +14315,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -13799,6 +14343,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -13827,6 +14372,7 @@
             "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC06updatecD17ScreenOverlayTypeyyAC0cdijK0OF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -13856,6 +14402,7 @@
             "mangledName": "$s13NautilusUISDK0A34BottomSheetContainerViewControllerC08estimatecD4Size3forSo6CGSizeVAC0cD17ScreenOverlayTypeO_tF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -13892,6 +14439,7 @@
             "objc_name": "gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -13947,6 +14495,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -13988,6 +14537,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -14000,6 +14550,7 @@
         "moduleName": "NautilusUISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
@@ -14013,6 +14564,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -14265,6 +14830,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -14315,6 +14894,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -14419,6 +14999,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -14529,8 +15110,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -14654,8 +15236,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -14771,8 +15354,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -14872,8 +15456,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -14980,6 +15565,7 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "IBInspectable",
@@ -15093,8 +15679,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "IBInspectable",
               "ObjC"
@@ -15202,6 +15789,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -15228,6 +15816,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -15254,6 +15843,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -15309,6 +15899,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -15321,6 +15912,7 @@
         "mangledName": "$s13NautilusUISDK11GhostButtonC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -15336,6 +15928,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -15490,6 +16096,8 @@
             "objc_name": "webView:didFinishNavigation:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -15540,6 +16148,8 @@
             "objc_name": "webView:didFailNavigation:withError:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -15590,6 +16200,8 @@
             "objc_name": "webView:didFailProvisionalNavigation:withError:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -15644,6 +16256,8 @@
             "objc_name": "webView:decidePolicyForNavigationResponse:decisionHandler:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -15688,6 +16302,8 @@
             "objc_name": "webView:didReceiveServerRedirectForProvisionalNavigation:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -15742,6 +16358,8 @@
             "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -15769,6 +16387,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "Override"
             ],
             "init_kind": "Designated"
@@ -15780,6 +16400,8 @@
         "moduleName": "NautilusUISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl",
           "ObjC",
           "RawDocComment"
@@ -15790,6 +16412,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -15838,6 +16474,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -15875,8 +16518,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -15966,8 +16610,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -16066,6 +16711,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -16107,6 +16753,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -16119,6 +16766,7 @@
         "moduleName": "NautilusUISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -16131,6 +16779,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -16245,8 +16907,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC",
@@ -16357,8 +17020,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC",
@@ -16477,6 +17141,7 @@
             "mangledName": "$s13NautilusUISDK0A10RadioGroupC05radioD5TitleSSSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -16584,8 +17249,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl",
               "ObjC",
@@ -16644,6 +17310,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -16667,6 +17334,7 @@
             "mangledName": "$s13NautilusUISDK0A10RadioGroupC9loadItemsyyF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -16697,6 +17365,7 @@
             "moduleName": "NautilusUISDK",
             "objc_name": "selectItemAt:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -16710,6 +17379,7 @@
         "mangledName": "$s13NautilusUISDK0A10RadioGroupC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -16724,6 +17394,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -16882,6 +17566,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -16937,6 +17637,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -16979,6 +17695,8 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -17033,6 +17751,8 @@
             "mangledName": "$s13NautilusUISDK0a7WebViewC20ScriptMessageHandlerC4nameACSS_tcfc",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -17060,6 +17780,8 @@
             "mangledName": "$s13NautilusUISDK0a7WebViewC20ScriptMessageHandlerC03addefG02toySo05WKWebD13ConfigurationC_tF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -17087,6 +17809,8 @@
             "mangledName": "$s13NautilusUISDK0a7WebViewC20ScriptMessageHandlerC06removeefG04fromySo05WKWebD13ConfigurationC_tF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -17123,6 +17847,8 @@
             "objc_name": "userContentController:didReceiveScriptMessage:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -17150,6 +17876,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "Override"
             ],
             "init_kind": "Designated"
@@ -17161,6 +17889,8 @@
         "moduleName": "NautilusUISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl",
           "ObjC",
           "RawDocComment"
@@ -17170,6 +17900,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -17218,6 +17962,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -17358,6 +18109,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -17391,8 +18158,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl"
             ],
@@ -17453,8 +18221,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl"
             ],
@@ -17515,8 +18284,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl"
             ],
@@ -17568,8 +18338,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
             ],
@@ -17676,6 +18447,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -17703,6 +18475,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -17731,6 +18504,7 @@
             "mangledName": "$s13NautilusUISDK0A19AppTopBarControllerC010selectViewF02atySi_tF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -17767,6 +18541,7 @@
             "objc_name": "appTopBar:didSelectedAt:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -17804,6 +18579,7 @@
             "objc_name": "appTopBar:viewForItemAt:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -17835,6 +18611,7 @@
             "objc_name": "numberOfItemsIn:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -17879,6 +18656,7 @@
             "objc_name": "pageViewController:viewControllerBeforeViewController:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -17924,6 +18702,7 @@
             "objc_name": "pageViewController:viewControllerAfterViewController:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -17954,6 +18733,7 @@
             "objc_name": "presentationCountForPageViewController:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -18009,6 +18789,7 @@
             "objc_name": "pageViewController:didFinishAnimating:previousViewControllers:transitionCompleted:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -18064,6 +18845,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -18105,6 +18887,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -18117,6 +18900,7 @@
         "moduleName": "NautilusUISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -18142,6 +18926,20 @@
             "printedName": "NautilusAppTopBarDataSource",
             "usr": "c:@M@NautilusUISDK@objc(pl)NautilusAppTopBarDataSource",
             "mangledName": "$s13NautilusUISDK0A19AppTopBarDataSourceP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -18272,6 +19070,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -18350,6 +19164,8 @@
             "objc_name": "webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -18410,6 +19226,8 @@
             "objc_name": "webView:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -18492,6 +19310,8 @@
             "objc_name": "webView:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:completionHandler:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -18549,6 +19369,8 @@
             "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -18576,6 +19398,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "Override"
             ],
             "init_kind": "Designated"
@@ -18587,6 +19411,8 @@
         "moduleName": "NautilusUISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl",
           "ObjC",
           "RawDocComment"
@@ -18597,6 +19423,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -18645,6 +19485,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -18700,8 +19547,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -18814,6 +19662,7 @@
             "overriding": true,
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -18913,6 +19762,7 @@
             "overriding": true,
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -19020,6 +19870,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -19062,6 +19913,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl"
@@ -19088,6 +19940,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -19115,6 +19968,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -19140,6 +19994,7 @@
             "overriding": true,
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -19152,6 +20007,7 @@
         "mangledName": "$s13NautilusUISDK0A28AppTopBarItemTitledLabelViewC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -19167,6 +20023,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -19293,6 +20163,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -19419,8 +20290,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -19540,8 +20412,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -19655,6 +20528,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -19757,6 +20631,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -19897,6 +20772,7 @@
             "mangledName": "$s13NautilusUISDK0A27MessageDialogViewControllerC5title7message16closeButtonImageACSSSg_AGSo7UIImageCSgtcfc",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Convenience",
               "AccessControl"
@@ -19923,6 +20799,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -19955,6 +20832,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -19987,6 +20865,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -20043,6 +20922,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -20084,6 +20964,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -20095,6 +20976,7 @@
         "mangledName": "$s13NautilusUISDK0A27MessageDialogViewControllerC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -20108,6 +20990,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -20596,6 +21492,22 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -20821,6 +21733,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -20859,6 +21785,7 @@
             "moduleName": "NautilusUISDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl",
@@ -20896,6 +21823,7 @@
             "moduleName": "NautilusUISDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl",
@@ -20909,6 +21837,7 @@
         "mangledName": "$s13NautilusUISDK0A15CommonErrorViewC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -20923,6 +21852,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -21081,6 +22024,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -21105,8 +22064,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
             ],
@@ -21219,6 +22179,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -21241,6 +22202,7 @@
             "mangledName": "$s13NautilusUISDK0A13StackListViewC9clearDatayyF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -21262,6 +22224,7 @@
             "mangledName": "$s13NautilusUISDK0A13StackListViewC10reloadDatayyF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -21273,6 +22236,7 @@
         "mangledName": "$s13NautilusUISDK0A13StackListViewC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -21286,6 +22250,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -21430,6 +22408,8 @@
             "mangledName": "$s13NautilusUISDK0A32AnalyticsWebScriptMessageHandlerC3app4nameAC0A7CoreSDK0A3AppC_SStcfc",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "init_kind": "Designated"
@@ -21465,6 +22445,8 @@
             "objc_name": "userContentController:didReceiveScriptMessage:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "Override"
             ],
@@ -21495,6 +22477,8 @@
             "overriding": true,
             "implicit": true,
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "Override"
             ],
             "init_kind": "Designated"
@@ -21506,6 +22490,8 @@
         "moduleName": "NautilusUISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl",
           "ObjC"
         ],
@@ -21515,6 +22501,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -21563,6 +22563,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -21607,6 +22614,7 @@
             "moduleName": "NautilusUISDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -21659,6 +22667,7 @@
             "moduleName": "NautilusUISDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -21735,6 +22744,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -21776,6 +22786,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -21788,6 +22799,7 @@
         "moduleName": "NautilusUISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
@@ -21801,6 +22813,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -22679,6 +23705,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -22918,6 +23958,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -23007,6 +24063,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -23032,8 +24104,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "IBOutlet",
@@ -23150,8 +24223,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "IBOutlet",
@@ -23269,8 +24343,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -23373,6 +24448,7 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -23490,6 +24566,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -23525,6 +24602,7 @@
             "mangledName": "$s13NautilusUISDK0A8GridViewC5frame10gridLayoutACSo6CGRectV_AA0acdG0_ptcfc",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -23565,6 +24643,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl"
@@ -23587,6 +24666,7 @@
             "mangledName": "$s13NautilusUISDK0A8GridViewC10reloadDatayyF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl",
@@ -23616,6 +24696,7 @@
             "mangledName": "$s13NautilusUISDK0A8GridViewC10reloadItem2aty10Foundation9IndexPathV_tF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl"
@@ -23652,6 +24733,7 @@
             "mangledName": "$s13NautilusUISDK0A8GridViewC11reloadItems2atySay10Foundation9IndexPathVG_tF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl"
@@ -23684,6 +24766,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -23722,6 +24805,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -23759,6 +24843,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -23795,6 +24880,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -23832,6 +24918,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -23843,6 +24930,7 @@
         "mangledName": "$s13NautilusUISDK0A8GridViewC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -23856,6 +24944,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -24376,6 +25478,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -24397,8 +25515,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -24489,8 +25608,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -24580,8 +25700,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -24697,6 +25818,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -24752,6 +25874,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -24806,6 +25929,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -24829,6 +25953,7 @@
             "moduleName": "NautilusUISDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -24862,6 +25987,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -24903,6 +26029,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -24915,6 +26042,7 @@
         "moduleName": "NautilusUISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
@@ -24928,6 +26056,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -25032,8 +26174,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC",
@@ -25152,6 +26295,7 @@
             "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC04dateD5TitleSSSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -25266,6 +26410,7 @@
             "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC11placeholderSSSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -25380,6 +26525,7 @@
             "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC6locale10Foundation6LocaleVSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -25486,6 +26632,7 @@
             "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC8calendar10Foundation8CalendarVvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -25584,6 +26731,7 @@
             "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC8timeZone10Foundation04TimeG0VSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -25690,6 +26838,7 @@
             "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC04dateD4ModeSo06UIDatedG0Vvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -25788,6 +26937,7 @@
             "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC4date10Foundation0C0VSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -25902,6 +27052,7 @@
             "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC07minimumC010Foundation0C0VSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -26016,6 +27167,7 @@
             "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC07maximumC010Foundation0C0VSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -26122,6 +27274,7 @@
             "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC10dateFormatSSvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -26222,6 +27375,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -26235,6 +27389,7 @@
         "mangledName": "$s13NautilusUISDK0A15DatePickerGroupC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -26249,6 +27404,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -26374,6 +27543,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -26947,6 +28132,20 @@
               "ObjectiveC.NSObject"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -27780,6 +28979,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -27871,8 +29084,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC",
@@ -27983,8 +29197,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC",
@@ -28103,6 +29318,7 @@
             "mangledName": "$s13NautilusUISDK0A13CheckBoxGroupC05checkdE5TitleSSSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -28218,8 +29434,9 @@
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl",
               "ObjC",
@@ -28286,6 +29503,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -28309,6 +29527,7 @@
             "mangledName": "$s13NautilusUISDK0A13CheckBoxGroupC9loadItemsyyF",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -28339,6 +29558,7 @@
             "moduleName": "NautilusUISDK",
             "objc_name": "selectItemAt:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -28369,6 +29589,7 @@
             "moduleName": "NautilusUISDK",
             "objc_name": "deselectItemAt:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -28382,6 +29603,7 @@
         "mangledName": "$s13NautilusUISDK0A13CheckBoxGroupC",
         "moduleName": "NautilusUISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -28396,6 +29618,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -28554,6 +29790,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -28646,6 +29898,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -28706,6 +29974,7 @@
             "mangledName": "$sSo6UIViewC13NautilusUISDKE20parentViewControllerSo0aF0CSgvp",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "RawDocComment"
             ],
@@ -28748,6 +30017,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIView",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -28762,6 +30032,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -28927,6 +30211,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -29037,13 +30335,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Web\/WebView\/NautilusInAppBrowserOption.swift",
-      "kind": "StringLiteral",
-      "offset": 285,
-      "length": 26,
-      "value": "\"NautilusUISDK.NautilusInAppBrowserOption\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Web\/WebView\/NautilusInAppBrowserViewController.swift",
       "kind": "FloatLiteral",
       "offset": 1112,
@@ -29114,13 +30405,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Web\/WebView\/NautilusInAppBrowserSettings.swift",
-      "kind": "StringLiteral",
-      "offset": 311,
-      "length": 28,
-      "value": "\"NautilusUISDK.NautilusInAppBrowserSettings\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
       "offset": 2725,
@@ -29417,303 +30701,170 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2725,
-      "length": 18,
-      "value": "\"ma_ui_general_ok\""
+      "offset": 10630,
+      "length": 9,
+      "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2773,
-      "length": 22,
-      "value": "\"ma_ui_general_cancel\""
+      "offset": 10895,
+      "length": 9,
+      "value": "\"#333333\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2822,
-      "length": 19,
-      "value": "\"ma_ui_general_yes\""
+      "offset": 11131,
+      "length": 9,
+      "value": "\"#1992D6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2867,
-      "length": 18,
-      "value": "\"ma_ui_general_no\""
+      "offset": 11373,
+      "length": 9,
+      "value": "\"#FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
+      "kind": "FloatLiteral",
+      "offset": 11595,
+      "length": 3,
+      "value": "0.1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2914,
-      "length": 21,
-      "value": "\"ma_ui_general_close\""
+      "offset": 11816,
+      "length": 9,
+      "value": "\"#333333\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 2965,
-      "length": 22,
-      "value": "\"ma_ui_general_delete\""
+      "offset": 12045,
+      "length": 9,
+      "value": "\"#1992D6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3017,
-      "length": 22,
-      "value": "\"ma_ui_general_submit\""
+      "offset": 12289,
+      "length": 9,
+      "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3069,
-      "length": 22,
-      "value": "\"ma_ui_general_select\""
+      "offset": 12548,
+      "length": 9,
+      "value": "\"#F7F7F7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3120,
-      "length": 21,
-      "value": "\"ma_ui_general_retry\""
+      "offset": 12821,
+      "length": 9,
+      "value": "\"#333333\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3171,
-      "length": 22,
-      "value": "\"ma_ui_general_reload\""
+      "offset": 13075,
+      "length": 9,
+      "value": "\"#333333\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3242,
-      "length": 44,
-      "value": "\"ma_ui_inappbrowser_error_dialog_load_title\""
+      "offset": 13365,
+      "length": 9,
+      "value": "\"#757575\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3333,
-      "length": 46,
-      "value": "\"ma_ui_inappbrowser_error_dialog_load_message\""
+      "offset": 13670,
+      "length": 9,
+      "value": "\"#D9D9D9\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3432,
-      "length": 48,
-      "value": "\"ma_ui_inappbrowser_confirm_dialog_repost_title\""
+      "offset": 13988,
+      "length": 9,
+      "value": "\"#EEEEEE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3535,
-      "length": 50,
-      "value": "\"ma_ui_inappbrowser_confirm_dialog_repost_message\""
+      "offset": 14302,
+      "length": 9,
+      "value": "\"#F7F7F7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3643,
-      "length": 54,
-      "value": "\"ma_ui_inappbrowser_error_dialog_invalid_scheme_title\""
+      "offset": 14620,
+      "length": 9,
+      "value": "\"#333333\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3757,
-      "length": 56,
-      "value": "\"ma_ui_inappbrowser_error_dialog_invalid_scheme_message\""
+      "offset": 14848,
+      "length": 11,
+      "value": "\"#29000000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3873,
-      "length": 57,
-      "value": "\"ma_ui_inappbrowser_error_dialog_scheme_open_error_title\""
+      "offset": 15100,
+      "length": 11,
+      "value": "\"#80000000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 3992,
-      "length": 59,
-      "value": "\"ma_ui_inappbrowser_error_dialog_scheme_open_error_message\""
+      "offset": 15352,
+      "length": 11,
+      "value": "\"#B3000000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4095,
-      "length": 38,
-      "value": "\"ma_ui_inappbrowser_show_error_dialog\""
+      "offset": 15580,
+      "length": 9,
+      "value": "\"#BDBDBD\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4162,
-      "length": 21,
-      "value": "\"ma_ui_primary_color\""
+      "offset": 15817,
+      "length": 9,
+      "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4214,
-      "length": 24,
-      "value": "\"ma_ui_on_primary_color\""
+      "offset": 16048,
+      "length": 9,
+      "value": "\"#FD5B3C\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4278,
-      "length": 34,
-      "value": "\"ma_ui_on_primary_color_container\""
+      "offset": 16289,
+      "length": 9,
+      "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
       "kind": "StringLiteral",
-      "offset": 4339,
-      "length": 19,
-      "value": "\"ma_ui_focus_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 4390,
-      "length": 24,
-      "value": "\"ma_ui_foundation_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 4449,
-      "length": 28,
-      "value": "\"ma_ui_foundation_color_low\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 4514,
-      "length": 31,
-      "value": "\"ma_ui_on_foundation_color_low\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 4579,
-      "length": 27,
-      "value": "\"ma_ui_on_foundation_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 4650,
-      "length": 39,
-      "value": "\"ma_ui_on_foundation_color_modest_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 4738,
-      "length": 44,
-      "value": "\"ma_ui_on_foundation_color_modest_component\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 4834,
-      "length": 48,
-      "value": "\"ma_ui_on_foundation_color_modest_separate_thin\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 4934,
-      "length": 48,
-      "value": "\"ma_ui_on_foundation_color_modest_separate_bold\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5034,
-      "length": 48,
-      "value": "\"ma_ui_on_foundation_color_modest_separate_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5110,
-      "length": 20,
-      "value": "\"ma_ui_shadow_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5163,
-      "length": 26,
-      "value": "\"ma_ui_overlay_color_deep\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5222,
-      "length": 26,
-      "value": "\"ma_ui_overlay_color_dark\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5276,
-      "length": 21,
-      "value": "\"ma_ui_top_bar_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5327,
-      "length": 24,
-      "value": "\"ma_ui_on_top_bar_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5380,
-      "length": 21,
-      "value": "\"ma_ui_disable_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5432,
-      "length": 24,
-      "value": "\"ma_ui_on_disable_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5484,
-      "length": 20,
-      "value": "\"ma_ui_accent_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5534,
-      "length": 23,
-      "value": "\"ma_ui_on_accent_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 5587,
-      "length": 23,
-      "value": "\"ma_ui_text_link_color\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUIComponent.swift",
-      "kind": "StringLiteral",
-      "offset": 2621,
-      "length": 19,
-      "value": "\"NautilusUISDK.NautilusUIComponent\""
+      "offset": 16526,
+      "length": 9,
+      "value": "\"#1A73E8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Base\/NautilusLoadingView.swift",
@@ -29728,34 +30879,6 @@
       "offset": 831,
       "length": 3,
       "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Buttons\/ContainedButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 308,
-      "length": 5,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Buttons\/ContainedButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 327,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Buttons\/ContainedButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 347,
-      "length": 5,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Buttons\/ContainedButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 366,
-      "length": 4,
-      "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Buttons\/ContainedButton.swift",
@@ -29835,20 +30958,6 @@
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Web\/NautilusURLBrowseType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 574,
-      "length": 20,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Web\/NautilusURLBrowseType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 643,
-      "length": 11,
-      "value": "2"
-    },
-    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/YearMonthDatePicker\/NautilusYearMonthDatePickerGroup.swift",
       "kind": "FloatLiteral",
       "offset": 1136,
@@ -29889,6 +30998,55 @@
       "offset": 3638,
       "length": 4,
       "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/BottomSheet\/NautilusBottomSheetContainerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13781,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/BottomSheet\/NautilusBottomSheetContainerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13818,
+      "length": 4,
+      "value": "1500"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/BottomSheet\/NautilusBottomSheetContainerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13960,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/BottomSheet\/NautilusBottomSheetContainerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14062,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/BottomSheet\/NautilusBottomSheetContainerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14375,
+      "length": 4,
+      "value": "1500"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/BottomSheet\/NautilusBottomSheetContainerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14520,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/BottomSheet\/NautilusBottomSheetContainerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14622,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Buttons\/GhostButton.swift",
@@ -30094,13 +31252,6 @@
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Web\/WebView\/NautilusWebViewWebScriptMessageHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 323,
-      "length": 38,
-      "value": "\"NautilusUISDK.NautilusWebViewWebScriptMessageHandler\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/AppTab\/NautilusAppTopBarController.swift",
       "kind": "IntegerLiteral",
       "offset": 3245,
@@ -30185,27 +31336,6 @@
       "value": "\"identify\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Web\/WebView\/NautilusAnalyticsWebScriptMessageHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 796,
-      "length": 10,
-      "value": "\"logEvent\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Web\/WebView\/NautilusAnalyticsWebScriptMessageHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 831,
-      "length": 10,
-      "value": "\"identify\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Web\/WebView\/NautilusAnalyticsWebScriptMessageHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 306,
-      "length": 40,
-      "value": "\"NautilusUISDK.NautilusAnalyticsWebScriptMessageHandler\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUI.swift",
       "kind": "BooleanLiteral",
       "offset": 532,
@@ -30214,10 +31344,24 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1344,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1438,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/NautilusUI.swift",
       "kind": "StringLiteral",
-      "offset": 366,
-      "length": 10,
-      "value": "\"NautilusUISDK.NautilusUI\""
+      "offset": 1745,
+      "length": 31,
+      "value": "\"moduleapps-ui-components.json\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/GridView\/NautilusGridView.swift",
