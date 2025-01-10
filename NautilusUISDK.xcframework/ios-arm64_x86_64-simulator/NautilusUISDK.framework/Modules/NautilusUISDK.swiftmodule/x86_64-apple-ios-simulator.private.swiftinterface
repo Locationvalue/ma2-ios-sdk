@@ -315,6 +315,19 @@ public protocol HTMLViewDelegate : AnyObject {
       get
     }
   }
+  @objc public enum DesignedButtonStyle : Swift.Int {
+    case wideL
+    case wideM
+    case wideS
+    case narrowL
+    case narrowM
+    case narrowS
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
   @_Concurrency.MainActor @preconcurrency @objc override final public var isHighlighted: Swift.Bool {
     @objc get
     @objc set
@@ -371,6 +384,8 @@ public protocol HTMLViewDelegate : AnyObject {
     @objc get
     @objc set
   }
+  @objc @_Concurrency.MainActor @preconcurrency final public func applyActionButtonStyle(_ style: NautilusUISDK.ContainedButton.DesignedButtonStyle, nautilusColor: (any NautilusUISDK.NautilusColor)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency final public func applyGhostButtonStyle(_ style: NautilusUISDK.ContainedButton.DesignedButtonStyle, nautilusColor: (any NautilusUISDK.NautilusColor)? = nil)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc override final public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override final public func prepareForInterfaceBuilder()
@@ -936,6 +951,9 @@ extension NautilusUISDK.NautilusLoadingView.Style : Swift.Hashable {}
 extension NautilusUISDK.ContainedButton.NautilusBorderRadiusStyle : Swift.Equatable {}
 extension NautilusUISDK.ContainedButton.NautilusBorderRadiusStyle : Swift.Hashable {}
 extension NautilusUISDK.ContainedButton.NautilusBorderRadiusStyle : Swift.RawRepresentable {}
+extension NautilusUISDK.ContainedButton.DesignedButtonStyle : Swift.Equatable {}
+extension NautilusUISDK.ContainedButton.DesignedButtonStyle : Swift.Hashable {}
+extension NautilusUISDK.ContainedButton.DesignedButtonStyle : Swift.RawRepresentable {}
 extension NautilusUISDK.NautilusURLBrowseType : Swift.Equatable {}
 extension NautilusUISDK.NautilusURLBrowseType : Swift.Hashable {}
 extension NautilusUISDK.NautilusURLBrowseType : Swift.RawRepresentable {}

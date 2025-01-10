@@ -313,6 +313,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSString;
 @class UIImage;
 enum NautilusBorderRadiusStyle : NSInteger;
+enum DesignedButtonStyle : NSInteger;
+@protocol NautilusColor;
 @class NSCoder;
 @class UIEvent;
 @class UIView;
@@ -333,6 +335,18 @@ SWIFT_CLASS("_TtC13NautilusUISDK15ContainedButton")
 @property (nonatomic, strong) IBInspectable UIImage * _Nullable image;
 @property (nonatomic) IBInspectable UIEdgeInsets stackViewInsets;
 @property (nonatomic) IBInspectable enum NautilusBorderRadiusStyle borderRadiusStyle;
+/// アクションボタンにスタイルを適用する
+/// \param style フォントサイズ LMは14.0, Sは13.0 / Insets wideは指定なし, narrow は指定あり（いずれもDesignSystemどおり）
+///
+/// \param nautilusColor 指定した場合、背景: Primary Color (disable時はdisable color) 文字: On Primary Color (disable時は on disable color)
+///
+- (void)applyActionButtonStyle:(enum DesignedButtonStyle)style nautilusColor:(id <NautilusColor> _Nullable)nautilusColor;
+/// ゴーストボタンにスタイルを適用する
+/// \param style フォントサイズ LMは14.0, Sは13.0 / Insets wideは指定なし, narrow は指定あり（いずれもDesignSystemどおり）
+///
+/// \param nautilusColor 指定した場合、枠・文字: onFoundationColor (disable時はdisable color)
+///
+- (void)applyGhostButtonStyle:(enum DesignedButtonStyle)style nautilusColor:(id <NautilusColor> _Nullable)nautilusColor;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)awakeFromNib;
@@ -347,6 +361,15 @@ typedef SWIFT_ENUM(NSInteger, NautilusBorderRadiusStyle, open) {
   NautilusBorderRadiusStyleMidium = 2,
   NautilusBorderRadiusStyleLarge = 3,
   NautilusBorderRadiusStylePill = 4,
+};
+
+typedef SWIFT_ENUM(NSInteger, DesignedButtonStyle, open) {
+  DesignedButtonStyleWideL = 0,
+  DesignedButtonStyleWideM = 1,
+  DesignedButtonStyleWideS = 2,
+  DesignedButtonStyleNarrowL = 3,
+  DesignedButtonStyleNarrowM = 4,
+  DesignedButtonStyleNarrowS = 5,
 };
 
 
