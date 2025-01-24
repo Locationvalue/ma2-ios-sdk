@@ -97,6 +97,7 @@ import _SwiftConcurrencyShims
   final public let stampCardCompleteImageAspectRatio: Swift.Double?
   final public let currentLap: Swift.Int?
   final public let stampCardImages: [NautilusStampSDK.NautilusStampImage]?
+  final public let showCheckinButton: Swift.Bool
   @objc deinit
 }
 @objc public enum NautilusStampAvailableType : Swift.Int {
@@ -169,6 +170,7 @@ import _SwiftConcurrencyShims
   final public let stampCompleteImageAspectRatio: Swift.Double?
   final public let currentLap: Swift.Int?
   final public let checkPoints: [NautilusStampSDK.NautilusCheckPoint]?
+  final public let showCheckinButton: Swift.Bool
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusCheckPoint : ObjectiveC.NSObject {
