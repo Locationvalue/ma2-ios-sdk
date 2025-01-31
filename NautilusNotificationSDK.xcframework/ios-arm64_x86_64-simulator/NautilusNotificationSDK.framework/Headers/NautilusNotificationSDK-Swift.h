@@ -313,8 +313,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSError;
 @class NSData;
 @class NautilusRegistrationTarget;
+enum NautilusPushType : NSInteger;
 @class NautilusRemoteMessage;
 @class NSDate;
+@class NautilusPushDetailInfo;
 
 SWIFT_CLASS("_TtC23NautilusNotificationSDK20NautilusNotification")
 @interface NautilusNotification : NSObject <NautilusFeature>
@@ -346,33 +348,49 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 ///
 - (void)registerPushTargetWithRegistrationTarget:(NautilusRegistrationTarget * _Nonnull)registrationTarget completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param pushType プッシュ通知識別子
+///
 /// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getRemoteNotificationsWithCompletion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
+- (void)getRemoteNotificationsWithPushType:(enum NautilusPushType)pushType completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param start 取得開始位置
 ///
 /// \param count 取得件数の指定
 ///
+/// \param pushType プッシュ通知識別子
+///
 /// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
+- (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count pushType:(enum NautilusPushType)pushType completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param start 取得開始位置
 ///
 /// \param count 取得件数の指定
 ///
 /// \param checkDate 最終確認日時
 ///
+/// \param pushType プッシュ通知識別子
+///
 /// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count checkDate:(NSDate * _Nonnull)checkDate completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
+- (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count checkDate:(NSDate * _Nonnull)checkDate pushType:(enum NautilusPushType)pushType completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
 /// プッシュ通知履歴を削除する
 /// \param pushIDs 削除対象のプッシュIDの配列
 ///
 /// \param completion 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)deleteHistoryWithPushIDs:(NSArray<NSNumber *> * _Nonnull)pushIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// プッシュ詳細を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param pushID プッシュID
+///
+/// \param completion 成功時はプッシュ通知の詳細, 失敗時はエラーを受け取るクロージャ
+///
+- (void)getPushDetailWithPushID:(NSInteger)pushID completion:(void (^ _Nonnull)(NautilusPushDetailInfo * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -436,11 +454,29 @@ typedef SWIFT_ENUM(NSInteger, NautilusNotificationNetworkError, open) {
 static NSString * _Nonnull const NautilusNotificationNetworkErrorDomain = @"NautilusNotificationSDK.NautilusNotificationNetworkError";
 
 
+/// プッシュ詳細情報
+SWIFT_CLASS("_TtC23NautilusNotificationSDK22NautilusPushDetailInfo")
+@interface NautilusPushDetailInfo : NSObject
+/// SDK外から初期化をさせない
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC23NautilusNotificationSDK28NautilusPushNotificationInfo")
 @interface NautilusPushNotificationInfo : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+/// プッシュ通知識別子
+typedef SWIFT_ENUM(NSInteger, NautilusPushType, open) {
+/// 通常情報
+  NautilusPushTypeNormal = 0,
+/// 災害情報
+  NautilusPushTypeDisaster = 1,
+/// メールプッシュ
+  NautilusPushTypeMail = 2,
+};
 
 
 /// 現在の端末をPUSH通知の配信対象として登録する情報
@@ -782,8 +818,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSError;
 @class NSData;
 @class NautilusRegistrationTarget;
+enum NautilusPushType : NSInteger;
 @class NautilusRemoteMessage;
 @class NSDate;
+@class NautilusPushDetailInfo;
 
 SWIFT_CLASS("_TtC23NautilusNotificationSDK20NautilusNotification")
 @interface NautilusNotification : NSObject <NautilusFeature>
@@ -815,33 +853,49 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 ///
 - (void)registerPushTargetWithRegistrationTarget:(NautilusRegistrationTarget * _Nonnull)registrationTarget completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param pushType プッシュ通知識別子
+///
 /// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getRemoteNotificationsWithCompletion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
+- (void)getRemoteNotificationsWithPushType:(enum NautilusPushType)pushType completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param start 取得開始位置
 ///
 /// \param count 取得件数の指定
 ///
+/// \param pushType プッシュ通知識別子
+///
 /// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
+- (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count pushType:(enum NautilusPushType)pushType completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param start 取得開始位置
 ///
 /// \param count 取得件数の指定
 ///
 /// \param checkDate 最終確認日時
 ///
+/// \param pushType プッシュ通知識別子
+///
 /// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
-- (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count checkDate:(NSDate * _Nonnull)checkDate completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
+- (void)getRemoteNotificationsWithStart:(NSInteger)start count:(NSInteger)count checkDate:(NSDate * _Nonnull)checkDate pushType:(enum NautilusPushType)pushType completion:(void (^ _Nonnull)(NSArray<NautilusRemoteMessage *> * _Nullable, NSError * _Nullable))completion;
 /// プッシュ通知履歴を削除する
 /// \param pushIDs 削除対象のプッシュIDの配列
 ///
 /// \param completion 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)deleteHistoryWithPushIDs:(NSArray<NSNumber *> * _Nonnull)pushIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// プッシュ詳細を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param pushID プッシュID
+///
+/// \param completion 成功時はプッシュ通知の詳細, 失敗時はエラーを受け取るクロージャ
+///
+- (void)getPushDetailWithPushID:(NSInteger)pushID completion:(void (^ _Nonnull)(NautilusPushDetailInfo * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -905,11 +959,29 @@ typedef SWIFT_ENUM(NSInteger, NautilusNotificationNetworkError, open) {
 static NSString * _Nonnull const NautilusNotificationNetworkErrorDomain = @"NautilusNotificationSDK.NautilusNotificationNetworkError";
 
 
+/// プッシュ詳細情報
+SWIFT_CLASS("_TtC23NautilusNotificationSDK22NautilusPushDetailInfo")
+@interface NautilusPushDetailInfo : NSObject
+/// SDK外から初期化をさせない
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC23NautilusNotificationSDK28NautilusPushNotificationInfo")
 @interface NautilusPushNotificationInfo : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+/// プッシュ通知識別子
+typedef SWIFT_ENUM(NSInteger, NautilusPushType, open) {
+/// 通常情報
+  NautilusPushTypeNormal = 0,
+/// 災害情報
+  NautilusPushTypeDisaster = 1,
+/// メールプッシュ
+  NautilusPushTypeMail = 2,
+};
 
 
 /// 現在の端末をPUSH通知の配信対象として登録する情報

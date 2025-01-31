@@ -283,6 +283,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import NautilusContainerSDK;
 @import NautilusCoreSDK;
+@import NautilusUISDK;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -311,6 +312,35 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSBundle;
 @class NSCoder;
 
+/// プッシュ通知防災詳細画面
+SWIFT_CLASS("_TtC25NautilusNotificationUISDK48NautilusNotificationDisasterDetailViewController")
+@interface NautilusNotificationDisasterDetailViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NautilusAppTopBar;
+@class NautilusAppTopBarItemView;
+
+/// PUSH通知/防災の履歴一覧画面を内包する画面
+SWIFT_RESILIENT_CLASS("_TtC25NautilusNotificationUISDK41NautilusNotificationListTabViewController")
+@interface NautilusNotificationListTabViewController : NautilusAppTopBarController
+- (void)viewDidLoad;
+- (NautilusAppTopBarItemView * _Nonnull)appTopBar:(NautilusAppTopBar * _Nonnull)appTopBar viewForItemAt:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)numberOfItemsIn:(NautilusAppTopBar * _Nonnull)appTopBar SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface NautilusNotificationListTabViewController (SWIFT_EXTENSION(NautilusNotificationUISDK)) <NautilusAppTopBarControllerDelegate>
+- (NSInteger)numberOfViewControllers:(NautilusAppTopBarController * _Nonnull)appTopBarController SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)appTopBarController:(NautilusAppTopBarController * _Nonnull)appTopBarController viewControllerAt:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)appTopBarController:(NautilusAppTopBarController * _Nonnull)appTopBarController indexOfViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// PUSH通知履歴一覧画面
 SWIFT_CLASS("_TtC25NautilusNotificationUISDK38NautilusNotificationListViewController")
 @interface NautilusNotificationListViewController : UIViewController
@@ -322,8 +352,17 @@ SWIFT_CLASS("_TtC25NautilusNotificationUISDK38NautilusNotificationListViewContro
 
 @class NautilusRemoteMessage;
 
+/// プッシュ通知一覧画面からのイベントを受け取るデリゲート
 SWIFT_PROTOCOL("_TtP25NautilusNotificationUISDK46NautilusNotificationListViewControllerDelegate_")
 @protocol NautilusNotificationListViewControllerDelegate
+/// プッシュ通知一覧画面のセルが選択された時に呼ばれる
+/// \param viewController プッシュ通知一覧画面
+///
+/// \param remoteMessage 選択されたプッシュ通知の情報
+///
+///
+/// returns:
+/// アプリで処理を行う場合はtrue、SDK側の処理を行う場合はfalse
 - (BOOL)notificationList:(NautilusNotificationListViewController * _Nonnull)viewController didSelect:(NautilusRemoteMessage * _Nonnull)remoteMessage SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -356,7 +395,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// returns:
 /// プッシュ通知一覧画面VC
-- (NautilusNotificationListViewController * _Nonnull)instantiateNotificationListViewController SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nonnull)instantiateNotificationListViewController SWIFT_WARN_UNUSED_RESULT;
+/// PUSH通知防災詳細画面を生成する
+/// \param pushID プッシュID
+///
+///
+/// returns:
+/// PUSH通知防災詳細画面
+- (NautilusNotificationDisasterDetailViewController * _Nonnull)instantiateNotificationDisasterDetailViewControllerWithPushID:(NSInteger)pushID SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

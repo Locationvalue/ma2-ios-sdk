@@ -5,6 +5,329 @@
     "printedName": "NautilusNotificationSDK",
     "children": [
       {
+        "kind": "TypeDecl",
+        "name": "NautilusPushType",
+        "printedName": "NautilusPushType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "normal",
+            "printedName": "normal",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusPushType.Type) -> NautilusNotificationSDK.NautilusPushType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusPushType",
+                    "printedName": "NautilusNotificationSDK.NautilusPushType",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusPushType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusPushType",
+                        "printedName": "NautilusNotificationSDK.NautilusPushType",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType@NautilusPushTypeNormal",
+            "mangledName": "$s23NautilusNotificationSDK0A8PushTypeO6normalyA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "disaster",
+            "printedName": "disaster",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusPushType.Type) -> NautilusNotificationSDK.NautilusPushType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusPushType",
+                    "printedName": "NautilusNotificationSDK.NautilusPushType",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusPushType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusPushType",
+                        "printedName": "NautilusNotificationSDK.NautilusPushType",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType@NautilusPushTypeDisaster",
+            "mangledName": "$s23NautilusNotificationSDK0A8PushTypeO8disasteryA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "mail",
+            "printedName": "mail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusPushType.Type) -> NautilusNotificationSDK.NautilusPushType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusPushType",
+                    "printedName": "NautilusNotificationSDK.NautilusPushType",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusNotificationSDK.NautilusPushType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusPushType",
+                        "printedName": "NautilusNotificationSDK.NautilusPushType",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType@NautilusPushTypeMail",
+            "mangledName": "$s23NautilusNotificationSDK0A8PushTypeO4mailyA2CmF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "intValue",
+            "printedName": "intValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23NautilusNotificationSDK0A8PushTypeO8intValueSiSgvp",
+            "mangledName": "$s23NautilusNotificationSDK0A8PushTypeO8intValueSiSgvp",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusNotificationSDK0A8PushTypeO8intValueSiSgvg",
+                "mangledName": "$s23NautilusNotificationSDK0A8PushTypeO8intValueSiSgvg",
+                "moduleName": "NautilusNotificationSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusNotificationSDK.NautilusPushType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusPushType",
+                    "printedName": "NautilusNotificationSDK.NautilusPushType",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23NautilusNotificationSDK0A8PushTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s23NautilusNotificationSDK0A8PushTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "NautilusNotificationSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23NautilusNotificationSDK0A8PushTypeO8rawValueSivp",
+            "mangledName": "$s23NautilusNotificationSDK0A8PushTypeO8rawValueSivp",
+            "moduleName": "NautilusNotificationSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusNotificationSDK0A8PushTypeO8rawValueSivg",
+                "mangledName": "$s23NautilusNotificationSDK0A8PushTypeO8rawValueSivg",
+                "moduleName": "NautilusNotificationSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType",
+        "mangledName": "$s23NautilusNotificationSDK0A8PushTypeO",
+        "moduleName": "NautilusNotificationSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -85,6 +408,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusNotificationSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusNotificationSDK"
       },
       {
         "kind": "Import",
@@ -323,6 +663,586 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusNotificationSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusPushDetailInfo",
+        "printedName": "NautilusPushDetailInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pushID",
+            "printedName": "pushID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC6pushIDSivp",
+            "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC6pushIDSivp",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC6pushIDSivg",
+                "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC6pushIDSivg",
+                "moduleName": "NautilusNotificationSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pushType",
+            "printedName": "pushType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusNotificationSDK.NautilusPushType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusPushType",
+                    "printedName": "NautilusNotificationSDK.NautilusPushType",
+                    "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC8pushTypeAA0adH0OSgvp",
+            "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC8pushTypeAA0adH0OSgvp",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NautilusNotificationSDK.NautilusPushType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusPushType",
+                        "printedName": "NautilusNotificationSDK.NautilusPushType",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC8pushTypeAA0adH0OSgvg",
+                "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC8pushTypeAA0adH0OSgvg",
+                "moduleName": "NautilusNotificationSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC7messageSSSgvp",
+            "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC7messageSSSgvp",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC7messageSSSgvg",
+                "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC7messageSSSgvg",
+                "moduleName": "NautilusNotificationSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pushDescription",
+            "printedName": "pushDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC15pushDescriptionSSSgvp",
+            "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC15pushDescriptionSSSgvp",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC15pushDescriptionSSSgvg",
+                "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC15pushDescriptionSSSgvg",
+                "moduleName": "NautilusNotificationSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sendDate",
+            "printedName": "sendDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC8sendDate10Foundation0H0VSgvp",
+            "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC8sendDate10Foundation0H0VSgvp",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC8sendDate10Foundation0H0VSgvg",
+                "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC8sendDate10Foundation0H0VSgvg",
+                "moduleName": "NautilusNotificationSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trans",
+            "printedName": "trans",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC5transSSSgvp",
+            "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC5transSSSgvp",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC5transSSSgvg",
+                "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC5transSSSgvg",
+                "moduleName": "NautilusNotificationSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pushIDType",
+            "printedName": "pushIDType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC10pushIDTypeSiSgvp",
+            "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC10pushIDTypeSiSgvp",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusNotificationSDK0A14PushDetailInfoC10pushIDTypeSiSgvg",
+                "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC10pushIDTypeSiSgvg",
+                "moduleName": "NautilusNotificationSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusPushDetailInfo",
+                "printedName": "NautilusNotificationSDK.NautilusPushDetailInfo",
+                "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusPushDetailInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusPushDetailInfo(im)init",
+            "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoCACycfc",
+            "moduleName": "NautilusNotificationSDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusPushDetailInfo",
+        "mangledName": "$s23NautilusNotificationSDK0A14PushDetailInfoC",
+        "moduleName": "NautilusNotificationSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusNotificationSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusNotificationSDK"
       },
       {
         "kind": "Import",
@@ -2980,6 +3900,23 @@
       },
       {
         "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusNotificationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusNotificationSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "NautilusConfigSDK",
         "printedName": "NautilusConfigSDK",
         "declKind": "Import",
@@ -4389,12 +5326,19 @@
           {
             "kind": "Function",
             "name": "getRemoteNotifications",
-            "printedName": "getRemoteNotifications(completion:)",
+            "printedName": "getRemoteNotifications(pushType:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusPushType",
+                "printedName": "NautilusNotificationSDK.NautilusPushType",
+                "hasDefaultArg": true,
+                "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
               },
               {
                 "kind": "TypeFunc",
@@ -4453,22 +5397,20 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusNotification(im)getRemoteNotificationsWithCompletion:",
-            "mangledName": "$s23NautilusNotificationSDK0aB0C22getRemoteNotifications10completionyySayAA0aE7MessageCGSg_So7NSErrorCSgtc_tF",
+            "usr": "s:23NautilusNotificationSDK0aB0C22getRemoteNotifications8pushType10completionyAA0a4PushH0O_ySayAA0aE7MessageCGSg_So7NSErrorCSgtctF",
+            "mangledName": "$s23NautilusNotificationSDK0aB0C22getRemoteNotifications8pushType10completionyAA0a4PushH0O_ySayAA0aE7MessageCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusNotificationSDK",
-            "objc_name": "getRemoteNotificationsWithCompletion:",
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "getRemoteNotifications",
-            "printedName": "getRemoteNotifications(start:count:completion:)",
+            "name": "objcGetRemoteNotifications",
+            "printedName": "objcGetRemoteNotifications(pushType:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4477,15 +5419,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "NautilusPushType",
+                "printedName": "NautilusNotificationSDK.NautilusPushType",
+                "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
               },
               {
                 "kind": "TypeFunc",
@@ -4544,10 +5480,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusNotification(im)getRemoteNotificationsWithStart:count:completion:",
-            "mangledName": "$s23NautilusNotificationSDK0aB0C22getRemoteNotifications5start5count10completionySi_SiySayAA0aE7MessageCGSg_So7NSErrorCSgtctF",
+            "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusNotification(im)getRemoteNotificationsWithPushType:completion:",
+            "mangledName": "$s23NautilusNotificationSDK0aB0C26objcGetRemoteNotifications8pushType10completionyAA0a4PushI0O_ySayAA0aF7MessageCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusNotificationSDK",
-            "objc_name": "getRemoteNotificationsWithStart:count:completion:",
+            "objc_name": "getRemoteNotificationsWithPushType:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -4559,7 +5495,200 @@
           {
             "kind": "Function",
             "name": "getRemoteNotifications",
-            "printedName": "getRemoteNotifications(start:count:checkDate:completion:)",
+            "printedName": "getRemoteNotifications(start:count:pushType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusPushType",
+                "printedName": "NautilusNotificationSDK.NautilusPushType",
+                "hasDefaultArg": true,
+                "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusNotificationSDK.NautilusRemoteMessage]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusNotificationSDK.NautilusRemoteMessage]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusRemoteMessage",
+                                "printedName": "NautilusNotificationSDK.NautilusRemoteMessage",
+                                "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusRemoteMessage"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23NautilusNotificationSDK0aB0C22getRemoteNotifications5start5count8pushType10completionySi_SiAA0a4PushJ0OySayAA0aE7MessageCGSg_So7NSErrorCSgtctF",
+            "mangledName": "$s23NautilusNotificationSDK0aB0C22getRemoteNotifications5start5count8pushType10completionySi_SiAA0a4PushJ0OySayAA0aE7MessageCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "objcGetRemoteNotifications",
+            "printedName": "objcGetRemoteNotifications(start:count:pushType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusPushType",
+                "printedName": "NautilusNotificationSDK.NautilusPushType",
+                "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusNotificationSDK.NautilusRemoteMessage]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusNotificationSDK.NautilusRemoteMessage]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusRemoteMessage",
+                                "printedName": "NautilusNotificationSDK.NautilusRemoteMessage",
+                                "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusRemoteMessage"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusNotification(im)getRemoteNotificationsWithStart:count:pushType:completion:",
+            "mangledName": "$s23NautilusNotificationSDK0aB0C26objcGetRemoteNotifications5start5count8pushType10completionySi_SiAA0a4PushK0OySayAA0aF7MessageCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusNotificationSDK",
+            "objc_name": "getRemoteNotificationsWithStart:count:pushType:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRemoteNotifications",
+            "printedName": "getRemoteNotifications(start:count:checkDate:pushType:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4585,6 +5714,13 @@
                 "usr": "s:10Foundation4DateV"
               },
               {
+                "kind": "TypeNominal",
+                "name": "NautilusPushType",
+                "printedName": "NautilusNotificationSDK.NautilusPushType",
+                "hasDefaultArg": true,
+                "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
                 "printedName": "([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> ()",
@@ -4641,10 +5777,111 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusNotification(im)getRemoteNotificationsWithStart:count:checkDate:completion:",
-            "mangledName": "$s23NautilusNotificationSDK0aB0C22getRemoteNotifications5start5count9checkDate10completionySi_Si10Foundation0J0VySayAA0aE7MessageCGSg_So7NSErrorCSgtctF",
+            "usr": "s:23NautilusNotificationSDK0aB0C22getRemoteNotifications5start5count9checkDate8pushType10completionySi_Si10Foundation0J0VAA0a4PushL0OySayAA0aE7MessageCGSg_So7NSErrorCSgtctF",
+            "mangledName": "$s23NautilusNotificationSDK0aB0C22getRemoteNotifications5start5count9checkDate8pushType10completionySi_Si10Foundation0J0VAA0a4PushL0OySayAA0aE7MessageCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusNotificationSDK",
-            "objc_name": "getRemoteNotificationsWithStart:count:checkDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "objcGetRemoteNotifications",
+            "printedName": "objcGetRemoteNotifications(start:count:checkDate:pushType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusPushType",
+                "printedName": "NautilusNotificationSDK.NautilusPushType",
+                "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusNotificationSDK.NautilusRemoteMessage]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusNotificationSDK.NautilusRemoteMessage]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusRemoteMessage",
+                                "printedName": "NautilusNotificationSDK.NautilusRemoteMessage",
+                                "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusRemoteMessage"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusNotification(im)getRemoteNotificationsWithStart:count:checkDate:pushType:completion:",
+            "mangledName": "$s23NautilusNotificationSDK0aB0C26objcGetRemoteNotifications5start5count9checkDate8pushType10completionySi_Si10Foundation0K0VAA0a4PushM0OySayAA0aF7MessageCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusNotificationSDK",
+            "objc_name": "getRemoteNotificationsWithStart:count:checkDate:pushType:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -4656,7 +5893,7 @@
           {
             "kind": "Function",
             "name": "getRemoteNotifications",
-            "printedName": "getRemoteNotifications(start:count:checkDate:isExternalPushOnly:completion:)",
+            "printedName": "getRemoteNotifications(start:count:checkDate:isExternalPushOnly:pushType:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4724,6 +5961,13 @@
                 "usr": "s:Sq"
               },
               {
+                "kind": "TypeNominal",
+                "name": "NautilusPushType",
+                "printedName": "NautilusNotificationSDK.NautilusPushType",
+                "hasDefaultArg": true,
+                "usr": "c:@M@NautilusNotificationSDK@E@NautilusPushType"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
                 "printedName": "(Swift.Result<[NautilusNotificationSDK.NautilusRemoteMessage], NautilusNotificationSDK.NautilusNotificationNetworkError>) -> ()",
@@ -4765,8 +6009,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:23NautilusNotificationSDK0aB0C22getRemoteNotifications5start5count9checkDate18isExternalPushOnly10completionySiSg_AJ10Foundation0J0VSgSbSgys6ResultOySayAA0aE7MessageCGAA0aB12NetworkErrorOGctF",
-            "mangledName": "$s23NautilusNotificationSDK0aB0C22getRemoteNotifications5start5count9checkDate18isExternalPushOnly10completionySiSg_AJ10Foundation0J0VSgSbSgys6ResultOySayAA0aE7MessageCGAA0aB12NetworkErrorOGctF",
+            "usr": "s:23NautilusNotificationSDK0aB0C22getRemoteNotifications5start5count9checkDate18isExternalPushOnly8pushType10completionySiSg_AK10Foundation0J0VSgSbSgAA0amP0Oys6ResultOySayAA0aE7MessageCGAA0aB12NetworkErrorOGctF",
+            "mangledName": "$s23NautilusNotificationSDK0aB0C22getRemoteNotifications5start5count9checkDate18isExternalPushOnly8pushType10completionySiSg_AK10Foundation0J0VSgSbSgAA0amP0Oys6ResultOySayAA0aE7MessageCGAA0aB12NetworkErrorOGctF",
             "moduleName": "NautilusNotificationSDK",
             "declAttributes": [
               "Final",
@@ -4911,6 +6155,143 @@
             "mangledName": "$s23NautilusNotificationSDK0aB0C13deleteHistory7pushIDs10completionySaySiG_ySb_So7NSErrorCSgtctF",
             "moduleName": "NautilusNotificationSDK",
             "objc_name": "deleteHistoryWithPushIDs:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPushDetail",
+            "printedName": "getPushDetail(pushID:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<NautilusNotificationSDK.NautilusPushDetailInfo, NautilusNotificationSDK.NautilusNotificationNetworkError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<NautilusNotificationSDK.NautilusPushDetailInfo, NautilusNotificationSDK.NautilusNotificationNetworkError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusPushDetailInfo",
+                        "printedName": "NautilusNotificationSDK.NautilusPushDetailInfo",
+                        "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusPushDetailInfo"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationNetworkError",
+                        "printedName": "NautilusNotificationSDK.NautilusNotificationNetworkError",
+                        "usr": "c:@M@NautilusNotificationSDK@E@NautilusNotificationNetworkError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23NautilusNotificationSDK0aB0C13getPushDetail6pushID10completionySi_ys6ResultOyAA0aeF4InfoCAA0aB12NetworkErrorOGctF",
+            "mangledName": "$s23NautilusNotificationSDK0aB0C13getPushDetail6pushID10completionySi_ys6ResultOyAA0aeF4InfoCAA0aB12NetworkErrorOGctF",
+            "moduleName": "NautilusNotificationSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPushDetail",
+            "printedName": "getPushDetail(pushID:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusNotificationSDK.NautilusPushDetailInfo?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(NautilusNotificationSDK.NautilusPushDetailInfo?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "NautilusNotificationSDK.NautilusPushDetailInfo?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusPushDetailInfo",
+                            "printedName": "NautilusNotificationSDK.NautilusPushDetailInfo",
+                            "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusPushDetailInfo"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusNotificationSDK@objc(cs)NautilusNotification(im)getPushDetailWithPushID:completion:",
+            "mangledName": "$s23NautilusNotificationSDK0aB0C13getPushDetail6pushID10completionySi_yAA0aeF4InfoCSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusNotificationSDK",
+            "objc_name": "getPushDetailWithPushID:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -5071,6 +6452,20 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusPushType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 298,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/Base\/NautilusPushType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 346,
+      "length": 4,
+      "value": "2"
+    },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushHistoryAPIResponse.swift",
       "kind": "StringLiteral",
@@ -5413,6 +6808,76 @@
       "offset": 915,
       "length": 5,
       "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 6,
+      "value": "\"stat\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 386,
+      "length": 11,
+      "value": "\"device_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 420,
+      "length": 9,
+      "value": "\"push_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 454,
+      "length": 11,
+      "value": "\"push_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 489,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 574,
+      "length": 11,
+      "value": "\"send_date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 612,
+      "length": 7,
+      "value": "\"trans\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/GetPushDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 646,
+      "length": 14,
+      "value": "\"push_id_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Notification\/Sources\/API\/RegisterDeviceEntity.swift",
