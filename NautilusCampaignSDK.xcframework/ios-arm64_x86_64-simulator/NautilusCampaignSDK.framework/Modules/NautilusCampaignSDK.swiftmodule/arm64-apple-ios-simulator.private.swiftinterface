@@ -64,6 +64,9 @@ public let NautilusCampaignErrorDomain: Swift.String
   final public let campaignType: NautilusCampaignSDK.NautilusCampaignType
   final public let entryCount: Swift.Int?
   final public let alias: Swift.String?
+  final public let campaignManageCode: Swift.String?
+  final public let entryLimit: Swift.Int
+  final public let isEntryLimitOver: Swift.Bool
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusCampaignImage : ObjectiveC.NSObject {
