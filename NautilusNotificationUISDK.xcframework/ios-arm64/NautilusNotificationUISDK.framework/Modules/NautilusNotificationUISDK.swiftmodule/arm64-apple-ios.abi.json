@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "NautilusNotificationUISDK",
-    "printedName": "NautilusNotificationUISDK",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -106,7 +106,6 @@
             "sugared_genericSig": "<Self where Self : NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -121,24 +120,7 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
+          "ObjC"
         ]
       },
       {
@@ -185,6 +167,120 @@
         "printedName": "NautilusNotificationListViewController",
         "children": [
           {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25NautilusNotificationUISDK0aB18ListViewControllerC8delegateAA0abdeF8Delegate_pSgvp",
+            "mangledName": "$s25NautilusNotificationUISDK0aB18ListViewControllerC8delegateAA0abdeF8Delegate_pSgvp",
+            "moduleName": "NautilusNotificationUISDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationListViewControllerDelegate",
+                        "printedName": "any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate",
+                        "usr": "c:@M@NautilusNotificationUISDK@objc(pl)NautilusNotificationListViewControllerDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25NautilusNotificationUISDK0aB18ListViewControllerC8delegateAA0abdeF8Delegate_pSgvg",
+                "mangledName": "$s25NautilusNotificationUISDK0aB18ListViewControllerC8delegateAA0abdeF8Delegate_pSgvg",
+                "moduleName": "NautilusNotificationUISDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusNotificationListViewControllerDelegate",
+                        "printedName": "any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate",
+                        "usr": "c:@M@NautilusNotificationUISDK@objc(pl)NautilusNotificationListViewControllerDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25NautilusNotificationUISDK0aB18ListViewControllerC8delegateAA0abdeF8Delegate_pSgvs",
+                "mangledName": "$s25NautilusNotificationUISDK0aB18ListViewControllerC8delegateAA0abdeF8Delegate_pSgvs",
+                "moduleName": "NautilusNotificationUISDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25NautilusNotificationUISDK0aB18ListViewControllerC8delegateAA0abdeF8Delegate_pSgvM",
+                "mangledName": "$s25NautilusNotificationUISDK0aB18ListViewControllerC8delegateAA0abdeF8Delegate_pSgvM",
+                "moduleName": "NautilusNotificationUISDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "viewDidLoad",
             "printedName": "viewDidLoad()",
@@ -204,7 +300,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -238,7 +333,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -295,7 +389,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -337,7 +430,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -349,7 +441,6 @@
         "mangledName": "$s25NautilusNotificationUISDK0aB18ListViewControllerC",
         "moduleName": "NautilusNotificationUISDK",
         "declAttributes": [
-          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -364,20 +455,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -829,120 +906,6 @@
           },
           {
             "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "(any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate)?"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:25NautilusNotificationUISDK0aB2UIC8delegateAA0aB26ListViewControllerDelegate_pSgvp",
-            "mangledName": "$s25NautilusNotificationUISDK0aB2UIC8delegateAA0aB26ListViewControllerDelegate_pSgvp",
-            "moduleName": "NautilusNotificationUISDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "ReferenceOwnership",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "ownership": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NautilusNotificationListViewControllerDelegate",
-                        "printedName": "any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate",
-                        "usr": "c:@M@NautilusNotificationUISDK@objc(pl)NautilusNotificationListViewControllerDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25NautilusNotificationUISDK0aB2UIC8delegateAA0aB26ListViewControllerDelegate_pSgvg",
-                "mangledName": "$s25NautilusNotificationUISDK0aB2UIC8delegateAA0aB26ListViewControllerDelegate_pSgvg",
-                "moduleName": "NautilusNotificationUISDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NautilusNotificationListViewControllerDelegate",
-                        "printedName": "any NautilusNotificationUISDK.NautilusNotificationListViewControllerDelegate",
-                        "usr": "c:@M@NautilusNotificationUISDK@objc(pl)NautilusNotificationListViewControllerDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25NautilusNotificationUISDK0aB2UIC8delegateAA0aB26ListViewControllerDelegate_pSgvs",
-                "mangledName": "$s25NautilusNotificationUISDK0aB2UIC8delegateAA0aB26ListViewControllerDelegate_pSgvs",
-                "moduleName": "NautilusNotificationUISDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25NautilusNotificationUISDK0aB2UIC8delegateAA0aB26ListViewControllerDelegate_pSgvM",
-                "mangledName": "$s25NautilusNotificationUISDK0aB2UIC8delegateAA0aB26ListViewControllerDelegate_pSgvM",
-                "moduleName": "NautilusNotificationUISDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "featureStatus",
             "printedName": "featureStatus",
             "children": [
@@ -1166,46 +1129,15 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
+                "name": "NautilusNotificationListViewController",
+                "printedName": "NautilusNotificationUISDK.NautilusNotificationListViewController",
+                "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationListViewController"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationUI(im)instantiateNotificationListViewController",
-            "mangledName": "$s25NautilusNotificationUISDK0aB2UIC011instantiateB18ListViewControllerSo06UIViewH0CyF",
+            "mangledName": "$s25NautilusNotificationUISDK0aB2UIC011instantiateB18ListViewControllerAA0abfgH0CyF",
             "moduleName": "NautilusNotificationUISDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "instantiateNotificationDisasterDetailViewController",
-            "printedName": "instantiateNotificationDisasterDetailViewController(pushID:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusNotificationDisasterDetailViewController",
-                "printedName": "NautilusNotificationUISDK.NautilusNotificationDisasterDetailViewController",
-                "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationDisasterDetailViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationUI(im)instantiateNotificationDisasterDetailViewControllerWithPushID:",
-            "mangledName": "$s25NautilusNotificationUISDK0aB2UIC011instantiateB28DisasterDetailViewController6pushIDAA0abfghI0CSi_tF",
-            "moduleName": "NautilusNotificationUISDK",
-            "objc_name": "instantiateNotificationDisasterDetailViewControllerWithPushID:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -1265,20 +1197,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1330,283 +1248,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusCoreSDK",
-        "printedName": "NautilusCoreSDK",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusNotificationSDK",
-        "printedName": "NautilusNotificationSDK",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusUISDK",
-        "printedName": "NautilusUISDK",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NautilusNotificationDisasterDetailViewController",
-        "printedName": "NautilusNotificationDisasterDetailViewController",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "viewDidLoad",
-            "printedName": "viewDidLoad()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationDisasterDetailViewController(im)viewDidLoad",
-            "mangledName": "$s25NautilusNotificationUISDK0aB28DisasterDetailViewControllerC11viewDidLoadyyF",
-            "moduleName": "NautilusNotificationUISDK",
-            "overriding": true,
-            "objc_name": "viewDidLoad",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(nibName:bundle:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusNotificationDisasterDetailViewController",
-                "printedName": "NautilusNotificationUISDK.NautilusNotificationDisasterDetailViewController",
-                "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationDisasterDetailViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Bundle?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bundle",
-                    "printedName": "Foundation.Bundle",
-                    "usr": "c:objc(cs)NSBundle"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationDisasterDetailViewController(im)initWithNibName:bundle:",
-            "mangledName": "$s25NautilusNotificationUISDK0aB28DisasterDetailViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
-            "moduleName": "NautilusNotificationUISDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithNibName:bundle:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "NautilusNotificationUISDK.NautilusNotificationDisasterDetailViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusNotificationDisasterDetailViewController",
-                    "printedName": "NautilusNotificationUISDK.NautilusNotificationDisasterDetailViewController",
-                    "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationDisasterDetailViewController"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationDisasterDetailViewController(im)initWithCoder:",
-            "mangledName": "$s25NautilusNotificationUISDK0aB28DisasterDetailViewControllerC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "NautilusNotificationUISDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Required"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationDisasterDetailViewController",
-        "mangledName": "$s25NautilusNotificationUISDK0aB28DisasterDetailViewControllerC",
-        "moduleName": "NautilusNotificationUISDK",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)UIViewController",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIViewController",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusNotificationSDK",
-        "printedName": "NautilusNotificationSDK",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1626,44 +1267,6 @@
         "kind": "Import",
         "name": "NautilusNotificationSDK",
         "printedName": "NautilusNotificationSDK",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusLoggingSDK",
-        "printedName": "NautilusLoggingSDK",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusCoreSDK",
-        "printedName": "NautilusCoreSDK",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusNotificationSDK",
-        "printedName": "NautilusNotificationSDK",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusUISDK",
-        "printedName": "NautilusUISDK",
         "declKind": "Import",
         "moduleName": "NautilusNotificationUISDK"
       },
@@ -1703,465 +1306,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusCoreSDK",
-        "printedName": "NautilusCoreSDK",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "NautilusUISDK",
-        "printedName": "NautilusUISDK",
-        "declKind": "Import",
-        "moduleName": "NautilusNotificationUISDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NautilusNotificationListTabViewController",
-        "printedName": "NautilusNotificationListTabViewController",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "viewDidLoad",
-            "printedName": "viewDidLoad()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController(im)viewDidLoad",
-            "mangledName": "$s25NautilusNotificationUISDK0aB21ListTabViewControllerC11viewDidLoadyyF",
-            "moduleName": "NautilusNotificationUISDK",
-            "overriding": true,
-            "objc_name": "viewDidLoad",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "appTopBar",
-            "printedName": "appTopBar(_:viewForItemAt:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusAppTopBarItemView",
-                "printedName": "NautilusUISDK.NautilusAppTopBarItemView",
-                "usr": "c:@M@NautilusUISDK@objc(cs)NautilusAppTopBarItemView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusAppTopBar",
-                "printedName": "NautilusUISDK.NautilusAppTopBar",
-                "usr": "c:@M@NautilusUISDK@objc(cs)NautilusAppTopBar"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController(im)appTopBar:viewForItemAt:",
-            "mangledName": "$s25NautilusNotificationUISDK0aB21ListTabViewControllerC9appTopBar_13viewForItemAt0aC00a3AppijmF0CAF0aoiJ0C_SitF",
-            "moduleName": "NautilusNotificationUISDK",
-            "overriding": true,
-            "objc_name": "appTopBar:viewForItemAt:",
-            "declAttributes": [
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "numberOfItems",
-            "printedName": "numberOfItems(in:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusAppTopBar",
-                "printedName": "NautilusUISDK.NautilusAppTopBar",
-                "usr": "c:@M@NautilusUISDK@objc(cs)NautilusAppTopBar"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController(im)numberOfItemsIn:",
-            "mangledName": "$s25NautilusNotificationUISDK0aB21ListTabViewControllerC13numberOfItems2inSi0aC00A9AppTopBarC_tF",
-            "moduleName": "NautilusNotificationUISDK",
-            "overriding": true,
-            "objc_name": "numberOfItemsIn:",
-            "declAttributes": [
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(nibName:bundle:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusNotificationListTabViewController",
-                "printedName": "NautilusNotificationUISDK.NautilusNotificationListTabViewController",
-                "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Bundle?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bundle",
-                    "printedName": "Foundation.Bundle",
-                    "usr": "c:objc(cs)NSBundle"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController(im)initWithNibName:bundle:",
-            "mangledName": "$s25NautilusNotificationUISDK0aB21ListTabViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
-            "moduleName": "NautilusNotificationUISDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithNibName:bundle:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "NautilusNotificationUISDK.NautilusNotificationListTabViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusNotificationListTabViewController",
-                    "printedName": "NautilusNotificationUISDK.NautilusNotificationListTabViewController",
-                    "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController(im)initWithCoder:",
-            "mangledName": "$s25NautilusNotificationUISDK0aB21ListTabViewControllerC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "NautilusNotificationUISDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Required"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "numberOfViewControllers",
-            "printedName": "numberOfViewControllers(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusAppTopBarController",
-                "printedName": "NautilusUISDK.NautilusAppTopBarController",
-                "usr": "c:@M@NautilusUISDK@objc(cs)NautilusAppTopBarController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController(im)numberOfViewControllers:",
-            "mangledName": "$s25NautilusNotificationUISDK0aB21ListTabViewControllerC08numberOfF11ControllersySi0aC00a9AppTopBarG0CF",
-            "moduleName": "NautilusNotificationUISDK",
-            "objc_name": "numberOfViewControllers:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "appTopBarController",
-            "printedName": "appTopBarController(_:viewControllerAt:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusAppTopBarController",
-                "printedName": "NautilusUISDK.NautilusAppTopBarController",
-                "usr": "c:@M@NautilusUISDK@objc(cs)NautilusAppTopBarController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController(im)appTopBarController:viewControllerAt:",
-            "mangledName": "$s25NautilusNotificationUISDK0aB21ListTabViewControllerC09appTopBarG0_04viewG2AtSo06UIViewG0C0aC00a3AppijG0C_SitF",
-            "moduleName": "NautilusNotificationUISDK",
-            "objc_name": "appTopBarController:viewControllerAt:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "appTopBarController",
-            "printedName": "appTopBarController(_:indexOfViewController:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusAppTopBarController",
-                "printedName": "NautilusUISDK.NautilusAppTopBarController",
-                "usr": "c:@M@NautilusUISDK@objc(cs)NautilusAppTopBarController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController(im)appTopBarController:indexOfViewController:",
-            "mangledName": "$s25NautilusNotificationUISDK0aB21ListTabViewControllerC09appTopBarG0_07indexOffG0Si0aC00a3AppijG0C_So06UIViewG0CtF",
-            "moduleName": "NautilusNotificationUISDK",
-            "objc_name": "appTopBarController:indexOfViewController:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@NautilusNotificationUISDK@objc(cs)NautilusNotificationListTabViewController",
-        "mangledName": "$s25NautilusNotificationUISDK0aB21ListTabViewControllerC",
-        "moduleName": "NautilusNotificationUISDK",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:@M@NautilusUISDK@objc(cs)NautilusAppTopBarController",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "NautilusUISDK.NautilusAppTopBarController",
-          "UIKit.UIViewController",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "NautilusAppTopBarDelegate",
-            "printedName": "NautilusAppTopBarDelegate",
-            "usr": "c:@M@NautilusUISDK@objc(pl)NautilusAppTopBarDelegate",
-            "mangledName": "$s13NautilusUISDK0A17AppTopBarDelegateP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "NautilusAppTopBarDataSource",
-            "printedName": "NautilusAppTopBarDataSource",
-            "usr": "c:@M@NautilusUISDK@objc(pl)NautilusAppTopBarDataSource",
-            "mangledName": "$s13NautilusUISDK0A19AppTopBarDataSourceP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "NautilusAppTopBarControllerDelegate",
-            "printedName": "NautilusAppTopBarControllerDelegate",
-            "usr": "c:@M@NautilusUISDK@objc(pl)NautilusAppTopBarControllerDelegate",
-            "mangledName": "$s13NautilusUISDK0A27AppTopBarControllerDelegateP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2195,23 +1339,30 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewModel.swift",
       "kind": "Array",
-      "offset": 1316,
+      "offset": 1273,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1394,
+      "offset": 1351,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1484,
+      "offset": 1441,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 705,
+      "length": 33,
+      "value": "\"NautilusNotificationUISDK.NautilusNotificationListViewModel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
@@ -2286,191 +1437,93 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1318,
-      "length": 51,
-      "value": "\"ma_notification_history_list_delete_error_message\""
+      "offset": 356,
+      "length": 43,
+      "value": "\"ma_notification_history_list_screen_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1409,
-      "length": 44,
-      "value": "\"ma_notification_history_list_show_disaster\""
+      "offset": 450,
+      "length": 58,
+      "value": "\"ma_notification_history_list_number_of_messages_per_load\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1504,
-      "length": 57,
-      "value": "\"ma_notification_history_list_push_notification_tab_text\""
+      "offset": 558,
+      "length": 56,
+      "value": "\"ma_notification_history_list_cell_send_datetime_format\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1604,
+      "offset": 653,
+      "length": 43,
+      "value": "\"ma_notification_history_list_loading_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 739,
       "length": 48,
-      "value": "\"ma_notification_history_list_disaster_tab_text\""
+      "value": "\"ma_notification_history_list_empty_state_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1694,
-      "length": 46,
-      "value": "\"ma_notification_disaster_detail_screen_title\""
+      "offset": 832,
+      "length": 50,
+      "value": "\"ma_notification_history_list_empty_state_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1782,
-      "length": 46,
-      "value": "\"ma_notification_disaster_detail_loading_text\""
+      "offset": 936,
+      "length": 61,
+      "value": "\"ma_notification_history_list_empty_state_show_reload_button\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1875,
-      "length": 52,
-      "value": "\"ma_notification_disaster_detail_error_dialog_title\""
+      "offset": 1039,
+      "length": 47,
+      "value": "\"ma_notification_history_list_load_error_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1985,
-      "length": 65,
-      "value": "\"ma_notification_disaster_detail_error_dialog_no_content_message\""
+      "offset": 1130,
+      "length": 49,
+      "value": "\"ma_notification_history_list_load_error_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2099,
-      "length": 65,
-      "value": "\"ma_notification_disaster_detail_error_dialog_load_error_message\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Config\/NautilusNotificationUIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 2221,
-      "length": 64,
-      "value": "\"ma_notification_disaster_detail_error_dialog_close_button_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Base\/NautilusNotificationUI.swift",
-      "kind": "StringLiteral",
-      "offset": 505,
-      "length": 33,
-      "value": "\"moduleapps-notification-ui.json\""
+      "offset": 1223,
+      "length": 49,
+      "value": "\"ma_notification_history_list_reload_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Base\/NautilusNotificationUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 836,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Base\/NautilusNotificationUI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 929,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Base\/NautilusNotificationUI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1023,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Base\/NautilusNotificationUI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1110,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Base\/NautilusNotificationUI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1207,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Base\/NautilusNotificationUI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1688,
+      "offset": 1515,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3143,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3215,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3312,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3407,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewCell.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/Base\/NautilusNotificationUI.swift",
       "kind": "StringLiteral",
-      "offset": 3549,
-      "length": 12,
-      "value": "\"Asia\/Tokyo\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListViewCell.swift",
-      "kind": "StringLiteral",
-      "offset": 3613,
-      "length": 7,
-      "value": "\"ja_JP\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/NotificationUI\/Sources\/List\/NautilusNotificationListTabViewController.swift",
-      "kind": "Array",
-      "offset": 1069,
-      "length": 2,
-      "value": "[]"
+      "offset": 392,
+      "length": 22,
+      "value": "\"NautilusNotificationUISDK.NautilusNotificationUI\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusNotificationUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphoneos\/NautilusNotificationUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 791,
-      "length": 46,
-      "value": "\"ma_notification_disaster_detail_header_image\""
-    },
-    {
-      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusNotificationUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphoneos\/NautilusNotificationUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1020,
+      "offset": 786,
       "length": 44,
       "value": "\"ma_notification_history_list_cell_no_image\""
-    },
-    {
-      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/Nautilus-ios-sdk-dginrhaaqybpdofqfpdnbtennktf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NautilusNotificationUISDK\/IntermediateBuildFilesPath\/Nautilus-ios-sdk.build\/Release-iphoneos\/NautilusNotificationUISDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1250,
-      "length": 45,
-      "value": "\"ma_notification_history_list_disaster_image\""
     }
   ]
 }

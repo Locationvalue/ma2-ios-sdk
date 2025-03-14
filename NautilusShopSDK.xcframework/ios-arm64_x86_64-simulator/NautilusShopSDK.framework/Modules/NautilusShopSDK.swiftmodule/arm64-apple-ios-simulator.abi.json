@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "NautilusShopSDK",
-    "printedName": "NautilusShopSDK",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -133,112 +133,6 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "instantiate",
-            "printedName": "instantiate(app:shopID:notificationInfo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusApp",
-                "printedName": "NautilusCoreSDK.NautilusApp",
-                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusApp"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusAppNotificationInfo",
-                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
-                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusShopSDK@objc(pl)NautilusShopDetailInstantiatable(cm)instantiateWithApp:shopID:notificationInfo:",
-            "mangledName": "$s15NautilusShopSDK0aB20DetailInstantiatableP11instantiate3app6shopID16notificationInfoSo16UIViewControllerC0a4CoreC00A3AppC_SiAJ0ao12NotificationK0CSgtFZ",
-            "moduleName": "NautilusShopSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : NautilusShopSDK.NautilusShopDetailInstantiatable>",
-            "sugared_genericSig": "<Self where Self : NautilusShopSDK.NautilusShopDetailInstantiatable>",
-            "static": true,
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "instantiate",
-            "printedName": "instantiate(app:clientShopCode:notificationInfo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NautilusApp",
-                "printedName": "NautilusCoreSDK.NautilusApp",
-                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusApp"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusAppNotificationInfo",
-                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
-                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusShopSDK@objc(pl)NautilusShopDetailInstantiatable(cm)instantiateWithApp:clientShopCode:notificationInfo:",
-            "mangledName": "$s15NautilusShopSDK0aB20DetailInstantiatableP11instantiate3app06clientB4Code16notificationInfoSo16UIViewControllerC0a4CoreC00A3AppC_SSAJ0ao12NotificationK0CSgtFZ",
-            "moduleName": "NautilusShopSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : NautilusShopSDK.NautilusShopDetailInstantiatable>",
-            "sugared_genericSig": "<Self where Self : NautilusShopSDK.NautilusShopDetailInstantiatable>",
-            "static": true,
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -251,22 +145,6 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -613,22 +491,6 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -1088,9 +950,6 @@
             "moduleName": "NautilusShopSDK",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1134,20 +993,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1560,20 +1405,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1764,22 +1595,6 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -1807,7 +1622,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1840,34 +1654,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "viewWillLayoutSubviews",
-            "printedName": "viewWillLayoutSubviews()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusShopSDK@objc(cs)NautilusShopSearchFilteringViewController(im)viewWillLayoutSubviews",
-            "mangledName": "$s15NautilusShopSDK0aB29SearchFilteringViewControllerC22viewWillLayoutSubviewsyyF",
-            "moduleName": "NautilusShopSDK",
-            "overriding": true,
-            "objc_name": "viewWillLayoutSubviews",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1924,7 +1710,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -1966,7 +1751,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -1978,7 +1762,6 @@
         "mangledName": "$s15NautilusShopSDK0aB29SearchFilteringViewControllerC",
         "moduleName": "NautilusShopSDK",
         "declAttributes": [
-          "Preconcurrency",
           "Custom",
           "Final",
           "AccessControl",
@@ -1992,20 +1775,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2163,22 +1932,6 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -2891,9 +2644,6 @@
             "moduleName": "NautilusShopSDK",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -2937,20 +2687,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3439,22 +3175,6 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
             ]
           },
           {
@@ -7078,20 +6798,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7437,20 +7143,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7650,20 +7342,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7890,20 +7568,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8113,20 +7777,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8424,20 +8074,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10072,20 +9708,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10306,20 +9928,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10489,20 +10097,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10751,9 +10345,6 @@
             "moduleName": "NautilusShopSDK",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -10797,20 +10388,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11153,20 +10730,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -12353,20 +11916,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -12820,20 +12369,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -13035,98 +12570,6 @@
           },
           {
             "kind": "Function",
-            "name": "instantiateShopDetail",
-            "printedName": "instantiateShopDetail(shopID:notificationInfo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusAppNotificationInfo",
-                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
-                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusShopSDK@objc(cs)NautilusShopRouter(im)instantiateShopDetailWithShopID:notificationInfo:",
-            "mangledName": "$s15NautilusShopSDK0aB6RouterC011instantiateB6Detail6shopID16notificationInfoSo16UIViewControllerCSi_0a4CoreC00a15AppNotificationJ0CSgtF",
-            "moduleName": "NautilusShopSDK",
-            "objc_name": "instantiateShopDetailWithShopID:notificationInfo:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "instantiateShopDetail",
-            "printedName": "instantiateShopDetail(clientShopCode:notificationInfo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusAppNotificationInfo",
-                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
-                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusShopSDK@objc(cs)NautilusShopRouter(im)instantiateShopDetailWithClientShopCode:notificationInfo:",
-            "mangledName": "$s15NautilusShopSDK0aB6RouterC011instantiateB6Detail06clientB4Code16notificationInfoSo16UIViewControllerCSS_0a4CoreC00a15AppNotificationJ0CSgtF",
-            "moduleName": "NautilusShopSDK",
-            "objc_name": "instantiateShopDetailWithClientShopCode:notificationInfo:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "routeShopDetail",
             "printedName": "routeShopDetail(shopInfo:in:)",
             "children": [
@@ -13160,108 +12603,6 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "routeShopDetail",
-            "printedName": "routeShopDetail(shopID:notificationInfo:in:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusAppNotificationInfo",
-                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
-                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusShopSDK@objc(cs)NautilusShopRouter(im)routeShopDetailWithShopID:notificationInfo:in:",
-            "mangledName": "$s15NautilusShopSDK0aB6RouterC05routeB6Detail6shopID16notificationInfo2inySi_0a4CoreC00a15AppNotificationJ0CSgSo16UIViewControllerCtF",
-            "moduleName": "NautilusShopSDK",
-            "objc_name": "routeShopDetailWithShopID:notificationInfo:in:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "routeShopDetail",
-            "printedName": "routeShopDetail(clientShopCode:notificationInfo:in:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NautilusAppNotificationInfo",
-                    "printedName": "NautilusCoreSDK.NautilusAppNotificationInfo",
-                    "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusAppNotificationInfo"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NautilusShopSDK@objc(cs)NautilusShopRouter(im)routeShopDetailWithClientShopCode:notificationInfo:in:",
-            "mangledName": "$s15NautilusShopSDK0aB6RouterC05routeB6Detail06clientB4Code16notificationInfo2inySS_0a4CoreC00a15AppNotificationJ0CSgSo16UIViewControllerCtF",
-            "moduleName": "NautilusShopSDK",
-            "objc_name": "routeShopDetailWithClientShopCode:notificationInfo:in:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -13281,20 +12622,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -13684,9 +13011,16 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopDetailViewController.swift",
       "kind": "Array",
-      "offset": 2333,
+      "offset": 1347,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopDetailViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 786,
+      "length": 32,
+      "value": "\"NautilusShopSDK.NautilusShopDetailViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/InfoViews\/ShopLinkInfoView.swift",
@@ -13700,7 +13034,7 @@
       "kind": "IntegerLiteral",
       "offset": 420,
       "length": 2,
-      "value": "16"
+      "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/InfoViews\/ShopLinkInfoView.swift",
@@ -13714,7 +13048,7 @@
       "kind": "IntegerLiteral",
       "offset": 443,
       "length": 2,
-      "value": "16"
+      "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/InfoViews\/ShopLinkInfoView.swift",
@@ -13729,6 +13063,34 @@
       "offset": 582,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopSearchListInitialState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 512,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopSearchListInitialState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 624,
+      "length": 8,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopSearchListInitialState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 512,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopSearchListInitialState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 624,
+      "length": 8,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopSearchListInitialState.swift",
@@ -13764,6 +13126,20 @@
       "offset": 811,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/List\/NautilusShopListPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 25,
+      "value": "\"NautilusShopSDK.NautilusShopListPresenter\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopSearchTagFilteringCondition.swift",
+      "kind": "IntegerLiteral",
+      "offset": 422,
+      "length": 2,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopSearchTagFilteringCondition.swift",
@@ -13820,6 +13196,20 @@
       "offset": 1942,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/HalfModal\/NautilusShopSearchResultListViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 419,
+      "length": 42,
+      "value": "\"NautilusShopSDK.NautilusShopSearchResultListViewController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/SearchList\/NautilusShopSearchListPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 556,
+      "length": 31,
+      "value": "\"NautilusShopSDK.NautilusShopSearchListPresenter\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Filterng\/Cell\/NautilusShopFilteringTagCell.swift",
@@ -13922,6 +13312,27 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
       "kind": "StringLiteral",
+      "offset": 481,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 507,
+      "length": 5,
+      "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 534,
+      "length": 7,
+      "value": "\"items\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
       "offset": 1182,
       "length": 11,
       "value": "\"hierarchy\""
@@ -13969,6 +13380,62 @@
       "value": "\"image_path\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1182,
+      "length": 11,
+      "value": "\"hierarchy\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1221,
+      "length": 15,
+      "value": "\"parent_tag_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1258,
+      "length": 8,
+      "value": "\"tag_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1290,
+      "length": 10,
+      "value": "\"tag_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1323,
+      "length": 9,
+      "value": "\"sort_no\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1354,
+      "length": 7,
+      "value": "\"alias\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1387,
+      "length": 12,
+      "value": "\"image_path\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopSearchTagListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 898,
+      "length": 21,
+      "value": "\"NautilusShopSDK.NautilusShopSearchTag\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/InfoViews\/Tag\/TagOperator.swift",
       "kind": "Array",
       "offset": 6218,
@@ -13988,6 +13455,41 @@
       "offset": 333,
       "length": 2,
       "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Router\/NautilusShopRoutingTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 392,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Router\/NautilusShopRoutingTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 448,
+      "length": 14,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Router\/NautilusShopRoutingTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 499,
+      "length": 10,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Router\/NautilusShopRoutingTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 561,
+      "length": 16,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Router\/NautilusShopRoutingTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 614,
+      "length": 8,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Router\/NautilusShopRoutingTable.swift",
@@ -14235,6 +13737,111 @@
       "value": "12"
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5956,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6003,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6059,
+      "length": 18,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6120,
+      "length": 13,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6176,
+      "length": 6,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6225,
+      "length": 11,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6261,
+      "length": 7,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6338,
+      "length": 9,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6420,
+      "length": 8,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6465,
+      "length": 6,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6508,
+      "length": 21,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/NautilusShopInfoViewItem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6560,
+      "length": 8,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 488,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 514,
+      "length": 5,
+      "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 541,
+      "length": 7,
+      "value": "\"items\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
       "kind": "StringLiteral",
       "offset": 488,
@@ -14440,6 +14047,195 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
       "kind": "StringLiteral",
+      "offset": 1942,
+      "length": 9,
+      "value": "\"shop_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1976,
+      "length": 11,
+      "value": "\"shop_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2012,
+      "length": 11,
+      "value": "\"shop_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2048,
+      "length": 11,
+      "value": "\"open_time\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2083,
+      "length": 9,
+      "value": "\"holiday\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2129,
+      "length": 24,
+      "value": "\"publish_start_datetime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2188,
+      "length": 22,
+      "value": "\"publish_end_datetime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2241,
+      "length": 17,
+      "value": "\"average_budget1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2289,
+      "length": 17,
+      "value": "\"average_budget2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2343,
+      "length": 24,
+      "value": "\"average_budget_display\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2394,
+      "length": 13,
+      "value": "\"shop_appeal\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2435,
+      "length": 6,
+      "value": "\"copy\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2465,
+      "length": 9,
+      "value": "\"address\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2500,
+      "length": 5,
+      "value": "\"tel\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2532,
+      "length": 13,
+      "value": "\"business_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2574,
+      "length": 15,
+      "value": "\"business_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2616,
+      "length": 14,
+      "value": "\"shop_gps_lat\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2657,
+      "length": 14,
+      "value": "\"shop_gps_lon\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2701,
+      "length": 17,
+      "value": "\"shop_image_list\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2749,
+      "length": 16,
+      "value": "\"client_shop_cd\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2802,
+      "length": 20,
+      "value": "\"shop_external_link\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2851,
+      "length": 15,
+      "value": "\"mobile_access\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2904,
+      "length": 24,
+      "value": "\"emergency_notification\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2953,
+      "length": 10,
+      "value": "\"distance\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2994,
+      "length": 18,
+      "value": "\"shop_search_tags\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 3037,
+      "length": 14,
+      "value": "\"flg_favorite\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1037,
+      "length": 16,
+      "value": "\"NautilusShopSDK.ShopBaseResponse\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
       "offset": 5508,
       "length": 12,
       "value": "\"image_path\""
@@ -14448,6 +14244,48 @@
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
       "kind": "StringLiteral",
       "offset": 5543,
+      "length": 9,
+      "value": "\"sort_no\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 5508,
+      "length": 12,
+      "value": "\"image_path\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 5543,
+      "length": 9,
+      "value": "\"sort_no\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 5350,
+      "length": 9,
+      "value": "\"NautilusShopSDK.ShopImage\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 6033,
+      "length": 11,
+      "value": "\"link_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 6064,
+      "length": 5,
+      "value": "\"url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 6092,
       "length": 9,
       "value": "\"sort_no\""
     },
@@ -14471,6 +14309,13 @@
       "offset": 6092,
       "length": 9,
       "value": "\"sort_no\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 5850,
+      "length": 16,
+      "value": "\"NautilusShopSDK.ShopExternalLink\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Filterng\/NautilusPrefectureSelectionViewController.swift",
@@ -14531,13 +14376,6 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
       "kind": "StringLiteral",
-      "offset": 539,
-      "length": 22,
-      "value": "\"moduleapps-shop.json\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
-      "kind": "StringLiteral",
       "offset": 697,
       "length": 12,
       "value": "\"__ma_shop-\""
@@ -14555,41 +14393,6 @@
       "offset": 901,
       "length": 6,
       "value": "\"update-shop-favorite\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1323,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1416,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1510,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1597,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1689,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
@@ -14614,29 +14417,64 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
+      "kind": "StringLiteral",
+      "offset": 436,
+      "length": 12,
+      "value": "\"NautilusShopSDK.NautilusShop\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
       "kind": "IntegerLiteral",
-      "offset": 46169,
+      "offset": 46006,
       "length": 11,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
       "kind": "IntegerLiteral",
-      "offset": 46190,
+      "offset": 46027,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
       "kind": "IntegerLiteral",
-      "offset": 46213,
+      "offset": 46050,
       "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
       "kind": "IntegerLiteral",
-      "offset": 46237,
+      "offset": 46074,
+      "length": 21,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
+      "kind": "IntegerLiteral",
+      "offset": 46006,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
+      "kind": "IntegerLiteral",
+      "offset": 46027,
+      "length": 13,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
+      "kind": "IntegerLiteral",
+      "offset": 46050,
+      "length": 14,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
+      "kind": "IntegerLiteral",
+      "offset": 46074,
       "length": 21,
       "value": "4"
     },
@@ -14645,6 +14483,20 @@
       "kind": "IntegerLiteral",
       "offset": 972,
       "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopSearchSortKey.swift",
+      "kind": "IntegerLiteral",
+      "offset": 972,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopSearchSortKey.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1355,
+      "length": 10,
       "value": "1"
     },
     {
@@ -15406,609 +15258,1953 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11055,
-      "length": 57,
-      "value": "\"ma_shop_detail_delete_notification_history_confirm_text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 11144,
+      "offset": 11028,
       "length": 27,
       "value": "\"ma_shop_list_screen_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11208,
+      "offset": 11092,
       "length": 33,
       "value": "\"ma_shop_list_item_title_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11278,
+      "offset": 11162,
       "length": 33,
       "value": "\"ma_shop_list_item_body1_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11348,
+      "offset": 11232,
       "length": 33,
       "value": "\"ma_shop_list_item_body2_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11429,
+      "offset": 11313,
       "length": 45,
       "value": "\"ma_shop_list_distance_text_format_threshold\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11531,
+      "offset": 11415,
       "length": 56,
       "value": "\"ma_shop_list_distance_text_format_near_group_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11646,
+      "offset": 11530,
       "length": 58,
       "value": "\"ma_shop_list_distance_text_format_near_decimal_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11763,
+      "offset": 11647,
       "length": 58,
       "value": "\"ma_shop_list_distance_text_format_near_fractional_length\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11868,
+      "offset": 11752,
       "length": 45,
       "value": "\"ma_shop_list_distance_text_format_near_unit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11969,
+      "offset": 11853,
       "length": 55,
       "value": "\"ma_shop_list_distance_text_format_far_group_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12082,
+      "offset": 11966,
       "length": 57,
       "value": "\"ma_shop_list_distance_text_format_far_decimal_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12197,
+      "offset": 12081,
       "length": 57,
       "value": "\"ma_shop_list_distance_text_format_far_fractional_length\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12300,
+      "offset": 12184,
       "length": 44,
       "value": "\"ma_shop_list_distance_text_format_far_unit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12376,
+      "offset": 12260,
       "length": 27,
       "value": "\"ma_shop_list_loading_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12439,
+      "offset": 12323,
       "length": 32,
       "value": "\"ma_shop_list_empty_state_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12509,
+      "offset": 12393,
       "length": 34,
       "value": "\"ma_shop_list_empty_state_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12590,
+      "offset": 12474,
       "length": 45,
       "value": "\"ma_shop_list_empty_state_show_reload_button\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12670,
+      "offset": 12554,
       "length": 31,
       "value": "\"ma_shop_list_load_error_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12738,
+      "offset": 12622,
       "length": 33,
       "value": "\"ma_shop_list_load_error_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12808,
+      "offset": 12692,
       "length": 33,
       "value": "\"ma_shop_list_reload_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12891,
+      "offset": 12775,
       "length": 47,
       "value": "\"ma_shop_favorite_list_unavailable_error_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12990,
+      "offset": 12874,
       "length": 49,
       "value": "\"ma_shop_favorite_list_unavailable_error_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13086,
+      "offset": 12970,
       "length": 46,
       "value": "\"ma_shop_search_list_number_of_shops_per_load\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13190,
+      "offset": 13074,
       "length": 56,
       "value": "\"ma_shop_search_list_keyword_textfield_placeholder_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13289,
+      "offset": 13173,
       "length": 40,
       "value": "\"ma_shop_search_list_item_title_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13372,
+      "offset": 13256,
       "length": 40,
       "value": "\"ma_shop_search_list_item_body1_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13455,
+      "offset": 13339,
       "length": 40,
       "value": "\"ma_shop_search_list_item_body2_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13549,
+      "offset": 13433,
       "length": 52,
       "value": "\"ma_shop_search_list_distance_text_format_threshold\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13664,
+      "offset": 13548,
       "length": 63,
       "value": "\"ma_shop_search_list_distance_text_format_near_group_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13792,
+      "offset": 13676,
       "length": 65,
       "value": "\"ma_shop_search_list_distance_text_format_near_decimal_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13922,
+      "offset": 13806,
       "length": 65,
       "value": "\"ma_shop_search_list_distance_text_format_near_fractional_length\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14040,
+      "offset": 13924,
       "length": 52,
       "value": "\"ma_shop_search_list_distance_text_format_near_unit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14154,
+      "offset": 14038,
       "length": 62,
       "value": "\"ma_shop_search_list_distance_text_format_far_group_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14280,
+      "offset": 14164,
       "length": 64,
       "value": "\"ma_shop_search_list_distance_text_format_far_decimal_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14408,
+      "offset": 14292,
       "length": 64,
       "value": "\"ma_shop_search_list_distance_text_format_far_fractional_length\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14524,
+      "offset": 14408,
       "length": 51,
       "value": "\"ma_shop_search_list_distance_text_format_far_unit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14625,
+      "offset": 14509,
       "length": 48,
       "value": "\"ma_shop_search_list_filtering_view_header_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14725,
+      "offset": 14609,
       "length": 50,
       "value": "\"ma_shop_search_list_filtering_clear_button_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14813,
+      "offset": 14697,
       "length": 34,
       "value": "\"ma_shop_search_list_loading_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14889,
+      "offset": 14773,
       "length": 39,
       "value": "\"ma_shop_search_list_empty_state_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14972,
+      "offset": 14856,
       "length": 41,
       "value": "\"ma_shop_search_list_empty_state_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15066,
+      "offset": 14950,
       "length": 52,
       "value": "\"ma_shop_search_list_empty_state_show_reload_button\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15159,
+      "offset": 15043,
       "length": 38,
       "value": "\"ma_shop_search_list_load_error_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15240,
+      "offset": 15124,
       "length": 40,
       "value": "\"ma_shop_search_list_load_error_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15323,
+      "offset": 15207,
       "length": 40,
       "value": "\"ma_shop_search_list_reload_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15417,
+      "offset": 15301,
       "length": 49,
       "value": "\"ma_shop_tag_filtering_show_shop_search_tag_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15514,
+      "offset": 15398,
       "length": 42,
       "value": "\"ma_shop_detail_show_shop_search_tag_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15608,
+      "offset": 15492,
       "length": 45,
       "value": "\"ma_shop_search_widemap_map_initial_latitude\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15706,
+      "offset": 15590,
       "length": 46,
       "value": "\"ma_shop_search_widemap_map_initial_longitude\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15802,
+      "offset": 15686,
       "length": 43,
       "value": "\"ma_shop_search_widemap_map_initial_radius\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15910,
+      "offset": 15794,
       "length": 61,
       "value": "\"ma_shop_search_widemap_map_use_current_location_for_initial\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16030,
+      "offset": 15914,
       "length": 55,
       "value": "\"ma_shop_search_widemap_map_number_of_shops_per_search\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16153,
+      "offset": 16037,
       "length": 63,
       "value": "\"ma_shop_search_widemap_map_keyword_textfield_placeholder_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16276,
+      "offset": 16160,
       "length": 55,
       "value": "\"ma_shop_search_widemap_map_filtering_view_header_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16393,
+      "offset": 16277,
       "length": 57,
       "value": "\"ma_shop_search_widemap_map_filtering_clear_button_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16500,
+      "offset": 16384,
       "length": 43,
       "value": "\"ma_shop_search_widemap_list_initial_state\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16596,
+      "offset": 16480,
       "length": 47,
       "value": "\"ma_shop_search_widemap_map_error_dialog_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16707,
+      "offset": 16591,
       "length": 60,
       "value": "\"ma_shop_search_widemap_map_error_dialog_load_error_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16830,
+      "offset": 16714,
       "length": 59,
       "value": "\"ma_shop_search_widemap_map_error_dialog_close_button_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16949,
+      "offset": 16833,
       "length": 54,
       "value": "\"ma_shop_search_widemap_annotation_item_title_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17062,
+      "offset": 16946,
       "length": 53,
       "value": "\"ma_shop_search_widemap_annotation_item_body_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17177,
+      "offset": 17061,
       "length": 57,
       "value": "\"ma_shop_search_widemap_annotation_show_shop_search_tags\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17297,
+      "offset": 17181,
       "length": 59,
       "value": "\"ma_shop_search_widemap_list_show_result_list_button_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17416,
+      "offset": 17300,
       "length": 55,
       "value": "\"ma_shop_search_widemap_list_result_item_title_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17531,
+      "offset": 17415,
       "length": 55,
       "value": "\"ma_shop_search_widemap_list_result_item_body1_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17646,
+      "offset": 17530,
       "length": 55,
       "value": "\"ma_shop_search_widemap_list_result_item_body2_element\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17781,
+      "offset": 17665,
       "length": 78,
       "value": "\"ma_shop_search_widemap_list_result_distance_text_format_near_group_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17941,
+      "offset": 17825,
       "length": 80,
       "value": "\"ma_shop_search_widemap_list_result_distance_text_format_near_decimal_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18103,
+      "offset": 17987,
       "length": 80,
       "value": "\"ma_shop_search_widemap_list_result_distance_text_format_near_fractional_length\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18253,
+      "offset": 18137,
       "length": 67,
       "value": "\"ma_shop_search_widemap_list_result_distance_text_format_near_unit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18399,
+      "offset": 18283,
       "length": 77,
       "value": "\"ma_shop_search_widemap_list_result_distance_text_format_far_group_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18557,
+      "offset": 18441,
       "length": 79,
       "value": "\"ma_shop_search_widemap_list_result_distance_text_format_far_decimal_separator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18717,
+      "offset": 18601,
       "length": 79,
       "value": "\"ma_shop_search_widemap_list_result_distance_text_format_far_fractional_length\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18865,
+      "offset": 18749,
       "length": 66,
       "value": "\"ma_shop_search_widemap_list_result_distance_text_format_far_unit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19002,
+      "offset": 18886,
       "length": 67,
       "value": "\"ma_shop_search_widemap_list_result_distance_text_format_threshold\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19118,
+      "offset": 19002,
       "length": 42,
       "value": "\"ma_shop_search_widemap_list_loading_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19213,
+      "offset": 19097,
       "length": 47,
       "value": "\"ma_shop_search_widemap_list_empty_state_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19315,
+      "offset": 19199,
       "length": 49,
       "value": "\"ma_shop_search_widemap_list_empty_state_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19416,
+      "offset": 19300,
       "length": 46,
       "value": "\"ma_shop_search_widemap_list_load_error_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19516,
+      "offset": 19400,
       "length": 48,
       "value": "\"ma_shop_search_widemap_list_load_error_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19618,
+      "offset": 19502,
       "length": 48,
       "value": "\"ma_shop_search_widemap_auto_focus_after_search\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19720,
+      "offset": 19604,
       "length": 47,
       "value": "\"ma_shop_search_search_window_background_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19815,
+      "offset": 19699,
       "length": 41,
       "value": "\"ma_shop_search_search_window_text_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19911,
+      "offset": 19795,
       "length": 48,
       "value": "\"ma_shop_search_search_window_placeholder_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 19997,
+      "offset": 19881,
       "length": 30,
       "value": "\"ma_shop_search_map_sort_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
       "kind": "StringLiteral",
-      "offset": 20072,
+      "offset": 19956,
+      "length": 38,
+      "value": "\"ma_shop_search_widemap_map_sort_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 30,
+      "value": "\"ma_shop_network_timeout_time\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 380,
+      "length": 22,
+      "value": "\"ma_shop_use_favorite\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 443,
+      "length": 37,
+      "value": "\"ma_shop_search_map_initial_latitude\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 522,
+      "length": 38,
+      "value": "\"ma_shop_search_map_initial_longitude\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 599,
+      "length": 35,
+      "value": "\"ma_shop_search_map_initial_radius\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 688,
+      "length": 53,
+      "value": "\"ma_shop_search_map_use_current_location_for_initial\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 789,
+      "length": 47,
+      "value": "\"ma_shop_search_map_number_of_shops_per_search\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 893,
+      "length": 55,
+      "value": "\"ma_shop_search_map_keyword_textfield_placeholder_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 997,
+      "length": 47,
+      "value": "\"ma_shop_search_map_filtering_view_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1095,
+      "length": 49,
+      "value": "\"ma_shop_search_map_filtering_clear_button_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1186,
+      "length": 39,
+      "value": "\"ma_shop_search_map_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1278,
+      "length": 52,
+      "value": "\"ma_shop_search_map_error_dialog_load_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1382,
+      "length": 51,
+      "value": "\"ma_shop_search_map_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1471,
+      "length": 34,
+      "value": "\"ma_shop_number_of_search_history\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1559,
+      "length": 51,
+      "value": "\"ma_shop_search_keyword_textfield_placeholder_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1657,
+      "length": 44,
+      "value": "\"ma_shop_search_keyword_cancel_button_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1746,
+      "length": 42,
+      "value": "\"ma_shop_search_keyword_table_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1835,
+      "length": 45,
+      "value": "\"ma_shop_tag_filtering_number_of_tag_columns\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1920,
+      "length": 36,
+      "value": "\"ma_shop_tag_filtering_screen_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2001,
+      "length": 42,
+      "value": "\"ma_shop_tag_filtering_clear_button_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2080,
+      "length": 32,
+      "value": "\"ma_shop_tag_filtering_sections\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2166,
+      "length": 52,
+      "value": "\"ma_shop_tag_filtering_business_section_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2274,
+      "length": 54,
+      "value": "\"ma_shop_tag_filtering_prefecture_section_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2389,
+      "length": 60,
+      "value": "\"ma_shop_tag_filtering_prefecture_section_no_selection_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2500,
+      "length": 49,
+      "value": "\"ma_shop_tag_filtering_tag_section_header_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2595,
+      "length": 43,
+      "value": "\"ma_shop_tag_filtering_search_button_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2694,
+      "length": 54,
+      "value": "\"ma_shop_tag_filtering_same_category_search_operation\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2809,
+      "length": 59,
+      "value": "\"ma_shop_tag_filtering_different_category_search_operation\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2913,
+      "length": 42,
+      "value": "\"ma_shop_tag_filtering_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3011,
+      "length": 55,
+      "value": "\"ma_shop_tag_filtering_error_dialog_load_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3121,
+      "length": 54,
+      "value": "\"ma_shop_tag_filtering_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3230,
+      "length": 53,
+      "value": "\"ma_shop_prefecture_selection_no_selection_item_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3346,
+      "length": 61,
+      "value": "\"ma_shop_prefecture_selection_use_selectable_prefecture_list\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3467,
+      "length": 57,
+      "value": "\"ma_shop_prefecture_selection_selectable_prefecture_list\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3563,
+      "length": 35,
+      "value": "\"ma_shop_search_list_initial_state\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3650,
+      "length": 51,
+      "value": "\"ma_shop_search_list_show_result_list_button_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3750,
+      "length": 47,
+      "value": "\"ma_shop_search_list_result_item_title_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3846,
+      "length": 47,
+      "value": "\"ma_shop_search_list_result_item_body1_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3942,
+      "length": 47,
+      "value": "\"ma_shop_search_list_result_item_body2_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4058,
+      "length": 70,
+      "value": "\"ma_shop_search_list_result_distance_text_format_near_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4199,
+      "length": 72,
+      "value": "\"ma_shop_search_list_result_distance_text_format_near_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4342,
+      "length": 72,
+      "value": "\"ma_shop_search_list_result_distance_text_format_near_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4473,
+      "length": 59,
+      "value": "\"ma_shop_search_list_result_distance_text_format_near_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4600,
+      "length": 69,
+      "value": "\"ma_shop_search_list_result_distance_text_format_far_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4739,
+      "length": 71,
+      "value": "\"ma_shop_search_list_result_distance_text_format_far_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4880,
+      "length": 71,
+      "value": "\"ma_shop_search_list_result_distance_text_format_far_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5009,
+      "length": 58,
+      "value": "\"ma_shop_search_list_result_distance_text_format_far_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5127,
+      "length": 59,
+      "value": "\"ma_shop_search_list_result_distance_text_format_threshold\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5238,
+      "length": 50,
+      "value": "\"ma_shop_search_map_annotation_item_title_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5339,
+      "length": 49,
+      "value": "\"ma_shop_search_map_annotation_item_body_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5442,
+      "length": 53,
+      "value": "\"ma_shop_search_map_annotation_show_shop_search_tags\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5529,
+      "length": 29,
+      "value": "\"ma_shop_detail_screen_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5590,
+      "length": 27,
+      "value": "\"ma_shop_detail_map_radius\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5664,
+      "length": 46,
+      "value": "\"ma_shop_detail_map_open_map_app_button_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5745,
+      "length": 30,
+      "value": "\"ma_shop_detail_visible_items\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5820,
+      "length": 42,
+      "value": "\"ma_shop_detail_business_hour_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5902,
+      "length": 36,
+      "value": "\"ma_shop_detail_holiday_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 5994,
+      "length": 55,
+      "value": "\"ma_shop_detail_average_budget_for_daytime_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6107,
+      "length": 57,
+      "value": "\"ma_shop_detail_average_budget_for_nighttime_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6210,
+      "length": 43,
+      "value": "\"ma_shop_detail_average_budget_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6296,
+      "length": 40,
+      "value": "\"ma_shop_detail_shop_appeal_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6383,
+      "length": 45,
+      "value": "\"ma_shop_detail_shop_ads_message_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6472,
+      "length": 41,
+      "value": "\"ma_shop_detail_shop_address_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6559,
+      "length": 43,
+      "value": "\"ma_shop_detail_shop_telephone_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6647,
+      "length": 42,
+      "value": "\"ma_shop_detail_shop_business_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6732,
+      "length": 40,
+      "value": "\"ma_shop_detail_shop_access_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6830,
+      "length": 56,
+      "value": "\"ma_shop_detail_shop_emergency_notification_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 6931,
+      "length": 42,
+      "value": "\"ma_shop_detail_shop_distance_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7032,
+      "length": 58,
+      "value": "\"ma_shop_detail_distance_text_format_near_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7151,
+      "length": 60,
+      "value": "\"ma_shop_detail_distance_text_format_near_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7272,
+      "length": 60,
+      "value": "\"ma_shop_detail_distance_text_format_near_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7381,
+      "length": 47,
+      "value": "\"ma_shop_detail_distance_text_format_near_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7486,
+      "length": 57,
+      "value": "\"ma_shop_detail_distance_text_format_far_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7603,
+      "length": 59,
+      "value": "\"ma_shop_detail_distance_text_format_far_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7722,
+      "length": 59,
+      "value": "\"ma_shop_detail_distance_text_format_far_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7829,
+      "length": 46,
+      "value": "\"ma_shop_detail_distance_text_format_far_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7925,
+      "length": 47,
+      "value": "\"ma_shop_detail_distance_text_format_threshold\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 8012,
+      "length": 36,
+      "value": "\"ma_shop_favorite_list_screen_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 8086,
+      "length": 34,
+      "value": "\"ma_shop_favorite_list_sort_order\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 8169,
+      "length": 48,
+      "value": "\"ma_shop_favorite_list_number_of_shops_per_load\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 8262,
+      "length": 42,
+      "value": "\"ma_shop_favorite_list_item_title_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 8349,
+      "length": 42,
+      "value": "\"ma_shop_favorite_list_item_body1_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 8436,
+      "length": 42,
+      "value": "\"ma_shop_favorite_list_item_body2_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 8534,
+      "length": 54,
+      "value": "\"ma_shop_favorite_list_distance_text_format_threshold\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 8653,
+      "length": 65,
+      "value": "\"ma_shop_favorite_list_distance_text_format_near_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 8785,
+      "length": 67,
+      "value": "\"ma_shop_favorite_list_distance_text_format_near_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 8919,
+      "length": 67,
+      "value": "\"ma_shop_favorite_list_distance_text_format_near_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 9041,
+      "length": 54,
+      "value": "\"ma_shop_favorite_list_distance_text_format_near_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 9159,
+      "length": 64,
+      "value": "\"ma_shop_favorite_list_distance_text_format_far_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 9289,
+      "length": 66,
+      "value": "\"ma_shop_favorite_list_distance_text_format_far_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 9421,
+      "length": 66,
+      "value": "\"ma_shop_favorite_list_distance_text_format_far_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 9541,
+      "length": 53,
+      "value": "\"ma_shop_favorite_list_distance_text_format_far_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 9638,
+      "length": 41,
+      "value": "\"ma_shop_favorite_list_empty_state_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 9725,
+      "length": 43,
+      "value": "\"ma_shop_favorite_list_empty_state_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 9823,
+      "length": 54,
+      "value": "\"ma_shop_favorite_list_empty_state_show_reload_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 9920,
+      "length": 40,
+      "value": "\"ma_shop_favorite_list_load_error_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10005,
+      "length": 42,
+      "value": "\"ma_shop_favorite_list_load_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10092,
+      "length": 42,
+      "value": "\"ma_shop_favorite_list_reload_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10187,
+      "length": 52,
+      "value": "\"ma_shop_favorite_list_load_more_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10294,
+      "length": 54,
+      "value": "\"ma_shop_favorite_list_load_more_error_dialog_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10411,
+      "length": 64,
+      "value": "\"ma_shop_favorite_list_load_more_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10515,
+      "length": 36,
+      "value": "\"ma_shop_favorite_list_loading_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10592,
+      "length": 38,
+      "value": "\"ma_shop_search_list_empty_state_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10669,
+      "length": 35,
+      "value": "\"ma_shop_detail_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10754,
+      "length": 48,
+      "value": "\"ma_shop_detail_error_dialog_no_content_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10852,
+      "length": 48,
+      "value": "\"ma_shop_detail_error_dialog_load_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 10949,
+      "length": 47,
+      "value": "\"ma_shop_detail_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11028,
+      "length": 27,
+      "value": "\"ma_shop_list_screen_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11092,
+      "length": 33,
+      "value": "\"ma_shop_list_item_title_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11162,
+      "length": 33,
+      "value": "\"ma_shop_list_item_body1_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11232,
+      "length": 33,
+      "value": "\"ma_shop_list_item_body2_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11313,
+      "length": 45,
+      "value": "\"ma_shop_list_distance_text_format_threshold\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11415,
+      "length": 56,
+      "value": "\"ma_shop_list_distance_text_format_near_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11530,
+      "length": 58,
+      "value": "\"ma_shop_list_distance_text_format_near_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11647,
+      "length": 58,
+      "value": "\"ma_shop_list_distance_text_format_near_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11752,
+      "length": 45,
+      "value": "\"ma_shop_list_distance_text_format_near_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11853,
+      "length": 55,
+      "value": "\"ma_shop_list_distance_text_format_far_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 11966,
+      "length": 57,
+      "value": "\"ma_shop_list_distance_text_format_far_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12081,
+      "length": 57,
+      "value": "\"ma_shop_list_distance_text_format_far_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12184,
+      "length": 44,
+      "value": "\"ma_shop_list_distance_text_format_far_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12260,
+      "length": 27,
+      "value": "\"ma_shop_list_loading_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12323,
+      "length": 32,
+      "value": "\"ma_shop_list_empty_state_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12393,
+      "length": 34,
+      "value": "\"ma_shop_list_empty_state_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12474,
+      "length": 45,
+      "value": "\"ma_shop_list_empty_state_show_reload_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12554,
+      "length": 31,
+      "value": "\"ma_shop_list_load_error_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12622,
+      "length": 33,
+      "value": "\"ma_shop_list_load_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12692,
+      "length": 33,
+      "value": "\"ma_shop_list_reload_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12775,
+      "length": 47,
+      "value": "\"ma_shop_favorite_list_unavailable_error_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12874,
+      "length": 49,
+      "value": "\"ma_shop_favorite_list_unavailable_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 12970,
+      "length": 46,
+      "value": "\"ma_shop_search_list_number_of_shops_per_load\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13074,
+      "length": 56,
+      "value": "\"ma_shop_search_list_keyword_textfield_placeholder_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13173,
+      "length": 40,
+      "value": "\"ma_shop_search_list_item_title_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13256,
+      "length": 40,
+      "value": "\"ma_shop_search_list_item_body1_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13339,
+      "length": 40,
+      "value": "\"ma_shop_search_list_item_body2_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13433,
+      "length": 52,
+      "value": "\"ma_shop_search_list_distance_text_format_threshold\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13548,
+      "length": 63,
+      "value": "\"ma_shop_search_list_distance_text_format_near_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13676,
+      "length": 65,
+      "value": "\"ma_shop_search_list_distance_text_format_near_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13806,
+      "length": 65,
+      "value": "\"ma_shop_search_list_distance_text_format_near_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 13924,
+      "length": 52,
+      "value": "\"ma_shop_search_list_distance_text_format_near_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14038,
+      "length": 62,
+      "value": "\"ma_shop_search_list_distance_text_format_far_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14164,
+      "length": 64,
+      "value": "\"ma_shop_search_list_distance_text_format_far_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14292,
+      "length": 64,
+      "value": "\"ma_shop_search_list_distance_text_format_far_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14408,
+      "length": 51,
+      "value": "\"ma_shop_search_list_distance_text_format_far_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14509,
+      "length": 48,
+      "value": "\"ma_shop_search_list_filtering_view_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14609,
+      "length": 50,
+      "value": "\"ma_shop_search_list_filtering_clear_button_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14697,
+      "length": 34,
+      "value": "\"ma_shop_search_list_loading_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14773,
+      "length": 39,
+      "value": "\"ma_shop_search_list_empty_state_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14856,
+      "length": 41,
+      "value": "\"ma_shop_search_list_empty_state_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 14950,
+      "length": 52,
+      "value": "\"ma_shop_search_list_empty_state_show_reload_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15043,
+      "length": 38,
+      "value": "\"ma_shop_search_list_load_error_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15124,
+      "length": 40,
+      "value": "\"ma_shop_search_list_load_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15207,
+      "length": 40,
+      "value": "\"ma_shop_search_list_reload_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15301,
+      "length": 49,
+      "value": "\"ma_shop_tag_filtering_show_shop_search_tag_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15398,
+      "length": 42,
+      "value": "\"ma_shop_detail_show_shop_search_tag_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15492,
+      "length": 45,
+      "value": "\"ma_shop_search_widemap_map_initial_latitude\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15590,
+      "length": 46,
+      "value": "\"ma_shop_search_widemap_map_initial_longitude\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15686,
+      "length": 43,
+      "value": "\"ma_shop_search_widemap_map_initial_radius\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15794,
+      "length": 61,
+      "value": "\"ma_shop_search_widemap_map_use_current_location_for_initial\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 15914,
+      "length": 55,
+      "value": "\"ma_shop_search_widemap_map_number_of_shops_per_search\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16037,
+      "length": 63,
+      "value": "\"ma_shop_search_widemap_map_keyword_textfield_placeholder_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16160,
+      "length": 55,
+      "value": "\"ma_shop_search_widemap_map_filtering_view_header_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16277,
+      "length": 57,
+      "value": "\"ma_shop_search_widemap_map_filtering_clear_button_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16384,
+      "length": 43,
+      "value": "\"ma_shop_search_widemap_list_initial_state\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16480,
+      "length": 47,
+      "value": "\"ma_shop_search_widemap_map_error_dialog_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16591,
+      "length": 60,
+      "value": "\"ma_shop_search_widemap_map_error_dialog_load_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16714,
+      "length": 59,
+      "value": "\"ma_shop_search_widemap_map_error_dialog_close_button_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16833,
+      "length": 54,
+      "value": "\"ma_shop_search_widemap_annotation_item_title_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 16946,
+      "length": 53,
+      "value": "\"ma_shop_search_widemap_annotation_item_body_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17061,
+      "length": 57,
+      "value": "\"ma_shop_search_widemap_annotation_show_shop_search_tags\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17181,
+      "length": 59,
+      "value": "\"ma_shop_search_widemap_list_show_result_list_button_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17300,
+      "length": 55,
+      "value": "\"ma_shop_search_widemap_list_result_item_title_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17415,
+      "length": 55,
+      "value": "\"ma_shop_search_widemap_list_result_item_body1_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17530,
+      "length": 55,
+      "value": "\"ma_shop_search_widemap_list_result_item_body2_element\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17665,
+      "length": 78,
+      "value": "\"ma_shop_search_widemap_list_result_distance_text_format_near_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17825,
+      "length": 80,
+      "value": "\"ma_shop_search_widemap_list_result_distance_text_format_near_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17987,
+      "length": 80,
+      "value": "\"ma_shop_search_widemap_list_result_distance_text_format_near_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18137,
+      "length": 67,
+      "value": "\"ma_shop_search_widemap_list_result_distance_text_format_near_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18283,
+      "length": 77,
+      "value": "\"ma_shop_search_widemap_list_result_distance_text_format_far_group_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18441,
+      "length": 79,
+      "value": "\"ma_shop_search_widemap_list_result_distance_text_format_far_decimal_separator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18601,
+      "length": 79,
+      "value": "\"ma_shop_search_widemap_list_result_distance_text_format_far_fractional_length\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18749,
+      "length": 66,
+      "value": "\"ma_shop_search_widemap_list_result_distance_text_format_far_unit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18886,
+      "length": 67,
+      "value": "\"ma_shop_search_widemap_list_result_distance_text_format_threshold\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19002,
+      "length": 42,
+      "value": "\"ma_shop_search_widemap_list_loading_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19097,
+      "length": 47,
+      "value": "\"ma_shop_search_widemap_list_empty_state_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19199,
+      "length": 49,
+      "value": "\"ma_shop_search_widemap_list_empty_state_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19300,
+      "length": 46,
+      "value": "\"ma_shop_search_widemap_list_load_error_title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19400,
+      "length": 48,
+      "value": "\"ma_shop_search_widemap_list_load_error_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19502,
+      "length": 48,
+      "value": "\"ma_shop_search_widemap_auto_focus_after_search\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19604,
+      "length": 47,
+      "value": "\"ma_shop_search_search_window_background_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19699,
+      "length": 41,
+      "value": "\"ma_shop_search_search_window_text_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19795,
+      "length": 48,
+      "value": "\"ma_shop_search_search_window_placeholder_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19881,
+      "length": 30,
+      "value": "\"ma_shop_search_map_sort_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Config\/NautilusShopConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19956,
       "length": 38,
       "value": "\"ma_shop_search_widemap_map_sort_name\""
     },
@@ -16029,9 +17225,16 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 30645,
+      "offset": 30627,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusFavoriteShopSortOrder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 342,
+      "length": 10,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusFavoriteShopSortOrder.swift",
@@ -16085,6 +17288,41 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopInfo.swift",
       "kind": "StringLiteral",
+      "offset": 5991,
+      "length": 11,
+      "value": "\"link_text\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 6022,
+      "length": 5,
+      "value": "\"url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 6050,
+      "length": 9,
+      "value": "\"sort_no\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 6661,
+      "length": 12,
+      "value": "\"image_path\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 6696,
+      "length": 9,
+      "value": "\"sort_no\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopInfo.swift",
+      "kind": "StringLiteral",
       "offset": 6661,
       "length": 12,
       "value": "\"image_path\""
@@ -16102,6 +17340,27 @@
       "offset": 451,
       "length": 4,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopDetailModifierTarget.swift",
+      "kind": "IntegerLiteral",
+      "offset": 451,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 1038,
+      "length": 27,
+      "value": "\"NautilusShopSDK.NautilusShopSearchPresenter\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Filterng\/NautilusShopSearchFilteringItem.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 31,
+      "value": "\"NautilusShopSDK.NautilusShopSearchFilteringItem\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Detail\/InfoViews\/TitleInfoView.swift",
@@ -16130,6 +17389,20 @@
       "offset": 638,
       "length": 2,
       "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/MigrateFavoriteShopsEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 449,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/MigrateFavoriteShopsEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 5,
+      "value": "\"pid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/MigrateFavoriteShopsEntity.swift",
@@ -16286,11 +17559,151 @@
       "value": "907"
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 452,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 499,
+      "length": 8,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 544,
+      "length": 15,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 603,
+      "length": 14,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 672,
+      "length": 12,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 760,
+      "length": 13,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 831,
+      "length": 16,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 902,
+      "length": 20,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 968,
+      "length": 15,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1066,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1151,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1240,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1297,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1361,
+      "length": 3,
+      "value": "901"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1436,
+      "length": 3,
+      "value": "903"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1490,
+      "length": 3,
+      "value": "905"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1545,
+      "length": 3,
+      "value": "906"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1625,
+      "length": 3,
+      "value": "907"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShopDetailModifier.swift",
+      "kind": "StringLiteral",
+      "offset": 312,
+      "length": 26,
+      "value": "\"NautilusShopSDK.NautilusShopDetailModifier\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusTaggedShopAnnotationView.swift",
       "kind": "IntegerLiteral",
       "offset": 296,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusTaggedShopAnnotationView.swift",
+      "kind": "StringLiteral",
+      "offset": 224,
+      "length": 28,
+      "value": "\"NautilusShopSDK.NautilusTaggedShopAnnotation\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusTaggedShopAnnotationView.swift",
@@ -16305,6 +17718,20 @@
       "offset": 845,
       "length": 1,
       "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/SetFavoriteShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 426,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/SetFavoriteShopEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 5,
+      "value": "\"pid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/SetFavoriteShopEntity.swift",
@@ -16349,6 +17776,34 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Filterng\/NautilusShopSearchFilteringPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 758,
+      "length": 36,
+      "value": "\"NautilusShopSDK.NautilusShopSearchFilteringPresenter\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/FavoriteShopListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/FavoriteShopListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 513,
+      "length": 5,
+      "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/FavoriteShopListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 545,
+      "length": 14,
+      "value": "\"shop_id_list\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/FavoriteShopListEntity.swift",
       "kind": "StringLiteral",
       "offset": 487,
@@ -16389,6 +17844,230 @@
       "offset": 1200,
       "length": 16,
       "value": "\"client_shop_cd\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/FavoriteShopListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1124,
+      "length": 9,
+      "value": "\"shop_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/FavoriteShopListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1158,
+      "length": 11,
+      "value": "\"shop_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/FavoriteShopListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1200,
+      "length": 16,
+      "value": "\"client_shop_cd\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/FavoriteShopListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 927,
+      "length": 22,
+      "value": "\"NautilusShopSDK.FavoriteShopIDResponse\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1199,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1225,
+      "length": 5,
+      "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1262,
+      "length": 9,
+      "value": "\"shop_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1296,
+      "length": 11,
+      "value": "\"shop_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1332,
+      "length": 11,
+      "value": "\"shop_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1368,
+      "length": 11,
+      "value": "\"open_time\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1403,
+      "length": 9,
+      "value": "\"holiday\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1449,
+      "length": 24,
+      "value": "\"publish_start_datetime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1508,
+      "length": 22,
+      "value": "\"publish_end_datetime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1561,
+      "length": 17,
+      "value": "\"average_budget1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1609,
+      "length": 17,
+      "value": "\"average_budget2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1663,
+      "length": 24,
+      "value": "\"average_budget_display\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1714,
+      "length": 13,
+      "value": "\"shop_appeal\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1755,
+      "length": 6,
+      "value": "\"copy\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1785,
+      "length": 9,
+      "value": "\"address\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1820,
+      "length": 5,
+      "value": "\"tel\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1852,
+      "length": 13,
+      "value": "\"business_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1894,
+      "length": 15,
+      "value": "\"business_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1936,
+      "length": 14,
+      "value": "\"shop_gps_lat\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1977,
+      "length": 14,
+      "value": "\"shop_gps_lon\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2021,
+      "length": 17,
+      "value": "\"shop_image_list\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2069,
+      "length": 16,
+      "value": "\"client_shop_cd\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2118,
+      "length": 20,
+      "value": "\"shop_external_link\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2167,
+      "length": 15,
+      "value": "\"mobile_access\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2220,
+      "length": 24,
+      "value": "\"emergency_notification\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2269,
+      "length": 10,
+      "value": "\"distance\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2310,
+      "length": 18,
+      "value": "\"shop_search_tags\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2353,
+      "length": 14,
+      "value": "\"flg_favorite\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/API\/Entity\/ShopDetailEntity.swift",
@@ -16589,37 +18268,9 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16022,
+      "offset": 16004,
       "length": 4,
       "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 16520,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17008,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17032,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17073,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/NautilusShopColor.swift",
