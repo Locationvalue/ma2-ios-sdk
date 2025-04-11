@@ -1,0 +1,84 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-bare-slash-regex -module-name NautilusCheckInSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Foundation
+import NautilusConfigSDK
+import NautilusContainerSDK
+import NautilusCoreSDK
+import NautilusIdentifySDK
+import NautilusLoggingSDK
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum NautilusCheckInDeviceType : Swift.Int {
+  case qrCode = 1
+  case beacon = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public let NautilusCheckInErrorDomain: Swift.String
+@objc public enum NautilusCheckInError : Swift.Int, Swift.Error {
+  case unknown
+  case connection
+  case timedout
+  case apiProcessError
+  case httpConnection
+  case parseFailure
+  case userCancelled
+  case invalidParameter
+  case invalidInstance
+  case illegalConfiguration
+  case invalidParameters = 100
+  case missingRequiredParameter = 101
+  case unexpectedParameterFormat = 102
+  case serverError = 200
+  case serviceMaintenance = 901
+  case unknownAPIService = 903
+  case invalidUserPID = 905
+  case developerError = 906
+  case requiresLoginStatus = 907
+  public var nautilusCheckInErrorCode: Swift.Int {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc final public class NautilusCheckIn : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  @objc public static var configFilename: Swift.String? {
+    @objc get
+  }
+  @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
+    @objc get
+  }
+  @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
+    @objc get
+  }
+  @objc final public let app: NautilusCoreSDK.NautilusApp
+  @objc final public let name: Swift.String?
+  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+    @objc get
+  }
+  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
+  @objc public static func checkIn() -> NautilusCheckInSDK.NautilusCheckIn
+  @objc(checkInAppNamed:) public static func checkIn(appName: Swift.String) -> NautilusCheckInSDK.NautilusCheckIn
+  final public func checkIn(checkInKey: Swift.String, checkInDeviceType: NautilusCheckInSDK.NautilusCheckInDeviceType, location: NautilusCoreSDK.NautilusLocation?, completion: @escaping (Swift.Result<Swift.Int, NautilusCheckInSDK.NautilusCheckInError>) -> Swift.Void)
+  @objc final public func checkIn(checkInKey: Swift.String, checkInDeviceType: NautilusCheckInSDK.NautilusCheckInDeviceType, location: NautilusCoreSDK.NautilusLocation?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  @objc deinit
+}
+extension NautilusCheckInSDK.NautilusCheckInDeviceType : Swift.Equatable {}
+extension NautilusCheckInSDK.NautilusCheckInDeviceType : Swift.Hashable {}
+extension NautilusCheckInSDK.NautilusCheckInDeviceType : Swift.RawRepresentable {}
+extension NautilusCheckInSDK.NautilusCheckInError : Swift.Equatable {}
+extension NautilusCheckInSDK.NautilusCheckInError : Swift.Hashable {}
+extension NautilusCheckInSDK.NautilusCheckInError : Swift.RawRepresentable {}
