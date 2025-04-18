@@ -9880,6 +9880,48 @@
           },
           {
             "kind": "Var",
+            "name": "pushType",
+            "printedName": "pushType",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusAnalyticsSDK.NautilusAnalyticsEventProperty.Type) -> NautilusAnalyticsSDK.NautilusAnalyticsEventProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusAnalyticsEventProperty",
+                    "printedName": "NautilusAnalyticsSDK.NautilusAnalyticsEventProperty",
+                    "usr": "c:@M@NautilusAnalyticsSDK@E@NautilusAnalyticsEventProperty"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusAnalyticsSDK.NautilusAnalyticsEventProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusAnalyticsEventProperty",
+                        "printedName": "NautilusAnalyticsSDK.NautilusAnalyticsEventProperty",
+                        "usr": "c:@M@NautilusAnalyticsSDK@E@NautilusAnalyticsEventProperty"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NautilusAnalyticsSDK@E@NautilusAnalyticsEventProperty@NautilusAnalyticsEventPropertyPushType",
+            "mangledName": "$s20NautilusAnalyticsSDK0aB13EventPropertyO8pushTypeyA2CmF",
+            "moduleName": "NautilusAnalyticsSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 85
+          },
+          {
+            "kind": "Var",
             "name": "propertyName",
             "printedName": "propertyName",
             "children": [
@@ -12649,6 +12691,13 @@
       "offset": 4835,
       "length": 8,
       "value": "84"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsEventProperty.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4892,
+      "length": 8,
+      "value": "85"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Analytics\/Sources\/Base\/NautilusAnalyticsUserProperty.swift",

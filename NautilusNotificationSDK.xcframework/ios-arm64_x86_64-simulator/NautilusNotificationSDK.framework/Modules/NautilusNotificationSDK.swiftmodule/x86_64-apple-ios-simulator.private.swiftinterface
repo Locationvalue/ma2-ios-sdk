@@ -20,6 +20,9 @@ import _SwiftConcurrencyShims
   public var intValue: Swift.Int? {
     get
   }
+  public var eventPropertyValue: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

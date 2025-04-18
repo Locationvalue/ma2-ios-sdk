@@ -784,6 +784,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEventProperty, open) {
   NautilusAnalyticsEventPropertySpotID = 83,
 /// スポット名
   NautilusAnalyticsEventPropertySpotName = 84,
+/// プッシュ通知のタイプ
+  NautilusAnalyticsEventPropertyPushType = 85,
 };
 
 
@@ -1666,6 +1668,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEventProperty, open) {
   NautilusAnalyticsEventPropertySpotID = 83,
 /// スポット名
   NautilusAnalyticsEventPropertySpotName = 84,
+/// プッシュ通知のタイプ
+  NautilusAnalyticsEventPropertyPushType = 85,
 };
 
 

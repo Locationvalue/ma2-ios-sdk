@@ -455,7 +455,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)getStampRallyCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 /// スタンプラリーに設定されている景品の交換を行う
 /// <code>Objective-C</code>から呼び出す場合は, こちらのメソッドを利用してください
-/// \param stampCard スタンプラリー情報
+/// \param stampRally スタンプラリー情報
 ///
 /// \param prizes 景品交換を行うためのリクエストの情報
 ///
@@ -1114,7 +1114,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)getStampRallyCountWithCheckDateTime:(NSDate * _Nullable)checkDateTime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 /// スタンプラリーに設定されている景品の交換を行う
 /// <code>Objective-C</code>から呼び出す場合は, こちらのメソッドを利用してください
-/// \param stampCard スタンプラリー情報
+/// \param stampRally スタンプラリー情報
 ///
 /// \param prizes 景品交換を行うためのリクエストの情報
 ///
