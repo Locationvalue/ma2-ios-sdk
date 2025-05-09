@@ -1,6 +1,6 @@
 {
     "schema_version": 1,
-    "config_version": 2,
+    "config_version": 1,
     "app_name": "moduleapps-lottery-ui",
     "shop_account_app_id": 0,
     "config_values": [
@@ -101,48 +101,40 @@
             "string_value": "閉じる"
         },
         {
-            "config_value_name": "ma_lottery_detail_load_error_text",
-            "string_value": "読み込み中にエラーが発生しました"
+            "config_value_name": "ma_lottery_detail_screen_background_color",
+            "string_value": "#57B3E6"
         },
         {
-            "config_value_name": "ma_lottery_detail_reload_button_text",
-            "string_value": "再読み込み"
+            "config_value_name": "ma_lottery_detail_lottery_title_text_color",
+            "string_value": "#FFFFFF"
+        },
+        {
+            "config_value_name": "ma_lottery_detail_available_period_text_color",
+            "string_value": "#FFFFFF"
+        },
+        {
+            "config_value_name": "ma_lottery_winning_result_text_color",
+            "string_value": "#FFFFFF"
+        },
+        {
+            "config_value_name": "ma_lottery_winning_result_button_color",
+            "string_value": "#FF4C5C"
+        },
+        {
+            "config_value_name": "ma_lottery_winning_result_button_text_color",
+            "string_value": "#FFFFFF"
+        },
+        {
+            "config_value_name": "ma_lottery_losing_result_text_color",
+            "string_value": "#FFFFFF"
+        },
+        {
+            "config_value_name": "ma_lottery_losing_result_button_text_color",
+            "string_value": "#FFFFFF"
         },
         {
             "config_value_name": "ma_lottery_detail_delete_notification_history_confirm_text",
             "string_value": "掲載期間が過ぎました。\n削除してもよろしいですか?"
-        },
-        {
-            "config_value_name": "ma_lottery_detail_screen_background_color",
-            "string_value": "#FF57B3E6"
-        },
-        {
-            "config_value_name": "ma_lottery_detail_lottery_title_text_color",
-            "string_value": "#FFFFFFFF"
-        },
-        {
-            "config_value_name": "ma_lottery_detail_available_period_text_color",
-            "string_value": "#FFFFFFFF"
-        },
-        {
-          "config_value_name": "ma_lottery_winning_result_text_color",
-          "string_value": "#FFFFFF"
-        },
-        {
-          "config_value_name": "ma_lottery_winning_result_button_color",
-          "string_value": "#FF4C5C"
-        },
-        {
-          "config_value_name": "ma_lottery_winning_result_button_text_color",
-          "string_value": "#FFFFFF"
-        },
-        {
-          "config_value_name": "ma_lottery_losing_result_text_color",
-          "string_value": "#FFFFFF"
-        },
-        {
-          "config_value_name": "ma_lottery_losing_result_button_text_color",
-          "string_value": "#FFFFFF"
         }
     ]
 }

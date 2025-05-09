@@ -1,7 +1,7 @@
 {
     "schema_version": 1,
     "config_version": 1,
-    "app_name": "moduleapps-stamp",
+    "app_name": "moduleapps-stampcard-ui",
     "shop_account_app_id": 0,
     "config_values": [
         {
@@ -106,7 +106,11 @@
         },
         {
             "config_value_name": "ma_stampcard_detail_prize_remaining_count_format",
-            "string_value": "あと%d枚で交換"
+            "string_value": "あと%d個で交換"
+        },
+        {
+            "config_value_name": "ma_stampcard_detail_exchange_limit_text",
+            "string_value": "交換済"
         },
         {
             "config_value_name": "ma_stampcard_detail_prize_exchangeable_count_format",
@@ -151,10 +155,6 @@
         {
             "config_value_name": "ma_stampcard_detail_qr_code_reader_description",
             "string_value": "QRコードを読み取ってください"
-        },
-        {
-            "config_value_name": "ma_stampcard_detail_delete_notification_history_confirm_text",
-            "string_value": "掲載期間が過ぎました。\n削除してもよろしいですか?"
         },
         {
             "config_value_name": "ma_stampcard_qr_code_reader_read_error_dialog_title",
@@ -249,8 +249,8 @@
             "string_value": "閉じる"
         },
         {
-            "config_value_name": "ma_stampcard_detail_exchange_limit_text",
-            "string_value": "交換済"
+            "config_value_name": "ma_stampcard_detail_delete_notification_history_confirm_text",
+            "string_value": "掲載期間が過ぎました。\n削除してもよろしいですか?"
         },
         {
             "config_value_name": "ma_stampcard_detail_checkin_button_text",
