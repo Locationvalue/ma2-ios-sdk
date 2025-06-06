@@ -1215,6 +1215,13 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -2643,6 +2650,7 @@
         "mangledName": "$s22NautilusMaintenanceSDK0aB4DataC",
         "moduleName": "NautilusMaintenanceSDK",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjC",
           "RawDocComment"
@@ -2654,6 +2662,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -3264,6 +3279,7 @@
         "mangledName": "$s22NautilusMaintenanceSDK0ab5CheckB6ResultC",
         "moduleName": "NautilusMaintenanceSDK",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjC",
           "RawDocComment"
@@ -3399,7 +3415,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Maintenance\/Sources\/Base\/NautilusMaintenanceStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 388,
+      "offset": 398,
       "length": 21,
       "value": "1"
     },
