@@ -64,6 +64,13 @@
       },
       {
         "kind": "Import",
+        "name": "NautilusConfigSDK",
+        "printedName": "NautilusConfigSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusMaintenanceSDK"
+      },
+      {
+        "kind": "Import",
         "name": "NautilusLoggingSDK",
         "printedName": "NautilusLoggingSDK",
         "declKind": "Import",
@@ -3164,20 +3171,27 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "NautilusMaintenanceStatus",
-                "printedName": "NautilusMaintenanceSDK.NautilusMaintenanceStatus",
-                "usr": "c:@M@NautilusMaintenanceSDK@E@NautilusMaintenanceStatus"
+                "name": "Optional",
+                "printedName": "NautilusMaintenanceSDK.NautilusMaintenanceStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusMaintenanceStatus",
+                    "printedName": "NautilusMaintenanceSDK.NautilusMaintenanceStatus",
+                    "usr": "c:@M@NautilusMaintenanceSDK@E@NautilusMaintenanceStatus"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@NautilusMaintenanceSDK@objc(cs)NautilusMaintenanceCheckMaintenanceResult(py)status",
-            "mangledName": "$s22NautilusMaintenanceSDK0ab5CheckB6ResultC6statusAA0aB6StatusOvp",
+            "usr": "s:22NautilusMaintenanceSDK0ab5CheckB6ResultC6statusAA0aB6StatusOSgvp",
+            "mangledName": "$s22NautilusMaintenanceSDK0ab5CheckB6ResultC6statusAA0aB6StatusOSgvp",
             "moduleName": "NautilusMaintenanceSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -3190,19 +3204,26 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NautilusMaintenanceStatus",
-                    "printedName": "NautilusMaintenanceSDK.NautilusMaintenanceStatus",
-                    "usr": "c:@M@NautilusMaintenanceSDK@E@NautilusMaintenanceStatus"
+                    "name": "Optional",
+                    "printedName": "NautilusMaintenanceSDK.NautilusMaintenanceStatus?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusMaintenanceStatus",
+                        "printedName": "NautilusMaintenanceSDK.NautilusMaintenanceStatus",
+                        "usr": "c:@M@NautilusMaintenanceSDK@E@NautilusMaintenanceStatus"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NautilusMaintenanceSDK@objc(cs)NautilusMaintenanceCheckMaintenanceResult(im)status",
-                "mangledName": "$s22NautilusMaintenanceSDK0ab5CheckB6ResultC6statusAA0aB6StatusOvg",
+                "usr": "s:22NautilusMaintenanceSDK0ab5CheckB6ResultC6statusAA0aB6StatusOSgvg",
+                "mangledName": "$s22NautilusMaintenanceSDK0ab5CheckB6ResultC6statusAA0aB6StatusOSgvg",
                 "moduleName": "NautilusMaintenanceSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -3386,6 +3407,23 @@
         "printedName": "NautilusCoreSDK",
         "declKind": "Import",
         "moduleName": "NautilusMaintenanceSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusMaintenanceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusConfigSDK",
+        "printedName": "NautilusConfigSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusMaintenanceSDK"
       }
     ],
     "json_format_version": 8
@@ -3393,22 +3431,22 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Maintenance\/Sources\/Base\/NautilusMaintenance.swift",
-      "kind": "Array",
-      "offset": 667,
-      "length": 2,
-      "value": "[]"
+      "kind": "StringLiteral",
+      "offset": 422,
+      "length": 29,
+      "value": "\"moduleapps-maintenance.json\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Maintenance\/Sources\/Base\/NautilusMaintenance.swift",
       "kind": "BooleanLiteral",
-      "offset": 936,
-      "length": 5,
-      "value": "false"
+      "offset": 804,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Maintenance\/Sources\/Base\/NautilusMaintenance.swift",
       "kind": "BooleanLiteral",
-      "offset": 1165,
+      "offset": 1087,
       "length": 5,
       "value": "false"
     },
@@ -3555,21 +3593,21 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Maintenance\/Sources\/API\/NautilusMaintenanceEndpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 2633,
+      "offset": 3185,
       "length": 17,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Maintenance\/Sources\/API\/NautilusMaintenanceEndpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 2710,
+      "offset": 3262,
       "length": 12,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Maintenance\/Sources\/API\/NautilusMaintenanceEndpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 2788,
+      "offset": 3340,
       "length": 16,
       "value": "3"
     },
@@ -3607,6 +3645,13 @@
       "offset": 649,
       "length": 10,
       "value": "\"ext_data\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Maintenance\/Sources\/Config\/NautilusMaintenanceConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 324,
+      "length": 37,
+      "value": "\"ma_maintenance_network_timeout_time\""
     }
   ]
 }

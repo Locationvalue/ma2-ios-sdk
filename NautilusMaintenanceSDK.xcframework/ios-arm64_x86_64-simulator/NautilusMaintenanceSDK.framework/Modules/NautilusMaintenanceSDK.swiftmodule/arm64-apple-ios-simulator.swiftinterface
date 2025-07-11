@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-bare-slash-regex -module-name NautilusMaintenanceSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
+import NautilusConfigSDK
 import NautilusContainerSDK
 import NautilusCoreSDK
 import NautilusLoggingSDK
@@ -100,7 +101,7 @@ public let NautilusMaintenanceErrorDomain: Swift.String
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusMaintenanceCheckMaintenanceResult : ObjectiveC.NSObject, Swift.Error {
   final public let checkResult: Swift.Bool
-  @objc final public let status: NautilusMaintenanceSDK.NautilusMaintenanceStatus
+  final public let status: NautilusMaintenanceSDK.NautilusMaintenanceStatus?
   final public let maintenanceData: NautilusMaintenanceSDK.NautilusMaintenanceData?
   @objc deinit
 }

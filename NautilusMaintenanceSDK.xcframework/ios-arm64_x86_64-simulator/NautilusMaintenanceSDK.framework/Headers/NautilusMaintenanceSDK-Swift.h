@@ -348,6 +348,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///   <li>
 ///     全体チェックをしてメンテナンス中でなければ、個別チェックを行う
 ///   </li>
+///   <li>
+///     個別チェックでメンテナンス中でなければ、メンテナンス中ではないと判断する
+///   </li>
+///   <li>
+///     メンテナンス中ではない場合、checkResult の status は nil となる
+///   </li>
 /// </ul>
 - (void)checkMaintenance;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -355,13 +361,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @end
 
 
-enum NautilusMaintenanceStatus : NSInteger;
 
 /// メンテナンスファイルの取得結果
 SWIFT_CLASS("_TtC22NautilusMaintenanceSDK41NautilusMaintenanceCheckMaintenanceResult")
 @interface NautilusMaintenanceCheckMaintenanceResult : NSObject
-/// メンテナンス状況
-@property (nonatomic, readonly) enum NautilusMaintenanceStatus status;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -793,6 +796,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///   <li>
 ///     全体チェックをしてメンテナンス中でなければ、個別チェックを行う
 ///   </li>
+///   <li>
+///     個別チェックでメンテナンス中でなければ、メンテナンス中ではないと判断する
+///   </li>
+///   <li>
+///     メンテナンス中ではない場合、checkResult の status は nil となる
+///   </li>
 /// </ul>
 - (void)checkMaintenance;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -800,13 +809,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @end
 
 
-enum NautilusMaintenanceStatus : NSInteger;
 
 /// メンテナンスファイルの取得結果
 SWIFT_CLASS("_TtC22NautilusMaintenanceSDK41NautilusMaintenanceCheckMaintenanceResult")
 @interface NautilusMaintenanceCheckMaintenanceResult : NSObject
-/// メンテナンス状況
-@property (nonatomic, readonly) enum NautilusMaintenanceStatus status;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
