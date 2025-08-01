@@ -159,7 +159,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:apiKey:)",
+            "printedName": "init(name:apiKey:enableSessionReplay:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -178,11 +178,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:35NautilusAnalyticsAmplitudePluginSDK0abcD0C4name6apiKeyACSS_SStcfc",
-            "mangledName": "$s35NautilusAnalyticsAmplitudePluginSDK0abcD0C4name6apiKeyACSS_SStcfc",
+            "usr": "s:35NautilusAnalyticsAmplitudePluginSDK0abcD0C4name6apiKey19enableSessionReplayACSS_SSSbtcfc",
+            "mangledName": "$s35NautilusAnalyticsAmplitudePluginSDK0abcD0C4name6apiKey19enableSessionReplayACSS_SSSbtcfc",
             "moduleName": "NautilusAnalyticsAmplitudePluginSDK",
             "declAttributes": [
               "AccessControl"
@@ -439,8 +445,15 @@
       },
       {
         "kind": "Import",
-        "name": "Amplitude",
-        "printedName": "Amplitude",
+        "name": "AmplitudeSwift",
+        "printedName": "AmplitudeSwift",
+        "declKind": "Import",
+        "moduleName": "NautilusAnalyticsAmplitudePluginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AmplitudeSwiftSessionReplayPlugin",
+        "printedName": "AmplitudeSwiftSessionReplayPlugin",
         "declKind": "Import",
         "moduleName": "NautilusAnalyticsAmplitudePluginSDK"
       },
@@ -997,6 +1010,35 @@
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
             "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           },
           {
             "kind": "Conformance",
@@ -1675,6 +1717,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "BNNSScalar",
+            "printedName": "BNNSScalar",
+            "usr": "s:10Accelerate10BNNSScalarP",
+            "mangledName": "$s10Accelerate10BNNSScalarP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UserDefaultConvertible",
             "printedName": "UserDefaultConvertible",
             "usr": "s:15NautilusCoreSDK22UserDefaultConvertibleP",
@@ -2083,6 +2132,28 @@
           },
           {
             "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UserDefaultConvertible",
             "printedName": "UserDefaultConvertible",
             "usr": "s:15NautilusCoreSDK22UserDefaultConvertibleP",
@@ -2467,6 +2538,28 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           }
         ]
       },
@@ -2932,6 +3025,122 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VectorArithmetic",
+            "printedName": "VectorArithmetic",
+            "usr": "s:7SwiftUI16VectorArithmeticP",
+            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "vDSP_FloatingPointConvertable",
+            "printedName": "vDSP_FloatingPointConvertable",
+            "usr": "s:10Accelerate29vDSP_FloatingPointConvertableP",
+            "mangledName": "$s10Accelerate29vDSP_FloatingPointConvertableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "vDSP_DiscreteFourierTransformable",
+            "printedName": "vDSP_DiscreteFourierTransformable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "DiscreteFourierTransformFunctions",
+                "printedName": "DiscreteFourierTransformFunctions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DFTSinglePrecisionSplitComplexFunctions",
+                    "printedName": "Accelerate.vDSP.DFTSinglePrecisionSplitComplexFunctions",
+                    "usr": "s:10Accelerate4vDSPO39DFTSinglePrecisionSplitComplexFunctionsV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Accelerate33vDSP_DiscreteFourierTransformableP",
+            "mangledName": "$s10Accelerate33vDSP_DiscreteFourierTransformableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "vDSP_FloatingPointDiscreteFourierTransformable",
+            "printedName": "vDSP_FloatingPointDiscreteFourierTransformable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "DFTFunctions",
+                "printedName": "DFTFunctions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VectorizableFloat",
+                    "printedName": "Accelerate.vDSP.VectorizableFloat",
+                    "usr": "s:10Accelerate4vDSPO17VectorizableFloatV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Accelerate46vDSP_FloatingPointDiscreteFourierTransformableP",
+            "mangledName": "$s10Accelerate46vDSP_FloatingPointDiscreteFourierTransformableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "vDSP_FloatingPointBiquadFilterable",
+            "printedName": "vDSP_FloatingPointBiquadFilterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "BiquadFunctions",
+                "printedName": "BiquadFunctions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VectorizableFloat",
+                    "printedName": "Accelerate.vDSP.VectorizableFloat",
+                    "usr": "s:10Accelerate4vDSPO17VectorizableFloatV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Accelerate34vDSP_FloatingPointBiquadFilterableP",
+            "mangledName": "$s10Accelerate34vDSP_FloatingPointBiquadFilterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BNNSScalar",
+            "printedName": "BNNSScalar",
+            "usr": "s:10Accelerate10BNNSScalarP",
+            "mangledName": "$s10Accelerate10BNNSScalarP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "vDSP_FloatingPointGeneratable",
+            "printedName": "vDSP_FloatingPointGeneratable",
+            "usr": "s:10Accelerate29vDSP_FloatingPointGeneratableP",
+            "mangledName": "$s10Accelerate29vDSP_FloatingPointGeneratableP"
           }
         ]
       },
@@ -3397,6 +3606,137 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VectorArithmetic",
+            "printedName": "VectorArithmetic",
+            "usr": "s:7SwiftUI16VectorArithmeticP",
+            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Animatable",
+            "printedName": "Animatable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AnimatableData",
+                "printedName": "AnimatableData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10AnimatableP",
+            "mangledName": "$s7SwiftUI10AnimatableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "vDSP_FloatingPointConvertable",
+            "printedName": "vDSP_FloatingPointConvertable",
+            "usr": "s:10Accelerate29vDSP_FloatingPointConvertableP",
+            "mangledName": "$s10Accelerate29vDSP_FloatingPointConvertableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "vDSP_DiscreteFourierTransformable",
+            "printedName": "vDSP_DiscreteFourierTransformable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "DiscreteFourierTransformFunctions",
+                "printedName": "DiscreteFourierTransformFunctions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DFTDoublePrecisionSplitComplexFunctions",
+                    "printedName": "Accelerate.vDSP.DFTDoublePrecisionSplitComplexFunctions",
+                    "usr": "s:10Accelerate4vDSPO39DFTDoublePrecisionSplitComplexFunctionsV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Accelerate33vDSP_DiscreteFourierTransformableP",
+            "mangledName": "$s10Accelerate33vDSP_DiscreteFourierTransformableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "vDSP_FloatingPointDiscreteFourierTransformable",
+            "printedName": "vDSP_FloatingPointDiscreteFourierTransformable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "DFTFunctions",
+                "printedName": "DFTFunctions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VectorizableDouble",
+                    "printedName": "Accelerate.vDSP.VectorizableDouble",
+                    "usr": "s:10Accelerate4vDSPO18VectorizableDoubleV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Accelerate46vDSP_FloatingPointDiscreteFourierTransformableP",
+            "mangledName": "$s10Accelerate46vDSP_FloatingPointDiscreteFourierTransformableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "vDSP_FloatingPointBiquadFilterable",
+            "printedName": "vDSP_FloatingPointBiquadFilterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "BiquadFunctions",
+                "printedName": "BiquadFunctions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VectorizableDouble",
+                    "printedName": "Accelerate.vDSP.VectorizableDouble",
+                    "usr": "s:10Accelerate4vDSPO18VectorizableDoubleV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Accelerate34vDSP_FloatingPointBiquadFilterableP",
+            "mangledName": "$s10Accelerate34vDSP_FloatingPointBiquadFilterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "vDSP_FloatingPointGeneratable",
+            "printedName": "vDSP_FloatingPointGeneratable",
+            "usr": "s:10Accelerate29vDSP_FloatingPointGeneratableP",
+            "mangledName": "$s10Accelerate29vDSP_FloatingPointGeneratableP"
           }
         ]
       },
@@ -4067,6 +4407,34 @@
           },
           {
             "kind": "Conformance",
+            "name": "AccelerateMutableBuffer",
+            "printedName": "AccelerateMutableBuffer",
+            "usr": "s:10Accelerate0A13MutableBufferP",
+            "mangledName": "$s10Accelerate0A13MutableBufferP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AccelerateBuffer",
+            "printedName": "AccelerateBuffer",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Accelerate0A6BufferP",
+            "mangledName": "$s10Accelerate0A6BufferP"
+          },
+          {
+            "kind": "Conformance",
             "name": "KeyChainConvertible",
             "printedName": "KeyChainConvertible",
             "usr": "s:15NautilusCoreSDK19KeyChainConvertibleP",
@@ -4416,14 +4784,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 396,
+      "offset": 443,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/AnalyticsAmplitudePlugin\/Sources\/Base\/AmplitudeManager.swift",
       "kind": "Array",
-      "offset": 466,
+      "offset": 513,
       "length": 2,
       "value": "[]"
     }
