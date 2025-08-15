@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-bare-slash-regex -module-name NautilusNotificationServiceSDK
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-bare-slash-regex -module-name NautilusNotificationServiceSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 import Swift
@@ -25,7 +25,7 @@ public typealias NautilusNotificationHandlerAction = (NautilusNotificationServic
   @objc final public func handleRemoteNotification(userInfo: [Swift.AnyHashable : Any], action: NautilusNotificationServiceSDK.NautilusNotificationHandlerAction?) -> Swift.Bool
   @objc final public func canHandleRemoteNotification(request: UserNotifications.UNNotificationRequest) -> Swift.Bool
   @objc final public func canHandleRemoteNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
-  @objc final public func didReceive(request: UserNotifications.UNNotificationRequest, bestAttemptContent: UserNotifications.UNMutableNotificationContent, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc final public func didReceive(request: UserNotifications.UNNotificationRequest, bestAttemptContent: UserNotifications.UNMutableNotificationContent, completion: @escaping @Sendable (Swift.Bool) -> Swift.Void)
   @objc final public func serviceExtensionTimeWillExpire(request: UserNotifications.UNNotificationRequest, bestAttemptContent: UserNotifications.UNMutableNotificationContent, contentHandler: (UserNotifications.UNNotificationContent) -> Swift.Void)
   @objc deinit
 }

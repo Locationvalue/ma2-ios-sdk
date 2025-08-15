@@ -323,6 +323,14 @@ SWIFT_CLASS("_TtC29NautilusCodeImageProvidersSDK36NautilusUserInfoNW7CodeImagePr
 
 SWIFT_CLASS("_TtC29NautilusCodeImageProvidersSDK35NautilusUserInfoQRCodeImageProvider")
 @interface NautilusUserInfoQRCodeImageProvider : NSObject <NautilusUserInfoCodeImageProvider>
+/// QRコード画像を生成する
+/// \param codeString QRコード化する文字列
+///
+/// \param size サイズ
+///
+///
+/// returns:
+/// QRコード画像
 - (UIImage * _Nullable)provideCodeImageFor:(NSString * _Nonnull)codeString size:(CGSize)size SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -660,6 +668,14 @@ SWIFT_CLASS("_TtC29NautilusCodeImageProvidersSDK36NautilusUserInfoNW7CodeImagePr
 
 SWIFT_CLASS("_TtC29NautilusCodeImageProvidersSDK35NautilusUserInfoQRCodeImageProvider")
 @interface NautilusUserInfoQRCodeImageProvider : NSObject <NautilusUserInfoCodeImageProvider>
+/// QRコード画像を生成する
+/// \param codeString QRコード化する文字列
+///
+/// \param size サイズ
+///
+///
+/// returns:
+/// QRコード画像
 - (UIImage * _Nullable)provideCodeImageFor:(NSString * _Nonnull)codeString size:(CGSize)size SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

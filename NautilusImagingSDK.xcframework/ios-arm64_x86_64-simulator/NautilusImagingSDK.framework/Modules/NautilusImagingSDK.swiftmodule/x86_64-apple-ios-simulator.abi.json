@@ -37,8 +37,8 @@
             "moduleName": "NautilusImagingSDK",
             "static": true,
             "declAttributes": [
-              "HasInitialValue",
               "Final",
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
@@ -191,8 +191,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18NautilusImagingSDK0A15ImageDownloaderC8download4from10completiony10Foundation3URLV_ySo7UIImageCSgctF",
-            "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC8download4from10completiony10Foundation3URLV_ySo7UIImageCSgctF",
+            "usr": "s:18NautilusImagingSDK0A15ImageDownloaderC8download4from10completiony10Foundation3URLV_ySo7UIImageCSgYbScMYcctF",
+            "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC8download4from10completiony10Foundation3URLV_ySo7UIImageCSgYbScMYcctF",
             "moduleName": "NautilusImagingSDK",
             "declAttributes": [
               "Final",
@@ -220,6 +220,61 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusImagingSDK0A15ImageDownloaderC15unownedExecutorScevp",
+            "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC15unownedExecutorScevp",
+            "moduleName": "NautilusImagingSDK",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusImagingSDK0A15ImageDownloaderC15unownedExecutorScevg",
+                "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC15unownedExecutorScevg",
+                "moduleName": "NautilusImagingSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -244,6 +299,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -297,8 +366,8 @@
             "moduleName": "NautilusImagingSDK",
             "static": true,
             "declAttributes": [
-              "HasInitialValue",
               "Final",
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
@@ -568,6 +637,61 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusImagingSDK0A10ImageCacheC15unownedExecutorScevp",
+            "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC15unownedExecutorScevp",
+            "moduleName": "NautilusImagingSDK",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusImagingSDK0A10ImageCacheC15unownedExecutorScevg",
+                "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC15unownedExecutorScevg",
+                "moduleName": "NautilusImagingSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -593,6 +717,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -625,6 +763,7 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -650,60 +789,6 @@
                 ],
                 "isFromExtension": true,
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URLSession",
-                    "printedName": "Foundation.URLSession",
-                    "usr": "c:objc(cs)NSURLSession"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:So12NSURLSessionC18NautilusImagingSDKE15imageDownloaderABvsZ",
-                "mangledName": "$sSo12NSURLSessionC18NautilusImagingSDKE15imageDownloaderABvsZ",
-                "moduleName": "NautilusImagingSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:So12NSURLSessionC18NautilusImagingSDKE15imageDownloaderABvMZ",
-                "mangledName": "$sSo12NSURLSessionC18NautilusImagingSDKE15imageDownloaderABvMZ",
-                "moduleName": "NautilusImagingSDK",
-                "static": true,
-                "implicit": true,
-                "intro_iOS": "7.0",
-                "declAttributes": [
-                  "Available",
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
               }
             ]
           }
@@ -806,7 +891,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Imaging\/Sources\/NautilusImageDownloader.swift",
+      "filePath": "\/Users\/masuno\/Documents\/ma2\/SDK2\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Imaging\/Sources\/NautilusImageDownloader.swift",
       "kind": "Array",
       "offset": 1044,
       "length": 2,
