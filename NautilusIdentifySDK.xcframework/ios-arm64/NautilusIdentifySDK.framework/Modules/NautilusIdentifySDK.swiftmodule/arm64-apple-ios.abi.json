@@ -32,6 +32,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusIdentifySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusIdentifySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "NautilusAppOptionalAttribute",
         "printedName": "NautilusAppOptionalAttribute",
@@ -741,6 +758,23 @@
             "accessorKind": "get"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusIdentifySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusIdentifySDK"
       },
       {
         "kind": "Import",
@@ -3292,6 +3326,109 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "checkPID",
+            "printedName": "checkPID(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), NautilusIdentifySDK.NautilusIdentifyError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), NautilusIdentifySDK.NautilusIdentifyError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusIdentifyError",
+                        "printedName": "NautilusIdentifySDK.NautilusIdentifyError",
+                        "usr": "c:@M@NautilusIdentifySDK@E@NautilusIdentifyError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19NautilusIdentifySDK0aB0C8checkPID10completionyys6ResultOyytAA0aB5ErrorOGc_tF",
+            "mangledName": "$s19NautilusIdentifySDK0aB0C8checkPID10completionyys6ResultOyytAA0aB5ErrorOGc_tF",
+            "moduleName": "NautilusIdentifySDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPID",
+            "printedName": "checkPID(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusIdentifySDK@objc(cs)NautilusIdentify(im)checkPIDWithCompletion:",
+            "mangledName": "$s19NautilusIdentifySDK0aB0C8checkPID10completionyySo7NSErrorCSgc_tF",
+            "moduleName": "NautilusIdentifySDK",
+            "objc_name": "checkPIDWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -3441,6 +3578,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusIdentifySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusIdentifySDK"
       },
       {
         "kind": "Import",
@@ -5579,6 +5733,20 @@
       "value": "\"external_id_type\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/CheckPIDEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 380,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/API\/CheckPIDEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 406,
+      "length": 5,
+      "value": "\"pid\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/View\/NautilusUserInfoView.swift",
       "kind": "StringLiteral",
       "offset": 1464,
@@ -5595,28 +5763,35 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/Config\/NautilusIdentifyConfig.swift",
       "kind": "StringLiteral",
-      "offset": 425,
+      "offset": 411,
+      "length": 36,
+      "value": "\"ma_identify_check_pid_timeout_time\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/Config\/NautilusIdentifyConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 497,
       "length": 53,
       "value": "\"ma_identify_user_info_view_current_time_date_format\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/Config\/NautilusIdentifyConfig.swift",
       "kind": "StringLiteral",
-      "offset": 529,
+      "offset": 601,
       "length": 53,
       "value": "\"ma_identify_user_info_view_enable_brightness_adjust\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/Config\/NautilusIdentifyConfig.swift",
       "kind": "StringLiteral",
-      "offset": 631,
+      "offset": 703,
       "length": 51,
       "value": "\"ma_identify_user_info_view_brightness_adjust_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/Config\/NautilusIdentifyConfig.swift",
       "kind": "StringLiteral",
-      "offset": 721,
+      "offset": 793,
       "length": 40,
       "value": "\"ma_identify_user_info_view_header_text\""
     },
