@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusImagingSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusImagingSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CommonCrypto
 import Foundation
 import Swift
@@ -15,7 +15,9 @@ extension Foundation.URLSession {
 final public actor NautilusImageDownloader {
   public static var shared: NautilusImagingSDK.NautilusImageDownloader
   public init(session: Foundation.URLSession = .shared)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func download(from url: Foundation.URL, completion: @escaping @_Concurrency.MainActor @Sendable (UIKit.UIImage?) -> Swift.Void)
+  #endif
   final public func cancel()
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -28,7 +30,9 @@ final public actor NautilusImageCache {
   public init(memoryCapactiy: Swift.Int, diskCapacity: Swift.Int, diskPath: Swift.String)
   final public func contain(url: Foundation.URL) -> Swift.Bool
   final public func store(data: Foundation.Data, url: Foundation.URL)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func load(url: Foundation.URL) -> UIKit.UIImage?
+  #endif
   final public func remove(url: Foundation.URL)
   final public func removeAll()
   @objc deinit

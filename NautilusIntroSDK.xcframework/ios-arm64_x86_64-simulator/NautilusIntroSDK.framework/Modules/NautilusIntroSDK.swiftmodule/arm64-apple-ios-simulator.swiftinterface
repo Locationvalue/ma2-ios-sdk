@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusIntroSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusIntroSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import NautilusAnalyticsSDK
 import NautilusConfigSDK
@@ -20,9 +20,11 @@ import _SwiftConcurrencyShims
   @objc func introductionDidSkip(_ introduction: NautilusIntroSDK.NautilusIntroduction)
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusIntroduction : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -37,8 +39,12 @@ import _SwiftConcurrencyShims
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func introduction() -> NautilusIntroSDK.NautilusIntroduction
   @objc(introductionAppNamed:) public static func introduction(appName: Swift.String) -> NautilusIntroSDK.NautilusIntroduction
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func presentIntroduction(in viewController: UIKit.UIViewController, introList: NautilusIntroSDK.NautilusIntroductionList, animated: Swift.Bool, delegate: (any NautilusIntroSDK.NautilusIntroductionDelegate)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func instantiateIntroductionViewController(introList: NautilusIntroSDK.NautilusIntroductionList, delegate: (any NautilusIntroSDK.NautilusIntroductionDelegate)?) -> UIKit.UIViewController
+  #endif
   @objc deinit
 }
 @objc final public class NautilusIntroductionListItem : ObjectiveC.NSObject {
@@ -63,9 +69,17 @@ import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class NautilusIntroductionViewController : UIKit.UIViewController, UIKit.UIPageViewControllerDelegate, UIKit.UIPageViewControllerDataSource {
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, didFinishAnimating finished: Swift.Bool, previousViewControllers: [UIKit.UIViewController], transitionCompleted completed: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerBefore viewController: UIKit.UIViewController) -> UIKit.UIViewController?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerAfter viewController: UIKit.UIViewController) -> UIKit.UIViewController?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }

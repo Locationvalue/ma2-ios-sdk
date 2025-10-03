@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusConfigSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusConfigSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CoreData
 import Foundation
 import NautilusContainerSDK
@@ -69,9 +69,11 @@ final public class _NautilusConfigValue : NautilusConfigSDK.NautilusConfigValue 
   @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
   @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
@@ -87,7 +89,9 @@ final public class _NautilusConfigValue : NautilusConfigSDK.NautilusConfigValue 
   @objc final public func reset()
   @discardableResult
   @objc final public func reload() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(configValueForKey:) final public func configValue(for key: Swift.String) -> (any NautilusConfigSDK.NautilusConfigValue)?
+  #endif
   @objc(configValueForKey:defaultBoolValue:) final public func configValue(for key: Swift.String, default: Swift.Bool) -> any NautilusConfigSDK.NautilusConfigValue
   @objc(configValueForKey:defaultIntegerValue:) final public func configValue(for key: Swift.String, default: Swift.Int) -> any NautilusConfigSDK.NautilusConfigValue
   @objc(configValueForKey:defaultDoubleValue:) final public func configValue(for key: Swift.String, default: Swift.Double) -> any NautilusConfigSDK.NautilusConfigValue

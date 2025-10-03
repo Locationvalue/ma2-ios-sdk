@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusIdentifySDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusIdentifySDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -13,18 +13,26 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc final public class NautilusAppOptionalAttribute : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func put(_ key: NautilusIdentifySDK.NautilusAppOptionalAttributeKey, value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public subscript(key: NautilusIdentifySDK.NautilusAppOptionalAttributeKey) -> Swift.String? {
     get
   }
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol NautilusUser {
   @objc var userID: Swift.String { get }
   @objc var pid: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var manageCode: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var externalID: Swift.String? { get }
+  #endif
   @objc var externalIDType: Swift.Int { get }
   @objc var isAnonymous: Swift.Bool { get }
 }
@@ -35,13 +43,21 @@ public let NautilusUserExternalIDTypeNone: Swift.Int
   }
   @_Concurrency.MainActor @preconcurrency open class func instantiate() -> NautilusIdentifySDK.NautilusUserInfoView
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func setCodeImage(_ codeImage: UIKit.UIImage?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func setCodeString(_ codeString: Swift.String?)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusUserInfoViewProvider : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setCodeImageProvider(_ codeImageProvider: (any NautilusIdentifySDK.NautilusUserInfoCodeImageProvider)?)
+  #endif
   @objc final public func setCodeImageSize(_ codeImageSize: CoreFoundation.CGSize)
   @objc final public func provideUserInfoView() -> UIKit.UIView
   @objc final public func provideUserInfoView(user: any NautilusIdentifySDK.NautilusUser) -> UIKit.UIView
@@ -57,9 +73,11 @@ public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIde
   @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
   final public var cid: Swift.String {
@@ -71,29 +89,59 @@ public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIde
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func identify() -> NautilusIdentifySDK.NautilusIdentify
   @objc(identifyAppNamed:) public static func identify(appName: Swift.String) -> NautilusIdentifySDK.NautilusIdentify
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func changeUser(userID: Swift.String?)
+  #endif
   @objc final public func getCurrentUser() -> any NautilusIdentifySDK.NautilusUser
   final public func setManageCode(userID: Swift.String, manageCode: Swift.String, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
   final public func setExternalID(userID: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setManageCode(userID: Swift.String, manageCode: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setExternalID(userID: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func setServerStatusToLogin(manageCode: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setServerStatusToLogin(manageCode: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func setServerStatusToLogout(completion: @escaping (Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setServerStatusToLogout(completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func setAppAttributeOpt(opt: NautilusIdentifySDK.NautilusAppOptionalAttribute, completion: @escaping (Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setAppAttributeOpt(opt: NautilusIdentifySDK.NautilusAppOptionalAttribute, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
   @objc final public func getUserInfoView() -> UIKit.UIView
   @objc final public func getUserInfoView(viewType: NautilusIdentifySDK.NautilusUserInfoView.Type) -> UIKit.UIView
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setCodeImageProvider(_ codeImageProvider: (any NautilusIdentifySDK.NautilusUserInfoCodeImageProvider)?)
+  #endif
   @objc final public func setCodeImageSize(_ codeImageSize: CoreFoundation.CGSize)
   @objc final public func removeCID()
   @objc final public func removeReferenceNumber()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getReferenceNumber(completion: @escaping (Swift.Result<Swift.String, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func checkPID(completion: @escaping (Swift.Result<Swift.Void, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func checkPID(completion: @escaping (Foundation.NSError?) -> Swift.Void)
+  #endif
   @objc deinit
 }
 @objc public enum NautilusAppOptionalAttributeKey : Swift.Int {
@@ -107,7 +155,9 @@ public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIde
   case option8
   case option9
   case option10
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -136,7 +186,9 @@ public let NautilusIdentifyErrorDomain: Swift.String
   public var nautilusIdentifyErrorCode: Swift.Int {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -146,7 +198,9 @@ public let NautilusIdentifyErrorDomain: Swift.String
   }
 }
 @objc public protocol NautilusUserInfoCodeImageProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func provideCodeImage(for codeString: Swift.String, size: CoreFoundation.CGSize) -> UIKit.UIImage?
+  #endif
 }
 extension Foundation.Notification.NautilusApp {
   public static let identifyUpdateCID: Foundation.Notification.Name

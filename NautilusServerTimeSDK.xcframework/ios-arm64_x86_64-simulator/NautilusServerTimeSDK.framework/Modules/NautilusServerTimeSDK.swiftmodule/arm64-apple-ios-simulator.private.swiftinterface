@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusServerTimeSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusServerTimeSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -34,9 +34,11 @@ extension Foundation.DateFormatter {
   }
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusServerTime : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -65,9 +67,15 @@ extension Foundation.DateFormatter {
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func serverTime() -> NautilusServerTimeSDK.NautilusServerTime
   @objc(serverTimeAppNamed:) public static func serverTime(appName: Swift.String) -> NautilusServerTimeSDK.NautilusServerTime
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func now() -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func updateServerTime(force: Swift.Bool = false, completion: @escaping (Swift.Result<Foundation.Date, NautilusServerTimeSDK.NautilusServerTimeError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func updateServerTime(completion: @escaping (Foundation.Date?, Foundation.NSError?) -> Swift.Void)
+  #endif
   @objc deinit
 }
 public let NautilusServerTimeErrorDomain: Swift.String
@@ -90,7 +98,9 @@ public let NautilusServerTimeErrorDomain: Swift.String
   case invalidUserPID = 905
   case developerError = 906
   case requiresLoginStatus = 907
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -103,7 +113,9 @@ public let NautilusServerTimeErrorDomain: Swift.String
   case invalid
   case needUpdate
   case valid
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get

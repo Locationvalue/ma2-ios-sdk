@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusLotterySDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusLotterySDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import NautilusAnalyticsSDK
 import NautilusConfigSDK
@@ -36,7 +36,9 @@ public let NautilusLotteryErrorDomain: Swift.String
   public var nautilusLotteryErrorCode: Swift.Int {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -46,9 +48,11 @@ public let NautilusLotteryErrorDomain: Swift.String
   }
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusLottery : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -63,14 +67,30 @@ public let NautilusLotteryErrorDomain: Swift.String
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func lottery() -> NautilusLotterySDK.NautilusLottery
   @objc(lotteryAppNamed:) public static func lottery(appName: Swift.String) -> NautilusLotterySDK.NautilusLottery
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getLotteryList(lotteryID: Swift.Int?, ignoreMissed: Swift.Bool?, completion: @escaping (Swift.Result<[NautilusLotterySDK.NautilusLotteryInfo], NautilusLotterySDK.NautilusLotteryError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func requestLotteryList(lotteryID: Swift.Int, ignoreMissed: Swift.Bool, completion: @escaping ([NautilusLotterySDK.NautilusLotteryInfo]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getLotteryCount(checkDateTime: Foundation.Date?, ignoreMissed: Swift.Bool?, completion: @escaping (Swift.Result<Swift.Int, NautilusLotterySDK.NautilusLotteryError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getLotteryCount(checkDateTime: Foundation.Date?, ignoreMissed: Swift.Bool, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func checkLotteryInterval(lotteryID: Swift.Int, completion: @escaping (Swift.Result<NautilusLotterySDK.NautilusLotteryIntervalCheckResult, NautilusLotterySDK.NautilusLotteryError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func checkLotteryInterval(lotteryID: Swift.Int, completion: @escaping (NautilusLotterySDK.NautilusLotteryIntervalCheckResult?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func applyLottery(lotteryID: Swift.Int, completion: @escaping (Swift.Result<NautilusLotterySDK.NautilusLotteryResult, NautilusLotterySDK.NautilusLotteryError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func applyLottery(lotteryID: Swift.Int, completion: @escaping (NautilusLotterySDK.NautilusLotteryResult?, Foundation.NSError?) -> Swift.Void)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusLotteryIntervalCheckResult : ObjectiveC.NSObject {
@@ -89,7 +109,9 @@ public let NautilusLotteryErrorDomain: Swift.String
 @objc public enum NautilusLotteryPrizeType : Swift.Int {
   case coupon = 1
   case point = 2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -124,7 +146,9 @@ public let NautilusLotteryErrorDomain: Swift.String
 @objc public enum NautilusLotteryType : Swift.Int {
   case scratch = 1
   case slot = 2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
