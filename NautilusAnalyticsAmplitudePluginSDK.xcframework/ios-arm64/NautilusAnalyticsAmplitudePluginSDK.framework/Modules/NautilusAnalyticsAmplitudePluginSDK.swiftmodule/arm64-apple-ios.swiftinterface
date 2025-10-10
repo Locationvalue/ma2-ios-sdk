@@ -11,10 +11,10 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-final public class NautilusAnalyticsAmplitudePlugin : NautilusAnalyticsSDK.NautilusAnalyticsPlugin {
+@objc final public class NautilusAnalyticsAmplitudePlugin : ObjectiveC.NSObject, NautilusAnalyticsSDK.NautilusAnalyticsPlugin {
   @objc final public var name: Swift.String
   @objc convenience public init(name: Swift.String)
-  public init(name: Swift.String, apiKey: Swift.String, enableSessionReplay: Swift.Bool)
+  @objc public init(name: Swift.String, apiKey: Swift.String, enableSessionReplay: Swift.Bool)
   @objc final public func setup(_ analytics: NautilusAnalyticsSDK.NautilusAnalytics)
   @objc final public func sendEvent(payload: NautilusAnalyticsSDK.NautilusAnalyticsEventPayload) -> NautilusAnalyticsSDK.NautilusAnalyticsEventPayload
   #if compiler(>=5.3) && $NonescapableTypes
