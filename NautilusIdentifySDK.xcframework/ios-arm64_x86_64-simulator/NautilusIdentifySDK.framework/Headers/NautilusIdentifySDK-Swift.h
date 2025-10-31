@@ -309,9 +309,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+enum NautilusAppOptionalAttributeKey : NSInteger;
+@class NSString;
 /// CIDに紐づくデータ オプション属性
 SWIFT_CLASS("_TtC19NautilusIdentifySDK28NautilusAppOptionalAttribute")
 @interface NautilusAppOptionalAttribute : NSObject
+/// アプリ属性拡張項目に追加
+/// \param key アプリ属性拡張項目のKey
+///
+/// \param value アプリ属性拡張項目のValue
+///
+- (void)put:(enum NautilusAppOptionalAttributeKey)key value:(NSString * _Nullable)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -330,7 +338,6 @@ typedef SWIFT_ENUM(NSInteger, NautilusAppOptionalAttributeKey, open) {
 };
 
 @class NautilusComponentDependency;
-@class NSString;
 @class NautilusApp;
 @class NSError;
 @protocol NautilusUser;
@@ -798,9 +805,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+enum NautilusAppOptionalAttributeKey : NSInteger;
+@class NSString;
 /// CIDに紐づくデータ オプション属性
 SWIFT_CLASS("_TtC19NautilusIdentifySDK28NautilusAppOptionalAttribute")
 @interface NautilusAppOptionalAttribute : NSObject
+/// アプリ属性拡張項目に追加
+/// \param key アプリ属性拡張項目のKey
+///
+/// \param value アプリ属性拡張項目のValue
+///
+- (void)put:(enum NautilusAppOptionalAttributeKey)key value:(NSString * _Nullable)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -819,7 +834,6 @@ typedef SWIFT_ENUM(NSInteger, NautilusAppOptionalAttributeKey, open) {
 };
 
 @class NautilusComponentDependency;
-@class NSString;
 @class NautilusApp;
 @class NSError;
 @protocol NautilusUser;

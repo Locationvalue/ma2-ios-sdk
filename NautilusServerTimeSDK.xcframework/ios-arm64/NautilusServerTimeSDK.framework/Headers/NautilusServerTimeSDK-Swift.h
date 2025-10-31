@@ -327,6 +327,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusServerTime * _Nonnull)serverTime SWIFT_WARN_UNUSED_RESULT;
 + (NautilusServerTime * _Nonnull)serverTimeAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
+/// サーバー時刻を基準にした現在日時を取得する
+/// 有効なサーバー時刻を保持していない場合は、<code>nil</code>を返す
+///
+/// returns:
+/// サーバー時刻を基準にした現在日時
+- (NSDate * _Nullable)now SWIFT_WARN_UNUSED_RESULT;
 /// サーバー時刻の更新を行う
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 - (void)updateServerTimeWithCompletion:(void (^ _Nonnull)(NSDate * _Nullable, NSError * _Nullable))completion;

@@ -14,7 +14,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc final public class NautilusAppOptionalAttribute : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func put(_ key: NautilusIdentifySDK.NautilusAppOptionalAttributeKey, value: Swift.String?)
+  @objc final public func put(_ key: NautilusIdentifySDK.NautilusAppOptionalAttributeKey, value: Swift.String?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   final public subscript(key: NautilusIdentifySDK.NautilusAppOptionalAttributeKey) -> Swift.String? {

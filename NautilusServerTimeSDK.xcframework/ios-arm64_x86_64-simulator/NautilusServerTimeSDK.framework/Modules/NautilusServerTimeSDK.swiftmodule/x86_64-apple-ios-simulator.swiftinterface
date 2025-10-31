@@ -68,7 +68,7 @@ extension Foundation.DateFormatter {
   @objc public static func serverTime() -> NautilusServerTimeSDK.NautilusServerTime
   @objc(serverTimeAppNamed:) public static func serverTime(appName: Swift.String) -> NautilusServerTimeSDK.NautilusServerTime
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func now() -> Foundation.Date?
+  @objc final public func now() -> Foundation.Date?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   final public func updateServerTime(force: Swift.Bool = false, completion: @escaping (Swift.Result<Foundation.Date, NautilusServerTimeSDK.NautilusServerTimeError>) -> Swift.Void)
