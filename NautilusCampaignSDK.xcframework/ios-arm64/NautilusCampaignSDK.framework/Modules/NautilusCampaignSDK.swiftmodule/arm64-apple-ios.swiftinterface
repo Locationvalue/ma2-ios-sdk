@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusCampaignSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusCampaignSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -37,9 +37,7 @@ public let NautilusCampaignErrorDomain: Swift.String
   public var nautilusCampaignErrorCode: Swift.Int {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -81,9 +79,7 @@ public let NautilusCampaignErrorDomain: Swift.String
   case common = 1
   case `private` = 2
   case favoriteShop = 3
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -101,9 +97,7 @@ public let NautilusCampaignErrorDomain: Swift.String
   case useStartDatetime
   case useEndDatetime
   case sortNumber
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -112,9 +106,7 @@ public let NautilusCampaignErrorDomain: Swift.String
 @objc public enum NautilusCampaignSortType : Swift.Int {
   case ascending
   case descending
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -132,17 +124,13 @@ public let NautilusCampaignErrorDomain: Swift.String
 @objc public class NautilusCampaignOptionalParam : ObjectiveC.NSObject {
   final public let optionKey: Swift.String?
   final public let optionValue: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(optionKey: Swift.String?, optionValue: Swift.String?)
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusCampaign : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
-  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -157,54 +145,22 @@ public let NautilusCampaignErrorDomain: Swift.String
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func campaign() -> NautilusCampaignSDK.NautilusCampaign
   @objc(campaignAppNamed:) public static func campaign(appName: Swift.String) -> NautilusCampaignSDK.NautilusCampaign
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCommonCampaignList(campaignIdList: [Swift.Int]?, lastCheckDatetime: Foundation.Date?, keyword: Swift.String?, categoryIdList: [Swift.Int]?, limit: Swift.Int?, offset: Swift.Int?, useCache: Swift.Bool?, sort: NautilusCampaignSDK.NautilusCampaignSort?, completion: @escaping (Swift.Result<[NautilusCampaignSDK.NautilusCampaignInfo], NautilusCampaignSDK.NautilusCampaignError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCommonCampaignList(campaignIdList: [Swift.Int]?, lastCheckDatetime: Foundation.Date?, keyword: Swift.String?, categoryIdList: [Swift.Int]?, limit: Swift.Int?, offset: Swift.Int?, useCache: Swift.Bool?, sort: NautilusCampaignSDK.NautilusCampaignSort?, completion: @escaping ([NautilusCampaignSDK.NautilusCampaignInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCommonCampaignCount(lastCheckDatetime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusCampaignSDK.NautilusCampaignError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCommonCampaignCount(lastCheckDatetime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getPrivateCampaignList(campaignIdList: [Swift.Int]?, lastCheckDatetime: Foundation.Date?, keyword: Swift.String?, categoryIdList: [Swift.Int]?, limit: Swift.Int?, offset: Swift.Int?, useCache: Swift.Bool?, sort: NautilusCampaignSDK.NautilusCampaignSort?, completion: @escaping (Swift.Result<[NautilusCampaignSDK.NautilusCampaignInfo], NautilusCampaignSDK.NautilusCampaignError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getPrivateCampaignList(campaignIdList: [Swift.Int]?, lastCheckDatetime: Foundation.Date?, keyword: Swift.String?, categoryIdList: [Swift.Int]?, limit: Swift.Int?, offset: Swift.Int?, useCache: Swift.Bool?, sort: NautilusCampaignSDK.NautilusCampaignSort?, completion: @escaping ([NautilusCampaignSDK.NautilusCampaignInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getPrivateCampaignCount(lastCheckDatetime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusCampaignSDK.NautilusCampaignError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getPrivateCampaignCount(lastCheckDatetime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getFavoriteShopCampaignList(campaignIdList: [Swift.Int]?, lastCheckDatetime: Foundation.Date?, keyword: Swift.String?, categoryIdList: [Swift.Int]?, limit: Swift.Int?, offset: Swift.Int?, useCache: Swift.Bool?, sort: NautilusCampaignSDK.NautilusCampaignSort?, completion: @escaping (Swift.Result<[NautilusCampaignSDK.NautilusCampaignInfo], NautilusCampaignSDK.NautilusCampaignError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getFavoriteShopCampaignList(campaignIdList: [Swift.Int]?, lastCheckDatetime: Foundation.Date?, keyword: Swift.String?, categoryIdList: [Swift.Int]?, limit: Swift.Int?, offset: Swift.Int?, useCache: Swift.Bool?, sort: NautilusCampaignSDK.NautilusCampaignSort?, completion: @escaping ([NautilusCampaignSDK.NautilusCampaignInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getFavoriteShopCampaignCount(lastCheckDatetime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusCampaignSDK.NautilusCampaignError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getFavoriteShopCampaignCount(lastCheckDatetime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func registerCampaign(campaignID: Swift.Int, optionalParamList: [NautilusCampaignSDK.NautilusCampaignOptionalParam]?, campaignType: NautilusCampaignSDK.NautilusCampaignType, completion: @escaping (Swift.Result<Swift.Void, NautilusCampaignSDK.NautilusCampaignError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func registerCampaign(campaignID: Swift.Int, optionalParamList: [NautilusCampaignSDK.NautilusCampaignOptionalParam]?, campaignType: NautilusCampaignSDK.NautilusCampaignType, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCampaignCategoryList(completion: @escaping (Swift.Result<[NautilusCampaignSDK.NautilusCampaignCategory], NautilusCampaignSDK.NautilusCampaignError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCampaignCategoryList(completion: @escaping ([NautilusCampaignSDK.NautilusCampaignCategory]?, Foundation.NSError?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 extension NautilusCampaignSDK.NautilusCampaignError : Swift.Equatable {}

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusBannerSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusBannerSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import DeveloperToolsSupport
 import Foundation
 import NautilusAnalyticsSDK
@@ -40,9 +40,7 @@ import _SwiftConcurrencyShims
 @objc public enum NautilusBannerLogType : Swift.Int, Swift.Codable {
   case show
   case tap
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -66,9 +64,7 @@ import _SwiftConcurrencyShims
   case function
   case `internal`
   case external
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -106,9 +102,7 @@ public let NautilusBannerErrorDomain: Swift.String
   public var nautilusBannerErrorCode: Swift.Int {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -128,11 +122,9 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusBanner : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
-  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -147,36 +139,16 @@ public let NautilusBannerErrorDomain: Swift.String
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func banner() -> NautilusBannerSDK.NautilusBanner
   @objc(bannerAppNamed:) public static func banner(appName: Swift.String) -> NautilusBannerSDK.NautilusBanner
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getBannerCategoryList(completion: @escaping (Swift.Result<[NautilusBannerSDK.NautilusBannerCategory], NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getBannerCategoryList(completion: @escaping ([NautilusBannerSDK.NautilusBannerCategory]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getBannerList(categoryID: Swift.Int?, completion: @escaping (Swift.Result<[NautilusBannerSDK.NautilusBannerInfo], NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getBannerList(categoryID: Swift.Int, completion: @escaping ([NautilusBannerSDK.NautilusBannerInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Result<Swift.Void, NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func sendBannerLog(bannerLogs: [NautilusBannerSDK.NautilusBannerLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func storeBannerActionLog(bannerLog: NautilusBannerSDK.NautilusBannerLog, completion: @escaping (Swift.Result<Swift.Void, NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func storeBannerActionLog(bannerLog: NautilusBannerSDK.NautilusBannerLog, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func flushBannerActionLog(completion: @escaping (Swift.Result<Swift.Void, NautilusBannerSDK.NautilusBannerError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func flushBannerActionLog(completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  #endif
   @objc final public func stopCarouselScroll(_ carouselViews: [NautilusBannerSDK.NautilusBannerCarouselView])
   @objc final public func resumeCarouselScroll(_ carouselViews: [NautilusBannerSDK.NautilusBannerCarouselView])
   @objc deinit

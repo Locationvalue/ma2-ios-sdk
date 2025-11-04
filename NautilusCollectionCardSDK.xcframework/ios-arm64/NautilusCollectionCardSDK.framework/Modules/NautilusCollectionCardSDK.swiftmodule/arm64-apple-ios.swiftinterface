@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusCollectionCardSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusCollectionCardSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -56,18 +56,14 @@ import _SwiftConcurrencyShims
   final public let lon: Swift.Double?
   final public let checkPointId: Swift.String?
   final public let checkinDeviceType: NautilusCollectionCardSDK.NautilusCollectionCardCheckinDeviceType?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(checkinTargetType: NautilusCollectionCardSDK.NautilusCollectionCardCheckinTargetType, lat: Swift.Double?, lon: Swift.Double?, checkPointId: Swift.String?, checkinDeviceType: NautilusCollectionCardSDK.NautilusCollectionCardCheckinDeviceType?)
-  #endif
   @objc deinit
 }
 @objc public enum NautilusCollectionCardCheckinTargetType : Swift.Int {
   case spot = 1
   case device = 2
   case place = 3
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -76,20 +72,16 @@ import _SwiftConcurrencyShims
 @objc public enum NautilusCollectionCardCheckinDeviceType : Swift.Int {
   case qrCode = 1
   case beacon = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusCollectionCard : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
-  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -104,30 +96,14 @@ import _SwiftConcurrencyShims
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func collectioncard() -> NautilusCollectionCardSDK.NautilusCollectionCard
   @objc(collectioncardAppNamed:) public static func collectioncard(appName: Swift.String) -> NautilusCollectionCardSDK.NautilusCollectionCard
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func publishCollectionCard(publishCollectionCardInfo: NautilusCollectionCardSDK.NautilusPublishCollectionCardInfo, completion: @escaping (Swift.Result<NautilusCollectionCardSDK.NautilusPublishedContents, NautilusCollectionCardSDK.NautilusCollectionCardError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func publishCollectionCard(publishCollectionCardInfo: NautilusCollectionCardSDK.NautilusPublishCollectionCardInfo, completion: @escaping (NautilusCollectionCardSDK.NautilusPublishedContents?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCollectionCardList(completion: @escaping (Swift.Result<(NautilusCollectionCardSDK.NautilusCollectionMeta, NautilusCollectionCardSDK.NautilusCollectionContents), NautilusCollectionCardSDK.NautilusCollectionCardError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getCollectionCardList(completion: @escaping (NautilusCollectionCardSDK.NautilusCollectionMeta?, NautilusCollectionCardSDK.NautilusCollectionContents?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func setMemberSettingCollectionCard(selectedImageID: Swift.Int?, completion: @escaping (Swift.Result<Swift.Void, NautilusCollectionCardSDK.NautilusCollectionCardError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setMemberSettingCollectionCard(selectedImageID: Foundation.NSNumber?, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getMemberSettingCollectionCard(completion: @escaping (Swift.Result<NautilusCollectionCardSDK.NautilusMemberSettingContents, NautilusCollectionCardSDK.NautilusCollectionCardError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getMemberSettingCollectionCard(completion: @escaping (NautilusCollectionCardSDK.NautilusMemberSettingContents?, Foundation.NSError?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusMemberSettingContents : ObjectiveC.NSObject {
@@ -166,9 +142,7 @@ public let NautilusCollectionCardErrorDomain: Swift.String
   case invalidUserPID = 905
   case developerError = 906
   case requiresLoginStatus = 907
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusPointSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusPointSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -36,9 +36,7 @@ public let NautilusPointErrorDomain: Swift.String
   case invalidUserPID = 905
   case developerError = 906
   case requiresLoginStatus = 907
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -53,11 +51,9 @@ public let NautilusPointErrorDomain: Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusPoint : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
-  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -72,30 +68,14 @@ public let NautilusPointErrorDomain: Swift.String
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func point() -> NautilusPointSDK.NautilusPoint
   @objc(pointAppNamed:) public static func point(appName: Swift.String) -> NautilusPointSDK.NautilusPoint
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getPointHistoryTotal(completion: @escaping (Swift.Result<(Swift.Int, NautilusPointSDK.NautilusPointNewestExpiration?), NautilusPointSDK.NautilusPointError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getPointHistoryTotal(completion: @escaping (Swift.Int, NautilusPointSDK.NautilusPointNewestExpiration?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getPointHistoryList(searchStartDate: Foundation.Date?, searchEndDate: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusPointSDK.NautilusPointHistory], NautilusPointSDK.NautilusPointError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getPointHistoryList(searchStartDatetime: Foundation.Date?, searchEndDatetime: Foundation.Date?, completion: @escaping ([NautilusPointSDK.NautilusPointHistory]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getMonthlyPoint(range: Swift.Int?, completion: @escaping (Swift.Result<[NautilusPointSDK.NautilusMonthlyPoint], NautilusPointSDK.NautilusPointError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getMonthlyPoint(range: Foundation.NSNumber?, completion: @escaping ([NautilusPointSDK.NautilusMonthlyPoint]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func exchangePointPrize(couponId: Swift.Int, completion: @escaping (Swift.Result<[NautilusPointSDK.NautilusExchangedPointPrizeCoupon], NautilusPointSDK.NautilusPointError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func exchangePointPrize(couponId: Swift.Int, completion: @escaping ([NautilusPointSDK.NautilusExchangedPointPrizeCoupon]?, Foundation.NSError?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusExchangedPointPrizeCoupon : ObjectiveC.NSObject {
@@ -193,9 +173,7 @@ public let NautilusPointErrorDomain: Swift.String
     get
   }
   public init(rawValue: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get

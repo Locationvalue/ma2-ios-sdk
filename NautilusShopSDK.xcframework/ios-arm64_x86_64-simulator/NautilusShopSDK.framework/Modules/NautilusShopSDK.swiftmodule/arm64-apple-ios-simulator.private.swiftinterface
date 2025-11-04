@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusShopSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusShopSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CoreData
 import CoreLocation
 import DeveloperToolsSupport
@@ -24,12 +24,8 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public protocol NautilusShopDetailInstantiatable {
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, shopInfo: NautilusShopSDK.NautilusShopInfo) -> UIKit.UIViewController
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, shopID: Swift.Int, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, clientShopCode: Swift.String, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
-  #endif
 }
 @objc public protocol NautilusShopSearchTagFilteringOperation {
   @objc func transformSearchCondition(tags: [NautilusShopSDK.NautilusShopSearchTagInfo]) -> [[NautilusShopSDK.NautilusShopSearchTagInfo]]
@@ -41,9 +37,7 @@ import _SwiftConcurrencyShims
   case shopDetail
   case favoriteShopList
   case shopList
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [NautilusShopSDK.NautilusShopRoutableScreen]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [NautilusShopSDK.NautilusShopRoutableScreen] {
@@ -63,20 +57,14 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public protocol NautilusShopSearchFilteringViewControllerDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func shopSearchFilteringViewController(_ shopSearchFilteringViewController: NautilusShopSDK.NautilusShopSearchFilteringViewController, didUpdate filteringItem: NautilusShopSDK.NautilusShopSearchFilteringItem?)
-  #endif
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class NautilusShopSearchFilteringViewController : UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillLayoutSubviews()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @objc public protocol NautilusShopPinImageProvider {
@@ -96,9 +84,7 @@ import _SwiftConcurrencyShims
   case access
   case emergencyNotification
   case distance
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [NautilusShopSDK.ShopDetailItem]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [NautilusShopSDK.ShopDetailItem] {
@@ -109,11 +95,9 @@ import _SwiftConcurrencyShims
   }
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusShop : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
-  #endif
   public enum ShopNotification {
     public static let updateShopFavoriteState: Foundation.Notification.Name
   }
@@ -141,76 +125,34 @@ import _SwiftConcurrencyShims
   @available(*, deprecated, message: "Use NautilusShopRouter function.")
   @objc final public func instantiateShopDetail(clientShopCode: Swift.String) -> UIKit.UIViewController
   @objc final public func instantiateShopListViewController() -> UIKit.UIViewController
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func instantiateShopSearchFilteringViewController(delegate: (any NautilusShopSDK.NautilusShopSearchFilteringViewControllerDelegate)?) -> UIKit.UIViewController
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func instantiateShopSearchFilteringViewController(filteringItem: NautilusShopSDK.NautilusShopSearchFilteringItem?, delegate: (any NautilusShopSDK.NautilusShopSearchFilteringViewControllerDelegate)?) -> UIKit.UIViewController
-  #endif
   @objc final public func instantiateShopSearchListViewController() -> UIKit.UIViewController
   @objc final public func createShopSearchWideMap() -> UIKit.UINavigationController
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getShopList(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getShopList(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "searchShop(offset:limit:location:resultLocation:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)")
   final public func searchShop(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int?, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "searchShop(offset:limit:location:resultLocation:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)")
   final public func searchShop(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int?, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func searchShop(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation?, resultLocation: NautilusCoreSDK.NautilusLocation?, range: Swift.Int?, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "searchShop(offset:limit:location:resultLocation:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)")
   @objc final public func searchShop(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int, shopName: Swift.String?, prefectures: [Swift.Int]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "searchShop(offset:limit:location:resultLocation:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)")
   @objc final public func searchShop(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int, shopName: Swift.String?, prefectures: [Swift.Int]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func searchShop(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation?, resultLocation: NautilusCoreSDK.NautilusLocation?, range: Swift.Int, shopName: Swift.String?, prefectures: [Swift.Int]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getShopDetail(shopID: Swift.Int?, clientShopCD: Swift.String?, completion: @escaping (Swift.Result<NautilusShopSDK.NautilusShopInfo, NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getShopDetail(shopID: Swift.Int, clientShopCD: Swift.String?, completion: @escaping (NautilusShopSDK.NautilusShopInfo?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func updateFavorite(addFavoriteShopIDs: [Swift.Int]?, removeFavoriteShopIDs: [Swift.Int]?, completion: @escaping (Swift.Result<Swift.Void, NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func updateFavorite(addFavoriteShopIDs: [Swift.Int], removeFavoriteShopIDs: [Swift.Int], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getFavoriteShopList(order: NautilusShopSDK.NautilusFavoriteShopSortOrder, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getFavoriteShopList(order: NautilusShopSDK.NautilusFavoriteShopSortOrder, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getShopSearchTagList(completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopSearchTagInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getShopSearchTagList(completion: @escaping ([NautilusShopSDK.NautilusShopSearchTagInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func migrateFavoriteShops(installID: Swift.String, completion: @escaping (Swift.Result<Swift.Void, NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func migrateFavoriteShops(installID: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  #endif
   @objc final public func addShopDetailModifier(shopDetailItem: NautilusShopSDK.ShopDetailItem, target: NautilusShopSDK.NautilusShopDetailModifierTarget, modifier: NautilusShopSDK.NautilusShopDetailModifier)
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func deleteShopDetailModifier(shopDetailItem: NautilusShopSDK.ShopDetailItem?, target: NautilusShopSDK.NautilusShopDetailModifierTarget?)
-  #endif
   @objc final public func deleteShopDetailModifier(shopDetailItem: NautilusShopSDK.ShopDetailItem, target: NautilusShopSDK.NautilusShopDetailModifierTarget)
   @objc deinit
 }
@@ -220,9 +162,7 @@ import _SwiftConcurrencyShims
   case tapOnShopList
   case tapOnSearchMap
   case tapOnFavoriteShopList
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -237,9 +177,7 @@ import _SwiftConcurrencyShims
 @objc public enum NautilusShopSearchSortKeyName : Swift.Int {
   case latitude
   case mapDist
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -248,9 +186,7 @@ import _SwiftConcurrencyShims
 @objc public enum NautilusShopSearchSortKeyOrder : Swift.Int {
   case ascending
   case descending
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -259,9 +195,7 @@ import _SwiftConcurrencyShims
 @objc public enum NautilusFavoriteShopSortOrder : Swift.Int {
   case ascending
   case descending
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -282,7 +216,7 @@ import _SwiftConcurrencyShims
   final public let catchphrase: Swift.String?
   final public let address: Swift.String?
   final public let telephone: Swift.String?
-  final public let shopLocation: _LocationEssentials.CLLocationCoordinate2D
+  final public let shopLocation: CoreLocation.CLLocationCoordinate2D
   final public let shopImages: [NautilusShopSDK.NautilusShopImage]?
   final public let clientShopCD: Swift.String?
   final public let shopExternalLinks: [NautilusShopSDK.NautilusShopExternalLink]?
@@ -307,9 +241,7 @@ import _SwiftConcurrencyShims
 @objc public enum NautilusShopDetailModifierTarget : Swift.Int, Swift.CaseIterable {
   case title
   case text
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [NautilusShopSDK.NautilusShopDetailModifierTarget]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [NautilusShopSDK.NautilusShopDetailModifierTarget] {
@@ -348,9 +280,7 @@ public let NautilusShopErrorDomain: Swift.String
   public var nautilusShopErrorCode: Swift.Int {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -363,31 +293,19 @@ public let NautilusShopErrorDomain: Swift.String
   final public let textSize: CoreFoundation.CGFloat?
   final public let textColor: UIKit.UIColor?
   final public let typeface: UIKit.UIFont.Weight?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(textSize: CoreFoundation.CGFloat? = nil, textColor: UIKit.UIColor? = nil, typeface: UIKit.UIFont.Weight? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(textSize: CoreFoundation.CGFloat = .infinity, textColor: UIKit.UIColor? = nil, typeface: UIKit.UIFont.Weight)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusShopRouter : ObjectiveC.NSObject {
   @objc final public func register(screen: NautilusShopSDK.NautilusShopRoutableScreen, viewControllerClass: UIKit.UIViewController.Type)
   @objc final public func unregister(screen: NautilusShopSDK.NautilusShopRoutableScreen)
   @objc final public func instantiateShopDetail(shopInfo: NautilusShopSDK.NautilusShopInfo) -> UIKit.UIViewController
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func instantiateShopDetail(shopID: Swift.Int, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func instantiateShopDetail(clientShopCode: Swift.String, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
-  #endif
   @objc final public func routeShopDetail(shopInfo: NautilusShopSDK.NautilusShopInfo, in viewController: UIKit.UIViewController)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func routeShopDetail(shopID: Swift.Int, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil, in viewController: UIKit.UIViewController)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func routeShopDetail(clientShopCode: Swift.String, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil, in viewController: UIKit.UIViewController)
-  #endif
   @objc deinit
 }
 extension NautilusShopSDK.NautilusShopRoutableScreen : Swift.Equatable {}

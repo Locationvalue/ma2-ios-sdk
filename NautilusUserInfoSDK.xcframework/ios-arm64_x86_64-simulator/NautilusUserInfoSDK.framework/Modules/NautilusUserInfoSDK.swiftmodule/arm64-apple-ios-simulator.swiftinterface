@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusUserInfoSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusUserInfoSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import NautilusAnalyticsSDK
 import NautilusConfigSDK
@@ -29,9 +29,7 @@ import _SwiftConcurrencyShims
   case male = 1
   case female = 2
   case other = 3
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -59,9 +57,7 @@ import _SwiftConcurrencyShims
   case multipleSelection = 2
   case freeText = 3
   case unknown = -1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -90,9 +86,7 @@ import _SwiftConcurrencyShims
   @objc public func removeBrandID()
   @objc public func removeManageCode()
   @objc public func removeOptions(key: NautilusUserInfoSDK.NautilusUserOptionalAttributeKey)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func build() -> NautilusUserInfoSDK.NautilusUserAttribute?
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusUserOptionalAttribute : ObjectiveC.NSObject {
@@ -126,17 +120,13 @@ import _SwiftConcurrencyShims
   final public var option10: Swift.String? {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusUserInfo : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
-  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -152,18 +142,10 @@ import _SwiftConcurrencyShims
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func userInfo() -> NautilusUserInfoSDK.NautilusUserInfo
   @objc(userInfoAppNamed:) public static func userInfo(appName: Swift.String) -> NautilusUserInfoSDK.NautilusUserInfo
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func loadUserAttribute(completion: @escaping (NautilusUserInfoSDK.NautilusUserAttribute?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func uploadUserAttribute(userAttribute: NautilusUserInfoSDK.NautilusUserAttribute, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func loadUserEnquetes(completion: @escaping ([NautilusUserInfoSDK.NautilusUserEnquete]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func uploadUserEnquete(enqueteAnswer: NautilusUserInfoSDK.NautilusUserEnqueteAnswer, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 @objc public enum UserInfoNetworkServiceError : Swift.Int, Swift.Error {
@@ -184,9 +166,7 @@ import _SwiftConcurrencyShims
   case invalidUserPID = 905
   case developerError = 906
   case requiresLoginStatus = 907
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -206,9 +186,7 @@ import _SwiftConcurrencyShims
   case option8
   case option9
   case option10
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -227,18 +205,12 @@ import _SwiftConcurrencyShims
 @objc public class NautilusUserEnqueteUpdater : ObjectiveC.NSObject {
   public init(userEnquete: NautilusUserInfoSDK.NautilusUserEnquete)
   @objc public func selectItem(enqueteItem: NautilusUserInfoSDK.NautilusUserEnqueteItem, selectedOption: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func selectItems(enqueteItem: NautilusUserInfoSDK.NautilusUserEnqueteItem, selectedOption: [Swift.Int]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func setInputText(enqueteItem: NautilusUserInfoSDK.NautilusUserEnqueteItem, inputText: Swift.String?)
-  #endif
   @objc public func deselectItem(enqueteItem: NautilusUserInfoSDK.NautilusUserEnqueteItem)
   @objc public func deselectItems(enqueteItem: NautilusUserInfoSDK.NautilusUserEnqueteItem)
   @objc public func removeInputText(enqueteItem: NautilusUserInfoSDK.NautilusUserEnqueteItem)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func build() -> NautilusUserInfoSDK.NautilusUserEnqueteAnswer?
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class NautilusUserEnqueteAnswer : ObjectiveC.NSObject {
