@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusLoggingSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusLoggingSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import Swift
 import _Concurrency
@@ -9,32 +9,36 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-@objc public enum LogLevel : Swift.Int, Swift.Comparable, Swift.Sendable {
+@objc public enum LogLevel : Swift.Int, Swift.Comparable {
   case verbose = 0
   case debug = 2
   case info = 4
   case warn = 6
   case error = 8
   case fatal = 10
-  public static let `default`: NautilusLoggingSDK.LogLevel
-  public static func < (lhs: NautilusLoggingSDK.LogLevel, rhs: NautilusLoggingSDK.LogLevel) -> Swift.Bool
-  public init?(rawValue: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public static let `default`: NautilusLoggingSDK.LogLevel
+  @_Concurrency.MainActor @preconcurrency public static func < (lhs: NautilusLoggingSDK.LogLevel, rhs: NautilusLoggingSDK.LogLevel) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  nonisolated public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  nonisolated public var rawValue: Swift.Int {
     get
   }
 }
 public enum Logger {
-  public static var logLevel: NautilusLoggingSDK.LogLevel {
+  @_Concurrency.MainActor @preconcurrency public static var logLevel: NautilusLoggingSDK.LogLevel {
     get
   }
-  public static func setLogLevel(logLevel: NautilusLoggingSDK.LogLevel)
-  public static func verbose(_ message: Swift.String)
-  public static func debug(_ message: Swift.String)
-  public static func info(_ message: Swift.String)
-  public static func warn(_ message: Swift.String)
-  public static func error(_ message: Swift.String)
-  public static func fatal(_ message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public static func setLogLevel(logLevel: NautilusLoggingSDK.LogLevel)
+  @_Concurrency.MainActor @preconcurrency public static func verbose(_ message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public static func debug(_ message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public static func info(_ message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public static func warn(_ message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public static func error(_ message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public static func fatal(_ message: Swift.String)
 }
 extension NautilusLoggingSDK.LogLevel : Swift.Hashable {}
 extension NautilusLoggingSDK.LogLevel : Swift.RawRepresentable {}
+extension NautilusLoggingSDK.LogLevel : Swift.Sendable {}
+extension NautilusLoggingSDK.Logger : Swift.Sendable {}

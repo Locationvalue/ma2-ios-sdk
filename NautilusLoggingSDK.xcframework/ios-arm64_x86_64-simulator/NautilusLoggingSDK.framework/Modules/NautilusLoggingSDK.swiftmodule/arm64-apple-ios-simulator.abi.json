@@ -292,6 +292,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isLet": true,
@@ -349,6 +351,8 @@
             "moduleName": "NautilusLoggingSDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -384,6 +388,9 @@
             "mangledName": "$s18NautilusLoggingSDK8LogLevelO8rawValueACSgSi_tcfc",
             "moduleName": "NautilusLoggingSDK",
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "init_kind": "Designated"
           },
           {
@@ -403,6 +410,9 @@
             "mangledName": "$s18NautilusLoggingSDK8LogLevelO8rawValueSivp",
             "moduleName": "NautilusLoggingSDK",
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -525,10 +535,14 @@
             "moduleName": "NautilusLoggingSDK",
             "static": true,
             "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Preconcurrency",
+              "Custom",
               "SetterAccess",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -547,6 +561,7 @@
                 "mangledName": "$s18NautilusLoggingSDK6LoggerO8logLevelAA03LogF0OvgZ",
                 "moduleName": "NautilusLoggingSDK",
                 "static": true,
+                "implicit": true,
                 "accessorKind": "get"
               }
             ]
@@ -574,6 +589,8 @@
             "moduleName": "NautilusLoggingSDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -601,6 +618,8 @@
             "moduleName": "NautilusLoggingSDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -628,6 +647,8 @@
             "moduleName": "NautilusLoggingSDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -655,6 +676,8 @@
             "moduleName": "NautilusLoggingSDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -682,6 +705,8 @@
             "moduleName": "NautilusLoggingSDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -709,6 +734,8 @@
             "moduleName": "NautilusLoggingSDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -736,6 +763,8 @@
             "moduleName": "NautilusLoggingSDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -762,6 +791,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       }
@@ -772,58 +808,51 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Logging\/Sources\/Logger.swift",
       "kind": "IntegerLiteral",
-      "offset": 254,
+      "offset": 244,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Logging\/Sources\/Logger.swift",
       "kind": "IntegerLiteral",
-      "offset": 273,
+      "offset": 263,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Logging\/Sources\/Logger.swift",
       "kind": "IntegerLiteral",
-      "offset": 291,
+      "offset": 281,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Logging\/Sources\/Logger.swift",
       "kind": "IntegerLiteral",
-      "offset": 309,
+      "offset": 299,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Logging\/Sources\/Logger.swift",
       "kind": "IntegerLiteral",
-      "offset": 328,
+      "offset": 318,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Logging\/Sources\/Logger.swift",
       "kind": "IntegerLiteral",
-      "offset": 347,
+      "offset": 337,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Logging\/Sources\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 1300,
+      "offset": 1290,
       "length": 10,
       "value": "\"Nautilus\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Logging\/Sources\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 1363,
-      "length": 40,
-      "value": "\"com.locationvalue.nautilus.loggerQueue\""
     }
   ]
 }

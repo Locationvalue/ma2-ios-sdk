@@ -5650,6 +5650,13 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -6414,6 +6421,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -6754,6 +6762,7 @@
             "deprecated": true,
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "Available",
               "ObjC",
@@ -6801,6 +6810,7 @@
             "objc_name": "instantiateCouponListViewControllerWithCategory:useCategoryTab:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "Available",
               "ObjC",
@@ -6846,6 +6856,7 @@
             "moduleName": "NautilusCouponSDK",
             "deprecated": true,
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "Available",
@@ -6885,6 +6896,7 @@
             "objc_name": "instantiateCouponListViewControllerWithCategoryID:useCategoryTab:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -6932,6 +6944,7 @@
             "objc_name": "instantiateCouponListViewControllerWithCategoryAlias:useCategoryTab:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -6958,6 +6971,7 @@
             "deprecated": true,
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -7026,6 +7040,7 @@
             "deprecated": true,
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "Available",
               "RawDocComment"
@@ -7085,6 +7100,7 @@
             "objc_name": "instantiateCouponDetailViewControllerWithCouponID:exchangeID:couponType:notificationInfo:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -7114,6 +7130,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -7297,6 +7314,7 @@
             "moduleName": "NautilusCouponSDK",
             "deprecated": true,
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "Available",
@@ -7497,6 +7515,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C09getCommonB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -7676,6 +7695,7 @@
             "objc_name": "getCommonCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -7869,6 +7889,7 @@
             "objc_name": "getCommonCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -7938,6 +7959,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C09getCommonB5Count13checkDateTime10completiony10Foundation0H0VSg_ys6ResultOySiAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -8016,6 +8038,7 @@
             "objc_name": "getCommonCouponCountWithCheckDateTime:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -8202,6 +8225,7 @@
             "moduleName": "NautilusCouponSDK",
             "deprecated": true,
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "Available",
@@ -8402,6 +8426,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C010getPrivateB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -8581,6 +8606,7 @@
             "objc_name": "getPrivateCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -8774,6 +8800,7 @@
             "objc_name": "getPrivateCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -8843,6 +8870,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C010getPrivateB5Count13checkDateTime10completiony10Foundation0H0VSg_ys6ResultOySiAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -8921,6 +8949,7 @@
             "objc_name": "getPrivateCouponCountWithCheckDateTime:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -9107,6 +9136,7 @@
             "moduleName": "NautilusCouponSDK",
             "deprecated": true,
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "Available",
@@ -9307,6 +9337,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C015getFavoriteShopB4List6offset5limit8useCache9couponIDs08categoryM010searchWord8sortKeys13checkDateTime10completionySiSg_ANSbSgSaySiGSgAQSSSgSayAA0aB7SortKeyCGSg10Foundation0T0VSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -9486,6 +9517,7 @@
             "objc_name": "getFavoriteShopCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -9679,6 +9711,7 @@
             "objc_name": "getFavoriteShopCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -9748,6 +9781,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C015getFavoriteShopB5Count13checkDateTime10completiony10Foundation0I0VSg_ys6ResultOySiAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -9826,6 +9860,7 @@
             "objc_name": "getFavoriteShopCouponCountWithCheckDateTime:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -10026,6 +10061,7 @@
             "moduleName": "NautilusCouponSDK",
             "deprecated": true,
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "Available",
@@ -10248,6 +10284,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C08getPrizeB4List6offset5limit8useCache9couponIDs08categoryL010searchWord8sortKeys13checkDateTime05prizebF010completionySiSg_AOSbSgSaySiGSgARSSSgSayAA0aB7SortKeyCGSg10Foundation0S0VSgSayAA0aB6IDInfoCGSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -10433,6 +10470,7 @@
             "objc_name": "getPrizeCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:sortKeys:checkDateTime:exchangeID:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -10648,6 +10686,7 @@
             "objc_name": "getPrizeCouponListWithOffset:limit:useCache:couponIDs:categoryIDs:searchWord:sortKeys:checkDateTime:prizeCouponList:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -10741,6 +10780,7 @@
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -10841,6 +10881,7 @@
             "objc_name": "getPrizeCouponCountWithCheckDateTime:prizeCouponIDList:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -10945,6 +10986,7 @@
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -11057,6 +11099,7 @@
             "objc_name": "useCouponWithTargetCouponInfo:optionalParameters:exchangeCode:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -11169,6 +11212,7 @@
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -11289,6 +11333,7 @@
             "objc_name": "useCouponsWithCouponUseInfoList:optionalParameters:exchangeCode:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -11387,6 +11432,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C14updateFavorite03addE7Coupons06removeeG010completionySayAA0aB6IDInfoCGSg_AKys6ResultOyytAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -11495,6 +11541,7 @@
             "objc_name": "updateFavoriteWithAddFavoriteCoupons:removeFavoriteCoupons:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -11558,6 +11605,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C011getFavoriteB4List10completionyys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGc_tF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -11638,6 +11686,7 @@
             "objc_name": "getFavoriteCouponListWithCompletion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -11701,6 +11750,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C03getB12CategoryList10completionyys6ResultOySayAA0abE4InfoCGAA0aB5ErrorOGc_tF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -11781,6 +11831,7 @@
             "objc_name": "getCouponCategoryListWithCompletion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -11850,6 +11901,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C012publishPrizeB07trigger10completionyAA0aB14PublishTriggerC_ys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -11936,6 +11988,7 @@
             "objc_name": "publishPrizeCouponWithTrigger:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12004,6 +12057,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C04sendB3Log10couponLogs10completionySayAA0abE0CG_ys6ResultOyytAA0aB5ErrorOGctF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -12082,6 +12136,7 @@
             "objc_name": "sendCouponLogWithCouponLogs:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12122,6 +12177,7 @@
             "objc_name": "calculateUsedCouponValidEndDateOf:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12153,6 +12209,7 @@
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12185,6 +12242,7 @@
             "objc_name": "calculateUsedCouponValidDurationFromNowOf:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12222,6 +12280,7 @@
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "DiscardableResult",
               "ObjC",
@@ -12260,6 +12319,7 @@
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "DiscardableResult",
               "ObjC",
@@ -12293,6 +12353,7 @@
             "objc_name": "unregisterCouponUseValidObserverFor:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "DiscardableResult",
               "ObjC",
@@ -12357,6 +12418,7 @@
             "mangledName": "$s17NautilusCouponSDK0aB0C013getPointPrizeB4List10completionyys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGc_tF",
             "moduleName": "NautilusCouponSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -12437,6 +12499,7 @@
             "objc_name": "getPointPrizeCouponListWithCompletion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -12450,6 +12513,7 @@
         "mangledName": "$s17NautilusCouponSDK0aB0C",
         "moduleName": "NautilusCouponSDK",
         "declAttributes": [
+          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC",
