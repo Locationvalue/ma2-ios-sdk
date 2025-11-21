@@ -31,9 +31,9 @@ import _SwiftConcurrencyShims
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp) -> UIKit.UIViewController
 }
 @objc public class NautilusCouponUseInfo : ObjectiveC.NSObject {
-  final public let coupon: NautilusCouponSDK.NautilusCouponInfo
+  @objc final public let coupon: NautilusCouponSDK.NautilusCouponInfo
   final public let exchangeID: Swift.Int?
-  convenience public init(coupon: NautilusCouponSDK.NautilusCouponInfo)
+  @objc convenience public init(coupon: NautilusCouponSDK.NautilusCouponInfo)
   #if compiler(>=5.3) && $NonescapableTypes
   public init(coupon: NautilusCouponSDK.NautilusCouponInfo, exchangeID: Swift.Int?)
   #endif
@@ -43,32 +43,77 @@ import _SwiftConcurrencyShims
   @objc func coupon(_ coupon: NautilusCouponSDK.NautilusCoupon, handleCouponCode couponCode: Swift.String, in viewController: UIKit.UIViewController)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusCouponInfo : ObjectiveC.NSObject {
-  final public let couponID: Swift.Int
-  final public let couponManageTitle: Swift.String
-  final public let couponTitle: Swift.String?
-  final public let couponText: Swift.String
-  final public let noticeText: Swift.String?
-  final public let publishStartDate: Foundation.Date
-  final public let publishEndDate: Foundation.Date?
-  final public let useStartDate: Foundation.Date?
-  final public let useEndDate: Foundation.Date?
-  final public let barcode: Swift.String?
-  final public let barcodeImageURL: Foundation.URL?
-  final public let couponCode: Swift.String?
+  @objc final public let couponID: Swift.Int
+  @objc final public let couponManageTitle: Swift.String
+  @objc final public let couponTitle: Swift.String?
+  @objc final public let couponText: Swift.String
+  @objc final public let noticeText: Swift.String?
+  @objc final public let publishStartDate: Foundation.Date
+  @objc final public let publishEndDate: Foundation.Date?
+  @objc final public let useStartDate: Foundation.Date?
+  @objc final public let useEndDate: Foundation.Date?
+  @objc final public let barcode: Swift.String?
+  @objc final public let barcodeImageURL: Foundation.URL?
+  @objc final public let couponCode: Swift.String?
   final public let maxSheet: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var maxSheetNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
   final public let useType: NautilusCouponSDK.NautilusCouponExchangeType?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var useTypeNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
   final public let useLimitHour: Swift.Int?
-  final public let categoryIDs: [Swift.Int]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var useLimitHourNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
+  @objc final public let categoryIDs: [Swift.Int]?
   final public let sortNo: Swift.Int?
-  final public let searchWord: Swift.String?
-  final public let couponImages: [NautilusCouponSDK.NautilusCouponImageInfo]?
-  final public let useDate: Foundation.Date?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var sortNoNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
+  @objc final public let searchWord: Swift.String?
+  @objc final public let couponImages: [NautilusCouponSDK.NautilusCouponImageInfo]?
+  @objc final public let useDate: Foundation.Date?
   final public let couponType: NautilusCouponSDK.NautilusCouponPublishType?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var couponTypeNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
   final public let isFavorited: Swift.Bool?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var isFavoritedNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
   final public let useCount: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var useCountNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
   final public let exchangeID: Swift.Int?
-  final public let alias: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var exchangeIDNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
+  @objc final public let alias: Swift.String?
   final public let requirePoint: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var requirePointNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusCouponImageInfo : ObjectiveC.NSObject {
@@ -95,6 +140,9 @@ import _SwiftConcurrencyShims
   #if compiler(>=5.3) && $NonescapableTypes
   public init(publishTriggerType: NautilusCouponSDK.NautilusCouponPublishTriggerType, codeText: Swift.String?, cardNumber: Swift.String?, cardType: Swift.Int?, couponIDs: [Swift.Int]?)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(publishTriggerType: NautilusCouponSDK.NautilusCouponPublishTriggerType, codeText: Swift.String?, cardNumber: Swift.String?, cardType: Foundation.NSNumber?, couponIDs: [Foundation.NSNumber]?)
+  #endif
   @objc deinit
 }
 @objc public enum NautilusCouponPublishTriggerType : Swift.Int {
@@ -112,11 +160,11 @@ import _SwiftConcurrencyShims
   }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusCouponCategoryInfo : ObjectiveC.NSObject {
-  final public let categoryID: Swift.Int
-  final public let parentCategoryID: Swift.Int
-  final public let categoryName: Swift.String
-  final public let sortNumber: Swift.Int
-  final public let alias: Swift.String
+  @objc final public let categoryID: Swift.Int
+  @objc final public let parentCategoryID: Swift.Int
+  @objc final public let categoryName: Swift.String
+  @objc final public let sortNumber: Swift.Int
+  @objc final public let alias: Swift.String
   @objc deinit
 }
 public let NautilusCouponErrorDomain: Swift.String
@@ -359,7 +407,7 @@ extension NautilusCouponSDK.NautilusCoupon {
   final public let coupon: NautilusCouponSDK.NautilusCouponInfo
   final public let logDate: Foundation.Date
   final public let logType: NautilusCouponSDK.NautilusCouponLogType
-  public init(coupon: NautilusCouponSDK.NautilusCouponInfo, logType: NautilusCouponSDK.NautilusCouponLogType)
+  @objc public init(coupon: NautilusCouponSDK.NautilusCouponInfo, logType: NautilusCouponSDK.NautilusCouponLogType)
   @objc deinit
 }
 @objc public enum NautilusCouponLogType : Swift.Int {
@@ -410,10 +458,18 @@ extension NautilusCouponSDK.NautilusCoupon {
   #endif
 }
 @objc public class NautilusCouponIDInfo : ObjectiveC.NSObject {
-  final public let couponID: Swift.Int
+  @objc final public let couponID: Swift.Int
   final public let exchangeID: Swift.Int?
   #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var exchangeIDNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(couponID: Swift.Int, exchangeID: Swift.Int?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(couponID: Swift.Int, exchangeID: Foundation.NSNumber?)
   #endif
   @objc deinit
 }

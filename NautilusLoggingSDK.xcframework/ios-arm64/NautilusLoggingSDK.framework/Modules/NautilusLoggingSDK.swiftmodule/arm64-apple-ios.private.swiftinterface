@@ -9,36 +9,34 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-@objc public enum LogLevel : Swift.Int, Swift.Comparable {
+@objc public enum LogLevel : Swift.Int, Swift.Comparable, Swift.Sendable {
   case verbose = 0
   case debug = 2
   case info = 4
   case warn = 6
   case error = 8
   case fatal = 10
-  @_Concurrency.MainActor @preconcurrency public static let `default`: NautilusLoggingSDK.LogLevel
-  @_Concurrency.MainActor @preconcurrency public static func < (lhs: NautilusLoggingSDK.LogLevel, rhs: NautilusLoggingSDK.LogLevel) -> Swift.Bool
+  public static let `default`: NautilusLoggingSDK.LogLevel
+  public static func < (lhs: NautilusLoggingSDK.LogLevel, rhs: NautilusLoggingSDK.LogLevel) -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
-  nonisolated public init?(rawValue: Swift.Int)
+  public init?(rawValue: Swift.Int)
   #endif
   public typealias RawValue = Swift.Int
-  nonisolated public var rawValue: Swift.Int {
+  public var rawValue: Swift.Int {
     get
   }
 }
 public enum Logger {
-  @_Concurrency.MainActor @preconcurrency public static var logLevel: NautilusLoggingSDK.LogLevel {
+  public static var logLevel: NautilusLoggingSDK.LogLevel {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public static func setLogLevel(logLevel: NautilusLoggingSDK.LogLevel)
-  @_Concurrency.MainActor @preconcurrency public static func verbose(_ message: Swift.String)
-  @_Concurrency.MainActor @preconcurrency public static func debug(_ message: Swift.String)
-  @_Concurrency.MainActor @preconcurrency public static func info(_ message: Swift.String)
-  @_Concurrency.MainActor @preconcurrency public static func warn(_ message: Swift.String)
-  @_Concurrency.MainActor @preconcurrency public static func error(_ message: Swift.String)
-  @_Concurrency.MainActor @preconcurrency public static func fatal(_ message: Swift.String)
+  public static func setLogLevel(logLevel: NautilusLoggingSDK.LogLevel)
+  public static func verbose(_ message: Swift.String)
+  public static func debug(_ message: Swift.String)
+  public static func info(_ message: Swift.String)
+  public static func warn(_ message: Swift.String)
+  public static func error(_ message: Swift.String)
+  public static func fatal(_ message: Swift.String)
 }
 extension NautilusLoggingSDK.LogLevel : Swift.Hashable {}
 extension NautilusLoggingSDK.LogLevel : Swift.RawRepresentable {}
-extension NautilusLoggingSDK.LogLevel : Swift.Sendable {}
-extension NautilusLoggingSDK.Logger : Swift.Sendable {}

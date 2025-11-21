@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusImagingSDK
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusImagingSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CommonCrypto
 import Foundation
@@ -12,32 +12,26 @@ import _SwiftConcurrencyShims
 extension Foundation.URLSession {
   public static let imageDownloader: Foundation.URLSession
 }
-final public actor NautilusImageDownloader {
-  public static var shared: NautilusImagingSDK.NautilusImageDownloader
-  public init(session: Foundation.URLSession = .shared)
+final public class NautilusImageDownloader {
+  @_Concurrency.MainActor @preconcurrency public static var shared: NautilusImagingSDK.NautilusImageDownloader
+  @_Concurrency.MainActor @preconcurrency public init(session: Foundation.URLSession = .shared)
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func download(from url: Foundation.URL, completion: @escaping @_Concurrency.MainActor @Sendable (UIKit.UIImage?) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency final public func download(from url: Foundation.URL, completion: @escaping @_Concurrency.MainActor @Sendable (UIKit.UIImage?) -> Swift.Void)
   #endif
-  final public func cancel()
+  @_Concurrency.MainActor @preconcurrency final public func cancel()
   @objc deinit
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
-    get
-  }
 }
-final public actor NautilusImageCache {
-  public static var shared: NautilusImagingSDK.NautilusImageCache
-  public init(memoryCapactiy: Swift.Int, diskCapacity: Swift.Int, diskPath: Swift.String)
-  final public func contain(url: Foundation.URL) -> Swift.Bool
-  final public func store(data: Foundation.Data, url: Foundation.URL)
+final public class NautilusImageCache {
+  @_Concurrency.MainActor @preconcurrency public static var shared: NautilusImagingSDK.NautilusImageCache
+  @_Concurrency.MainActor @preconcurrency public init(memoryCapactiy: Swift.Int, diskCapacity: Swift.Int, diskPath: Swift.String)
+  @_Concurrency.MainActor @preconcurrency final public func contain(url: Foundation.URL) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency final public func store(data: Foundation.Data, url: Foundation.URL)
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func load(url: Foundation.URL) -> UIKit.UIImage?
+  @_Concurrency.MainActor @preconcurrency final public func load(url: Foundation.URL) -> UIKit.UIImage?
   #endif
-  final public func remove(url: Foundation.URL)
-  final public func removeAll()
+  @_Concurrency.MainActor @preconcurrency final public func remove(url: Foundation.URL)
+  @_Concurrency.MainActor @preconcurrency final public func removeAll()
   @objc deinit
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
-    get
-  }
 }
+extension NautilusImagingSDK.NautilusImageDownloader : Swift.Sendable {}
+extension NautilusImagingSDK.NautilusImageCache : Swift.Sendable {}
