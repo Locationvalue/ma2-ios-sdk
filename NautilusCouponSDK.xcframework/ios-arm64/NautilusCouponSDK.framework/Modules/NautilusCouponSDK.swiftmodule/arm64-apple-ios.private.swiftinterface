@@ -469,7 +469,7 @@ extension NautilusCouponSDK.NautilusCoupon {
   public init(couponID: Swift.Int, exchangeID: Swift.Int?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(couponID: Swift.Int, exchangeID: Foundation.NSNumber?)
+  @objc public init(couponID: Swift.Int, exchangeIDNumber: Foundation.NSNumber?)
   #endif
   @objc deinit
 }

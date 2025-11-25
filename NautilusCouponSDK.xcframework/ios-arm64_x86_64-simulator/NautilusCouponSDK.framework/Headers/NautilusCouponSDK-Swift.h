@@ -826,11 +826,12 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK20NautilusCouponIDInfo")
 /// 景品クーポンの場合のみ必要
 @property (nonatomic, readonly, strong) NSNumber * _Nullable exchangeIDNumber;
 /// クーポンIDと発行IDの組の情報
+/// Objective-Cから利用する場合はこちらを使用してください
 /// \param couponID クーポンID
 ///
 /// \param exchangeID 発行ID
 ///
-- (nonnull instancetype)initWithCouponID:(NSInteger)couponID exchangeID:(NSNumber * _Nullable)exchangeID OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCouponID:(NSInteger)couponID exchangeIDNumber:(NSNumber * _Nullable)exchangeIDNumber OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1983,11 +1984,12 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK20NautilusCouponIDInfo")
 /// 景品クーポンの場合のみ必要
 @property (nonatomic, readonly, strong) NSNumber * _Nullable exchangeIDNumber;
 /// クーポンIDと発行IDの組の情報
+/// Objective-Cから利用する場合はこちらを使用してください
 /// \param couponID クーポンID
 ///
 /// \param exchangeID 発行ID
 ///
-- (nonnull instancetype)initWithCouponID:(NSInteger)couponID exchangeID:(NSNumber * _Nullable)exchangeID OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCouponID:(NSInteger)couponID exchangeIDNumber:(NSNumber * _Nullable)exchangeIDNumber OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
