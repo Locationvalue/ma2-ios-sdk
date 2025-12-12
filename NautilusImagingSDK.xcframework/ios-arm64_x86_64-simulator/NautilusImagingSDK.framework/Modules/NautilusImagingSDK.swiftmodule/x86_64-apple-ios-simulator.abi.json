@@ -37,11 +37,9 @@
             "moduleName": "NautilusImagingSDK",
             "static": true,
             "declAttributes": [
-              "HasInitialValue",
               "Final",
+              "HasInitialValue",
               "HasStorage",
-              "Preconcurrency",
-              "Custom",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -145,8 +143,6 @@
             "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC7sessionACSo12NSURLSessionC_tcfc",
             "moduleName": "NautilusImagingSDK",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "AccessControl"
             ],
             "init_kind": "Designated"
@@ -195,12 +191,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18NautilusImagingSDK0A15ImageDownloaderC8download4from10completiony10Foundation3URLV_ySo7UIImageCSgctF",
-            "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC8download4from10completiony10Foundation3URLV_ySo7UIImageCSgctF",
+            "usr": "s:18NautilusImagingSDK0A15ImageDownloaderC8download4from10completiony10Foundation3URLV_ySo7UIImageCSgYbScMYcctF",
+            "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC8download4from10completiony10Foundation3URLV_ySo7UIImageCSgYbScMYcctF",
             "moduleName": "NautilusImagingSDK",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "Final",
               "AccessControl"
             ],
@@ -222,12 +216,65 @@
             "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC6cancelyyF",
             "moduleName": "NautilusImagingSDK",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusImagingSDK0A15ImageDownloaderC15unownedExecutorScevp",
+            "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC15unownedExecutorScevp",
+            "moduleName": "NautilusImagingSDK",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusImagingSDK0A15ImageDownloaderC15unownedExecutorScevg",
+                "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC15unownedExecutorScevg",
+                "moduleName": "NautilusImagingSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -252,6 +299,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
           },
           {
             "kind": "Conformance",
@@ -312,11 +366,9 @@
             "moduleName": "NautilusImagingSDK",
             "static": true,
             "declAttributes": [
-              "HasInitialValue",
               "Final",
+              "HasInitialValue",
               "HasStorage",
-              "Preconcurrency",
-              "Custom",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -431,8 +483,6 @@
             "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC14memoryCapactiy12diskCapacity0H4PathACSi_SiSStcfc",
             "moduleName": "NautilusImagingSDK",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -461,8 +511,6 @@
             "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC7contain3urlSb10Foundation3URLV_tF",
             "moduleName": "NautilusImagingSDK",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -497,8 +545,6 @@
             "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC5store4data3urly10Foundation4DataV_AG3URLVtF",
             "moduleName": "NautilusImagingSDK",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -536,8 +582,6 @@
             "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC4load3urlSo7UIImageCSg10Foundation3URLV_tF",
             "moduleName": "NautilusImagingSDK",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -566,8 +610,6 @@
             "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC6remove3urly10Foundation3URLV_tF",
             "moduleName": "NautilusImagingSDK",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -590,13 +632,66 @@
             "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC9removeAllyyF",
             "moduleName": "NautilusImagingSDK",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusImagingSDK0A10ImageCacheC15unownedExecutorScevp",
+            "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC15unownedExecutorScevp",
+            "moduleName": "NautilusImagingSDK",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusImagingSDK0A10ImageCacheC15unownedExecutorScevg",
+                "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC15unownedExecutorScevg",
+                "moduleName": "NautilusImagingSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -622,6 +717,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
           },
           {
             "kind": "Conformance",
@@ -781,13 +883,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }
