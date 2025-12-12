@@ -311,6 +311,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NautilusComponentDependency;
 @class NautilusApp;
 @class NSError;
+@class NSDate;
+@class NSNumber;
+@class NautilusCampaignSort;
+@class NautilusCampaignInfo;
+@class NautilusCampaignOptionalParam;
+enum NautilusCampaignType : NSInteger;
+@class NautilusCampaignCategory;
 /// アプリとのインターフェース
 SWIFT_CLASS("_TtC19NautilusCampaignSDK16NautilusCampaign")
 @interface NautilusCampaign : NSObject <NautilusFeature>
@@ -327,6 +334,106 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusCampaign * _Nonnull)campaign SWIFT_WARN_UNUSED_RESULT;
 + (NautilusCampaign * _Nonnull)campaignAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
+/// 共通キャンペーン取得
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param campaignIdList キャンペーンIDリスト
+///
+/// \param lastCheckDatetime 最終確認時刻
+///
+/// \param keyword 検索キーワード
+///
+/// \param categoryIdList カテゴリIDの配列
+///
+/// \param limit リミット
+///
+/// \param offset オフセット
+///
+/// \param useCache キャッシュを利用するかどうか
+///
+/// \param sort キャンペーンの並び順
+///
+/// \param completion 成功時はキャンペーン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getCommonCampaignListWithCampaignIdList:(NSArray<NSNumber *> * _Nullable)campaignIdList lastCheckDatetime:(NSDate * _Nullable)lastCheckDatetime keyword:(NSString * _Nullable)keyword categoryIdList:(NSArray<NSNumber *> * _Nullable)categoryIdList limitNumber:(NSNumber * _Nullable)limitNumber offsetNumber:(NSNumber * _Nullable)offsetNumber useCache:(BOOL)useCache sort:(NautilusCampaignSort * _Nullable)sort completion:(void (^ _Nonnull)(NSArray<NautilusCampaignInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 共通キャンペーン件数取得
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param lastCheckDatetime 最終確認時刻
+///
+/// \param completion 成功時はキャンペーン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getCommonCampaignCountWithLastCheckDatetime:(NSDate * _Nullable)lastCheckDatetime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// 個人別キャンペーン取得
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param campaignIdList キャンペーンIDリスト
+///
+/// \param lastCheckDatetime 最終確認時刻
+///
+/// \param keyword 検索キーワード
+///
+/// \param categoryIdList カテゴリIDの配列
+///
+/// \param limit リミット
+///
+/// \param offset オフセット
+///
+/// \param useCache キャッシュを利用するかどうか
+///
+/// \param sort キャンペーンの並び順
+///
+/// \param completion 成功時はキャンペーン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getPrivateCampaignListWithCampaignIdList:(NSArray<NSNumber *> * _Nullable)campaignIdList lastCheckDatetime:(NSDate * _Nullable)lastCheckDatetime keyword:(NSString * _Nullable)keyword categoryIdList:(NSArray<NSNumber *> * _Nullable)categoryIdList limitNumber:(NSNumber * _Nullable)limitNumber offsetNumber:(NSNumber * _Nullable)offsetNumber useCache:(BOOL)useCache sort:(NautilusCampaignSort * _Nullable)sort completion:(void (^ _Nonnull)(NSArray<NautilusCampaignInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 個人別キャンペーン件数取得
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param lastCheckDatetime 最終確認時刻
+///
+/// \param completion 成功時はキャンペーン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getPrivateCampaignCountWithLastCheckDatetime:(NSDate * _Nullable)lastCheckDatetime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// お気に入り店舗キャンペーン取得
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param campaignIdList キャンペーンIDリスト
+///
+/// \param lastCheckDatetime 最終確認時刻
+///
+/// \param keyword 検索キーワード
+///
+/// \param categoryIdList カテゴリIDの配列
+///
+/// \param limit リミット
+///
+/// \param offset オフセット
+///
+/// \param useCache キャッシュを利用するかどうか
+///
+/// \param sort キャンペーンの並び順
+///
+/// \param completion 成功時はキャンペーン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getFavoriteShopCampaignListWithCampaignIdList:(NSArray<NSNumber *> * _Nullable)campaignIdList lastCheckDatetime:(NSDate * _Nullable)lastCheckDatetime keyword:(NSString * _Nullable)keyword categoryIdList:(NSArray<NSNumber *> * _Nullable)categoryIdList limitNumber:(NSNumber * _Nullable)limitNumber offsetNumber:(NSNumber * _Nullable)offsetNumber useCache:(BOOL)useCache sort:(NautilusCampaignSort * _Nullable)sort completion:(void (^ _Nonnull)(NSArray<NautilusCampaignInfo *> * _Nullable, NSError * _Nullable))completion;
+/// お気に入り店舗キャンペーン件数取得
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param lastCheckDatetime 最終確認時刻
+///
+/// \param completion 成功時はキャンペーン一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getFavoriteShopCampaignCountWithLastCheckDatetime:(NSDate * _Nullable)lastCheckDatetime completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+/// キャンペーン登録
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param campaignID キャンペーンID
+///
+/// \param optionalParamList 利用時におまけのパラメータをアプリ毎に送りたい場合用
+///
+/// \param campaignType キャンペーン種別 1:全体 2:個人別 3:店舗別
+///
+/// \param completion 成功時はtrue, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)registerCampaignWithCampaignID:(NSInteger)campaignID optionalParamList:(NSArray<NautilusCampaignOptionalParam *> * _Nullable)optionalParamList campaignType:(enum NautilusCampaignType)campaignType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// キャンペーンカテゴリ一覧取得
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// \param completion 成功時はキャンペーンカテゴリ一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getCampaignCategoryListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCampaignCategory *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -334,6 +441,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// MA 2.0 キャンペーンカテゴリー情報
 SWIFT_CLASS("_TtC19NautilusCampaignSDK24NautilusCampaignCategory")
 @interface NautilusCampaignCategory : NSObject
+/// 階層(1~n)
+@property (nonatomic, readonly) NSInteger hierarchy;
+/// 親カテゴリIDのNSNumber (自身の場合はcategory_idが入る)
+@property (nonatomic, readonly, strong) NSNumber * _Nullable parentCategoryIDNumber;
+/// カテゴリID
+@property (nonatomic, readonly) NSInteger categoryID;
+/// カテゴリ名
+@property (nonatomic, readonly, copy) NSString * _Nonnull categoryName;
+/// 階層内での並び順
+@property (nonatomic, readonly) NSInteger sortNo;
+/// 別名
+@property (nonatomic, readonly, copy) NSString * _Nonnull alias;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -390,6 +509,48 @@ SWIFT_CLASS("_TtC19NautilusCampaignSDK21NautilusCampaignImage")
 /// MA 2.0 キャンペーン情報
 SWIFT_CLASS("_TtC19NautilusCampaignSDK20NautilusCampaignInfo")
 @interface NautilusCampaignInfo : NSObject
+/// キャンペーンID
+@property (nonatomic, readonly) NSInteger campaignID;
+/// キャンペーンの管理上のタイトル
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignManageTitle;
+/// キャンペーンのタイトル
+@property (nonatomic, readonly, copy) NSString * _Nullable campaignTitle;
+/// キャンペーンの本文
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignText;
+/// キャンペーンのお知らせ文言
+@property (nonatomic, readonly, copy) NSString * _Nullable noticeText;
+/// キャンペーンの掲載開始日時
+@property (nonatomic, readonly, copy) NSDate * _Nonnull publishStartDatetime;
+/// キャンペーンの掲載終了日時
+@property (nonatomic, readonly, copy) NSDate * _Nullable publishEndDatetime;
+/// キャンペーンの利用開始日時
+@property (nonatomic, readonly, copy) NSDate * _Nullable useStartDatetime;
+/// キャンペーンの利用終了日時
+@property (nonatomic, readonly, copy) NSDate * _Nullable useEndDatetime;
+/// キャンペーンのカテゴリIDリスト
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nullable categoryIDList;
+/// キャンペーンの並び順番号（NSNumber版）
+@property (nonatomic, readonly, strong) NSNumber * _Nullable sortNoNumber;
+/// キャンペーンの検索文言
+@property (nonatomic, readonly, copy) NSString * _Nullable searchWord;
+/// キャンペーン画像リスト
+@property (nonatomic, readonly, copy) NSArray<NautilusCampaignImage *> * _Nullable campaignImageList;
+/// キャンペーンにエントリーした日時
+@property (nonatomic, readonly, copy) NSDate * _Nullable entryDatetime;
+/// キャンペーン種別
+@property (nonatomic, readonly) enum NautilusCampaignType campaignType;
+/// キャンペーンの登録数（NSNumber版）
+@property (nonatomic, readonly, strong) NSNumber * _Nullable entryCountNumber;
+/// エイリアス
+@property (nonatomic, readonly, copy) NSString * _Nullable alias;
+/// キャンペーン管理コード
+@property (nonatomic, readonly, copy) NSString * _Nullable campaignManageCode;
+/// 管理画面で設定された登録上限数
+/// 上限指定なしの場合は0 指定があれば1以上の数値を返却
+@property (nonatomic, readonly) NSInteger entryLimit;
+/// 登録上限に達しているかを返却
+/// 到達＝true　未達=false
+@property (nonatomic, readonly) BOOL isEntryLimitOver;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
