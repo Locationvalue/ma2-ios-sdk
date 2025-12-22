@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusNotificationSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusNotificationSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -17,13 +17,17 @@ import _SwiftConcurrencyShims
   case normal
   case disaster
   case mail
+  #if compiler(>=5.3) && $NonescapableTypes
   public var intValue: Swift.Int? {
     get
   }
+  #endif
   public var eventPropertyValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -79,7 +83,9 @@ public let NautilusNotificationErrorDomain: Swift.String
   case invalidUserPID = 905
   case developerError = 906
   case requiresLoginStatus = 907
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -99,65 +105,107 @@ public typealias NautilusNotificationHandlerAction = (NautilusNotificationSDK.Na
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class NautilusNotificationHandler : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   @objc final public func handleRemoteNotification(request: UserNotifications.UNNotificationRequest, action: NautilusNotificationSDK.NautilusNotificationHandlerAction?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   @objc final public func handleRemoteNotification(userInfo: [Swift.AnyHashable : Any], action: NautilusNotificationSDK.NautilusNotificationHandlerAction?) -> Swift.Bool
+  #endif
   @objc final public func canHandleRemoteNotification(request: UserNotifications.UNNotificationRequest) -> Swift.Bool
   @objc final public func canHandleRemoteNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
   @objc final public func didReceive(request: UserNotifications.UNNotificationRequest, bestAttemptContent: UserNotifications.UNMutableNotificationContent, completion: @escaping @Sendable (Swift.Bool) -> Swift.Void)
   @objc final public func serviceExtensionTimeWillExpire(request: UserNotifications.UNNotificationRequest, bestAttemptContent: UserNotifications.UNMutableNotificationContent, contentHandler: (UserNotifications.UNNotificationContent) -> Swift.Void)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc final public class NautilusNotification : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusNotification : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
   @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
-  final public var notificationDeviceID: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  nonisolated final public var notificationDeviceID: Swift.String? {
     get
   }
+  #endif
   @objc final public let notificationHandler: NautilusNotificationSDK.NautilusNotificationHandler
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func notification() -> NautilusNotificationSDK.NautilusNotification
   @objc(notificationAppNamed:) public static func notification(appName: Swift.String) -> NautilusNotificationSDK.NautilusNotification
-  @objc final public func removePushDeviceID()
+  @objc nonisolated final public func removePushDeviceID()
   public typealias NotificationDeviceRegistrationCompletionHandler = (Swift.Result<Swift.String, NautilusCoreSDK.NautilusPushDeviceRegistraionFailureReason>) -> Swift.Void
-  @nonobjc final public func register(deviceToken: Foundation.Data, completion: @escaping NautilusNotificationSDK.NautilusNotification.NotificationDeviceRegistrationCompletionHandler)
-  @objc(registerDeviceToken:completion:) final public func register(deviceToken: Foundation.Data, completion: @escaping (Swift.String?, Foundation.NSError?) -> Swift.Void)
-  @nonobjc final public func register(deviceToken: Swift.String, completion: @escaping NautilusNotificationSDK.NautilusNotification.NotificationDeviceRegistrationCompletionHandler)
-  @objc(registerDeviceTokenString:completion:) final public func register(deviceToken: Swift.String, completion: @escaping (Swift.String?, Foundation.NSError?) -> Swift.Void)
+  @nonobjc final nonisolated public func register(deviceToken: Foundation.Data, completion: @escaping NautilusNotificationSDK.NautilusNotification.NotificationDeviceRegistrationCompletionHandler)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(registerDeviceToken:completion:) nonisolated final public func register(deviceToken: Foundation.Data, completion: @escaping (Swift.String?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  @nonobjc final nonisolated public func register(deviceToken: Swift.String, completion: @escaping NautilusNotificationSDK.NautilusNotification.NotificationDeviceRegistrationCompletionHandler)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(registerDeviceTokenString:completion:) nonisolated final public func register(deviceToken: Swift.String, completion: @escaping (Swift.String?, Foundation.NSError?) -> Swift.Void)
+  #endif
   @available(*, deprecated, renamed: "register(deviceToken:completion:)")
-  @objc(registerDeviceToken:) final public func register(deviceToken: Foundation.Data)
+  @objc(registerDeviceToken:) nonisolated final public func register(deviceToken: Foundation.Data)
   @available(*, deprecated, renamed: "register(deviceToken:completion:)")
-  @objc(registerDeviceTokenString:) final public func register(deviceToken: Swift.String)
-  @nonobjc final public func register(installID: Swift.String, completion: @escaping NautilusNotificationSDK.NautilusNotification.NotificationDeviceRegistrationCompletionHandler)
-  @objc(registerInstallID:completion:) final public func register(installID: Swift.String, completion: @escaping (Swift.String?, Foundation.NSError?) -> Swift.Void)
-  @nonobjc final public func registerNotificationDevice(completion: @escaping NautilusNotificationSDK.NautilusNotification.NotificationDeviceRegistrationCompletionHandler)
-  @objc(registerNotificationDeviceWithCompletion:) final public func register(completion: @escaping (Swift.String?, Foundation.NSError?) -> Swift.Void)
-  final public func registerPushTarget(registrationTarget: NautilusNotificationSDK.NautilusRegistrationTarget, completion: @escaping (Swift.Result<Swift.Void, NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
-  @objc final public func registerPushTarget(registrationTarget: NautilusNotificationSDK.NautilusRegistrationTarget, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  final public func getRemoteNotifications(pushType: NautilusNotificationSDK.NautilusPushType = .normal, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
-  @objc(getRemoteNotificationsWithPushType:completion:) final public func objcGetRemoteNotifications(pushType: NautilusNotificationSDK.NautilusPushType, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
-  final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, pushType: NautilusNotificationSDK.NautilusPushType = .normal, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
-  @objc(getRemoteNotificationsWithStart:count:pushType:completion:) final public func objcGetRemoteNotifications(start: Swift.Int, count: Swift.Int, pushType: NautilusNotificationSDK.NautilusPushType, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
-  final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, checkDate: Foundation.Date, pushType: NautilusNotificationSDK.NautilusPushType = .normal, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
-  @objc(getRemoteNotificationsWithStart:count:checkDate:pushType:completion:) final public func objcGetRemoteNotifications(start: Swift.Int, count: Swift.Int, checkDate: Foundation.Date, pushType: NautilusNotificationSDK.NautilusPushType, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
-  final public func getRemoteNotifications(start: Swift.Int? = nil, count: Swift.Int? = nil, checkDate: Foundation.Date? = nil, isExternalPushOnly: Swift.Bool? = nil, pushType: NautilusNotificationSDK.NautilusPushType = .normal, completion: @escaping (Swift.Result<[NautilusNotificationSDK.NautilusRemoteMessage], NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
-  final public func deleteHistory(pushIDs: [Swift.Int], completion: @escaping (Swift.Result<Swift.Void, NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
-  @objc final public func deleteHistory(pushIDs: [Swift.Int], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  final public func getPushDetail(pushID: Swift.Int, completion: @escaping (Swift.Result<NautilusNotificationSDK.NautilusPushDetailInfo, NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
-  @objc final public func getPushDetail(pushID: Swift.Int, completion: @escaping (NautilusNotificationSDK.NautilusPushDetailInfo?, Foundation.NSError?) -> Swift.Void)
+  @objc(registerDeviceTokenString:) nonisolated final public func register(deviceToken: Swift.String)
+  @nonobjc final nonisolated public func register(installID: Swift.String, completion: @escaping NautilusNotificationSDK.NautilusNotification.NotificationDeviceRegistrationCompletionHandler)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(registerInstallID:completion:) nonisolated final public func register(installID: Swift.String, completion: @escaping (Swift.String?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  @nonobjc final nonisolated public func registerNotificationDevice(completion: @escaping NautilusNotificationSDK.NautilusNotification.NotificationDeviceRegistrationCompletionHandler)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(registerNotificationDeviceWithCompletion:) nonisolated final public func register(completion: @escaping (Swift.String?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func registerPushTarget(registrationTarget: NautilusNotificationSDK.NautilusRegistrationTarget, completion: @escaping (Swift.Result<Swift.Void, NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func registerPushTarget(registrationTarget: NautilusNotificationSDK.NautilusRegistrationTarget, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  nonisolated final public func getRemoteNotifications(pushType: NautilusNotificationSDK.NautilusPushType = .normal, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(getRemoteNotificationsWithPushType:completion:) nonisolated final public func objcGetRemoteNotifications(pushType: NautilusNotificationSDK.NautilusPushType, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  nonisolated final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, pushType: NautilusNotificationSDK.NautilusPushType = .normal, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(getRemoteNotificationsWithStart:count:pushType:completion:) nonisolated final public func objcGetRemoteNotifications(start: Swift.Int, count: Swift.Int, pushType: NautilusNotificationSDK.NautilusPushType, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  nonisolated final public func getRemoteNotifications(start: Swift.Int, count: Swift.Int, checkDate: Foundation.Date, pushType: NautilusNotificationSDK.NautilusPushType = .normal, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(getRemoteNotificationsWithStart:count:checkDate:pushType:completion:) nonisolated final public func objcGetRemoteNotifications(start: Swift.Int, count: Swift.Int, checkDate: Foundation.Date, pushType: NautilusNotificationSDK.NautilusPushType, completion: @escaping ([NautilusNotificationSDK.NautilusRemoteMessage]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  nonisolated final public func getRemoteNotifications(start: Swift.Int? = nil, count: Swift.Int? = nil, checkDate: Foundation.Date? = nil, isExternalPushOnly: Swift.Bool? = nil, pushType: NautilusNotificationSDK.NautilusPushType = .normal, completion: @escaping (Swift.Result<[NautilusNotificationSDK.NautilusRemoteMessage], NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func deleteHistory(pushIDs: [Swift.Int], completion: @escaping (Swift.Result<Swift.Void, NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func deleteHistory(pushIDs: [Swift.Int], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getPushDetail(pushID: Swift.Int, completion: @escaping (Swift.Result<NautilusNotificationSDK.NautilusPushDetailInfo, NautilusNotificationSDK.NautilusNotificationNetworkError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func getPushDetail(pushID: Swift.Int, completion: @escaping (NautilusNotificationSDK.NautilusPushDetailInfo?, Foundation.NSError?) -> Swift.Void)
+  #endif
   @objc deinit
 }
 extension NautilusNotificationSDK.NautilusPushType : Swift.Equatable {}
