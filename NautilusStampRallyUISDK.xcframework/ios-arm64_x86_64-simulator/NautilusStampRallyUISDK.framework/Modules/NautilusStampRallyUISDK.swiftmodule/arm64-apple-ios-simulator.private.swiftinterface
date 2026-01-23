@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusStampRallyUISDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusStampRallyUISDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CoreLocation
 import DeveloperToolsSupport
 import Foundation
@@ -25,12 +25,8 @@ import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class NautilusStampRallySpotListViewController : UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @objc public protocol NautilusStampRallyPrizeActionDelegate {
@@ -44,12 +40,8 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 extension NautilusStampRallyUISDK.NautilusStampRallyListViewController : NautilusStampRallyUISDK.NautilusStampRallyListInstantiatable {
@@ -58,12 +50,10 @@ extension NautilusStampRallyUISDK.NautilusStampRallyListViewController : Nautilu
 @objc public protocol NautilusStampRallyListInstantiatable {
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp) -> UIKit.UIViewController
 }
-@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusStampRallyUI : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  #if compiler(>=5.3) && $NonescapableTypes
+@_hasMissingDesignatedInitializers @objc final public class NautilusStampRallyUI : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
-  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -74,7 +64,7 @@ extension NautilusStampRallyUISDK.NautilusStampRallyListViewController : Nautilu
   @objc final public let name: Swift.String?
   @objc final public let router: NautilusStampRallyUISDK.NautilusStampRallyRouter
   @objc weak final public var prizeActionDelegate: (any NautilusStampRallyUISDK.NautilusStampRallyPrizeActionDelegate)?
-  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
   final public var spotPinImageProvider: (any NautilusStampRallyUISDK.NautilusSpotListPinImageProvider)?
@@ -82,15 +72,15 @@ extension NautilusStampRallyUISDK.NautilusStampRallyListViewController : Nautilu
   @objc public static func stampRallyUI() -> NautilusStampRallyUISDK.NautilusStampRallyUI
   @objc(stampRallyUIAppNamed:) public static func stampRallyUI(appName: Swift.String) -> NautilusStampRallyUISDK.NautilusStampRallyUI
   @available(*, deprecated, message: "Use NautilusStampRallyRouter function.")
-  @objc nonisolated final public func presentStampRallyListViewController(in viewController: UIKit.UIViewController)
+  @objc final public func presentStampRallyListViewController(in viewController: UIKit.UIViewController)
   @available(*, deprecated, message: "Use NautilusStampRallyRouter function.")
-  @objc nonisolated final public func instantiateStampRallyListViewController() -> NautilusStampRallyUISDK.NautilusStampRallyListViewController
+  @objc final public func instantiateStampRallyListViewController() -> NautilusStampRallyUISDK.NautilusStampRallyListViewController
   @available(*, deprecated, message: "Use NautilusStampRallyRouter function.")
-  @objc nonisolated final public func instantiateStampRallyDetailViewController(stampRallyID: Swift.Int, hasCloseButton: Swift.Bool) -> NautilusStampRallyUISDK.NautilusStampRallyDetailViewController
+  @objc final public func instantiateStampRallyDetailViewController(stampRallyID: Swift.Int, hasCloseButton: Swift.Bool) -> NautilusStampRallyUISDK.NautilusStampRallyDetailViewController
   @available(*, deprecated, message: "Use NautilusStampRallyRouter function.")
-  @objc nonisolated final public func instantiateStampRallyDetailViewController(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> NautilusStampRallyUISDK.NautilusStampRallyDetailViewController
+  @objc final public func instantiateStampRallyDetailViewController(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> NautilusStampRallyUISDK.NautilusStampRallyDetailViewController
   @available(*, deprecated, message: "Use NautilusStampRallyRouter function.")
-  @objc nonisolated final public func instantiateStampRallySpotListViewController(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
+  @objc final public func instantiateStampRallySpotListViewController(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class NautilusStampRallySpotListMapViewController : NautilusUISDK.NautilusBottomSheetContainerViewController, NautilusUISDK.NautilusBottomSheetContainerViewControllerDelegate {
@@ -107,12 +97,8 @@ extension NautilusStampRallyUISDK.NautilusStampRallyListViewController : Nautilu
   @_Concurrency.MainActor @preconcurrency final public func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController, didChangeTo screenOverlayType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType)
   @_Concurrency.MainActor @preconcurrency final public func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController)
   @_Concurrency.MainActor @preconcurrency final public func bottomSheetViewController(_ bottomSheetViewController: NautilusUISDK.NautilusBottomSheetContainerViewController, update sheetContainerViewFrame: CoreFoundation.CGRect, didChangeBottomSheetFrameWithReason reason: NautilusUISDK.NautilusBottomSheetFrameChangeReason)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 extension NautilusStampRallyUISDK.NautilusStampRallySpotListMapViewController : NautilusStampRallyUISDK.NautilusStampRallySpotListInstantiatable {
@@ -126,9 +112,7 @@ extension NautilusStampRallyUISDK.NautilusStampRallySpotListMapViewController : 
   case stampRallyDetail
   case stampCodeReader
   case spotList
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [NautilusStampRallyUISDK.NautilusStampRallyRoutableScreen]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [NautilusStampRallyUISDK.NautilusStampRallyRoutableScreen] {
@@ -141,18 +125,12 @@ extension NautilusStampRallyUISDK.NautilusStampRallySpotListMapViewController : 
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency final public class NautilusStampRallyDetailViewController : UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 extension NautilusStampRallyUISDK.NautilusStampRallyDetailViewController : NautilusStampRallyUISDK.NautilusStampRallyDetailInstantiatable {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public static func instantiate(app: NautilusCoreSDK.NautilusApp, stampRallyID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc public static func instantiate(app: NautilusCoreSDK.NautilusApp, stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
 }
 extension NautilusStampRallyUISDK.NautilusStampRallyDetailViewController : NautilusCodeReaderSDK.NautilusCodeReaderHandler {
@@ -161,25 +139,19 @@ extension NautilusStampRallyUISDK.NautilusStampRallyDetailViewController : Nauti
 }
 @objc public protocol NautilusStampRallyDetailInstantiatable {
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, stampRallyID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
-  #endif
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusStampRallyRouter : ObjectiveC.NSObject {
   @objc final public func register(screen: NautilusStampRallyUISDK.NautilusStampRallyRoutableScreen, viewControllerClass: UIKit.UIViewController.Type)
   @objc final public func unregister(screen: NautilusStampRallyUISDK.NautilusStampRallyRoutableScreen)
   @objc final public func instantiateStampRallyList() -> UIKit.UIViewController
   @objc final public func instantiateStampRallyDetail(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func instantiateStampRallyDetail(stampRallyID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
-  #endif
   @objc final public func instantiateStampCodeReader(setting: NautilusCodeReaderSDK.NautilusCodeReaderSetting, handler: any NautilusCodeReaderSDK.NautilusCodeReaderHandler) -> UIKit.UIViewController
   @objc final public func instantiateStampRallySpotList(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool) -> UIKit.UIViewController
   @objc final public func routeStampRallyList(in viewController: UIKit.UIViewController)
   @objc final public func routeStampRallyDetail(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool, in viewController: UIKit.UIViewController)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func routeStampRallyDetail(stampRallyID: Swift.Int, hasCloseButton: Swift.Bool, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil, in viewController: UIKit.UIViewController)
-  #endif
   @objc final public func routeStampCodeReader(setting: NautilusCodeReaderSDK.NautilusCodeReaderSetting, handler: any NautilusCodeReaderSDK.NautilusCodeReaderHandler, in viewController: UIKit.UIViewController)
   @objc final public func routeStampRallySpotList(stampRally: NautilusStampSDK.NautilusStampRallyInfo, hasCloseButton: Swift.Bool, in viewController: UIKit.UIViewController)
   @objc deinit
