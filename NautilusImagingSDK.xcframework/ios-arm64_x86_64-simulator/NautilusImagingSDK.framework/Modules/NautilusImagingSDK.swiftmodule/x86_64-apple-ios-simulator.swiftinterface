@@ -18,6 +18,9 @@ final public class NautilusImageDownloader {
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func download(from url: Foundation.URL, completion: @escaping @_Concurrency.MainActor @Sendable (UIKit.UIImage?) -> Swift.Void)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency final public func downloadWithURL(from url: Foundation.URL, completion: @escaping @_Concurrency.MainActor @Sendable (UIKit.UIImage?, Foundation.URL) -> Swift.Void)
+  #endif
   @_Concurrency.MainActor @preconcurrency final public func cancel()
   @objc deinit
 }
