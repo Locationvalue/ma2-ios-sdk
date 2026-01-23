@@ -381,39 +381,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// アプリ内遷移の情報
 SWIFT_CLASS("_TtC17NautilusBannerSDK21NautilusBannerAppLink")
 @interface NautilusBannerAppLink : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull transitionParam;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@protocol NautilusBannerViewDelegate;
 @class NSCoder;
 /// バナーViewの基底クラス
 SWIFT_CLASS("_TtC17NautilusBannerSDK18NautilusBannerView")
 @interface NautilusBannerView : UIView
-/// バナーViewの操作をアプリ側で制御するためのデリゲート
-@property (nonatomic, weak) id <NautilusBannerViewDelegate> _Nullable delegate;
-/// バナーViewに読み込むカテゴリ
-/// 設定されると自動で画像を読み込みます
-@property (nonatomic, strong) NautilusBannerCategory * _Nullable currentBannerCategory;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-/// BannerView初期化後、必ず呼び出してください
-/// \param bannerInstance バナーインスタンス
-///
-- (void)prepareFor:(NautilusBanner * _Nonnull)bannerInstance;
 @end
 
 /// バナーカルーセルView
 SWIFT_CLASS("_TtC17NautilusBannerSDK26NautilusBannerCarouselView")
 @interface NautilusBannerCarouselView : NautilusBannerView
-/// ソースコードからNautilusBannerCarouselViewを初期化する際に使用する
-/// \param frame 矩形の位置と寸法
-///
-///
-/// returns:
-/// NautilusBannerCarouselView
-+ (NautilusBannerCarouselView * _Nonnull)initializedNautilusBannerCarouselViewWithFrame:(CGRect)frame SWIFT_WARN_UNUSED_RESULT;
 - (void)layoutSubviews;
 - (void)updateConstraints;
 @end
@@ -425,23 +407,9 @@ SWIFT_CLASS("_TtC17NautilusBannerSDK26NautilusBannerCarouselView")
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView * _Nonnull)scrollView;
 @end
 
-@class NSNumber;
 /// カテゴリー情報
 SWIFT_CLASS("_TtC17NautilusBannerSDK22NautilusBannerCategory")
 @interface NautilusBannerCategory : NSObject
-/// カテゴリー階層での自身の深さ 階層は1から始まる
-@property (nonatomic, readonly) NSInteger hierarchy;
-/// 自身の親となるカテゴリーのID parent_category_id が自身の category_id となる場合、ツリーのルートとなる
-/// Objective-C からアクセスする場合はこちらを使用してください
-@property (nonatomic, readonly, strong) NSNumber * _Nullable parentCategoryIdentifierNumber;
-/// カテゴリーのID
-@property (nonatomic, readonly) NSInteger categoryIdentifier;
-/// カテゴリーの名称
-@property (nonatomic, readonly, copy) NSString * _Nonnull categoryName;
-/// 同一階層内での並び順を表す値
-@property (nonatomic, readonly) NSInteger sortNo;
-/// カテゴリーに設定されている別名
-@property (nonatomic, readonly, copy) NSString * _Nonnull alias;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -489,36 +457,9 @@ typedef SWIFT_ENUM(NSInteger, NautilusBannerError, open) {
 };
 static NSString * _Nonnull const NautilusBannerErrorDomain = @"NautilusBannerSDK.NautilusBannerError";
 
-@class NSURL;
-@class NautilusBannerWebLink;
 /// バナー情報
 SWIFT_CLASS("_TtC17NautilusBannerSDK18NautilusBannerInfo")
 @interface NautilusBannerInfo : NSObject
-/// バナーID
-@property (nonatomic, readonly) NSInteger bannerIdentifier;
-/// 掲載開始日時
-@property (nonatomic, readonly, copy) NSString * _Nonnull publishStartDatetimeString;
-/// 掲載終了日時
-@property (nonatomic, readonly, copy) NSString * _Nullable publishEndDatetimeString;
-/// バナー画像のURL
-@property (nonatomic, readonly, copy) NSURL * _Nullable imageURL;
-/// カテゴリーID. すべての場合は０
-/// Objective-C用のNSNumber変換プロパティ
-@property (nonatomic, readonly, strong) NSNumber * _Nullable categoryIdentifierNumber;
-/// ソート順. 未設定は0
-/// Objective-C用のNSNumber変換プロパティ
-@property (nonatomic, readonly, strong) NSNumber * _Nullable sortNumberNumber;
-/// エイリアス
-@property (nonatomic, readonly, copy) NSString * _Nullable alias;
-/// バナーの遷移先の指定
-/// Objective-C用のNSNumber変換プロパティ
-@property (nonatomic, readonly, strong) NSNumber * _Nullable linkTypeNSNumber;
-/// web遷移の情報
-@property (nonatomic, readonly, strong) NautilusBannerWebLink * _Nullable webLink;
-/// アプリ内遷移の情報
-@property (nonatomic, readonly, strong) NautilusBannerAppLink * _Nullable appLink;
-/// 管理上のタイトル
-@property (nonatomic, readonly, copy) NSString * _Nonnull bannerManageTitle;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -536,24 +477,13 @@ typedef SWIFT_ENUM(NSInteger, NautilusBannerLinkType, open) {
 /// バナーリストView
 SWIFT_CLASS("_TtC17NautilusBannerSDK22NautilusBannerListView")
 @interface NautilusBannerListView : NautilusBannerView
-/// ソースコードからNautilusBannerListViewを初期化する際に使用する
-/// \param frame 矩形の位置と寸法
-///
-///
-/// returns:
-/// NautilusBannerListView
-+ (NautilusBannerListView * _Nonnull)initializedNautilusBannerListViewWithFrame:(CGRect)frame SWIFT_WARN_UNUSED_RESULT;
 - (void)layoutSubviews;
 - (void)updateConstraints;
-- (void)prepareFor:(NautilusBanner * _Nonnull)bannerInstance;
 @end
 
-@class NSDate;
-enum NautilusBannerLogType : NSInteger;
 /// バナーログ
 SWIFT_CLASS("_TtC17NautilusBannerSDK17NautilusBannerLog")
 @interface NautilusBannerLog : NSObject
-- (nonnull instancetype)initWithBannerID:(NSInteger)bannerID actionDatetime:(NSDate * _Nonnull)actionDatetime type:(enum NautilusBannerLogType)type OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -564,6 +494,7 @@ typedef SWIFT_ENUM(NSInteger, NautilusBannerLogType, open) {
   NautilusBannerLogTypeTap = 1,
 };
 
+@class NautilusBannerWebLink;
 /// バナーの表示タイミング・タップした時の操作をアプリ側で制御するためのデリゲート
 SWIFT_PROTOCOL("_TtP17NautilusBannerSDK26NautilusBannerViewDelegate_")
 @protocol NautilusBannerViewDelegate
@@ -612,12 +543,6 @@ SWIFT_PROTOCOL("_TtP17NautilusBannerSDK26NautilusBannerViewDelegate_")
 /// web遷移の情報
 SWIFT_CLASS("_TtC17NautilusBannerSDK21NautilusBannerWebLink")
 @interface NautilusBannerWebLink : NSObject
-/// リンクのURL
-@property (nonatomic, readonly, copy) NSURL * _Nonnull linkURL;
-/// ブラウザで表示するタイトル
-@property (nonatomic, readonly, copy) NSString * _Nullable browserTitle;
-/// useCIDをNSNumberに変換した値
-@property (nonatomic, readonly, strong) NSNumber * _Nullable useCIDNumber;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

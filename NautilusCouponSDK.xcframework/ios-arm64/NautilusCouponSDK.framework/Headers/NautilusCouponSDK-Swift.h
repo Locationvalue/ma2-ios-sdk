@@ -945,20 +945,17 @@ enum NautilusCouponPublishTriggerType : NSInteger;
 SWIFT_CLASS("_TtC17NautilusCouponSDK28NautilusCouponPublishTrigger")
 @interface NautilusCouponPublishTrigger : NSObject
 /// クーポン発行APIに引き渡すパラメーターを初期化する
-/// Objective-Cから呼び出すためのイニシャライザ
-/// note:
-/// ambiguousエラーを回避するため引数名を変更
 /// \param publishTriggerType 発行タイミング
 ///
 /// \param codeText 指定コード発行の時必須
 ///
 /// \param cardNumber カード連携発行の時必須
 ///
-/// \param cardTypeNumber カード連携発行の時必須
+/// \param cardType カード連携発行の時必須
 ///
-/// \param couponIDsNumber 景品発行の時必須
+/// \param couponIDs 景品発行の時必須
 ///
-- (nonnull instancetype)initWithPublishTriggerType:(enum NautilusCouponPublishTriggerType)publishTriggerType codeText:(NSString * _Nullable)codeText cardNumber:(NSString * _Nullable)cardNumber cardTypeNumber:(NSNumber * _Nullable)cardTypeNumber couponIDsNumber:(NSArray<NSNumber *> * _Nullable)couponIDsNumber OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPublishTriggerType:(enum NautilusCouponPublishTriggerType)publishTriggerType codeText:(NSString * _Nullable)codeText cardNumber:(NSString * _Nullable)cardNumber cardType:(NSNumber * _Nullable)cardType couponIDs:(NSArray<NSNumber *> * _Nullable)couponIDs OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

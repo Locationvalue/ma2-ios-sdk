@@ -94,31 +94,16 @@ public let NautilusLotteryErrorDomain: Swift.String
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusLotteryIntervalCheckResult : ObjectiveC.NSObject {
-  @objc final public let checkResult: Swift.Bool
+  final public let checkResult: Swift.Bool
   final public let rank: Swift.Int?
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public var rankNumber: Foundation.NSNumber? {
-    @objc get
-  }
-  #endif
-  @objc final public let prize: NautilusLotterySDK.NautilusLotteryPrizeInfo?
+  final public let prize: NautilusLotterySDK.NautilusLotteryPrizeInfo?
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusLotteryPrizeInfo : ObjectiveC.NSObject {
   final public let prizeID: Swift.Int?
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public var prizeIDNumber: Foundation.NSNumber? {
-    @objc get
-  }
-  #endif
   final public let prizeType: NautilusLotterySDK.NautilusLotteryPrizeType?
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public var prizeTypeNumber: Foundation.NSNumber? {
-    @objc get
-  }
-  #endif
-  @objc final public let coupon: NautilusLotterySDK.NautilusLotteryPrizeCouponInfo?
-  @objc final public let point: NautilusLotterySDK.NautilusLotteryPrizePointInfo?
+  final public let coupon: NautilusLotterySDK.NautilusLotteryPrizeCouponInfo?
+  final public let point: NautilusLotterySDK.NautilusLotteryPrizePointInfo?
   @objc deinit
 }
 @objc public enum NautilusLotteryPrizeType : Swift.Int {
@@ -134,43 +119,28 @@ public let NautilusLotteryErrorDomain: Swift.String
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusLotteryPrizeCouponInfo : ObjectiveC.NSObject {
   final public let exchangeID: Swift.Int?
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public var exchangeIDNumber: Foundation.NSNumber? {
-    @objc get
-  }
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusLotteryPrizePointInfo : ObjectiveC.NSObject {
   final public let addPoint: Swift.Int?
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public var addPointNumber: Foundation.NSNumber? {
-    @objc get
-  }
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusLotteryResult : ObjectiveC.NSObject {
-  @objc final public let rank: Swift.Int
-  @objc final public let prize: NautilusLotterySDK.NautilusLotteryPrizeInfo?
+  final public let rank: Swift.Int
+  final public let prize: NautilusLotterySDK.NautilusLotteryPrizeInfo?
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusLotteryInfo : ObjectiveC.NSObject {
-  @objc final public let lotteryID: Swift.Int
-  @objc final public let lotteryTitle: Swift.String?
-  @objc final public let alias: Swift.String?
-  @objc final public let imageURL: Foundation.URL?
+  final public let lotteryID: Swift.Int
+  final public let lotteryTitle: Swift.String?
+  final public let alias: Swift.String?
+  final public let imageURL: Foundation.URL?
   final public let imageAspectRatio: Swift.Double?
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public var imageAspectRatioNumber: Foundation.NSNumber? {
-    @objc get
-  }
-  #endif
-  @objc final public let publishStartDate: Foundation.Date
-  @objc final public let publishEndDate: Foundation.Date?
-  @objc final public let lotteryType: NautilusLotterySDK.NautilusLotteryType
-  @objc final public let isRepeat: Swift.Bool
-  @objc final public let isCompleted: Swift.Bool
+  final public let publishStartDate: Foundation.Date
+  final public let publishEndDate: Foundation.Date?
+  final public let lotteryType: NautilusLotterySDK.NautilusLotteryType
+  final public let isRepeat: Swift.Bool
+  final public let isCompleted: Swift.Bool
   @objc deinit
 }
 @objc public enum NautilusLotteryType : Swift.Int {
