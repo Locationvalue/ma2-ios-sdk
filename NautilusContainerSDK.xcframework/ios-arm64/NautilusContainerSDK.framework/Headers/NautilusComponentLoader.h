@@ -12,6 +12,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// readonly かつ状態を持たないので隔離が不要なユーティリティクラスとして明示
+__attribute__((swift_attr("nonisolated")))
 @interface NautilusComponentLoader : NSObject
 
 @property(class, nonatomic, nonnull, readonly) Class<NautilusComponent> componentClass;
