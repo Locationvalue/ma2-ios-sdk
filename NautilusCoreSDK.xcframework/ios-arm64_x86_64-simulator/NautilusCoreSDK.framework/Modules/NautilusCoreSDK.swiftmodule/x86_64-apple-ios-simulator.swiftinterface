@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusCoreSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusCoreSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CoreTelephony
 import Foundation
 import NautilusContainerSDK
@@ -15,7 +15,9 @@ import _SwiftConcurrencyShims
 public protocol NetworkServiceLogger {
   var id: Swift.String { get }
   func printRequest(_ request: Foundation.URLRequest)
+  #if compiler(>=5.3) && $NonescapableTypes
   func printResponse(_ data: Foundation.Data?, _ response: Foundation.URLResponse)
+  #endif
   func printError(_ error: any Swift.Error)
 }
 @objc public class NautilusAppNotificationInfo : ObjectiveC.NSObject {
@@ -47,7 +49,9 @@ extension Foundation.Notification {
 public typealias NautilusFeatureInitializationCompletion = (Swift.Bool, Foundation.NSError?) -> Swift.Void
 @objc public protocol NautilusFeature : NautilusContainerSDK.NautilusComponent {
   @objc static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc static var configFilename: Swift.String? { get }
+  #endif
   @objc var app: NautilusCoreSDK.NautilusApp { get }
   @objc var featureStatus: NautilusCoreSDK.NautilusFeatureStatus { get }
 }
@@ -59,7 +63,9 @@ public typealias NautilusFeatureInitializationCompletion = (Swift.Bool, Foundati
   public var isAvailable: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -75,7 +81,9 @@ public typealias NautilusFeatureInitializationCompletion = (Swift.Bool, Foundati
   case uninitializedErrorMessage
   case unavailableErrorTitle
   case unavailableErrorMessage
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -87,8 +95,12 @@ public protocol APIClient {
   static func instantiate(service: any NautilusCoreSDK.NetworkService) -> Self
   static func instantiate(service: any NautilusCoreSDK.NetworkService, callbackQueue: Foundation.OperationQueue) -> Self
   init(service: any NautilusCoreSDK.NetworkService)
+  #if compiler(>=5.3) && $NonescapableTypes
   init(service: any NautilusCoreSDK.NetworkService, callbackQueue: Foundation.OperationQueue?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func send<R>(request: R, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
+  #endif
   func cancel()
 }
 public enum NautilusDeviceInfo {
@@ -158,8 +170,12 @@ extension Foundation.URLSession {
   }
 }
 public protocol NautilusRequestParameter : NautilusCoreSDK.RequestParameter {
+  #if compiler(>=5.3) && $NonescapableTypes
   var queryParameters: [Swift.String : Any]? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var data: Foundation.Data? { get }
+  #endif
 }
 @objc public enum NautilusInitializationFailureReason : Swift.Int, Swift.Error {
   case cancelled = -10
@@ -168,7 +184,9 @@ public protocol NautilusRequestParameter : NautilusCoreSDK.RequestParameter {
   case invalidSettings
   case failToIssuePID
   case failOnServer
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -183,7 +201,9 @@ public protocol NautilusRequestParameter : NautilusCoreSDK.RequestParameter {
   case invalidCID
   case networkError
   case invalidInstance
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -200,15 +220,25 @@ public protocol NautilusRequestParameter : NautilusCoreSDK.RequestParameter {
   }
 }
 public protocol KeyChainConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   init?(with value: Any)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func convertDataArray() -> [Foundation.Data]?
+  #endif
 }
 extension Swift.String : NautilusCoreSDK.KeyChainConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func convertDataArray() -> [Foundation.Data]?
+  #endif
 }
 extension Swift.Array : NautilusCoreSDK.KeyChainConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with value: Any)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func convertDataArray() -> [Foundation.Data]?
+  #endif
 }
 final public class NautilusConcurrencyService : NautilusCoreSDK.NetworkService {
   public static let `default`: any NautilusCoreSDK.NetworkService
@@ -218,8 +248,12 @@ final public class NautilusConcurrencyService : NautilusCoreSDK.NetworkService {
   public init(session: Foundation.URLSession)
   final public func addLogger(_ logger: any NautilusCoreSDK.NetworkServiceLogger)
   final public func removeLogger(_ logger: any NautilusCoreSDK.NetworkServiceLogger)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func send<R>(request: R, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func send<R>(request: R, callbackQueue: Foundation.OperationQueue?, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
+  #endif
   final public func cancelAll()
   final public func cancel(uuid: Foundation.UUID)
   @objc deinit
@@ -247,7 +281,9 @@ extension Foundation.NSNotification.Name {
   @objc deinit
 }
 extension Foundation.Date {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func iso8601Date(from string: Swift.String) -> Foundation.Date?
+  #endif
   public static func iso8601String(from date: Foundation.Date) -> Swift.String
   public static func slashDateTime(from date: Foundation.Date) -> Swift.String
   public static func japaneseDateTime(from date: Foundation.Date) -> Swift.String
@@ -266,7 +302,9 @@ extension Foundation.Date {
   case invalidUserPID = 905
   case developerError = 906
   case requiresLoginStatus = 907
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -291,7 +329,9 @@ public typealias NautilusUserLocationUpdateCompletionHandler = (NautilusCoreSDK.
 public typealias NautilusLocationPermissionCompletionHandler = (Swift.Bool) -> Swift.Void
 @objc public protocol NautilusLocationProvider {
   @objc var canTrackUserLocation: Swift.Bool { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var latestUserLocation: NautilusCoreSDK.NautilusLocation? { get }
+  #endif
   @objc func requestUpdateUserLocation(completion: @escaping NautilusCoreSDK.NautilusUserLocationUpdateCompletionHandler)
   @objc func requestLocationPermission(completion: @escaping NautilusCoreSDK.NautilusLocationPermissionCompletionHandler)
 }
@@ -321,7 +361,9 @@ public enum NautilusAppInfo {
   }
 }
 public enum NautilusKeychain {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func loadString(for key: Swift.String) -> Swift.String?
+  #endif
   public static func loadString(for key: Swift.String, defaultValue: Swift.String) -> Swift.String
   @discardableResult
   public static func storeString(value: Swift.String, for key: Swift.String, access: CoreFoundation.CFString = kSecAttrAccessibleWhenUnlockedThisDeviceOnly) -> Swift.Bool
@@ -343,8 +385,12 @@ public protocol NetworkService {
   init(session: Foundation.URLSession)
   func addLogger(_ logger: any NautilusCoreSDK.NetworkServiceLogger)
   func removeLogger(_ logger: any NautilusCoreSDK.NetworkServiceLogger)
+  #if compiler(>=5.3) && $NonescapableTypes
   func send<R>(request: R, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func send<R>(request: R, callbackQueue: Foundation.OperationQueue?, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
+  #endif
   func cancelAll()
   func cancel(uuid: Foundation.UUID)
 }
@@ -356,8 +402,12 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
   public init(session: Foundation.URLSession)
   final public func addLogger(_ logger: any NautilusCoreSDK.NetworkServiceLogger)
   final public func removeLogger(_ logger: any NautilusCoreSDK.NetworkServiceLogger)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func send<R>(request: R, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func send<R>(request: R, callbackQueue: Foundation.OperationQueue?, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
+  #endif
   final public func cancelAll()
   final public func cancel(uuid: Foundation.UUID)
   @objc deinit
@@ -384,10 +434,16 @@ final public class NautilusNetworkService : NautilusCoreSDK.NetworkService {
   @objc(appNamed:) public static func app(name: Swift.String) -> NautilusCoreSDK.NautilusApp
   @objc public static func initialzie(apiKey: Swift.String, config: NautilusCoreSDK.NautilusAppConfig)
   @objc public static func initialize(name: Swift.String, apiKey: Swift.String, config: NautilusCoreSDK.NautilusAppConfig)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initialize(apiKey: Swift.String, config: NautilusCoreSDK.NautilusAppConfig, delegate: (any NautilusCoreSDK.NautilusAppDelegate)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initialize(name: Swift.String, apiKey: Swift.String, config: NautilusCoreSDK.NautilusAppConfig, delegate: (any NautilusCoreSDK.NautilusAppDelegate)?)
+  #endif
   final public func register(feature: any NautilusCoreSDK.NautilusFeature)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getFeature<T>(featureType: T.Type) -> T? where T : NautilusCoreSDK.NautilusFeature
+  #endif
   final public func getAvailableFeatures() -> [any NautilusCoreSDK.NautilusFeature.Type]
   final public func getAllFeatures() -> [any NautilusCoreSDK.NautilusFeature.Type]
   @objc final public func setDeletePushID(_ pushID: Swift.Int)
@@ -411,34 +467,58 @@ extension NautilusCoreSDK.NautilusApp {
   }
 }
 public protocol UserDefaultConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   init?(with object: Any)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func object() -> Any?
+  #endif
 }
 extension Swift.String : NautilusCoreSDK.UserDefaultConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with object: Any)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func object() -> Any?
+  #endif
 }
 extension Swift.Array : NautilusCoreSDK.UserDefaultConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func object() -> Any?
+  #endif
 }
 extension Swift.Int : NautilusCoreSDK.UserDefaultConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with object: Any)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func object() -> Any?
+  #endif
 }
 extension Swift.Int64 : NautilusCoreSDK.UserDefaultConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with object: Any)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func object() -> Any?
+  #endif
 }
 extension Swift.Bool : NautilusCoreSDK.UserDefaultConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with object: Any)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func object() -> Any?
+  #endif
 }
 @objc public enum NautilusDeploymentEnvironment : Swift.Int {
   case sandboxStaging
   case sandboxProduction
   case publicStaging
   case publicProduction
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -494,7 +574,9 @@ public enum RequestMethod {
   }
 }
 public protocol DataConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   var data: Foundation.Data? { get }
+  #endif
 }
 public protocol RequestParameter : NautilusCoreSDK.DataConvertible {
 }
@@ -511,10 +593,18 @@ public protocol Request {
   var hostname: Swift.String { get }
   var path: Swift.String { get }
   var method: NautilusCoreSDK.RequestMethod { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var headerFields: [Swift.String : Swift.String]? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var queryParameters: [Swift.String : Any]? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var body: (any NautilusCoreSDK.DataConvertible)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var requestParameter: Self.Parameter? { get }
+  #endif
   var requestPolicy: any NautilusCoreSDK.RequestPolicy { get }
   var url: Foundation.URL { get }
   func makeRequest() -> Foundation.URLRequest
@@ -526,21 +616,29 @@ extension NautilusCoreSDK.Request {
   public var method: NautilusCoreSDK.RequestMethod {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var headerFields: [Swift.String : Swift.String]? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var queryParameters: [Swift.String : Any]? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var body: (any NautilusCoreSDK.DataConvertible)? {
     get
   }
+  #endif
   public var url: Foundation.URL {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var queryItems: [Foundation.URLQueryItem]? {
     get
   }
+  #endif
   public func makeRequest() -> Foundation.URLRequest
 }
 open class NautilusAPICommonRequest<P, T, TD> where P : NautilusCoreSDK.RequestParameter, T : NautilusCoreSDK.Response, T : Swift.Decodable, TD : NautilusCoreSDK.ResponseDecoder {
@@ -563,7 +661,9 @@ open class NautilusAPICommonRequest<P, T, TD> where P : NautilusCoreSDK.RequestP
   open var method: NautilusCoreSDK.RequestMethod {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(app: NautilusCoreSDK.NautilusApp, requestParameter: NautilusCoreSDK.NautilusAPICommonRequest<P, T, TD>.Parameter?, requestPolicy: any NautilusCoreSDK.RequestPolicy = NautilusRequestPolicy.Preset.default)
+  #endif
   @objc deinit
 }
 @objc public protocol NautilusAppDelegate {
@@ -574,7 +674,9 @@ open class NautilusAPICommonRequest<P, T, TD> where P : NautilusCoreSDK.RequestP
   case cryptoMalfunction
   case deviceLockedState
   case featureUnavailable
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -590,9 +692,15 @@ open class NautilusAPICommonRequest<P, T, TD> where P : NautilusCoreSDK.RequestP
   final public let service: any NautilusCoreSDK.NetworkService
   final public let app: NautilusCoreSDK.NautilusApp
   required convenience public init(service: any NautilusCoreSDK.NetworkService)
+  #if compiler(>=5.3) && $NonescapableTypes
   required convenience public init(service: any NautilusCoreSDK.NetworkService, callbackQueue: Foundation.OperationQueue?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(app: NautilusCoreSDK.NautilusApp, service: any NautilusCoreSDK.NetworkService, callbackQueue: Foundation.OperationQueue?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func send<R>(request: R, completion: @escaping (Swift.Result<R.Object, NautilusCoreSDK.NetworkServiceError>) -> Swift.Void) where R : NautilusCoreSDK.Request
+  #endif
   @objc public func cancel()
   @objc deinit
 }

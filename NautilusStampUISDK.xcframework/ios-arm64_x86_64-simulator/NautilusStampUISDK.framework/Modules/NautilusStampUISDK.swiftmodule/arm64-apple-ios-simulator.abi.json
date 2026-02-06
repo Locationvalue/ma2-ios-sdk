@@ -628,6 +628,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -807,6 +808,7 @@
             "objc_name": "presentStampCardListViewControllerIn:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -833,6 +835,7 @@
             "deprecated": true,
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -872,6 +875,7 @@
             "objc_name": "instantiateStampCardDetailViewControllerWithStampCardID:hasCloseButton:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -911,6 +915,7 @@
             "objc_name": "instantiateStampCardDetailViewControllerWithStampCard:hasCloseButton:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -940,6 +945,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -950,6 +956,7 @@
         "mangledName": "$s18NautilusStampUISDK0aB6CardUIC",
         "moduleName": "NautilusStampUISDK",
         "declAttributes": [
+          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC",
@@ -1817,6 +1824,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -2817,6 +2831,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "NautilusStampCardListInstantiatable",
             "printedName": "NautilusStampCardListInstantiatable",
             "usr": "c:@M@NautilusStampUISDK@objc(pl)NautilusStampCardListInstantiatable",
@@ -3612,6 +3633,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }

@@ -940,6 +940,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1698,6 +1705,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1990,6 +1998,7 @@
             "objc_name": "presentLotteryListViewControllerIn:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2014,6 +2023,7 @@
             "moduleName": "NautilusLotteryUISDK",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2054,6 +2064,7 @@
             "objc_name": "instantiateLotteryListViewControllerWithExcludeAliasList:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "Available",
               "ObjC",
@@ -2106,6 +2117,7 @@
             "objc_name": "presentLotteryDetailViewControllerIn:lotteryID:notificationInfo:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2152,6 +2164,7 @@
             "objc_name": "instantiateLotteryDetailViewControllerWithLotteryID:notificationInfo:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2203,6 +2216,7 @@
             "objc_name": "presentLotteryDetailViewControllerIn:lottery:notificationInfo:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2249,6 +2263,7 @@
             "objc_name": "instantiateLotteryDetailViewControllerWithLottery:notificationInfo:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2277,6 +2292,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -2287,6 +2303,7 @@
         "mangledName": "$s20NautilusLotteryUISDK0aB2UIC",
         "moduleName": "NautilusLotteryUISDK",
         "declAttributes": [
+          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC",
@@ -2626,6 +2643,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }

@@ -12,6 +12,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// readonly で状態を持たないので nonisolated を付与し、隔離が不要であることを明示
+__attribute__((swift_attr("nonisolated")))
 @interface NautilusComponentDependency : NSObject
 
 @property(nonatomic, strong, readonly) Class<NautilusComponent> component;

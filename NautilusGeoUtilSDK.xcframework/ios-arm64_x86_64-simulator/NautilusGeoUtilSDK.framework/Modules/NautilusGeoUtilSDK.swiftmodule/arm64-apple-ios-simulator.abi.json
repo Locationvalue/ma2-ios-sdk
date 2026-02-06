@@ -1091,6 +1091,13 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4277,6 +4284,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4493,6 +4501,7 @@
             "mangledName": "$s18NautilusGeoUtilSDK0abC0C19getMunicipalityList14prefectureCode10completionyAA0a10PrefectureI0O_ys6ResultOySayAA0afI0CGAA0bC8ApiErrorOGctF",
             "moduleName": "NautilusGeoUtilSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -4578,6 +4587,7 @@
             "objc_name": "getMunicipalityListWithPrefectureCode:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -4606,6 +4616,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -4616,6 +4627,7 @@
         "mangledName": "$s18NautilusGeoUtilSDK0abC0C",
         "moduleName": "NautilusGeoUtilSDK",
         "declAttributes": [
+          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC",
