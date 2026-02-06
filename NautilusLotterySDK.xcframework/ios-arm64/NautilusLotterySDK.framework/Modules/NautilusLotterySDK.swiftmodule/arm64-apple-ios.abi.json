@@ -2654,13 +2654,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB19IntervalCheckResultC05checkF0Sbvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryIntervalCheckResult(py)checkResult",
             "mangledName": "$s18NautilusLotterySDK0aB19IntervalCheckResultC05checkF0Sbvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -2679,12 +2680,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB19IntervalCheckResultC05checkF0Sbvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryIntervalCheckResult(im)checkResult",
                 "mangledName": "$s18NautilusLotterySDK0aB19IntervalCheckResultC05checkF0Sbvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -2757,6 +2759,67 @@
           },
           {
             "kind": "Var",
+            "name": "rankNumber",
+            "printedName": "rankNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryIntervalCheckResult(py)rankNumber",
+            "mangledName": "$s18NautilusLotterySDK0aB19IntervalCheckResultC10rankNumberSo8NSNumberCSgvp",
+            "moduleName": "NautilusLotterySDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryIntervalCheckResult(im)rankNumber",
+                "mangledName": "$s18NautilusLotterySDK0aB19IntervalCheckResultC10rankNumberSo8NSNumberCSgvg",
+                "moduleName": "NautilusLotterySDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "prize",
             "printedName": "prize",
             "children": [
@@ -2776,13 +2839,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB19IntervalCheckResultC5prizeAA0aB9PrizeInfoCSgvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryIntervalCheckResult(py)prize",
             "mangledName": "$s18NautilusLotterySDK0aB19IntervalCheckResultC5prizeAA0aB9PrizeInfoCSgvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -2809,12 +2873,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB19IntervalCheckResultC5prizeAA0aB9PrizeInfoCSgvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryIntervalCheckResult(im)prize",
                 "mangledName": "$s18NautilusLotterySDK0aB19IntervalCheckResultC5prizeAA0aB9PrizeInfoCSgvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -2974,6 +3039,67 @@
           },
           {
             "kind": "Var",
+            "name": "prizeIDNumber",
+            "printedName": "prizeIDNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizeInfo(py)prizeIDNumber",
+            "mangledName": "$s18NautilusLotterySDK0aB9PrizeInfoC13prizeIDNumberSo8NSNumberCSgvp",
+            "moduleName": "NautilusLotterySDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizeInfo(im)prizeIDNumber",
+                "mangledName": "$s18NautilusLotterySDK0aB9PrizeInfoC13prizeIDNumberSo8NSNumberCSgvg",
+                "moduleName": "NautilusLotterySDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "prizeType",
             "printedName": "prizeType",
             "children": [
@@ -3039,6 +3165,67 @@
           },
           {
             "kind": "Var",
+            "name": "prizeTypeNumber",
+            "printedName": "prizeTypeNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizeInfo(py)prizeTypeNumber",
+            "mangledName": "$s18NautilusLotterySDK0aB9PrizeInfoC15prizeTypeNumberSo8NSNumberCSgvp",
+            "moduleName": "NautilusLotterySDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizeInfo(im)prizeTypeNumber",
+                "mangledName": "$s18NautilusLotterySDK0aB9PrizeInfoC15prizeTypeNumberSo8NSNumberCSgvg",
+                "moduleName": "NautilusLotterySDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "coupon",
             "printedName": "coupon",
             "children": [
@@ -3058,13 +3245,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB9PrizeInfoC6couponAA0abd6CouponE0CSgvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizeInfo(py)coupon",
             "mangledName": "$s18NautilusLotterySDK0aB9PrizeInfoC6couponAA0abd6CouponE0CSgvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -3091,12 +3279,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB9PrizeInfoC6couponAA0abd6CouponE0CSgvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizeInfo(im)coupon",
                 "mangledName": "$s18NautilusLotterySDK0aB9PrizeInfoC6couponAA0abd6CouponE0CSgvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -3123,13 +3312,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB9PrizeInfoC5pointAA0abd5PointE0CSgvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizeInfo(py)point",
             "mangledName": "$s18NautilusLotterySDK0aB9PrizeInfoC5pointAA0abd5PointE0CSgvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -3156,12 +3346,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB9PrizeInfoC5pointAA0abd5PointE0CSgvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizeInfo(im)point",
                 "mangledName": "$s18NautilusLotterySDK0aB9PrizeInfoC5pointAA0abd5PointE0CSgvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -3543,6 +3734,67 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "exchangeIDNumber",
+            "printedName": "exchangeIDNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizeCouponInfo(py)exchangeIDNumber",
+            "mangledName": "$s18NautilusLotterySDK0aB15PrizeCouponInfoC16exchangeIDNumberSo8NSNumberCSgvp",
+            "moduleName": "NautilusLotterySDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizeCouponInfo(im)exchangeIDNumber",
+                "mangledName": "$s18NautilusLotterySDK0aB15PrizeCouponInfoC16exchangeIDNumberSo8NSNumberCSgvg",
+                "moduleName": "NautilusLotterySDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -3691,6 +3943,67 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "addPointNumber",
+            "printedName": "addPointNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizePointInfo(py)addPointNumber",
+            "mangledName": "$s18NautilusLotterySDK0aB14PrizePointInfoC03addE6NumberSo8NSNumberCSgvp",
+            "moduleName": "NautilusLotterySDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryPrizePointInfo(im)addPointNumber",
+                "mangledName": "$s18NautilusLotterySDK0aB14PrizePointInfoC03addE6NumberSo8NSNumberCSgvg",
+                "moduleName": "NautilusLotterySDK",
+                "declAttributes": [
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -3854,13 +4167,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB6ResultC4rankSivp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryResult(py)rank",
             "mangledName": "$s18NautilusLotterySDK0aB6ResultC4rankSivp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -3879,12 +4193,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB6ResultC4rankSivg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryResult(im)rank",
                 "mangledName": "$s18NautilusLotterySDK0aB6ResultC4rankSivg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -3911,13 +4226,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB6ResultC5prizeAA0aB9PrizeInfoCSgvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryResult(py)prize",
             "mangledName": "$s18NautilusLotterySDK0aB6ResultC5prizeAA0aB9PrizeInfoCSgvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -3944,12 +4260,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB6ResultC5prizeAA0aB9PrizeInfoCSgvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryResult(im)prize",
                 "mangledName": "$s18NautilusLotterySDK0aB6ResultC5prizeAA0aB9PrizeInfoCSgvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4116,13 +4433,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB4InfoC9lotteryIDSivp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(py)lotteryID",
             "mangledName": "$s18NautilusLotterySDK0aB4InfoC9lotteryIDSivp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -4141,12 +4459,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB4InfoC9lotteryIDSivg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(im)lotteryID",
                 "mangledName": "$s18NautilusLotterySDK0aB4InfoC9lotteryIDSivg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4173,13 +4492,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB4InfoC12lotteryTitleSSSgvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(py)lotteryTitle",
             "mangledName": "$s18NautilusLotterySDK0aB4InfoC12lotteryTitleSSSgvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -4206,12 +4526,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB4InfoC12lotteryTitleSSSgvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(im)lotteryTitle",
                 "mangledName": "$s18NautilusLotterySDK0aB4InfoC12lotteryTitleSSSgvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4238,13 +4559,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB4InfoC5aliasSSSgvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(py)alias",
             "mangledName": "$s18NautilusLotterySDK0aB4InfoC5aliasSSSgvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -4271,12 +4593,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB4InfoC5aliasSSSgvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(im)alias",
                 "mangledName": "$s18NautilusLotterySDK0aB4InfoC5aliasSSSgvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4303,13 +4626,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB4InfoC8imageURL10Foundation0F0VSgvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(py)imageURL",
             "mangledName": "$s18NautilusLotterySDK0aB4InfoC8imageURL10Foundation0F0VSgvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -4336,12 +4660,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB4InfoC8imageURL10Foundation0F0VSgvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(im)imageURL",
                 "mangledName": "$s18NautilusLotterySDK0aB4InfoC8imageURL10Foundation0F0VSgvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4414,6 +4739,67 @@
           },
           {
             "kind": "Var",
+            "name": "imageAspectRatioNumber",
+            "printedName": "imageAspectRatioNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(py)imageAspectRatioNumber",
+            "mangledName": "$s18NautilusLotterySDK0aB4InfoC22imageAspectRatioNumberSo8NSNumberCSgvp",
+            "moduleName": "NautilusLotterySDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(im)imageAspectRatioNumber",
+                "mangledName": "$s18NautilusLotterySDK0aB4InfoC22imageAspectRatioNumberSo8NSNumberCSgvg",
+                "moduleName": "NautilusLotterySDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "publishStartDate",
             "printedName": "publishStartDate",
             "children": [
@@ -4425,13 +4811,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB4InfoC16publishStartDate10Foundation0G0Vvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(py)publishStartDate",
             "mangledName": "$s18NautilusLotterySDK0aB4InfoC16publishStartDate10Foundation0G0Vvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -4450,12 +4837,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB4InfoC16publishStartDate10Foundation0G0Vvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(im)publishStartDate",
                 "mangledName": "$s18NautilusLotterySDK0aB4InfoC16publishStartDate10Foundation0G0Vvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4482,13 +4870,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB4InfoC14publishEndDate10Foundation0G0VSgvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(py)publishEndDate",
             "mangledName": "$s18NautilusLotterySDK0aB4InfoC14publishEndDate10Foundation0G0VSgvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -4515,12 +4904,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB4InfoC14publishEndDate10Foundation0G0VSgvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(im)publishEndDate",
                 "mangledName": "$s18NautilusLotterySDK0aB4InfoC14publishEndDate10Foundation0G0VSgvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4539,13 +4929,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB4InfoC11lotteryTypeAA0abF0Ovp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(py)lotteryType",
             "mangledName": "$s18NautilusLotterySDK0aB4InfoC11lotteryTypeAA0abF0Ovp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -4564,12 +4955,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB4InfoC11lotteryTypeAA0abF0Ovg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(im)lotteryType",
                 "mangledName": "$s18NautilusLotterySDK0aB4InfoC11lotteryTypeAA0abF0Ovg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4588,13 +4980,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB4InfoC8isRepeatSbvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(py)isRepeat",
             "mangledName": "$s18NautilusLotterySDK0aB4InfoC8isRepeatSbvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -4613,12 +5006,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB4InfoC8isRepeatSbvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(im)isRepeat",
                 "mangledName": "$s18NautilusLotterySDK0aB4InfoC8isRepeatSbvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4637,13 +5031,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18NautilusLotterySDK0aB4InfoC11isCompletedSbvp",
+            "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(py)isCompleted",
             "mangledName": "$s18NautilusLotterySDK0aB4InfoC11isCompletedSbvp",
             "moduleName": "NautilusLotterySDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -4662,12 +5057,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18NautilusLotterySDK0aB4InfoC11isCompletedSbvg",
+                "usr": "c:@M@NautilusLotterySDK@objc(cs)NautilusLotteryInfo(im)isCompleted",
                 "mangledName": "$s18NautilusLotterySDK0aB4InfoC11isCompletedSbvg",
                 "moduleName": "NautilusLotterySDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -5287,14 +5683,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Lottery\/Sources\/Base\/NautilusLotteryIntervalCheckResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 2600,
+      "offset": 3415,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Lottery\/Sources\/Base\/NautilusLotteryIntervalCheckResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 2640,
+      "offset": 3455,
       "length": 1,
       "value": "2"
     },
@@ -5413,14 +5809,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Lottery\/Sources\/Base\/NautilusLotteryInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 1836,
+      "offset": 2137,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Lottery\/Sources\/Base\/NautilusLotteryInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 1875,
+      "offset": 2176,
       "length": 1,
       "value": "2"
     }

@@ -141,7 +141,7 @@ import _SwiftConcurrencyShims
   public init(publishTriggerType: NautilusCouponSDK.NautilusCouponPublishTriggerType, codeText: Swift.String?, cardNumber: Swift.String?, cardType: Swift.Int?, couponIDs: [Swift.Int]?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(publishTriggerType: NautilusCouponSDK.NautilusCouponPublishTriggerType, codeText: Swift.String?, cardNumber: Swift.String?, cardType: Foundation.NSNumber?, couponIDs: [Foundation.NSNumber]?)
+  @objc public init(publishTriggerType: NautilusCouponSDK.NautilusCouponPublishTriggerType, codeText: Swift.String?, cardNumber: Swift.String?, cardTypeNumber: Foundation.NSNumber?, couponIDsNumber: [Foundation.NSNumber]?)
   #endif
   @objc deinit
 }

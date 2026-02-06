@@ -308,12 +308,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@protocol NautilusLotteryDetailViewControllerDelegate;
 @class NSString;
 @class NSBundle;
 @class NSCoder;
 /// 抽選詳細画面
 SWIFT_CLASS("_TtC20NautilusLotteryUISDK35NautilusLotteryDetailViewController")
 @interface NautilusLotteryDetailViewController : UIViewController
+/// 抽選詳細画面からの処理の委譲先
+@property (nonatomic, weak) id <NautilusLotteryDetailViewControllerDelegate> _Nullable delegate;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -347,6 +350,7 @@ SWIFT_CLASS("_TtC20NautilusLotteryUISDK33NautilusLotteryListViewController")
 
 @class NautilusComponentDependency;
 @class NautilusApp;
+@protocol NautilusLotteryUIDelegate;
 @class NSError;
 @class NautilusAppNotificationInfo;
 /// アプリとのインターフェース
@@ -363,6 +367,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @property (nonatomic, copy) NSString * _Nullable name;
 /// <code>NautilusLotteryUISDK</code>の機能の利用可否ステータス
 @property (nonatomic, readonly) enum NautilusFeatureStatus featureStatus;
+/// デリゲート
+@property (nonatomic, weak) id <NautilusLotteryUIDelegate> _Nullable delegate;
 + (void)initializeWithApplication:(NautilusApp * _Nonnull)application completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (NautilusLotteryUI * _Nonnull)lotteryUI SWIFT_WARN_UNUSED_RESULT;
 + (NautilusLotteryUI * _Nonnull)lotteryAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
