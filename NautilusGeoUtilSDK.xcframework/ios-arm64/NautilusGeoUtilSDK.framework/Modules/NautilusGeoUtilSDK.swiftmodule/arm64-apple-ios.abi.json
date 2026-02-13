@@ -42,6 +42,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusGeoUtilSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusGeoUtilSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Var",
         "name": "NautilusGeoUtilErrorDomain",
         "printedName": "NautilusGeoUtilErrorDomain",
@@ -1098,6 +1115,293 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusGeoUtilSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusZipCode",
+        "printedName": "NautilusZipCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV5valueSSvp",
+            "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV5valueSSvp",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV5valueSSvg",
+                "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV5valueSSvg",
+                "moduleName": "NautilusGeoUtilSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "prefix",
+            "printedName": "prefix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV6prefixSSvp",
+            "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV6prefixSSvp",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV6prefixSSvg",
+                "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV6prefixSSvg",
+                "moduleName": "NautilusGeoUtilSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "suffix",
+            "printedName": "suffix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV6suffixSSvp",
+            "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV6suffixSSvp",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV6suffixSSvg",
+                "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV6suffixSSvg",
+                "moduleName": "NautilusGeoUtilSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(string:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusGeoUtilSDK.NautilusZipCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusZipCode",
+                    "printedName": "NautilusGeoUtilSDK.NautilusZipCode",
+                    "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV6stringACSgSS_tcfc",
+            "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV6stringACSgSS_tcfc",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(prefix:suffix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusGeoUtilSDK.NautilusZipCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusZipCode",
+                    "printedName": "NautilusGeoUtilSDK.NautilusZipCode",
+                    "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV6prefix6suffixACSgSS_SStcfc",
+            "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV6prefix6suffixACSgSS_SStcfc",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "formattedString",
+            "printedName": "formattedString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV15formattedStringSSvp",
+            "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV15formattedStringSSvp",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV15formattedStringSSvg",
+                "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV15formattedStringSSvg",
+                "moduleName": "NautilusGeoUtilSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV",
+        "mangledName": "$s18NautilusGeoUtilSDK0A7ZipCodeV",
+        "moduleName": "NautilusGeoUtilSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -3795,6 +4099,23 @@
       },
       {
         "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusGeoUtilSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusGeoUtilSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "NautilusLoggingSDK",
         "printedName": "NautilusLoggingSDK",
         "declKind": "Import",
@@ -4595,6 +4916,75 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "getAddressInfo",
+            "printedName": "getAddressInfo(zipCode:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusZipCode",
+                "printedName": "NautilusGeoUtilSDK.NautilusZipCode",
+                "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[NautilusGeoUtilSDK.NautilusAddressInfo], NautilusGeoUtilSDK.GeoUtilApiError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[NautilusGeoUtilSDK.NautilusAddressInfo], NautilusGeoUtilSDK.GeoUtilApiError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[NautilusGeoUtilSDK.NautilusAddressInfo]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusAddressInfo",
+                            "printedName": "NautilusGeoUtilSDK.NautilusAddressInfo",
+                            "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GeoUtilApiError",
+                        "printedName": "NautilusGeoUtilSDK.GeoUtilApiError",
+                        "usr": "c:@M@NautilusGeoUtilSDK@E@GeoUtilApiError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18NautilusGeoUtilSDK0abC0C14getAddressInfo7zipCode10completionyAA0a3ZipI0V_ys6ResultOySayAA0afG0VGAA0bC8ApiErrorOGctF",
+            "mangledName": "$s18NautilusGeoUtilSDK0abC0C14getAddressInfo7zipCode10completionyAA0a3ZipI0V_ys6ResultOySayAA0afG0VGAA0bC8ApiErrorOGctF",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "Nonisolated",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -4710,6 +5100,289 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusGeoUtilSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusAddressInfo",
+        "printedName": "NautilusAddressInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "zipCode",
+            "printedName": "zipCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusZipCode",
+                "printedName": "NautilusGeoUtilSDK.NautilusZipCode",
+                "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV7zipCodeAA0a3ZipH0Vvp",
+            "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV7zipCodeAA0a3ZipH0Vvp",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusZipCode",
+                    "printedName": "NautilusGeoUtilSDK.NautilusZipCode",
+                    "usr": "s:18NautilusGeoUtilSDK0A7ZipCodeV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV7zipCodeAA0a3ZipH0Vvg",
+                "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV7zipCodeAA0a3ZipH0Vvg",
+                "moduleName": "NautilusGeoUtilSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "prefId",
+            "printedName": "prefId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV6prefIdSSvp",
+            "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV6prefIdSSvp",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV6prefIdSSvg",
+                "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV6prefIdSSvg",
+                "moduleName": "NautilusGeoUtilSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "prefecture",
+            "printedName": "prefecture",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV10prefectureSSvp",
+            "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV10prefectureSSvp",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV10prefectureSSvg",
+                "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV10prefectureSSvg",
+                "moduleName": "NautilusGeoUtilSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "municipality",
+            "printedName": "municipality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV12municipalitySSvp",
+            "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV12municipalitySSvp",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV12municipalitySSvg",
+                "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV12municipalitySSvg",
+                "moduleName": "NautilusGeoUtilSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "townName",
+            "printedName": "townName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV8townNameSSvp",
+            "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV8townNameSSvp",
+            "moduleName": "NautilusGeoUtilSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV8townNameSSvg",
+                "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV8townNameSSvg",
+                "moduleName": "NautilusGeoUtilSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18NautilusGeoUtilSDK0A11AddressInfoV",
+        "mangledName": "$s18NautilusGeoUtilSDK0A11AddressInfoV",
+        "moduleName": "NautilusGeoUtilSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusGeoUtilSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusCoreSDK",
+        "printedName": "NautilusCoreSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusGeoUtilSDK"
       }
     ],
     "json_format_version": 8
@@ -4875,6 +5548,34 @@
       "offset": 1583,
       "length": 3,
       "value": "907"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/NautilusZipCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1005,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/NautilusZipCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1089,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/NautilusZipCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1326,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/NautilusZipCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1430,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/NautilusPrefectureCode.swift",
@@ -5239,6 +5940,62 @@
       "offset": 1115,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/API\/AddressInfoEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 456,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/API\/AddressInfoEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 482,
+      "length": 5,
+      "value": "\"pid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/API\/AddressInfoEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 515,
+      "length": 14,
+      "value": "\"address_list\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/API\/AddressInfoEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1160,
+      "length": 10,
+      "value": "\"zip_code\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/API\/AddressInfoEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1193,
+      "length": 9,
+      "value": "\"pref_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/API\/AddressInfoEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1229,
+      "length": 12,
+      "value": "\"prefecture\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/API\/AddressInfoEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1270,
+      "length": 14,
+      "value": "\"municipality\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/GeoUtil\/Sources\/API\/AddressInfoEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1309,
+      "length": 11,
+      "value": "\"town_name\""
     }
   ]
 }

@@ -46,6 +46,24 @@ public let NautilusGeoUtilErrorDomain: Swift.String
     get
   }
 }
+public struct NautilusZipCode {
+  public let value: Swift.String
+  public var prefix: Swift.String {
+    get
+  }
+  public var suffix: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(string: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(prefix: Swift.String, suffix: Swift.String)
+  #endif
+  public var formattedString: Swift.String {
+    get
+  }
+}
 @objc public enum NautilusPrefectureCode : Swift.Int {
   case hokkaido
   case aomori
@@ -149,7 +167,17 @@ extension NautilusGeoUtilSDK.NautilusPrefectureCode {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc nonisolated final public func getMunicipalityList(prefectureCode: NautilusGeoUtilSDK.NautilusPrefectureCode, completion: @escaping ([NautilusGeoUtilSDK.NautilusMunicipalityCode]?, Foundation.NSError?) -> Swift.Void)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getAddressInfo(zipCode: NautilusGeoUtilSDK.NautilusZipCode, completion: @escaping (Swift.Result<[NautilusGeoUtilSDK.NautilusAddressInfo], NautilusGeoUtilSDK.GeoUtilApiError>) -> Swift.Void)
+  #endif
   @objc deinit
+}
+public struct NautilusAddressInfo {
+  public let zipCode: NautilusGeoUtilSDK.NautilusZipCode
+  public let prefId: Swift.String
+  public let prefecture: Swift.String
+  public let municipality: Swift.String
+  public let townName: Swift.String
 }
 extension NautilusGeoUtilSDK.GeoUtilApiError : Swift.Equatable {}
 extension NautilusGeoUtilSDK.GeoUtilApiError : Swift.Hashable {}
