@@ -13,8 +13,6 @@
 #import "NautilusComponentLoader.h"
 #import "NautilusComponentDependency.h"
 
-// 独自のクラス定義、プロパティ、ロジック、あるいは可変の状態を持っていないので Concurrency 対応なし 2025/11
-
 //! Project version number for Container.
 FOUNDATION_EXPORT double NautilusContainerSDKVersionNumber;
 
