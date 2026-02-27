@@ -130,7 +130,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB4ViewC8delegateAA0abD8Delegate_pSgvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerView(py)delegate",
             "mangledName": "$s17NautilusBannerSDK0aB4ViewC8delegateAA0abD8Delegate_pSgvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
@@ -140,6 +140,7 @@
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "ownership": 1,
@@ -166,10 +167,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4ViewC8delegateAA0abD8Delegate_pSgvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerView(im)delegate",
                 "mangledName": "$s17NautilusBannerSDK0aB4ViewC8delegateAA0abD8Delegate_pSgvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -198,10 +202,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4ViewC8delegateAA0abD8Delegate_pSgvs",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerView(im)setDelegate:",
                 "mangledName": "$s17NautilusBannerSDK0aB4ViewC8delegateAA0abD8Delegate_pSgvs",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -245,7 +252,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB4ViewC07currentB8CategoryAA0abF0CSgvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerView(py)currentBannerCategory",
             "mangledName": "$s17NautilusBannerSDK0aB4ViewC07currentB8CategoryAA0abF0CSgvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
@@ -254,6 +261,7 @@
               "Custom",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -279,10 +287,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4ViewC07currentB8CategoryAA0abF0CSgvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerView(im)currentBannerCategory",
                 "mangledName": "$s17NautilusBannerSDK0aB4ViewC07currentB8CategoryAA0abF0CSgvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -311,10 +322,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4ViewC07currentB8CategoryAA0abF0CSgvs",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerView(im)setCurrentBannerCategory:",
                 "mangledName": "$s17NautilusBannerSDK0aB4ViewC07currentB8CategoryAA0abF0CSgvs",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -355,13 +369,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17NautilusBannerSDK0aB4ViewC7prepare3foryAA0aB0C_tF",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerView(im)prepareFor:",
             "mangledName": "$s17NautilusBannerSDK0aB4ViewC7prepare3foryAA0aB0C_tF",
             "moduleName": "NautilusBannerSDK",
+            "objc_name": "prepareFor:",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -663,11 +679,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17NautilusBannerSDK0aB3LogC8bannerID14actionDatetime4typeACSi_10Foundation4DateVAA0abD4TypeOtcfc",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerLog(im)initWithBannerID:actionDatetime:type:",
             "mangledName": "$s17NautilusBannerSDK0aB3LogC8bannerID14actionDatetime4typeACSi_10Foundation4DateVAA0abD4TypeOtcfc",
             "moduleName": "NautilusBannerSDK",
+            "objc_name": "initWithBannerID:actionDatetime:type:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -1138,13 +1156,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB4InfoC16bannerIdentifierSivp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)bannerIdentifier",
             "mangledName": "$s17NautilusBannerSDK0aB4InfoC16bannerIdentifierSivp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1162,12 +1182,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4InfoC16bannerIdentifierSivg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)bannerIdentifier",
                 "mangledName": "$s17NautilusBannerSDK0aB4InfoC16bannerIdentifierSivg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -1186,13 +1207,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB4InfoC26publishStartDatetimeStringSSvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)publishStartDatetimeString",
             "mangledName": "$s17NautilusBannerSDK0aB4InfoC26publishStartDatetimeStringSSvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1210,12 +1233,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4InfoC26publishStartDatetimeStringSSvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)publishStartDatetimeString",
                 "mangledName": "$s17NautilusBannerSDK0aB4InfoC26publishStartDatetimeStringSSvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -1242,13 +1266,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB4InfoC24publishEndDatetimeStringSSSgvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)publishEndDatetimeString",
             "mangledName": "$s17NautilusBannerSDK0aB4InfoC24publishEndDatetimeStringSSSgvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1274,12 +1300,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4InfoC24publishEndDatetimeStringSSSgvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)publishEndDatetimeString",
                 "mangledName": "$s17NautilusBannerSDK0aB4InfoC24publishEndDatetimeStringSSSgvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -1306,13 +1333,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB4InfoC8imageURL10Foundation0F0VSgvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)imageURL",
             "mangledName": "$s17NautilusBannerSDK0aB4InfoC8imageURL10Foundation0F0VSgvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1338,12 +1367,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4InfoC8imageURL10Foundation0F0VSgvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)imageURL",
                 "mangledName": "$s17NautilusBannerSDK0aB4InfoC8imageURL10Foundation0F0VSgvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -1376,7 +1406,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1415,6 +1446,67 @@
           },
           {
             "kind": "Var",
+            "name": "categoryIdentifierNumber",
+            "printedName": "categoryIdentifierNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)categoryIdentifierNumber",
+            "mangledName": "$s17NautilusBannerSDK0aB4InfoC24categoryIdentifierNumberSo8NSNumberCSgvp",
+            "moduleName": "NautilusBannerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)categoryIdentifierNumber",
+                "mangledName": "$s17NautilusBannerSDK0aB4InfoC24categoryIdentifierNumberSo8NSNumberCSgvg",
+                "moduleName": "NautilusBannerSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "sortNumber",
             "printedName": "sortNumber",
             "children": [
@@ -1440,7 +1532,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1479,6 +1572,67 @@
           },
           {
             "kind": "Var",
+            "name": "sortNumberNumber",
+            "printedName": "sortNumberNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)sortNumberNumber",
+            "mangledName": "$s17NautilusBannerSDK0aB4InfoC010sortNumberF0So8NSNumberCSgvp",
+            "moduleName": "NautilusBannerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)sortNumberNumber",
+                "mangledName": "$s17NautilusBannerSDK0aB4InfoC010sortNumberF0So8NSNumberCSgvg",
+                "moduleName": "NautilusBannerSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "alias",
             "printedName": "alias",
             "children": [
@@ -1498,13 +1652,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB4InfoC5aliasSSSgvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)alias",
             "mangledName": "$s17NautilusBannerSDK0aB4InfoC5aliasSSSgvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1530,12 +1686,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4InfoC5aliasSSSgvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)alias",
                 "mangledName": "$s17NautilusBannerSDK0aB4InfoC5aliasSSSgvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -1568,7 +1725,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1607,6 +1765,67 @@
           },
           {
             "kind": "Var",
+            "name": "linkTypeNSNumber",
+            "printedName": "linkTypeNSNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)linkTypeNSNumber",
+            "mangledName": "$s17NautilusBannerSDK0aB4InfoC16linkTypeNSNumberSo0G0CSgvp",
+            "moduleName": "NautilusBannerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)linkTypeNSNumber",
+                "mangledName": "$s17NautilusBannerSDK0aB4InfoC16linkTypeNSNumberSo0G0CSgvg",
+                "moduleName": "NautilusBannerSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "webLink",
             "printedName": "webLink",
             "children": [
@@ -1626,13 +1845,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB4InfoC7webLinkAA0ab3WebF0CSgvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)webLink",
             "mangledName": "$s17NautilusBannerSDK0aB4InfoC7webLinkAA0ab3WebF0CSgvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1658,12 +1879,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4InfoC7webLinkAA0ab3WebF0CSgvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)webLink",
                 "mangledName": "$s17NautilusBannerSDK0aB4InfoC7webLinkAA0ab3WebF0CSgvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -1690,13 +1912,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB4InfoC7appLinkAA0ab3AppF0CSgvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)appLink",
             "mangledName": "$s17NautilusBannerSDK0aB4InfoC7appLinkAA0ab3AppF0CSgvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1722,12 +1946,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4InfoC7appLinkAA0ab3AppF0CSgvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)appLink",
                 "mangledName": "$s17NautilusBannerSDK0aB4InfoC7appLinkAA0ab3AppF0CSgvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -1746,13 +1971,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB4InfoC17bannerManageTitleSSvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(py)bannerManageTitle",
             "mangledName": "$s17NautilusBannerSDK0aB4InfoC17bannerManageTitleSSvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1770,12 +1997,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB4InfoC17bannerManageTitleSSvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerInfo(im)bannerManageTitle",
                 "mangledName": "$s17NautilusBannerSDK0aB4InfoC17bannerManageTitleSSvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -3502,6 +3730,13 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -3523,13 +3758,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB7WebLinkC7linkURL10Foundation0G0Vvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerWebLink(py)linkURL",
             "mangledName": "$s17NautilusBannerSDK0aB7WebLinkC7linkURL10Foundation0G0Vvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3547,12 +3784,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB7WebLinkC7linkURL10Foundation0G0Vvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerWebLink(im)linkURL",
                 "mangledName": "$s17NautilusBannerSDK0aB7WebLinkC7linkURL10Foundation0G0Vvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -3579,13 +3817,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB7WebLinkC12browserTitleSSSgvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerWebLink(py)browserTitle",
             "mangledName": "$s17NautilusBannerSDK0aB7WebLinkC12browserTitleSSSgvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3611,12 +3851,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB7WebLinkC12browserTitleSSSgvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerWebLink(im)browserTitle",
                 "mangledName": "$s17NautilusBannerSDK0aB7WebLinkC12browserTitleSSSgvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -3649,7 +3890,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3681,6 +3923,67 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "useCIDNumber",
+            "printedName": "useCIDNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerWebLink(py)useCIDNumber",
+            "mangledName": "$s17NautilusBannerSDK0aB7WebLinkC12useCIDNumberSo8NSNumberCSgvp",
+            "moduleName": "NautilusBannerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerWebLink(im)useCIDNumber",
+                "mangledName": "$s17NautilusBannerSDK0aB7WebLinkC12useCIDNumberSo8NSNumberCSgvg",
+                "moduleName": "NautilusBannerSDK",
+                "declAttributes": [
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -3811,13 +4114,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB7AppLinkC15transitionParamSSvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerAppLink(py)transitionParam",
             "mangledName": "$s17NautilusBannerSDK0aB7AppLinkC15transitionParamSSvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3835,12 +4139,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB7AppLinkC15transitionParamSSvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerAppLink(im)transitionParam",
                 "mangledName": "$s17NautilusBannerSDK0aB7AppLinkC15transitionParamSSvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4340,6 +4645,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4550,6 +4856,7 @@
             "mangledName": "$s17NautilusBannerSDK0aB0C03getB12CategoryList10completionyys6ResultOySayAA0abE0CGAA0aB5ErrorOGc_tF",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -4629,6 +4936,7 @@
             "objc_name": "getBannerCategoryListWithCompletion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -4705,6 +5013,7 @@
             "mangledName": "$s17NautilusBannerSDK0aB0C03getB4List10categoryID10completionySiSg_ys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -4790,6 +5099,7 @@
             "objc_name": "getBannerListWithCategoryID:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -4857,6 +5167,7 @@
             "mangledName": "$s17NautilusBannerSDK0aB0C04sendB3Log10bannerLogs10completionySayAA0abE0CG_ys6ResultOyytAA0aB5ErrorOGctF",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -4934,6 +5245,7 @@
             "objc_name": "sendBannerLogWithBannerLogs:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -4993,6 +5305,7 @@
             "mangledName": "$s17NautilusBannerSDK0aB0C05storeB9ActionLog06bannerF010completionyAA0abF0C_ys6ResultOyytAA0aB5ErrorOGctF",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -5062,6 +5375,7 @@
             "objc_name": "storeBannerActionLogWithBannerLog:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -5115,6 +5429,7 @@
             "mangledName": "$s17NautilusBannerSDK0aB0C05flushB9ActionLog10completionyys6ResultOyytAA0aB5ErrorOGc_tF",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -5178,6 +5493,7 @@
             "objc_name": "flushBannerActionLogWithCompletion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -5215,6 +5531,7 @@
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -5252,6 +5569,7 @@
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -5280,6 +5598,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -5290,6 +5609,7 @@
         "mangledName": "$s17NautilusBannerSDK0aB0C",
         "moduleName": "NautilusBannerSDK",
         "declAttributes": [
+          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC",
@@ -5418,13 +5738,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB8CategoryC9hierarchySivp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(py)hierarchy",
             "mangledName": "$s17NautilusBannerSDK0aB8CategoryC9hierarchySivp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -5443,12 +5764,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB8CategoryC9hierarchySivg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(im)hierarchy",
                 "mangledName": "$s17NautilusBannerSDK0aB8CategoryC9hierarchySivg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -5521,6 +5843,67 @@
           },
           {
             "kind": "Var",
+            "name": "parentCategoryIdentifierNumber",
+            "printedName": "parentCategoryIdentifierNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(py)parentCategoryIdentifierNumber",
+            "mangledName": "$s17NautilusBannerSDK0aB8CategoryC06parentD16IdentifierNumberSo8NSNumberCSgvp",
+            "moduleName": "NautilusBannerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(im)parentCategoryIdentifierNumber",
+                "mangledName": "$s17NautilusBannerSDK0aB8CategoryC06parentD16IdentifierNumberSo8NSNumberCSgvg",
+                "moduleName": "NautilusBannerSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "categoryIdentifier",
             "printedName": "categoryIdentifier",
             "children": [
@@ -5532,13 +5915,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB8CategoryC18categoryIdentifierSivp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(py)categoryIdentifier",
             "mangledName": "$s17NautilusBannerSDK0aB8CategoryC18categoryIdentifierSivp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -5557,12 +5941,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB8CategoryC18categoryIdentifierSivg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(im)categoryIdentifier",
                 "mangledName": "$s17NautilusBannerSDK0aB8CategoryC18categoryIdentifierSivg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -5581,13 +5966,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB8CategoryC12categoryNameSSvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(py)categoryName",
             "mangledName": "$s17NautilusBannerSDK0aB8CategoryC12categoryNameSSvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -5606,12 +5992,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB8CategoryC12categoryNameSSvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(im)categoryName",
                 "mangledName": "$s17NautilusBannerSDK0aB8CategoryC12categoryNameSSvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -5630,13 +6017,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB8CategoryC6sortNoSivp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(py)sortNo",
             "mangledName": "$s17NautilusBannerSDK0aB8CategoryC6sortNoSivp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -5655,12 +6043,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB8CategoryC6sortNoSivg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(im)sortNo",
                 "mangledName": "$s17NautilusBannerSDK0aB8CategoryC6sortNoSivg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -5679,13 +6068,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17NautilusBannerSDK0aB8CategoryC5aliasSSvp",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(py)alias",
             "mangledName": "$s17NautilusBannerSDK0aB8CategoryC5aliasSSvp",
             "moduleName": "NautilusBannerSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -5704,12 +6094,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17NautilusBannerSDK0aB8CategoryC5aliasSSvg",
+                "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCategory(im)alias",
                 "mangledName": "$s17NautilusBannerSDK0aB8CategoryC5aliasSSvg",
                 "moduleName": "NautilusBannerSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -5880,15 +6271,17 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17NautilusBannerSDK0aB12CarouselViewC011initializedabdE05frameACSo6CGRectV_tFZ",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerCarouselView(cm)initializedNautilusBannerCarouselViewWithFrame:",
             "mangledName": "$s17NautilusBannerSDK0aB12CarouselViewC011initializedabdE05frameACSo6CGRectV_tFZ",
             "moduleName": "NautilusBannerSDK",
             "static": true,
+            "objc_name": "initializedNautilusBannerCarouselViewWithFrame:",
             "declAttributes": [
+              "Final",
               "Preconcurrency",
               "Custom",
-              "Final",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -6148,6 +6541,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -6438,15 +6838,17 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17NautilusBannerSDK0aB8ListViewC011initializedabdE05frameACSo6CGRectV_tFZ",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerListView(cm)initializedNautilusBannerListViewWithFrame:",
             "mangledName": "$s17NautilusBannerSDK0aB8ListViewC011initializedabdE05frameACSo6CGRectV_tFZ",
             "moduleName": "NautilusBannerSDK",
             "static": true,
+            "objc_name": "initializedNautilusBannerListViewWithFrame:",
             "declAttributes": [
+              "Final",
               "Preconcurrency",
               "Custom",
-              "Final",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -6523,11 +6925,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17NautilusBannerSDK0aB8ListViewC7prepare3foryAA0aB0C_tF",
+            "usr": "c:@M@NautilusBannerSDK@objc(cs)NautilusBannerListView(im)prepareFor:",
             "mangledName": "$s17NautilusBannerSDK0aB8ListViewC7prepare3foryAA0aB0C_tF",
             "moduleName": "NautilusBannerSDK",
             "overriding": true,
+            "objc_name": "prepareFor:",
             "declAttributes": [
+              "ObjC",
               "Preconcurrency",
               "Custom",
               "Override",
@@ -6640,6 +7044,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -6818,21 +7229,21 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 1613,
+      "offset": 1625,
       "length": 95,
       "value": "\"Call prepare(for bannerInstance: NautilusBanner) method before setting currentBannerCategory.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/View\/NautilusBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1895,
+      "offset": 1907,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerLog.swift",
       "kind": "IntegerLiteral",
-      "offset": 1282,
+      "offset": 1286,
       "length": 3,
       "value": "1"
     },
@@ -6853,14 +7264,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 1928,
+      "offset": 3219,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Banner\/Sources\/Base\/NautilusBannerInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 1984,
+      "offset": 3275,
       "length": 8,
       "value": "2"
     },

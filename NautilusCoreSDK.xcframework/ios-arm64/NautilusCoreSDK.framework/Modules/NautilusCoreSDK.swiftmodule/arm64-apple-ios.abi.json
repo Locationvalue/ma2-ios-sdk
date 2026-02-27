@@ -173,6 +173,8 @@
         "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP",
         "mangledName": "$s15NautilusCoreSDK20NetworkServiceLoggerP",
         "moduleName": "NautilusCoreSDK",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -191,6 +193,20 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1998,6 +2014,1120 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "NautilusSerialServiceActor",
+        "printedName": "NautilusSerialServiceActor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkService",
+                "printedName": "any NautilusCoreSDK.NetworkService",
+                "usr": "s:15NautilusCoreSDK14NetworkServiceP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC7defaultAA07NetworkE0_pvpZ",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC7defaultAA07NetworkE0_pvpZ",
+            "moduleName": "NautilusCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkService",
+                    "printedName": "any NautilusCoreSDK.NetworkService",
+                    "usr": "s:15NautilusCoreSDK14NetworkServiceP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC7defaultAA07NetworkE0_pvgZ",
+                "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC7defaultAA07NetworkE0_pvgZ",
+                "moduleName": "NautilusCoreSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loggers",
+            "printedName": "loggers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any NautilusCoreSDK.NetworkServiceLogger]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkServiceLogger",
+                    "printedName": "any NautilusCoreSDK.NetworkServiceLogger",
+                    "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC7loggersSayAA07NetworkE6Logger_pGvp",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC7loggersSayAA07NetworkE6Logger_pGvp",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any NautilusCoreSDK.NetworkServiceLogger]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkServiceLogger",
+                        "printedName": "any NautilusCoreSDK.NetworkServiceLogger",
+                        "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC7loggersSayAA07NetworkE6Logger_pGvg",
+                "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC7loggersSayAA07NetworkE6Logger_pGvg",
+                "moduleName": "NautilusCoreSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(session:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusSerialServiceActor",
+                "printedName": "NautilusCoreSDK.NautilusSerialServiceActor",
+                "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC7sessionACSo12NSURLSessionC_tcfc",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC7sessionACSo12NSURLSessionC_tcfc",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Object"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC4send7request6ObjectQzx_tYaKAA7RequestRzlF",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC4send7request6ObjectQzx_tYaKAA7RequestRzlF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<R where R : NautilusCoreSDK.Request>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC6cancel4uuidy10Foundation4UUIDV_tYaF",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC6cancel4uuidy10Foundation4UUIDV_tYaF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC6cancel4uuidy10Foundation4UUIDV_tF",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC6cancel4uuidy10Foundation4UUIDV_tF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelAll",
+            "printedName": "cancelAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC9cancelAllyyF",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC9cancelAllyyF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addLogger",
+            "printedName": "addLogger(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkServiceLogger",
+                "printedName": "any NautilusCoreSDK.NetworkServiceLogger",
+                "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC9addLoggeryyAA07NetworkeH0_pF",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC9addLoggeryyAA07NetworkeH0_pF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeLogger",
+            "printedName": "removeLogger(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkServiceLogger",
+                "printedName": "any NautilusCoreSDK.NetworkServiceLogger",
+                "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC12removeLoggeryyAA07NetworkeH0_pF",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC12removeLoggeryyAA07NetworkeH0_pF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<τ_0_0.Object, NautilusCoreSDK.NetworkServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<τ_0_0.Object, NautilusCoreSDK.NetworkServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Object"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkServiceError",
+                        "printedName": "NautilusCoreSDK.NetworkServiceError",
+                        "usr": "s:15NautilusCoreSDK19NetworkServiceErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC4send7request10completionyx_ys6ResultOy6ObjectQzAA07NetworkE5ErrorOGctAA7RequestRzlF",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC4send7request10completionyx_ys6ResultOy6ObjectQzAA07NetworkE5ErrorOGctAA7RequestRzlF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<R where R : NautilusCoreSDK.Request>",
+            "deprecated": true,
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:callbackQueue:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.OperationQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationQueue",
+                    "printedName": "Foundation.OperationQueue",
+                    "usr": "c:objc(cs)NSOperationQueue"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<τ_0_0.Object, NautilusCoreSDK.NetworkServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<τ_0_0.Object, NautilusCoreSDK.NetworkServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Object"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkServiceError",
+                        "printedName": "NautilusCoreSDK.NetworkServiceError",
+                        "usr": "s:15NautilusCoreSDK19NetworkServiceErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC4send7request13callbackQueue10completionyx_So011NSOperationJ0CSgys6ResultOy6ObjectQzAA07NetworkE5ErrorOGctAA7RequestRzlF",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC4send7request13callbackQueue10completionyx_So011NSOperationJ0CSgys6ResultOy6ObjectQzAA07NetworkE5ErrorOGctAA7RequestRzlF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<R where R : NautilusCoreSDK.Request>",
+            "deprecated": true,
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC15unownedExecutorScevp",
+            "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC15unownedExecutorScevp",
+            "moduleName": "NautilusCoreSDK",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC15unownedExecutorScevg",
+                "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC15unownedExecutorScevg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15NautilusCoreSDK0A18SerialServiceActorC",
+        "mangledName": "$s15NautilusCoreSDK0A18SerialServiceActorC",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkService",
+            "printedName": "NetworkService",
+            "usr": "s:15NautilusCoreSDK14NetworkServiceP",
+            "mangledName": "$s15NautilusCoreSDK14NetworkServiceP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusConcurrentServiceActor",
+        "printedName": "NautilusConcurrentServiceActor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkService",
+                "printedName": "any NautilusCoreSDK.NetworkService",
+                "usr": "s:15NautilusCoreSDK14NetworkServiceP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC7defaultAA07NetworkE0_pvpZ",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC7defaultAA07NetworkE0_pvpZ",
+            "moduleName": "NautilusCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkService",
+                    "printedName": "any NautilusCoreSDK.NetworkService",
+                    "usr": "s:15NautilusCoreSDK14NetworkServiceP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC7defaultAA07NetworkE0_pvgZ",
+                "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC7defaultAA07NetworkE0_pvgZ",
+                "moduleName": "NautilusCoreSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loggers",
+            "printedName": "loggers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any NautilusCoreSDK.NetworkServiceLogger]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkServiceLogger",
+                    "printedName": "any NautilusCoreSDK.NetworkServiceLogger",
+                    "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC7loggersSayAA07NetworkE6Logger_pGvp",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC7loggersSayAA07NetworkE6Logger_pGvp",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any NautilusCoreSDK.NetworkServiceLogger]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkServiceLogger",
+                        "printedName": "any NautilusCoreSDK.NetworkServiceLogger",
+                        "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC7loggersSayAA07NetworkE6Logger_pGvg",
+                "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC7loggersSayAA07NetworkE6Logger_pGvg",
+                "moduleName": "NautilusCoreSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(session:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusConcurrentServiceActor",
+                "printedName": "NautilusCoreSDK.NautilusConcurrentServiceActor",
+                "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC7sessionACSo12NSURLSessionC_tcfc",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC7sessionACSo12NSURLSessionC_tcfc",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Object"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC4send7request6ObjectQzx_tYaKAA7RequestRzlF",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC4send7request6ObjectQzx_tYaKAA7RequestRzlF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<R where R : NautilusCoreSDK.Request>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC6cancel4uuidy10Foundation4UUIDV_tYaF",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC6cancel4uuidy10Foundation4UUIDV_tYaF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC6cancel4uuidy10Foundation4UUIDV_tF",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC6cancel4uuidy10Foundation4UUIDV_tF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelAll",
+            "printedName": "cancelAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC9cancelAllyyF",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC9cancelAllyyF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addLogger",
+            "printedName": "addLogger(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkServiceLogger",
+                "printedName": "any NautilusCoreSDK.NetworkServiceLogger",
+                "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC9addLoggeryyAA07NetworkeH0_pF",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC9addLoggeryyAA07NetworkeH0_pF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeLogger",
+            "printedName": "removeLogger(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkServiceLogger",
+                "printedName": "any NautilusCoreSDK.NetworkServiceLogger",
+                "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC12removeLoggeryyAA07NetworkeH0_pF",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC12removeLoggeryyAA07NetworkeH0_pF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<τ_0_0.Object, NautilusCoreSDK.NetworkServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<τ_0_0.Object, NautilusCoreSDK.NetworkServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Object"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkServiceError",
+                        "printedName": "NautilusCoreSDK.NetworkServiceError",
+                        "usr": "s:15NautilusCoreSDK19NetworkServiceErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC4send7request10completionyx_ys6ResultOy6ObjectQzAA07NetworkE5ErrorOGctAA7RequestRzlF",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC4send7request10completionyx_ys6ResultOy6ObjectQzAA07NetworkE5ErrorOGctAA7RequestRzlF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<R where R : NautilusCoreSDK.Request>",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:callbackQueue:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.OperationQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationQueue",
+                    "printedName": "Foundation.OperationQueue",
+                    "usr": "c:objc(cs)NSOperationQueue"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<τ_0_0.Object, NautilusCoreSDK.NetworkServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<τ_0_0.Object, NautilusCoreSDK.NetworkServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Object"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkServiceError",
+                        "printedName": "NautilusCoreSDK.NetworkServiceError",
+                        "usr": "s:15NautilusCoreSDK19NetworkServiceErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC4send7request13callbackQueue10completionyx_So011NSOperationJ0CSgys6ResultOy6ObjectQzAA07NetworkE5ErrorOGctAA7RequestRzlF",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC4send7request13callbackQueue10completionyx_So011NSOperationJ0CSgys6ResultOy6ObjectQzAA07NetworkE5ErrorOGctAA7RequestRzlF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<R where R : NautilusCoreSDK.Request>",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC15unownedExecutorScevp",
+            "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC15unownedExecutorScevp",
+            "moduleName": "NautilusCoreSDK",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC15unownedExecutorScevg",
+                "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC15unownedExecutorScevg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15NautilusCoreSDK0A22ConcurrentServiceActorC",
+        "mangledName": "$s15NautilusCoreSDK0A22ConcurrentServiceActorC",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkService",
+            "printedName": "NetworkService",
+            "usr": "s:15NautilusCoreSDK14NetworkServiceP",
+            "mangledName": "$s15NautilusCoreSDK14NetworkServiceP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "APIClient",
         "printedName": "APIClient",
         "children": [
@@ -2254,6 +3384,33 @@
           },
           {
             "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_1_0.Object"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK9APIClientP4send7request6ObjectQyd__qd___tYaKAA7RequestRd__lF",
+            "mangledName": "$s15NautilusCoreSDK9APIClientP4send7request6ObjectQyd__qd___tYaKAA7RequestRd__lF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NautilusCoreSDK.APIClient, τ_1_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<Self, R where Self : NautilusCoreSDK.APIClient, R : NautilusCoreSDK.Request>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "cancel",
             "printedName": "cancel()",
             "children": [
@@ -2266,6 +3423,27 @@
             "declKind": "Func",
             "usr": "s:15NautilusCoreSDK9APIClientP6cancelyyF",
             "mangledName": "$s15NautilusCoreSDK9APIClientP6cancelyyF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.APIClient>",
+            "sugared_genericSig": "<Self where Self : NautilusCoreSDK.APIClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK9APIClientP6cancelyyYaF",
+            "mangledName": "$s15NautilusCoreSDK9APIClientP6cancelyyYaF",
             "moduleName": "NautilusCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.APIClient>",
             "sugared_genericSig": "<Self where Self : NautilusCoreSDK.APIClient>",
@@ -4001,6 +5179,13 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4421,6 +5606,13 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -5093,15 +6285,75 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A18ConcurrencyServiceC6cancel4uuidy10Foundation4UUIDV_tYaF",
+            "mangledName": "$s15NautilusCoreSDK0A18ConcurrencyServiceC6cancel4uuidy10Foundation4UUIDV_tYaF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Object"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A18ConcurrencyServiceC4send7request6ObjectQzx_tYaKAA7RequestRzlF",
+            "mangledName": "$s15NautilusCoreSDK0A18ConcurrencyServiceC4send7request6ObjectQzx_tYaKAA7RequestRzlF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<R where R : NautilusCoreSDK.Request>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
         "usr": "s:15NautilusCoreSDK0A18ConcurrencyServiceC",
         "mangledName": "$s15NautilusCoreSDK0A18ConcurrencyServiceC",
         "moduleName": "NautilusCoreSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -5669,6 +6921,16 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -6325,6 +7587,13 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -7056,6 +8325,255 @@
         "printedName": "NautilusLoggingSDK",
         "declKind": "Import",
         "moduleName": "NautilusCoreSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkServiceSystemLogger",
+        "printedName": "NetworkServiceSystemLogger",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkServiceLogger",
+                "printedName": "any NautilusCoreSDK.NetworkServiceLogger",
+                "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK26NetworkServiceSystemLoggerC6sharedAA0deG0_pvpZ",
+            "mangledName": "$s15NautilusCoreSDK26NetworkServiceSystemLoggerC6sharedAA0deG0_pvpZ",
+            "moduleName": "NautilusCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkServiceLogger",
+                    "printedName": "any NautilusCoreSDK.NetworkServiceLogger",
+                    "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK26NetworkServiceSystemLoggerC6sharedAA0deG0_pvgZ",
+                "mangledName": "$s15NautilusCoreSDK26NetworkServiceSystemLoggerC6sharedAA0deG0_pvgZ",
+                "moduleName": "NautilusCoreSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NautilusCoreSDK26NetworkServiceSystemLoggerC2idSSvp",
+            "mangledName": "$s15NautilusCoreSDK26NetworkServiceSystemLoggerC2idSSvp",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NautilusCoreSDK26NetworkServiceSystemLoggerC2idSSvg",
+                "mangledName": "$s15NautilusCoreSDK26NetworkServiceSystemLoggerC2idSSvg",
+                "moduleName": "NautilusCoreSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "printRequest",
+            "printedName": "printRequest(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK26NetworkServiceSystemLoggerC12printRequestyy10Foundation10URLRequestVF",
+            "mangledName": "$s15NautilusCoreSDK26NetworkServiceSystemLoggerC12printRequestyy10Foundation10URLRequestVF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "printResponse",
+            "printedName": "printResponse(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLResponse",
+                "printedName": "Foundation.URLResponse",
+                "usr": "c:objc(cs)NSURLResponse"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK26NetworkServiceSystemLoggerC13printResponseyy10Foundation4DataVSg_So13NSURLResponseCtF",
+            "mangledName": "$s15NautilusCoreSDK26NetworkServiceSystemLoggerC13printResponseyy10Foundation4DataVSg_So13NSURLResponseCtF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "printError",
+            "printedName": "printError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK26NetworkServiceSystemLoggerC10printErroryys0I0_pF",
+            "mangledName": "$s15NautilusCoreSDK26NetworkServiceSystemLoggerC10printErroryys0I0_pF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15NautilusCoreSDK26NetworkServiceSystemLoggerC",
+        "mangledName": "$s15NautilusCoreSDK26NetworkServiceSystemLoggerC",
+        "moduleName": "NautilusCoreSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkServiceLogger",
+            "printedName": "NetworkServiceLogger",
+            "usr": "s:15NautilusCoreSDK20NetworkServiceLoggerP",
+            "mangledName": "$s15NautilusCoreSDK20NetworkServiceLoggerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -8037,6 +9555,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -8332,6 +9857,36 @@
           },
           {
             "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_1_0.Object"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK14NetworkServiceP4send7request6ObjectQyd__qd___tYaKAA7RequestRd__lF",
+            "mangledName": "$s15NautilusCoreSDK14NetworkServiceP4send7request6ObjectQyd__qd___tYaKAA7RequestRd__lF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NautilusCoreSDK.NetworkService, τ_1_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<Self, R where Self : NautilusCoreSDK.NetworkService, R : NautilusCoreSDK.Request>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "cancelAll",
             "printedName": "cancelAll()",
             "children": [
@@ -8374,6 +9929,36 @@
             "declKind": "Func",
             "usr": "s:15NautilusCoreSDK14NetworkServiceP6cancel4uuidy10Foundation4UUIDV_tF",
             "mangledName": "$s15NautilusCoreSDK14NetworkServiceP6cancel4uuidy10Foundation4UUIDV_tF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.NetworkService>",
+            "sugared_genericSig": "<Self where Self : NautilusCoreSDK.NetworkService>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK14NetworkServiceP6cancel4uuidy10Foundation4UUIDV_tYaF",
+            "mangledName": "$s15NautilusCoreSDK14NetworkServiceP6cancel4uuidy10Foundation4UUIDV_tYaF",
             "moduleName": "NautilusCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.NetworkService>",
             "sugared_genericSig": "<Self where Self : NautilusCoreSDK.NetworkService>",
@@ -8802,15 +10387,75 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A14NetworkServiceC6cancel4uuidy10Foundation4UUIDV_tYaF",
+            "mangledName": "$s15NautilusCoreSDK0A14NetworkServiceC6cancel4uuidy10Foundation4UUIDV_tYaF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Object"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A14NetworkServiceC4send7request6ObjectQzx_tYaKAA7RequestRzlF",
+            "mangledName": "$s15NautilusCoreSDK0A14NetworkServiceC4send7request6ObjectQzx_tYaKAA7RequestRzlF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<R where R : NautilusCoreSDK.Request>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
         "usr": "s:15NautilusCoreSDK0A14NetworkServiceC",
         "mangledName": "$s15NautilusCoreSDK0A14NetworkServiceC",
         "moduleName": "NautilusCoreSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -13475,8 +15120,8 @@
         "usr": "s:15NautilusCoreSDK7RequestP",
         "mangledName": "$s15NautilusCoreSDK7RequestP",
         "moduleName": "NautilusCoreSDK",
-        "genericSig": "<τ_0_0.Object : NautilusCoreSDK.Response, τ_0_0.Object : Swift.Decodable, τ_0_0.ObjectDecoder : NautilusCoreSDK.ResponseDecoder, τ_0_0.Parameter : NautilusCoreSDK.RequestParameter>",
-        "sugared_genericSig": "<Self.Object : NautilusCoreSDK.Response, Self.Object : Swift.Decodable, Self.ObjectDecoder : NautilusCoreSDK.ResponseDecoder, Self.Parameter : NautilusCoreSDK.RequestParameter>",
+        "genericSig": "<τ_0_0 : Swift.Sendable, τ_0_0.Object : NautilusCoreSDK.Response, τ_0_0.Object : Swift.Decodable, τ_0_0.ObjectDecoder : NautilusCoreSDK.ResponseDecoder, τ_0_0.Parameter : NautilusCoreSDK.RequestParameter>",
+        "sugared_genericSig": "<Self : Swift.Sendable, Self.Object : NautilusCoreSDK.Response, Self.Object : Swift.Decodable, Self.ObjectDecoder : NautilusCoreSDK.ResponseDecoder, Self.Parameter : NautilusCoreSDK.RequestParameter>",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -13495,6 +15140,20 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -14040,6 +15699,20 @@
             ],
             "usr": "s:15NautilusCoreSDK7RequestP",
             "mangledName": "$s15NautilusCoreSDK7RequestP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -14910,6 +16583,35 @@
           },
           {
             "kind": "Function",
+            "name": "send",
+            "printedName": "send(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Object"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A9APIClientC4send7request6ObjectQzx_tYaKAA7RequestRzlF",
+            "mangledName": "$s15NautilusCoreSDK0A9APIClientC4send7request6ObjectQzx_tYaKAA7RequestRzlF",
+            "moduleName": "NautilusCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NautilusCoreSDK.Request>",
+            "sugared_genericSig": "<R where R : NautilusCoreSDK.Request>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "cancel",
             "printedName": "cancel()",
             "children": [
@@ -14925,7 +16627,29 @@
             "moduleName": "NautilusCoreSDK",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusCoreSDK0A9APIClientC6cancelyyYaF",
+            "mangledName": "$s15NautilusCoreSDK0A9APIClientC6cancelyyYaF",
+            "moduleName": "NautilusCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -15178,6 +16902,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CustomReflectable",
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
@@ -15204,6 +16935,73 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Task",
+        "printedName": "Task",
+        "declKind": "Struct",
+        "usr": "s:ScT",
+        "mangledName": "$sScT",
+        "moduleName": "_Concurrency",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Sendable, τ_0_1 : Swift.Error>",
+        "sugared_genericSig": "<Success, Failure where Success : Swift.Sendable, Failure : Swift.Error>",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -15308,6 +17106,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "TopLevelDecoder",
             "printedName": "TopLevelDecoder",
             "children": [
@@ -15327,6 +17132,13 @@
             ],
             "usr": "s:7Combine15TopLevelDecoderP",
             "mangledName": "$s7Combine15TopLevelDecoderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkDecoder",
+            "printedName": "NetworkDecoder",
+            "usr": "s:7Network0A7DecoderP",
+            "mangledName": "$s7Network0A7DecoderP"
           }
         ]
       },
@@ -15431,6 +17243,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "TopLevelDecoder",
             "printedName": "TopLevelDecoder",
             "children": [
@@ -15450,6 +17269,13 @@
             ],
             "usr": "s:7Combine15TopLevelDecoderP",
             "mangledName": "$s7Combine15TopLevelDecoderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkDecoder",
+            "printedName": "NetworkDecoder",
+            "usr": "s:7Network0A7DecoderP",
+            "mangledName": "$s7Network0A7DecoderP"
           }
         ]
       },
@@ -15633,6 +17459,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -15844,6 +17677,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -16293,6 +18133,35 @@
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
             "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           },
           {
             "kind": "Conformance",
@@ -16957,6 +18826,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
@@ -16975,35 +18851,6 @@
             "printedName": "_HasContiguousBytes",
             "usr": "s:s19_HasContiguousBytesP",
             "mangledName": "$ss19_HasContiguousBytesP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSArray",
-                    "printedName": "Foundation.NSArray",
-                    "usr": "c:objc(cs)NSArray"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
@@ -17098,6 +18945,35 @@
             ],
             "usr": "s:10Foundation26DecodableWithConfigurationP",
             "mangledName": "$s10Foundation26DecodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           }
         ]
       },
@@ -17263,6 +19139,13 @@
             "printedName": "_HasCustomAnyHashableRepresentation",
             "usr": "s:s35_HasCustomAnyHashableRepresentationP",
             "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17543,6 +19426,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -17991,6 +19881,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SIMDScalar",
             "printedName": "SIMDScalar",
             "children": [
@@ -18139,6 +20036,28 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           }
         ]
       },
@@ -18458,6 +20377,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SIMDScalar",
             "printedName": "SIMDScalar",
             "children": [
@@ -18606,6 +20532,35 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkFixedWidthInteger",
+            "printedName": "NetworkFixedWidthInteger",
+            "usr": "s:7Network0A17FixedWidthIntegerP",
+            "mangledName": "$s7Network0A17FixedWidthIntegerP"
           }
         ]
       },
@@ -18694,6 +20649,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -18921,6 +20883,48 @@
       "value": "3"
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusSerialServiceActor.swift",
+      "kind": "StringLiteral",
+      "offset": 676,
+      "length": 31,
+      "value": "\"com.locationvalue.logger.sync\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusSerialServiceActor.swift",
+      "kind": "Array",
+      "offset": 789,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusSerialServiceActor.swift",
+      "kind": "Array",
+      "offset": 2310,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrentServiceActor.swift",
+      "kind": "StringLiteral",
+      "offset": 685,
+      "length": 31,
+      "value": "\"com.locationvalue.logger.sync\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrentServiceActor.swift",
+      "kind": "Array",
+      "offset": 798,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrentServiceActor.swift",
+      "kind": "Dictionary",
+      "offset": 2369,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Base\/NautilusInitializationFailureReason.swift",
       "kind": "IntegerLiteral",
       "offset": 334,
@@ -19028,21 +21032,21 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
       "kind": "Array",
-      "offset": 551,
+      "offset": 632,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
       "kind": "BooleanLiteral",
-      "offset": 3622,
+      "offset": 4532,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusConcurrencyService.swift",
       "kind": "BooleanLiteral",
-      "offset": 3807,
+      "offset": 4717,
       "length": 5,
       "value": "false"
     },
@@ -19147,21 +21151,21 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
       "kind": "Array",
-      "offset": 528,
+      "offset": 605,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 3510,
+      "offset": 4408,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Core\/Sources\/Service\/NautilusNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 3699,
+      "offset": 4597,
       "length": 5,
       "value": "false"
     },
