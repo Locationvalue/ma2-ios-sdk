@@ -191,7 +191,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryDetailViewController(py)delegate",
+            "usr": "s:20NautilusLotteryUISDK0aB20DetailViewControllerC8delegateAA0abdeF8Delegate_pSgvp",
             "mangledName": "$s20NautilusLotteryUISDK0aB20DetailViewControllerC8delegateAA0abdeF8Delegate_pSgvp",
             "moduleName": "NautilusLotteryUISDK",
             "declAttributes": [
@@ -201,7 +201,6 @@
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "ownership": 1,
@@ -228,13 +227,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryDetailViewController(im)delegate",
+                "usr": "s:20NautilusLotteryUISDK0aB20DetailViewControllerC8delegateAA0abdeF8Delegate_pSgvg",
                 "mangledName": "$s20NautilusLotteryUISDK0aB20DetailViewControllerC8delegateAA0abdeF8Delegate_pSgvg",
                 "moduleName": "NautilusLotteryUISDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -263,13 +259,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryDetailViewController(im)setDelegate:",
+                "usr": "s:20NautilusLotteryUISDK0aB20DetailViewControllerC8delegateAA0abdeF8Delegate_pSgvs",
                 "mangledName": "$s20NautilusLotteryUISDK0aB20DetailViewControllerC8delegateAA0abdeF8Delegate_pSgvs",
                 "moduleName": "NautilusLotteryUISDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -947,13 +940,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1712,7 +1698,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1754,7 +1739,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(py)delegate",
+            "usr": "s:20NautilusLotteryUISDK0aB2UIC8delegateAA0aB10UIDelegate_pSgvp",
             "mangledName": "$s20NautilusLotteryUISDK0aB2UIC8delegateAA0aB10UIDelegate_pSgvp",
             "moduleName": "NautilusLotteryUISDK",
             "declAttributes": [
@@ -1763,7 +1748,6 @@
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "ownership": 1,
@@ -1790,13 +1774,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)delegate",
+                "usr": "s:20NautilusLotteryUISDK0aB2UIC8delegateAA0aB10UIDelegate_pSgvg",
                 "mangledName": "$s20NautilusLotteryUISDK0aB2UIC8delegateAA0aB10UIDelegate_pSgvg",
                 "moduleName": "NautilusLotteryUISDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               },
@@ -1826,13 +1809,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryUI(im)setDelegate:",
+                "usr": "s:20NautilusLotteryUISDK0aB2UIC8delegateAA0aB10UIDelegate_pSgvs",
                 "mangledName": "$s20NautilusLotteryUISDK0aB2UIC8delegateAA0aB10UIDelegate_pSgvs",
                 "moduleName": "NautilusLotteryUISDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "set"
               },
@@ -2008,7 +1990,6 @@
             "objc_name": "presentLotteryListViewControllerIn:",
             "declAttributes": [
               "Final",
-              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2033,7 +2014,6 @@
             "moduleName": "NautilusLotteryUISDK",
             "declAttributes": [
               "Final",
-              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2074,7 +2054,6 @@
             "objc_name": "instantiateLotteryListViewControllerWithExcludeAliasList:",
             "declAttributes": [
               "Final",
-              "Nonisolated",
               "AccessControl",
               "Available",
               "ObjC",
@@ -2127,7 +2106,6 @@
             "objc_name": "presentLotteryDetailViewControllerIn:lotteryID:notificationInfo:",
             "declAttributes": [
               "Final",
-              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2174,7 +2152,6 @@
             "objc_name": "instantiateLotteryDetailViewControllerWithLotteryID:notificationInfo:",
             "declAttributes": [
               "Final",
-              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2226,7 +2203,6 @@
             "objc_name": "presentLotteryDetailViewControllerIn:lottery:notificationInfo:",
             "declAttributes": [
               "Final",
-              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2273,7 +2249,6 @@
             "objc_name": "instantiateLotteryDetailViewControllerWithLottery:notificationInfo:",
             "declAttributes": [
               "Final",
-              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2302,7 +2277,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -2313,7 +2287,6 @@
         "mangledName": "$s20NautilusLotteryUISDK0aB2UIC",
         "moduleName": "NautilusLotteryUISDK",
         "declAttributes": [
-          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC",
@@ -2653,13 +2626,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }
