@@ -92,6 +92,7 @@ import _SwiftConcurrencyShims
   case catchphrase
   case address
   case telephone
+  case subTelephone
   case business
   case access
   case emergencyNotification
@@ -282,6 +283,7 @@ import _SwiftConcurrencyShims
   final public let catchphrase: Swift.String?
   final public let address: Swift.String?
   final public let telephone: Swift.String?
+  final public let subTelList: [NautilusShopSDK.NautilusShopSubTel]?
   final public let shopLocation: _LocationEssentials.CLLocationCoordinate2D
   final public let shopImages: [NautilusShopSDK.NautilusShopImage]?
   final public let clientShopCD: Swift.String?
@@ -291,6 +293,12 @@ import _SwiftConcurrencyShims
   final public let distance: Swift.Double?
   final public let shopSearchTags: [Swift.Int]?
   final public let isFavorite: Swift.Bool?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSubTel : ObjectiveC.NSObject {
+  final public let telTitle: Swift.String
+  final public let tel: Swift.String
+  final public let sortNo: Swift.Int
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopExternalLink : ObjectiveC.NSObject {
@@ -367,7 +375,7 @@ public let NautilusShopErrorDomain: Swift.String
   public init(textSize: CoreFoundation.CGFloat? = nil, textColor: UIKit.UIColor? = nil, typeface: UIKit.UIFont.Weight? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(textSize: CoreFoundation.CGFloat = .infinity, textColor: UIKit.UIColor? = nil, typeface: UIKit.UIFont.Weight)
+  @objc convenience public init(objTextSize: CoreFoundation.CGFloat = .nan, objTextColor: UIKit.UIColor? = nil, objTypeface: UIKit.UIFont.Weight)
   #endif
   @objc deinit
 }

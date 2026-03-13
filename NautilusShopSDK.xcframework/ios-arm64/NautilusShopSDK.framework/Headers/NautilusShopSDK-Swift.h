@@ -588,16 +588,16 @@ SWIFT_CLASS("_TtC15NautilusShopSDK26NautilusShopDetailModifier")
 /// Objective-cを使用する際はこちらのメソッドを利用してください
 /// <ul>
 ///   <li>
-///     Parameters: textSize: 情報領域に適用するテキストサイズ、数値以外はnilとして処理される
+///     Parameters: objTextSize: 情報領域に適用するテキストサイズ。nil 相当を指定したい場合は  NAN を渡してください。（0より大きく100未満の有効な値のみ受け入れられます。範囲外の値やNAN、infinityはnilとして扱われます）
 ///   </li>
 ///   <li>
-///     Parameters: textColor: 情報領域に適用するテキストカラー
+///     Parameters: objTextColor: 情報領域に適用するテキストカラー
 ///   </li>
 ///   <li>
-///     Parameters: typeface: 情報領域に適用する書体情報。デフォルトの場合、タイトルならbold, テキストならregularを指定する
+///     Parameters: objTypeface: 情報領域に適用する書体情報。デフォルトの場合、タイトルならbold, テキストならregularを指定する
 ///   </li>
 /// </ul>
-- (nonnull instancetype)initWithTextSize:(CGFloat)textSize textColor:(UIColor * _Nullable)textColor typeface:(UIFontWeight)typeface OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithObjTextSize:(CGFloat)objTextSize objTextColor:(UIColor * _Nullable)objTextColor objTypeface:(UIFontWeight)objTypeface;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -867,6 +867,13 @@ SWIFT_CLASS("_TtC15NautilusShopSDK25NautilusShopSearchTagInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// サブ電話番号情報
+SWIFT_CLASS("_TtC15NautilusShopSDK18NautilusShopSubTel")
+@interface NautilusShopSubTel : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// 店舗詳細画面の装飾を設定できる情報領域
 typedef SWIFT_ENUM(NSInteger, ShopDetailItem, open) {
 /// 開店時間
@@ -887,14 +894,16 @@ typedef SWIFT_ENUM(NSInteger, ShopDetailItem, open) {
   ShopDetailItemAddress = 7,
 /// 店舗電話番号。サイズのみ変更可能。
   ShopDetailItemTelephone = 8,
+/// 拡張電話番号。サイズのみ変更可能。
+  ShopDetailItemSubTelephone = 9,
 /// 業態。プロダクト上、使用していない。
-  ShopDetailItemBusiness = 9,
+  ShopDetailItemBusiness = 10,
 /// 店舗アクセス
-  ShopDetailItemAccess = 10,
+  ShopDetailItemAccess = 11,
 /// 緊急告知情報
-  ShopDetailItemEmergencyNotification = 11,
+  ShopDetailItemEmergencyNotification = 12,
 /// 店舗距離
-  ShopDetailItemDistance = 12,
+  ShopDetailItemDistance = 13,
 };
 
 #endif
