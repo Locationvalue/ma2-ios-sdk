@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusContentSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusContentSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import DeveloperToolsSupport
 import Foundation
 import NautilusAnalyticsSDK
@@ -32,9 +32,11 @@ import _SwiftConcurrencyShims
   final public let sortNo: Swift.Int?
   final public let searchWord: Swift.String?
   final public let contentImages: [NautilusContentSDK.NautilusContentImage]?
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var contentType: NautilusContentSDK.NautilusContentType? {
     get
   }
+  #endif
   final public let favorite: Swift.Bool?
   final public let alias: Swift.String?
   @objc deinit
@@ -52,10 +54,12 @@ import _SwiftConcurrencyShims
   @objc func content(_ content: NautilusContentSDK.NautilusContent, actionButtonTitleForContent contentInfo: NautilusContentSDK.NautilusContentInfo, in viewController: UIKit.UIViewController) -> Swift.String
   @objc func content(_ content: NautilusContentSDK.NautilusContent, handle contentInfo: NautilusContentSDK.NautilusContentInfo, in viewController: UIKit.UIViewController) -> Swift.Bool
 }
-@_hasMissingDesignatedInitializers @objc final public class NautilusContent : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusContent : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -64,59 +68,121 @@ import _SwiftConcurrencyShims
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
   @objc weak final public var delegate: (any NautilusContentSDK.NautilusContentDelegate)?
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func content() -> NautilusContentSDK.NautilusContent
   @objc(shopAppNamed:) public static func content(appName: Swift.String) -> NautilusContentSDK.NautilusContent
-  @objc final public func instantiateContentListViewController() -> UIKit.UIViewController
-  @objc final public func instantiateContentListViewController(category: NautilusContentSDK.NautilusContentCategoryInfo?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
-  final public func instantiateContentListViewController(categoryID: Swift.Int?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
-  @objc final public func instantiateContentListViewController(categoryID: Swift.Int, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
-  @objc final public func instantiateContentListViewController(categoryAlias: Swift.String?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
-  @objc final public func instantiateFavoriteContentListViewController() -> UIKit.UIViewController
-  @objc final public func instantiateContentDetailViewController(contentID: Swift.Int, contentType: NautilusContentSDK.NautilusContentType, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
+  @objc nonisolated final public func instantiateContentListViewController() -> UIKit.UIViewController
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func instantiateContentListViewController(category: NautilusContentSDK.NautilusContentCategoryInfo?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func instantiateContentListViewController(categoryID: Swift.Int?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  #endif
+  @objc nonisolated final public func instantiateContentListViewController(categoryID: Swift.Int, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func instantiateContentListViewController(categoryAlias: Swift.String?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
+  #endif
+  @objc nonisolated final public func instantiateFavoriteContentListViewController() -> UIKit.UIViewController
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func instantiateContentDetailViewController(contentID: Swift.Int, contentType: NautilusContentSDK.NautilusContentType, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "getCommonContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)")
-  final public func getCommonContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
-  final public func getCommonContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  final nonisolated public func getCommonContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getCommonContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "getCommonContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)")
-  @objc final public func getCommonContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
-  @objc final public func getCommonContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
-  final public func getCommonContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
-  @objc final public func getCommonContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  @objc nonisolated final public func getCommonContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func getCommonContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getCommonContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func getCommonContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "getPrivateContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)")
-  final public func getPrivateContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
-  final public func getPrivateContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  final nonisolated public func getPrivateContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getPrivateContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "getPrivateContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)")
-  @objc final public func getPrivateContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
-  @objc final public func getPrivateContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
-  final public func getPrivateContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
-  @objc final public func getPrivateContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  @objc nonisolated final public func getPrivateContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func getPrivateContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getPrivateContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func getPrivateContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "getFavoriteShopContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)")
-  final public func getFavoriteShopContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
-  final public func getFavoriteShopContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  final nonisolated public func getFavoriteShopContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getFavoriteShopContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "getFavoriteShopContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)")
-  @objc final public func getFavoriteShopContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
-  @objc final public func getFavoriteShopContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
-  final public func getFavoriteShopContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
-  @objc final public func getFavoriteShopContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
-  final public func updateFavorite(addFavoriteContentIDs: [Swift.Int]?, removeFavoriteContentIDs: [Swift.Int]?, completion: @escaping (Swift.Result<Swift.Void, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
-  @objc final public func updateFavorite(addFavoriteContentIDs: [Swift.Int]?, removeFavoriteContentIDs: [Swift.Int]?, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  final public func getFavoriteContentList(completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
-  @objc final public func getFavoriteContentList(completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
-  final public func getContentCategoryList(completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentCategoryInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
-  @objc final public func getContentCategoryList(completion: @escaping ([NautilusContentSDK.NautilusContentCategoryInfo]?, Foundation.NSError?) -> Swift.Void)
-  final public func sendContentLog(contentLogs: [NautilusContentSDK.NautilusContentLog], completion: @escaping (Swift.Result<Swift.Void, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
-  final public func sendContentLog(contentLogs: [NautilusContentSDK.NautilusContentLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc nonisolated final public func getFavoriteShopContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func getFavoriteShopContentList(offset: Swift.Int, limit: Swift.Int, useCache: Swift.Bool, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getFavoriteShopContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func getFavoriteShopContentCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func updateFavorite(addFavoriteContentIDs: [Swift.Int]?, removeFavoriteContentIDs: [Swift.Int]?, completion: @escaping (Swift.Result<Swift.Void, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func updateFavorite(addFavoriteContentIDs: [Swift.Int]?, removeFavoriteContentIDs: [Swift.Int]?, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getFavoriteContentList(completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func getFavoriteContentList(completion: @escaping ([NautilusContentSDK.NautilusContentInfo]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getContentCategoryList(completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentCategoryInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func getContentCategoryList(completion: @escaping ([NautilusContentSDK.NautilusContentCategoryInfo]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func sendContentLog(contentLogs: [NautilusContentSDK.NautilusContentLog], completion: @escaping (Swift.Result<Swift.Void, NautilusContentSDK.NautilusContentError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func sendContentLog(contentLogs: [NautilusContentSDK.NautilusContentLog], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
   @objc deinit
 }
 @objc public enum NautilusContentType : Swift.Int {
   case common
   case `private`
   case favoriteShop
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -140,7 +206,9 @@ import _SwiftConcurrencyShims
 @objc public enum NautilusContentLogType : Swift.Int {
   case detail
   case url
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -153,8 +221,12 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency @objc final public func numberOfViewControllers(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController) -> Swift.Int
   @_Concurrency.MainActor @preconcurrency @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, viewControllerAt index: Swift.Int) -> UIKit.UIViewController
   @_Concurrency.MainActor @preconcurrency @objc final public func appTopBarController(_ appTopBarController: NautilusUISDK.NautilusAppTopBarController, indexOfViewController viewController: UIKit.UIViewController) -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 public let NautilusContentErrorDomain: Swift.String
@@ -181,7 +253,9 @@ public let NautilusContentErrorDomain: Swift.String
   public var nautilusContentErrorCode: Swift.Int {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -200,7 +274,9 @@ public let NautilusContentErrorDomain: Swift.String
   case publishStartDateTime
   case publishEndDateTime
   case sortNumber
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -209,7 +285,9 @@ public let NautilusContentErrorDomain: Swift.String
 @objc public enum NautilusContentSortKeyOrder : Swift.Int {
   case ascending
   case descending
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get

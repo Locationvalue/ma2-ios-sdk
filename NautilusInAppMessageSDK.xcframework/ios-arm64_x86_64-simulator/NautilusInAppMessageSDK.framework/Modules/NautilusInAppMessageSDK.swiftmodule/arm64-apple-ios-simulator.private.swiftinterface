@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusInAppMessageSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusInAppMessageSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CoreData
 import DeveloperToolsSupport
 import Foundation
@@ -54,32 +54,40 @@ extension NautilusInAppMessageSDK.NautilusInAppMessageControllerDelegate {
   @objc override dynamic public init()
   @objc final public func setViewType(_ viewType: NautilusInAppMessageSDK.NautilusInAppMessageViewType)
   @objc final public func setMessage(_ message: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setImageURL(_ imageURL: Foundation.URL?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setTransitionURL(_ transitionURL: Foundation.URL?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setTransitionParameter(_ transitionParameter: Swift.String?)
+  #endif
   @objc final public func setSortNumber(_ sortNumber: Swift.Int)
   @objc final public func build() -> NautilusInAppMessageSDK.NautilusInAppMessage
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc final public class NautilusInAppMessageFeature : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusInAppMessageFeature : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
   @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func inAppMessage() -> NautilusInAppMessageSDK.NautilusInAppMessageFeature
   @objc(inAppMessageAppNamed:) public static func inAppMessage(appName: Swift.String) -> NautilusInAppMessageSDK.NautilusInAppMessageFeature
-  @objc final public func trigger(eventID: Swift.String)
+  @objc nonisolated final public func trigger(eventID: Swift.String)
   @objc deinit
 }
 @objc public enum NautilusInAppMessageViewType : Swift.Int {
@@ -130,7 +138,9 @@ extension Swift.Int {
   final public let endDate: Foundation.Date?
   final public let isRepeat: Swift.Bool
   final public let interval: NautilusInAppMessageSDK.NautilusInAppMessageInterval?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   final public func isAvailable(date: Foundation.Date) -> Swift.Bool
   @objc deinit
 }

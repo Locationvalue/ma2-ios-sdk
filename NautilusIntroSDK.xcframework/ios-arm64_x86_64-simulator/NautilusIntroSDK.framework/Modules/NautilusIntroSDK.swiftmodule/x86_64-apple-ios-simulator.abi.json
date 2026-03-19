@@ -496,6 +496,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -700,6 +701,7 @@
             "objc_name": "presentIntroductionIn:introList:animated:delegate:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -745,6 +747,7 @@
             "objc_name": "instantiateIntroductionViewControllerWithIntroList:delegate:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -773,6 +776,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -783,6 +787,7 @@
         "mangledName": "$s16NautilusIntroSDK0A12IntroductionC",
         "moduleName": "NautilusIntroSDK",
         "declAttributes": [
+          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC",
@@ -1942,6 +1947,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }

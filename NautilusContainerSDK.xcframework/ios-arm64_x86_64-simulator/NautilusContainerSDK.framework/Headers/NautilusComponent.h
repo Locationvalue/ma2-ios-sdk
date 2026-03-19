@@ -29,6 +29,8 @@ typedef NS_ENUM(NSUInteger, NautilusComponentType) {
     NautilusComponentTypeLazy,
 };
 
+// readonly かつ状態を持たないのでプロトコル全体に nonisolated 属性を付与
+__attribute__((swift_attr("nonisolated")))
 @protocol NautilusComponent
 
 @property(class, nonatomic, readonly) NautilusComponentType componentType;

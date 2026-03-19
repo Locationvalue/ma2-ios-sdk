@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusGeoUtilSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusGeoUtilSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -35,12 +35,32 @@ public let NautilusGeoUtilErrorDomain: Swift.String
   public var nautilusGeoUtilErrorCode: Swift.Int {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
   }
   public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct NautilusZipCode {
+  public let value: Swift.String
+  public var prefix: Swift.String {
+    get
+  }
+  public var suffix: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(string: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(prefix: Swift.String, suffix: Swift.String)
+  #endif
+  public var formattedString: Swift.String {
     get
   }
 }
@@ -99,8 +119,12 @@ public let NautilusGeoUtilErrorDomain: Swift.String
   public var name: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(from codeValue: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -117,10 +141,12 @@ extension NautilusGeoUtilSDK.NautilusPrefectureCode {
   final public let name: Swift.String
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc final public class NautilusGeoUtil : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusGeoUtil : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc final public var app: NautilusCoreSDK.NautilusApp
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
@@ -129,15 +155,29 @@ extension NautilusGeoUtilSDK.NautilusPrefectureCode {
     @objc get
   }
   @objc final public var name: Swift.String?
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func geoUtil() -> NautilusGeoUtilSDK.NautilusGeoUtil
   @objc(geoUtilAppNamed:) public static func geoUtil(appName: Swift.String) -> NautilusGeoUtilSDK.NautilusGeoUtil
-  final public func getMunicipalityList(prefectureCode: NautilusGeoUtilSDK.NautilusPrefectureCode, completion: @escaping (Swift.Result<[NautilusGeoUtilSDK.NautilusMunicipalityCode], NautilusGeoUtilSDK.GeoUtilApiError>) -> Swift.Void)
-  @objc final public func getMunicipalityList(prefectureCode: NautilusGeoUtilSDK.NautilusPrefectureCode, completion: @escaping ([NautilusGeoUtilSDK.NautilusMunicipalityCode]?, Foundation.NSError?) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getMunicipalityList(prefectureCode: NautilusGeoUtilSDK.NautilusPrefectureCode, completion: @escaping (Swift.Result<[NautilusGeoUtilSDK.NautilusMunicipalityCode], NautilusGeoUtilSDK.GeoUtilApiError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc nonisolated final public func getMunicipalityList(prefectureCode: NautilusGeoUtilSDK.NautilusPrefectureCode, completion: @escaping ([NautilusGeoUtilSDK.NautilusMunicipalityCode]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getAddressInfo(zipCode: NautilusGeoUtilSDK.NautilusZipCode, completion: @escaping (Swift.Result<[NautilusGeoUtilSDK.NautilusAddressInfo], NautilusGeoUtilSDK.GeoUtilApiError>) -> Swift.Void)
+  #endif
   @objc deinit
+}
+public struct NautilusAddressInfo {
+  public let zipCode: NautilusGeoUtilSDK.NautilusZipCode
+  public let prefId: Swift.String
+  public let prefecture: Swift.String
+  public let municipality: Swift.String
+  public let townName: Swift.String
 }
 extension NautilusGeoUtilSDK.GeoUtilApiError : Swift.Equatable {}
 extension NautilusGeoUtilSDK.GeoUtilApiError : Swift.Hashable {}
