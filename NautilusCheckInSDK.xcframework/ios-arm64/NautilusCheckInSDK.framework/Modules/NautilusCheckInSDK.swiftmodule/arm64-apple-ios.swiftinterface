@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusCheckInSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusCheckInSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -15,9 +15,7 @@ import _SwiftConcurrencyShims
 @objc public enum NautilusCheckInDeviceType : Swift.Int {
   case qrCode = 1
   case beacon = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -47,9 +45,7 @@ public let NautilusCheckInErrorDomain: Swift.String
   public var nautilusCheckInErrorCode: Swift.Int {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -58,12 +54,10 @@ public let NautilusCheckInErrorDomain: Swift.String
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusCheckIn : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  #if compiler(>=5.3) && $NonescapableTypes
+@_hasMissingDesignatedInitializers @objc final public class NautilusCheckIn : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
-  #endif
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
@@ -72,18 +66,14 @@ public let NautilusCheckInErrorDomain: Swift.String
   }
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
-  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func checkIn() -> NautilusCheckInSDK.NautilusCheckIn
   @objc(checkInAppNamed:) public static func checkIn(appName: Swift.String) -> NautilusCheckInSDK.NautilusCheckIn
-  #if compiler(>=5.3) && $NonescapableTypes
-  final nonisolated public func checkIn(checkInKey: Swift.String, checkInDeviceType: NautilusCheckInSDK.NautilusCheckInDeviceType, location: NautilusCoreSDK.NautilusLocation?, completion: @escaping (Swift.Result<Swift.Int, NautilusCheckInSDK.NautilusCheckInError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc nonisolated final public func checkIn(checkInKey: Swift.String, checkInDeviceType: NautilusCheckInSDK.NautilusCheckInDeviceType, location: NautilusCoreSDK.NautilusLocation?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
-  #endif
+  final public func checkIn(checkInKey: Swift.String, checkInDeviceType: NautilusCheckInSDK.NautilusCheckInDeviceType, location: NautilusCoreSDK.NautilusLocation?, completion: @escaping (Swift.Result<Swift.Int, NautilusCheckInSDK.NautilusCheckInError>) -> Swift.Void)
+  @objc final public func checkIn(checkInKey: Swift.String, checkInDeviceType: NautilusCheckInSDK.NautilusCheckInDeviceType, location: NautilusCoreSDK.NautilusLocation?, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
   @objc deinit
 }
 extension NautilusCheckInSDK.NautilusCheckInDeviceType : Swift.Equatable {}

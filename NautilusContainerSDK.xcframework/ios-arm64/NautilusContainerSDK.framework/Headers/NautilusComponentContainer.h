@@ -12,9 +12,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-// 状態を保つのでクラス全体を MainActor に隔離
-// この属性はあくまでSwift側からのアクセスを制御するためのものなので.mファイルでの排他制御は必要
-__attribute__((swift_attr("@MainActor"))) 
 @interface NautilusComponentContainer : NSObject
 
 + (void)registerComponent:(Class<NautilusComponent>)component name:(nonnull NSString*)name;

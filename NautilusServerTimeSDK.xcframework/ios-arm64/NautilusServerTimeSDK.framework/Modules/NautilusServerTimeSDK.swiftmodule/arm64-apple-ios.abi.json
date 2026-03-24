@@ -448,7 +448,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1038,14 +1037,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NautilusServerTimeSDK@objc(cs)NautilusServerTime(im)now",
+            "usr": "s:21NautilusServerTimeSDK0abC0C3now10Foundation4DateVSgyF",
             "mangledName": "$s21NautilusServerTimeSDK0abC0C3now10Foundation4DateVSgyF",
             "moduleName": "NautilusServerTimeSDK",
             "declAttributes": [
               "Final",
-              "Nonisolated",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -1106,7 +1103,6 @@
             "moduleName": "NautilusServerTimeSDK",
             "declAttributes": [
               "Final",
-              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1177,7 +1173,6 @@
             "objc_name": "updateServerTimeWithCompletion:",
             "declAttributes": [
               "Final",
-              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -1206,7 +1201,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -1217,7 +1211,6 @@
         "mangledName": "$s21NautilusServerTimeSDK0abC0C",
         "moduleName": "NautilusServerTimeSDK",
         "declAttributes": [
-          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC"
@@ -2387,13 +2380,6 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -2763,13 +2749,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -2952,13 +2931,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -3138,13 +3110,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -3384,13 +3349,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }
@@ -3471,7 +3429,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/ServerTime\/Sources\/Base\/NautilusServerTime.swift",
       "kind": "BooleanLiteral",
-      "offset": 8316,
+      "offset": 8310,
       "length": 5,
       "value": "false"
     },
