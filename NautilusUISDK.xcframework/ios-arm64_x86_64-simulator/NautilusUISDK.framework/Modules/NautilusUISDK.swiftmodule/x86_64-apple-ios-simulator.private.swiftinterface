@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusUISDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusUISDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import DeveloperToolsSupport
 import Foundation
 import NautilusAnalyticsSDK
@@ -27,10 +27,12 @@ import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class NautilusDropdownGroup : UIKit.UIView {
   @objc @_Concurrency.MainActor @preconcurrency weak public var dataSource: (any NautilusUISDK.NautilusDropdownGroupDataSource)?
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any NautilusUISDK.NautilusDropdownGroupDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var dropdownGroupTitle: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency public var selectedIndex: Swift.Int {
     get
   }
@@ -47,34 +49,57 @@ import _SwiftConcurrencyShims
   @objc func dropdownGroup(_ dropdownGroup: NautilusUISDK.NautilusDropdownGroup, actionSheet: UIKit.UIAlertController)
 }
 public struct NautilusUIUtil {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func htmlToAttributedString(htmlString: Swift.String, family: Swift.String, point: Swift.String, weight: Swift.String, hexColor: Swift.String) -> Foundation.NSAttributedString?
+  #endif
   public static func rowHeight(font: UIKit.UIFont, row: Swift.Int) -> CoreFoundation.CGFloat
   public static func rawRect(font: UIKit.UIFont, text: Swift.String) -> CoreFoundation.CGRect
 }
 extension UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var parentViewController: UIKit.UIViewController? {
     get
   }
+  #endif
 }
 extension UIKit.UIColor {
   convenience public init(hexCode: Swift.String)
   convenience public init(hex: Swift.String, alpha: CoreFoundation.CGFloat = 1.0)
 }
+extension UIKit.UIApplication {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public var windowScene: UIKit.UIWindowScene? {
+    get
+  }
+  #endif
+}
 @objc final public class NautilusInAppBrowserOption : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(title: Swift.String? = nil, isSendID: Swift.Bool = false)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class NautilusInAppBrowserViewController : UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public var progressView: UIKit.UIProgressView!
   @_Concurrency.MainActor @preconcurrency public var webView: WebKit.WKWebView!
   @_Concurrency.MainActor @preconcurrency final public let webConfigration: WebKit.WKWebViewConfiguration
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public static func initialize(linkURL: Foundation.URL, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings?, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption?, configuration: NautilusUISDK.NautilusWebHelper.Configuration?) -> NautilusUISDK.NautilusInAppBrowserViewController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public static func initialize(redirectorKey: Swift.String, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption?, configuration: NautilusUISDK.NautilusWebHelper.Configuration?) -> NautilusUISDK.NautilusInAppBrowserViewController
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillLayoutSubviews()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc public protocol NautilusAppTopBarDelegate {
@@ -107,7 +132,9 @@ extension UIKit.UIColor {
     public static var `default`: NautilusUISDK.NautilusAppTopBar.Style {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(backgroundColor: UIKit.UIColor, selectionShadowRadius: CoreFoundation.CGFloat, selectionShadowColor: UIKit.UIColor? = nil, selectionStyle: NautilusUISDK.NautilusAppTopBar.SelectionStyle, selectionBarColor: UIKit.UIColor, selectionBarHeight: CoreFoundation.CGFloat, selectionBoundingBoxColor: UIKit.UIColor, selectionBoundingBoxInsets: UIKit.UIEdgeInsets, selectionBoundingBoxCornerRadius: CoreFoundation.CGFloat)
+    #endif
   }
   @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any NautilusUISDK.NautilusAppTopBarDelegate)?
   @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak final public var dataSource: (any NautilusUISDK.NautilusAppTopBarDataSource)?
@@ -119,7 +146,9 @@ extension UIKit.UIColor {
     set
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override final public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency final public func reloadData()
@@ -127,7 +156,9 @@ extension UIKit.UIColor {
   @objc deinit
 }
 @objc public class NautilusInAppBrowserSettings : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(app: NautilusCoreSDK.NautilusApp, pid: Swift.String?, cid: Swift.String?)
+  #endif
   @objc deinit
 }
 @objc public protocol NautilusColor {
@@ -271,7 +302,9 @@ extension UIKit.UIColor {
       get
     }
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func showLoadingIndicator(app: NautilusCoreSDK.NautilusApp? = nil, title: Swift.String, style: NautilusUISDK.NautilusLoadingView.Style = .transparent, to viewController: UIKit.UIViewController)
+  #endif
   @_Concurrency.MainActor @preconcurrency public static func hideLoadingIndicator(from viewController: UIKit.UIViewController)
   @objc deinit
 }
@@ -297,7 +330,9 @@ public protocol HTMLViewDelegate : AnyObject {
     set
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override final public func updateConstraints()
   @objc deinit
@@ -309,7 +344,9 @@ public protocol HTMLViewDelegate : AnyObject {
     case midium
     case large
     case pill
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -322,7 +359,9 @@ public protocol HTMLViewDelegate : AnyObject {
     case narrowL
     case narrowM
     case narrowS
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -368,14 +407,18 @@ public protocol HTMLViewDelegate : AnyObject {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @IBInspectable @_Concurrency.MainActor @preconcurrency final public var title: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @IBInspectable @_Concurrency.MainActor @preconcurrency final public var image: UIKit.UIImage? {
     @objc get
     @objc set
   }
+  #endif
   @objc @IBInspectable @_Concurrency.MainActor @preconcurrency final public var stackViewInsets: UIKit.UIEdgeInsets {
     @objc get
     @objc set
@@ -384,18 +427,26 @@ public protocol HTMLViewDelegate : AnyObject {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func applyActionButtonStyle(_ style: NautilusUISDK.ContainedButton.DesignedButtonStyle, nautilusColor: (any NautilusUISDK.NautilusColor)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func applyGhostButtonStyle(_ style: NautilusUISDK.ContainedButton.DesignedButtonStyle, nautilusColor: (any NautilusUISDK.NautilusColor)? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc override final public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override final public func prepareForInterfaceBuilder()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override final public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
   @objc deinit
 }
 @objc public protocol NautilusGridViewLayout {
   @objc var numberOfColumns: Swift.Int { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var gridView: NautilusUISDK.NautilusGridView? { get set }
+  #endif
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class NautilusGridViewCollectionFlowLayout : UIKit.UICollectionViewFlowLayout, NautilusUISDK.NautilusGridViewLayout {
   @_Concurrency.MainActor @preconcurrency @objc public var numberOfColumns: Swift.Int {
@@ -404,7 +455,9 @@ public protocol HTMLViewDelegate : AnyObject {
   }
   @_Concurrency.MainActor @preconcurrency @objc weak public var gridView: NautilusUISDK.NautilusGridView?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func prepare()
   @objc deinit
 }
@@ -415,7 +468,9 @@ public protocol HTMLViewDelegate : AnyObject {
   case webView
   case safariViewController
   case externalApp
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -427,14 +482,18 @@ public protocol HTMLViewDelegate : AnyObject {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class NautilusYearMonthDatePickerGroup : UIKit.UIView, UIKit.UIPickerViewDataSource, UIKit.UIPickerViewDelegate {
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any NautilusUISDK.NautilusYearMonthDatePickerGroupDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var datePickerTitle: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var placeholder: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency public var locale: Foundation.Locale {
     @objc get
     @objc set
@@ -468,7 +527,9 @@ public protocol HTMLViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc public func numberOfComponents(in pickerView: UIKit.UIPickerView) -> Swift.Int
   @_Concurrency.MainActor @preconcurrency @objc public func pickerView(_ pickerView: UIKit.UIPickerView, numberOfRowsInComponent component: Swift.Int) -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func pickerView(_ pickerView: UIKit.UIPickerView, titleForRow row: Swift.Int, forComponent component: Swift.Int) -> Swift.String?
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc public func pickerView(_ pickerView: UIKit.UIPickerView, didSelectRow row: Swift.Int, inComponent component: Swift.Int)
   @objc deinit
 }
@@ -521,8 +582,12 @@ public protocol NautilusBottomSheetContainerViewControllerDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency public func updateBottomSheetScreenOverlayType(_ screenType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType)
   @_Concurrency.MainActor @preconcurrency public func estimateBottomSheetSize(for screenOverlayType: NautilusUISDK.NautilusBottomSheetContainerViewController.BottomSheetScreenOverlayType) -> CoreFoundation.CGSize
   @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 public enum NautilusBottomSheetFrameChangeReason {
@@ -559,10 +624,12 @@ public enum NautilusBottomSheetFrameChangeReason {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @IBInspectable @_Concurrency.MainActor @preconcurrency final public var title: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
   @objc @IBInspectable @_Concurrency.MainActor @preconcurrency final public var buttonTitleInsets: UIKit.UIEdgeInsets {
     @objc get
     @objc set
@@ -570,15 +637,25 @@ public enum NautilusBottomSheetFrameChangeReason {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc override final public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override final public func prepareForInterfaceBuilder()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override final public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class NautilusWebViewNavigationDelegate : ObjectiveC.NSObject, WebKit.WKNavigationDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WebKit.WKNavigation!)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
   @objc deinit
@@ -587,16 +664,20 @@ public enum NautilusBottomSheetFrameChangeReason {
   @_Concurrency.MainActor @preconcurrency open var isSelected: Swift.Bool
   @_Concurrency.MainActor @preconcurrency open var isHighlighted: Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class NautilusRadioGroup : UIKit.UIView {
   @objc @_Concurrency.MainActor @preconcurrency weak public var dataSource: (any NautilusUISDK.NautilusRadioGroupDataSource)?
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any NautilusUISDK.NautilusRadioGroupDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var radioGroupTitle: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency public var indexForSelectedItem: Swift.Int {
     get
   }
@@ -642,12 +723,20 @@ public enum NautilusBottomSheetFrameChangeReason {
   @_Concurrency.MainActor @preconcurrency @objc open func appTopBar(_ appTopBar: NautilusUISDK.NautilusAppTopBar, didSelectedAt index: Swift.Int)
   @_Concurrency.MainActor @preconcurrency @objc open func appTopBar(_ appTopBar: NautilusUISDK.NautilusAppTopBar, viewForItemAt index: Swift.Int) -> NautilusUISDK.NautilusAppTopBarItemView
   @_Concurrency.MainActor @preconcurrency @objc open func numberOfItems(in appTopBar: NautilusUISDK.NautilusAppTopBar) -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerBefore viewController: UIKit.UIViewController) -> UIKit.UIViewController?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerAfter viewController: UIKit.UIViewController) -> UIKit.UIViewController?
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc public func presentationCount(for pageViewController: UIKit.UIPageViewController) -> Swift.Int
   @_Concurrency.MainActor @preconcurrency @objc public func pageViewController(_ pageViewController: UIKit.UIPageViewController, didFinishAnimating finished: Swift.Bool, previousViewControllers: [UIKit.UIViewController], transitionCompleted completed: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc public protocol NautilusURLPreprocessor {
@@ -656,8 +745,12 @@ public enum NautilusBottomSheetFrameChangeReason {
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class NautilusWebViewUIDelegate : ObjectiveC.NSObject, WebKit.WKUIDelegate {
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, runJavaScriptAlertPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping () -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, runJavaScriptConfirmPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: Swift.String, defaultText: Swift.String?, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping (Swift.String?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
   @objc deinit
 }
@@ -675,17 +768,21 @@ public enum NautilusBottomSheetFrameChangeReason {
     set
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override final public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency override final public func updateStyle()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class NautilusMessageDialogViewController : UIKit.UIViewController {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override final public var title: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency final public var message: Swift.String? {
     get
     set
@@ -702,12 +799,18 @@ public enum NautilusBottomSheetFrameChangeReason {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String?, message: Swift.String?, closeButtonImage: UIKit.UIImage?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class NautilusCommonErrorView : UIKit.UIView {
@@ -718,7 +821,9 @@ public enum NautilusBottomSheetFrameChangeReason {
     public let reason: NautilusUISDK.NautilusCommonErrorView.ErrorReason
     public let actionText: Swift.String
     public let action: () -> Swift.Void
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(image: UIKit.UIImage? = nil, title: Swift.String, message: Swift.String = "", reason: NautilusUISDK.NautilusCommonErrorView.ErrorReason = .network, actionText: Swift.String = "", action: @escaping () -> Swift.Void)
+    #endif
   }
   public enum ErrorReason {
     case empty
@@ -751,18 +856,24 @@ public protocol NautilusStackListViewDataSource : AnyObject {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class NautilusBottomSheetContentViewController : UIKit.UIViewController {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open var trackableScrollView: UIKit.UIScrollView? {
     get
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency open var minimumSheetContentHeight: CoreFoundation.CGFloat {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc final public class NautilusUI : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusUI : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
@@ -779,9 +890,11 @@ public protocol NautilusStackListViewDataSource : AnyObject {
   final public var nautilusColor: (any NautilusUISDK.NautilusColor)! {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func uiComponent() -> NautilusUISDK.NautilusUI
   @objc(uiComponentAppNamed:) public static func uiComponent(appName: Swift.String) -> NautilusUISDK.NautilusUI
@@ -804,13 +917,17 @@ public protocol NautilusStackListViewDataSource : AnyObject {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public var refreshControl: UIKit.UIRefreshControl? {
     get
     set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, gridLayout: any NautilusUISDK.NautilusGridViewLayout)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency final public func reloadData()
   @_Concurrency.MainActor @preconcurrency final public func reloadItem(at indexPath: Foundation.IndexPath)
   @_Concurrency.MainActor @preconcurrency final public func reloadItems(at indexPaths: [Foundation.IndexPath])
@@ -841,52 +958,74 @@ public protocol NautilusStackListViewDataSource : AnyObject {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
   @_Concurrency.MainActor @preconcurrency open func updateStyle()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class NautilusDatePickerGroup : UIKit.UIView {
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any NautilusUISDK.NautilusDatePickerGroupDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var datePickerTitle: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var placeholder: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var locale: Foundation.Locale? {
     @objc get
     @objc set
   }
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency public var calendar: Foundation.Calendar {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var timeZone: Foundation.TimeZone? {
     @objc get
     @objc set
   }
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency public var datePickerMode: UIKit.UIDatePicker.Mode {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var date: Foundation.Date? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var minimumDate: Foundation.Date? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var maximumDate: Foundation.Date? {
     @objc get
     @objc set
   }
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency public var dateFormat: Swift.String {
     @objc get
     @objc set
@@ -910,10 +1049,18 @@ public protocol NautilusStackListViewDataSource : AnyObject {
   public static var preprocessor: (any NautilusUISDK.NautilusURLPreprocessor)?
   @objc public static func addMessageHandler(_ messageHandler: NautilusUISDK.NautilusWebViewWebScriptMessageHandler)
   @objc public static func removeMessageHandler(_ messageHandler: NautilusUISDK.NautilusWebViewWebScriptMessageHandler)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, in viewController: UIKit.UIViewController)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption, in viewController: UIKit.UIViewController)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, configuration: NautilusUISDK.NautilusWebHelper.Configuration, in viewController: UIKit.UIViewController)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func open(url: Foundation.URL, browseType: NautilusUISDK.NautilusURLBrowseType, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings? = nil, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption, configuration: NautilusUISDK.NautilusWebHelper.Configuration, in viewController: UIKit.UIViewController)
+  #endif
   @objc public static func open(redirectKey: Swift.String, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings, in viewController: UIKit.UIViewController)
   @objc public static func open(redirectKey: Swift.String, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings, inAppBrowserOption: NautilusUISDK.NautilusInAppBrowserOption, in viewController: UIKit.UIViewController)
   @objc public static func open(redirectKey: Swift.String, inAppBrowserSettings: NautilusUISDK.NautilusInAppBrowserSettings, configuration: NautilusUISDK.NautilusWebHelper.Configuration, in viewController: UIKit.UIViewController)
@@ -923,10 +1070,12 @@ public protocol NautilusStackListViewDataSource : AnyObject {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class NautilusCheckBoxGroup : UIKit.UIView {
   @objc @_Concurrency.MainActor @preconcurrency weak public var dataSource: (any NautilusUISDK.NautilusCheckBoxGroupDataSource)?
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any NautilusUISDK.NautilusCheckBoxGroupDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var checkBoxGroupTitle: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency public var indicesForSelectedItem: [Swift.Int] {
     @objc get
   }

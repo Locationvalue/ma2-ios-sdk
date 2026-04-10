@@ -1357,6 +1357,13 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1808,6 +1815,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -2036,6 +2044,7 @@
             "mangledName": "$s18NautilusCheckInSDK0abC0C05checkC00eC3Key0eC10DeviceType8location10completionySS_AA0abcgH0O0a4CoreD00A8LocationCSgys6ResultOySiAA0abC5ErrorOGctF",
             "moduleName": "NautilusCheckInSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -2125,6 +2134,7 @@
             "objc_name": "checkInCheckInKey:checkInDeviceType:location:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2153,6 +2163,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -2163,6 +2174,7 @@
         "mangledName": "$s18NautilusCheckInSDK0abC0C",
         "moduleName": "NautilusCheckInSDK",
         "declAttributes": [
+          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC",

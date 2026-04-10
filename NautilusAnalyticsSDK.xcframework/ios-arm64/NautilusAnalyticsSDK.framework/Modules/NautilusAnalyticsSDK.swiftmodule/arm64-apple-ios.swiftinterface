@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusAnalyticsSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusAnalyticsSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import NautilusContainerSDK
 import NautilusCoreSDK
@@ -22,22 +22,26 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   final public let eventName: Swift.String
   final public let eventProperties: [Swift.String : Any?]?
   convenience public init(eventName: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(eventName: Swift.String, eventProperties: [Swift.String : Any?]?)
+  #endif
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc final public class NautilusAnalytics : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
+@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusAnalytics : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
   @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
     @objc get
   }
   @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
+  #endif
   @objc final public let app: NautilusCoreSDK.NautilusApp
   @objc final public let name: Swift.String?
-  @objc final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
     @objc get
   }
   final public var plugins: [any NautilusAnalyticsSDK.NautilusAnalyticsPlugin] {
@@ -46,23 +50,27 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func analytics() -> NautilusAnalyticsSDK.NautilusAnalytics
   @objc(analyticsAppNamed:) public static func analytics(appName: Swift.String) -> NautilusAnalyticsSDK.NautilusAnalytics
-  @objc final public func addPlugin(_ plugin: any NautilusAnalyticsSDK.NautilusAnalyticsPlugin)
-  @objc final public func removePlugin(_ plugin: any NautilusAnalyticsSDK.NautilusAnalyticsPlugin)
-  @objc(sendEventWithEventType:) final public func sendEvent(_ event: NautilusAnalyticsSDK.NautilusAnalyticsEvent)
-  @objc(sendEventWithEventType:eventProperties:) final public func sendEvent(_ event: NautilusAnalyticsSDK.NautilusAnalyticsEvent, eventProperties: [Swift.String : Any]?)
-  @objc(sendEvent:) final public func sendEvent(_ eventName: Swift.String)
-  @objc(sendEvent:withEventProperties:) final public func sendEvent(_ eventName: Swift.String, eventProperties: [Swift.String : Any]?)
-  @objc(setUserProperty:withBoolValue:) final public func setUserProperty(_ propertyName: Swift.String, value: Swift.Bool)
-  @objc(setUserProperty:withIntValue:) final public func setUserProperty(_ propertyName: Swift.String, value: Swift.Int)
-  @objc(setUserProperty:withFloatValue:) final public func setUserProperty(_ propertyName: Swift.String, value: Swift.Float)
-  @objc(setUserProperty:withDoubleValue:) final public func setUserProperty(_ propertyName: Swift.String, value: Swift.Double)
-  @objc(setUserProperty:withStringValue:) final public func setUserProperty(_ propertyName: Swift.String, value: Swift.String)
-  @objc(setUserProperty:withArrayValue:) final public func setUserProperty(_ propertyName: Swift.String, value: [Any])
-  @objc(setUserProperty:withDictionaryValue:) final public func setUserProperty(_ propertyName: Swift.String, value: [Swift.String : Any])
-  @objc final public func removeUserProperty(_ propertyName: Swift.String)
-  @objc final public func setUserID(_ userID: Swift.String)
-  @objc final public func removeUserID()
-  @objc final public func sendUserProperty()
+  @objc nonisolated final public func addPlugin(_ plugin: any NautilusAnalyticsSDK.NautilusAnalyticsPlugin)
+  @objc nonisolated final public func removePlugin(_ plugin: any NautilusAnalyticsSDK.NautilusAnalyticsPlugin)
+  @objc(sendEventWithEventType:) nonisolated final public func sendEvent(_ event: NautilusAnalyticsSDK.NautilusAnalyticsEvent)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(sendEventWithEventType:eventProperties:) nonisolated final public func sendEvent(_ event: NautilusAnalyticsSDK.NautilusAnalyticsEvent, eventProperties: [Swift.String : Any]?)
+  #endif
+  @objc(sendEvent:) nonisolated final public func sendEvent(_ eventName: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(sendEvent:withEventProperties:) nonisolated final public func sendEvent(_ eventName: Swift.String, eventProperties: [Swift.String : Any]?)
+  #endif
+  @objc(setUserProperty:withBoolValue:) nonisolated final public func setUserProperty(_ propertyName: Swift.String, value: Swift.Bool)
+  @objc(setUserProperty:withIntValue:) nonisolated final public func setUserProperty(_ propertyName: Swift.String, value: Swift.Int)
+  @objc(setUserProperty:withFloatValue:) nonisolated final public func setUserProperty(_ propertyName: Swift.String, value: Swift.Float)
+  @objc(setUserProperty:withDoubleValue:) nonisolated final public func setUserProperty(_ propertyName: Swift.String, value: Swift.Double)
+  @objc(setUserProperty:withStringValue:) nonisolated final public func setUserProperty(_ propertyName: Swift.String, value: Swift.String)
+  @objc(setUserProperty:withArrayValue:) nonisolated final public func setUserProperty(_ propertyName: Swift.String, value: [Any])
+  @objc(setUserProperty:withDictionaryValue:) nonisolated final public func setUserProperty(_ propertyName: Swift.String, value: [Swift.String : Any])
+  @objc nonisolated final public func removeUserProperty(_ propertyName: Swift.String)
+  @objc nonisolated final public func setUserID(_ userID: Swift.String)
+  @objc nonisolated final public func removeUserID()
+  @objc nonisolated final public func sendUserProperty()
   @objc deinit
 }
 @objc public protocol NautilusAnalyticsPlugin {
@@ -70,7 +78,9 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   @objc init(name: Swift.String)
   @objc func setup(_ analytics: NautilusAnalyticsSDK.NautilusAnalytics)
   @objc func sendEvent(payload: NautilusAnalyticsSDK.NautilusAnalyticsEventPayload) -> NautilusAnalyticsSDK.NautilusAnalyticsEventPayload
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func setUserProperty(propertyName: Swift.String, value: Any?)
+  #endif
   @objc func removeUserProperty(propertyName: Swift.String)
   @objc func sendUserProperty()
   @objc func setUserID(_ userID: Swift.String)
@@ -170,7 +180,9 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   public var eventName: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -182,7 +194,9 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   public var channelName: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -278,7 +292,9 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   public var propertyName: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -310,7 +326,9 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   public var propertyName: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get

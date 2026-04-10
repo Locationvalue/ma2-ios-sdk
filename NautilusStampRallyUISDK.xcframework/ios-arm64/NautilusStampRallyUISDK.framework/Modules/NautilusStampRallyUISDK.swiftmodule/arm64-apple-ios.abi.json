@@ -1178,6 +1178,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "NautilusStampRallyListInstantiatable",
             "printedName": "NautilusStampRallyListInstantiatable",
             "usr": "c:@M@NautilusStampRallyUISDK@objc(pl)NautilusStampRallyListInstantiatable",
@@ -1852,6 +1859,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -2151,6 +2159,7 @@
             "objc_name": "presentStampRallyListViewControllerIn:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -2177,6 +2186,7 @@
             "deprecated": true,
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -2216,6 +2226,7 @@
             "objc_name": "instantiateStampRallyDetailViewControllerWithStampRallyID:hasCloseButton:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -2255,6 +2266,7 @@
             "objc_name": "instantiateStampRallyDetailViewControllerWithStampRally:hasCloseButton:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -2294,6 +2306,7 @@
             "objc_name": "instantiateStampRallySpotListViewControllerWithStampRally:hasCloseButton:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "Available",
@@ -2323,6 +2336,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -2333,6 +2347,7 @@
         "mangledName": "$s23NautilusStampRallyUISDK0abC2UIC",
         "moduleName": "NautilusStampRallyUISDK",
         "declAttributes": [
+          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC",
@@ -3190,6 +3205,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -4198,6 +4220,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",

@@ -1064,6 +1064,13 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1838,6 +1845,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Nonisolated",
               "AccessControl",
               "RawDocComment"
             ],
@@ -2061,6 +2069,7 @@
             "mangledName": "$s16NautilusPointSDK0aB0C03getB12HistoryTotal10completionyys6ResultOySi_AA0aB16NewestExpirationCSgtAA0aB5ErrorOGc_tF",
             "moduleName": "NautilusPointSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -2138,6 +2147,7 @@
             "objc_name": "getPointHistoryTotalWithCompletion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2228,6 +2238,7 @@
             "mangledName": "$s16NautilusPointSDK0aB0C03getB11HistoryList15searchStartDate0g3EndI010completiony10Foundation0I0VSg_AKys6ResultOySayAA0abE0CGAA0aB5ErrorOGctF",
             "moduleName": "NautilusPointSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -2335,6 +2346,7 @@
             "objc_name": "getPointHistoryListWithSearchStartDatetime:searchEndDatetime:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2411,6 +2423,7 @@
             "mangledName": "$s16NautilusPointSDK0aB0C010getMonthlyB05range10completionySiSg_ys6ResultOySayAA0aeB0CGAA0aB5ErrorOGctF",
             "moduleName": "NautilusPointSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -2504,6 +2517,7 @@
             "objc_name": "getMonthlyPointWithRange:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2572,6 +2586,7 @@
             "mangledName": "$s16NautilusPointSDK0aB0C08exchangeB5Prize8couponId10completionySi_ys6ResultOySayAA0a9ExchangedbE6CouponCGAA0aB5ErrorOGctF",
             "moduleName": "NautilusPointSDK",
             "declAttributes": [
+              "Nonisolated",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -2657,6 +2672,7 @@
             "objc_name": "exchangePointPrizeWithCouponId:completion:",
             "declAttributes": [
               "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -2685,6 +2701,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -2695,6 +2712,7 @@
         "mangledName": "$s16NautilusPointSDK0aB0C",
         "moduleName": "NautilusPointSDK",
         "declAttributes": [
+          "Nonisolated",
           "Final",
           "AccessControl",
           "ObjC",
