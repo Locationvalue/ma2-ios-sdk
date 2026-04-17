@@ -319,6 +319,8 @@ SWIFT_CLASS("_TtC20NautilusLotteryUISDK35NautilusLotteryDetailViewController")
 @property (nonatomic, weak) id <NautilusLotteryDetailViewControllerDelegate> _Nullable delegate;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -768,6 +770,8 @@ SWIFT_CLASS("_TtC20NautilusLotteryUISDK35NautilusLotteryDetailViewController")
 @property (nonatomic, weak) id <NautilusLotteryDetailViewControllerDelegate> _Nullable delegate;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

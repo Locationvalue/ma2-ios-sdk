@@ -373,6 +373,72 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "viewWillAppear",
+            "printedName": "viewWillAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryDetailViewController(im)viewWillAppear:",
+            "mangledName": "$s20NautilusLotteryUISDK0aB20DetailViewControllerC14viewWillAppearyySbF",
+            "moduleName": "NautilusLotteryUISDK",
+            "overriding": true,
+            "objc_name": "viewWillAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusLotteryUISDK@objc(cs)NautilusLotteryDetailViewController(im)viewWillDisappear:",
+            "mangledName": "$s20NautilusLotteryUISDK0aB20DetailViewControllerC17viewWillDisappearyySbF",
+            "moduleName": "NautilusLotteryUISDK",
+            "overriding": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(nibName:bundle:)",
