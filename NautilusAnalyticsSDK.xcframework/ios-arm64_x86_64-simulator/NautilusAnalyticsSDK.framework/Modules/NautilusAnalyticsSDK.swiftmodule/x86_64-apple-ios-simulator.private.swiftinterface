@@ -176,6 +176,13 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   case tapStampRallySpotMapApp
   case tapStampRallySpotPinInMap
   case showStoreSearchWidemap
+  case showStampStartupView
+  case tapStampStartupCheckIn
+  case showStampStartupPrizeAutoExchangeDialog
+  case showStampStartupComplete
+  case showStampStartupUnableComplete
+  case tapStampStartupClose
+  case tapStampStartupExchangeDialog
   public static let showIntroduction: Swift.String
   public var eventName: Swift.String {
     get

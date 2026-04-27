@@ -296,6 +296,7 @@ extension UIKit.UIApplication {
   public enum Style {
     case transparent
     case cover
+    case boxed
     public static func == (a: NautilusUISDK.NautilusLoadingView.Style, b: NautilusUISDK.NautilusLoadingView.Style) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {

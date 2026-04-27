@@ -318,6 +318,15 @@ import _SwiftConcurrencyShims
   #if compiler(>=5.3) && $NonescapableTypes
   @objc nonisolated final public func migrateStampCard(installId: Swift.String, manageCode: Swift.String? = nil, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getStartupStampList(startupStampIDs: [Swift.Int]?, completion: @escaping (Swift.Result<[NautilusStampSDK.NautilusStartupStampInfo], NautilusStampSDK.NautilusStampError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func getStartupStampCount(checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<Swift.Int, NautilusStampSDK.NautilusStampError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final nonisolated public func checkInStartupStamp(startupStampID: Swift.Int, completion: @escaping (Swift.Result<[NautilusStampSDK.NautilusStartupStampCheckInResultInfo], NautilusStampSDK.NautilusStampError>) -> Swift.Void)
+  #endif
   @objc deinit
 }
 public let NautilusStampErrorDomain: Swift.String
@@ -353,6 +362,44 @@ public let NautilusStampErrorDomain: Swift.String
   public var rawValue: Swift.Int {
     get
   }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class NautilusStartupStampInfo : ObjectiveC.NSObject {
+  final public let startupStampID: Swift.Int
+  final public let stampTitle: Swift.String
+  final public let stampText: Swift.String
+  final public let publishStartDate: Foundation.Date
+  final public let publishEndDate: Foundation.Date
+  final public let numberOfStamps: Swift.Int
+  final public let numberOfCurrentStamps: Swift.Int
+  final public let numberOfExpiredStamps: Swift.Int
+  final public let headerImageURL: Foundation.URL?
+  final public let headerImageAspectRatio: Swift.Double
+  final public let alias: Swift.String?
+  final public let stampPrizes: [NautilusStampSDK.NautilusStampPrizeInfo]?
+  final public let exchangedPrizes: [NautilusStampSDK.NautilusStartupStampExchangedPrizeLapInfo]?
+  final public let stampImages: [NautilusStampSDK.NautilusStampImage]?
+  final public let showStopDialog: Swift.Bool
+  final public let isInInterval: Swift.Bool
+  final public let isComplete: Swift.Bool
+  final public let completeImageURL: Foundation.URL?
+  final public let completeImageAspectRatio: Swift.Double
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class NautilusStartupStampExchangedPrizeLapInfo : ObjectiveC.NSObject {
+  final public let lap: Swift.Int?
+  final public let prizes: [NautilusStampSDK.NautilusStartupStampExchangedPrizeInfo]?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class NautilusStartupStampExchangedPrizeInfo : ObjectiveC.NSObject {
+  final public let prizeID: Swift.Int?
+  final public let prizeType: Swift.Int?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class NautilusStartupStampCheckInResultInfo : ObjectiveC.NSObject {
+  final public let startupStampID: Swift.Int?
+  final public let numberOfAddedStamps: Swift.Int?
+  final public let prizes: [NautilusStampSDK.NautilusStampPrizeExchangeResult]
+  @objc deinit
 }
 extension NautilusStampSDK.NautilusStampPrizeUseLimitType : Swift.Equatable {}
 extension NautilusStampSDK.NautilusStampPrizeUseLimitType : Swift.Hashable {}

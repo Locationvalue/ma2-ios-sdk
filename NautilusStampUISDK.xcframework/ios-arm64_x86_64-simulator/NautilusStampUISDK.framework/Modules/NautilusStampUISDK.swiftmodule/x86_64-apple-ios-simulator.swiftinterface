@@ -42,6 +42,7 @@ import _SwiftConcurrencyShims
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   @objc public static func stampCardUI() -> NautilusStampUISDK.NautilusStampCardUI
   @objc(stampUIAppNamed:) public static func stampCardUI(appName: Swift.String) -> NautilusStampUISDK.NautilusStampCardUI
+  final nonisolated public func showStartupStampView(delegate: any NautilusStampUISDK.NautilusStartupStampViewerDelegate, from viewController: UIKit.UIViewController)
   @available(*, deprecated, message: "Use NautilusStampCardRouter function.")
   @objc nonisolated final public func presentStampCardListViewController(in viewController: UIKit.UIViewController)
   @available(*, deprecated, message: "Use NautilusStampCardRouter function.")
@@ -138,6 +139,11 @@ extension NautilusStampUISDK.NautilusStampCardListViewController : NautilusStamp
   #endif
   @objc final public func routeStampCodeReader(setting: NautilusCodeReaderSDK.NautilusCodeReaderSetting, handler: any NautilusCodeReaderSDK.NautilusCodeReaderHandler, in viewController: UIKit.UIViewController)
   @objc deinit
+}
+public protocol NautilusStartupStampViewerDelegate : AnyObject {
+  func didSelectStartupPrize(prizeInfo: NautilusStampSDK.NautilusStampPrizeExchangeResult)
+  func didCloseStartupView(startupStampID: Swift.Int)
+  func didDisplaySkipped()
 }
 extension NautilusStampUISDK.NautilusStampRoutableScreen : Swift.Equatable {}
 extension NautilusStampUISDK.NautilusStampRoutableScreen : Swift.Hashable {}

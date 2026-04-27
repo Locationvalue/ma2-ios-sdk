@@ -7112,6 +7112,46 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "boxed",
+                "printedName": "boxed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(NautilusUISDK.NautilusLoadingView.Style.Type) -> NautilusUISDK.NautilusLoadingView.Style",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Style",
+                        "printedName": "NautilusUISDK.NautilusLoadingView.Style",
+                        "usr": "s:13NautilusUISDK0A11LoadingViewC5StyleO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "NautilusUISDK.NautilusLoadingView.Style.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Style",
+                            "printedName": "NautilusUISDK.NautilusLoadingView.Style",
+                            "usr": "s:13NautilusUISDK0A11LoadingViewC5StyleO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13NautilusUISDK0A11LoadingViewC5StyleO5boxedyA2EmF",
+                "mangledName": "$s13NautilusUISDK0A11LoadingViewC5StyleO5boxedyA2EmF",
+                "moduleName": "NautilusUISDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
                 "kind": "Function",
                 "name": "==",
                 "printedName": "==(_:_:)",
@@ -31684,7 +31724,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Base\/NautilusLoadingView.swift",
       "kind": "Dictionary",
-      "offset": 1037,
+      "offset": 1309,
       "length": 3,
       "value": "[]"
     },

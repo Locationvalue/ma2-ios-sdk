@@ -635,6 +635,34 @@ SWIFT_CLASS("_TtC16NautilusStampSDK22NautilusStampRallyInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// 起動スタンプ チェックイン結果の情報
+SWIFT_CLASS("_TtC16NautilusStampSDK37NautilusStartupStampCheckInResultInfo")
+@interface NautilusStartupStampCheckInResultInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 交換済み景品の基本情報
+SWIFT_CLASS("_TtC16NautilusStampSDK38NautilusStartupStampExchangedPrizeInfo")
+@interface NautilusStartupStampExchangedPrizeInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 交換済み景品の周回ごとの情報
+SWIFT_CLASS("_TtC16NautilusStampSDK41NautilusStartupStampExchangedPrizeLapInfo")
+@interface NautilusStartupStampExchangedPrizeLapInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// サーバーから取得される起動スタンプ情報
+SWIFT_CLASS("_TtC16NautilusStampSDK24NautilusStartupStampInfo")
+@interface NautilusStartupStampInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

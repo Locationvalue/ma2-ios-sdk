@@ -594,6 +594,20 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEvent, open) {
   NautilusAnalyticsEventTapStampRallySpotPinInMap = 87,
 /// 店舗検索広域地図画面を見る
   NautilusAnalyticsEventShowStoreSearchWidemap = 88,
+/// 起動スタンプを見る
+  NautilusAnalyticsEventShowStampStartupView = 89,
+/// 「スタンプを押す」をタップする
+  NautilusAnalyticsEventTapStampStartupCheckIn = 90,
+/// 起動スタンプの自動付与景品ダイアログを見る
+  NautilusAnalyticsEventShowStampStartupPrizeAutoExchangeDialog = 91,
+/// 起動スタンプのコンプリート状態を見る
+  NautilusAnalyticsEventShowStampStartupComplete = 92,
+/// 起動スタンプのコンプリート不可表示を見る
+  NautilusAnalyticsEventShowStampStartupUnableComplete = 93,
+/// スタンプ閉じる（次のスタンプへ行く）ボタンをタップ
+  NautilusAnalyticsEventTapStampStartupClose = 94,
+/// 起動スタンプの自動景品交換アイテムをタップする
+  NautilusAnalyticsEventTapStampStartupExchangeDialog = 95,
 };
 
 /// 分析SDKから送信するイベントのチャネル定義
@@ -1476,6 +1490,20 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEvent, open) {
   NautilusAnalyticsEventTapStampRallySpotPinInMap = 87,
 /// 店舗検索広域地図画面を見る
   NautilusAnalyticsEventShowStoreSearchWidemap = 88,
+/// 起動スタンプを見る
+  NautilusAnalyticsEventShowStampStartupView = 89,
+/// 「スタンプを押す」をタップする
+  NautilusAnalyticsEventTapStampStartupCheckIn = 90,
+/// 起動スタンプの自動付与景品ダイアログを見る
+  NautilusAnalyticsEventShowStampStartupPrizeAutoExchangeDialog = 91,
+/// 起動スタンプのコンプリート状態を見る
+  NautilusAnalyticsEventShowStampStartupComplete = 92,
+/// 起動スタンプのコンプリート不可表示を見る
+  NautilusAnalyticsEventShowStampStartupUnableComplete = 93,
+/// スタンプ閉じる（次のスタンプへ行く）ボタンをタップ
+  NautilusAnalyticsEventTapStampStartupClose = 94,
+/// 起動スタンプの自動景品交換アイテムをタップする
+  NautilusAnalyticsEventTapStampStartupExchangeDialog = 95,
 };
 
 /// 分析SDKから送信するイベントのチャネル定義

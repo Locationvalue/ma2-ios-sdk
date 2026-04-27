@@ -21,7 +21,7 @@ import _SwiftConcurrencyShims
   final public let linkType: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuAppLinkType?
   final public let linkURL: Foundation.URL?
   final public let linkTitle: Swift.String?
-  final public let optionType: Swift.Int?
+  final public let optionType: Swift.String?
   final public let optionParam: Swift.String?
   final public let appIconURL: Foundation.URL?
   final public let appImageURLs: [Foundation.URL]?
@@ -171,7 +171,7 @@ public enum NautilusHierarchicalMenuTerminalKind : Swift.String {
   final public let linkType: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTransitionType?
   final public let linkURL: Foundation.URL?
   final public let linkTitle: Swift.String?
-  final public let optionType: Swift.Int?
+  final public let optionType: Swift.String?
   final public let optionParam: Swift.String?
   final public let itemImageURLs: [Foundation.URL]?
   final public let itemContents: Swift.String?
