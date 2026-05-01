@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusHierarchicalMenuSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusHierarchicalMenuSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -32,9 +32,7 @@ public enum NautilusHierarchicalMenuTransitionType : Swift.Int {
   case middleBrowser
   case innerBrowser
   case externalBrowser
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -47,11 +45,9 @@ public enum NautilusHierarchicalMenuTransitionType : Swift.Int {
   @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var configFilename: Swift.String? {
     @objc get
   }
-  #endif
   @objc final public var app: NautilusCoreSDK.NautilusApp
   @objc final public var name: Swift.String?
   @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
@@ -60,15 +56,9 @@ public enum NautilusHierarchicalMenuTransitionType : Swift.Int {
   @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
   public static func hierarchicalMenu() -> NautilusHierarchicalMenuSDK.NautilusHierarchicalMenu
   public static func hierarchicalMenu(appName: Swift.String) -> NautilusHierarchicalMenuSDK.NautilusHierarchicalMenu
-  #if compiler(>=5.3) && $NonescapableTypes
   final nonisolated public func getMenuList(parentID: Swift.Int?, completion: @escaping (Swift.Result<NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuList, NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final nonisolated public func getMenuDetail(id: Swift.Int, completion: @escaping (Swift.Result<NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuDetail, NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final nonisolated public func getAppList(menuID: Swift.Int?, completion: @escaping (Swift.Result<NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuAppList, NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuError>) -> Swift.Void)
-  #endif
   @objc deinit
 }
 public let NautilusHierarchicalMenuErrorDomain: Swift.String
@@ -94,9 +84,7 @@ public enum NautilusHierarchicalMenuError : Swift.Int, Swift.Error {
   case invalidUserPID
   case developerError
   case requiresLoginStatus
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -131,9 +119,7 @@ public enum NautilusHierarchicalMenuAppLinkType : Swift.Int {
   case externalBrowser
   case appFunction
   case contents
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -149,9 +135,7 @@ public enum NautilusHierarchicalMenuTerminalKind : Swift.String {
   case contents
   case link
   case app
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
