@@ -16646,6 +16646,76 @@
         "printedName": "NautilusWebViewNavigationDelegate",
         "children": [
           {
+            "kind": "Var",
+            "name": "internalSchemes",
+            "printedName": "internalSchemes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NautilusUISDK0A25WebViewNavigationDelegateC15internalSchemesShySSGvpZ",
+            "mangledName": "$s13NautilusUISDK0A25WebViewNavigationDelegateC15internalSchemesShySSGvpZ",
+            "moduleName": "NautilusUISDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NautilusUISDK0A25WebViewNavigationDelegateC15internalSchemesShySSGvgZ",
+                "mangledName": "$s13NautilusUISDK0A25WebViewNavigationDelegateC15internalSchemesShySSGvgZ",
+                "moduleName": "NautilusUISDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "webView",
             "printedName": "webView(_:didFinish:)",
@@ -31965,6 +32035,13 @@
       "offset": 1424,
       "length": 2,
       "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Web\/WebView\/NautilusWebViewNavigationDelegate.swift",
+      "kind": "Array",
+      "offset": 574,
+      "length": 25,
+      "value": "[\"about\", \"blob\", \"data\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/GridView\/NautilusGridViewCell.swift",

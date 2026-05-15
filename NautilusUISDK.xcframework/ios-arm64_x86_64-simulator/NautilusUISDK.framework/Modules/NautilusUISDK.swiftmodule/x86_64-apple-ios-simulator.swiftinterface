@@ -580,6 +580,7 @@ public enum NautilusBottomSheetFrameChangeReason {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class NautilusWebViewNavigationDelegate : ObjectiveC.NSObject, WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor @preconcurrency public static let internalSchemes: Swift.Set<Swift.String>
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
