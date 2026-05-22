@@ -20816,6 +20816,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "NautilusConfigSDK",
+        "printedName": "NautilusConfigSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusUISDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "NautilusMessageDialogViewController",
         "printedName": "NautilusMessageDialogViewController",
@@ -21402,7 +21409,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(title:message:closeButtonImage:)",
+            "printedName": "init(title:message:closeButtonImage:nautilusColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -21451,11 +21458,26 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any NautilusUISDK.NautilusColor)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusColor",
+                    "printedName": "any NautilusUISDK.NautilusColor",
+                    "usr": "c:@M@NautilusUISDK@objc(pl)NautilusColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13NautilusUISDK0A27MessageDialogViewControllerC5title7message16closeButtonImageACSSSg_AGSo7UIImageCSgtcfc",
-            "mangledName": "$s13NautilusUISDK0A27MessageDialogViewControllerC5title7message16closeButtonImageACSSSg_AGSo7UIImageCSgtcfc",
+            "usr": "s:13NautilusUISDK0A27MessageDialogViewControllerC5title7message16closeButtonImage13nautilusColorACSSSg_AHSo7UIImageCSgAA0aM0_pSgtcfc",
+            "mangledName": "$s13NautilusUISDK0A27MessageDialogViewControllerC5title7message16closeButtonImage13nautilusColorACSSSg_AHSo7UIImageCSgAA0aM0_pSgtcfc",
             "moduleName": "NautilusUISDK",
             "declAttributes": [
               "Preconcurrency",
@@ -32235,49 +32257,49 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Dialog\/NautilusMessageDialogViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 329,
+      "offset": 354,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Dialog\/NautilusMessageDialogViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 339,
+      "offset": 364,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Dialog\/NautilusMessageDialogViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 351,
+      "offset": 376,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Dialog\/NautilusMessageDialogViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 362,
+      "offset": 387,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Dialog\/NautilusMessageDialogViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 418,
+      "offset": 443,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Dialog\/NautilusMessageDialogViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 489,
+      "offset": 514,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/UI\/Sources\/Dialog\/NautilusMessageDialogViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 560,
+      "offset": 585,
       "length": 4,
       "value": "0.25"
     },

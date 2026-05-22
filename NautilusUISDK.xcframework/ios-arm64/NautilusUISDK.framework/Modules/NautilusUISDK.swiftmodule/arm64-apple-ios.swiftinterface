@@ -709,7 +709,7 @@ public enum NautilusBottomSheetFrameChangeReason {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String?, message: Swift.String?, closeButtonImage: UIKit.UIImage?)
+  @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String?, message: Swift.String?, closeButtonImage: UIKit.UIImage?, nautilusColor: (any NautilusUISDK.NautilusColor)? = nil)
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillDisappear(_ animated: Swift.Bool)

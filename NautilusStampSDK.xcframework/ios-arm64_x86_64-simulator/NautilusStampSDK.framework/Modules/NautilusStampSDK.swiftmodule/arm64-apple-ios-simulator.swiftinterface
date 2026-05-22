@@ -98,6 +98,7 @@ import _SwiftConcurrencyShims
   final public let currentLap: Swift.Int?
   final public let stampCardImages: [NautilusStampSDK.NautilusStampImage]?
   final public let showCheckinButton: Swift.Bool
+  final public let lastStampedDate: Foundation.Date?
   @objc deinit
 }
 @objc public enum NautilusStampAvailableType : Swift.Int {

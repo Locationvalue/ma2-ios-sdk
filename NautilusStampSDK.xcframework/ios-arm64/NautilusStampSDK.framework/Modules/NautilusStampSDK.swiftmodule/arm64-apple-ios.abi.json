@@ -4056,6 +4056,71 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastStampedDate",
+            "printedName": "lastStampedDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NautilusStampSDK0aB8CardInfoC15lastStampedDate10Foundation0H0VSgvp",
+            "mangledName": "$s16NautilusStampSDK0aB8CardInfoC15lastStampedDate10Foundation0H0VSgvp",
+            "moduleName": "NautilusStampSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NautilusStampSDK0aB8CardInfoC15lastStampedDate10Foundation0H0VSgvg",
+                "mangledName": "$s16NautilusStampSDK0aB8CardInfoC15lastStampedDate10Foundation0H0VSgvg",
+                "moduleName": "NautilusStampSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -15148,329 +15213,336 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2966,
+      "offset": 3227,
       "length": 10,
       "value": "\"stamp_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3007,
+      "offset": 3268,
       "length": 13,
       "value": "\"stamp_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3059,
+      "offset": 3320,
       "length": 24,
       "value": "\"publish_start_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3120,
+      "offset": 3381,
       "length": 22,
       "value": "\"publish_end_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3187,
+      "offset": 3448,
       "length": 31,
       "value": "\"prize_exchange_limit_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3248,
+      "offset": 3509,
       "length": 12,
       "value": "\"stamp_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3291,
+      "offset": 3552,
       "length": 11,
       "value": "\"stamp_num\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3334,
+      "offset": 3595,
       "length": 25,
       "value": "\"stamp_header_image_path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3398,
+      "offset": 3659,
       "length": 33,
       "value": "\"stamp_header_image_aspect_ratio\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3453,
+      "offset": 3714,
       "length": 7,
       "value": "\"alias\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3500,
+      "offset": 3761,
       "length": 17,
       "value": "\"flg_stamp_limit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3552,
+      "offset": 3813,
       "length": 18,
       "value": "\"stamp_limit_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3607,
+      "offset": 3868,
       "length": 17,
       "value": "\"stamp_limit_num\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3665,
+      "offset": 3926,
       "length": 22,
       "value": "\"stamp_limit_num_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3719,
+      "offset": 3980,
       "length": 18,
       "value": "\"stamp_prize_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3775,
+      "offset": 4036,
       "length": 19,
       "value": "\"current_stamp_num\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3832,
+      "offset": 4093,
       "length": 19,
       "value": "\"expired_stamp_num\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3885,
+      "offset": 4146,
       "length": 12,
       "value": "\"flg_repeat\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3928,
+      "offset": 4189,
       "length": 18,
       "value": "\"repeat_limit_num\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3976,
+      "offset": 4237,
       "length": 18,
       "value": "\"flg_repeat_limit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4033,
+      "offset": 4294,
       "length": 27,
       "value": "\"stamp_complete_image_path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4106,
+      "offset": 4367,
       "length": 35,
       "value": "\"stamp_complete_image_aspect_ratio\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4168,
+      "offset": 4429,
       "length": 13,
       "value": "\"current_lap\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4213,
+      "offset": 4474,
       "length": 18,
       "value": "\"stamp_image_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4265,
+      "offset": 4526,
       "length": 21,
       "value": "\"show_checkin_button\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7274,
+      "offset": 4585,
+      "length": 18,
+      "value": "\"checkin_datetime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 7691,
       "length": 10,
       "value": "\"prize_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7310,
+      "offset": 7727,
       "length": 12,
       "value": "\"prize_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7358,
+      "offset": 7775,
       "length": 19,
       "value": "\"require_stamp_num\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7411,
+      "offset": 7828,
       "length": 15,
       "value": "\"exchange_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7454,
+      "offset": 7871,
       "length": 18,
       "value": "\"prize_image_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7511,
+      "offset": 7928,
       "length": 26,
       "value": "\"remaining_exchange_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7559,
+      "offset": 7976,
       "length": 7,
       "value": "\"title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7595,
+      "offset": 8012,
       "length": 16,
       "value": "\"use_limit_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7636,
+      "offset": 8053,
       "length": 11,
       "value": "\"use_limit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7676,
+      "offset": 8093,
       "length": 16,
       "value": "\"use_limit_hour\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 7721,
+      "offset": 8138,
       "length": 20,
       "value": "\"use_limit_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 9141,
+      "offset": 9558,
       "length": 18,
       "value": "\"prize_image_path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 9197,
+      "offset": 9614,
       "length": 26,
       "value": "\"prize_image_aspect_ratio\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 9250,
+      "offset": 9667,
       "length": 9,
       "value": "\"sort_no\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 9884,
+      "offset": 10301,
       "length": 5,
       "value": "\"lap\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 9921,
+      "offset": 10338,
       "length": 12,
       "value": "\"prize_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 10440,
+      "offset": 10857,
       "length": 10,
       "value": "\"prize_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 10476,
+      "offset": 10893,
       "length": 12,
       "value": "\"prize_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 11126,
+      "offset": 11543,
       "length": 12,
       "value": "\"image_path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 11166,
+      "offset": 11583,
       "length": 14,
       "value": "\"aspect_ratio\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 11205,
+      "offset": 11622,
       "length": 10,
       "value": "\"position\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/API\/Entity\/StampCardListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 11236,
+      "offset": 11653,
       "length": 6,
       "value": "\"type\""
     },
@@ -15715,28 +15787,28 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampCardInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5870,
+      "offset": 5987,
       "length": 11,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampCardInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6555,
+      "offset": 6672,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampCardInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6597,
+      "offset": 6714,
       "length": 4,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Stamp\/Sources\/Base\/NautilusStampCardInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 8281,
+      "offset": 8398,
       "length": 12,
       "value": "1"
     },
