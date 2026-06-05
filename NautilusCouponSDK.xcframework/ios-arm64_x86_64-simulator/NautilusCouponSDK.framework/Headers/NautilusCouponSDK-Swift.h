@@ -473,7 +473,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @class NautilusCouponUseInfo;
 @class NautilusCouponPublishTrigger;
 @class NautilusCouponLog;
+@class NSNumber;
 @protocol NautilusCouponUseValidObserver;
+SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 @interface NautilusCoupon (SWIFT_EXTENSION(NautilusCouponSDK))
 /// 共通クーポン一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
@@ -724,6 +726,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// \param completion 成功時は<code>true</code>, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)sendCouponLogWithCouponLogs:(NSArray<NautilusCouponLog *> * _Nonnull)couponLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// クーポン利用状態を判定する（Objective-C用）
+/// \param coupon 判定したいクーポン情報
+///
+///
+/// returns:
+/// <code>NautilusCouponState</code> の raw value（SDKが未初期化などで利用不可の場合は<code>nil</code>）
+- (NSNumber * _Nullable)determineCouponStateWithCoupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
 /// 指定のクーポンの「有効期限の終了日時」を計算する
 /// \param coupon クーポン（<code>NautilusCouponInfo</code>）
 ///
@@ -779,7 +788,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// \param completion レスポンスを呼び元へ渡すためのコールバック
 ///
 - (void)getPointPrizeCouponListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// クーポンリストを指定したソート種別で並び替えて返す
+/// \param couponList 並び替え対象のクーポン一覧
+///
+/// \param sortKey <code>NautilusCouponSortKey</code> で定義された並び順
+///
+/// \param sortType <code>NautilusCouponAppSortType</code> で定義されたソート種別
+///
+///
+/// returns:
+/// 並び替え後のクーポン一覧
+- (NSArray<NautilusCouponInfo *> * _Nonnull)sortCouponList:(NSArray<NautilusCouponInfo *> * _Nonnull)couponList sortKey:(NautilusCouponSortKey * _Nonnull)sortKey sortType:(enum NautilusCouponAppSortType)sortType SWIFT_WARN_UNUSED_RESULT;
 @end
+
+/// アプリ側から指定するクーポンリストのソート種別
+typedef SWIFT_ENUM(NSInteger, NautilusCouponAppSortType, open) {
+/// 従来方式のソート
+  NautilusCouponAppSortTypeClassic = 0,
+/// ID 降順を最終条件とするソート
+  NautilusCouponAppSortTypeIdDescFinally = 1,
+/// 表示優先順位を第一条件とするソート
+  NautilusCouponAppSortTypeSortNoPrimary = 2,
+};
 
 /// クーポンカテゴリーのデータ
 SWIFT_CLASS("_TtC17NautilusCouponSDK26NautilusCouponCategoryInfo")
@@ -840,7 +870,6 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponExchangeType, open) {
   NautilusCouponExchangeTypeNotExchange = 0,
 };
 
-@class NSNumber;
 /// クーポンIDと発行IDの組の情報
 SWIFT_CLASS("_TtC17NautilusCouponSDK20NautilusCouponIDInfo")
 @interface NautilusCouponIDInfo : NSObject
@@ -1096,9 +1125,12 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK20NautilusCouponRouter")
 - (void)routeFavoriteCouponListIn:(UIViewController * _Nonnull)viewController;
 @end
 
+SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponSortKeyName)
+SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponSortKeyOrder)
 /// APIから取得するデータの並び順
 SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponSortKey")
 @interface NautilusCouponSortKey : NSObject
+- (nonnull instancetype)initWithKeyName:(enum NautilusCouponSortKeyName)keyName order:(enum NautilusCouponSortKeyOrder)order OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1121,6 +1153,16 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyName, open) {
 typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyOrder, open) {
   NautilusCouponSortKeyOrderAscending = 0,
   NautilusCouponSortKeyOrderDescending = 1,
+};
+
+/// クーポンの利用状態
+typedef SWIFT_ENUM(NSInteger, NautilusCouponState, open) {
+  NautilusCouponStateBefore = 0,
+  NautilusCouponStateUseAvailable = 1,
+  NautilusCouponStateUsed = 2,
+  NautilusCouponStateLimited = 3,
+  NautilusCouponStateUsedLimited = 4,
+  NautilusCouponStateSoldOut = 5,
 };
 
 /// ルーターから、カテゴリータブ付きのクーポン一覧画面を生成するためのプロトコル
@@ -1658,7 +1700,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 @class NautilusCouponUseInfo;
 @class NautilusCouponPublishTrigger;
 @class NautilusCouponLog;
+@class NSNumber;
 @protocol NautilusCouponUseValidObserver;
+SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 @interface NautilusCoupon (SWIFT_EXTENSION(NautilusCouponSDK))
 /// 共通クーポン一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
@@ -1909,6 +1953,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// \param completion 成功時は<code>true</code>, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)sendCouponLogWithCouponLogs:(NSArray<NautilusCouponLog *> * _Nonnull)couponLogs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// クーポン利用状態を判定する（Objective-C用）
+/// \param coupon 判定したいクーポン情報
+///
+///
+/// returns:
+/// <code>NautilusCouponState</code> の raw value（SDKが未初期化などで利用不可の場合は<code>nil</code>）
+- (NSNumber * _Nullable)determineCouponStateWithCoupon:(NautilusCouponInfo * _Nonnull)coupon SWIFT_WARN_UNUSED_RESULT;
 /// 指定のクーポンの「有効期限の終了日時」を計算する
 /// \param coupon クーポン（<code>NautilusCouponInfo</code>）
 ///
@@ -1964,7 +2015,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// \param completion レスポンスを呼び元へ渡すためのコールバック
 ///
 - (void)getPointPrizeCouponListWithCompletion:(void (^ _Nonnull)(NSArray<NautilusCouponInfo *> * _Nullable, NSError * _Nullable))completion;
+/// クーポンリストを指定したソート種別で並び替えて返す
+/// \param couponList 並び替え対象のクーポン一覧
+///
+/// \param sortKey <code>NautilusCouponSortKey</code> で定義された並び順
+///
+/// \param sortType <code>NautilusCouponAppSortType</code> で定義されたソート種別
+///
+///
+/// returns:
+/// 並び替え後のクーポン一覧
+- (NSArray<NautilusCouponInfo *> * _Nonnull)sortCouponList:(NSArray<NautilusCouponInfo *> * _Nonnull)couponList sortKey:(NautilusCouponSortKey * _Nonnull)sortKey sortType:(enum NautilusCouponAppSortType)sortType SWIFT_WARN_UNUSED_RESULT;
 @end
+
+/// アプリ側から指定するクーポンリストのソート種別
+typedef SWIFT_ENUM(NSInteger, NautilusCouponAppSortType, open) {
+/// 従来方式のソート
+  NautilusCouponAppSortTypeClassic = 0,
+/// ID 降順を最終条件とするソート
+  NautilusCouponAppSortTypeIdDescFinally = 1,
+/// 表示優先順位を第一条件とするソート
+  NautilusCouponAppSortTypeSortNoPrimary = 2,
+};
 
 /// クーポンカテゴリーのデータ
 SWIFT_CLASS("_TtC17NautilusCouponSDK26NautilusCouponCategoryInfo")
@@ -2025,7 +2097,6 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponExchangeType, open) {
   NautilusCouponExchangeTypeNotExchange = 0,
 };
 
-@class NSNumber;
 /// クーポンIDと発行IDの組の情報
 SWIFT_CLASS("_TtC17NautilusCouponSDK20NautilusCouponIDInfo")
 @interface NautilusCouponIDInfo : NSObject
@@ -2281,9 +2352,12 @@ SWIFT_CLASS("_TtC17NautilusCouponSDK20NautilusCouponRouter")
 - (void)routeFavoriteCouponListIn:(UIViewController * _Nonnull)viewController;
 @end
 
+SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponSortKeyName)
+SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponSortKeyOrder)
 /// APIから取得するデータの並び順
 SWIFT_CLASS("_TtC17NautilusCouponSDK21NautilusCouponSortKey")
 @interface NautilusCouponSortKey : NSObject
+- (nonnull instancetype)initWithKeyName:(enum NautilusCouponSortKeyName)keyName order:(enum NautilusCouponSortKeyOrder)order OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2306,6 +2380,16 @@ typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyName, open) {
 typedef SWIFT_ENUM(NSInteger, NautilusCouponSortKeyOrder, open) {
   NautilusCouponSortKeyOrderAscending = 0,
   NautilusCouponSortKeyOrderDescending = 1,
+};
+
+/// クーポンの利用状態
+typedef SWIFT_ENUM(NSInteger, NautilusCouponState, open) {
+  NautilusCouponStateBefore = 0,
+  NautilusCouponStateUseAvailable = 1,
+  NautilusCouponStateUsed = 2,
+  NautilusCouponStateLimited = 3,
+  NautilusCouponStateUsedLimited = 4,
+  NautilusCouponStateSoldOut = 5,
 };
 
 /// ルーターから、カテゴリータブ付きのクーポン一覧画面を生成するためのプロトコル

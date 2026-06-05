@@ -1519,6 +1519,273 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusContentSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusContentAppSortType",
+        "printedName": "NautilusContentAppSortType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "classic",
+            "printedName": "classic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusContentSDK.NautilusContentAppSortType.Type) -> NautilusContentSDK.NautilusContentAppSortType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusContentAppSortType",
+                    "printedName": "NautilusContentSDK.NautilusContentAppSortType",
+                    "usr": "s:18NautilusContentSDK0aB11AppSortTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusContentSDK.NautilusContentAppSortType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentAppSortType",
+                        "printedName": "NautilusContentSDK.NautilusContentAppSortType",
+                        "usr": "s:18NautilusContentSDK0aB11AppSortTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18NautilusContentSDK0aB11AppSortTypeO7classicyA2CmF",
+            "mangledName": "$s18NautilusContentSDK0aB11AppSortTypeO7classicyA2CmF",
+            "moduleName": "NautilusContentSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "idDescFinally",
+            "printedName": "idDescFinally",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusContentSDK.NautilusContentAppSortType.Type) -> NautilusContentSDK.NautilusContentAppSortType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusContentAppSortType",
+                    "printedName": "NautilusContentSDK.NautilusContentAppSortType",
+                    "usr": "s:18NautilusContentSDK0aB11AppSortTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusContentSDK.NautilusContentAppSortType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentAppSortType",
+                        "printedName": "NautilusContentSDK.NautilusContentAppSortType",
+                        "usr": "s:18NautilusContentSDK0aB11AppSortTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18NautilusContentSDK0aB11AppSortTypeO13idDescFinallyyA2CmF",
+            "mangledName": "$s18NautilusContentSDK0aB11AppSortTypeO13idDescFinallyyA2CmF",
+            "moduleName": "NautilusContentSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sortNoPrimary",
+            "printedName": "sortNoPrimary",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NautilusContentSDK.NautilusContentAppSortType.Type) -> NautilusContentSDK.NautilusContentAppSortType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusContentAppSortType",
+                    "printedName": "NautilusContentSDK.NautilusContentAppSortType",
+                    "usr": "s:18NautilusContentSDK0aB11AppSortTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NautilusContentSDK.NautilusContentAppSortType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusContentAppSortType",
+                        "printedName": "NautilusContentSDK.NautilusContentAppSortType",
+                        "usr": "s:18NautilusContentSDK0aB11AppSortTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18NautilusContentSDK0aB11AppSortTypeO13sortNoPrimaryyA2CmF",
+            "mangledName": "$s18NautilusContentSDK0aB11AppSortTypeO13sortNoPrimaryyA2CmF",
+            "moduleName": "NautilusContentSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NautilusContentSDK.NautilusContentAppSortType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusContentAppSortType",
+                    "printedName": "NautilusContentSDK.NautilusContentAppSortType",
+                    "usr": "s:18NautilusContentSDK0aB11AppSortTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18NautilusContentSDK0aB11AppSortTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s18NautilusContentSDK0aB11AppSortTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "NautilusContentSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18NautilusContentSDK0aB11AppSortTypeO8rawValueSivp",
+            "mangledName": "$s18NautilusContentSDK0aB11AppSortTypeO8rawValueSivp",
+            "moduleName": "NautilusContentSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18NautilusContentSDK0aB11AppSortTypeO8rawValueSivg",
+                "mangledName": "$s18NautilusContentSDK0aB11AppSortTypeO8rawValueSivg",
+                "moduleName": "NautilusContentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18NautilusContentSDK0aB11AppSortTypeO",
+        "mangledName": "$s18NautilusContentSDK0aB11AppSortTypeO",
+        "moduleName": "NautilusContentSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2625,6 +2892,64 @@
               "Nonisolated",
               "AccessControl",
               "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sortContentList",
+            "printedName": "sortContentList(contentList:sortKey:sortType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[NautilusContentSDK.NautilusContentInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusContentInfo",
+                    "printedName": "NautilusContentSDK.NautilusContentInfo",
+                    "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentInfo"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[NautilusContentSDK.NautilusContentInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusContentInfo",
+                    "printedName": "NautilusContentSDK.NautilusContentInfo",
+                    "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentInfo"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusContentSortKey",
+                "printedName": "NautilusContentSDK.NautilusContentSortKey",
+                "usr": "c:@M@NautilusContentSDK@objc(cs)NautilusContentSortKey"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusContentAppSortType",
+                "printedName": "NautilusContentSDK.NautilusContentAppSortType",
+                "usr": "s:18NautilusContentSDK0aB11AppSortTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18NautilusContentSDK0aB0C04sortB4List07contentE00D3Key0D4TypeSayAA0aB4InfoCGAJ_AA0ab4SortG0CAA0ab3AppjH0OtF",
+            "mangledName": "$s18NautilusContentSDK0aB0C04sortB4List07contentE00D3Key0D4TypeSayAA0aB4InfoCGAJ_AA0ab4SortG0CAA0ab3AppjH0OtF",
+            "moduleName": "NautilusContentSDK",
+            "declAttributes": [
+              "Nonisolated",
+              "Final",
+              "AccessControl",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -9242,6 +9567,13 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "NautilusContentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "NautilusContentSDK",
         "declAttributes": [
           "RawDocComment"
@@ -10305,6 +10637,20 @@
       "value": "\"-\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentAppSortType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 360,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContentAppSortType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 488,
+      "length": 13,
+      "value": "2"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContent.swift",
       "kind": "StringLiteral",
       "offset": 523,
@@ -10384,14 +10730,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 56621,
+      "offset": 57690,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/Base\/NautilusContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 56640,
+      "offset": 57709,
       "length": 12,
       "value": "2"
     },
@@ -10846,21 +11192,21 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/API\/Entity\/ContentListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4239,
+      "offset": 5437,
       "length": 12,
       "value": "\"image_path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/API\/Entity\/ContentListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4279,
+      "offset": 5477,
       "length": 14,
       "value": "\"aspect_ratio\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Content\/Sources\/API\/Entity\/ContentListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4316,
+      "offset": 5514,
       "length": 9,
       "value": "\"sort_no\""
     },

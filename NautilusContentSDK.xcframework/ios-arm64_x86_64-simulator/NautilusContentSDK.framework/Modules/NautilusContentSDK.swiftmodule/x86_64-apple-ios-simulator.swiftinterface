@@ -47,6 +47,16 @@ import _SwiftConcurrencyShims
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+public enum NautilusContentAppSortType : Swift.Int {
+  case classic
+  case idDescFinally
+  case sortNoPrimary
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc public protocol NautilusContentDelegate {
   @objc func content(_ content: NautilusContentSDK.NautilusContent, canHandle contentInfo: NautilusContentSDK.NautilusContentInfo, in viewController: UIKit.UIViewController) -> Swift.Bool
   @objc func content(_ content: NautilusContentSDK.NautilusContent, actionButtonTitleForContent contentInfo: NautilusContentSDK.NautilusContentInfo, in viewController: UIKit.UIViewController) -> Swift.String
@@ -78,6 +88,7 @@ import _SwiftConcurrencyShims
   @objc nonisolated final public func instantiateContentListViewController(categoryAlias: Swift.String?, useCategoryTab: Swift.Bool) -> UIKit.UIViewController
   @objc nonisolated final public func instantiateFavoriteContentListViewController() -> UIKit.UIViewController
   @objc nonisolated final public func instantiateContentDetailViewController(contentID: Swift.Int, contentType: NautilusContentSDK.NautilusContentType, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
+  final nonisolated public func sortContentList(contentList: [NautilusContentSDK.NautilusContentInfo], sortKey: NautilusContentSDK.NautilusContentSortKey, sortType: NautilusContentSDK.NautilusContentAppSortType) -> [NautilusContentSDK.NautilusContentInfo]
   @available(*, deprecated, renamed: "getCommonContentList(offset:limit:useCache:contentIDs:categoryIDs:searchWord:sortKeys:checkDateTime:completion:)")
   final nonisolated public func getCommonContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
   final nonisolated public func getCommonContentList(offset: Swift.Int?, limit: Swift.Int?, useCache: Swift.Bool?, contentIDs: [Swift.Int]?, categoryIDs: [Swift.Int]?, searchWord: Swift.String?, sortKeys: [NautilusContentSDK.NautilusContentSortKey]?, checkDateTime: Foundation.Date?, completion: @escaping (Swift.Result<[NautilusContentSDK.NautilusContentInfo], NautilusContentSDK.NautilusContentError>) -> Swift.Void)
@@ -215,6 +226,9 @@ public let NautilusContentErrorDomain: Swift.String
     get
   }
 }
+extension NautilusContentSDK.NautilusContentAppSortType : Swift.Equatable {}
+extension NautilusContentSDK.NautilusContentAppSortType : Swift.Hashable {}
+extension NautilusContentSDK.NautilusContentAppSortType : Swift.RawRepresentable {}
 extension NautilusContentSDK.NautilusContentType : Swift.Equatable {}
 extension NautilusContentSDK.NautilusContentType : Swift.Hashable {}
 extension NautilusContentSDK.NautilusContentType : Swift.RawRepresentable {}
