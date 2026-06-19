@@ -5,6 +5,7 @@
 import CommonCrypto
 import Foundation
 import Swift
+import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -17,8 +18,16 @@ final public class NautilusImageDownloader {
   @_Concurrency.MainActor @preconcurrency public init(session: Foundation.URLSession = .shared)
   @_Concurrency.MainActor @preconcurrency final public func download(from url: Foundation.URL, completion: @escaping @_Concurrency.MainActor @Sendable (UIKit.UIImage?) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency final public func downloadWithURL(from url: Foundation.URL, completion: @escaping @_Concurrency.MainActor @Sendable (UIKit.UIImage?, Foundation.URL) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency final public func download(from url: Foundation.URL) async -> UIKit.UIImage?
   @_Concurrency.MainActor @preconcurrency final public func cancel()
   @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct NautilusAsyncImage<Content, Placeholder> : SwiftUICore.View where Content : SwiftUICore.View, Placeholder : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL?, useCache: Swift.Bool = false, @SwiftUICore.ViewBuilder content: @escaping (SwiftUICore.Image) -> Content, @SwiftUICore.ViewBuilder placeholder: @escaping () -> Placeholder)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s18NautilusImagingSDK0A10AsyncImageV4bodyQrvp", 0) __<Content, Placeholder>
 }
 final public class NautilusImageCache {
   @_Concurrency.MainActor @preconcurrency public static var shared: NautilusImagingSDK.NautilusImageCache
@@ -31,4 +40,5 @@ final public class NautilusImageCache {
   @objc deinit
 }
 extension NautilusImagingSDK.NautilusImageDownloader : Swift.Sendable {}
+extension NautilusImagingSDK.NautilusAsyncImage : Swift.Sendable {}
 extension NautilusImagingSDK.NautilusImageCache : Swift.Sendable {}
