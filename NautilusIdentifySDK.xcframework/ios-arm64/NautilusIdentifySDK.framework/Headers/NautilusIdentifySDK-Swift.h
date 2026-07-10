@@ -430,9 +430,29 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)changeUserWithUserID:(NSString * _Nullable)userID;
 /// 現在、SDKを利用しているユーザーの情報を取得する
 - (id <NautilusUser> _Nonnull)getCurrentUser SWIFT_WARN_UNUSED_RESULT;
-- (void)setManageCodeWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)setManageCodeWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use setManageCodeWithSendEventWithUserID:manageCode:completion: instead");
+/// マネージコードを設定し、成功時に（Analytics SDK が初期化済みの場合）Analyticsイベントを送信します。
+/// \param userID ユーザーID
+///
+/// \param manageCode マネージコード
+///
+/// \param completion 成功時は true, 失敗なら false と <code>NSError</code> を受け取るクロージャ
+///
+- (void)setManageCodeWithSendEventWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nonnull)manageCode completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)setExternalIDWithUserID:(NSString * _Nonnull)userID externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)setManageCodeAndExternalIDWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)setManageCodeAndExternalIDWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use setManageCodeAndExternalIDWithSendEventWithUserID:manageCode:externalID:externalIDType:completion: instead");
+/// マネージコードと外部IDを設定し、成功時にAnalyticsイベントを送信します。
+/// \param userID ユーザーID
+///
+/// \param manageCode マネージコード
+///
+/// \param externalID 外部ID
+///
+/// \param externalIDType 外部IDタイプ
+///
+/// \param completion 成功時は true, 失敗なら false と <code>NSError</code> を受け取るクロージャ
+///
+- (void)setManageCodeAndExternalIDWithSendEventWithUserID:(NSString * _Nonnull)userID manageCode:(NSString * _Nullable)manageCode externalID:(NSString * _Nonnull)externalID externalIDType:(NSInteger)externalIDType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// 「ログイン状態」を登録する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param manageCode ログイン対象となるマネージコード

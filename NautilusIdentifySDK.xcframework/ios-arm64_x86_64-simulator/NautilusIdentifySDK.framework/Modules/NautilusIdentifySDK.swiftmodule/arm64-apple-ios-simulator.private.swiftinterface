@@ -73,12 +73,20 @@ public typealias SetManageCodeCompletion = (Swift.Result<Swift.Bool, NautilusIde
   @objc(identifyAppNamed:) public static func identify(appName: Swift.String) -> NautilusIdentifySDK.NautilusIdentify
   @objc nonisolated final public func changeUser(userID: Swift.String?)
   @objc nonisolated final public func getCurrentUser() -> any NautilusIdentifySDK.NautilusUser
+  @available(*, deprecated, message: "Use setManageCodeWithSendEvent(userID:manageCode:completion:) instead")
   final nonisolated public func setManageCode(userID: Swift.String, manageCode: Swift.String, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
+  final nonisolated public func setManageCodeWithSendEvent(userID: Swift.String, manageCode: Swift.String, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
   final nonisolated public func setExternalID(userID: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
+  @available(*, deprecated, message: "Use setManageCodeAndExternalIDWithSendEvent(userID:manageCode:externalID:externalIDType:completion:) instead")
   final nonisolated public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
+  @available(*, deprecated, message: "Use setManageCodeWithSendEventWithUserID:manageCode:completion: instead")
   @objc nonisolated final public func setManageCode(userID: Swift.String, manageCode: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc nonisolated final public func setManageCodeWithSendEvent(userID: Swift.String, manageCode: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc nonisolated final public func setExternalID(userID: Swift.String, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @available(*, deprecated, message: "Use setManageCodeAndExternalIDWithSendEventWithUserID:manageCode:externalID:externalIDType:completion: instead")
   @objc nonisolated final public func setManageCodeAndExternalID(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  final nonisolated public func setManageCodeAndExternalIDWithSendEvent(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping NautilusIdentifySDK.SetManageCodeCompletion)
+  @objc nonisolated final public func setManageCodeAndExternalIDWithSendEvent(userID: Swift.String, manageCode: Swift.String?, externalID: Swift.String, externalIDType: Swift.Int, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   final nonisolated public func setServerStatusToLogin(manageCode: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
   @objc nonisolated final public func setServerStatusToLogin(manageCode: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   final nonisolated public func setServerStatusToLogout(completion: @escaping (Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> Swift.Void)
@@ -151,6 +159,7 @@ public let NautilusIdentifyErrorDomain: Swift.String
 extension Foundation.Notification.NautilusApp {
   public static let identifyUpdateCID: Foundation.Notification.Name
   public static let identifyChangeCurrentUser: Foundation.Notification.Name
+  public static let identifyDidSetManageCode: Foundation.Notification.Name
 }
 extension Foundation.Notification.NautilusApp.UserInfoKey {
   public static let newCID: Swift.String

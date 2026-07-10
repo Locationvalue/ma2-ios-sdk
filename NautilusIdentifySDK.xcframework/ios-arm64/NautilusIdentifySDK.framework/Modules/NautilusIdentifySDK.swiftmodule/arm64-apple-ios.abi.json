@@ -2329,10 +2329,79 @@
             "usr": "s:19NautilusIdentifySDK0aB0C13setManageCode6userID06manageF010completionySS_SSys6ResultOySbAA0aB5ErrorOGctF",
             "mangledName": "$s19NautilusIdentifySDK0aB0C13setManageCode6userID06manageF010completionySS_SSys6ResultOySbAA0aB5ErrorOGctF",
             "moduleName": "NautilusIdentifySDK",
+            "deprecated": true,
             "declAttributes": [
               "Nonisolated",
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setManageCodeWithSendEvent",
+            "printedName": "setManageCodeWithSendEvent(userID:manageCode:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusIdentifyError",
+                        "printedName": "NautilusIdentifySDK.NautilusIdentifyError",
+                        "usr": "c:@M@NautilusIdentifySDK@E@NautilusIdentifyError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19NautilusIdentifySDK0aB0C26setManageCodeWithSendEvent6userID06manageF010completionySS_SSys6ResultOySbAA0aB5ErrorOGctF",
+            "mangledName": "$s19NautilusIdentifySDK0aB0C26setManageCodeWithSendEvent6userID06manageF010completionySS_SSys6ResultOySbAA0aB5ErrorOGctF",
+            "moduleName": "NautilusIdentifySDK",
+            "declAttributes": [
+              "Nonisolated",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2487,10 +2556,12 @@
             "usr": "s:19NautilusIdentifySDK0aB0C26setManageCodeAndExternalID04userI006manageF008externalI00L6IDType10completionySS_SSSgSSSiys6ResultOySbAA0aB5ErrorOGctF",
             "mangledName": "$s19NautilusIdentifySDK0aB0C26setManageCodeAndExternalID04userI006manageF008externalI00L6IDType10completionySS_SSSgSSSiys6ResultOySbAA0aB5ErrorOGctF",
             "moduleName": "NautilusIdentifySDK",
+            "deprecated": true,
             "declAttributes": [
               "Nonisolated",
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2560,12 +2631,90 @@
             "usr": "c:@M@NautilusIdentifySDK@objc(cs)NautilusIdentify(im)setManageCodeWithUserID:manageCode:completion:",
             "mangledName": "$s19NautilusIdentifySDK0aB0C13setManageCode6userID06manageF010completionySS_SSySb_So7NSErrorCSgtctF",
             "moduleName": "NautilusIdentifySDK",
+            "deprecated": true,
             "objc_name": "setManageCodeWithUserID:manageCode:completion:",
             "declAttributes": [
               "Final",
               "Nonisolated",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setManageCodeWithSendEvent",
+            "printedName": "setManageCodeWithSendEvent(userID:manageCode:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusIdentifySDK@objc(cs)NautilusIdentify(im)setManageCodeWithSendEventWithUserID:manageCode:completion:",
+            "mangledName": "$s19NautilusIdentifySDK0aB0C26setManageCodeWithSendEvent6userID06manageF010completionySS_SSySb_So7NSErrorCSgtctF",
+            "moduleName": "NautilusIdentifySDK",
+            "objc_name": "setManageCodeWithSendEventWithUserID:manageCode:completion:",
+            "declAttributes": [
+              "Final",
+              "Nonisolated",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2736,12 +2885,197 @@
             "usr": "c:@M@NautilusIdentifySDK@objc(cs)NautilusIdentify(im)setManageCodeAndExternalIDWithUserID:manageCode:externalID:externalIDType:completion:",
             "mangledName": "$s19NautilusIdentifySDK0aB0C26setManageCodeAndExternalID04userI006manageF008externalI00L6IDType10completionySS_SSSgSSSiySb_So7NSErrorCSgtctF",
             "moduleName": "NautilusIdentifySDK",
+            "deprecated": true,
             "objc_name": "setManageCodeAndExternalIDWithUserID:manageCode:externalID:externalIDType:completion:",
             "declAttributes": [
               "Final",
               "Nonisolated",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setManageCodeAndExternalIDWithSendEvent",
+            "printedName": "setManageCodeAndExternalIDWithSendEvent(userID:manageCode:externalID:externalIDType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, NautilusIdentifySDK.NautilusIdentifyError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusIdentifyError",
+                        "printedName": "NautilusIdentifySDK.NautilusIdentifyError",
+                        "usr": "c:@M@NautilusIdentifySDK@E@NautilusIdentifyError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19NautilusIdentifySDK0aB0C39setManageCodeAndExternalIDWithSendEvent6userID06manageF008externalM00O6IDType10completionySS_SSSgSSSiys6ResultOySbAA0aB5ErrorOGctF",
+            "mangledName": "$s19NautilusIdentifySDK0aB0C39setManageCodeAndExternalIDWithSendEvent6userID06manageF008externalM00O6IDType10completionySS_SSSgSSSiys6ResultOySbAA0aB5ErrorOGctF",
+            "moduleName": "NautilusIdentifySDK",
+            "declAttributes": [
+              "Nonisolated",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setManageCodeAndExternalIDWithSendEvent",
+            "printedName": "setManageCodeAndExternalIDWithSendEvent(userID:manageCode:externalID:externalIDType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusIdentifySDK@objc(cs)NautilusIdentify(im)setManageCodeAndExternalIDWithSendEventWithUserID:manageCode:externalID:externalIDType:completion:",
+            "mangledName": "$s19NautilusIdentifySDK0aB0C39setManageCodeAndExternalIDWithSendEvent6userID06manageF008externalM00O6IDType10completionySS_SSSgSSSiySb_So7NSErrorCSgtctF",
+            "moduleName": "NautilusIdentifySDK",
+            "objc_name": "setManageCodeAndExternalIDWithSendEventWithUserID:manageCode:externalID:externalIDType:completion:",
+            "declAttributes": [
+              "Final",
+              "Nonisolated",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -5593,6 +5927,54 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "identifyDidSetManageCode",
+            "printedName": "identifyDidSetManageCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation12NotificationV15NautilusCoreSDKE0C3AppO0c8IdentifyE0E24identifyDidSetManageCodeSo18NSNotificationNameavpZ",
+            "mangledName": "$s10Foundation12NotificationV15NautilusCoreSDKE0C3AppO0c8IdentifyE0E24identifyDidSetManageCodeSo18NSNotificationNameavpZ",
+            "moduleName": "NautilusIdentifySDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation12NotificationV15NautilusCoreSDKE0C3AppO0c8IdentifyE0E24identifyDidSetManageCodeSo18NSNotificationNameavgZ",
+                "mangledName": "$s10Foundation12NotificationV15NautilusCoreSDKE0C3AppO0c8IdentifyE0E24identifyDidSetManageCodeSo18NSNotificationNameavgZ",
+                "moduleName": "NautilusIdentifySDK",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -6275,7 +6657,14 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/Base\/Notification+Identify.swift",
       "kind": "StringLiteral",
-      "offset": 524,
+      "offset": 506,
+      "length": 37,
+      "value": "\"NautilusAppIdentifyDidSetManageCode\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Identify\/Sources\/Base\/Notification+Identify.swift",
+      "kind": "StringLiteral",
+      "offset": 628,
       "length": 18,
       "value": "\"identify-new-cid\""
     },
