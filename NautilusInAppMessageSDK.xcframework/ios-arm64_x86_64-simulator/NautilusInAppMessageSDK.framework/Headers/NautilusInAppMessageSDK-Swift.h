@@ -346,6 +346,7 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import NautilusContainerSDK;
 @import NautilusCoreSDK;
@@ -371,6 +372,29 @@ extern "C" {
 #endif
 
 #if defined(__OBJC__)
+
+/// InAppMessageの表示設定を保持するクラス
+SWIFT_CLASS("_TtC23NautilusInAppMessageSDK24NautilusIAMDisplayConfig")
+@interface NautilusIAMDisplayConfig : NSObject
+/// Toastの垂直方向オフセット
+/// note:
+/// 単位は <em>pt</em>（ポイント）。
+/// 正の値で下方向、負の値で上方向に移動します。デフォルトは<code>0</code>。
+@property (nonatomic) CGFloat toastVerticalOffset;
+/// Modalの垂直方向オフセット
+/// note:
+/// 単位は <em>pt</em>（ポイント）。
+/// 正の値で下方向、負の値で上方向に移動します。デフォルトは<code>0</code>。
+@property (nonatomic) CGFloat modalVerticalOffset;
+/// initializer
+/// \param toastVerticalOffset Toastの垂直方向オフセット（デフォルト: 0）
+///
+/// \param modalVerticalOffset Modalの垂直方向オフセット（デフォルト: 0）
+///
+- (nonnull instancetype)initWithToastVerticalOffset:(CGFloat)toastVerticalOffset modalVerticalOffset:(CGFloat)modalVerticalOffset OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 /// アプリ内メッセージのデータ
 SWIFT_CLASS("_TtC23NautilusInAppMessageSDK20NautilusInAppMessage")
@@ -506,6 +530,7 @@ SWIFT_PROTOCOL("_TtP23NautilusInAppMessageSDK38NautilusInAppMessageControllerDel
 @class NautilusApp;
 SWIFT_ENUM_FWD_DECL(NSInteger, NautilusFeatureStatus)
 @class NSError;
+@class UIViewController;
 SWIFT_CLASS("_TtC23NautilusInAppMessageSDK27NautilusInAppMessageFeature")
 @interface NautilusInAppMessageFeature : NSObject <NautilusFeature>
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
@@ -522,6 +547,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessage SWIFT_WARN_UNUSED_RESULT;
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessageAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 - (void)triggerWithEventID:(NSString * _Nonnull)eventID;
+/// IAM表示設定プロバイダーを設定する
+/// アプリ側で任意のUIViewControllerに対してToast/Modalの縦オフセットを指定できるようにします。
+/// \param provider 表示するViewControllerを引数に取り、表示設定を返すクロージャ
+///
+- (void)setIAMDisplayConfigProvider:(NautilusIAMDisplayConfig * _Nonnull (^ _Nonnull)(UIViewController * _Nonnull))provider;
+/// IAM表示設定プロバイダーをクリアする
+- (void)clearIAMDisplayConfigProvider;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -893,6 +925,7 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import NautilusContainerSDK;
 @import NautilusCoreSDK;
@@ -918,6 +951,29 @@ extern "C" {
 #endif
 
 #if defined(__OBJC__)
+
+/// InAppMessageの表示設定を保持するクラス
+SWIFT_CLASS("_TtC23NautilusInAppMessageSDK24NautilusIAMDisplayConfig")
+@interface NautilusIAMDisplayConfig : NSObject
+/// Toastの垂直方向オフセット
+/// note:
+/// 単位は <em>pt</em>（ポイント）。
+/// 正の値で下方向、負の値で上方向に移動します。デフォルトは<code>0</code>。
+@property (nonatomic) CGFloat toastVerticalOffset;
+/// Modalの垂直方向オフセット
+/// note:
+/// 単位は <em>pt</em>（ポイント）。
+/// 正の値で下方向、負の値で上方向に移動します。デフォルトは<code>0</code>。
+@property (nonatomic) CGFloat modalVerticalOffset;
+/// initializer
+/// \param toastVerticalOffset Toastの垂直方向オフセット（デフォルト: 0）
+///
+/// \param modalVerticalOffset Modalの垂直方向オフセット（デフォルト: 0）
+///
+- (nonnull instancetype)initWithToastVerticalOffset:(CGFloat)toastVerticalOffset modalVerticalOffset:(CGFloat)modalVerticalOffset OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 /// アプリ内メッセージのデータ
 SWIFT_CLASS("_TtC23NautilusInAppMessageSDK20NautilusInAppMessage")
@@ -1053,6 +1109,7 @@ SWIFT_PROTOCOL("_TtP23NautilusInAppMessageSDK38NautilusInAppMessageControllerDel
 @class NautilusApp;
 SWIFT_ENUM_FWD_DECL(NSInteger, NautilusFeatureStatus)
 @class NSError;
+@class UIViewController;
 SWIFT_CLASS("_TtC23NautilusInAppMessageSDK27NautilusInAppMessageFeature")
 @interface NautilusInAppMessageFeature : NSObject <NautilusFeature>
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NautilusComponentType componentType;)
@@ -1069,6 +1126,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessage SWIFT_WARN_UNUSED_RESULT;
 + (NautilusInAppMessageFeature * _Nonnull)inAppMessageAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 - (void)triggerWithEventID:(NSString * _Nonnull)eventID;
+/// IAM表示設定プロバイダーを設定する
+/// アプリ側で任意のUIViewControllerに対してToast/Modalの縦オフセットを指定できるようにします。
+/// \param provider 表示するViewControllerを引数に取り、表示設定を返すクロージャ
+///
+- (void)setIAMDisplayConfigProvider:(NautilusIAMDisplayConfig * _Nonnull (^ _Nonnull)(UIViewController * _Nonnull))provider;
+/// IAM表示設定プロバイダーをクリアする
+- (void)clearIAMDisplayConfigProvider;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

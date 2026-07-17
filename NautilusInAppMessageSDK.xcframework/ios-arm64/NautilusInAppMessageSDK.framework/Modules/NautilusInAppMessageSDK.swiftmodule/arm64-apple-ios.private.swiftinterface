@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusInAppMessageSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import CoreData
+import CoreGraphics
 import DeveloperToolsSupport
 import Foundation
 import NautilusAnalyticsSDK
@@ -29,6 +30,12 @@ public struct NautilusInAppMessageViewConditionGroupItem : Swift.Equatable {
 public struct NautilusInAppMessageViewCondition : Swift.Equatable {
   public let groups: [NautilusInAppMessageSDK.NautilusInAppMessageViewConditionGroup]
   public static func == (a: NautilusInAppMessageSDK.NautilusInAppMessageViewCondition, b: NautilusInAppMessageSDK.NautilusInAppMessageViewCondition) -> Swift.Bool
+}
+@objc public class NautilusIAMDisplayConfig : ObjectiveC.NSObject {
+  @objc public var toastVerticalOffset: CoreFoundation.CGFloat
+  @objc public var modalVerticalOffset: CoreFoundation.CGFloat
+  @objc public init(toastVerticalOffset: CoreFoundation.CGFloat = 0, modalVerticalOffset: CoreFoundation.CGFloat = 0)
+  @objc deinit
 }
 public struct NautilusInAppMessageViewConditionGroup : Swift.Equatable {
   public let items: [NautilusInAppMessageSDK.NautilusInAppMessageViewConditionGroupItem]
@@ -80,6 +87,8 @@ extension NautilusInAppMessageSDK.NautilusInAppMessageControllerDelegate {
   @objc public static func inAppMessage() -> NautilusInAppMessageSDK.NautilusInAppMessageFeature
   @objc(inAppMessageAppNamed:) public static func inAppMessage(appName: Swift.String) -> NautilusInAppMessageSDK.NautilusInAppMessageFeature
   @objc nonisolated final public func trigger(eventID: Swift.String)
+  @objc nonisolated final public func setIAMDisplayConfigProvider(_ provider: @escaping (UIKit.UIViewController) -> NautilusInAppMessageSDK.NautilusIAMDisplayConfig)
+  @objc nonisolated final public func clearIAMDisplayConfigProvider()
   @objc deinit
 }
 @objc public enum NautilusInAppMessageViewType : Swift.Int {
