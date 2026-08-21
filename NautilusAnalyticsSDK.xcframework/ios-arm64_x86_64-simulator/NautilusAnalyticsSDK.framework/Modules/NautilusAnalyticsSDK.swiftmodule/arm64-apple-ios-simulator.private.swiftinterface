@@ -148,6 +148,7 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   case tapStampCardCheckIn
   case showStampCardPrizeAutoExchangeDialog
   case showStampCardCompleteDialog
+  case showStampCardLapCompleteDialog
   case showStampCardExchangeSelectDialog
   case showStampCardExchangeSuccessDialog
   case tapStampCardExchangeSuccessLinkInDialog
@@ -282,6 +283,7 @@ extension Foundation.Notification.NautilusApp.UserInfoKey {
   case spotID
   case spotName
   case pushType
+  case completedLap
   public var propertyName: Swift.String {
     get
   }

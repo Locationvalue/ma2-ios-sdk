@@ -624,56 +624,58 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEvent, open) {
   NautilusAnalyticsEventShowStampCardPrizeAutoExchangeDialog = 69,
 /// スタンプカードのコンプリートダイアログを見る
   NautilusAnalyticsEventShowStampCardCompleteDialog = 70,
+/// スタンプカードの周回達成ダイアログを見る
+  NautilusAnalyticsEventShowStampCardLapCompleteDialog = 71,
 /// スタンプカードを交換しますかダイアログを見る
-  NautilusAnalyticsEventShowStampCardExchangeSelectDialog = 71,
+  NautilusAnalyticsEventShowStampCardExchangeSelectDialog = 72,
 /// スタンプカードを交換しましたを見る
-  NautilusAnalyticsEventShowStampCardExchangeSuccessDialog = 72,
+  NautilusAnalyticsEventShowStampCardExchangeSuccessDialog = 73,
 /// スタンプカードを交換しました画面内リンクをタップ
-  NautilusAnalyticsEventTapStampCardExchangeSuccessLinkInDialog = 73,
+  NautilusAnalyticsEventTapStampCardExchangeSuccessLinkInDialog = 74,
 /// スタンプラリー一覧を見る
-  NautilusAnalyticsEventShowStampRallyList = 74,
+  NautilusAnalyticsEventShowStampRallyList = 75,
 /// スタンプラリー詳細を見る
-  NautilusAnalyticsEventShowStampRallyDetail = 75,
+  NautilusAnalyticsEventShowStampRallyDetail = 76,
 /// スタンプラリーのスポットをタップ
-  NautilusAnalyticsEventTapStampRallySpotList = 76,
+  NautilusAnalyticsEventTapStampRallySpotList = 77,
 /// スタンプラリーの景品交換をタップする
-  NautilusAnalyticsEventTapStampRallyPrizeExchange = 77,
+  NautilusAnalyticsEventTapStampRallyPrizeExchange = 78,
 /// スタンプを貯めるをタップする
-  NautilusAnalyticsEventTapStampRallyCheckIn = 78,
+  NautilusAnalyticsEventTapStampRallyCheckIn = 79,
 /// スタンプラリーの自動付与景品ダイアログを見る
-  NautilusAnalyticsEventShowStampRallyPrizeAutoExchangeDialog = 79,
+  NautilusAnalyticsEventShowStampRallyPrizeAutoExchangeDialog = 80,
 /// スタンプラリーのコンプリートダイアログを見る
-  NautilusAnalyticsEventShowStampRallyCompleteDialog = 80,
+  NautilusAnalyticsEventShowStampRallyCompleteDialog = 81,
 /// スタンプラリーの交換ダイアログを見る
-  NautilusAnalyticsEventShowStampRallyExchangeSelectDialog = 81,
+  NautilusAnalyticsEventShowStampRallyExchangeSelectDialog = 82,
 /// スタンプラリーの交換成功ダイアログを見る
-  NautilusAnalyticsEventShowStampRallyExchangeSuccessDialog = 82,
+  NautilusAnalyticsEventShowStampRallyExchangeSuccessDialog = 83,
 /// スタンプラリーの交換成功ダイアログ内のリンクをタップ
-  NautilusAnalyticsEventTapStampRallyExchangeSuccessLinkInDialog = 83,
+  NautilusAnalyticsEventTapStampRallyExchangeSuccessLinkInDialog = 84,
 /// スタンプラリースポット一覧を見る
-  NautilusAnalyticsEventShowStampRallySpotList = 84,
+  NautilusAnalyticsEventShowStampRallySpotList = 85,
 /// スポット一覧でスポットをタップ
-  NautilusAnalyticsEventTapStampRallySpot = 85,
+  NautilusAnalyticsEventTapStampRallySpot = 86,
 /// スタンプラリーのスポット一覧で経路検索をタップ
-  NautilusAnalyticsEventTapStampRallySpotMapApp = 86,
+  NautilusAnalyticsEventTapStampRallySpotMapApp = 87,
 /// スポット一覧地図内のピンをタップする
-  NautilusAnalyticsEventTapStampRallySpotPinInMap = 87,
+  NautilusAnalyticsEventTapStampRallySpotPinInMap = 88,
 /// 店舗検索広域地図画面を見る
-  NautilusAnalyticsEventShowStoreSearchWidemap = 88,
+  NautilusAnalyticsEventShowStoreSearchWidemap = 89,
 /// 起動スタンプを見る
-  NautilusAnalyticsEventShowStampStartupView = 89,
+  NautilusAnalyticsEventShowStampStartupView = 90,
 /// 「スタンプを押す」をタップする
-  NautilusAnalyticsEventTapStampStartupCheckIn = 90,
+  NautilusAnalyticsEventTapStampStartupCheckIn = 91,
 /// 起動スタンプの自動付与景品ダイアログを見る
-  NautilusAnalyticsEventShowStampStartupPrizeAutoExchangeDialog = 91,
+  NautilusAnalyticsEventShowStampStartupPrizeAutoExchangeDialog = 92,
 /// 起動スタンプのコンプリート状態を見る
-  NautilusAnalyticsEventShowStampStartupComplete = 92,
+  NautilusAnalyticsEventShowStampStartupComplete = 93,
 /// 起動スタンプのコンプリート不可表示を見る
-  NautilusAnalyticsEventShowStampStartupUnableComplete = 93,
+  NautilusAnalyticsEventShowStampStartupUnableComplete = 94,
 /// スタンプ閉じる（次のスタンプへ行く）ボタンをタップ
-  NautilusAnalyticsEventTapStampStartupClose = 94,
+  NautilusAnalyticsEventTapStampStartupClose = 95,
 /// 起動スタンプの自動景品交換アイテムをタップする
-  NautilusAnalyticsEventTapStampStartupExchangeDialog = 95,
+  NautilusAnalyticsEventTapStampStartupExchangeDialog = 96,
 };
 
 /// 分析SDKから送信するイベントのチャネル定義
@@ -865,6 +867,8 @@ typedef SWIFT_ENUM(NSInteger, NautilusAnalyticsEventProperty, open) {
   NautilusAnalyticsEventPropertySpotName = 84,
 /// プッシュ通知のタイプ
   NautilusAnalyticsEventPropertyPushType = 85,
+/// 達成周回数
+  NautilusAnalyticsEventPropertyCompletedLap = 86,
 };
 
 /// イベント送信、ユーザープロパティ送信、ユーザーIDの設定が行われたことを検知するためのインターフェース
