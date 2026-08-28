@@ -170,17 +170,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -328,10 +328,382 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NautilusInAppMessageSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusImagingSDK",
+        "printedName": "NautilusImagingSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusInAppMessageSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NautilusInAppMessageSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NautilusInAppMessageSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NautilusInAppMessageSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "NautilusInAppMessageSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NautilusIAMDisplayConfig",
+        "printedName": "NautilusIAMDisplayConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "toastVerticalOffset",
+            "printedName": "toastVerticalOffset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig(py)toastVerticalOffset",
+            "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigC19toastVerticalOffset12CoreGraphics7CGFloatVvp",
+            "moduleName": "NautilusInAppMessageSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig(im)toastVerticalOffset",
+                "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigC19toastVerticalOffset12CoreGraphics7CGFloatVvg",
+                "moduleName": "NautilusInAppMessageSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig(im)setToastVerticalOffset:",
+                "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigC19toastVerticalOffset12CoreGraphics7CGFloatVvs",
+                "moduleName": "NautilusInAppMessageSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusInAppMessageSDK0A16IAMDisplayConfigC19toastVerticalOffset14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigC19toastVerticalOffset12CoreGraphics7CGFloatVvM",
+                "moduleName": "NautilusInAppMessageSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "modalVerticalOffset",
+            "printedName": "modalVerticalOffset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig(py)modalVerticalOffset",
+            "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigC19modalVerticalOffset12CoreGraphics7CGFloatVvp",
+            "moduleName": "NautilusInAppMessageSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig(im)modalVerticalOffset",
+                "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigC19modalVerticalOffset12CoreGraphics7CGFloatVvg",
+                "moduleName": "NautilusInAppMessageSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig(im)setModalVerticalOffset:",
+                "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigC19modalVerticalOffset12CoreGraphics7CGFloatVvs",
+                "moduleName": "NautilusInAppMessageSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23NautilusInAppMessageSDK0A16IAMDisplayConfigC19modalVerticalOffset14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigC19modalVerticalOffset12CoreGraphics7CGFloatVvM",
+                "moduleName": "NautilusInAppMessageSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(toastVerticalOffset:modalVerticalOffset:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusIAMDisplayConfig",
+                "printedName": "NautilusInAppMessageSDK.NautilusIAMDisplayConfig",
+                "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig(im)initWithToastVerticalOffset:modalVerticalOffset:",
+            "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigC19toastVerticalOffset05modaliJ0AC12CoreGraphics7CGFloatV_AHtcfc",
+            "moduleName": "NautilusInAppMessageSDK",
+            "objc_name": "initWithToastVerticalOffset:modalVerticalOffset:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusIAMDisplayConfig",
+                "printedName": "NautilusInAppMessageSDK.NautilusIAMDisplayConfig",
+                "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig(im)init",
+            "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigCACycfc",
+            "moduleName": "NautilusInAppMessageSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig",
+        "mangledName": "$s23NautilusInAppMessageSDK0A16IAMDisplayConfigC",
+        "moduleName": "NautilusInAppMessageSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -339,6 +711,20 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -510,17 +896,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -533,6 +919,40 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NautilusInAppMessageSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NautilusInAppMessageSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NautilusInAppMessageSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NautilusImagingSDK",
+        "printedName": "NautilusImagingSDK",
+        "declKind": "Import",
+        "moduleName": "NautilusInAppMessageSDK"
       },
       {
         "kind": "Import",
@@ -1327,38 +1747,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -1369,10 +1761,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -1383,10 +1789,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -2115,6 +2535,73 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "setIAMDisplayConfigProvider",
+            "printedName": "setIAMDisplayConfigProvider(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIViewController) -> NautilusInAppMessageSDK.NautilusIAMDisplayConfig",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NautilusIAMDisplayConfig",
+                    "printedName": "NautilusInAppMessageSDK.NautilusIAMDisplayConfig",
+                    "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusIAMDisplayConfig"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusInAppMessageFeature(im)setIAMDisplayConfigProvider:",
+            "mangledName": "$s23NautilusInAppMessageSDK0abcD7FeatureC27setIAMDisplayConfigProvideryyAA0ahI0CSo16UIViewControllerCcF",
+            "moduleName": "NautilusInAppMessageSDK",
+            "declAttributes": [
+              "Final",
+              "Nonisolated",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearIAMDisplayConfigProvider",
+            "printedName": "clearIAMDisplayConfigProvider()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusInAppMessageSDK@objc(cs)NautilusInAppMessageFeature(im)clearIAMDisplayConfigProvider",
+            "mangledName": "$s23NautilusInAppMessageSDK0abcD7FeatureC29clearIAMDisplayConfigProvideryyF",
+            "moduleName": "NautilusInAppMessageSDK",
+            "declAttributes": [
+              "Final",
+              "Nonisolated",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -2161,45 +2648,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "NautilusFeature",
-            "printedName": "NautilusFeature",
-            "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusFeature",
-            "mangledName": "$s15NautilusCoreSDK0A7FeatureP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -2210,10 +2662,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "NautilusFeature",
+            "printedName": "NautilusFeature",
+            "usr": "c:@M@NautilusCoreSDK@objc(pl)NautilusFeature",
+            "mangledName": "$s15NautilusCoreSDK0A7FeatureP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -2224,10 +2697,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -2469,17 +2956,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2695,17 +3182,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -2989,17 +3476,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3910,38 +4397,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -3952,10 +4411,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -3966,10 +4439,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -4196,38 +4683,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -4238,10 +4697,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -4252,10 +4725,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -4345,24 +4832,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "FixedWidthInteger",
-            "printedName": "FixedWidthInteger",
-            "usr": "s:s17FixedWidthIntegerP",
-            "mangledName": "$ss17FixedWidthIntegerP"
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation18_FormatSpecifiableP",
+            "mangledName": "$s10Foundation18_FormatSpecifiableP"
           },
           {
             "kind": "Conformance",
-            "name": "SignedInteger",
-            "printedName": "SignedInteger",
-            "usr": "s:SZ",
-            "mangledName": "$sSZ"
+            "name": "UserDefaultConvertible",
+            "printedName": "UserDefaultConvertible",
+            "usr": "s:15NautilusCoreSDK22UserDefaultConvertibleP",
+            "mangledName": "$s15NautilusCoreSDK22UserDefaultConvertibleP"
           },
           {
             "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinIntegerLiteral",
-            "printedName": "_ExpressibleByBuiltinIntegerLiteral",
-            "usr": "s:s35_ExpressibleByBuiltinIntegerLiteralP",
-            "mangledName": "$ss35_ExpressibleByBuiltinIntegerLiteralP"
+            "name": "AdditiveArithmetic",
+            "printedName": "AdditiveArithmetic",
+            "usr": "s:s18AdditiveArithmeticP",
+            "mangledName": "$ss18AdditiveArithmeticP"
           },
           {
             "kind": "Conformance",
@@ -4388,17 +4890,45 @@
           },
           {
             "kind": "Conformance",
-            "name": "LosslessStringConvertible",
-            "printedName": "LosslessStringConvertible",
-            "usr": "s:s25LosslessStringConvertibleP",
-            "mangledName": "$ss25LosslessStringConvertibleP"
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "SignedNumeric",
-            "printedName": "SignedNumeric",
-            "usr": "s:s13SignedNumericP",
-            "mangledName": "$ss13SignedNumericP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodingKeyRepresentable",
+            "printedName": "CodingKeyRepresentable",
+            "usr": "s:s22CodingKeyRepresentableP",
+            "mangledName": "$ss22CodingKeyRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
           },
           {
             "kind": "Conformance",
@@ -4409,54 +4939,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "Numeric",
-            "printedName": "Numeric",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Magnitude",
-                "printedName": "Magnitude",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt",
-                    "printedName": "Swift.UInt",
-                    "usr": "s:Su"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sj",
-            "mangledName": "$sSj"
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           },
           {
             "kind": "Conformance",
-            "name": "Strideable",
-            "printedName": "Strideable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Stride",
-                "printedName": "Stride",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sx",
-            "mangledName": "$sSx"
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           },
           {
             "kind": "Conformance",
-            "name": "AdditiveArithmetic",
-            "printedName": "AdditiveArithmetic",
-            "usr": "s:s18AdditiveArithmeticP",
-            "mangledName": "$ss18AdditiveArithmeticP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -4482,73 +4989,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Comparable",
-            "printedName": "Comparable",
-            "usr": "s:SL",
-            "mangledName": "$sSL"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CodingKeyRepresentable",
-            "printedName": "CodingKeyRepresentable",
-            "usr": "s:s22CodingKeyRepresentableP",
-            "mangledName": "$ss22CodingKeyRepresentableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_CustomPlaygroundQuickLookable",
-            "printedName": "_CustomPlaygroundQuickLookable",
-            "usr": "s:s30_CustomPlaygroundQuickLookableP",
-            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MirrorPath",
-            "printedName": "MirrorPath",
-            "usr": "s:s10MirrorPathP",
-            "mangledName": "$ss10MirrorPathP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "FixedWidthInteger",
+            "printedName": "FixedWidthInteger",
+            "usr": "s:s17FixedWidthIntegerP",
+            "mangledName": "$ss17FixedWidthIntegerP"
           },
           {
             "kind": "Conformance",
@@ -4559,31 +5003,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
+            "name": "LosslessStringConvertible",
+            "printedName": "LosslessStringConvertible",
+            "usr": "s:s25LosslessStringConvertibleP",
+            "mangledName": "$ss25LosslessStringConvertibleP"
           },
           {
             "kind": "Conformance",
-            "name": "_HasCustomAnyHashableRepresentation",
-            "printedName": "_HasCustomAnyHashableRepresentation",
-            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
-            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+            "name": "MirrorPath",
+            "printedName": "MirrorPath",
+            "usr": "s:s10MirrorPathP",
+            "mangledName": "$ss10MirrorPathP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
+            "name": "Numeric",
+            "printedName": "Numeric",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Magnitude",
+                "printedName": "Magnitude",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sj",
+            "mangledName": "$sSj"
           },
           {
             "kind": "Conformance",
@@ -4687,32 +5139,74 @@
           },
           {
             "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
-            "name": "_FormatSpecifiable",
-            "printedName": "_FormatSpecifiable",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SignedInteger",
+            "printedName": "SignedInteger",
+            "usr": "s:SZ",
+            "mangledName": "$sSZ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SignedNumeric",
+            "printedName": "SignedNumeric",
+            "usr": "s:s13SignedNumericP",
+            "mangledName": "$ss13SignedNumericP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Strideable",
+            "printedName": "Strideable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_Arg",
-                "printedName": "_Arg",
+                "name": "Stride",
+                "printedName": "Stride",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int64",
-                    "printedName": "Swift.Int64",
-                    "usr": "s:s5Int64V"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
             ],
-            "usr": "s:10Foundation18_FormatSpecifiableP",
-            "mangledName": "$s10Foundation18_FormatSpecifiableP"
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinIntegerLiteral",
+            "printedName": "_ExpressibleByBuiltinIntegerLiteral",
+            "usr": "s:s35_ExpressibleByBuiltinIntegerLiteralP",
+            "mangledName": "$ss35_ExpressibleByBuiltinIntegerLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
           },
           {
             "kind": "Conformance",
@@ -4757,13 +5251,6 @@
             ],
             "usr": "s:7SwiftUI18_FormatSpecifiableP",
             "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UserDefaultConvertible",
-            "printedName": "UserDefaultConvertible",
-            "usr": "s:15NautilusCoreSDK22UserDefaultConvertibleP",
-            "mangledName": "$s15NautilusCoreSDK22UserDefaultConvertibleP"
           }
         ]
       }
@@ -4772,51 +5259,156 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageDatabaseHelper.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Modal\/NautilusInAppMessageModalDialogSwiftUIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1490,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Modal\/NautilusInAppMessageModalDialogSwiftUIViewWrapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1204,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/Base\/NautilusIAMDisplayConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1157,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/Base\/NautilusIAMDisplayConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1199,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/DataBase\/NautilusInAppMessageDatabaseHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 917,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageDatabaseHelper.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/DataBase\/NautilusInAppMessageDatabaseHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 975,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageDatabaseHelper.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/DataBase\/NautilusInAppMessageDatabaseHelper.swift",
       "kind": "StringLiteral",
       "offset": 1251,
       "length": 29,
       "value": "\"NautilusInAppMessage.sqlite\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageDatabaseHelper.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/DataBase\/NautilusInAppMessageDatabaseHelper.swift",
       "kind": "StringLiteral",
       "offset": 1560,
       "length": 22,
       "value": "\"NautilusInAppMessage\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageDatabaseHelper.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/DataBase\/NautilusInAppMessageDatabaseHelper.swift",
       "kind": "StringLiteral",
       "offset": 1599,
       "length": 6,
       "value": "\"momd\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageToastView.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastSwiftUIViewWrapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1007,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastSwiftUIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 359,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastSwiftUIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 402,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastSwiftUIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 449,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastSwiftUIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 500,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastSwiftUIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 549,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastSwiftUIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 594,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastSwiftUIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 634,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastSwiftUIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 674,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastSwiftUIView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 723,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastView.swift",
       "kind": "IntegerLiteral",
       "offset": 967,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageToastView.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1008,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Toast\/NautilusInAppMessageToastView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1159,
+      "offset": 1200,
       "length": 5,
       "value": "false"
     },
@@ -4835,46 +5427,60 @@
       "value": "10"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessagePriority.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessagePriority.swift",
       "kind": "IntegerLiteral",
       "offset": 491,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessagePriority.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessagePriority.swift",
       "kind": "IntegerLiteral",
       "offset": 555,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessagePriority.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessagePriority.swift",
       "kind": "IntegerLiteral",
       "offset": 631,
       "length": 2,
       "value": "99"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageBuilder.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageBuilder.swift",
       "kind": "StringLiteral",
       "offset": 426,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageModalDialogView.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Modal\/NautilusInAppMessageModalDialogView.swift",
       "kind": "IntegerLiteral",
       "offset": 1129,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageViewer.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/Modal\/NautilusInAppMessageModalDialogView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1170,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageViewer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1516,
+      "offset": 1608,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageViewer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18836,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/API\/LoggingInAppMessageResponse.swift",
@@ -5109,55 +5715,69 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/Base\/NautilusInAppMessageFeature.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2656,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/Base\/NautilusInAppMessageFeature.swift",
       "kind": "FloatLiteral",
-      "offset": 2695,
+      "offset": 3000,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/Base\/NautilusInAppMessageFeature.swift",
       "kind": "BooleanLiteral",
-      "offset": 20579,
+      "offset": 21864,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/Base\/NautilusInAppMessageFeature.swift",
       "kind": "StringLiteral",
-      "offset": 21850,
+      "offset": 23135,
       "length": 32,
       "value": "\"networkListenerIAMNotification\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageViewType.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 398,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageViewType.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 439,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageViewType.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 494,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessage.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageViewType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1242,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessage.swift",
       "kind": "IntegerLiteral",
       "offset": 796,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessage.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessage.swift",
       "kind": "IntegerLiteral",
       "offset": 857,
       "length": 3,
@@ -5206,35 +5826,35 @@
       "value": "\"ma_inappmessage_on_toast_color\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageController.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageController.swift",
       "kind": "StringLiteral",
       "offset": 1042,
       "length": 43,
       "value": "\"Updated In-App Message: \""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageController.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageController.swift",
       "kind": "StringLiteral",
       "offset": 1084,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageController.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageController.swift",
       "kind": "Array",
       "offset": 996,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageController.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageController.swift",
       "kind": "StringLiteral",
       "offset": 1434,
       "length": 32,
       "value": "\"com.locationvalue.nautilus.iam\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessage\/NautilusInAppMessageController.swift",
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/InAppMessage\/Sources\/InAppMessageUI\/NautilusInAppMessageController.swift",
       "kind": "Array",
       "offset": 1615,
       "length": 2,
