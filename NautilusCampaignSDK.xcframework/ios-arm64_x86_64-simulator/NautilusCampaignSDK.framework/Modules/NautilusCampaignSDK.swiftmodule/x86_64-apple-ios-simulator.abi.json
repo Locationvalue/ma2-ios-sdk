@@ -2753,6 +2753,89 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "optionalParamList",
+            "printedName": "optionalParamList",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusCampaignSDK.NautilusCampaignOptionalParam]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusCampaignSDK.NautilusCampaignOptionalParam]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusCampaignOptionalParam",
+                        "printedName": "NautilusCampaignSDK.NautilusCampaignOptionalParam",
+                        "usr": "c:@M@NautilusCampaignSDK@objc(cs)NautilusCampaignOptionalParam"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NautilusCampaignSDK@objc(cs)NautilusCampaignInfo(py)optionalParamList",
+            "mangledName": "$s19NautilusCampaignSDK0aB4InfoC17optionalParamListSayAA0ab8OptionalF0CGSgvp",
+            "moduleName": "NautilusCampaignSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[NautilusCampaignSDK.NautilusCampaignOptionalParam]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[NautilusCampaignSDK.NautilusCampaignOptionalParam]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusCampaignOptionalParam",
+                            "printedName": "NautilusCampaignSDK.NautilusCampaignOptionalParam",
+                            "usr": "c:@M@NautilusCampaignSDK@objc(cs)NautilusCampaignOptionalParam"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NautilusCampaignSDK@objc(cs)NautilusCampaignInfo(im)optionalParamList",
+                "mangledName": "$s19NautilusCampaignSDK0aB4InfoC17optionalParamListSayAA0ab8OptionalF0CGSgvg",
+                "moduleName": "NautilusCampaignSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -4991,13 +5074,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:19NautilusCampaignSDK0aB13OptionalParamC9optionKeySSSgvp",
+            "usr": "c:@M@NautilusCampaignSDK@objc(cs)NautilusCampaignOptionalParam(py)optionKey",
             "mangledName": "$s19NautilusCampaignSDK0aB13OptionalParamC9optionKeySSSgvp",
             "moduleName": "NautilusCampaignSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -5024,12 +5108,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19NautilusCampaignSDK0aB13OptionalParamC9optionKeySSSgvg",
+                "usr": "c:@M@NautilusCampaignSDK@objc(cs)NautilusCampaignOptionalParam(im)optionKey",
                 "mangledName": "$s19NautilusCampaignSDK0aB13OptionalParamC9optionKeySSSgvg",
                 "moduleName": "NautilusCampaignSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -5056,13 +5141,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:19NautilusCampaignSDK0aB13OptionalParamC11optionValueSSSgvp",
+            "usr": "c:@M@NautilusCampaignSDK@objc(cs)NautilusCampaignOptionalParam(py)optionValue",
             "mangledName": "$s19NautilusCampaignSDK0aB13OptionalParamC11optionValueSSSgvp",
             "moduleName": "NautilusCampaignSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -5089,12 +5175,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19NautilusCampaignSDK0aB13OptionalParamC11optionValueSSSgvg",
+                "usr": "c:@M@NautilusCampaignSDK@objc(cs)NautilusCampaignOptionalParam(im)optionValue",
                 "mangledName": "$s19NautilusCampaignSDK0aB13OptionalParamC11optionValueSSSgvg",
                 "moduleName": "NautilusCampaignSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -5141,11 +5228,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19NautilusCampaignSDK0aB13OptionalParamC9optionKey0F5ValueACSSSg_AFtcfc",
+            "usr": "c:@M@NautilusCampaignSDK@objc(cs)NautilusCampaignOptionalParam(im)initWithOptionKey:optionValue:",
             "mangledName": "$s19NautilusCampaignSDK0aB13OptionalParamC9optionKey0F5ValueACSSSg_AFtcfc",
             "moduleName": "NautilusCampaignSDK",
+            "objc_name": "initWithOptionKey:optionValue:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -7905,161 +7994,182 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1699,
+      "offset": 1747,
       "length": 13,
       "value": "\"campaign_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1748,
+      "offset": 1796,
       "length": 23,
       "value": "\"campaign_manage_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1801,
+      "offset": 1849,
       "length": 16,
       "value": "\"campaign_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1846,
+      "offset": 1894,
       "length": 15,
       "value": "\"campaign_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1888,
+      "offset": 1936,
       "length": 13,
       "value": "\"notice_text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1938,
+      "offset": 1986,
       "length": 24,
       "value": "\"publish_start_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 1997,
+      "offset": 2045,
       "length": 22,
       "value": "\"publish_end_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2052,
+      "offset": 2100,
       "length": 20,
       "value": "\"use_start_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2103,
+      "offset": 2151,
       "length": 18,
       "value": "\"use_end_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2149,
+      "offset": 2197,
       "length": 14,
       "value": "\"category_ids\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2186,
+      "offset": 2234,
       "length": 9,
       "value": "\"sort_no\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2222,
+      "offset": 2270,
       "length": 12,
       "value": "\"searchword\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2268,
+      "offset": 2316,
       "length": 21,
       "value": "\"campaign_image_list\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2319,
+      "offset": 2367,
       "length": 16,
       "value": "\"entry_datetime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2364,
+      "offset": 2412,
       "length": 15,
       "value": "\"campaign_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2406,
+      "offset": 2454,
       "length": 13,
       "value": "\"entry_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2441,
+      "offset": 2489,
       "length": 7,
       "value": "\"alias\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2483,
+      "offset": 2531,
       "length": 22,
       "value": "\"campaign_manage_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2532,
+      "offset": 2580,
       "length": 13,
       "value": "\"entry_limit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 2578,
+      "offset": 2626,
       "length": 18,
       "value": "\"entry_limit_over\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4603,
+      "offset": 2678,
+      "length": 16,
+      "value": "\"optional_param\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4803,
+      "length": 12,
+      "value": "\"option_key\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4843,
+      "length": 14,
+      "value": "\"option_value\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 5620,
       "length": 12,
       "value": "\"image_path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4643,
+      "offset": 5660,
       "length": 14,
       "value": "\"aspect_ratio\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/API\/Entity\/CommonCampaignListEntity.swift",
       "kind": "StringLiteral",
-      "offset": 4680,
+      "offset": 5697,
       "length": 9,
       "value": "\"sort_no\""
     },
@@ -8241,21 +8351,21 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/Base\/NautilusCampaignInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 4914,
+      "offset": 5312,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/Base\/NautilusCampaignInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 4937,
+      "offset": 5335,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Campaign\/Sources\/Base\/NautilusCampaignInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 4963,
+      "offset": 5361,
       "length": 1,
       "value": "3"
     },

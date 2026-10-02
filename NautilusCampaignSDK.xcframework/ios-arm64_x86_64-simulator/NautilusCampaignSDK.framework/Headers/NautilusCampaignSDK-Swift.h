@@ -617,13 +617,21 @@ SWIFT_CLASS("_TtC19NautilusCampaignSDK20NautilusCampaignInfo")
 /// 登録上限に達しているかを返却
 /// 到達＝true　未達=false
 @property (nonatomic, readonly) BOOL isEntryLimitOver;
+/// キャンペーンに設定された任意パラメータのリスト
+/// 設定がない場合は nil
+@property (nonatomic, readonly, copy) NSArray<NautilusCampaignOptionalParam *> * _Nullable optionalParamList;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// キャンペーン登録利用時におまけのパラメータをアプリ毎に送りたい場合用
+/// キャンペーンのオプションデータ（キャンペーン登録時の送信と、一覧取得のレスポンスの両方で使う）
 SWIFT_CLASS("_TtC19NautilusCampaignSDK29NautilusCampaignOptionalParam")
 @interface NautilusCampaignOptionalParam : NSObject
+/// キー
+@property (nonatomic, readonly, copy) NSString * _Nullable optionKey;
+/// バリュー
+@property (nonatomic, readonly, copy) NSString * _Nullable optionValue;
+- (nonnull instancetype)initWithOptionKey:(NSString * _Nullable)optionKey optionValue:(NSString * _Nullable)optionValue OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1291,13 +1299,21 @@ SWIFT_CLASS("_TtC19NautilusCampaignSDK20NautilusCampaignInfo")
 /// 登録上限に達しているかを返却
 /// 到達＝true　未達=false
 @property (nonatomic, readonly) BOOL isEntryLimitOver;
+/// キャンペーンに設定された任意パラメータのリスト
+/// 設定がない場合は nil
+@property (nonatomic, readonly, copy) NSArray<NautilusCampaignOptionalParam *> * _Nullable optionalParamList;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// キャンペーン登録利用時におまけのパラメータをアプリ毎に送りたい場合用
+/// キャンペーンのオプションデータ（キャンペーン登録時の送信と、一覧取得のレスポンスの両方で使う）
 SWIFT_CLASS("_TtC19NautilusCampaignSDK29NautilusCampaignOptionalParam")
 @interface NautilusCampaignOptionalParam : NSObject
+/// キー
+@property (nonatomic, readonly, copy) NSString * _Nullable optionKey;
+/// バリュー
+@property (nonatomic, readonly, copy) NSString * _Nullable optionValue;
+- (nonnull instancetype)initWithOptionKey:(NSString * _Nullable)optionKey optionValue:(NSString * _Nullable)optionValue OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

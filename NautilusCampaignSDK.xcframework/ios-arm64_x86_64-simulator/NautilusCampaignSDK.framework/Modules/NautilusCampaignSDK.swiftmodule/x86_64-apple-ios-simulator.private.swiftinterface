@@ -73,6 +73,7 @@ public let NautilusCampaignErrorDomain: Swift.String
   @objc final public let campaignManageCode: Swift.String?
   @objc final public let entryLimit: Swift.Int
   @objc final public let isEntryLimitOver: Swift.Bool
+  @objc final public let optionalParamList: [NautilusCampaignSDK.NautilusCampaignOptionalParam]?
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusCampaignImage : ObjectiveC.NSObject {
@@ -131,9 +132,9 @@ public let NautilusCampaignErrorDomain: Swift.String
   @objc deinit
 }
 @objc public class NautilusCampaignOptionalParam : ObjectiveC.NSObject {
-  final public let optionKey: Swift.String?
-  final public let optionValue: Swift.String?
-  public init(optionKey: Swift.String?, optionValue: Swift.String?)
+  @objc final public let optionKey: Swift.String?
+  @objc final public let optionValue: Swift.String?
+  @objc public init(optionKey: Swift.String?, optionValue: Swift.String?)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusCampaign : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
