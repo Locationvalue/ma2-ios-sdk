@@ -410,7 +410,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param categoryIdList カテゴリIDの配列
 ///
-/// \param limit リミット
+/// \param limit 取得件数の上限。<code>nil</code>・0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param offset オフセット
 ///
@@ -438,7 +438,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param categoryIdList カテゴリIDの配列
 ///
-/// \param limit リミット
+/// \param limit 取得件数の上限。<code>nil</code>・0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param offset オフセット
 ///
@@ -466,7 +466,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 ///
 /// \param categoryIdList カテゴリIDの配列
 ///
-/// \param limit リミット
+/// \param limit 取得件数の上限。<code>nil</code>・0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param offset オフセット
 ///

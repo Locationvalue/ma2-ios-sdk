@@ -394,8 +394,8 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusFeatureStatus)
 @class NautilusShopSearchFilteringItem;
 @class NautilusLocation;
 @class NautilusShopInfo;
-@class NautilusShopSearchTagInfo;
 @class NautilusShopSearchSortKey;
+@class NautilusShopSearchTagInfo;
 SWIFT_ENUM_FWD_DECL(NSInteger, ShopDetailItem)
 SWIFT_ENUM_FWD_DECL(NSInteger, NautilusShopDetailModifierTarget)
 @class NautilusShopDetailModifier;
@@ -468,9 +468,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UINavigationController * _Nonnull)createShopSearchWideMap SWIFT_WARN_UNUSED_RESULT;
 /// 店舗一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// 返却順は指定できません。距離が近い順で取得する場合は sortKeys を引数に取るメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 件数
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param location 検索中心位置
 ///
@@ -479,11 +480,29 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// \param completion 成功時は店舗一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 店舗一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// sortKeys に mapDist の昇順を指定すると、location から近い順で返却されます。
+/// 降順を指定すると遠い順になります。
+/// sortKeys を指定していない場合の返却順は保証されません
+/// \param offset 取得開始位置
+///
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
+///
+/// \param location 検索中心位置
+///
+/// \param range 検索範囲
+///
+/// \param sortKeys 店舗の並び順
+///
+/// \param completion 成功時は店舗一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range sortKeys:(NSArray<NautilusShopSearchSortKey *> * _Nullable)sortKeys completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗一覧を検索して取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 件数
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param location 検索中心位置
 ///
@@ -507,7 +526,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// 検索結果は sortKeys を指定していない場合、ユーザの現在地から近い順になります
 /// \param offset 取得開始位置
 ///
-/// \param limit 件数
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param location 検索中心位置
 ///
@@ -533,7 +552,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// 検索結果は sortKeys を指定していない場合、resultLocation から近い順になります
 /// \param offset 取得開始位置
 ///
-/// \param limit 件数
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param location 検索中心位置
 ///
@@ -576,6 +595,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (void)updateFavoriteWithAddFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)addFavoriteShopIDs removeFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)removeFavoriteShopIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// お気に入り店舗の一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// note:
+/// リクエスト1回の取得件数は30件までです
 /// \param order <code>NautilusFavoriteShopSortOrder</code>で定義された並び順
 ///
 /// \param completion 成功時はお気に入り店舗の一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
@@ -1366,8 +1387,8 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusFeatureStatus)
 @class NautilusShopSearchFilteringItem;
 @class NautilusLocation;
 @class NautilusShopInfo;
-@class NautilusShopSearchTagInfo;
 @class NautilusShopSearchSortKey;
+@class NautilusShopSearchTagInfo;
 SWIFT_ENUM_FWD_DECL(NSInteger, ShopDetailItem)
 SWIFT_ENUM_FWD_DECL(NSInteger, NautilusShopDetailModifierTarget)
 @class NautilusShopDetailModifier;
@@ -1440,9 +1461,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (UINavigationController * _Nonnull)createShopSearchWideMap SWIFT_WARN_UNUSED_RESULT;
 /// 店舗一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// 返却順は指定できません。距離が近い順で取得する場合は sortKeys を引数に取るメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 件数
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param location 検索中心位置
 ///
@@ -1451,11 +1473,29 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// \param completion 成功時は店舗一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
 ///
 - (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
+/// 店舗一覧を取得する
+/// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// sortKeys に mapDist の昇順を指定すると、location から近い順で返却されます。
+/// 降順を指定すると遠い順になります。
+/// sortKeys を指定していない場合の返却順は保証されません
+/// \param offset 取得開始位置
+///
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
+///
+/// \param location 検索中心位置
+///
+/// \param range 検索範囲
+///
+/// \param sortKeys 店舗の並び順
+///
+/// \param completion 成功時は店舗一覧, 失敗時は<code>NSError</code>を受け取るクロージャ
+///
+- (void)getShopListWithOffset:(NSInteger)offset limit:(NSInteger)limit location:(NautilusLocation * _Nonnull)location range:(NSInteger)range sortKeys:(NSArray<NautilusShopSearchSortKey *> * _Nullable)sortKeys completion:(void (^ _Nonnull)(NSArray<NautilusShopInfo *> * _Nullable, NSError * _Nullable))completion;
 /// 店舗一覧を検索して取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 件数
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param location 検索中心位置
 ///
@@ -1479,7 +1519,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// 検索結果は sortKeys を指定していない場合、ユーザの現在地から近い順になります
 /// \param offset 取得開始位置
 ///
-/// \param limit 件数
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param location 検索中心位置
 ///
@@ -1505,7 +1545,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 /// 検索結果は sortKeys を指定していない場合、resultLocation から近い順になります
 /// \param offset 取得開始位置
 ///
-/// \param limit 件数
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param location 検索中心位置
 ///
@@ -1548,6 +1588,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 - (void)updateFavoriteWithAddFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)addFavoriteShopIDs removeFavoriteShopIDs:(NSArray<NSNumber *> * _Nonnull)removeFavoriteShopIDs completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// お気に入り店舗の一覧を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// note:
+/// リクエスト1回の取得件数は30件までです
 /// \param order <code>NautilusFavoriteShopSortOrder</code>で定義された並び順
 ///
 /// \param completion 成功時はお気に入り店舗の一覧, 失敗時は<code>NSError</code>を受け取るクロージャ

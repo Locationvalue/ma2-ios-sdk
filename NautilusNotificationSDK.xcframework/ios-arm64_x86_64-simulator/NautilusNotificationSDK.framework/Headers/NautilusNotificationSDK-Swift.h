@@ -416,6 +416,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)registerPushTargetWithRegistrationTarget:(NautilusRegistrationTarget * _Nonnull)registrationTarget completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// note:
+/// リクエスト1回の取得件数は30件までです
 /// \param pushType プッシュ通知識別子
 ///
 /// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
@@ -425,7 +427,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param start 取得開始位置
 ///
-/// \param count 取得件数の指定
+/// \param count 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param pushType プッシュ通知識別子
 ///
@@ -436,7 +438,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param start 取得開始位置
 ///
-/// \param count 取得件数の指定
+/// \param count 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param checkDate 最終確認日時
 ///
@@ -1001,6 +1003,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 - (void)registerPushTargetWithRegistrationTarget:(NautilusRegistrationTarget * _Nonnull)registrationTarget completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 /// 送信されたプッシュ通知の履歴を取得する
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
+/// note:
+/// リクエスト1回の取得件数は30件までです
 /// \param pushType プッシュ通知識別子
 ///
 /// \param completion 成功時はプッシュ通知の履歴, 失敗時は<code>NSError</code>を受け取るクロージャ
@@ -1010,7 +1014,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param start 取得開始位置
 ///
-/// \param count 取得件数の指定
+/// \param count 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param pushType プッシュ通知識別子
 ///
@@ -1021,7 +1025,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param start 取得開始位置
 ///
-/// \param count 取得件数の指定
+/// \param count 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param checkDate 最終確認日時
 ///

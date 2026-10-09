@@ -481,7 +481,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -500,7 +500,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -528,7 +528,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -547,7 +547,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -575,7 +575,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -594,7 +594,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -622,7 +622,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -643,7 +643,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -1708,7 +1708,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -1727,7 +1727,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -1755,7 +1755,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -1774,7 +1774,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -1802,7 +1802,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -1821,7 +1821,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -1849,7 +1849,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///
@@ -1870,7 +1870,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NautilusCouponAppSortType)
 /// Objective-Cから呼び出す場合は、こちらのメソッドを利用してください
 /// \param offset 取得開始位置
 ///
-/// \param limit 取得件数の指定
+/// \param limit 取得件数の上限。0の場合は30件。指定可能な範囲は0〜30。30を超える値を指定した場合、API側で返却件数が調整される場合がある。
 ///
 /// \param useCache キャッシュを利用する場合 true, しない場合 false
 ///

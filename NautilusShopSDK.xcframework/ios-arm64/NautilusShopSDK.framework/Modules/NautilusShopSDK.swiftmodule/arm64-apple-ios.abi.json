@@ -4394,6 +4394,131 @@
           {
             "kind": "Function",
             "name": "getShopList",
+            "printedName": "getShopList(offset:limit:location:range:sortKeys:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusLocation",
+                "printedName": "NautilusCoreSDK.NautilusLocation",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusLocation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusShopSDK.NautilusShopSearchSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusShopSDK.NautilusShopSearchSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusShopSearchSortKey",
+                        "printedName": "NautilusShopSDK.NautilusShopSearchSortKey",
+                        "usr": "c:@M@NautilusShopSDK@objc(cs)NautilusShopSearchSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[NautilusShopSDK.NautilusShopInfo]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NautilusShopInfo",
+                            "printedName": "NautilusShopSDK.NautilusShopInfo",
+                            "usr": "c:@M@NautilusShopSDK@objc(cs)NautilusShopInfo"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusShopError",
+                        "printedName": "NautilusShopSDK.NautilusShopError",
+                        "usr": "c:@M@NautilusShopSDK@E@NautilusShopError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NautilusShopSDK0aB0C03getB4List6offset5limit8location5range8sortKeys10completionySiSg_AK0a4CoreC00A8LocationCSiSayAA0aB13SearchSortKeyCGSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "mangledName": "$s15NautilusShopSDK0aB0C03getB4List6offset5limit8location5range8sortKeys10completionySiSg_AK0a4CoreC00A8LocationCSiSayAA0aB13SearchSortKeyCGSgys6ResultOySayAA0aB4InfoCGAA0aB5ErrorOGctF",
+            "moduleName": "NautilusShopSDK",
+            "declAttributes": [
+              "Nonisolated",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getShopList",
             "printedName": "getShopList(offset:limit:location:range:completion:)",
             "children": [
               {
@@ -4486,6 +4611,132 @@
             "mangledName": "$s15NautilusShopSDK0aB0C03getB4List6offset5limit8location5range10completionySi_Si0a4CoreC00A8LocationCSiySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
             "moduleName": "NautilusShopSDK",
             "objc_name": "getShopListWithOffset:limit:location:range:completion:",
+            "declAttributes": [
+              "Final",
+              "Nonisolated",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getShopList",
+            "printedName": "getShopList(offset:limit:location:range:sortKeys:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NautilusLocation",
+                "printedName": "NautilusCoreSDK.NautilusLocation",
+                "usr": "c:@M@NautilusCoreSDK@objc(cs)NautilusLocation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[NautilusShopSDK.NautilusShopSearchSortKey]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NautilusShopSDK.NautilusShopSearchSortKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NautilusShopSearchSortKey",
+                        "printedName": "NautilusShopSDK.NautilusShopSearchSortKey",
+                        "usr": "c:@M@NautilusShopSDK@objc(cs)NautilusShopSearchSortKey"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NautilusShopSDK.NautilusShopInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NautilusShopSDK.NautilusShopInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NautilusShopInfo",
+                                "printedName": "NautilusShopSDK.NautilusShopInfo",
+                                "usr": "c:@M@NautilusShopSDK@objc(cs)NautilusShopInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NautilusShopSDK@objc(cs)NautilusShop(im)getShopListWithOffset:limit:location:range:sortKeys:completion:",
+            "mangledName": "$s15NautilusShopSDK0aB0C03getB4List6offset5limit8location5range8sortKeys10completionySi_Si0a4CoreC00A8LocationCSiSayAA0aB13SearchSortKeyCGSgySayAA0aB4InfoCGSg_So7NSErrorCSgtctF",
+            "moduleName": "NautilusShopSDK",
+            "objc_name": "getShopListWithOffset:limit:location:range:sortKeys:completion:",
             "declAttributes": [
               "Final",
               "Nonisolated",
@@ -14538,28 +14789,28 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
       "kind": "IntegerLiteral",
-      "offset": 45773,
+      "offset": 50624,
       "length": 11,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
       "kind": "IntegerLiteral",
-      "offset": 45794,
+      "offset": 50645,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
       "kind": "IntegerLiteral",
-      "offset": 45817,
+      "offset": 50668,
       "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/Base\/NautilusShop.swift",
       "kind": "IntegerLiteral",
-      "offset": 45841,
+      "offset": 50692,
       "length": 21,
       "value": "4"
     },
@@ -15924,7 +16175,7 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 33385,
+      "offset": 33606,
       "length": 5,
       "value": "false"
     },
@@ -16449,35 +16700,35 @@
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 15662,
+      "offset": 15900,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 16160,
+      "offset": 16398,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16648,
+      "offset": 16886,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 16672,
+      "offset": 16910,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Nautilus-ios-sdk\/Shop\/Sources\/UI\/Search\/NautilusShopSearchModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 16713,
+      "offset": 16951,
       "length": 5,
       "value": "false"
     },
