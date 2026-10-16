@@ -533,6 +533,9 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 ///
 - (void)unregisterWithScreen:(enum NautilusStampRallyRoutableScreen)screen;
 /// スタンプラリー一覧画面を生成する
+/// note:
+/// 返却される一覧画面がSDK標準の画面の場合、スタンプラリーが1件かつ <code>ma_stamprally_list_skip_to_detail_if_single_item</code> が true のとき、表示時に詳細画面へ遷移する。
+/// <code>register(screen:viewControllerClass:)</code> で上書きしている場合は対象外。
 ///
 /// returns:
 /// スタンプラリー一覧画面
@@ -580,6 +583,9 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 /// </ul>
 - (UIViewController * _Nonnull)instantiateStampRallySpotListWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 /// スタンプラリー一覧画面に遷移する
+/// note:
+/// SDK標準の画面の場合、スタンプラリーが1件かつ <code>ma_stamprally_list_skip_to_detail_if_single_item</code> が true のとき、詳細画面へ遷移する。
+/// <code>register(screen:viewControllerClass:)</code> で上書きしている場合は対象外。
 /// \param viewController 表示元になるView Controllerのインスタンス
 ///
 - (void)routeStampRallyListIn:(UIViewController * _Nonnull)viewController;
@@ -684,11 +690,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NautilusStampRallyUI * _Nonnull)stampRallyUI SWIFT_WARN_UNUSED_RESULT;
 + (NautilusStampRallyUI * _Nonnull)stampRallyUIAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// スタンプラリー一覧画面に画面遷移する
-/// スタンプラリーが1件の場合, 詳細画面に遷移する
+/// note:
+/// スタンプラリーが1件かつ <code>ma_stamprally_list_skip_to_detail_if_single_item</code> が true のとき、詳細画面へ遷移する。
 /// \param viewController 画面遷移元となる ViewController
 ///
 - (void)presentStampRallyListViewControllerIn:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
 /// スタンプラリー一覧画面を生成する
+/// note:
+/// 返却される一覧画面は、スタンプラリーが1件かつ <code>ma_stamprally_list_skip_to_detail_if_single_item</code> が true のとき、表示時に詳細画面へ遷移する。
 ///
 /// returns:
 /// スタンプラリー一覧画面
@@ -1267,6 +1276,9 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 ///
 - (void)unregisterWithScreen:(enum NautilusStampRallyRoutableScreen)screen;
 /// スタンプラリー一覧画面を生成する
+/// note:
+/// 返却される一覧画面がSDK標準の画面の場合、スタンプラリーが1件かつ <code>ma_stamprally_list_skip_to_detail_if_single_item</code> が true のとき、表示時に詳細画面へ遷移する。
+/// <code>register(screen:viewControllerClass:)</code> で上書きしている場合は対象外。
 ///
 /// returns:
 /// スタンプラリー一覧画面
@@ -1314,6 +1326,9 @@ SWIFT_CLASS("_TtC23NautilusStampRallyUISDK24NautilusStampRallyRouter")
 /// </ul>
 - (UIViewController * _Nonnull)instantiateStampRallySpotListWithStampRally:(NautilusStampRallyInfo * _Nonnull)stampRally hasCloseButton:(BOOL)hasCloseButton SWIFT_WARN_UNUSED_RESULT;
 /// スタンプラリー一覧画面に遷移する
+/// note:
+/// SDK標準の画面の場合、スタンプラリーが1件かつ <code>ma_stamprally_list_skip_to_detail_if_single_item</code> が true のとき、詳細画面へ遷移する。
+/// <code>register(screen:viewControllerClass:)</code> で上書きしている場合は対象外。
 /// \param viewController 表示元になるView Controllerのインスタンス
 ///
 - (void)routeStampRallyListIn:(UIViewController * _Nonnull)viewController;
@@ -1418,11 +1433,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NautilusStampRallyUI * _Nonnull)stampRallyUI SWIFT_WARN_UNUSED_RESULT;
 + (NautilusStampRallyUI * _Nonnull)stampRallyUIAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// スタンプラリー一覧画面に画面遷移する
-/// スタンプラリーが1件の場合, 詳細画面に遷移する
+/// note:
+/// スタンプラリーが1件かつ <code>ma_stamprally_list_skip_to_detail_if_single_item</code> が true のとき、詳細画面へ遷移する。
 /// \param viewController 画面遷移元となる ViewController
 ///
 - (void)presentStampRallyListViewControllerIn:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use NautilusStampRallyRouter function.");
 /// スタンプラリー一覧画面を生成する
+/// note:
+/// 返却される一覧画面は、スタンプラリーが1件かつ <code>ma_stamprally_list_skip_to_detail_if_single_item</code> が true のとき、表示時に詳細画面へ遷移する。
 ///
 /// returns:
 /// スタンプラリー一覧画面

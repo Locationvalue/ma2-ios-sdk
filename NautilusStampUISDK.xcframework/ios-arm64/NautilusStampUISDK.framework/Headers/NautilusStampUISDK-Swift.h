@@ -510,6 +510,9 @@ SWIFT_CLASS("_TtC18NautilusStampUISDK23NautilusStampCardRouter")
 ///
 - (void)unregisterWithScreen:(enum NautilusStampRoutableScreen)screen;
 /// スタンプカード一覧画面を生成する
+/// note:
+/// 返却される一覧画面がSDK標準の画面の場合、スタンプカードが1枚かつ <code>ma_stampcard_list_skip_to_detail_if_single_item</code> が true のとき、表示時に詳細画面へ遷移する。
+/// <code>register(screen:viewControllerClass:)</code> で上書きしている場合は対象外。
 ///
 /// returns:
 /// スタンプカード一覧画面
@@ -544,6 +547,9 @@ SWIFT_CLASS("_TtC18NautilusStampUISDK23NautilusStampCardRouter")
 /// コードリーダー画面
 - (UIViewController * _Nonnull)instantiateStampCodeReaderWithSetting:(NautilusCodeReaderSetting * _Nonnull)setting handler:(id <NautilusCodeReaderHandler> _Nonnull)handler SWIFT_WARN_UNUSED_RESULT;
 /// スタンプカード一覧画面に遷移する
+/// note:
+/// SDK標準の画面の場合、スタンプカードが1枚かつ <code>ma_stampcard_list_skip_to_detail_if_single_item</code> が true のとき、詳細画面へ遷移する。
+/// <code>register(screen:viewControllerClass:)</code> で上書きしている場合は対象外。
 /// \param viewController 表示元になるView Controllerのインスタンス
 ///
 - (void)routeStampCardListIn:(UIViewController * _Nonnull)viewController;
@@ -601,11 +607,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Nautil
 + (NautilusStampCardUI * _Nonnull)stampCardUI SWIFT_WARN_UNUSED_RESULT;
 + (NautilusStampCardUI * _Nonnull)stampUIAppNamed:(NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
 /// スタンプカード一覧画面に画面遷移する
-/// スタンプカードが1枚の場合, 詳細画面に遷移する
+/// note:
+/// スタンプカードが1枚かつ <code>ma_stampcard_list_skip_to_detail_if_single_item</code> が true のとき、詳細画面へ遷移する。
 /// \param viewController 画面遷移元となる ViewController
 ///
 - (void)presentStampCardListViewControllerIn:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use NautilusStampCardRouter function.");
 /// スタンプカード一覧画面を生成する
+/// note:
+/// 返却される一覧画面は、スタンプカードが1枚かつ <code>ma_stampcard_list_skip_to_detail_if_single_item</code> が true のとき、表示時に詳細画面へ遷移する。
 ///
 /// returns:
 /// スタンプカード一覧画面
