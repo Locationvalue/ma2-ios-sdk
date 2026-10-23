@@ -13,6 +13,26 @@
             "boolean_value": true
         },
         {
+            "config_value_name": "ma_shop_distance_text_format_threshold",
+            "integer_value": 1000
+        },
+        {
+            "config_value_name": "ma_shop_distance_text_format_near_unit",
+            "string_value": "m"
+        },
+        {
+            "config_value_name": "ma_shop_distance_text_format_near_fractional_length",
+            "integer_value": 0
+        },
+        {
+            "config_value_name": "ma_shop_distance_text_format_far_unit",
+            "string_value": "km"
+        },
+        {
+            "config_value_name": "ma_shop_distance_text_format_far_fractional_length",
+            "integer_value": 1
+        },
+        {
             "config_value_name": "ma_shop_search_map_initial_latitude",
             "double_value": 35.681111
         },
@@ -176,42 +196,6 @@
             "string_value": "distance"
         },
         {
-            "config_value_name": "ma_shop_search_list_result_distance_text_format_near_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_search_list_result_distance_text_format_near_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_search_list_result_distance_text_format_near_fractional_length",
-            "integer_value": 0
-        },
-        {
-            "config_value_name": "ma_shop_search_list_result_distance_text_format_near_unit",
-            "string_value": "m"
-        },
-        {
-            "config_value_name": "ma_shop_search_list_result_distance_text_format_far_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_search_list_result_distance_text_format_far_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_search_list_result_distance_text_format_far_fractional_length",
-            "integer_value": 1
-        },
-        {
-            "config_value_name": "ma_shop_search_list_result_distance_text_format_far_unit",
-            "string_value": "km"
-        },
-        {
-            "config_value_name": "ma_shop_search_list_result_distance_text_format_threshold",
-            "integer_value": 10000
-        },
-        {
             "config_value_name": "ma_shop_search_map_annotation_item_title_element",
             "string_value": "shop_name"
         },
@@ -297,42 +281,6 @@
             "string_value": "距離"
         },
         {
-            "config_value_name": "ma_shop_detail_distance_text_format_near_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_detail_distance_text_format_near_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_detail_distance_text_format_near_fractional_length",
-            "integer_value": 0
-        },
-        {
-            "config_value_name": "ma_shop_detail_distance_text_format_near_unit",
-            "string_value": "m"
-        },
-        {
-            "config_value_name": "ma_shop_detail_distance_text_format_far_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_detail_distance_text_format_far_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_detail_distance_text_format_far_fractional_length",
-            "integer_value": 2
-        },
-        {
-            "config_value_name": "ma_shop_detail_distance_text_format_far_unit",
-            "string_value": "km"
-        },
-        {
-            "config_value_name": "ma_shop_detail_distance_text_format_threshold",
-            "integer_value": 10000
-        },
-        {
             "config_value_name": "ma_shop_detail_show_shop_search_tag_name",
             "boolean_value": true
         },
@@ -359,42 +307,6 @@
         {
             "config_value_name": "ma_shop_favorite_list_item_body2_element",
             "string_value": "address"
-        },
-        {
-            "config_value_name": "ma_shop_favorite_list_distance_text_format_threshold",
-            "integer_value": 10000
-        },
-        {
-            "config_value_name": "ma_shop_favorite_list_distance_text_format_near_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_favorite_list_distance_text_format_near_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_favorite_list_distance_text_format_near_fractional_length",
-            "integer_value": 0
-        },
-        {
-            "config_value_name": "ma_shop_favorite_list_distance_text_format_near_unit",
-            "string_value": "m"
-        },
-        {
-            "config_value_name": "ma_shop_favorite_list_distance_text_format_far_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_favorite_list_distance_text_format_far_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_favorite_list_distance_text_format_far_fractional_length",
-            "integer_value": 1
-        },
-        {
-            "config_value_name": "ma_shop_favorite_list_distance_text_format_far_unit",
-            "string_value": "km"
         },
         {
             "config_value_name": "ma_shop_favorite_list_empty_state_title",
@@ -465,42 +377,6 @@
             "string_value": "address"
         },
         {
-            "config_value_name": "ma_shop_list_distance_text_format_threshold",
-            "integer_value": 10000
-        },
-        {
-            "config_value_name": "ma_shop_list_distance_text_format_near_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_list_distance_text_format_near_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_list_distance_text_format_near_fractional_length",
-            "integer_value": 0
-        },
-        {
-            "config_value_name": "ma_shop_list_distance_text_format_near_unit",
-            "string_value": "m"
-        },
-        {
-            "config_value_name": "ma_shop_list_distance_text_format_far_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_list_distance_text_format_far_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_list_distance_text_format_far_fractional_length",
-            "integer_value": 2
-        },
-        {
-            "config_value_name": "ma_shop_list_distance_text_format_far_unit",
-            "string_value": "km"
-        },
-        {
             "config_value_name": "ma_shop_list_empty_state_title",
             "string_value": "該当する店舗情報はありません"
         },
@@ -551,42 +427,6 @@
         {
             "config_value_name": "ma_shop_search_list_item_body2_element",
             "string_value": "distance"
-        },
-        {
-            "config_value_name": "ma_shop_search_list_distance_text_format_threshold",
-            "integer_value": 10000
-        },
-        {
-            "config_value_name": "ma_shop_search_list_distance_text_format_near_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_search_list_distance_text_format_near_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_search_list_distance_text_format_near_fractional_length",
-            "integer_value": 0
-        },
-        {
-            "config_value_name": "ma_shop_search_list_distance_text_format_near_unit",
-            "string_value": "m"
-        },
-        {
-            "config_value_name": "ma_shop_search_list_distance_text_format_far_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_search_list_distance_text_format_far_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_search_list_distance_text_format_far_fractional_length",
-            "integer_value": 2
-        },
-        {
-            "config_value_name": "ma_shop_search_list_distance_text_format_far_unit",
-            "string_value": "km"
         },
         {
             "config_value_name": "ma_shop_search_list_filtering_view_header_text",
@@ -699,42 +539,6 @@
         {
             "config_value_name": "ma_shop_search_widemap_list_result_item_body2_element",
             "string_value": "distance"
-        },
-        {
-            "config_value_name": "ma_shop_search_widemap_list_result_distance_text_format_near_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_search_widemap_list_result_distance_text_format_near_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_search_widemap_list_result_distance_text_format_near_fractional_length",
-            "integer_value": 0
-        },
-        {
-            "config_value_name": "ma_shop_search_widemap_list_result_distance_text_format_near_unit",
-            "string_value": "m"
-        },
-        {
-            "config_value_name": "ma_shop_search_widemap_list_result_distance_text_format_far_group_separator",
-            "string_value": ","
-        },
-        {
-            "config_value_name": "ma_shop_search_widemap_list_result_distance_text_format_far_decimal_separator",
-            "string_value": "."
-        },
-        {
-            "config_value_name": "ma_shop_search_widemap_list_result_distance_text_format_far_fractional_length",
-            "integer_value": 1
-        },
-        {
-            "config_value_name": "ma_shop_search_widemap_list_result_distance_text_format_far_unit",
-            "string_value": "km"
-        },
-        {
-            "config_value_name": "ma_shop_search_widemap_list_result_distance_text_format_threshold",
-            "integer_value": 10000
         },
         {
             "config_value_name": "ma_shop_search_widemap_list_empty_state_title",
