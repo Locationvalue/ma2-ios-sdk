@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusConfigSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusConfigSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import CoreData
 import Foundation
 import NautilusContainerSDK
@@ -12,92 +12,92 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public protocol NautilusConfigValue {
-  @objc var keyName: Swift.String { get }
-  @objc var boolValue: Swift.Bool { get }
-  @objc var integerValue: Swift.Int { get }
-  @objc var doubleValue: Swift.Double { get }
-  @objc var stringValue: Swift.String { get }
-  @objc var boolArrayValue: [Swift.Bool] { get }
-  @objc var integerArrayValue: [Swift.Int] { get }
-  @objc var doubleArrayValue: [Swift.Double] { get }
-  @objc var stringArrayValue: [Swift.String] { get }
+  @objc var keyName: Swift::String { get }
+  @objc var boolValue: Swift::Bool { get }
+  @objc var integerValue: Swift::Int { get }
+  @objc var doubleValue: Swift::Double { get }
+  @objc var stringValue: Swift::String { get }
+  @objc var boolArrayValue: [Swift::Bool] { get }
+  @objc var integerArrayValue: [Swift::Int] { get }
+  @objc var doubleArrayValue: [Swift::Double] { get }
+  @objc var stringArrayValue: [Swift::String] { get }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusConfigDefaultValues : ObjectiveC.NSObject {
-  @objc public static var boolValue: Swift.Bool {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusConfigDefaultValues : ObjectiveC::NSObject {
+  @objc public static var boolValue: Swift::Bool {
     @objc get
   }
-  @objc public static var integerValue: Swift.Int {
+  @objc public static var integerValue: Swift::Int {
     @objc get
   }
-  @objc public static var doubleValue: Swift.Double {
+  @objc public static var doubleValue: Swift::Double {
     @objc get
   }
-  @objc public static var stringValue: Swift.String {
+  @objc public static var stringValue: Swift::String {
     @objc get
   }
-  @objc public static var boolArrayValue: [Swift.Bool] {
+  @objc public static var boolArrayValue: [Swift::Bool] {
     @objc get
   }
-  @objc public static var integerArrayValue: [Swift.Int] {
+  @objc public static var integerArrayValue: [Swift::Int] {
     @objc get
   }
-  @objc public static var doubleArrayValue: [Swift.Double] {
+  @objc public static var doubleArrayValue: [Swift::Double] {
     @objc get
   }
-  @objc public static var stringArrayValue: [Swift.String] {
+  @objc public static var stringArrayValue: [Swift::String] {
     @objc get
   }
   @objc deinit
 }
-final public class _NautilusConfigValue : NautilusConfigSDK.NautilusConfigValue {
-  @objc final public let keyName: Swift.String
-  @objc final public let boolValue: Swift.Bool
-  @objc final public let integerValue: Swift.Int
-  @objc final public let doubleValue: Swift.Double
-  @objc final public let stringValue: Swift.String
-  @objc final public let boolArrayValue: [Swift.Bool]
-  @objc final public let integerArrayValue: [Swift.Int]
-  @objc final public let doubleArrayValue: [Swift.Double]
-  @objc final public let stringArrayValue: [Swift.String]
-  public init(keyName: Swift.String, boolValue: Swift.Bool = NautilusConfigDefaultValues.boolValue, integerValue: Swift.Int = NautilusConfigDefaultValues.integerValue, doubleValue: Swift.Double = NautilusConfigDefaultValues.doubleValue, stringValue: Swift.String = NautilusConfigDefaultValues.stringValue, boolArrayValue: [Swift.Bool] = NautilusConfigDefaultValues.boolArrayValue, integerArrayValue: [Swift.Int] = NautilusConfigDefaultValues.integerArrayValue, doubleArrayValue: [Swift.Double] = NautilusConfigDefaultValues.doubleArrayValue, stringArrayValue: [Swift.String] = NautilusConfigDefaultValues.stringArrayValue)
+final public class _NautilusConfigValue : NautilusConfigSDK::NautilusConfigValue {
+  @objc final public let keyName: Swift::String
+  @objc final public let boolValue: Swift::Bool
+  @objc final public let integerValue: Swift::Int
+  @objc final public let doubleValue: Swift::Double
+  @objc final public let stringValue: Swift::String
+  @objc final public let boolArrayValue: [Swift::Bool]
+  @objc final public let integerArrayValue: [Swift::Int]
+  @objc final public let doubleArrayValue: [Swift::Double]
+  @objc final public let stringArrayValue: [Swift::String]
+  public init(keyName: Swift::String, boolValue: Swift::Bool = NautilusConfigDefaultValues.boolValue, integerValue: Swift::Int = NautilusConfigDefaultValues.integerValue, doubleValue: Swift::Double = NautilusConfigDefaultValues.doubleValue, stringValue: Swift::String = NautilusConfigDefaultValues.stringValue, boolArrayValue: [Swift::Bool] = NautilusConfigDefaultValues.boolArrayValue, integerArrayValue: [Swift::Int] = NautilusConfigDefaultValues.integerArrayValue, doubleArrayValue: [Swift::Double] = NautilusConfigDefaultValues.doubleArrayValue, stringArrayValue: [Swift::String] = NautilusConfigDefaultValues.stringArrayValue)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusConfig : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
+@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusConfig : ObjectiveC::NSObject, NautilusCoreSDK::NautilusFeature {
+  @objc public static var componentType: NautilusContainerSDK::NautilusComponentType {
     @objc get
   }
-  @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
+  @objc public static var dependencies: [NautilusContainerSDK::NautilusComponentDependency] {
     @objc get
   }
-  @objc public static var configFilename: Swift.String? {
+  @objc public static var configFilename: Swift::String? {
     @objc get
   }
-  @objc final public let app: NautilusCoreSDK.NautilusApp
-  @objc final public let name: Swift.String?
-  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc final public let app: NautilusCoreSDK::NautilusApp
+  @objc final public let name: Swift::String?
+  @objc nonisolated final public var featureStatus: NautilusCoreSDK::NautilusFeatureStatus {
     @objc get
   }
-  @objc final public var isActive: Swift.Bool {
+  @objc final public var isActive: Swift::Bool {
     get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
-  @objc public static func config() -> NautilusConfigSDK.NautilusConfig
-  @objc(configAppNamed:) public static func config(appName: Swift.String) -> NautilusConfigSDK.NautilusConfig
+  @objc public static func initialize(application: NautilusCoreSDK::NautilusApp, completion: @escaping NautilusCoreSDK::NautilusFeatureInitializationCompletion)
+  @objc public static func config() -> NautilusConfigSDK::NautilusConfig
+  @objc(configAppNamed:) public static func config(appName: Swift::String) -> NautilusConfigSDK::NautilusConfig
   @objc nonisolated final public func activate()
   @objc nonisolated final public func reset()
   @discardableResult
-  @objc nonisolated final public func reload() -> Swift.Bool
-  @objc(configValueForKey:) nonisolated final public func configValue(for key: Swift.String) -> (any NautilusConfigSDK.NautilusConfigValue)?
-  @objc(configValueForKey:defaultBoolValue:) nonisolated final public func configValue(for key: Swift.String, default: Swift.Bool) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultIntegerValue:) nonisolated final public func configValue(for key: Swift.String, default: Swift.Int) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultDoubleValue:) nonisolated final public func configValue(for key: Swift.String, default: Swift.Double) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultStringValue:) nonisolated final public func configValue(for key: Swift.String, default: Swift.String) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultBoolArrayValue:) nonisolated final public func configValue(for key: Swift.String, default: [Swift.Bool]) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultIntegerArrayValue:) nonisolated final public func configValue(for key: Swift.String, default: [Swift.Int]) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultDoubleArrayValue:) nonisolated final public func configValue(for key: Swift.String, default: [Swift.Double]) -> any NautilusConfigSDK.NautilusConfigValue
-  @objc(configValueForKey:defaultStringArrayValue:) nonisolated final public func configValue(for key: Swift.String, default: [Swift.String]) -> any NautilusConfigSDK.NautilusConfigValue
+  @objc nonisolated final public func reload() -> Swift::Bool
+  @objc(configValueForKey:) nonisolated final public func configValue(for key: Swift::String) -> (any NautilusConfigSDK::NautilusConfigValue)?
+  @objc(configValueForKey:defaultBoolValue:) nonisolated final public func configValue(for key: Swift::String, default: Swift::Bool) -> any NautilusConfigSDK::NautilusConfigValue
+  @objc(configValueForKey:defaultIntegerValue:) nonisolated final public func configValue(for key: Swift::String, default: Swift::Int) -> any NautilusConfigSDK::NautilusConfigValue
+  @objc(configValueForKey:defaultDoubleValue:) nonisolated final public func configValue(for key: Swift::String, default: Swift::Double) -> any NautilusConfigSDK::NautilusConfigValue
+  @objc(configValueForKey:defaultStringValue:) nonisolated final public func configValue(for key: Swift::String, default: Swift::String) -> any NautilusConfigSDK::NautilusConfigValue
+  @objc(configValueForKey:defaultBoolArrayValue:) nonisolated final public func configValue(for key: Swift::String, default: [Swift::Bool]) -> any NautilusConfigSDK::NautilusConfigValue
+  @objc(configValueForKey:defaultIntegerArrayValue:) nonisolated final public func configValue(for key: Swift::String, default: [Swift::Int]) -> any NautilusConfigSDK::NautilusConfigValue
+  @objc(configValueForKey:defaultDoubleArrayValue:) nonisolated final public func configValue(for key: Swift::String, default: [Swift::Double]) -> any NautilusConfigSDK::NautilusConfigValue
+  @objc(configValueForKey:defaultStringArrayValue:) nonisolated final public func configValue(for key: Swift::String, default: [Swift::String]) -> any NautilusConfigSDK::NautilusConfigValue
   @available(*, deprecated, message: "Do not use in a production environment.")
   @discardableResult
-  final nonisolated public func debugConfigUpdate(with newValues: [any NautilusConfigSDK.NautilusConfigValue]) -> Swift.Bool
+  final nonisolated public func debugConfigUpdate(with newValues: [any NautilusConfigSDK::NautilusConfigValue]) -> Swift::Bool
   @objc deinit
 }

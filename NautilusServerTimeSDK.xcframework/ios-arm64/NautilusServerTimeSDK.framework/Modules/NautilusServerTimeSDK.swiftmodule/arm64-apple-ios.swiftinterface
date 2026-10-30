@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusServerTimeSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusServerTimeSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -13,65 +13,65 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension Foundation.Calendar {
-  public static var nautilusDefault: Foundation.Calendar {
+extension Foundation::Calendar {
+  public static var nautilusDefault: Foundation::Calendar {
     get
   }
 }
-extension Foundation.Locale {
-  public static var nautilusDefault: Foundation.Locale {
+extension Foundation::Locale {
+  public static var nautilusDefault: Foundation::Locale {
     get
   }
 }
-extension Foundation.TimeZone {
-  public static var nautilusDefault: Foundation.TimeZone {
+extension Foundation::TimeZone {
+  public static var nautilusDefault: Foundation::TimeZone {
     get
   }
 }
-extension Foundation.DateFormatter {
-  public static var nautilusDefault: Foundation.DateFormatter {
+extension Foundation::DateFormatter {
+  public static var nautilusDefault: Foundation::DateFormatter {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusServerTime : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var configFilename: Swift.String? {
+@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusServerTime : ObjectiveC::NSObject, NautilusCoreSDK::NautilusFeature {
+  @objc public static var configFilename: Swift::String? {
     @objc get
   }
-  @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
+  @objc public static var componentType: NautilusContainerSDK::NautilusComponentType {
     @objc get
   }
-  @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
+  @objc public static var dependencies: [NautilusContainerSDK::NautilusComponentDependency] {
     @objc get
   }
-  public static let defaultRetryTimeInterval: Swift.Double
-  public static let defaultUpdateTimeInterval: Swift.Double
-  final public var serverTimeStatus: NautilusServerTimeSDK.NautilusServerTimeStatus {
+  public static let defaultRetryTimeInterval: Swift::Double
+  public static let defaultUpdateTimeInterval: Swift::Double
+  final public var serverTimeStatus: NautilusServerTimeSDK::NautilusServerTimeStatus {
     get
   }
-  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc nonisolated final public var featureStatus: NautilusCoreSDK::NautilusFeatureStatus {
     @objc get
   }
-  public static let minimumUpdateTimeInterval: Swift.Double
-  final public var retryTimeInterval: Foundation.TimeInterval {
+  public static let minimumUpdateTimeInterval: Swift::Double
+  final public var retryTimeInterval: Foundation::TimeInterval {
     get
     set
   }
-  final public var updateTimeInterval: Foundation.TimeInterval {
+  final public var updateTimeInterval: Foundation::TimeInterval {
     get
     set
   }
-  @objc final public var app: NautilusCoreSDK.NautilusApp
-  @objc final public let name: Swift.String?
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
-  @objc public static func serverTime() -> NautilusServerTimeSDK.NautilusServerTime
-  @objc(serverTimeAppNamed:) public static func serverTime(appName: Swift.String) -> NautilusServerTimeSDK.NautilusServerTime
-  @objc nonisolated final public func now() -> Foundation.Date?
-  nonisolated final public func updateServerTime(force: Swift.Bool = false, completion: @escaping (Swift.Result<Foundation.Date, NautilusServerTimeSDK.NautilusServerTimeError>) -> Swift.Void)
-  @objc nonisolated final public func updateServerTime(completion: @escaping (Foundation.Date?, Foundation.NSError?) -> Swift.Void)
+  @objc final public var app: NautilusCoreSDK::NautilusApp
+  @objc final public let name: Swift::String?
+  @objc public static func initialize(application: NautilusCoreSDK::NautilusApp, completion: @escaping NautilusCoreSDK::NautilusFeatureInitializationCompletion)
+  @objc public static func serverTime() -> NautilusServerTimeSDK::NautilusServerTime
+  @objc(serverTimeAppNamed:) public static func serverTime(appName: Swift::String) -> NautilusServerTimeSDK::NautilusServerTime
+  @objc nonisolated final public func now() -> Foundation::Date?
+  nonisolated final public func updateServerTime(force: Swift::Bool = false, completion: @escaping (Swift::Result<Foundation::Date, NautilusServerTimeSDK::NautilusServerTimeError>) -> Swift::Void)
+  @objc nonisolated final public func updateServerTime(completion: @escaping (Foundation::Date?, Foundation::NSError?) -> Swift::Void)
   @objc deinit
 }
-public let NautilusServerTimeErrorDomain: Swift.String
-@objc public enum NautilusServerTimeError : Swift.Int, Swift.Error {
+public let NautilusServerTimeErrorDomain: Swift::String
+@objc public enum NautilusServerTimeError : Swift::Int, Swift::Error {
   case unknown
   case connection
   case timedout
@@ -90,28 +90,28 @@ public let NautilusServerTimeErrorDomain: Swift.String
   case invalidUserPID = 905
   case developerError = 906
   case requiresLoginStatus = 907
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public static var _nsErrorDomain: Swift.String {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public static var _nsErrorDomain: Swift::String {
     get
   }
-  public var rawValue: Swift.Int {
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc public enum NautilusServerTimeStatus : Swift.Int {
+@objc public enum NautilusServerTimeStatus : Swift::Int {
   case invalid
   case needUpdate
   case valid
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-extension NautilusServerTimeSDK.NautilusServerTimeError : Swift.Equatable {}
-extension NautilusServerTimeSDK.NautilusServerTimeError : Swift.Hashable {}
-extension NautilusServerTimeSDK.NautilusServerTimeError : Swift.RawRepresentable {}
-extension NautilusServerTimeSDK.NautilusServerTimeStatus : Swift.Equatable {}
-extension NautilusServerTimeSDK.NautilusServerTimeStatus : Swift.Hashable {}
-extension NautilusServerTimeSDK.NautilusServerTimeStatus : Swift.RawRepresentable {}
+extension NautilusServerTimeSDK::NautilusServerTimeError : Swift::Equatable {}
+extension NautilusServerTimeSDK::NautilusServerTimeError : Swift::Hashable {}
+extension NautilusServerTimeSDK::NautilusServerTimeError : Swift::RawRepresentable {}
+extension NautilusServerTimeSDK::NautilusServerTimeStatus : Swift::Equatable {}
+extension NautilusServerTimeSDK::NautilusServerTimeStatus : Swift::Hashable {}
+extension NautilusServerTimeSDK::NautilusServerTimeStatus : Swift::RawRepresentable {}

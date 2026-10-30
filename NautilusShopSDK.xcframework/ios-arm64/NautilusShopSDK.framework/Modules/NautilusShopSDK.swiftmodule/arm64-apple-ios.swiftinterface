@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusShopSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusShopSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import CoreData
 import CoreLocation
 import DeveloperToolsSupport
@@ -17,60 +17,59 @@ import NautilusImagingSDK
 import NautilusLoggingSDK
 import NautilusUISDK
 import Swift
-import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public protocol NautilusShopDetailInstantiatable {
-  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, shopInfo: NautilusShopSDK.NautilusShopInfo) -> UIKit.UIViewController
-  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, shopID: Swift.Int, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
-  @objc static func instantiate(app: NautilusCoreSDK.NautilusApp, clientShopCode: Swift.String, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo?) -> UIKit.UIViewController
+  @objc static func instantiate(app: NautilusCoreSDK::NautilusApp, shopInfo: NautilusShopSDK::NautilusShopInfo) -> UIKit::UIViewController
+  @objc static func instantiate(app: NautilusCoreSDK::NautilusApp, shopID: Swift::Int, notificationInfo: NautilusCoreSDK::NautilusAppNotificationInfo?) -> UIKit::UIViewController
+  @objc static func instantiate(app: NautilusCoreSDK::NautilusApp, clientShopCode: Swift::String, notificationInfo: NautilusCoreSDK::NautilusAppNotificationInfo?) -> UIKit::UIViewController
 }
 @objc public protocol NautilusShopSearchTagFilteringOperation {
-  @objc func transformSearchCondition(tags: [NautilusShopSDK.NautilusShopSearchTagInfo]) -> [[NautilusShopSDK.NautilusShopSearchTagInfo]]
+  @objc func transformSearchCondition(tags: [NautilusShopSDK::NautilusShopSearchTagInfo]) -> [[NautilusShopSDK::NautilusShopSearchTagInfo]]
 }
-@objc public enum NautilusShopRoutableScreen : Swift.Int, Swift.CaseIterable {
+@objc public enum NautilusShopRoutableScreen : Swift::Int, Swift::CaseIterable {
   case searchShop
   case searchWideMap
   case searchShopList
   case shopDetail
   case favoriteShopList
   case shopList
-  public init?(rawValue: Swift.Int)
-  public typealias AllCases = [NautilusShopSDK.NautilusShopRoutableScreen]
-  public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [NautilusShopSDK.NautilusShopRoutableScreen] {
+  public init?(rawValue: Swift::Int)
+  public typealias AllCases = [NautilusShopSDK::NautilusShopRoutableScreen]
+  public typealias RawValue = Swift::Int
+  nonisolated public static var allCases: [NautilusShopSDK::NautilusShopRoutableScreen] {
     get
   }
-  public var rawValue: Swift.Int {
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSearchTagInfo : ObjectiveC.NSObject {
-  final public let tagID: Swift.Int
-  final public let parentTagID: Swift.Int
-  final public let tagName: Swift.String
-  final public let sortNumber: Swift.Int
-  final public let alias: Swift.String
-  final public let imageURL: Foundation.URL?
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSearchTagInfo : ObjectiveC::NSObject {
+  final public let tagID: Swift::Int
+  final public let parentTagID: Swift::Int
+  final public let tagName: Swift::String
+  final public let sortNumber: Swift::Int
+  final public let alias: Swift::String
+  final public let imageURL: Foundation::URL?
   @objc deinit
 }
 @objc public protocol NautilusShopSearchFilteringViewControllerDelegate {
-  @objc func shopSearchFilteringViewController(_ shopSearchFilteringViewController: NautilusShopSDK.NautilusShopSearchFilteringViewController, didUpdate filteringItem: NautilusShopSDK.NautilusShopSearchFilteringItem?)
+  @objc func shopSearchFilteringViewController(_ shopSearchFilteringViewController: NautilusShopSDK::NautilusShopSearchFilteringViewController, didUpdate filteringItem: NautilusShopSDK::NautilusShopSearchFilteringItem?)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class NautilusShopSearchFilteringViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillLayoutSubviews()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency::MainActor @preconcurrency final public class NautilusShopSearchFilteringViewController : UIKit::UIViewController {
+  @_Concurrency::MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency::MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift::Bool)
+  @_Concurrency::MainActor @preconcurrency @objc override final public func viewWillLayoutSubviews()
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift::String?, bundle nibBundleOrNil: Foundation::Bundle?)
+  @_Concurrency::MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation::NSCoder)
   @objc deinit
 }
 @objc public protocol NautilusShopPinImageProvider {
-  @objc func provideShopPinImage(with shopInfo: NautilusShopSDK.NautilusShopInfo) -> UIKit.UIImage
+  @objc func provideShopPinImage(with shopInfo: NautilusShopSDK::NautilusShopInfo) -> UIKit::UIImage
 }
-@objc public enum ShopDetailItem : Swift.Int, Swift.CaseIterable {
+@objc public enum ShopDetailItem : Swift::Int, Swift::CaseIterable {
   case openTime
   case holiday
   case appeal
@@ -80,185 +79,185 @@ import _SwiftConcurrencyShims
   case subTelephone
   case access
   case distance
-  public init?(rawValue: Swift.Int)
-  public typealias AllCases = [NautilusShopSDK.ShopDetailItem]
-  public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [NautilusShopSDK.ShopDetailItem] {
+  public init?(rawValue: Swift::Int)
+  public typealias AllCases = [NautilusShopSDK::ShopDetailItem]
+  public typealias RawValue = Swift::Int
+  nonisolated public static var allCases: [NautilusShopSDK::ShopDetailItem] {
     get
   }
-  public var rawValue: Swift.Int {
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusShop : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var configFilename: Swift.String? {
+@_hasMissingDesignatedInitializers @objc final nonisolated public class NautilusShop : ObjectiveC::NSObject, NautilusCoreSDK::NautilusFeature {
+  @objc public static var configFilename: Swift::String? {
     @objc get
   }
   public enum ShopNotification {
-    public static let updateShopFavoriteState: Foundation.Notification.Name
+    public static let updateShopFavoriteState: Foundation::Notification.Foundation::Name
   }
-  @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
+  @objc public static var componentType: NautilusContainerSDK::NautilusComponentType {
     @objc get
   }
-  @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
+  @objc public static var dependencies: [NautilusContainerSDK::NautilusComponentDependency] {
     @objc get
   }
-  @objc final public let app: NautilusCoreSDK.NautilusApp
-  @objc final public let name: Swift.String?
-  @objc final public let router: NautilusShopSDK.NautilusShopRouter
-  final public var shopPinImageProvider: (any NautilusShopSDK.NautilusShopPinImageProvider)?
-  final public var shopSearchTagFilteringOperation: (any NautilusShopSDK.NautilusShopSearchTagFilteringOperation)?
-  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc final public let app: NautilusCoreSDK::NautilusApp
+  @objc final public let name: Swift::String?
+  @objc final public let router: NautilusShopSDK::NautilusShopRouter
+  final public var shopPinImageProvider: (any NautilusShopSDK::NautilusShopPinImageProvider)?
+  final public var shopSearchTagFilteringOperation: (any NautilusShopSDK::NautilusShopSearchTagFilteringOperation)?
+  @objc nonisolated final public var featureStatus: NautilusCoreSDK::NautilusFeatureStatus {
     @objc get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
-  @objc public static func shop() -> NautilusShopSDK.NautilusShop
-  @objc(shopAppNamed:) public static func shop(appName: Swift.String) -> NautilusShopSDK.NautilusShop
-  @objc nonisolated final public func createShop() -> UIKit.UINavigationController
-  @objc nonisolated final public func instantiateFavoriteShop() -> UIKit.UIViewController
+  @objc public static func initialize(application: NautilusCoreSDK::NautilusApp, completion: @escaping NautilusCoreSDK::NautilusFeatureInitializationCompletion)
+  @objc public static func shop() -> NautilusShopSDK::NautilusShop
+  @objc(shopAppNamed:) public static func shop(appName: Swift::String) -> NautilusShopSDK::NautilusShop
+  @objc nonisolated final public func createShop() -> UIKit::UINavigationController
+  @objc nonisolated final public func instantiateFavoriteShop() -> UIKit::UIViewController
   @available(*, deprecated, message: "Use NautilusShopRouter function.")
-  @objc nonisolated final public func instantiateShopDetail(shopID: Swift.Int) -> UIKit.UIViewController
+  @objc nonisolated final public func instantiateShopDetail(shopID: Swift::Int) -> UIKit::UIViewController
   @available(*, deprecated, message: "Use NautilusShopRouter function.")
-  @objc nonisolated final public func instantiateShopDetail(clientShopCode: Swift.String) -> UIKit.UIViewController
-  @objc nonisolated final public func instantiateShopListViewController() -> UIKit.UIViewController
-  @objc nonisolated final public func instantiateShopSearchFilteringViewController(delegate: (any NautilusShopSDK.NautilusShopSearchFilteringViewControllerDelegate)?) -> UIKit.UIViewController
-  @objc nonisolated final public func instantiateShopSearchFilteringViewController(filteringItem: NautilusShopSDK.NautilusShopSearchFilteringItem?, delegate: (any NautilusShopSDK.NautilusShopSearchFilteringViewControllerDelegate)?) -> UIKit.UIViewController
-  @objc nonisolated final public func instantiateShopSearchListViewController() -> UIKit.UIViewController
-  @objc nonisolated final public func createShopSearchWideMap() -> UIKit.UINavigationController
-  final nonisolated public func getShopList(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  final nonisolated public func getShopList(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  @objc nonisolated final public func getShopList(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
-  @objc nonisolated final public func getShopList(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation, range: Swift.Int, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
+  @objc nonisolated final public func instantiateShopDetail(clientShopCode: Swift::String) -> UIKit::UIViewController
+  @objc nonisolated final public func instantiateShopListViewController() -> UIKit::UIViewController
+  @objc nonisolated final public func instantiateShopSearchFilteringViewController(delegate: (any NautilusShopSDK::NautilusShopSearchFilteringViewControllerDelegate)?) -> UIKit::UIViewController
+  @objc nonisolated final public func instantiateShopSearchFilteringViewController(filteringItem: NautilusShopSDK::NautilusShopSearchFilteringItem?, delegate: (any NautilusShopSDK::NautilusShopSearchFilteringViewControllerDelegate)?) -> UIKit::UIViewController
+  @objc nonisolated final public func instantiateShopSearchListViewController() -> UIKit::UIViewController
+  @objc nonisolated final public func createShopSearchWideMap() -> UIKit::UINavigationController
+  final nonisolated public func getShopList(offset: Swift::Int?, limit: Swift::Int?, location: NautilusCoreSDK::NautilusLocation, range: Swift::Int, completion: @escaping (Swift::Result<[NautilusShopSDK::NautilusShopInfo], NautilusShopSDK::NautilusShopError>) -> Swift::Void)
+  final nonisolated public func getShopList(offset: Swift::Int?, limit: Swift::Int?, location: NautilusCoreSDK::NautilusLocation, range: Swift::Int, sortKeys: [NautilusShopSDK::NautilusShopSearchSortKey]?, completion: @escaping (Swift::Result<[NautilusShopSDK::NautilusShopInfo], NautilusShopSDK::NautilusShopError>) -> Swift::Void)
+  @objc nonisolated final public func getShopList(offset: Swift::Int, limit: Swift::Int, location: NautilusCoreSDK::NautilusLocation, range: Swift::Int, completion: @escaping ([NautilusShopSDK::NautilusShopInfo]?, Foundation::NSError?) -> Swift::Void)
+  @objc nonisolated final public func getShopList(offset: Swift::Int, limit: Swift::Int, location: NautilusCoreSDK::NautilusLocation, range: Swift::Int, sortKeys: [NautilusShopSDK::NautilusShopSearchSortKey]?, completion: @escaping ([NautilusShopSDK::NautilusShopInfo]?, Foundation::NSError?) -> Swift::Void)
   @available(*, deprecated, renamed: "searchShop(offset:limit:location:resultLocation:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)")
-  final nonisolated public func searchShop(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int?, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
+  final nonisolated public func searchShop(offset: Swift::Int?, limit: Swift::Int?, location: NautilusCoreSDK::NautilusLocation?, range: Swift::Int?, shopName: Swift::String?, prefectures: [NautilusGeoUtilSDK::NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK::NautilusShopSearchTagInfo]]?, shopIDs: [Swift::Int]?, clientShopCDs: [Swift::String]?, completion: @escaping (Swift::Result<[NautilusShopSDK::NautilusShopInfo], NautilusShopSDK::NautilusShopError>) -> Swift::Void)
   @available(*, deprecated, renamed: "searchShop(offset:limit:location:resultLocation:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)")
-  final nonisolated public func searchShop(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int?, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  final nonisolated public func searchShop(offset: Swift.Int?, limit: Swift.Int?, location: NautilusCoreSDK.NautilusLocation?, resultLocation: NautilusCoreSDK.NautilusLocation?, range: Swift.Int?, shopName: Swift.String?, prefectures: [NautilusGeoUtilSDK.NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
+  final nonisolated public func searchShop(offset: Swift::Int?, limit: Swift::Int?, location: NautilusCoreSDK::NautilusLocation?, range: Swift::Int?, shopName: Swift::String?, prefectures: [NautilusGeoUtilSDK::NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK::NautilusShopSearchTagInfo]]?, shopIDs: [Swift::Int]?, clientShopCDs: [Swift::String]?, sortKeys: [NautilusShopSDK::NautilusShopSearchSortKey]?, completion: @escaping (Swift::Result<[NautilusShopSDK::NautilusShopInfo], NautilusShopSDK::NautilusShopError>) -> Swift::Void)
+  final nonisolated public func searchShop(offset: Swift::Int?, limit: Swift::Int?, location: NautilusCoreSDK::NautilusLocation?, resultLocation: NautilusCoreSDK::NautilusLocation?, range: Swift::Int?, shopName: Swift::String?, prefectures: [NautilusGeoUtilSDK::NautilusPrefectureCode]?, shopSearchTags: [[NautilusShopSDK::NautilusShopSearchTagInfo]]?, shopIDs: [Swift::Int]?, clientShopCDs: [Swift::String]?, sortKeys: [NautilusShopSDK::NautilusShopSearchSortKey]?, completion: @escaping (Swift::Result<[NautilusShopSDK::NautilusShopInfo], NautilusShopSDK::NautilusShopError>) -> Swift::Void)
   @available(*, deprecated, renamed: "searchShop(offset:limit:location:resultLocation:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)")
-  @objc nonisolated final public func searchShop(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int, shopName: Swift.String?, prefectures: [Swift.Int]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
+  @objc nonisolated final public func searchShop(offset: Swift::Int, limit: Swift::Int, location: NautilusCoreSDK::NautilusLocation?, range: Swift::Int, shopName: Swift::String?, prefectures: [Swift::Int]?, shopSearchTags: [[NautilusShopSDK::NautilusShopSearchTagInfo]]?, shopIDs: [Swift::Int]?, clientShopCDs: [Swift::String]?, completion: @escaping ([NautilusShopSDK::NautilusShopInfo]?, Foundation::NSError?) -> Swift::Void)
   @available(*, deprecated, renamed: "searchShop(offset:limit:location:resultLocation:range:shopName:prefectures:shopSearchTags:shopIDs:clientShopCDs:sortKeys:completion:)")
-  @objc nonisolated final public func searchShop(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation?, range: Swift.Int, shopName: Swift.String?, prefectures: [Swift.Int]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
-  @objc nonisolated final public func searchShop(offset: Swift.Int, limit: Swift.Int, location: NautilusCoreSDK.NautilusLocation?, resultLocation: NautilusCoreSDK.NautilusLocation?, range: Swift.Int, shopName: Swift.String?, prefectures: [Swift.Int]?, shopSearchTags: [[NautilusShopSDK.NautilusShopSearchTagInfo]]?, shopIDs: [Swift.Int]?, clientShopCDs: [Swift.String]?, sortKeys: [NautilusShopSDK.NautilusShopSearchSortKey]?, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
-  final nonisolated public func getShopDetail(shopID: Swift.Int?, clientShopCD: Swift.String?, completion: @escaping (Swift.Result<NautilusShopSDK.NautilusShopInfo, NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  @objc nonisolated final public func getShopDetail(shopID: Swift.Int, clientShopCD: Swift.String?, completion: @escaping (NautilusShopSDK.NautilusShopInfo?, Foundation.NSError?) -> Swift.Void)
-  final nonisolated public func updateFavorite(addFavoriteShopIDs: [Swift.Int]?, removeFavoriteShopIDs: [Swift.Int]?, completion: @escaping (Swift.Result<Swift.Void, NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  @objc nonisolated final public func updateFavorite(addFavoriteShopIDs: [Swift.Int], removeFavoriteShopIDs: [Swift.Int], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  nonisolated final public func getFavoriteShopList(offset: Swift.Int? = nil, limit: Swift.Int? = nil, order: NautilusShopSDK.NautilusFavoriteShopSortOrder, completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  @objc nonisolated final public func getFavoriteShopList(order: NautilusShopSDK.NautilusFavoriteShopSortOrder, completion: @escaping ([NautilusShopSDK.NautilusShopInfo]?, Foundation.NSError?) -> Swift.Void)
-  final nonisolated public func getShopSearchTagList(completion: @escaping (Swift.Result<[NautilusShopSDK.NautilusShopSearchTagInfo], NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  @objc nonisolated final public func getShopSearchTagList(completion: @escaping ([NautilusShopSDK.NautilusShopSearchTagInfo]?, Foundation.NSError?) -> Swift.Void)
-  final nonisolated public func migrateFavoriteShops(installID: Swift.String, completion: @escaping (Swift.Result<Swift.Void, NautilusShopSDK.NautilusShopError>) -> Swift.Void)
-  @objc nonisolated final public func migrateFavoriteShops(installID: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  @objc nonisolated final public func addShopDetailModifier(shopDetailItem: NautilusShopSDK.ShopDetailItem, target: NautilusShopSDK.NautilusShopDetailModifierTarget, modifier: NautilusShopSDK.NautilusShopDetailModifier)
-  final nonisolated public func deleteShopDetailModifier(shopDetailItem: NautilusShopSDK.ShopDetailItem?, target: NautilusShopSDK.NautilusShopDetailModifierTarget?)
-  @objc nonisolated final public func deleteShopDetailModifier(shopDetailItem: NautilusShopSDK.ShopDetailItem, target: NautilusShopSDK.NautilusShopDetailModifierTarget)
+  @objc nonisolated final public func searchShop(offset: Swift::Int, limit: Swift::Int, location: NautilusCoreSDK::NautilusLocation?, range: Swift::Int, shopName: Swift::String?, prefectures: [Swift::Int]?, shopSearchTags: [[NautilusShopSDK::NautilusShopSearchTagInfo]]?, shopIDs: [Swift::Int]?, clientShopCDs: [Swift::String]?, sortKeys: [NautilusShopSDK::NautilusShopSearchSortKey]?, completion: @escaping ([NautilusShopSDK::NautilusShopInfo]?, Foundation::NSError?) -> Swift::Void)
+  @objc nonisolated final public func searchShop(offset: Swift::Int, limit: Swift::Int, location: NautilusCoreSDK::NautilusLocation?, resultLocation: NautilusCoreSDK::NautilusLocation?, range: Swift::Int, shopName: Swift::String?, prefectures: [Swift::Int]?, shopSearchTags: [[NautilusShopSDK::NautilusShopSearchTagInfo]]?, shopIDs: [Swift::Int]?, clientShopCDs: [Swift::String]?, sortKeys: [NautilusShopSDK::NautilusShopSearchSortKey]?, completion: @escaping ([NautilusShopSDK::NautilusShopInfo]?, Foundation::NSError?) -> Swift::Void)
+  final nonisolated public func getShopDetail(shopID: Swift::Int?, clientShopCD: Swift::String?, completion: @escaping (Swift::Result<NautilusShopSDK::NautilusShopInfo, NautilusShopSDK::NautilusShopError>) -> Swift::Void)
+  @objc nonisolated final public func getShopDetail(shopID: Swift::Int, clientShopCD: Swift::String?, completion: @escaping (NautilusShopSDK::NautilusShopInfo?, Foundation::NSError?) -> Swift::Void)
+  final nonisolated public func updateFavorite(addFavoriteShopIDs: [Swift::Int]?, removeFavoriteShopIDs: [Swift::Int]?, completion: @escaping (Swift::Result<Swift::Void, NautilusShopSDK::NautilusShopError>) -> Swift::Void)
+  @objc nonisolated final public func updateFavorite(addFavoriteShopIDs: [Swift::Int], removeFavoriteShopIDs: [Swift::Int], completion: @escaping (Swift::Bool, Foundation::NSError?) -> Swift::Void)
+  nonisolated final public func getFavoriteShopList(offset: Swift::Int? = nil, limit: Swift::Int? = nil, order: NautilusShopSDK::NautilusFavoriteShopSortOrder, completion: @escaping (Swift::Result<[NautilusShopSDK::NautilusShopInfo], NautilusShopSDK::NautilusShopError>) -> Swift::Void)
+  @objc nonisolated final public func getFavoriteShopList(order: NautilusShopSDK::NautilusFavoriteShopSortOrder, completion: @escaping ([NautilusShopSDK::NautilusShopInfo]?, Foundation::NSError?) -> Swift::Void)
+  final nonisolated public func getShopSearchTagList(completion: @escaping (Swift::Result<[NautilusShopSDK::NautilusShopSearchTagInfo], NautilusShopSDK::NautilusShopError>) -> Swift::Void)
+  @objc nonisolated final public func getShopSearchTagList(completion: @escaping ([NautilusShopSDK::NautilusShopSearchTagInfo]?, Foundation::NSError?) -> Swift::Void)
+  final nonisolated public func migrateFavoriteShops(installID: Swift::String, completion: @escaping (Swift::Result<Swift::Void, NautilusShopSDK::NautilusShopError>) -> Swift::Void)
+  @objc nonisolated final public func migrateFavoriteShops(installID: Swift::String, completion: @escaping (Swift::Bool, Foundation::NSError?) -> Swift::Void)
+  @objc nonisolated final public func addShopDetailModifier(shopDetailItem: NautilusShopSDK::ShopDetailItem, target: NautilusShopSDK::NautilusShopDetailModifierTarget, modifier: NautilusShopSDK::NautilusShopDetailModifier)
+  final nonisolated public func deleteShopDetailModifier(shopDetailItem: NautilusShopSDK::ShopDetailItem?, target: NautilusShopSDK::NautilusShopDetailModifierTarget?)
+  @objc nonisolated final public func deleteShopDetailModifier(shopDetailItem: NautilusShopSDK::ShopDetailItem, target: NautilusShopSDK::NautilusShopDetailModifierTarget)
   @objc deinit
 }
-@objc public enum NautilusShopDetailOpenEvent : Swift.Int {
+@objc public enum NautilusShopDetailOpenEvent : Swift::Int {
   case receivedNotification
   case openWithURL
   case tapOnShopList
   case tapOnSearchMap
   case tapOnFavoriteShopList
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSearchSortKey : ObjectiveC.NSObject {
-  final public let keyName: NautilusShopSDK.NautilusShopSearchSortKeyName
-  final public let order: NautilusShopSDK.NautilusShopSearchSortKeyOrder
-  public init(keyName: NautilusShopSDK.NautilusShopSearchSortKeyName, order: NautilusShopSDK.NautilusShopSearchSortKeyOrder)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSearchSortKey : ObjectiveC::NSObject {
+  final public let keyName: NautilusShopSDK::NautilusShopSearchSortKeyName
+  final public let order: NautilusShopSDK::NautilusShopSearchSortKeyOrder
+  public init(keyName: NautilusShopSDK::NautilusShopSearchSortKeyName, order: NautilusShopSDK::NautilusShopSearchSortKeyOrder)
   @objc deinit
 }
-@objc public enum NautilusShopSearchSortKeyName : Swift.Int {
+@objc public enum NautilusShopSearchSortKeyName : Swift::Int {
   case latitude
   case mapDist
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc public enum NautilusShopSearchSortKeyOrder : Swift.Int {
+@objc public enum NautilusShopSearchSortKeyOrder : Swift::Int {
   case ascending
   case descending
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc public enum NautilusFavoriteShopSortOrder : Swift.Int {
+@objc public enum NautilusFavoriteShopSortOrder : Swift::Int {
   case ascending
   case descending
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusShopInfo : ObjectiveC.NSObject {
-  final public let shopID: Swift.Int
-  final public let shopType: Swift.Int
-  final public let shopName: Swift.String?
-  final public let openTime: Swift.String?
-  final public let holiday: Swift.String?
-  final public let publishStartDate: Foundation.Date
-  final public let publishEndDate: Foundation.Date?
-  final public let shopAppeal: Swift.String?
-  final public let catchphrase: Swift.String?
-  final public let address: Swift.String?
-  final public let telephone: Swift.String?
-  final public let subTelList: [NautilusShopSDK.NautilusShopSubTel]?
-  final public let shopLocation: _LocationEssentials.CLLocationCoordinate2D
-  final public let shopImages: [NautilusShopSDK.NautilusShopImage]?
-  final public let clientShopCD: Swift.String?
-  final public let shopExternalLinks: [NautilusShopSDK.NautilusShopExternalLink]?
-  final public let mobileAccess: Swift.String?
-  final public let distance: Swift.Double?
-  final public let shopSearchTags: [Swift.Int]?
-  final public let isFavorite: Swift.Bool?
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusShopInfo : ObjectiveC::NSObject {
+  final public let shopID: Swift::Int
+  final public let shopType: Swift::Int
+  final public let shopName: Swift::String?
+  final public let openTime: Swift::String?
+  final public let holiday: Swift::String?
+  final public let publishStartDate: Foundation::Date
+  final public let publishEndDate: Foundation::Date?
+  final public let shopAppeal: Swift::String?
+  final public let catchphrase: Swift::String?
+  final public let address: Swift::String?
+  final public let telephone: Swift::String?
+  final public let subTelList: [NautilusShopSDK::NautilusShopSubTel]?
+  final public let shopLocation: _LocationEssentials::CLLocationCoordinate2D
+  final public let shopImages: [NautilusShopSDK::NautilusShopImage]?
+  final public let clientShopCD: Swift::String?
+  final public let shopExternalLinks: [NautilusShopSDK::NautilusShopExternalLink]?
+  final public let mobileAccess: Swift::String?
+  final public let distance: Swift::Double?
+  final public let shopSearchTags: [Swift::Int]?
+  final public let isFavorite: Swift::Bool?
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSubTel : ObjectiveC.NSObject {
-  final public let telTitle: Swift.String
-  final public let tel: Swift.String
-  final public let sortNo: Swift.Int
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopSubTel : ObjectiveC::NSObject {
+  final public let telTitle: Swift::String
+  final public let tel: Swift::String
+  final public let sortNo: Swift::Int
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopExternalLink : ObjectiveC.NSObject {
-  final public let linkText: Swift.String
-  final public let url: Foundation.URL
-  final public let sortNo: Swift.Int
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopExternalLink : ObjectiveC::NSObject {
+  final public let linkText: Swift::String
+  final public let url: Foundation::URL
+  final public let sortNo: Swift::Int
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopImage : ObjectiveC.NSObject {
-  final public let imageURL: Foundation.URL
-  final public let sortNo: Swift.Int
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NautilusShopImage : ObjectiveC::NSObject {
+  final public let imageURL: Foundation::URL
+  final public let sortNo: Swift::Int
   @objc deinit
 }
-@objc public enum NautilusShopDetailModifierTarget : Swift.Int, Swift.CaseIterable {
+@objc public enum NautilusShopDetailModifierTarget : Swift::Int, Swift::CaseIterable {
   case title
   case text
-  public init?(rawValue: Swift.Int)
-  public typealias AllCases = [NautilusShopSDK.NautilusShopDetailModifierTarget]
-  public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [NautilusShopSDK.NautilusShopDetailModifierTarget] {
+  public init?(rawValue: Swift::Int)
+  public typealias AllCases = [NautilusShopSDK::NautilusShopDetailModifierTarget]
+  public typealias RawValue = Swift::Int
+  nonisolated public static var allCases: [NautilusShopSDK::NautilusShopDetailModifierTarget] {
     get
   }
-  public var rawValue: Swift.Int {
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc final public class NautilusShopSearchFilteringItem : ObjectiveC.NSObject {
-  final public let tags: [NautilusShopSDK.NautilusShopSearchTagInfo]
-  final public let prefecture: NautilusGeoUtilSDK.NautilusPrefectureCode?
+@_hasMissingDesignatedInitializers @objc final public class NautilusShopSearchFilteringItem : ObjectiveC::NSObject {
+  final public let tags: [NautilusShopSDK::NautilusShopSearchTagInfo]
+  final public let prefecture: NautilusGeoUtilSDK::NautilusPrefectureCode?
   @objc deinit
 }
-public let NautilusShopErrorDomain: Swift.String
-@objc public enum NautilusShopError : Swift.Int, Swift.Error {
+public let NautilusShopErrorDomain: Swift::String
+@objc public enum NautilusShopError : Swift::Int, Swift::Error {
   case unknown
   case connection
   case timedout
@@ -278,58 +277,58 @@ public let NautilusShopErrorDomain: Swift.String
   case invalidUserPID = 905
   case developerError = 906
   case requiresLoginStatus = 907
-  public var nautilusShopErrorCode: Swift.Int {
+  public var nautilusShopErrorCode: Swift::Int {
     get
   }
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public static var _nsErrorDomain: Swift.String {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public static var _nsErrorDomain: Swift::String {
     get
   }
-  public var rawValue: Swift.Int {
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc public class NautilusShopDetailModifier : ObjectiveC.NSObject {
-  final public let textSize: CoreFoundation.CGFloat?
-  final public let textColor: UIKit.UIColor?
-  final public let typeface: UIKit.UIFont.Weight?
-  public init(textSize: CoreFoundation.CGFloat? = nil, textColor: UIKit.UIColor? = nil, typeface: UIKit.UIFont.Weight? = nil)
-  @objc convenience public init(objTextSize: CoreFoundation.CGFloat = .nan, objTextColor: UIKit.UIColor? = nil, objTypeface: UIKit.UIFont.Weight)
+@objc public class NautilusShopDetailModifier : ObjectiveC::NSObject {
+  final public let textSize: CoreFoundation::CGFloat?
+  final public let textColor: UIKit::UIColor?
+  final public let typeface: UIKit::UIFont.UIKit::Weight?
+  public init(textSize: CoreFoundation::CGFloat? = nil, textColor: UIKit::UIColor? = nil, typeface: UIKit::UIFont.UIKit::Weight? = nil)
+  @objc convenience public init(objTextSize: CoreFoundation::CGFloat = .nan, objTextColor: UIKit::UIColor? = nil, objTypeface: UIKit::UIFont.UIKit::Weight)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusShopRouter : ObjectiveC.NSObject {
-  @objc final public func register(screen: NautilusShopSDK.NautilusShopRoutableScreen, viewControllerClass: UIKit.UIViewController.Type)
-  @objc final public func unregister(screen: NautilusShopSDK.NautilusShopRoutableScreen)
-  @objc final public func instantiateShopDetail(shopInfo: NautilusShopSDK.NautilusShopInfo) -> UIKit.UIViewController
-  @objc final public func instantiateShopDetail(shopID: Swift.Int, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
-  @objc final public func instantiateShopDetail(clientShopCode: Swift.String, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil) -> UIKit.UIViewController
-  @objc final public func routeShopDetail(shopInfo: NautilusShopSDK.NautilusShopInfo, in viewController: UIKit.UIViewController)
-  @objc final public func routeShopDetail(shopID: Swift.Int, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil, in viewController: UIKit.UIViewController)
-  @objc final public func routeShopDetail(clientShopCode: Swift.String, notificationInfo: NautilusCoreSDK.NautilusAppNotificationInfo? = nil, in viewController: UIKit.UIViewController)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusShopRouter : ObjectiveC::NSObject {
+  @objc final public func register(screen: NautilusShopSDK::NautilusShopRoutableScreen, viewControllerClass: UIKit::UIViewController.Type)
+  @objc final public func unregister(screen: NautilusShopSDK::NautilusShopRoutableScreen)
+  @objc final public func instantiateShopDetail(shopInfo: NautilusShopSDK::NautilusShopInfo) -> UIKit::UIViewController
+  @objc final public func instantiateShopDetail(shopID: Swift::Int, notificationInfo: NautilusCoreSDK::NautilusAppNotificationInfo? = nil) -> UIKit::UIViewController
+  @objc final public func instantiateShopDetail(clientShopCode: Swift::String, notificationInfo: NautilusCoreSDK::NautilusAppNotificationInfo? = nil) -> UIKit::UIViewController
+  @objc final public func routeShopDetail(shopInfo: NautilusShopSDK::NautilusShopInfo, in viewController: UIKit::UIViewController)
+  @objc final public func routeShopDetail(shopID: Swift::Int, notificationInfo: NautilusCoreSDK::NautilusAppNotificationInfo? = nil, in viewController: UIKit::UIViewController)
+  @objc final public func routeShopDetail(clientShopCode: Swift::String, notificationInfo: NautilusCoreSDK::NautilusAppNotificationInfo? = nil, in viewController: UIKit::UIViewController)
   @objc deinit
 }
-extension NautilusShopSDK.NautilusShopRoutableScreen : Swift.Equatable {}
-extension NautilusShopSDK.NautilusShopRoutableScreen : Swift.Hashable {}
-extension NautilusShopSDK.NautilusShopRoutableScreen : Swift.RawRepresentable {}
-extension NautilusShopSDK.ShopDetailItem : Swift.Equatable {}
-extension NautilusShopSDK.ShopDetailItem : Swift.Hashable {}
-extension NautilusShopSDK.ShopDetailItem : Swift.RawRepresentable {}
-extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.Equatable {}
-extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.Hashable {}
-extension NautilusShopSDK.NautilusShopDetailOpenEvent : Swift.RawRepresentable {}
-extension NautilusShopSDK.NautilusShopSearchSortKeyName : Swift.Equatable {}
-extension NautilusShopSDK.NautilusShopSearchSortKeyName : Swift.Hashable {}
-extension NautilusShopSDK.NautilusShopSearchSortKeyName : Swift.RawRepresentable {}
-extension NautilusShopSDK.NautilusShopSearchSortKeyOrder : Swift.Equatable {}
-extension NautilusShopSDK.NautilusShopSearchSortKeyOrder : Swift.Hashable {}
-extension NautilusShopSDK.NautilusShopSearchSortKeyOrder : Swift.RawRepresentable {}
-extension NautilusShopSDK.NautilusFavoriteShopSortOrder : Swift.Equatable {}
-extension NautilusShopSDK.NautilusFavoriteShopSortOrder : Swift.Hashable {}
-extension NautilusShopSDK.NautilusFavoriteShopSortOrder : Swift.RawRepresentable {}
-extension NautilusShopSDK.NautilusShopDetailModifierTarget : Swift.Equatable {}
-extension NautilusShopSDK.NautilusShopDetailModifierTarget : Swift.Hashable {}
-extension NautilusShopSDK.NautilusShopDetailModifierTarget : Swift.RawRepresentable {}
-extension NautilusShopSDK.NautilusShopError : Swift.Equatable {}
-extension NautilusShopSDK.NautilusShopError : Swift.Hashable {}
-extension NautilusShopSDK.NautilusShopError : Swift.RawRepresentable {}
+extension NautilusShopSDK::NautilusShopRoutableScreen : Swift::Equatable {}
+extension NautilusShopSDK::NautilusShopRoutableScreen : Swift::Hashable {}
+extension NautilusShopSDK::NautilusShopRoutableScreen : Swift::RawRepresentable {}
+extension NautilusShopSDK::ShopDetailItem : Swift::Equatable {}
+extension NautilusShopSDK::ShopDetailItem : Swift::Hashable {}
+extension NautilusShopSDK::ShopDetailItem : Swift::RawRepresentable {}
+extension NautilusShopSDK::NautilusShopDetailOpenEvent : Swift::Equatable {}
+extension NautilusShopSDK::NautilusShopDetailOpenEvent : Swift::Hashable {}
+extension NautilusShopSDK::NautilusShopDetailOpenEvent : Swift::RawRepresentable {}
+extension NautilusShopSDK::NautilusShopSearchSortKeyName : Swift::Equatable {}
+extension NautilusShopSDK::NautilusShopSearchSortKeyName : Swift::Hashable {}
+extension NautilusShopSDK::NautilusShopSearchSortKeyName : Swift::RawRepresentable {}
+extension NautilusShopSDK::NautilusShopSearchSortKeyOrder : Swift::Equatable {}
+extension NautilusShopSDK::NautilusShopSearchSortKeyOrder : Swift::Hashable {}
+extension NautilusShopSDK::NautilusShopSearchSortKeyOrder : Swift::RawRepresentable {}
+extension NautilusShopSDK::NautilusFavoriteShopSortOrder : Swift::Equatable {}
+extension NautilusShopSDK::NautilusFavoriteShopSortOrder : Swift::Hashable {}
+extension NautilusShopSDK::NautilusFavoriteShopSortOrder : Swift::RawRepresentable {}
+extension NautilusShopSDK::NautilusShopDetailModifierTarget : Swift::Equatable {}
+extension NautilusShopSDK::NautilusShopDetailModifierTarget : Swift::Hashable {}
+extension NautilusShopSDK::NautilusShopDetailModifierTarget : Swift::RawRepresentable {}
+extension NautilusShopSDK::NautilusShopError : Swift::Equatable {}
+extension NautilusShopSDK::NautilusShopError : Swift::Hashable {}
+extension NautilusShopSDK::NautilusShopError : Swift::RawRepresentable {}

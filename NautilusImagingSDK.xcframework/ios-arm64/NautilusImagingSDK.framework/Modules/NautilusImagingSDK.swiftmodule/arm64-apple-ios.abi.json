@@ -351,6 +351,8 @@
         "mangledName": "$s18NautilusImagingSDK0A15ImageDownloaderC",
         "moduleName": "NautilusImagingSDK",
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "Final",
           "AccessControl"
         ],
@@ -953,6 +955,8 @@
         "mangledName": "$s18NautilusImagingSDK0A10ImageCacheC",
         "moduleName": "NautilusImagingSDK",
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "Final",
           "AccessControl",
           "RawDocComment"
@@ -1007,6 +1011,8 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Preconcurrency",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -1051,7 +1057,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusHierarchicalMenuSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusHierarchicalMenuSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -13,57 +13,57 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers public class NautilusHierarchicalMenuAppItem {
-  final public let appID: Swift.Int
-  final public let appName: Swift.String
-  final public let title: Swift.String
-  final public let alias: Swift.String?
-  final public let order: Swift.Int
-  final public let linkType: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuAppLinkType?
-  final public let linkURL: Foundation.URL?
-  final public let linkTitle: Swift.String?
-  final public let optionType: Swift.String?
-  final public let optionParam: Swift.String?
-  final public let appIconURL: Foundation.URL?
-  final public let appImageURLs: [Foundation.URL]?
-  final public let appContents: Swift.String?
+  final public let appID: Swift::Int
+  final public let appName: Swift::String
+  final public let title: Swift::String
+  final public let alias: Swift::String?
+  final public let order: Swift::Int
+  final public let linkType: NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuAppLinkType?
+  final public let linkURL: Foundation::URL?
+  final public let linkTitle: Swift::String?
+  final public let optionType: Swift::String?
+  final public let optionParam: Swift::String?
+  final public let appIconURL: Foundation::URL?
+  final public let appImageURLs: [Foundation::URL]?
+  final public let appContents: Swift::String?
   @objc deinit
 }
-public enum NautilusHierarchicalMenuTransitionType : Swift.Int {
+public enum NautilusHierarchicalMenuTransitionType : Swift::Int {
   case middleBrowser
   case innerBrowser
   case externalBrowser
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc @_hasMissingDesignatedInitializers final nonisolated public class NautilusHierarchicalMenu : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
+@objc @_hasMissingDesignatedInitializers final nonisolated public class NautilusHierarchicalMenu : ObjectiveC::NSObject, NautilusCoreSDK::NautilusFeature {
+  @objc public static var componentType: NautilusContainerSDK::NautilusComponentType {
     @objc get
   }
-  @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
+  @objc public static var dependencies: [NautilusContainerSDK::NautilusComponentDependency] {
     @objc get
   }
-  @objc public static var configFilename: Swift.String? {
+  @objc public static var configFilename: Swift::String? {
     @objc get
   }
-  @objc final public var app: NautilusCoreSDK.NautilusApp
-  @objc final public var name: Swift.String?
-  @objc nonisolated final public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc final public var app: NautilusCoreSDK::NautilusApp
+  @objc final public var name: Swift::String?
+  @objc nonisolated final public var featureStatus: NautilusCoreSDK::NautilusFeatureStatus {
     @objc get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
-  public static func hierarchicalMenu() -> NautilusHierarchicalMenuSDK.NautilusHierarchicalMenu
-  public static func hierarchicalMenu(appName: Swift.String) -> NautilusHierarchicalMenuSDK.NautilusHierarchicalMenu
-  final nonisolated public func getMenuList(parentID: Swift.Int?, completion: @escaping (Swift.Result<NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuList, NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuError>) -> Swift.Void)
-  final nonisolated public func getMenuDetail(id: Swift.Int, completion: @escaping (Swift.Result<NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuDetail, NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuError>) -> Swift.Void)
-  final nonisolated public func getAppList(menuID: Swift.Int?, completion: @escaping (Swift.Result<NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuAppList, NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuError>) -> Swift.Void)
+  @objc public static func initialize(application: NautilusCoreSDK::NautilusApp, completion: @escaping NautilusCoreSDK::NautilusFeatureInitializationCompletion)
+  public static func hierarchicalMenu() -> NautilusHierarchicalMenuSDK::NautilusHierarchicalMenu
+  public static func hierarchicalMenu(appName: Swift::String) -> NautilusHierarchicalMenuSDK::NautilusHierarchicalMenu
+  final nonisolated public func getMenuList(parentID: Swift::Int?, completion: @escaping (Swift::Result<NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuList, NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuError>) -> Swift::Void)
+  final nonisolated public func getMenuDetail(id: Swift::Int, completion: @escaping (Swift::Result<NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuDetail, NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuError>) -> Swift::Void)
+  final nonisolated public func getAppList(menuID: Swift::Int?, completion: @escaping (Swift::Result<NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuAppList, NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuError>) -> Swift::Void)
   @objc deinit
 }
-public let NautilusHierarchicalMenuErrorDomain: Swift.String
-public enum NautilusHierarchicalMenuError : Swift.Int, Swift.Error {
-  public var nautilusHierarchicalMenuErrorCode: Swift.Int {
+public let NautilusHierarchicalMenuErrorDomain: Swift::String
+public enum NautilusHierarchicalMenuError : Swift::Int, Swift::Error {
+  public var nautilusHierarchicalMenuErrorCode: Swift::Int {
     get
   }
   case unknown
@@ -84,114 +84,114 @@ public enum NautilusHierarchicalMenuError : Swift.Int, Swift.Error {
   case invalidUserPID
   case developerError
   case requiresLoginStatus
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
 @_hasMissingDesignatedInitializers public class NautilusHierarchicalMenuAppList {
-  final public let items: [NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuAppItem]
+  final public let items: [NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuAppItem]
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class NautilusHierarchicalMenuDetail {
-  final public let id: Swift.Int
-  final public let type: Swift.String
-  final public let title: Swift.String
-  final public let alias: Swift.String?
-  final public let iconURL: Foundation.URL?
-  final public let order: Swift.Int
-  final public let state: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuState
-  final public let terminal: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTerminal?
-  final public let children: [NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuItem]?
-  final public let relatedApps: [NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuAppItem]?
+  final public let id: Swift::Int
+  final public let type: Swift::String
+  final public let title: Swift::String
+  final public let alias: Swift::String?
+  final public let iconURL: Foundation::URL?
+  final public let order: Swift::Int
+  final public let state: NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuState
+  final public let terminal: NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTerminal?
+  final public let children: [NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuItem]?
+  final public let relatedApps: [NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuAppItem]?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class NautilusHierarchicalMenuList {
-  final public let current: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuCurrent
-  final public let breadcrumb: [NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuBreadcrumb]
-  final public let items: [NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuItem]
+  final public let current: NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuCurrent
+  final public let breadcrumb: [NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuBreadcrumb]
+  final public let items: [NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuItem]
   @objc deinit
 }
-public enum NautilusHierarchicalMenuAppLinkType : Swift.Int {
+public enum NautilusHierarchicalMenuAppLinkType : Swift::Int {
   case middleBrowser
   case innerBrowser
   case externalBrowser
   case appFunction
   case contents
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
 @_hasMissingDesignatedInitializers public class NautilusHierarchicalMenuCurrent {
-  final public let id: Swift.Int
-  final public let title: Swift.String
-  final public let depth: Swift.Int
+  final public let id: Swift::Int
+  final public let title: Swift::String
+  final public let depth: Swift::Int
   @objc deinit
 }
-public enum NautilusHierarchicalMenuTerminalKind : Swift.String {
+public enum NautilusHierarchicalMenuTerminalKind : Swift::String {
   case contents
   case link
   case app
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init?(rawValue: Swift::String)
+  public typealias RawValue = Swift::String
+  public var rawValue: Swift::String {
     get
   }
 }
 @_hasMissingDesignatedInitializers public class NautilusHierarchicalMenuTerminal {
-  final public let kind: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTerminalKind?
-  final public let id: Swift.Int?
-  final public let item: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTerminalItem?
+  final public let kind: NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTerminalKind?
+  final public let id: Swift::Int?
+  final public let item: NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTerminalItem?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class NautilusHierarchicalMenuTerminalItem {
-  final public let itemID: Swift.Int
-  final public let itemName: Swift.String
-  final public let title: Swift.String
-  final public let alias: Swift.String?
-  final public let linkType: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTransitionType?
-  final public let linkURL: Foundation.URL?
-  final public let linkTitle: Swift.String?
-  final public let optionType: Swift.String?
-  final public let optionParam: Swift.String?
-  final public let itemImageURLs: [Foundation.URL]?
-  final public let itemContents: Swift.String?
+  final public let itemID: Swift::Int
+  final public let itemName: Swift::String
+  final public let title: Swift::String
+  final public let alias: Swift::String?
+  final public let linkType: NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTransitionType?
+  final public let linkURL: Foundation::URL?
+  final public let linkTitle: Swift::String?
+  final public let optionType: Swift::String?
+  final public let optionParam: Swift::String?
+  final public let itemImageURLs: [Foundation::URL]?
+  final public let itemContents: Swift::String?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class NautilusHierarchicalMenuItem {
-  final public let id: Swift.Int
-  final public let type: Swift.String
-  final public let title: Swift.String
-  final public let alias: Swift.String?
-  final public let iconURL: Foundation.URL?
-  final public let order: Swift.Int
-  final public let state: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuState
-  final public let terminal: NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTerminal?
-  final public let relatedApps: [NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuAppItem]?
+  final public let id: Swift::Int
+  final public let type: Swift::String
+  final public let title: Swift::String
+  final public let alias: Swift::String?
+  final public let iconURL: Foundation::URL?
+  final public let order: Swift::Int
+  final public let state: NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuState
+  final public let terminal: NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTerminal?
+  final public let relatedApps: [NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuAppItem]?
   @objc deinit
 }
 public struct NautilusHierarchicalMenuState {
-  public let hasChildren: Swift.Bool
-  public let isTerminal: Swift.Bool
+  public let hasChildren: Swift::Bool
+  public let isTerminal: Swift::Bool
 }
 @_hasMissingDesignatedInitializers public class NautilusHierarchicalMenuBreadcrumb {
-  final public let id: Swift.Int
-  final public let title: Swift.String
-  final public let depth: Swift.Int
+  final public let id: Swift::Int
+  final public let title: Swift::String
+  final public let depth: Swift::Int
   @objc deinit
 }
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTransitionType : Swift.Equatable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTransitionType : Swift.Hashable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTransitionType : Swift.RawRepresentable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuError : Swift.Equatable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuError : Swift.Hashable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuError : Swift.RawRepresentable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuAppLinkType : Swift.Equatable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuAppLinkType : Swift.Hashable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuAppLinkType : Swift.RawRepresentable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTerminalKind : Swift.Equatable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTerminalKind : Swift.Hashable {}
-extension NautilusHierarchicalMenuSDK.NautilusHierarchicalMenuTerminalKind : Swift.RawRepresentable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTransitionType : Swift::Equatable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTransitionType : Swift::Hashable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTransitionType : Swift::RawRepresentable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuError : Swift::Equatable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuError : Swift::Hashable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuError : Swift::RawRepresentable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuAppLinkType : Swift::Equatable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuAppLinkType : Swift::Hashable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuAppLinkType : Swift::RawRepresentable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTerminalKind : Swift::Equatable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTerminalKind : Swift::Hashable {}
+extension NautilusHierarchicalMenuSDK::NautilusHierarchicalMenuTerminalKind : Swift::RawRepresentable {}

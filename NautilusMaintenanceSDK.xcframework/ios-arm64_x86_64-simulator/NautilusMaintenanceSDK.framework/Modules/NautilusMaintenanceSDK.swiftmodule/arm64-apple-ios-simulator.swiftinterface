@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusMaintenanceSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature RegionBasedIsolation -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NautilusMaintenanceSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import Foundation
 import NautilusConfigSDK
 import NautilusContainerSDK
@@ -12,43 +12,43 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers @objc nonisolated public class NautilusMaintenance : ObjectiveC.NSObject, NautilusCoreSDK.NautilusFeature {
-  @objc public static var configFilename: Swift.String? {
+@_hasMissingDesignatedInitializers @objc nonisolated public class NautilusMaintenance : ObjectiveC::NSObject, NautilusCoreSDK::NautilusFeature {
+  @objc public static var configFilename: Swift::String? {
     @objc get
   }
-  @objc public var app: NautilusCoreSDK.NautilusApp
-  @objc public var name: Swift.String?
-  @objc public static var componentType: NautilusContainerSDK.NautilusComponentType {
+  @objc public var app: NautilusCoreSDK::NautilusApp
+  @objc public var name: Swift::String?
+  @objc public static var componentType: NautilusContainerSDK::NautilusComponentType {
     @objc get
   }
-  @objc public static var dependencies: [NautilusContainerSDK.NautilusComponentDependency] {
+  @objc public static var dependencies: [NautilusContainerSDK::NautilusComponentDependency] {
     @objc get
   }
-  @objc weak public var checkMaintenanceDelegate: (any NautilusMaintenanceSDK.CheckMaintenanceDelegate)?
-  @objc nonisolated public var featureStatus: NautilusCoreSDK.NautilusFeatureStatus {
+  @objc weak public var checkMaintenanceDelegate: (any NautilusMaintenanceSDK::CheckMaintenanceDelegate)?
+  @objc nonisolated public var featureStatus: NautilusCoreSDK::NautilusFeatureStatus {
     @objc get
   }
-  @objc public static func initialize(application: NautilusCoreSDK.NautilusApp, completion: @escaping NautilusCoreSDK.NautilusFeatureInitializationCompletion)
-  @objc public static func maintenance() -> NautilusMaintenanceSDK.NautilusMaintenance
-  @objc(maintenanceAppNamed:) public static func maintenance(appName: Swift.String) -> NautilusMaintenanceSDK.NautilusMaintenance
+  @objc public static func initialize(application: NautilusCoreSDK::NautilusApp, completion: @escaping NautilusCoreSDK::NautilusFeatureInitializationCompletion)
+  @objc public static func maintenance() -> NautilusMaintenanceSDK::NautilusMaintenance
+  @objc(maintenanceAppNamed:) public static func maintenance(appName: Swift::String) -> NautilusMaintenanceSDK::NautilusMaintenance
   @objc nonisolated public func checkMaintenance()
   @objc deinit
 }
 @objc public protocol CheckMaintenanceDelegate {
-  @objc func onChecked(checkResult: NautilusMaintenanceSDK.NautilusMaintenanceCheckMaintenanceResult)
-  @objc func onCheckFailed(error: NautilusMaintenanceSDK.NautilusMaintenanceError)
+  @objc func onChecked(checkResult: NautilusMaintenanceSDK::NautilusMaintenanceCheckMaintenanceResult)
+  @objc func onCheckFailed(error: NautilusMaintenanceSDK::NautilusMaintenanceError)
 }
-@objc public enum NautilusMaintenanceStatus : Swift.Int, Swift.Sendable {
+@objc public enum NautilusMaintenanceStatus : Swift::Int, Swift::Sendable {
   case systemMaintenance
   case individualMaintenance
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-public let NautilusMaintenanceErrorDomain: Swift.String
-@objc public enum NautilusMaintenanceError : Swift.Int, Swift.Error {
+public let NautilusMaintenanceErrorDomain: Swift::String
+@objc public enum NautilusMaintenanceError : Swift::Int, Swift::Error {
   case unknown
   case connection
   case timedout
@@ -68,49 +68,49 @@ public let NautilusMaintenanceErrorDomain: Swift.String
   case invalidUserPID = 905
   case developerError = 906
   case requiresLoginStatus = 907
-  public var nautilusMaintenanceErrorCode: Swift.Int {
+  public var nautilusMaintenanceErrorCode: Swift::Int {
     get
   }
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public static var _nsErrorDomain: Swift.String {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public static var _nsErrorDomain: Swift::String {
     get
   }
-  public var rawValue: Swift.Int {
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusMaintenanceData : ObjectiveC.NSObject, Swift.Sendable {
-  final public let fromDatetime: Foundation.Date
-  final public let toDatetime: Foundation.Date?
-  final public let maintenanceTitle: Swift.String?
-  final public let maintenanceMessage: Swift.String
-  final public let extData: Swift.String?
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusMaintenanceData : ObjectiveC::NSObject, Swift::Sendable {
+  final public let fromDatetime: Foundation::Date
+  final public let toDatetime: Foundation::Date?
+  final public let maintenanceTitle: Swift::String?
+  final public let maintenanceMessage: Swift::String
+  final public let extData: Swift::String?
   @objc deinit
 }
-@objc public enum NautilusMaintenanceEnvironment : Swift.Int {
+@objc public enum NautilusMaintenanceEnvironment : Swift::Int {
   case sandboxSystem
   case sandboxIndividual
   case publicSystem
   case publicIndividual
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusMaintenanceCheckMaintenanceResult : ObjectiveC.NSObject, Swift.Error {
-  final public let checkResult: Swift.Bool
-  final public let status: NautilusMaintenanceSDK.NautilusMaintenanceStatus?
-  final public let maintenanceData: NautilusMaintenanceSDK.NautilusMaintenanceData?
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NautilusMaintenanceCheckMaintenanceResult : ObjectiveC::NSObject, Swift::Error {
+  final public let checkResult: Swift::Bool
+  final public let status: NautilusMaintenanceSDK::NautilusMaintenanceStatus?
+  final public let maintenanceData: NautilusMaintenanceSDK::NautilusMaintenanceData?
   @objc deinit
 }
-extension NautilusMaintenanceSDK.NautilusMaintenanceStatus : Swift.Equatable {}
-extension NautilusMaintenanceSDK.NautilusMaintenanceStatus : Swift.Hashable {}
-extension NautilusMaintenanceSDK.NautilusMaintenanceStatus : Swift.RawRepresentable {}
-extension NautilusMaintenanceSDK.NautilusMaintenanceError : Swift.Equatable {}
-extension NautilusMaintenanceSDK.NautilusMaintenanceError : Swift.Hashable {}
-extension NautilusMaintenanceSDK.NautilusMaintenanceError : Swift.RawRepresentable {}
-extension NautilusMaintenanceSDK.NautilusMaintenanceEnvironment : Swift.Equatable {}
-extension NautilusMaintenanceSDK.NautilusMaintenanceEnvironment : Swift.Hashable {}
-extension NautilusMaintenanceSDK.NautilusMaintenanceEnvironment : Swift.RawRepresentable {}
+extension NautilusMaintenanceSDK::NautilusMaintenanceStatus : Swift::Equatable {}
+extension NautilusMaintenanceSDK::NautilusMaintenanceStatus : Swift::Hashable {}
+extension NautilusMaintenanceSDK::NautilusMaintenanceStatus : Swift::RawRepresentable {}
+extension NautilusMaintenanceSDK::NautilusMaintenanceError : Swift::Equatable {}
+extension NautilusMaintenanceSDK::NautilusMaintenanceError : Swift::Hashable {}
+extension NautilusMaintenanceSDK::NautilusMaintenanceError : Swift::RawRepresentable {}
+extension NautilusMaintenanceSDK::NautilusMaintenanceEnvironment : Swift::Equatable {}
+extension NautilusMaintenanceSDK::NautilusMaintenanceEnvironment : Swift::Hashable {}
+extension NautilusMaintenanceSDK::NautilusMaintenanceEnvironment : Swift::RawRepresentable {}
